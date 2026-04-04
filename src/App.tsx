@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useRef, ReactNode } from 'react';
+import { useState, useEffect, useRef, useMemo, ReactNode, RefObject } from 'react';
 import { 
   Star, 
   Check, 
@@ -56,6 +56,21 @@ interface Product {
 
 /// --- Data ---
 const AFFILIATE_TAG = 'andyboeh-21';
+const CURRENT_YEAR = new Date().getFullYear();
+const GTM_ID = 'GTM-MMXGDLK9';
+
+// --- GTM Loader ---
+const loadGTM = () => {
+  if (typeof window === 'undefined' || (window as any).gtmLoaded) return;
+  (window as any).gtmLoaded = true;
+  
+  (function(w: any, d: any, s: string, l: string, i: string){
+    w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window, document, 'script', 'dataLayer', GTM_ID);
+};
 
 const PRODUCTS: Product[] = [
   {
@@ -443,29 +458,100 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  const [sortConfig, setSortConfig] = useState<{ key: keyof Product | 'price_num'; direction: 'asc' | 'desc' } | null>({ key: 'score', direction: 'desc' });
+  const [filters, setFilters] = useState({
+    onlyDouble: false,
+    onlyApp: false,
+    onlyHandsFree: false
+  });
   const rankingRef = useRef<HTMLDivElement>(null);
+  const comparisonRef = useRef<HTMLDivElement>(null);
+  const guideRef = useRef<HTMLDivElement>(null);
+  const faqRef = useRef<HTMLDivElement>(null);
+
+  const getPriceValue = (priceStr: string) => {
+    const match = priceStr.match(/\d+/);
+    return match ? parseInt(match[0]) : 0;
+  };
+
+  const filteredAndSortedProducts = useMemo(() => {
+    let result = [...PRODUCTS];
+
+    // Filtering
+    if (filters.onlyDouble) result = result.filter(p => p.specs.double);
+    if (filters.onlyApp) result = result.filter(p => p.specs.app);
+    if (filters.onlyHandsFree) result = result.filter(p => p.specs.handsFree);
+
+    // Sorting
+    if (sortConfig) {
+      result.sort((a, b) => {
+        let aValue: any;
+        let bValue: any;
+
+        if (sortConfig.key === 'price_num') {
+          aValue = getPriceValue(a.price);
+          bValue = getPriceValue(b.price);
+        } else {
+          aValue = a[sortConfig.key as keyof Product];
+          bValue = b[sortConfig.key as keyof Product];
+        }
+
+        if (aValue < bValue) return sortConfig.direction === 'asc' ? -1 : 1;
+        if (aValue > bValue) return sortConfig.direction === 'asc' ? 1 : -1;
+        return 0;
+      });
+    }
+
+    return result;
+  }, [sortConfig, filters]);
+
+  const handleSort = (key: keyof Product | 'price_num') => {
+    let direction: 'asc' | 'desc' = 'asc';
+    if (sortConfig && sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc';
+    }
+    setSortConfig({ key, direction });
+  };
 
   useEffect(() => {
+    // Check for existing consent
+    const consent = localStorage.getItem('cookie-consent');
+    if (consent === 'accepted') {
+      setCookiesAccepted(true);
+      loadGTM();
+    }
+
     if (view !== 'home') {
       window.scrollTo(0, 0);
     }
+    
+    // Dynamically update SEO tags
+    const title = `Milchpumpe Vergleich ${CURRENT_YEAR} | Die 6 besten tragbaren Pumpen im Test`;
+    const description = `Milchpumpe Vergleich ${CURRENT_YEAR}: Wir zeigen dir die besten tragbaren & freihändigen Brustpumpen. Unabhängige Tests, Erfahrungen und die besten Amazon-Angebote.`;
+    
+    document.title = title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', description);
+    }
   }, [view]);
 
-  const scrollToRanking = () => {
+  const scrollToSection = (ref: RefObject<HTMLDivElement | null>) => {
     if (view !== 'home') {
       setView('home');
       setTimeout(() => {
-        rankingRef.current?.scrollIntoView({ behavior: 'smooth' });
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     } else {
-      rankingRef.current?.scrollIntoView({ behavior: 'smooth' });
+      ref.current?.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMenuOpen(false);
   };
 
   const handleCookieAccept = () => {
     setCookiesAccepted(true);
-    // Hier könnten Analytics-Skripte geladen werden
-    console.log('Marketing-Cookies akzeptiert');
+    loadGTM();
+    console.log('Marketing-Cookies akzeptiert & GTM geladen');
   };
 
   // SEO: Structured Data (JSON-LD)
@@ -513,10 +599,10 @@ export default function App() {
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-text-medium">
-            <button onClick={() => { setView('home'); setTimeout(scrollToRanking, 100); }} className="hover:text-primary transition-colors">Ranking</button>
-            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">Vergleich</button>
-            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">Ratgeber</button>
-            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">FAQ</button>
+            <button onClick={() => scrollToSection(rankingRef)} className="hover:text-primary transition-colors">Ranking</button>
+            <button onClick={() => scrollToSection(comparisonRef)} className="hover:text-primary transition-colors">Vergleich</button>
+            <button onClick={() => scrollToSection(guideRef)} className="hover:text-primary transition-colors">Ratgeber</button>
+            <button onClick={() => scrollToSection(faqRef)} className="hover:text-primary transition-colors">FAQ</button>
           </nav>
 
           <button 
@@ -538,10 +624,10 @@ export default function App() {
             className="fixed inset-0 z-40 bg-bg-cream pt-24 px-6 md:hidden"
           >
             <nav className="flex flex-col gap-6 text-xl font-serif">
-              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Produktranking</button>
-              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Vergleichstabelle</button>
-              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Kaufratgeber</button>
-              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Häufige Fragen</button>
+              <button className="text-left" onClick={() => scrollToSection(rankingRef)}>Produktranking</button>
+              <button className="text-left" onClick={() => scrollToSection(comparisonRef)}>Vergleichstabelle</button>
+              <button className="text-left" onClick={() => scrollToSection(guideRef)}>Kaufratgeber</button>
+              <button className="text-left" onClick={() => scrollToSection(faqRef)}>Häufige Fragen</button>
             </nav>
           </motion.div>
         )}
@@ -558,10 +644,10 @@ export default function App() {
               transition={{ duration: 0.8 }}
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-bold tracking-wider uppercase mb-6">
-                <Award size={14} /> Update April 2026
+                <Award size={14} /> Update April {CURRENT_YEAR}
               </div>
               <h1 className="text-5xl md:text-7xl mb-6 leading-[1.1]">
-                Der große <span className="text-primary italic">Milchpumpe Vergleich</span> 2026
+                Der große <span className="text-primary italic">Milchpumpe Vergleich</span> {CURRENT_YEAR}
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-10 max-w-lg leading-relaxed">
                 Wir helfen dir, die perfekte tragbare Milchpumpe zu finden. Wir vergleichen Saugkraft, Lautstärke und Komfort für deinen Alltag.
@@ -569,10 +655,10 @@ export default function App() {
               
               <div className="flex flex-col sm:flex-row items-center gap-4 mb-12">
                 <button 
-                  onClick={scrollToRanking}
+                  onClick={() => scrollToSection(rankingRef)}
                   className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20"
                 >
-                  Zum Ranking 2026
+                  Zum Ranking {CURRENT_YEAR}
                 </button>
                 <div className="flex -space-x-3">
                   {[1,2,3,4].map(i => (
@@ -656,7 +742,7 @@ export default function App() {
         {/* --- Ranking Section --- */}
         <section id="ranking" ref={rankingRef} className="py-20 md:py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <h2 className="text-4xl md:text-6xl mb-6">Das Top-6 Ranking 2026</h2>
+            <h2 className="text-4xl md:text-6xl mb-6">Das Top-6 Ranking {CURRENT_YEAR}</h2>
             <p className="text-text-medium max-w-2xl mx-auto text-lg">
               Basierend auf Saugkraft, Lautstärke, Akkulaufzeit und Nutzerbewertungen haben wir die besten tragbaren Milchpumpen ermittelt.
             </p>
@@ -778,11 +864,53 @@ export default function App() {
         </section>
 
         {/* --- Comparison Table --- */}
-        <section id="vergleich" className="py-20 md:py-32 bg-bg-warm px-6 md:px-20">
+        <section id="vergleich" ref={comparisonRef} className="py-20 md:py-32 bg-bg-warm px-6 md:px-20">
           <div className="max-w-[1440px] mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl mb-6">Direkter Vergleich</h2>
               <p className="text-text-medium max-w-2xl mx-auto">Alle technischen Daten auf einen Blick, um die richtige Entscheidung zu treffen.</p>
+            </div>
+
+            {/* Filter Controls */}
+            <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+              <button 
+                onClick={() => setFilters(prev => ({ ...prev, onlyDouble: !prev.onlyDouble }))}
+                className={`px-6 py-2 rounded-full text-sm font-bold transition-all border-2 ${
+                  filters.onlyDouble 
+                    ? 'bg-primary border-primary text-white shadow-lg shadow-primary/20' 
+                    : 'bg-white border-primary/10 text-text-medium hover:border-primary/30'
+                }`}
+              >
+                Nur Doppelpumpen
+              </button>
+              <button 
+                onClick={() => setFilters(prev => ({ ...prev, onlyApp: !prev.onlyApp }))}
+                className={`px-6 py-2 rounded-full text-sm font-bold transition-all border-2 ${
+                  filters.onlyApp 
+                    ? 'bg-primary border-primary text-white shadow-lg shadow-primary/20' 
+                    : 'bg-white border-primary/10 text-text-medium hover:border-primary/30'
+                }`}
+              >
+                Nur mit App-Steuerung
+              </button>
+              <button 
+                onClick={() => setFilters(prev => ({ ...prev, onlyHandsFree: !prev.onlyHandsFree }))}
+                className={`px-6 py-2 rounded-full text-sm font-bold transition-all border-2 ${
+                  filters.onlyHandsFree 
+                    ? 'bg-primary border-primary text-white shadow-lg shadow-primary/20' 
+                    : 'bg-white border-primary/10 text-text-medium hover:border-primary/30'
+                }`}
+              >
+                Nur Hands-Free
+              </button>
+              {(filters.onlyDouble || filters.onlyApp || filters.onlyHandsFree) && (
+                <button 
+                  onClick={() => setFilters({ onlyDouble: false, onlyApp: false, onlyHandsFree: false })}
+                  className="text-primary text-sm font-bold hover:underline ml-2"
+                >
+                  Filter zurücksetzen
+                </button>
+              )}
             </div>
 
             <div className="overflow-x-auto rounded-[32px] border border-primary/10 bg-white shadow-xl">
@@ -790,8 +918,22 @@ export default function App() {
                 <thead>
                   <tr className="bg-primary/5 text-text-dark font-bold text-sm uppercase tracking-wider">
                     <th className="p-6 border-b border-primary/10">Produkt</th>
-                    <th className="p-6 border-b border-primary/10 text-center">Score</th>
-                    <th className="p-6 border-b border-primary/10">Preis</th>
+                    <th 
+                      className="p-6 border-b border-primary/10 text-center cursor-pointer hover:bg-primary/10 transition-colors"
+                      onClick={() => handleSort('score')}
+                    >
+                      <div className="flex items-center justify-center gap-2">
+                        Score {sortConfig?.key === 'score' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
+                      </div>
+                    </th>
+                    <th 
+                      className="p-6 border-b border-primary/10 cursor-pointer hover:bg-primary/10 transition-colors"
+                      onClick={() => handleSort('price_num')}
+                    >
+                      <div className="flex items-center gap-2">
+                        Preis {sortConfig?.key === 'price_num' && (sortConfig.direction === 'asc' ? '↑' : '↓')}
+                      </div>
+                    </th>
                     <th className="p-6 border-b border-primary/10 text-center">App</th>
                     <th className="p-6 border-b border-primary/10 text-center">Doppel</th>
                     <th className="p-6 border-b border-primary/10">Lautstärke</th>
@@ -800,42 +942,50 @@ export default function App() {
                   </tr>
                 </thead>
                 <tbody className="text-sm text-text-medium">
-                  {PRODUCTS.map((p, i) => (
-                    <tr key={p.id} className={`hover:bg-primary/5 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-bg-cream/30'}`}>
-                      <td className="p-6 font-bold text-text-dark">
-                        <div className="flex items-center gap-3">
-                          <span className="text-xl">{p.emoji}</span>
-                          <div>
-                            <div className="text-[10px] text-secondary uppercase tracking-tighter">{p.brand}</div>
-                            {p.name}
+                  {filteredAndSortedProducts.length > 0 ? (
+                    filteredAndSortedProducts.map((p, i) => (
+                      <tr key={p.id} className={`hover:bg-primary/5 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-bg-cream/30'}`}>
+                        <td className="p-6 font-bold text-text-dark">
+                          <div className="flex items-center gap-3">
+                            <span className="text-xl">{p.emoji}</span>
+                            <div>
+                              <div className="text-[10px] text-secondary uppercase tracking-tighter">{p.brand}</div>
+                              {p.name}
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td className="p-6 text-center">
-                        <span className="inline-block px-2 py-1 bg-primary/10 text-primary rounded-lg font-bold">{p.score}</span>
-                      </td>
-                      <td className="p-6 font-medium text-text-dark">{p.price.replace('ab ca. ', '')}</td>
-                      <td className="p-6 text-center">
-                        {p.specs.app ? <Check size={18} className="mx-auto text-neutral" /> : <X size={18} className="mx-auto text-primary/30" />}
-                      </td>
-                      <td className="p-6 text-center">
-                        {p.specs.double ? <Check size={18} className="mx-auto text-neutral" /> : <X size={18} className="mx-auto text-primary/30" />}
-                      </td>
-                      <td className="p-6">{p.specs.noise}</td>
-                      <td className="p-6">{p.specs.battery}</td>
-                      <td className="p-6 text-center">
-                        <a 
-                          href={p.amazonUrl} 
-                          target="_blank" 
-                          rel="noopener sponsored" 
-                          title={`${p.brand} ${p.name} Preis auf Amazon prüfen`}
-                          className="text-primary hover:text-secondary transition-colors"
-                        >
-                          <ExternalLink size={18} className="mx-auto" />
-                        </a>
+                        </td>
+                        <td className="p-6 text-center">
+                          <span className="inline-block px-2 py-1 bg-primary/10 text-primary rounded-lg font-bold">{p.score}</span>
+                        </td>
+                        <td className="p-6 font-medium text-text-dark">{p.price.replace('ab ca. ', '')}</td>
+                        <td className="p-6 text-center">
+                          {p.specs.app ? <Check size={18} className="mx-auto text-neutral" /> : <X size={18} className="mx-auto text-primary/30" />}
+                        </td>
+                        <td className="p-6 text-center">
+                          {p.specs.double ? <Check size={18} className="mx-auto text-neutral" /> : <X size={18} className="mx-auto text-primary/30" />}
+                        </td>
+                        <td className="p-6">{p.specs.noise}</td>
+                        <td className="p-6">{p.specs.battery}</td>
+                        <td className="p-6 text-center">
+                          <a 
+                            href={p.amazonUrl} 
+                            target="_blank" 
+                            rel="noopener sponsored" 
+                            title={`${p.brand} ${p.name} Preis auf Amazon prüfen`}
+                            className="text-primary hover:text-secondary transition-colors"
+                          >
+                            <ExternalLink size={18} className="mx-auto" />
+                          </a>
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td colSpan={8} className="p-20 text-center text-text-light italic">
+                        Keine Produkte gefunden, die den Kriterien entsprechen.
                       </td>
                     </tr>
-                  ))}
+                  )}
                 </tbody>
               </table>
             </div>
@@ -843,7 +993,7 @@ export default function App() {
         </section>
 
         {/* --- Buying Guide --- */}
-        <section id="ratgeber" className="py-20 md:py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
+        <section id="ratgeber" ref={guideRef} className="py-20 md:py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="text-4xl md:text-6xl mb-6">Worauf du beim Kauf achten solltest</h2>
             <p className="text-text-medium max-w-2xl mx-auto">6 entscheidende Kriterien für deine perfekte Milchpumpe.</p>
@@ -903,7 +1053,7 @@ export default function App() {
         </section>
 
         {/* --- FAQ Section --- */}
-        <section id="faq" className="py-20 md:py-32 bg-bg-warm px-6 md:px-20">
+        <section id="faq" ref={faqRef} className="py-20 md:py-32 bg-bg-warm px-6 md:px-20">
           <div className="max-w-[1440px] mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl mb-6">Häufig gestellte Fragen</h2>
@@ -970,10 +1120,10 @@ export default function App() {
             <div>
               <h4 className="text-lg font-serif mb-6">Navigation</h4>
               <ul className="space-y-4 text-sm text-text-light">
-                <li><a href="#ranking" className="hover:text-white transition-colors">Produktranking</a></li>
-                <li><a href="#vergleich" className="hover:text-white transition-colors">Vergleichstabelle</a></li>
-                <li><a href="#ratgeber" className="hover:text-white transition-colors">Kaufratgeber</a></li>
-                <li><a href="#faq" className="hover:text-white transition-colors">Häufige Fragen</a></li>
+                <li><button onClick={() => scrollToSection(rankingRef)} className="hover:text-white transition-colors">Produktranking</button></li>
+                <li><button onClick={() => scrollToSection(comparisonRef)} className="hover:text-white transition-colors">Vergleichstabelle</button></li>
+                <li><button onClick={() => scrollToSection(guideRef)} className="hover:text-white transition-colors">Kaufratgeber</button></li>
+                <li><button onClick={() => scrollToSection(faqRef)} className="hover:text-white transition-colors">Häufige Fragen</button></li>
               </ul>
             </div>
 
@@ -993,7 +1143,7 @@ export default function App() {
               <strong>Affiliate Disclaimer:</strong> Milchpumpe-Vergleich.de nimmt am Amazon Partnerprogramm teil. Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Die mit einem Sternchen (*) oder als "Bei Amazon prüfen" gekennzeichneten Links sind Affiliate-Links. Wenn du über diese Links kaufst, erhalten wir eine kleine Provision. Für dich ändert sich der Preis nicht. Alle Preisangaben inkl. MwSt., zzgl. Versandkosten. Preise können sich seit der letzten Aktualisierung geändert haben.
             </p>
             <p className="text-[10px] text-text-light uppercase tracking-widest font-bold">
-              © 2026 Milchpumpe-Vergleich.de – Alle Rechte vorbehalten.
+              © {CURRENT_YEAR} Milchpumpe-Vergleich.de – Alle Rechte vorbehalten.
             </p>
           </div>
         </div>
