@@ -20,7 +20,10 @@ import {
   Droplets, 
   Euro,
   ExternalLink,
-  Menu
+  Menu,
+  Info,
+  Lock,
+  Cookie
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -232,6 +235,183 @@ const FAQ_ITEMS = [
 
 // --- Components ---
 
+const CookieConsent = ({ onAccept }: { onAccept: () => void }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const consent = localStorage.getItem('cookie-consent');
+    if (!consent) {
+      setIsVisible(true);
+    }
+  }, []);
+
+  const handleAccept = () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    setIsVisible(false);
+    onAccept();
+  };
+
+  const handleDecline = () => {
+    localStorage.setItem('cookie-consent', 'declined');
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
+
+  return (
+    <motion.div 
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className="fixed bottom-6 left-6 right-6 z-[100] md:left-auto md:max-w-md"
+    >
+      <div className="bg-white rounded-3xl p-6 shadow-2xl border border-primary/10">
+        <div className="flex items-start gap-4 mb-4">
+          <div className="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary shrink-0">
+            <Cookie size={20} />
+          </div>
+          <div>
+            <h4 className="font-bold text-text-dark mb-1">Cookie-Einstellungen</h4>
+            <p className="text-xs text-text-medium leading-relaxed">
+              Wir nutzen Cookies, um dein Erlebnis zu verbessern und die Nutzung unserer Seite zu analysieren. Einige sind technisch notwendig, andere helfen uns bei der Optimierung.
+            </p>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <button 
+            onClick={handleAccept}
+            className="flex-grow py-3 bg-primary text-white rounded-xl text-sm font-bold hover:bg-primary/90 transition-colors"
+          >
+            Alle akzeptieren
+          </button>
+          <button 
+            onClick={handleDecline}
+            className="px-6 py-3 bg-bg-cream text-text-medium rounded-xl text-sm font-bold hover:bg-primary/5 transition-colors"
+          >
+            Ablehnen
+          </button>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+const LegalPage = ({ type, onClose }: { type: 'impressum' | 'datenschutz', onClose: () => void }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-bg-cream pt-32 pb-20 px-6 md:px-20">
+      <div className="max-w-3xl mx-auto">
+        <button 
+          onClick={onClose}
+          className="mb-8 flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors"
+        >
+          <ChevronDown className="rotate-90" size={20} /> Zurück zur Startseite
+        </button>
+
+        {type === 'impressum' ? (
+          <div className="bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-primary/5">
+            <div className="flex items-center gap-3 mb-8">
+              <Info className="text-primary" size={32} />
+              <h1 className="text-4xl md:text-5xl">Impressum</h1>
+            </div>
+            
+            <div className="space-y-8 text-text-medium leading-relaxed">
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">Angaben gemäß § 5 TMG</h2>
+                <p>
+                  [Dein Name / Firmenname]<br />
+                  [Straße Hausnummer]<br />
+                  [PLZ Ort]
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">Kontakt</h2>
+                <p>
+                  Telefon: [Deine Telefonnummer]<br />
+                  E-Mail: [Deine E-Mail-Adresse]
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+                <p>
+                  [Dein Name]<br />
+                  [Straße Hausnummer]<br />
+                  [PLZ Ort]
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">EU-Streitschlichtung</h2>
+                <p>
+                  Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                  <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-primary underline ml-1">
+                    https://ec.europa.eu/consumers/odr/
+                  </a>.
+                  Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+                <p>
+                  Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
+              </section>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-primary/5">
+            <div className="flex items-center gap-3 mb-8">
+              <Lock className="text-primary" size={32} />
+              <h1 className="text-4xl md:text-5xl">Datenschutzerklärung</h1>
+            </div>
+            
+            <div className="space-y-8 text-text-medium leading-relaxed">
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">1. Datenschutz auf einen Blick</h2>
+                <h3 className="font-bold mb-2">Allgemeine Hinweise</h3>
+                <p>
+                  Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">2. Datenerfassung auf dieser Website</h2>
+                <h3 className="font-bold mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
+                <p>
+                  Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
+                </p>
+                <h3 className="font-bold mt-4 mb-2">Wie erfassen wir Ihre Daten?</h3>
+                <p>
+                  Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">3. Affiliate-Programme</h2>
+                <p>
+                  Diese Website nimmt am Amazon EU-Partnerprogramm teil. Amazon setzt Cookies ein, um die Herkunft der Bestellungen nachvollziehen zu können. Dadurch kann Amazon erkennen, dass Sie den Partnerlink auf dieser Website geklickt haben. Weitere Informationen zur Datennutzung durch Amazon erhalten Sie in der Datenschutzerklärung von Amazon.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold text-text-dark mb-4">4. Analyse-Tools und Tools von Drittanbietern</h2>
+                <p>
+                  Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden.
+                </p>
+              </section>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const StarRating = ({ rating }: { rating: number }) => {
   return (
     <div className="flex items-center gap-0.5">
@@ -259,12 +439,33 @@ const Badge = ({ children, color = 'gold' }: { children: ReactNode, color?: 'gol
 };
 
 export default function App() {
+  const [view, setView] = useState<'home' | 'impressum' | 'datenschutz'>('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
   const rankingRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (view !== 'home') {
+      window.scrollTo(0, 0);
+    }
+  }, [view]);
+
   const scrollToRanking = () => {
-    rankingRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (view !== 'home') {
+      setView('home');
+      setTimeout(() => {
+        rankingRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      rankingRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleCookieAccept = () => {
+    setCookiesAccepted(true);
+    // Hier könnten Analytics-Skripte geladen werden
+    console.log('Marketing-Cookies akzeptiert');
   };
 
   // SEO: Structured Data (JSON-LD)
@@ -297,19 +498,25 @@ export default function App() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      
+      <CookieConsent onAccept={handleCookieAccept} />
+
       {/* --- Sticky Header --- */}
       <header className="sticky top-0 z-50 bg-bg-cream/80 backdrop-blur-md border-b border-primary/10">
         <div className="max-w-[1440px] mx-auto px-6 md:px-20 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div 
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => setView('home')}
+          >
             <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-serif text-xl font-bold">M</div>
             <span className="font-serif text-2xl font-bold text-primary tracking-tight">Milchpumpe<span className="text-secondary">-Vergleich.de</span></span>
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-text-medium">
-            <a href="#ranking" className="hover:text-primary transition-colors">Ranking</a>
-            <a href="#vergleich" className="hover:text-primary transition-colors">Vergleich</a>
-            <a href="#ratgeber" className="hover:text-primary transition-colors">Ratgeber</a>
-            <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
+            <button onClick={() => { setView('home'); setTimeout(scrollToRanking, 100); }} className="hover:text-primary transition-colors">Ranking</button>
+            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">Vergleich</button>
+            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">Ratgeber</button>
+            <button onClick={() => { setView('home'); }} className="hover:text-primary transition-colors">FAQ</button>
           </nav>
 
           <button 
@@ -331,17 +538,18 @@ export default function App() {
             className="fixed inset-0 z-40 bg-bg-cream pt-24 px-6 md:hidden"
           >
             <nav className="flex flex-col gap-6 text-xl font-serif">
-              <a href="#ranking" onClick={() => setIsMenuOpen(false)}>Produktranking</a>
-              <a href="#vergleich" onClick={() => setIsMenuOpen(false)}>Vergleichstabelle</a>
-              <a href="#ratgeber" onClick={() => setIsMenuOpen(false)}>Kaufratgeber</a>
-              <a href="#faq" onClick={() => setIsMenuOpen(false)}>Häufige Fragen</a>
+              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Produktranking</button>
+              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Vergleichstabelle</button>
+              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Kaufratgeber</button>
+              <button className="text-left" onClick={() => { setView('home'); setIsMenuOpen(false); }}>Häufige Fragen</button>
             </nav>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main className="flex-grow">
-        {/* --- Hero Section --- */}
+      {view === 'home' ? (
+        <main className="flex-grow">
+          {/* --- Hero Section --- */}
         <section className="relative overflow-hidden pt-12 pb-20 md:pt-24 md:pb-32 px-6 md:px-20 bg-gradient-to-b from-bg-warm to-bg-cream">
           <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -734,7 +942,10 @@ export default function App() {
             </div>
           </div>
         </section>
-      </main>
+        </main>
+      ) : (
+        <LegalPage type={view} onClose={() => setView('home')} />
+      )}
 
       {/* --- Footer --- */}
       <footer className="bg-text-dark text-white pt-20 pb-10 px-6 md:px-20">
@@ -769,10 +980,10 @@ export default function App() {
             <div>
               <h4 className="text-lg font-serif mb-6">Rechtliches</h4>
               <ul className="space-y-4 text-sm text-text-light">
-                <li><a href="#" className="hover:text-white transition-colors">Impressum</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Datenschutz</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cookie-Einstellungen</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Kontakt</a></li>
+                <li><button onClick={() => setView('impressum')} className="hover:text-white transition-colors">Impressum</button></li>
+                <li><button onClick={() => setView('datenschutz')} className="hover:text-white transition-colors">Datenschutz</button></li>
+                <li><button onClick={() => { localStorage.removeItem('cookie-consent'); window.location.reload(); }} className="hover:text-white transition-colors">Cookie-Einstellungen</button></li>
+                <li><a href="mailto:info@milchpumpe-vergleich.de" className="hover:text-white transition-colors">Kontakt</a></li>
               </ul>
             </div>
           </div>
