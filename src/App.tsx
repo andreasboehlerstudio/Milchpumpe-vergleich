@@ -44,6 +44,7 @@ interface Product {
   features: string[];
   amazonUrl: string;
   emoji: string;
+  imageUrl?: string;
   badge?: string;
   specs: {
     handsFree: boolean;
@@ -57,7 +58,8 @@ interface Product {
 /// --- Data ---
 const AFFILIATE_TAG = 'andyboeh-21';
 const CURRENT_YEAR = new Date().getFullYear();
-const GTM_ID = 'GTM-MMXGDLK9';
+const GTM_ID = import.meta.env.VITE_GTM_ID || 'GTM-MMXGDLK9';
+const GA_ID = import.meta.env.VITE_GA_ID || 'G-4MTYQGF7VK';
 
 // --- GTM Loader ---
 const loadGTM = () => {
@@ -70,6 +72,35 @@ const loadGTM = () => {
     j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     f.parentNode.insertBefore(j,f);
   })(window, document, 'script', 'dataLayer', GTM_ID);
+};
+
+// --- Google Analytics Loader ---
+const loadGA = () => {
+  if (typeof window === 'undefined' || (window as any).gaLoaded) return;
+  (window as any).gaLoaded = true;
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(script);
+
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  (window as any).gtag = function() {
+    (window as any).dataLayer.push(arguments);
+  };
+  (window as any).gtag('js', new Date());
+  (window as any).gtag('config', GA_ID);
+};
+
+// --- Tracking Helpers ---
+const trackAmazonClick = (productName: string) => {
+  if ((window as any).gtag) {
+    (window as any).gtag('event', 'amazon_click', {
+      'product_name': productName,
+      'event_category': 'affiliate',
+      'event_label': productName
+    });
+  }
 };
 
 const PRODUCTS: Product[] = [
@@ -89,6 +120,7 @@ const PRODUCTS: Product[] = [
     features: ['App-Steuerung', '3 Modi', '9 Saugstufen', 'USB-C'],
     amazonUrl: `https://www.amazon.de/s?k=Momcozy+M9+Milchpumpe&tag=${AFFILIATE_TAG}`,
     emoji: '🤱',
+    imageUrl: 'https://m.media-amazon.com/images/I/71X-XXXXXXX.jpg', // Beispiel-URL
     badge: 'BESTSELLER',
     specs: {
       handsFree: true,
@@ -336,26 +368,25 @@ const LegalPage = ({ type, onClose }: { type: 'impressum' | 'datenschutz', onClo
               <section>
                 <h2 className="text-xl font-bold text-text-dark mb-4">Angaben gemäß § 5 TMG</h2>
                 <p>
-                  [Dein Name / Firmenname]<br />
-                  [Straße Hausnummer]<br />
-                  [PLZ Ort]
+                  Andreas Böhler<br />
+                  Am Mühlbach 14<br />
+                  79114 Freiburg
                 </p>
               </section>
 
               <section>
                 <h2 className="text-xl font-bold text-text-dark mb-4">Kontakt</h2>
                 <p>
-                  Telefon: [Deine Telefonnummer]<br />
-                  E-Mail: [Deine E-Mail-Adresse]
+                  E-Mail: admin@andreasboehler.com
                 </p>
               </section>
 
               <section>
                 <h2 className="text-xl font-bold text-text-dark mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
                 <p>
-                  [Dein Name]<br />
-                  [Straße Hausnummer]<br />
-                  [PLZ Ort]
+                  Andreas Böhler<br />
+                  Am Mühlbach 14<br />
+                  79114 Freiburg
                 </p>
               </section>
 
@@ -519,6 +550,15 @@ export default function App() {
     if (consent === 'accepted') {
       setCookiesAccepted(true);
       loadGTM();
+      loadGA();
+      
+      // Track page view on view change if GA is already loaded
+      if ((window as any).gtag) {
+        (window as any).gtag('config', GA_ID, {
+          page_path: view === 'home' ? '/' : `/${view}`,
+          page_title: document.title
+        });
+      }
     }
 
     if (view !== 'home') {
@@ -551,7 +591,8 @@ export default function App() {
   const handleCookieAccept = () => {
     setCookiesAccepted(true);
     loadGTM();
-    console.log('Marketing-Cookies akzeptiert & GTM geladen');
+    loadGA();
+    console.log('Marketing-Cookies akzeptiert, GTM & GA geladen');
   };
 
   // SEO: Structured Data (JSON-LD)
@@ -775,9 +816,18 @@ export default function App() {
                     <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl bg-bg-cream flex items-center justify-center text-3xl font-serif font-bold text-primary border border-primary/10">
                       #{product.rank}
                     </div>
-                    <div className="relative w-32 h-32 lg:w-full aspect-square bg-gradient-to-br from-bg-warm to-white rounded-3xl flex items-center justify-center text-6xl border border-primary/5 group-hover:scale-105 transition-transform duration-500 shadow-inner">
+                    <div className="relative w-32 h-32 lg:w-full aspect-square bg-gradient-to-br from-bg-warm to-white rounded-3xl flex items-center justify-center border border-primary/5 group-hover:scale-105 transition-transform duration-500 shadow-inner overflow-hidden">
                       <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-                      <span className="relative z-10 drop-shadow-md">{product.emoji}</span>
+                      {product.imageUrl ? (
+                        <img 
+                          src={product.imageUrl} 
+                          alt={`${product.brand} ${product.name}`}
+                          className="relative z-10 w-full h-full object-contain p-4 drop-shadow-md"
+                          referrerPolicy="no-referrer"
+                        />
+                      ) : (
+                        <span className="relative z-10 text-6xl drop-shadow-md">{product.emoji}</span>
+                      )}
                     </div>
                   </div>
 
@@ -851,6 +901,7 @@ export default function App() {
                         target="_blank"
                         rel="noopener sponsored"
                         title={`${product.brand} ${product.name} auf Amazon ansehen`}
+                        onClick={() => trackAmazonClick(`${product.brand} ${product.name}`)}
                         className="flex items-center justify-center gap-2 w-full py-4 bg-[#FF9900] text-white rounded-2xl font-bold hover:bg-[#E68A00] transition-all shadow-lg shadow-orange-500/10"
                       >
                         Bei Amazon prüfen <ExternalLink size={16} />
@@ -947,7 +998,16 @@ export default function App() {
                       <tr key={p.id} className={`hover:bg-primary/5 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-bg-cream/30'}`}>
                         <td className="p-6 font-bold text-text-dark">
                           <div className="flex items-center gap-3">
-                            <span className="text-xl">{p.emoji}</span>
+                            {p.imageUrl ? (
+                              <img 
+                                src={p.imageUrl} 
+                                alt={p.name} 
+                                className="w-10 h-10 object-contain rounded-lg bg-white border border-primary/5 p-1"
+                                referrerPolicy="no-referrer"
+                              />
+                            ) : (
+                              <span className="text-xl">{p.emoji}</span>
+                            )}
                             <div>
                               <div className="text-[10px] text-secondary uppercase tracking-tighter">{p.brand}</div>
                               {p.name}
@@ -972,6 +1032,7 @@ export default function App() {
                             target="_blank" 
                             rel="noopener sponsored" 
                             title={`${p.brand} ${p.name} Preis auf Amazon prüfen`}
+                            onClick={() => trackAmazonClick(`${p.brand} ${p.name}`)}
                             className="text-primary hover:text-secondary transition-colors"
                           >
                             <ExternalLink size={18} className="mx-auto" />
