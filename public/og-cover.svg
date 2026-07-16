@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Milchpumpe-Vergleich.de</title>
+  <desc id="desc">Orientierung statt Werbeversprechen</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fbf8f4"/><stop offset="1" stop-color="#e7bcae"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="315" r="220" fill="none" stroke="#713d30" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="930" cy="315" r="145" fill="#fff" fill-opacity=".65" stroke="#fff" stroke-width="2"/>
+  <path d="M930 213c-60 45-80 97-80 143 0 46 36 80 80 80s80-34 80-80c0-46-20-98-80-143z" fill="#713d30" fill-opacity=".9"/>
+  <rect x="72" y="72" width="64" height="64" rx="17" fill="#713d30"/>
+  <text x="104" y="118" text-anchor="middle" font-family="Georgia,serif" font-size="40" font-weight="700" fill="#fff">M</text>
+  <text x="72" y="245" font-family="Georgia,serif" font-size="74" font-weight="700" fill="#292321">Milchpumpen</text>
+  <text x="72" y="325" font-family="Georgia,serif" font-size="74" font-weight="700" fill="#292321">transparent vergleichen</text>
+  <text x="72" y="395" font-family="Arial,sans-serif" font-size="27" fill="#615752">Quellenbasiert · ohne erfundene Testnoten</text>
+  <text x="72" y="535" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#713d30">milchpumpe-vergleich.de</text>
+</svg>

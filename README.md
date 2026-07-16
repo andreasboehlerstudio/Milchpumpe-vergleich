@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Milchpumpe-Vergleich.de
 
-# Run and deploy your AI Studio app
+Statisch vorgerenderte React-/Vite-Website für einen transparenten Milchpumpen-Vergleich.
 
-This contains everything you need to run your app locally.
+## Entwicklung
 
-View your app in AI Studio: https://ai.studio/apps/a819e2c8-434b-427e-8712-c536b8e1f1b4
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+## Qualitätsprüfung
 
-**Prerequisites:**  Node.js
+```bash
+npm run lint
+npm run build
+npm run preview
+```
 
+Der Build erzeugt für alle redaktionellen Seiten eigene HTML-Dateien, Metadaten, strukturierte Daten und die Sitemap im Ordner `dist`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Analytics
+
+Google Analytics wird ausschließlich nach Einwilligung über die feste Mess-ID `G-4MTYQGF7VK` geladen. Es wird kein Google Tag Manager eingesetzt.
+
+## Deployment
+
+Der Workflow `.github/workflows/pages.yml` baut `dist` und veröffentlicht das Ergebnis über GitHub Pages. In den Repository-Einstellungen muss unter **Pages → Build and deployment → Source** die Option **GitHub Actions** gewählt sein.
