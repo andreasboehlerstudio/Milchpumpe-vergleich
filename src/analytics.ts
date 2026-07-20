@@ -39,13 +39,16 @@ export function loadAnalytics() {
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
-  window.gtag = (...args: unknown[]) => window.dataLayer?.push(args);
+  window.gtag = function gtag(..._args: unknown[]) {
+    window.dataLayer?.push(arguments);
+  };
   window.gtag('js', new Date());
   window.gtag('config', GA_ID, {
     anonymize_ip: true,
     allow_google_signals: false,
     allow_ad_personalization_signals: false,
     cookie_expires: 15_552_000,
+    send_page_view: true,
   });
 }
 

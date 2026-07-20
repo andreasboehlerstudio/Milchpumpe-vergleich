@@ -44,6 +44,14 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 20. Juli 2026 – Google-Analytics-Datenübertragung
+
+#### Behoben
+
+- Die `gtag()`-Initialisierung auf Googles offizielle `dataLayer.push(arguments)`-Implementierung umgestellt.
+- Automatischen GA4-Seitenaufruf nach erteilter Analytics-Einwilligung explizit aktiviert.
+- Weiterhin ausschließlich die Mess-ID `G-4MTYQGF7VK` verwendet; keine doppelte Analytics-Einbindung ergänzt.
+
 ### 16. Juli 2026 – Nachvollziehbare Veröffentlichungen
 
 #### Hinzugefügt
