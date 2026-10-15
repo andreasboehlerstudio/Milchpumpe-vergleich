@@ -1,0 +1,28 @@
+{
+  "release": "Article imagery and reading-flow enrichment",
+  "approvedDesignPreserved": "Warm editorial v15; homepage template, research registry, dated offers and commercial destinations unchanged.",
+  "articleRoutes": 35,
+  "additionalInlineImagePlacements": 70,
+  "newOriginalVectorScenes": 8,
+  "newDocumentaryPhotos": 3,
+  "photoPlacements": 9,
+  "responsivePhotoFiles": 6,
+  "maxPhotoVariantBytes": 68618,
+  "photoRights": "docs/article-photo-rights.json; public/article-photos/LICENCES.json",
+  "originalSceneProvenance": "docs/article-scenes-originals.json",
+  "unitAndProductionTests": {"passed": 258, "failed": 0, "skipped": 0},
+  "typecheck": "passed",
+  "releaseIdentityRegressionTests": {"passed": 3, "failed": 0},
+  "renderedBrowserAudit": {
+    "origin": "http://127.0.0.1:3031",
+    "sitemapRoutes": 50,
+    "actualDocumentClientWidths": [320, 390, 768, 1440],
+    "routeViewportChecks": 200,
+    "articleViewportChecks": 140,
+    "issues": [],
+    "method": "Same-origin rendered iframe per sitemap route and width; classic-scrollbar allowance adjusted to requested measured document clientWidth. Local fonts loaded and lazy images explicitly requested with bounded decode waits. Checked page overflow, visible text clipping, image decoding, two inline figures per article and reading shortcut targets. Bounded horizontal table regions and intentional screen-reader clipping excluded from offscreen-element checks."
+  },
+  "visualReview": "Original eight-scene contact sheet plus actual desktop photo and article diagram rendering reviewed. Separate real mobile emulation checked at 390px.",
+  "status": "Locally verified; remote publication verified separately after merge.",
+  "limits": "Photos are attributed archival topic images, not current exact-model product photography or hands-on evidence. No new medical claims, ratings, stock checks, rankings, commissions or indexing results inferred."
+}
