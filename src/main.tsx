@@ -8,6 +8,8 @@ import './methodology-v4.css';
 import './wearable-market.css';
 import './home-editorial.css';
 import './site-editorial.css';
+import './magazine-upgrade.css';
+import './newsletter.css';
 
 const container = document.getElementById('root');
 

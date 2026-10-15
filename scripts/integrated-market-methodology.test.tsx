@@ -33,14 +33,14 @@ test('German market route exposes all researched identities without replacing th
   }
   assert.equal([...standalone.matchAll(/data-market-model="/g)].length, 40);
   const comparison = render('/vergleich/');
-  assert.ok(comparison.includes('Sechs Milchpumpen im direkten Vergleich'));
+  assert.ok(comparison.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').includes('Was unterscheidet deine Auswahl?'));
   for (const product of PRODUCTS) assert.ok(comparison.includes(`/produkte/${product.id}/`));
 });
 
 test('new scoped styles load after every legacy stylesheet', () => {
   const entry = readFileSync('src/main.tsx', 'utf8');
   const imports = [...entry.matchAll(/import ['"]([^'"]+\.css)['"]/g)].map(match => match[1]);
-  assert.deepEqual(imports.slice(-4), ['./methodology-v4.css', './wearable-market.css', './home-editorial.css', './site-editorial.css']);
+  assert.deepEqual(imports.slice(-6), ['./methodology-v4.css', './wearable-market.css', './home-editorial.css', './site-editorial.css', './magazine-upgrade.css', './newsletter.css']);
   for (const old of ['./index.css', './editorial.css', './visual-editorial.css']) {
     assert.ok(imports.indexOf(old) >= 0 && imports.indexOf(old) < imports.indexOf('./methodology-v4.css'));
   }
@@ -55,8 +55,8 @@ test('market is discoverable from header, footer, home and the scoped comparison
   for (const [place, html] of [['footer', footer], ['home', main(home)], ['comparison', main(render('/vergleich/'))]]) {
     assert.ok(html.includes('href="/tragbare-milchpumpen/"'), `Market link missing in ${place}`);
   }
-  assert.ok(main(render('/vergleich/')).includes('manuelle Silikonpumpe'));
-  assert.ok(main(render('/vergleich/')).includes('nicht den gesamten Markt'));
+  assert.match(main(render('/vergleich/')), /Silikonpumpe ist eine manuelle Ergänzung/);
+  assert.ok(main(render('/vergleich/')).includes('40 recherchierte elektrische Wearables'));
 });
 
 test('best wearable answer leads to conditional recommendations, evidence and a no-purchase path', () => {

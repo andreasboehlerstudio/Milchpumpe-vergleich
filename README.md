@@ -44,6 +44,15 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 15. Oktober 2026 – Magazin, Direktvergleich und PDF-Kaufcheck
+
+- Ratgeber-Einstieg als Magazin mit drei Alltagsthemen, Fotostorys, Suche und Themenfilter ausgebaut; alle 35 Artikel bleiben bereits ohne JavaScript crawlbar.
+- Zwei auswählbare Detailmodelle gegenübergestellt, Tauschen/Zurücksetzen und Hervorhebung der Unterschiede ergänzt. Fünf elektrische Pumpen und manuelle Haakaa bleiben klar vom 40-Modell-Marktüberblick getrennt; entsprechende Faktenzeilen sind auf Desktop gemeinsam ausgerichtet.
+- Lizenzierte Einstiegsfotos als kleinere WebP-Varianten, lokale Schrift vorab und vorhandene Titelbilder der Grundlagenartikel priorisiert geladen. Der freigegebene Homepage-Aufbau bleibt bestehen.
+- Ratgeber-CollectionPage mit vollständiger Artikelliste ergänzt und sichtbare Rechercheangaben, Schema, Social-Metadaten und Sitemap auf explizite Datensätze abgestimmt. Unbekannte ursprüngliche Veröffentlichungsdaten werden nicht ergänzt.
+- Achtseitigen ausfüllbaren PDF-Kaufcheck mit reproduzierbaren Quellen und Tests produziert. PDF und Kontobelege bleiben außerhalb des öffentlichen Website-Builds.
+- Newsletter-Komponente technisch angebunden, aber bis zum tatsächlichen DOI-/PDF-/Abmeldenachweis vollständig deaktiviert. Kein Formularziel und keine Zustellung werden vorgetäuscht.
+
 ### 15. Oktober 2026 – Bilder und Leseführung in den Artikeln
 
 - Alle 35 Ratgeber mit zwei zusätzlichen, thematisch zugeordneten Abbildungen direkt im Lesefluss ergänzt; bestehende Titelmotive und Quellen bleiben erhalten.

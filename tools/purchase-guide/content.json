@@ -1,0 +1,111 @@
+{
+  "title": "Dein Milchpumpen-Kaufcheck",
+  "subtitle": ["Erst deinen Alltag klären.", "Dann das passende Set wählen."],
+  "author": "Milchpumpe-Vergleich.de",
+  "edition": "Ausgabe 01 · Oktober 2026",
+  "verified_date": "15.10.2026",
+  "sources": [
+    {"id": 1, "label": "Momcozy · M9 Mobile Flow", "scope": "Beispiel für Motor und Auffangsystem am Körper; kein Modellurteil.", "url": "https://momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump"},
+    {"id": 2, "label": "Medela · Freestyle Hands-free", "scope": "Separate Motoreinheit, zwei Cups und Verbindungen. Die US-Seite belegt die Bauart, nicht den deutschen Händlerlieferumfang.", "url": "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-breast-pump?productId=4072"},
+    {"id": 3, "label": "Medela · Room to Move", "scope": "Messung als Ausgangspunkt; Sitz und Komfort während der Anwendung prüfen.", "url": "https://www.medela.com/en/breastfeeding-pumping/articles/pumping-tips/a-step-by-step-guide-to-breast-shield-sizes"},
+    {"id": 4, "label": "Elvie · Perfecting Size and Fit", "scope": "Modellbezogene Zuordnung: Pump / Stride und Stride 2 unterscheiden.", "url": "https://elvie.com/pages/perfecting-size-and-fit"},
+    {"id": 5, "label": "Elvie · Reinigung vor erster Nutzung", "scope": "Waschbare Teile und Elektronik getrennt behandeln; vor dem Zusammenbau vollständig trocknen.", "url": "https://support.elvie.com/elvie-pump/getting-started"}
+  ],
+  "articles": [
+    {"label": "Bauarten & Hands-free", "slug": "hands-free-milchpumpe-kaufen"},
+    {"label": "Einzel- oder Doppelset", "slug": "milchpumpe-einzel-oder-doppelpumpe"},
+    {"label": "Zubehör ohne unnötige Extras", "slug": "milchpumpe-zubehoer-checkliste"},
+    {"label": "Reinigung der Freestyle-Cups", "slug": "medela-freestyle-hands-free-drei-teile-reinigung"}
+  ],
+  "cover": {
+    "intro": "Du brauchst keine längere Wunschliste. Du brauchst Klarheit darüber, was zu deinem Alltag passt – und was im gewählten Angebot wirklich enthalten ist.",
+    "sections": [["02", "Dein Alltag"], ["03–04", "Bauart & Set"], ["05–06", "Passform & Pflege"], ["07", "Dein Kaufzettel"]],
+    "use": "Am Bildschirm ausfüllen oder ausdrucken. Kästchen auf Papier abhaken; Textfelder lassen sich in einem geeigneten PDF-Reader ausfüllen und speichern.",
+    "note": "Eine Auswahlhilfe, keine medizinische Beratung. Bei Schmerzen oder anhaltenden Problemen mit Hebamme, qualifizierter Stillberatung oder ärztlich abklären. Du musst heute nichts kaufen."
+  },
+  "everyday": {
+    "heading": "Was soll in deinen Alltag passen?",
+    "intro": "Kreuze an, was du schon weißt. Offen ist eine gute Antwort: Unklarer Bedarf ist noch kein Grund für ein größeres Set.",
+    "groups": [
+      {"title": "01 / Dein Einsatz", "checks": ["Gelegentlich bei Abwesenheit", "Regelmäßig im Alltag oder Beruf", "Noch offen – zuerst beraten lassen"]},
+      {"title": "02 / Dein Ort", "checks": ["Meist zu Hause", "Auch an einem anderen festen Ort", "Unterwegs mit wechselnden Bedingungen"]},
+      {"title": "03 / Was du mitbringst", "checks": ["Pumpe oder kompatible Teile vorhanden", "Leihen oder vorhandenes Set prüfen", "Neuanschaffung erst nach Klärung"]}
+    ],
+    "sidebar_title": "Nicht nur Pumpzeit planen.",
+    "sidebar": "Anlegen, Umfüllen, Reinigen, Trocknen und Packen gehören dazu. Eine Pumpe kann Hände freilassen; sie erledigt diese Schritte nicht für dich.",
+    "prompts": ["Mein häufigster Einsatzort", "Das muss dort möglich sein", "Meine zwei wichtigsten Anforderungen"]
+  },
+  "architecture": {
+    "heading": "Wo sitzt der Motor?",
+    "intro": "Hands-free heißt freie Hände. Es sagt noch nicht, welche Teile du am Körper trägst oder wohin der Motor gehört.",
+    "types": [
+      {"title": "Motor direkt am Cup", "tag": "INTEGRIERT", "body": "Motor und Auffangsystem sitzen zusammen im BH. Ein Beispiel ist die Momcozy M9. [1]", "check": "Prüfen: Platz im BH, Gewicht am Körper, Bedienung und Laden jeder Einheit."},
+      {"title": "Cups + externer Motor", "tag": "VERBUNDEN", "body": "Im BH sitzen die Cups; Schläuche führen zu einer separaten Motoreinheit. Beispiel: Medela Freestyle Hands-free. [2]", "check": "Prüfen: Platz für Motor, Schlauchführung und alle nötigen Verbindungen."},
+      {"title": "Handpumpe", "tag": "MANUELL", "body": "Du betätigst die Pumpe selbst. Ein Motor oder Ladegerät ist dafür nicht nötig; eine Hand bleibt beschäftigt.", "check": "Prüfen: Handhabung, passender Aufsatz und ob dieser Ablauf zu dir passt."}
+    ],
+    "bottom": "Keine Bauart ist automatisch die richtige. Entscheidend ist dein Ablauf – nicht das längste Datenblatt. Klassische elektrische Sets mit Flaschen sind eine weitere Möglichkeit; diese Übersicht zeigt drei häufige Auswahlwege."
+  },
+  "sets": {
+    "heading": "Zähle Systeme, nicht Produktfotos.",
+    "intro": "Single / Einzel und Double / Doppel beschreiben, wie viele Seiten das vollständige System gleichzeitig bedienen kann. Hands-free ist eine andere Eigenschaft.",
+    "rows": [
+      ["Integrierte Pumpe", "1 vollständige Einheit mit Motor und Cup", "2 vollständige Einheiten, je mit Motor und Cup"],
+      ["Externer Motor", "1 geeigneter Motor + 1 vollständiger Pumpweg", "1 dafür ausgelegter Motor + 2 vollständige Pumpwege"],
+      ["Was ist ein Pumpweg?", "Passender Aufsatz / Cup mit benötigten Teilen und Verbindung zum Motor.", "Alle Teile für beide Seiten; die Anleitung muss den Doppelbetrieb vorsehen."]
+    ],
+    "trap_title": "Ein Ersatzcup ist keine zweite Pumpe.",
+    "trap": "Zwei Schalen auf dem Bild können Zubehör sein. Ein Cup ohne benötigten Motor, Membran oder Verbindung ist kein vollständiges System. Bei externen Systemen sind zwei Motoren für ein Doppelset nicht zwingend nötig.",
+    "checks": ["Genaue gewählte Variante statt nur Produktname notiert", "Motoren, vollständige Cups und Verbindungen gezählt", "Einzel- / Doppelbetrieb in der Anleitung bestätigt"],
+    "bottom": "Gleichzeitig an beiden Seiten heißt nicht: Der gesamte Ablauf dauert garantiert nur halb so lang. Vorbereitung, Umfüllen und Pflege bleiben Teil deiner Planung."
+  },
+  "fit": {
+    "heading": "Passform ist mehr als eine Zahl.",
+    "intro": "Größen sind modellbezogen. Ein gleicher Millimeterwert macht Einsätze, Brusthauben oder Cups nicht automatisch austauschbar.",
+    "steps": [
+      ["01", "Anleitung zuerst", "Wähle die Größenhilfe für dein genaues Modell und seine Generation. Miss beide Seiten nach dieser Anleitung; übertrage keine pauschale Millimeter-Zugabe von einer anderen Marke."],
+      ["02", "Zuordnung festhalten", "Notiere die empfohlene Brusthaube und gegebenenfalls den dazugehörigen Einsatz. Prüfe, ob diese Kombination im Set enthalten oder separat nötig ist."],
+      ["03", "Sitz prüfen, nicht erzwingen", "Medela behandelt die Messung als Ausgangspunkt und bezieht den Sitz während der Anwendung ein. [3] Bei Schmerzen nicht weiterprobieren, sondern qualifizierte Unterstützung holen."]
+    ],
+    "examples": [
+      ["Medela", "Die passende Größenhilfe und Kompatibilitätsangabe für Hands-free-Cups oder das jeweilige andere Brusthaubensystem verwenden. Nicht allein nach der Marke bestellen. [3]"],
+      ["Elvie", "Pump / Stride und Stride 2 haben unterschiedliche Zuordnungen. Elvie trennt Nipple Cushions von den Einsätzen für Stride 2. Die Tabellen und Teile nicht mischen. [4]"]
+    ],
+    "bottom": "Diese Felder halten deine Recherche fest; sie sind keine Größenberechnung oder Diagnose. Persönliche Notizen bleiben in deiner lokalen PDF-Kopie."
+  },
+  "routine": {
+    "heading": "Der Weg nach dem Pumpen.",
+    "intro": "Wenige Einzelteile sind angenehm. Entscheidend ist, ob du den vollständigen Pflege- und Transportweg an deinem Einsatzort organisieren kannst.",
+    "steps": [
+      ["ZERLEGEN", "Nach Teileanleitung", "Milchberührende Teile wie vorgesehen abnehmen. Für Motor, Schläuche und Elektronik gelten eigene Hinweise; nicht pauschal mitwaschen."],
+      ["REINIGEN", "Verfahren prüfen", "Waschen und gegebenenfalls Desinfizieren sind verschiedene Schritte. Nur freigegebene Verfahren anwenden; Vorgaben für dein Modell beachten."],
+      ["TROCKNEN", "Platz einplanen", "Vor dem Zusammenbau vollständig trocknen lassen. Ein Trockengestell ersetzt weder Reinigung noch Desinfektion. [5]"],
+      ["PACKEN", "Sauber getrennt", "Trockene saubere Teile und gebrauchte Teile getrennt transportieren. Geeignete Milchbehälter sowie Kühlung und Transport vorab klären."]
+    ],
+    "checks": ["Reinigungsmöglichkeit und sauberer Trockenplatz", "Getrennte Behälter für saubere / gebrauchte Teile", "Strom oder Ladekonzept am Einsatzort", "Umfüllen, Aufbewahrung und Kühlweg geklärt"],
+    "note": "Keine pauschalen Lagerfristen: Für Milchaufbewahrung und besondere Hygienesituationen aktuelle Fachhinweise und die Anleitung nutzen. Bei Frühgeburt oder Erkrankung gelten gegebenenfalls individuelle fachliche Vorgaben."
+  },
+  "shopping": {
+    "heading": "Dein persönlicher Kaufzettel.",
+    "intro": "Übertrage nur, was geklärt ist. Ein offenes Feld ist eine Rückfrage – kein fehlendes Extra, das du vorsorglich bestellen musst.",
+    "fields": [
+      ["model", "Marke, Modell und Generation"],
+      ["supplier", "Anbieter / Shop und Angebotsdatum"],
+      ["variant", "Exakte Setvariante / Artikelnummer"],
+      ["configuration", "Motoren / vollständige Cups / Verbindungen"],
+      ["fit_left", "Brusthaube / Einsatz links"],
+      ["fit_right", "Brusthaube / Einsatz rechts"],
+      ["included", "Im Set enthalten"],
+      ["missing", "Wirklich zusätzlich nötig"],
+      ["cost", "Setpreis + nötige Extras + Versand"],
+      ["spares", "Ersatzteilnummern / Verfügbarkeit"],
+      ["open", "Offene Frage an Anbieter oder Beratung"]
+    ],
+    "checks": ["Lieferumfang und Modellzuordnung schriftlich geprüft", "Ladekabel, Netzteil und Bedienung geprüft", "Rückgabe / Hygieneversiegelung vor dem Öffnen geklärt", "Gewährleistung, Garantie und Supportweg geprüft"],
+    "decisions": ["Passt zu meinem Bedarf", "Erst offene Fragen klären", "Vorhandenes / Leihen reicht vorerst"]
+  },
+  "closing": {
+    "heading": "Zum Nachlesen. Nicht zum Nachkaufen.",
+    "intro": "Die Quellen belegen Bauart und Herstellerhinweise. Sie sind keine eigenen Produkttests. Preise, Setinhalte, regionale Angebote und Anleitungen können sich ändern.",
+    "note": "Redaktion & Gestaltung: Milchpumpe-Vergleich.de. Originale schematische Vektorgrafiken; keine maßstabsgetreuen Produktabbildungen. Schrift: Manrope, SIL Open Font License. Persönlicher Ausdruck und lokale Notizen sind möglich."
+  }
+}

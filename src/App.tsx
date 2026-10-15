@@ -1,6 +1,8 @@
 import { Layout } from './components';
 import { PRODUCTS } from './data';
-import { AboutPage, ComparisonPage, GuideArticlePage, GuideIndexPage, ImpressumPage, MethodologyPage, NotFoundPage, PrivacyPage, ProductPage, WearableMarketPage } from './pages';
+import { AboutPage, GuideArticlePage, ImpressumPage, MethodologyPage, NotFoundPage, PrivacyPage, ProductPage, WearableMarketPage } from './pages';
+import { MagazineGuideHub, VisualComparisonPage } from './magazine-upgrade';
+import { NewsletterSignup } from './newsletter';
 import { EditorialHomePage } from './home-editorial';
 import { normalizePath } from './seo';
 import { CatalogueIndexPage } from './catalogue-page';
@@ -10,10 +12,10 @@ export default function App({ initialPath = '/' }: { initialPath?: string }) {
   let page;
 
   if (path === '/') page = <EditorialHomePage />;
-  else if (path === '/vergleich/') page = <ComparisonPage />;
+  else if (path === '/vergleich/') page = <VisualComparisonPage footerSlot={<NewsletterSignup />} />;
   else if (path === '/tragbare-milchpumpen/') page = <WearableMarketPage />;
   else if (path === '/produkte/') page = <CatalogueIndexPage />;
-  else if (path === '/ratgeber/') page = <GuideIndexPage />;
+  else if (path === '/ratgeber/') page = <MagazineGuideHub footerSlot={<NewsletterSignup />} />;
   else if (path === '/testmethodik/') page = <MethodologyPage />;
   else if (path === '/ueber-uns/') page = <AboutPage />;
   else if (path === '/impressum/') page = <ImpressumPage />;

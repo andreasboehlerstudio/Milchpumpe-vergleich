@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "source": "/editorial-photos/nursery.jpg",
+      "sourceSha256": "665afe83b450618d7d11e86f66e3731a949ccc3e31c2280a3bdced50ab5396ea",
+      "rightsEvidence": "docs/editorial-v4-photo-rights.json",
+      "width": 1600,
+      "height": 1067,
+      "modification": "Resized where applicable, converted to WebP quality 80, metadata removed. No change of scene, crop, model or credit.",
+      "derivatives": [
+        {
+          "src": "/editorial-photos/nursery-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25818,
+          "sha256": "2a6254a8312d45b894282ad111b76d9adfe67677bc493439da2893f0d4f73b9f"
+        },
+        {
+          "src": "/editorial-photos/nursery-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 76224,
+          "sha256": "22d39df63a9eae93791967df078b91d79af9dd13ff71e140f79c1e898735c27b"
+        },
+        {
+          "src": "/editorial-photos/nursery-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 184210,
+          "sha256": "430df1b6a465f1b6d93ebd4a8bdf7a565d640e2924e05eb077c93b2ad246b09e"
+        }
+      ]
+    },
+    {
+      "source": "/editorial-photos/pump-parts.jpg",
+      "sourceSha256": "eff88060ed4706f95d23a388f5c9af9c8f2a6ea883e2dc0fb9391a1b39b85061",
+      "rightsEvidence": "docs/editorial-pump-parts-photo-rights.json",
+      "width": 1350,
+      "height": 1800,
+      "modification": "Resized where applicable, converted to WebP quality 80, metadata removed. No change of scene, crop, model or credit.",
+      "derivatives": [
+        {
+          "src": "/editorial-photos/pump-parts-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 22908,
+          "sha256": "a0111643612bbe90e0e9ba990abf3a15b1f13b44261ff1e65c9da835c8a89bf0"
+        },
+        {
+          "src": "/editorial-photos/pump-parts-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 64580,
+          "sha256": "d09f7ddcd4000bda0bcd9ea4334684823c3514e7be452a00c657bb9ae4b4e441"
+        },
+        {
+          "src": "/editorial-photos/pump-parts-1350.webp",
+          "width": 1350,
+          "height": 1800,
+          "bytes": 113180,
+          "sha256": "df01670c2b26e47d3778b92ccf8c2bba5d0e3be56784df9ac249964b37626390"
+        }
+      ]
+    }
+  ]
+}

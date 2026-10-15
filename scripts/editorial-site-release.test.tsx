@@ -22,14 +22,14 @@ for (const route of ROUTES) {
   });
 }
 
-test('guide hub opens with licensed documentary photography and retains its decision board', () => {
+test('guide hub opens with licensed documentary photography and retains its pump finder', () => {
   const window = new Window();
   window.document.body.innerHTML = renderToStaticMarkup(<App initialPath="/ratgeber/" />);
-  const image = window.document.querySelector('.guide-hero-stage img');
+  const image = window.document.querySelector('.mu-story--lead img');
   assert.equal(image?.getAttribute('src'), '/editorial-photos/pump-parts.jpg');
   assert.equal(image?.getAttribute('loading'), 'eager');
-  assert.ok(window.document.querySelector('.guide-hero-stage a[href*="commons.wikimedia.org"]'));
-  assert.ok(window.document.querySelector('aside.decision-board'));
+  assert.ok(window.document.querySelector('.mu-story--lead a[href*="commons.wikimedia.org"]'));
+  assert.ok(window.document.querySelector('#pumpenfinder'));
 });
 
 test('inner editorial stylesheet is loaded last, scoped and uses light display typography', () => {

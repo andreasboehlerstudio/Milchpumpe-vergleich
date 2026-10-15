@@ -31,9 +31,10 @@ const STATIC_ROUTES: RouteSeo[] = [
   },
   {
     path: '/vergleich/',
-    title: 'Milchpumpen-Vergleich: Funktionen und Bauarten im Überblick',
-    description: 'Vergleiche sechs Milchpumpen nach App-Steuerung, Bauart, Energieversorgung und Reinigung. Mit Modellinfos, Herstellerquellen und Kaufhilfe.',
-    heading: 'Sechs Milchpumpen im direkten Vergleich',
+    title: '6 Milchpumpen im Vergleich: Bauarten und Funktionen',
+    description: 'Vergleiche sechs Milchpumpen: fünf elektrische Modelle und Haakaa separat. Zwei Modelle direkt gegenüberstellen – mit Setumfang, Reinigung und Quellen.',
+    heading: 'Was unterscheidet deine Auswahl?',
+    dateModified: '2026-10-15',
     changefreq: 'weekly',
     priority: 0.9,
   },
@@ -49,9 +50,9 @@ const STATIC_ROUTES: RouteSeo[] = [
   {
     path: '/ratgeber/',
     title: 'Milchpumpen-Ratgeber: Auswahl, Passform und Reinigung',
-    description: 'Verständliche Orientierung zu Pumpenarten, Flanschgröße, Reinigung und sicherem Umgang mit abgepumpter Muttermilch.',
-    heading: 'Milchpumpen-Ratgeber. Mehr Überblick.',
-    dateModified: '2026-10-14',
+    description: '35 Ratgeber zu Milchpumpen, Passform und Abpumpalltag: Modelle vergleichen, passende Teile verstehen sowie Reinigung, Aufbewahrung und Transport organisieren.',
+    heading: 'Weniger Sucherei. Mehr Alltag, der passt.',
+    dateModified: '2026-10-15',
     changefreq: 'monthly',
     priority: 0.8,
   },
@@ -113,7 +114,7 @@ const GUIDE_ROUTES: RouteSeo[] = GUIDE_ARTICLES.map((article) => ({
   title: GUIDE_SEARCH_TITLES[article.slug] || article.title,
   description: article.description,
   heading: article.title,
-  datePublished: article.published || REVIEW_DATE_ISO,
+  datePublished: article.published,
   dateModified: article.updated || REVIEW_DATE_ISO,
   image: article.image,
   changefreq: 'monthly',
@@ -190,9 +191,10 @@ export function getStructuredData(path: string) {
   const entityId = product ? `${SITE_URL}${normalized}#product`
     : isArticle ? `${SITE_URL}${normalized}#article`
     : normalized === '/tragbare-milchpumpen/' ? `${SITE_URL}${normalized}#modellverzeichnis`
+    : normalized === '/ratgeber/' ? `${SITE_URL}${normalized}#artikel`
     : ['/vergleich/', '/produkte/'].includes(normalized) ? `${SITE_URL}${normalized}#liste` : undefined;
   graph.push({
-    '@type': normalized === '/tragbare-milchpumpen/' ? 'CollectionPage' : 'WebPage',
+    '@type': ['/tragbare-milchpumpen/', '/ratgeber/'].includes(normalized) ? 'CollectionPage' : 'WebPage',
     '@id': `${SITE_URL}${normalized}#webpage`,
     name: route.heading,
     description: route.description,
@@ -227,6 +229,18 @@ export function getStructuredData(path: string) {
         url: `${SITE_URL}${normalized}#modell-${index + 1}`,
       })),
     });
+  } else if (normalized === '/ratgeber/') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${SITE_URL}${normalized}#artikel`,
+      name: 'Ratgeber zu Pumpenauswahl, Modellwissen und Abpumpalltag',
+      numberOfItems: GUIDE_ARTICLES.length,
+      itemListElement: GUIDE_ARTICLES.map((article, index) => ({
+        '@type': 'ListItem', position: index + 1,
+        name: article.title,
+        url: `${SITE_URL}/ratgeber/${article.slug}/`,
+      })),
+    });
   } else if (normalized === '/produkte/') {
     graph.push({
       '@type': 'ItemList', '@id': `${SITE_URL}${normalized}#liste`, name: 'Produktwegweiser für Abpumpen und Muttermilch-Alltag',
@@ -257,7 +271,7 @@ export function getStructuredData(path: string) {
       citation: citedSources?.map(source => source.url) || ['https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen'],
       about: milkProducts?.map(p=>({ '@type':'Product',name:`${p.brand} ${p.name}`,url:`${SITE_URL}${catalogueProductUrl(p)}` })) || guide?.productIds.map(id => { const p = PRODUCTS.find(product => product.id === id)!; return { '@type': 'Product', '@id': `${SITE_URL}${productUrl(p)}#product`, name: `${p.brand} ${p.name}` }; }),
       description: route.description,
-      datePublished: route.datePublished || REVIEW_DATE_ISO,
+      ...(route.datePublished ? { datePublished: route.datePublished } : {}),
       dateModified: route.dateModified || REVIEW_DATE_ISO,
       image: `${SITE_URL}${route.image || '/og-cover.png'}`,
       inLanguage: 'de-DE',
