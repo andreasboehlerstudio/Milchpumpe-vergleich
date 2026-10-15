@@ -4,7 +4,7 @@ import { GUIDE_SEARCH_TITLES } from './search-intents';
 import { PRODUCT_CATALOGUE } from './product-catalogue';
 import { MILK_GUIDES } from './milk-articles';
 import { catalogueProductUrl } from './catalogue';
-import marketData from './wearable-market-data.json';
+import { WEARABLE_MARKET as marketData } from './wearable-market';
 
 export type RouteSeo = {
   path: string;
@@ -23,7 +23,7 @@ const STATIC_ROUTES: RouteSeo[] = [
   {
     path: '/',
     title: 'Milchpumpen-Vergleich: Tragbare Modelle & Kaufhilfe',
-    description: 'Finde eine Milchpumpe für deinen Alltag: 35 recherchierte tragbare Modelle, Bauarten und Setumfang im Vergleich. Dazu Ratgeber zu Passform, Reinigung und Muttermilch.',
+    description: 'Finde eine Milchpumpe für deinen Alltag: 40 recherchierte tragbare Modelle, Bauarten und Setumfang im Vergleich. Dazu Ratgeber zu Passform, Reinigung und Muttermilch.',
     heading: 'Tragbare Milchpumpen. Für deinen Alltag.',
     dateModified: '2026-10-15',
     changefreq: 'weekly',
@@ -39,8 +39,8 @@ const STATIC_ROUTES: RouteSeo[] = [
   },
   {
     path: '/tragbare-milchpumpen/',
-    title: 'Tragbare Milchpumpen: 35 recherchierte Modelle und Kaufhilfe',
-    description: '35 recherchierte Wearable-Modelle und Hands-free-Systeme: Bauformen, Herstellerquellen und fallbezogene Kaufhilfe. Angebotsbeobachtungen vom 14.10.2026.',
+    title: 'Tragbare Milchpumpen: 40 recherchierte Modelle und Kaufhilfe',
+    description: '40 recherchierte Wearable-Modelle und Hands-free-Systeme: Bauformen, Herstellerquellen und fallbezogene Kaufhilfe. Angebotsbeobachtungen vom 15.10.2026.',
     heading: 'Tragbare Milchpumpen: Modelle und Kaufhilfe',
     dateModified: '2026-10-15',
     changefreq: 'monthly',

@@ -1,9 +1,22 @@
 import { useId, useState } from 'react';
 import marketData from './wearable-market-data.json';
+import additions from './wearable-market-additions.json';
+import offerUpdates from './wearable-market-offer-updates.json';
 import { CURRENT_BUYING_CASES, MARKET_SOURCE_UPDATED_ON, wearableMarketEvidence } from './wearable-market-evidence-overlay';
 
-export const WEARABLE_MARKET = marketData;
 export type WearableMarketModel = typeof marketData.models[number];
+const updates = offerUpdates as Record<string, { checkedAt: string; title: string; availabilityEvidence: string; offerConditionConfirmed: boolean }>;
+const currentModels: WearableMarketModel[] = [...marketData.models, ...additions.models].map(model => {
+  const update = updates[`${model.brand}|${model.canonicalModel}`];
+  return update ? ({ ...model, amazonObservation: { ...model.amazonObservation, ...update } } as WearableMarketModel) : model;
+}).sort((a, b) => `${a.brand} ${a.canonicalModel}`.localeCompare(`${b.brand} ${b.canonicalModel}`, 'de'));
+export const WEARABLE_MARKET = {
+  ...marketData,
+  models: currentModels,
+  sources: [...marketData.sources, ...additions.sources],
+  expandedAt: additions.generatedAt,
+  counts: { ...marketData.counts, modelRows: currentModels.length, distinctSourceModelIdentities: currentModels.length, brands: new Set(currentModels.map(model => model.brand)).size, amazonOfferObserved: currentModels.filter(model => model.amazonObservation.status === 'public-offer-observed').length, amazonNotFoundInResearch: currentModels.filter(model => model.amazonObservation.status !== 'public-offer-observed').length },
+};
 
 const mappingLabels: Record<string, string> = {
   'named-model-supported-in-research': 'Hersteller-Modell in der Recherche abgeglichen',
@@ -62,6 +75,7 @@ function BuyingCaseShortlists() {
           <p><strong>Die Abwägung: </strong>{entry.tradeOff}</p>
           <p><strong>Vor Bestellung: </strong>{entry.purchaseCheck}</p>
           {entry.sources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a> · <ObservationDate value={MARKET_SOURCE_UPDATED_ON} /></p>)}
+          {WEARABLE_MARKET.models.filter(model => model.brand === entry.modelRef.brand && model.canonicalModel === entry.modelRef.canonicalModel).map(model => <div className="wearable-market__actions" key={model.canonicalModel}><span>Werbung / Affiliate-Link · genaue Ausführung oben beschrieben</span><MarketPurchaseLink model={model} /></div>)}
           <aside aria-label={`Alternative zu ${entry.modelRef.brand} ${entry.modelRef.canonicalModel}`}>
             <h5>Auch ansehen, wenn … {entry.alternative.name}</h5>
             <p>{entry.alternative.note}</p>
@@ -91,8 +105,8 @@ export function WearableMarketOverview({ initialFilters = {} }: { initialFilters
   const brands = [...new Set(WEARABLE_MARKET.models.map(model => model.brand))].sort((a, b) => a.localeCompare(b, 'de'));
   return <section className="wearable-market" aria-labelledby={headingId}>
     <h2 id={headingId}>Weitere Wearable-Milchpumpen für Deinen Alltag</h2>
-    <p>35 recherchierte Modellidentitäten – keine vollständige Marktübersicht. Stand der Angebotsrecherche: 14. Oktober 2026; Quellenupdate vom 15. Oktober 2026 für die drei Einstiege, ihre Alternativen und fünf nachgeprüfte Modelle. Andere Quellen behalten ihren bisherigen Stand.</p>
-    <p>31 Modelle mit öffentlich beobachtetem Amazon.de-Angebot, 4 ohne verifiziertes Angebot in diesem Suchlauf. Das bedeutet nicht „ausverkauft“ und ist keine Zusage heutiger Lieferbarkeit. Prüfe Variante, Verkäufer und Lieferung für Deinen Ort erneut.</p>
+    <p>{WEARABLE_MARKET.models.length} recherchierte Modellidentitäten aus {WEARABLE_MARKET.counts.brands} Marken – keine vollständige Marktübersicht. Angebotsabgleich vom 15. Oktober 2026; die einzelnen Karten nennen ihren jeweiligen Beobachtungsstand. Farben und Sets werden nicht als zusätzliche Modelle gezählt.</p>
+    <p>{WEARABLE_MARKET.counts.amazonOfferObserved} Modelle mit öffentlich beobachtetem Amazon.de-Angebot, {WEARABLE_MARKET.counts.amazonNotFoundInResearch} ohne verifiziertes Angebot in diesem Suchlauf. Das bedeutet nicht „ausverkauft“ und ist keine Zusage heutiger Lieferbarkeit. Prüfe Variante, Verkäufer und Lieferung für Deinen Ort erneut.</p>
     <p>Bei integriertem Motor sitzt die Pumpe vollständig im BH. Bei Systemen mit externem Motor sitzen nur die Becher im BH; Motor und Schläuche gehören dazu. Die Einordnung folgt den dokumentierten Quellen, Deine Passform bleibt individuell.</p>
     <BuyingCaseShortlists />
     <h3>Alle recherchierten Modelle</h3>

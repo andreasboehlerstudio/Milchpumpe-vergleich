@@ -22,8 +22,8 @@ test('Kinderkraft exact manual updates the visible card and architecture filter'
   assert.doesNotMatch(markup, /Bauform offen|Anleitungsklärung|nicht ausdrücklich/);
   const filtered = filterWearableModels(WEARABLE_MARKET.models, { architecture: 'fully-in-bra-electric-wearable' });
   assert.ok(filtered.some(model => identity(model) === 'Kinderkraft|MAMAFLOW'));
-  assert.equal(filtered.length, 26);
-  assert.equal(filterWearableModels(WEARABLE_MARKET.models, { architecture: 'in-bra-cups-with-tubing-and-external-portable-motor' }).length, 9);
+  assert.equal(filtered.length, 30);
+  assert.equal(filterWearableModels(WEARABLE_MARKET.models, { architecture: 'in-bra-cups-with-tubing-and-external-portable-motor' }).length, 10);
   assert.equal(filterWearableModels(WEARABLE_MARKET.models, { architecture: 'unverified' }).length, 0);
 });
 
@@ -73,22 +73,22 @@ test('current buying cases use approved case order and named alternatives with s
   assert.doesNotMatch(cases.join(''), /180 ml|15.*30 Minuten|Testsieger|Reinigungssieger/);
   const evidence = JSON.parse(readFileSync(new URL('../docs/ranking-next-evidence.json', import.meta.url), 'utf8'));
   const knownUrls = new Set(evidence.sources.map((source: { url: string }) => source.url));
-  for (const [, href] of cases.join('').matchAll(/href="([^"]+)"/g)) assert.ok(knownUrls.has(href.replaceAll('&amp;', '&')), href);
-  assert.match(markup, /Angebotsrecherche: 14. Oktober 2026; Quellenupdate vom 15. Oktober 2026/);
-  assert.match(markup, /31 Modelle.*4 ohne verifiziertes Angebot/);
+  for (const [, href] of cases.join('').matchAll(/href="([^"]+)"/g)) { const url = href.replaceAll('&amp;', '&'); if (url.startsWith('https://www.amazon.de/')) assert.equal(new URL(url).searchParams.get('tag'), 'andreasboeh09-21'); else assert.ok(knownUrls.has(url), url); }
+  assert.match(markup, /Angebotsabgleich vom 15. Oktober 2026/);
+  assert.match(markup, /36 Modelle.*4 ohne verifiziertes Angebot/);
 });
 
-test('home SEO describes 35 researched identities and practical case help while preserving the six-model detail route', () => {
+test('home SEO describes 40 researched identities and practical case help while preserving the six-model detail route', () => {
   const home = getRouteSeo('/');
   assert.equal(home.heading, 'Tragbare Milchpumpen. Für deinen Alltag.');
   assert.match(home.title, /Milchpumpen-Vergleich.*Tragbare Modelle.*Kaufhilfe/);
-  assert.match(home.description, /35 recherchierte tragbare Modelle/);
+  assert.match(home.description, /40 recherchierte tragbare Modelle/);
   assert.match(home.description, /Einsatzfall|Alltag/);
   assert.match(getRouteSeo('/vergleich/').description, /sechs Milchpumpen/);
   assert.equal(home.dateModified, '2026-10-15');
   const market = getRouteSeo('/tragbare-milchpumpen/');
   assert.equal(market.dateModified, '2026-10-15');
-  assert.match(market.description, /14.10.2026/);
+  assert.match(market.description, /15.10.2026/);
   assert.equal(getRouteSeo('/vergleich/').heading, 'Sechs Milchpumpen im direkten Vergleich');
   const list = getStructuredData('/vergleich/')['@graph'].find(item => item['@type'] === 'ItemList');
   assert.equal((list?.itemListElement as unknown[]).length, 6);
@@ -100,10 +100,10 @@ test('home SEO describes 35 researched identities and practical case help while 
 
 test('all 35 opaque identity tuples, offer history, source snapshots and destinations survive the overlay', () => {
   const raw = JSON.parse(readFileSync(new URL('../src/wearable-market-data.json', import.meta.url), 'utf8'));
-  assert.equal(WEARABLE_MARKET.models.length, 35);
-  assert.deepEqual(WEARABLE_MARKET, raw, 'public historical API remains unchanged');
-  assert.equal(new Set(WEARABLE_MARKET.models.map(identity)).size, 35);
-  assert.equal([...html().matchAll(/data-market-model="/g)].length, 35);
+  assert.equal(WEARABLE_MARKET.models.length, 40);
+  for (const prior of raw.models) { const current = WEARABLE_MARKET.models.find(row => identity(row) === identity(prior))!; assert.deepEqual(current.manufacturerMapping, prior.manufacturerMapping); assert.deepEqual(current.provenance, prior.provenance); assert.deepEqual(current.amazonObservation.priorBatch, prior.amazonObservation.priorBatch); }
+  assert.equal(new Set(WEARABLE_MARKET.models.map(identity)).size, 40);
+  assert.equal([...html().matchAll(/data-market-model="/g)].length, 40);
   for (const model of WEARABLE_MARKET.models) {
     const markup = card(identity(model));
     assert.ok(markup.includes(`dateTime="${model.amazonObservation.checkedAt}"`));
@@ -120,6 +120,6 @@ test('all 35 opaque identity tuples, offer history, source snapshots and destina
     '../docs/wearable-comparison-editorial.json': '0146434fdb20bc39751bd1df1b4905175326af490bbb1df1989db14590679f8d',
   };
   for (const [file, hash] of Object.entries(hashes)) assert.equal(createHash('sha256').update(readFileSync(new URL(file, import.meta.url))).digest('hex'), hash);
-  assert.equal([...html().matchAll(/data-offer-observation="public-offer-observed"/g)].length, 31);
+  assert.equal([...html().matchAll(/data-offer-observation="public-offer-observed"/g)].length, 36);
   assert.equal([...html().matchAll(/data-offer-observation="not-found"/g)].length, 4);
 });

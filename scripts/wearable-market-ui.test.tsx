@@ -7,6 +7,7 @@ import { CURRENT_BUYING_CASES, MARKET_EVIDENCE_OVERLAY } from '../src/wearable-m
 const readJson = (relative: string) => JSON.parse(readFileSync(new URL(relative, import.meta.url), 'utf8'));
 const editorial = readJson('../docs/wearable-comparison-editorial.json');
 const reconciled = readJson('../docs/wearable-market-reconciled.json');
+const additions = readJson('../src/wearable-market-additions.json');
 const identity = (row: { brand: string; canonicalModel: string }) => `${row.brand}|${row.canonicalModel}`;
 const loadUi = async () => {
   const module = await import('../src/wearable-market').catch(() => null);
@@ -16,26 +17,26 @@ const loadUi = async () => {
 
 test('standalone overview renders all 35 distinct researched identities without route wiring', async () => {
   const ui = await loadUi();
-  assert.equal(ui.WEARABLE_MARKET.models.length, 35);
-  assert.equal(new Set(ui.WEARABLE_MARKET.models.map(identity)).size, 35);
-  assert.deepEqual(ui.WEARABLE_MARKET.models.map(identity).sort(), reconciled.rows.map(identity).sort());
+  assert.equal(ui.WEARABLE_MARKET.models.length, 40);
+  assert.equal(new Set(ui.WEARABLE_MARKET.models.map(identity)).size, 40);
+  assert.deepEqual(ui.WEARABLE_MARKET.models.map(identity).sort(), [...reconciled.rows, ...additions.models].map(identity).sort());
   const html = renderToStaticMarkup(<ui.WearableMarketOverview />);
-  assert.equal([...html.matchAll(/data-market-model="/g)].length, 35);
+  assert.equal([...html.matchAll(/data-market-model="/g)].length, 40);
   for (const model of ui.WEARABLE_MARKET.models) assert.ok(html.includes(model.canonicalModel.replaceAll('&', '&amp;')), identity(model));
 });
 
 test('cards separate audited architecture and preserve timestamped historical sources', async () => {
   const ui = await loadUi();
   const data = ui.WEARABLE_MARKET;
-  assert.deepEqual(data.models, editorial.models);
-  assert.deepEqual(data.sources, editorial.sources);
+  for (const prior of editorial.models) { const current = data.models.find(model => identity(model) === identity(prior))!; assert.deepEqual(current.manufacturerMapping, prior.manufacturerMapping); assert.deepEqual(current.provenance, prior.provenance); assert.deepEqual(current.amazonObservation.priorBatch, prior.amazonObservation.priorBatch); }
+  assert.deepEqual(data.sources.slice(0, editorial.sources.length), editorial.sources);
   assert.equal(data.generatedAt, editorial.generatedAt);
   assert.equal(data.researchReconciledAt, reconciled.reconciledAt);
   const html = renderToStaticMarkup(<ui.WearableMarketOverview />);
-  assert.equal([...html.matchAll(/data-architecture="fully-in-bra-electric-wearable"/g)].length, 26);
-  assert.equal([...html.matchAll(/data-architecture="in-bra-cups-with-tubing-and-external-portable-motor"/g)].length, 9);
+  assert.equal([...html.matchAll(/data-architecture="fully-in-bra-electric-wearable"/g)].length, 30);
+  assert.equal([...html.matchAll(/data-architecture="in-bra-cups-with-tubing-and-external-portable-motor"/g)].length, 10);
   assert.equal([...html.matchAll(/data-architecture="unverified"/g)].length, 0);
-  assert.equal([...html.matchAll(/data-offer-observation="public-offer-observed"/g)].length, 31);
+  assert.equal([...html.matchAll(/data-offer-observation="public-offer-observed"/g)].length, 36);
   assert.equal([...html.matchAll(/data-offer-observation="not-found"/g)].length, 4);
   assert.match(html, /keine vollständige Marktübersicht/);
   assert.match(html, /nicht.*ausverkauft/);
@@ -46,7 +47,7 @@ test('cards separate audited architecture and preserve timestamped historical so
     const overlay = MARKET_EVIDENCE_OVERLAY[identity(model)];
     const urls = overlay ? overlay.sources.map(source => source.url) : [model.manufacturerMapping.url].filter(Boolean);
     for (const url of urls) assert.ok(html.includes(url.replaceAll('&', '&amp;')), identity(model));
-    assert.deepEqual(model.provenance, editorial.models.find(row => identity(row) === identity(model)).provenance);
+    assert.deepEqual(model.provenance, [...editorial.models, ...additions.models].find(row => identity(row) === identity(model)).provenance);
   }
   assert.match(html, /DE-Ausführung weiter abgleichen; Markenseite vorhanden/);
   assert.match(html, /Bauform offen/);
@@ -58,7 +59,7 @@ test('commercial destinations use exact safe ASINs or explicitly labelled model 
   const ui = await loadUi();
   const html = renderToStaticMarkup(<ui.WearableMarketOverview />);
   const amazonLinks = [...html.matchAll(/<a\b[^>]*href="(https:\/\/www\.amazon\.de[^\"]*)"[^>]*>(.*?)<\/a>/gs)];
-  assert.equal(amazonLinks.length, 35);
+  assert.equal(amazonLinks.length, ui.WEARABLE_MARKET.models.length + CURRENT_BUYING_CASES.length);
   for (const [anchor, href, text] of amazonLinks) {
     const url = new URL(href.replaceAll('&amp;', '&'));
     assert.equal(url.searchParams.get('tag'), 'andreasboeh09-21');
@@ -104,18 +105,18 @@ test('search and brand architecture historical-offer filters intersect with acce
   const ui = await loadUi();
   assert.equal(typeof ui.filterWearableModels, 'function');
   const models = ui.WEARABLE_MARKET.models;
-  assert.equal(ui.filterWearableModels(models, {}).length, 35);
+  assert.equal(ui.filterWearableModels(models, {}).length, 40);
   assert.equal(ui.filterWearableModels(models, { query: '  m5 SMART ' }).length, 1);
   assert.equal(ui.filterWearableModels(models, { brand: 'Elvie' }).length, 3);
-  assert.equal(ui.filterWearableModels(models, { architecture: 'fully-in-bra-electric-wearable' }).length, 26);
+  assert.equal(ui.filterWearableModels(models, { architecture: 'fully-in-bra-electric-wearable' }).length, 30);
   assert.equal(ui.filterWearableModels(models, { architecture: 'unverified' }).length, 0);
   assert.equal(ui.filterWearableModels(models, { offers: 'not-found' }).length, 4);
-  assert.equal(ui.filterWearableModels(models, { offers: 'public-offer-observed' }).length, 31);
+  assert.equal(ui.filterWearableModels(models, { offers: 'public-offer-observed' }).length, 36);
   const filters = { brand: 'Medela', architecture: 'in-bra-cups-with-tubing-and-external-portable-motor', offers: 'public-offer-observed' };
   assert.equal(ui.filterWearableModels(models, filters).length, 4);
   const html = renderToStaticMarkup(<ui.WearableMarketOverview initialFilters={filters} />);
   assert.equal([...html.matchAll(/data-market-model="/g)].length, 4);
-  assert.match(html, /4 von 35/);
+  assert.match(html, /4 von 40/);
   for (const text of ['Marke', 'Bauform', 'Angebotsbeobachtung', 'Modell oder Modellcode suchen']) assert.ok(html.includes(text));
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /<label/);

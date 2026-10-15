@@ -46,6 +46,10 @@ Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in um
 
 ### 15. Oktober 2026 – Stillalltag-Editorial auf allen Seiten
 
+- Marktbestand auf 40 unterschiedliche Modellidentitäten aus 18 Marken erweitert. 36 Modelle mit am 15.10. beobachtetem Amazon-Angebot; vier ohne bestätigtes Angebot separat gekennzeichnet. Farben, Sets und Zubehör nicht zusätzlich gezählt.
+- Kaufhilfe, Homepage-Verzeichnis, Zwei-Modell-Auswahl und Metadaten auf denselben Bestand abgestimmt; begründete Einsatzfall-Empfehlungen mit klarer Ausführung vor den Affiliate-Kaufaktionen.
+- Pinterest-Websiteprüfungen auf genaue nicht-sensitive Repository-Testdaten umgestellt; private lokale Produktionsmanifeste sind keine CI-Voraussetzung mehr.
+
 - Freigegebenes warmes Editorialdesign auf Ratgeber, Produktseiten, Vergleich, Marktüberblick, Methodik und Informationsseiten übertragen; gemeinsame Navigation und Footer.
 - Methodik mit konkreten Rechercheakten, dokumentarischem CC0-Foto, beschrifteten Bauartdiagrammen und unterschiedlichen Layouts überarbeitet.
 - Ratgeber-Einstieg mit lizenzierter Fotografie; große Modellmonogramme durch klar benannte Bauart-Schemata ersetzt. Diese sind keine Produktfotos; exakte Produktfotorechte bleiben offen.

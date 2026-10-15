@@ -22,7 +22,7 @@ test('actual methodology route renders the finished component directly', () => {
 
 test('German market route exposes all researched identities without replacing the six-model comparison', () => {
   const html = render('/tragbare-milchpumpen/');
-  assert.equal([...html.matchAll(/data-market-model="/g)].length, 35, 'Market overview is not routed');
+  assert.equal([...html.matchAll(/data-market-model="/g)].length, 40, 'Market overview is not routed');
   assert.equal([...html.matchAll(/<main\b/g)].length, 1);
   assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
   assert.ok(html.includes('<h1>Tragbare Milchpumpen: Modelle und Kaufhilfe</h1>'));
@@ -31,7 +31,7 @@ test('German market route exposes all researched identities without replacing th
   for (const model of WEARABLE_MARKET.models) {
     assert.ok(html.includes(`data-market-model="${model.brand}|${model.canonicalModel}"`));
   }
-  assert.equal([...standalone.matchAll(/data-market-model="/g)].length, 35);
+  assert.equal([...standalone.matchAll(/data-market-model="/g)].length, 40);
   const comparison = render('/vergleich/');
   assert.ok(comparison.includes('Sechs Milchpumpen im direkten Vergleich'));
   for (const product of PRODUCTS) assert.ok(comparison.includes(`/produkte/${product.id}/`));
@@ -70,11 +70,11 @@ test('best wearable answer leads to conditional recommendations, evidence and a 
   assert.equal([...html.matchAll(/data-buying-case="/g)].length, 3);
   assert.ok(html.includes('nicht einer gemessenen Qualitätsrangfolge'));
   assert.ok(html.includes('vorhandene Pumpe'));
-  assert.ok(html.includes('31 Modelle') && html.includes('4 ohne verifiziertes Angebot'));
-  assert.ok(html.includes('14. Oktober 2026'));
+  assert.ok(html.includes('36 Modelle') && html.includes('4 ohne verifiziertes Angebot'));
+  assert.ok(html.includes('15. Oktober 2026'));
   assert.ok(!/Testsieger|garantiert|KI-gestützt|KI-generiert/.test(html));
   const shopLinks = [...html.matchAll(/<a\b[^>]*href="https:\/\/www\.amazon\.de\/[^>]*>/g)];
-  assert.equal(shopLinks.length, 35);
+  assert.equal(shopLinks.length, 43);
   for (const [tag] of shopLinks) {
     assert.ok(tag.includes('tag=andreasboeh09-21'));
     assert.ok(/rel="[^"]*sponsored/.test(tag));
@@ -87,7 +87,7 @@ test('route registry supplies accurate market and methodology metadata with cano
   assert.equal(ROUTES.filter(route => route.path === market.path).length, 1);
   assert.equal(market.heading, 'Tragbare Milchpumpen: Modelle und Kaufhilfe');
   assert.ok(market.title.includes('Tragbare Milchpumpen'));
-  assert.ok(market.description.includes('35 recherchierte'));
+  assert.ok(market.description.includes('40 recherchierte'));
   assert.ok(!/Testsieger|beste Milchpumpe|vollständige|lieferbar/.test(market.description));
   assert.equal(getRouteSeo('/testmethodik/').heading, 'So entsteht unser Milchpumpen-Vergleich');
   for (const path of ['/testmethodik/', '/tragbare-milchpumpen/']) {
@@ -104,7 +104,7 @@ test('home search metadata describes the expanded entry without claiming all-mar
   const seo = getRouteSeo('/');
   assert.equal(seo.heading, 'Tragbare Milchpumpen. Für deinen Alltag.');
   assert.ok(seo.title.includes('Kaufhilfe'), 'Home title still reduces the site to six models');
-  assert.ok(seo.description.includes('35 recherchierte tragbare Modelle'));
+  assert.ok(seo.description.includes('40 recherchierte tragbare Modelle'));
   assert.ok(seo.description.includes('Passform'));
   assert.ok(getRouteSeo('/vergleich/').description.includes('sechs Milchpumpen'));
 });
@@ -138,7 +138,7 @@ test('production artifacts include both canonical routes and preserve accessible
     assert.deepEqual(JSON.parse(json), getStructuredData(path));
   }
   const html = readFileSync('dist/tragbare-milchpumpen/index.html', 'utf8');
-  assert.equal([...html.matchAll(/data-market-model="/g)].length, 35);
+  assert.equal([...html.matchAll(/data-market-model="/g)].length, 40);
   for (const [, tag] of html.matchAll(/(<a\b[^>]*href="https:\/\/www\.amazon\.de\/[^>]*>)/g)) {
     assert.ok(tag.includes('tag=andreasboeh09-21') && /rel="[^"]*sponsored/.test(tag));
   }

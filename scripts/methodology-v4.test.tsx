@@ -63,7 +63,7 @@ test('worked dossiers connect exact evidence to conditional recommendations and 
   const window = new Window();
   window.document.body.innerHTML = html;
   const document = window.document;
-  for (const [scope, count] of [['market', '35'], ['detail', '6'], ['catalogue', '61']]) {
+  for (const [scope, count] of [['market', '40'], ['detail', '6'], ['catalogue', '61']]) {
     const block = document.querySelector(`[data-research-scope="${scope}"]`);
     assert.ok(block?.textContent.includes(count), `Explain the distinct ${scope} scope (${count})`);
   }

@@ -37,7 +37,7 @@ async function mountHome() {
 test('the real homepage renders the approved Superdesign model-selection surface', () => {
   const html = renderToStaticMarkup(<App initialPath="/" />);
   assert.ok(html.includes('id="v4-title"'), 'The approved Superdesign hero must replace the legacy homepage');
-  assert.ok(html.includes('id="v9-compare-a"'), 'The 35-model comparison must be present in actual server-rendered HTML');
+  assert.ok(html.includes('id="v9-compare-a"'), 'The 40-model comparison must be present in actual server-rendered HTML');
   assert.ok(html.includes('id="v9-compare-b"'));
   assert.ok(html.includes('class="v11-alternative"'));
   assert.equal((html.match(/<main\b/g) || []).length, 1);
@@ -45,13 +45,13 @@ test('the real homepage renders the approved Superdesign model-selection surface
   assert.ok(!html.includes('<iframe'), 'Do not embed a remote Canvas as the website');
 });
 
-test('the integrated directory filters the actual 35-model DOM after React hydration', async () => {
+test('the integrated directory filters the actual 40-model DOM after React hydration', async () => {
   const app = await mountHome();
   try {
     const input = app.document.querySelector('#v4-model-search')! as unknown as HTMLInputElement;
     input.value = 'Kinderkraft';
     await act(async () => input.dispatchEvent(new app.window.Event('input', { bubbles: true }) as unknown as Event));
-    assert.match(app.document.querySelector('#v4-model-count')!.textContent!, /^1 von 35/);
+    assert.match(app.document.querySelector('#v4-model-count')!.textContent!, /^1 von 40/);
     const visible = [...app.document.querySelectorAll('[data-model]')].filter(row => !row.hasAttribute('hidden'));
     assert.equal(visible.length, 1);
     assert.equal(visible[0].getAttribute('data-architecture'), 'fully-in-bra-electric-wearable');

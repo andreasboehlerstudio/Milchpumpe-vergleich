@@ -5,7 +5,8 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import App from '../src/App';
 import { PROBLEM_PRODUCT_FOCUS } from '../src/problem-product-focus';
 
-const run = JSON.parse(readFileSync(new URL('../../imagegen-inbox/requests/pinterest-production-run.json', import.meta.url), 'utf8')) as {
+// Public contract snapshot, not private generation/download state.
+const run = JSON.parse(readFileSync(new URL('./fixtures/pinterest-production-mapping.json', import.meta.url), 'utf8')) as {
   pins: { pinNumber: number; slug: string; articleDestination: string; primaryProductId: string }[];
 };
 const expectedTopics: Record<number, { slug: string; fragment?: string }> = {
@@ -17,6 +18,19 @@ const expectedTopics: Record<number, { slug: string; fragment?: string }> = {
   10: { slug: 'milchpumpe-zubehoer-checkliste' },
   12: { slug: 'milchpumpe-zubehoer-checkliste', fragment: 'groessen' },
 };
+
+test('production fixture preserves twenty pins across eighteen articles with only public mapping fields', () => {
+  assert.deepEqual(Object.keys(run), ['pins']);
+  assert.equal(run.pins.length, 20);
+  assert.equal(new Set(run.pins.map(pin => pin.slug)).size, 18);
+  for (const pin of run.pins) {
+    assert.deepEqual(Object.keys(pin).sort(), ['articleDestination', 'pinNumber', 'primaryProductId', 'slug']);
+    assert.ok(Number.isInteger(pin.pinNumber));
+    assert.equal(typeof pin.slug, 'string');
+    assert.equal(typeof pin.articleDestination, 'string');
+    assert.equal(typeof pin.primaryProductId, 'string');
+  }
+});
 
 test('all twenty produced pin topics land on corresponding advice with one sponsored commercial identity', () => {
   assert.equal(run.pins.length, 20);

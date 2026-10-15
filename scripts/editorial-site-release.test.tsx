@@ -54,6 +54,6 @@ test('market structured data lists researched models without inventing ratings',
   const graph = getStructuredData('/tragbare-milchpumpen/')['@graph'];
   const list = graph.find(node => node['@type'] === 'ItemList');
   assert.ok(list);
-  assert.equal((list.itemListElement as unknown[]).length, 35);
+  assert.equal((list.itemListElement as unknown[]).length, 40);
   assert.doesNotMatch(JSON.stringify(graph), /aggregateRating|ratingValue|reviewRating/);
 });

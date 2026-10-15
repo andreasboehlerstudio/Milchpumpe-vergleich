@@ -10,7 +10,17 @@ import { PRODUCT_CATALOGUE } from '../src/product-catalogue';
 import { catalogueAmazonUrl } from '../src/catalogue';
 import { PROBLEM_PRODUCT_FOCUS } from '../src/problem-product-focus';
 
-const queue = JSON.parse(readFileSync(new URL('../../imagegen-inbox/requests/pinterest-imagegen-queue.json', import.meta.url), 'utf8')) as { pins: { slug: string; primaryProductId: string }[] };
+// Keep the editorial queue separate from the produced pins: twenty distinct articles.
+const queue = JSON.parse(readFileSync(new URL('./fixtures/pinterest-editorial-queue.json', import.meta.url), 'utf8')) as { pins: { slug: string; primaryProductId: string }[] };
+
+test('editorial fixture contains only public article and product identity fields', () => {
+  assert.deepEqual(Object.keys(queue), ['pins']);
+  for (const pin of queue.pins) {
+    assert.deepEqual(Object.keys(pin).sort(), ['primaryProductId', 'slug']);
+    assert.equal(typeof pin.slug, 'string');
+    assert.equal(typeof pin.primaryProductId, 'string');
+  }
+});
 
 for (const pin of queue.pins) {
   test(`${pin.slug}: shows its specific reason and a useful no-purchase alternative`, () => {

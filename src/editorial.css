@@ -51,7 +51,7 @@ h1 { font-size: clamp(2.8rem, 5.5vw, 5.1rem); letter-spacing: -.055em; line-heig
 .finder-panel { padding: 1.8rem; border: 1px solid var(--border); background: white; box-shadow: 8px 8px 0 #f0e3d4; }
 .finder-inputs { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
 .finder-inputs label, .article-search span { display: grid; gap: .65rem; font-size: .75rem; font-weight: 750; }
-.finder-inputs select { width: 100%; min-height: 48px; padding: .7rem .5rem; border: 1px solid #cdbfc6; border-radius: 5px; font: inherit; color: var(--text); background: #fffaf4; }
+.finder-inputs select, .finder-inputs input { box-sizing: border-box; min-width: 0; width: 100%; min-height: 48px; padding: .7rem .5rem; border: 1px solid #cdbfc6; border-radius: 5px; font: inherit; color: var(--text); background: #fffaf4; }
 .finder-count { margin: 1.5rem 0 .6rem; font-size: .85rem; font-weight: 800; }
 .finder-results ul { margin: 0; padding: 0; list-style: none; }
 .finder-results li { padding: .85rem 0; border-top: 1px solid var(--border); }

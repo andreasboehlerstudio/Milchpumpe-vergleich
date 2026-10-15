@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { Breadcrumbs, SourceLink } from './components';
 import { EditorialImage } from './editorial-images';
 import { PRODUCTS } from './data';
+import { WEARABLE_MARKET } from './wearable-market';
 
 const CONTENTS = [
   ['informationen', 'Unsere Informationen'], ['auswahl', 'Die Modellauswahl'],
@@ -57,7 +58,7 @@ export function MethodologyV4() {
         <section id="auswahl" className="mv4-wrap mv4-section mv4-split" aria-labelledby="mv4-auswahl">
           <div><p className="mv4-kicker">Die Auswahl</p><h2 id="mv4-auswahl">Drei Bestände, drei verschiedene Aufgaben</h2><p>Eine große Zahl allein sagt wenig darüber, wie gründlich ein Modell beschrieben ist. Deshalb trennen wir Marktübersicht, ausgearbeitete Detailseiten und Produktkatalog.</p></div>
           <div className="mv4-inventory">
-            <div data-research-scope="market"><h3>35 recherchierte Modellidentitäten</h3><p>Die <a href="/tragbare-milchpumpen/">Marktübersicht</a> ordnet elektrische Wearable- und Hands-free-Modelle nach Bauart und verfügbaren Quellen. Das ist ein Recherchebestand, keine Zusage, dass alle Modelle heute in Deutschland lieferbar sind. Farben und Packungsgrößen zählen nicht als zusätzliche Modelle. Teilweise bleibt die Zuordnung einer regionalen Ausführung offen.</p></div>
+            <div data-research-scope="market"><h3>{WEARABLE_MARKET.models.length} recherchierte Modellidentitäten</h3><p>Die <a href="/tragbare-milchpumpen/">Marktübersicht</a> ordnet elektrische Wearable- und Hands-free-Modelle nach Bauart und verfügbaren Quellen. Das ist ein Recherchebestand, keine Zusage, dass alle Modelle heute in Deutschland lieferbar sind. Farben und Packungsgrößen zählen nicht als zusätzliche Modelle. Teilweise bleibt die Zuordnung einer regionalen Ausführung offen.</p></div>
             <div data-research-scope="detail"><h3>6 ausgearbeitete Detailmodelle</h3><p>Der <a href="/vergleich/">direkte Detailvergleich</a> behandelt Momcozy Mobile Flow M9, Medela Freestyle Hands-free, Philips Avent SCF547/11 Hands-free, Momcozy S12 Pro, Elvie Pump Single und Haakaa Generation 3. Haakaa ist eine manuelle Silikonpumpe und eine Ergänzung, kein gleichwertiger Ersatz für eine elektrische Doppelpumpe. Die sechs vertieft nachrecherchierten Modelle der unten erklärten Fallauswahl sind ein anderer Ausschnitt; M5 Smart und Air 1 gehören nicht zu diesen sechs Detailseiten.</p></div>
             <div data-research-scope="catalogue"><h3>61 Einträge im Produktwegweiser</h3><p>Im <a href="/produkte/">Produktwegweiser</a> stehen Pumpen und Zubehör. Ein Aufbewahrungsbecher ist dort ein sinnvoller Eintrag, aber kein weiteres Pumpenmodell. Ein Katalogeintrag bedeutet auch nicht denselben Rechercheumfang wie eine ausgearbeitete Produktseite. Die drei Zahlen lassen sich deshalb weder addieren noch als Zahl getesteter Pumpen lesen.</p></div>
           </div>
