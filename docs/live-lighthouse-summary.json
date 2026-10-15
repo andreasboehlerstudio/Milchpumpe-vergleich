@@ -1,0 +1,105 @@
+{
+  "requestedUrl": "https://milchpumpe-vergleich.de/",
+  "finalUrl": "https://milchpumpe-vergleich.de/",
+  "fetchTime": "2026-10-14T17:34:23.320Z",
+  "categories": {
+    "accessibility": {
+      "title": "Accessibility",
+      "score": 0.96
+    },
+    "best-practices": {
+      "title": "Best Practices",
+      "score": 1
+    },
+    "seo": {
+      "title": "SEO",
+      "score": 1
+    },
+    "agentic-browsing": {
+      "title": "Agentic Browsing",
+      "score": 1
+    }
+  },
+  "failedAudits": [
+    {
+      "id": "color-contrast",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).",
+      "score": 0,
+      "displayValue": null,
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-SPAN",
+            "path": "1,HTML,1,BODY,1,DIV,2,FOOTER,0,DIV,0,DIV,0,A,1,SPAN,1,SPAN",
+            "selector": "div > a.brand > span > span",
+            "boundingRect": {
+              "top": 7413,
+              "bottom": 7429,
+              "left": 163,
+              "right": 259,
+              "width": 97,
+              "height": 16
+            },
+            "snippet": "<span>",
+            "nodeLabel": "-Vergleich.de",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #98442f, background color: #261d1a, font size: 10.6pt (14.08px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-1-FOOTER",
+                  "path": "1,HTML,1,BODY,1,DIV,2,FOOTER",
+                  "selector": "body > div#root > footer.site-footer",
+                  "boundingRect": {
+                    "top": 7323,
+                    "bottom": 8178,
+                    "left": 0,
+                    "right": 412,
+                    "width": 412,
+                    "height": 854
+                  },
+                  "snippet": "<footer class=\"site-footer\">",
+                  "nodeLabel": "M\nMilchpumpe-Vergleich.de\n\nRedaktionelle Orientierung zu Milchpumpen – mit offe…"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "title": "Elements with visible text labels do not have matching accessible names.",
+      "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).",
+      "score": 0,
+      "displayValue": null,
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "1,HTML,1,BODY,1,DIV,0,HEADER,0,A",
+            "selector": "body > div#root > header.site-header > a.brand",
+            "boundingRect": {
+              "top": 20,
+              "bottom": 56,
+              "left": 24,
+              "right": 268,
+              "width": 244,
+              "height": 36
+            },
+            "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Milchpumpe-Vergleich.de – Startseite\">",
+            "nodeLabel": "M\nMilchpumpe-Vergleich.de",
+            "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "One mobile navigation audit of the currently deployed homepage. Performance deliberately excluded by this tool; not a ranking/indexing measurement."
+}

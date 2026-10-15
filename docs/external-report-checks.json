@@ -1,0 +1,37 @@
+{
+  "method": "Parent readback of rendered public pages in an isolated Chrome context. Extractor failed for credit exhaustion; no additional paid credits purchased.",
+  "reports": [
+    {
+      "productId": "momcozy-m9",
+      "url": "https://www.mumsnet.com/reviews/momcozy-m9-breast-pump-review",
+      "tester": "Alex",
+      "scopeEvidence": "Mum-of-two and verified Mumsnet parent-tester Alex used the Momcozy M9 Breast Pump regularly over a period of three months",
+      "experienceEvidence": "The app had a few glitches, particularly with regards to recording volume of pump session",
+      "limits": "Double-set parent report, affiliate-funded publication. Its claim that the app is essential conflicts with the current manufacturer's description of regular device-button modes. No sound ranking, milk-output comparison, review score or cleaning instruction adopted.",
+      "implementation": "Attributed paraphrase on the existing M9 product page, explicitly not the site's own test."
+    },
+    {
+      "productId": "medela-freestyle",
+      "url": "https://www.mumsnet.com/reviews/medela-freestyle-breast-pump-review",
+      "tester": "Charlotte",
+      "scopeEvidence": "Our parent-tester Charlotte used the Medela Freestyle Hands-free Breast Pump once a day over four weeks.",
+      "experienceEvidence": "Quite noisy - tester says she wouldn't feel comfortable using in an office setting",
+      "limits": "Individual parent report. Noise is subjective, not a common-method measurement. Its care description cannot override the current exact-cup manufacturer instructions.",
+      "implementation": "Attributed paraphrase on the existing Freestyle page, not clinical or universal performance evidence."
+    }
+  ],
+  "imageRightsReadback": [
+    {
+      "url": "https://de.momcozy.com/pages/momcozy-affiliate-program",
+      "evidence": "You are welcome to use any of the creative assets available through your affiliate account across all your platforms, including your website, social media accounts, groups, communities, blogs, and vlogs.",
+      "status": "Conditional route only. No Momcozy affiliate approval, account-provided asset or scope for Amazon-linked use obtained."
+    },
+    {
+      "url": "https://www.philips.com/a-w/about/innovation/ips/philips-general-trademark-use-guidelines.html",
+      "evidence": "The Philips Trademarks and Philips Brand Assets may only be used with explicit written authorization from Philips.",
+      "status": "Written authorization required; none obtained."
+    }
+  ],
+  "acquiredProductPhotos": 0,
+  "imagePublication": "No copyrighted product or review images acquired or published by this check."
+}

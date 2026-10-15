@@ -6,3 +6,10 @@ coverage/
 *.log
 .env*
 !.env.example
+.superdesign/tmp/
+.superdesign/reference/
+__pycache__/
+*.pyc
+# Owner-only analytics exports must never enter the public repository.
+private/
+gsc-private/

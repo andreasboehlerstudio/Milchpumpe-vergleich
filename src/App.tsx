@@ -1,14 +1,18 @@
 import { Layout } from './components';
 import { PRODUCTS } from './data';
-import { AboutPage, ComparisonPage, GuideArticlePage, GuideIndexPage, HomePage, ImpressumPage, MethodologyPage, NotFoundPage, PrivacyPage, ProductPage } from './pages';
+import { AboutPage, ComparisonPage, GuideArticlePage, GuideIndexPage, ImpressumPage, MethodologyPage, NotFoundPage, PrivacyPage, ProductPage, WearableMarketPage } from './pages';
+import { EditorialHomePage } from './home-editorial';
 import { normalizePath } from './seo';
+import { CatalogueIndexPage } from './catalogue-page';
 
 export default function App({ initialPath = '/' }: { initialPath?: string }) {
   const path = normalizePath(initialPath);
   let page;
 
-  if (path === '/') page = <HomePage />;
+  if (path === '/') page = <EditorialHomePage />;
   else if (path === '/vergleich/') page = <ComparisonPage />;
+  else if (path === '/tragbare-milchpumpen/') page = <WearableMarketPage />;
+  else if (path === '/produkte/') page = <CatalogueIndexPage />;
   else if (path === '/ratgeber/') page = <GuideIndexPage />;
   else if (path === '/testmethodik/') page = <MethodologyPage />;
   else if (path === '/ueber-uns/') page = <AboutPage />;
@@ -20,5 +24,5 @@ export default function App({ initialPath = '/' }: { initialPath?: string }) {
     page = product ? <ProductPage product={product} /> : <NotFoundPage />;
   } else page = <NotFoundPage />;
 
-  return <Layout>{page}</Layout>;
+  return <Layout variant={path === '/' ? 'editorial' : 'editorial-inner'}>{page}</Layout>;
 }

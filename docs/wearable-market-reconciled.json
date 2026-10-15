@@ -1,0 +1,3203 @@
+{
+  "schemaVersion": 1,
+  "reconciledAt": "2026-10-14T20:34:27.996385+00:00",
+  "completeMarketCoverage": false,
+  "rankingIsQualityTest": false,
+  "sourceCitationIdsAreBatchScoped": true,
+  "method": "Two public research batches reconciled by manufacturer/model; 15 detail identities and stock/delivery messages reread by the parent. No addresses entered, no checkout, no prices or review scores adopted.",
+  "counts": {
+    "public-offer-observed": 31,
+    "not-found": 4
+  },
+  "rows": [
+    {
+      "canonicalModel": "Melia",
+      "brand": "Ardo",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+      "manufacturerEvidenceQuote": "Die tragbare elektrische Doppelmilchpumpe Ardo Melia passt mit ihrem schlauchfreien All-in-One-Design in jeden Still-BH",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0D9444NPD",
+      "observedAsin": "B0D9444NPD",
+      "amazonTitle": "Ardo MELIA DOUBLE elektrische Milchpumpe freihändig & tragbar",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Ardo medical",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Ardo medical Ardo medical Verkäufer Ardo medical",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:46.209906+00:00",
+      "sourceUrls": [
+        "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+        "https://www.amazon.de/dp/B0D9444NPD"
+      ],
+      "sources": [
+        {
+          "citationId": 222,
+          "url": "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+          "quote": "Die tragbare elektrische Doppelmilchpumpe Ardo Melia passt mit ihrem schlauchfreien All-in-One-Design in jeden Still-BH"
+        },
+        {
+          "citationId": 200,
+          "url": "https://www.amazon.de/dp/B0D9444NPD",
+          "quote": "Ardo MELIA DOUBLE elektrische Milchpumpe freihändig & tragbar"
+        },
+        {
+          "citationId": 200,
+          "url": "https://www.amazon.de/dp/B0D9444NPD",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 200,
+          "url": "https://www.amazon.de/dp/B0D9444NPD",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        },
+        {
+          "citationId": 222,
+          "url": "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+          "quote": "4 Abpump-Modi"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+            "https://www.amazon.de/dp/B0D9444NPD"
+          ]
+        },
+        {
+          "fact": "Hersteller nennt vier Abpump-Modi.",
+          "sourceUrls": [
+            "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree"
+          ],
+          "evidenceQuote": "4 Abpump-Modi"
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stückzahl: 2 Eine Auswahl Stückzahl treffen 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0D9444NPD",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0D9444NPD?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Discreet (3101202300)",
+      "brand": "Bebeconfort",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119",
+      "manufacturerEvidenceQuote": "The cordless wearable design ensures discreet and quiet pumping, wherever you are.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0DT4S8TP4",
+      "observedAsin": "B0DT4S8TP4",
+      "amazonTitle": "Bebeconfort Discreet Freihändige Elektrische Milchpumpe, Leise (51 dB)",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober für qualifizierte Erstbestellung Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:46.250811+00:00",
+      "sourceUrls": [
+        "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119",
+        "https://www.amazon.de/dp/B0DT4S8TP4"
+      ],
+      "sourceCitationIds": {
+        "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119": 1,
+        "https://www.amazon.de/dp/B0DT4S8TP4": 2
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt Discreet kabelloses Wearable, 3 Modi.",
+          "sourceUrl": "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119"
+        },
+        {
+          "fact": "Amazon nennt Modell 3101202300, Weiß/Grün, 1 Stück.",
+          "sourceUrl": "https://www.amazon.de/dp/B0DT4S8TP4"
+        }
+      ],
+      "caveats": [
+        "Amazon.de englisch/USD; keine deutsche Zustellbarkeit oder deutscher Endpreis bestätigt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Weiß/Grün, 1 Stück"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0DT4S8TP4",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0DT4S8TP4",
+          "url": "https://www.amazon.de/dp/B0DT4S8TP4",
+          "status": 200,
+          "selectedAsin": "B0DT4S8TP4",
+          "title": "Bebeconfort Discreet Freihändige Elektrische Milchpumpe, Leise (51 dB)",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober für qualifizierte Erstbestellung Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:46.250811+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0DT4S8TP4?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Pump",
+      "brand": "Elvie",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://elvie.com/products/elvie-pump",
+      "manufacturerEvidenceQuote": "Wearable App Control Personalized Suction Quietest Discreet Tube-free",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0B8SNJ7VW",
+      "observedAsin": "B0B8SNJ7VW",
+      "amazonTitle": "Tragbare elektrische Doppel-Milchpumpe Elvie Pump (inklusive Schalen 21/24 mm) - Leise, freihändig - Einfach zu reinigen und zu transportieren - Steuerung über die App – Kabellos",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Nur noch 1 auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 7. Dezember Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 1 auf Lager"
+      },
+      "availabilityEvidence": "Nur noch 1 auf Lager | GRATIS Lieferung Montag, 7. Dezember Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 1 auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:46.007374+00:00",
+      "sourceUrls": [
+        "https://elvie.com/products/elvie-pump",
+        "https://www.amazon.de/dp/B0B8SNJ7VW"
+      ],
+      "sources": [
+        {
+          "citationId": 223,
+          "url": "https://elvie.com/products/elvie-pump",
+          "quote": "Wearable App Control Personalized Suction Quietest Discreet Tube-free"
+        },
+        {
+          "citationId": 199,
+          "url": "https://www.amazon.de/dp/B0B8SNJ7VW",
+          "quote": "Tragbare elektrische Doppel-Milchpumpe Elvie Pump (inklusive Schalen 21/24 mm) - Leise, freihändig - Einfach zu reinigen und zu transportieren - Steuerung über die App – Kabellos"
+        },
+        {
+          "citationId": 199,
+          "url": "https://www.amazon.de/dp/B0B8SNJ7VW",
+          "quote": "Nur noch 1 auf Lager"
+        },
+        {
+          "citationId": 199,
+          "url": "https://www.amazon.de/dp/B0B8SNJ7VW",
+          "quote": "GRATIS Lieferung Montag, 7. Dezember Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 1 auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-pump",
+            "https://www.amazon.de/dp/B0B8SNJ7VW"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Herstellerseite international/US: keine dortigen Lieferumfänge auf die deutsche Angebotsvariante übertragen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Farbe: Double Größe: Double (Inklusive Schalen 21/24mm)",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0B8SNJ7VW",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0B8SNJ7VW?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Stride",
+      "brand": "Elvie",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://elvie.com/products/elvie-stride",
+      "manufacturerEvidenceQuote": "1 Tube Splitter 2 Short Tubes (for the Cups) 1 Long Tube (for the Hub) 1 Clip",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0B5HFP4Y1",
+      "observedAsin": "B0B5HFP4Y1",
+      "amazonTitle": "Elvie Stride (Doppelt) - Krankenhausgerechte, saugstarke, anwendungsgesteuerte Milchpumpe - Freihändige, bequeme elektrische Milchpumpe mit 2 Modi und 150 ml Fassungsvermögen pro Behälter…",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Elvie Deutschland",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Elvie Deutschland Elvie Deutschland Verkäufer Elvie Deutschland",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Nur noch 15 auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Nur noch 15 auf Lager"
+      },
+      "availabilityEvidence": "Nur noch 15 auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Nur noch 15 auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:45.549428+00:00",
+      "sourceUrls": [
+        "https://elvie.com/products/elvie-stride",
+        "https://www.amazon.de/dp/B0B5HFP4Y1"
+      ],
+      "sources": [
+        {
+          "citationId": 59,
+          "url": "https://elvie.com/products/elvie-stride",
+          "quote": "1 Tube Splitter 2 Short Tubes (for the Cups) 1 Long Tube (for the Hub) 1 Clip"
+        },
+        {
+          "citationId": 198,
+          "url": "https://www.amazon.de/dp/B0B5HFP4Y1",
+          "quote": "Elvie Stride (Doppelt) - Krankenhausgerechte, saugstarke, anwendungsgesteuerte Milchpumpe - Freihändige, bequeme elektrische Milchpumpe mit 2 Modi und 150 ml Fassungsvermögen pro Behälter…"
+        },
+        {
+          "citationId": 198,
+          "url": "https://www.amazon.de/dp/B0B5HFP4Y1",
+          "quote": "Nur noch 15 auf Lager"
+        },
+        {
+          "citationId": 198,
+          "url": "https://www.amazon.de/dp/B0B5HFP4Y1",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Nur noch 15 auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride",
+            "https://www.amazon.de/dp/B0B5HFP4Y1"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Herstellerseite international/US: keine dortigen Lieferumfänge auf die deutsche Angebotsvariante übertragen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Größe: Stride Double Eine Auswahl Größe treffen Stride Double Stride Single 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0B5HFP4Y1",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0B5HFP4Y1?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Stride 2",
+      "brand": "Elvie",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://elvie.com/products/elvie-stride-2",
+      "manufacturerEvidenceQuote": "2 Short Tubes (for the Cups) • 1 Long Tube (for the Hub)",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": {
+        "condition": null,
+        "seller": null,
+        "deliveryContext": null
+      },
+      "availabilityEvidence": "Keine passende Amazon-DE-Detailseite verifiziert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T20:13:27.138409+00:00",
+      "sourceUrls": [
+        "https://elvie.com/products/elvie-stride-2",
+        "https://www.amazon.de/dp/B0D7MZVLND"
+      ],
+      "sources": [
+        {
+          "citationId": 224,
+          "url": "https://elvie.com/products/elvie-stride-2",
+          "quote": "2 Short Tubes (for the Cups) • 1 Long Tube (for the Hub)"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride-2"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Hersteller bestätigt Stride 2; im geprüften Amazon-DE-Suchlauf kein Stride-2-Angebot verifiziert.",
+        "Ein auf Amazon UK entdeckter Stride-2-ASIN-Kandidat liefert auf Amazon.de tatsächlich Titel und ausgewählte ASIN für Stride Single der ersten Generation; ausdrücklich verworfen.",
+        "Herstellerseite international/US: keine dortigen Lieferumfänge auf die deutsche Angebotsvariante übertragen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride-2"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://elvie.com/products/elvie-stride-2"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "rejectedAmazonLeads": [
+        {
+          "requestedUrl": "https://www.amazon.de/dp/B0D7MZVLND",
+          "observedSelectedAsin": "B0B5HHV6JS",
+          "observedTitle": "Elvie Stride (Single) - Krankenhausgerechte, saugstarke, anwendungsgesteuerte Milchpumpe - Freihändige, bequeme elektrische Milchpumpe mit 2 Modi und 150 ml Fassungsvermögen pro Behälter",
+          "reason": "Falsches Modell / falsche Generation; keine Verfügbarkeit von Stride 2 belegt."
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "not-found",
+      "originalBatchAsin": null,
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": null
+    },
+    {
+      "canonicalModel": "S1 (T8D02)",
+      "brand": "eufy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+      "manufacturerEvidenceQuote": "Wearable Breast Pump S1 User Guide (T8D02)",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0D6YFQ6N8",
+      "observedAsin": "B0D6YFQ6N8",
+      "amazonTitle": "eufy Tragbare elektrische Milchpumpe S1, App-Gesteuerter Smart-Rhythmus",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:48.022889+00:00",
+      "sourceUrls": [
+        "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+        "https://www.amazon.de/dp/B0D6YFQ6N8",
+        "https://www.eufy.com/ca/products/t8d02381"
+      ],
+      "sourceCitationIds": {
+        "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02": 5,
+        "https://www.amazon.de/dp/B0D6YFQ6N8": 6,
+        "https://www.eufy.com/ca/products/t8d02381": 7
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller-Support führt S1 als T8D02; Amazon ebenfalls T8D02 und Größe tragbar mit Wärmefunktion.",
+          "sourceUrls": [
+            "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+            "https://www.amazon.de/dp/B0D6YFQ6N8"
+          ]
+        },
+        {
+          "fact": "Amazon beschreibt ausdrücklich diskretes Tragen im BH und App-Steuerung.",
+          "sourceUrl": "https://www.amazon.de/dp/B0D6YFQ6N8"
+        },
+        {
+          "fact": "Hersteller-S1-Produktseite nennt ausdrücklich \"easy in-bra use\".",
+          "sourceUrl": "https://www.eufy.com/ca/products/t8d02381"
+        }
+      ],
+      "caveats": [
+        "Lieferortsperre gilt nur dem anonym voreingestellten Ziel; keine Aussage nicht lieferbar in Deutschland.",
+        "Produkt-Sammeltabelle/Rezensionen nicht als eigene Tests verwendet.",
+        "Keine zusätzliche S1-Pro-Zeile allein wegen eines Ladecase angelegt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "S1: tragbar mit Wärmefunktion; S2 Pro: Milchpumpe S2 Pro, Golden"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0D6YFQ6N8",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0D6YFQ6N8",
+          "url": "https://www.amazon.de/dp/B0D6YFQ6N8",
+          "status": 200,
+          "selectedAsin": "B0D6YFQ6N8",
+          "title": "eufy Tragbare elektrische Milchpumpe S1, App-Gesteuerter Smart-Rhythmus",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "AnkerDirect DE AnkerDirect DE",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:48.022889+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0D6YFQ6N8?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+      "brand": "eufy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro",
+      "manufacturerEvidenceQuote": "EASY ALIGNMENT WITH 360° SEE-THROUGH DESIGN AND NIPPLE LIGHT:",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GWH8M9DD",
+      "observedAsin": "B0GWH8M9DD",
+      "amazonTitle": "ANKER eufy Tragbare elektrische Milchpumpe S2 Pro, kabelloses Ladecase",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:48.348653+00:00",
+      "sourceUrls": [
+        "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro",
+        "https://www.amazon.de/dp/B0GWH8M9DD",
+        "https://service.eufy.com/article-description/How-do-I-charge-the-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-What-are-the-charging-methods"
+      ],
+      "sourceCitationIds": {
+        "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro": 8,
+        "https://www.amazon.de/dp/B0GWH8M9DD": 9,
+        "https://service.eufy.com/article-description/How-do-I-charge-the-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-What-are-the-charging-methods": 10
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller Produktseite S2 Pro bestätigt Wärmefunktion, Vibrationsmassage, Brustwarzen-Licht, App und Ladecase als Ausstattung (keine Wirksamkeitsbewertung).",
+          "sourceUrl": "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro"
+        },
+        {
+          "fact": "Amazon deutsche Größenbezeichnung Milchpumpe S2 Pro, Modell T60A1.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GWH8M9DD"
+        }
+      ],
+      "caveats": [
+        "Hersteller-US-Seite und Amazon-DE-Modellnummer unterscheiden sich; regionale Bundle-Zuordnung T60A1 nicht separat im Handbuch bestätigt.",
+        "Hersteller-Support nennt S2-Pro-Set T600P+T60A0; nicht stillschweigend in T60A1 umbenannt.",
+        "Zielortsperre ist kein Beleg für fehlendes deutsches Angebot.",
+        "S2 ohne Case nicht als weiteres Pumpenmodell gezählt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-regional-code-unresolved",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "S1: tragbar mit Wärmefunktion; S2 Pro: Milchpumpe S2 Pro, Golden"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0GWH8M9DD",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0GWH8M9DD",
+          "url": "https://www.amazon.de/dp/B0GWH8M9DD",
+          "status": 200,
+          "selectedAsin": "B0GWH8M9DD",
+          "title": "ANKER eufy Tragbare elektrische Milchpumpe S2 Pro, kabelloses Ladecase",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "AnkerDirect DE AnkerDirect DE",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:48.348653+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GWH8M9DD?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "MAMAFLOW",
+      "brand": "Kinderkraft",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://kinderkraft.co.uk/products/mamaflow",
+      "manufacturerEvidenceQuote": "The 160 ml collector lets you express for longer without stopping to pour milk out – especially when every minute counts.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G3PZR61C",
+      "observedAsin": "B0G3PZR61C",
+      "amazonTitle": "Kinderkraft MAMAFLOW Elektrische Milchpumpe, Kabellos, 4 Modi, USB-C, Gold",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:55.231043+00:00",
+      "sourceUrls": [
+        "https://kinderkraft.co.uk/products/mamaflow",
+        "https://www.amazon.de/dp/B0G3PZR61C"
+      ],
+      "sourceCitationIds": {
+        "https://kinderkraft.co.uk/products/mamaflow": 21,
+        "https://www.amazon.de/dp/B0G3PZR61C": 22
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller und Amazon nennen MAMAFLOW; Amazon Modell KEMAFL00GLD0000, Gold, 4Kraft.",
+          "sourceUrls": [
+            "https://kinderkraft.co.uk/products/mamaflow",
+            "https://www.amazon.de/dp/B0G3PZR61C"
+          ]
+        }
+      ],
+      "caveats": [
+        "In-Bra-Architektur aus kabelloser Shell-Bauart und Detailseiten-Kontext abgeleitet; offizieller Text sagt nicht ausdrücklich in-bra. Handbuch/Abbildung vor redaktioneller Aufnahme prüfen.",
+        "MAMAFLOW DOUBLE nicht zusätzlich als eigenständige Pumpentechnik gezählt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-architecture-needs-check",
+      "architectureEvidenceStatus": "provisional-needs-manual-or-image-check",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Gold, Einzelpumpe"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0G3PZR61C",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0G3PZR61C",
+          "url": "https://www.amazon.de/dp/B0G3PZR61C",
+          "status": 200,
+          "selectedAsin": "B0G3PZR61C",
+          "title": "Kinderkraft MAMAFLOW Elektrische Milchpumpe, Kabellos, 4 Modi, USB-C, Gold",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:55.231043+00:00"
+        }
+      ],
+      "architectureLabel": "Bauart noch zu prüfen",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G3PZR61C?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "K5",
+      "brand": "KISSBOBO",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0F3HY4N15",
+      "observedAsin": "B0F3HY4N15",
+      "amazonTitle": "KISSBOBO K5 Milchpumpe Elektrisch Doppel,4 Modi und 19 Stufen,280mmHg Starke Saugleistung elektrische milchpumpe freihändig,Schmerzfreie elektrisch tragbar(Weiß 2 Stück)",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:53.530537+00:00",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0F3HY4N15"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/dp/B0F3HY4N15": 19
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell K5, Hersteller Huizhou LVB Maternal And Infant Supplies Co,Ltd., Weiß/4-White, Titel Pack of 2.",
+          "sourceUrl": "https://www.amazon.de/dp/B0F3HY4N15"
+        },
+        {
+          "fact": "Produktbeschreibung sagt ausdrücklich Tragen im BH.",
+          "sourceUrl": "https://www.amazon.de/dp/B0F3HY4N15"
+        }
+      ],
+      "caveats": [
+        "Modell K5 nur auf Amazon belastbar identifiziert; kein geprüftes Hersteller-Handbuch oder Primär-Produkttext gefunden.",
+        "Warranty-Domain lieferte allgemeinen Registrierungsdialog, keinen belastbaren K5-Produkttext; keine Registrierung ausgeführt.",
+        "White-Label-/OEM-Unabhängigkeit nicht belegt; vor Vergleichseintrag Primärdokumentation nachreichen.",
+        "Suchtreffer nennt 280 mmHg, Detailtitel 320 mmHg; keine Saugleistung als Fakt übernommen.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "amazon-model-only-primary-unverified",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "4-White, Titel Pack of 2"
+      },
+      "evidenceTier": "amazon-model-only-primary-missing",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0F3HY4N15",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0F3HY4N15",
+          "url": "https://www.amazon.de/dp/B0F3HY4N15",
+          "status": 200,
+          "selectedAsin": "B0F3HY4N15",
+          "title": "KISSBOBO K5 Milchpumpe Elektrisch Doppel,4 Modi und 19 Stufen,280mmHg Starke Saugleistung elektrische milchpumpe freihändig,Schmerzfreie elektrisch tragbar(Weiß 2 Stück)",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "KISSBOBO Global Store KISSBOBO Global Store",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:53.530537+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0F3HY4N15?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Tragbare Milchpumpe (Wearable)",
+      "brand": "Lansinoh",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://lansinoh.de/products/tragbare-doppelmilchpumpe",
+      "manufacturerEvidenceQuote": "Tragbare Milchpumpe von Lansinoh ermöglicht freihändiges Abpumpen jederzeit und überall – ganz ohne Kabel oder Schläuche.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0DKTTNJQ8",
+      "observedAsin": "B0DKTTNJQ8",
+      "amazonTitle": "Lansinoh Tragbare Doppelmilchpumpe",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:08.722135+00:00",
+      "sourceUrls": [
+        "https://lansinoh.de/products/tragbare-doppelmilchpumpe",
+        "https://www.amazon.de/dp/B0DKTTNJQ8"
+      ],
+      "sources": [
+        {
+          "citationId": 164,
+          "url": "https://lansinoh.de/products/tragbare-doppelmilchpumpe",
+          "quote": "Tragbare Milchpumpe von Lansinoh ermöglicht freihändiges Abpumpen jederzeit und überall – ganz ohne Kabel oder Schläuche."
+        },
+        {
+          "citationId": 175,
+          "url": "https://www.amazon.de/dp/B0DKTTNJQ8",
+          "quote": "Lansinoh Tragbare Doppelmilchpumpe"
+        },
+        {
+          "citationId": 175,
+          "url": "https://www.amazon.de/dp/B0DKTTNJQ8",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 175,
+          "url": "https://www.amazon.de/dp/B0DKTTNJQ8",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        },
+        {
+          "citationId": 164,
+          "url": "https://lansinoh.de/products/tragbare-doppelmilchpumpe",
+          "quote": "4 Modi und 9 Saugstärkestufen"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://lansinoh.de/products/tragbare-doppelmilchpumpe",
+            "https://www.amazon.de/dp/B0DKTTNJQ8"
+          ]
+        },
+        {
+          "fact": "Vier Modi und neun Saugstärkestufen laut deutscher Herstellerseite.",
+          "sourceUrls": [
+            "https://lansinoh.de/products/tragbare-doppelmilchpumpe"
+          ],
+          "evidenceQuote": "4 Modi und 9 Saugstärkestufen"
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://lansinoh.de/products/tragbare-doppelmilchpumpe"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://lansinoh.de/products/tragbare-doppelmilchpumpe"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0DKTTNJQ8",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0DKTTNJQ8?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Fidi Free Slim (LOC-FIDI FREE SLIM)",
+      "brand": "Lionelo",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim",
+      "manufacturerEvidenceQuote": "The hands-free design, quiet operation up to 40 dB and 214 g weight make it discreet and easy to wear.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GGJ3FCGR",
+      "observedAsin": "B0GGJ3FCGR",
+      "amazonTitle": "Lionelo Fidi Free Slim Tragbare Elektrische Milchpumpe Kabellos",
+      "observedOffer": null,
+      "availabilityEvidence": "Nur noch 12 auf Lager (mehr ist unterwegs). | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:51.579842+00:00",
+      "sourceUrls": [
+        "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim",
+        "https://www.amazon.de/dp/B0GGJ3FCGR"
+      ],
+      "sourceCitationIds": {
+        "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim": 15,
+        "https://www.amazon.de/dp/B0GGJ3FCGR": 16
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Offizielle Produktseite nennt Fidi Free Slim, Einzelausführung und 3 Phasen/je 8 Stufen.",
+          "sourceUrl": "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim"
+        },
+        {
+          "fact": "Amazon nennt LOC-FIDI FREE SLIM, ASIN B0GGJ3FCGR und eine Pumpe.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GGJ3FCGR"
+        }
+      ],
+      "caveats": [
+        "Herstellerseite wurde zu Lionelo en-gb umgeleitet; konkrete Produktinhalte vorhanden, keine Homepage als Beleg verwendet.",
+        "Hersteller eigener Shop NOT AVAILABLE; daraus nicht Amazon-Ausverkauf ableiten.",
+        "Gewichtsangaben 214/218 g auf Amazon widersprechen sich; keine Gewichtsrangliste abgeleitet.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Fidi Free Slim, einzelne Pumpe"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0GGJ3FCGR",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0GGJ3FCGR",
+          "url": "https://www.amazon.de/dp/B0GGJ3FCGR",
+          "status": 200,
+          "selectedAsin": "B0GGJ3FCGR",
+          "title": "Lionelo Fidi Free Slim Tragbare Elektrische Milchpumpe Kabellos",
+          "availabilityText": "Nur noch 12 auf Lager (mehr ist unterwegs).",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:51.579842+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GGJ3FCGR?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Freestyle Hands-free",
+      "brand": "Medela",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+      "manufacturerEvidenceQuote": "The compact , pocket-sized pump is a separate unit, allowing our lightweight collection cups to fit discreetly inside your bra for a superior hands-free pumping experience.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0BKGFBKHJ",
+      "observedAsin": "B0BKGFBKHJ",
+      "amazonTitle": "Medela Freestyle Hands-free Elektrische Doppel-Milchpumpe mit direkt im BH tragbaren Auffangschalen – Verbindbar mit der Medela Family App – Tragbares und diskretes Design",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:12:43.908839+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+        "https://www.amazon.de/dp/B0BKGFBKHJ"
+      ],
+      "sources": [
+        {
+          "citationId": 181,
+          "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+          "quote": "The compact , pocket-sized pump is a separate unit, allowing our lightweight collection cups to fit discreetly inside your bra for a superior hands-free pumping experience."
+        },
+        {
+          "citationId": 204,
+          "url": "https://www.amazon.de/dp/B0BKGFBKHJ",
+          "quote": "Medela Freestyle Hands-free Elektrische Doppel-Milchpumpe mit direkt im BH tragbaren Auffangschalen – Verbindbar mit der Medela Family App – Tragbares und diskretes Design"
+        },
+        {
+          "citationId": 204,
+          "url": "https://www.amazon.de/dp/B0BKGFBKHJ",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 204,
+          "url": "https://www.amazon.de/dp/B0BKGFBKHJ",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+            "https://www.amazon.de/dp/B0BKGFBKHJ"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Freestyle Hands-free Eine Auswahl Stil treffen Freestyle Hands-free Flaschenset (3 x 150 ml) 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0BKGFBKHJ",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0BKGFBKHJ?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Freestyle Mini Hands-free",
+      "brand": "Medela",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524",
+      "manufacturerEvidenceQuote": "A separate, palm-sized motor unit and hands-free collection cups that are among the lightest on the market, this pump does not weigh on your breast.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GL2ZZXXS",
+      "observedAsin": "B0GL2ZZXXS",
+      "amazonTitle": "Medela Freestyle Mini Hands-Free tragbare elektrische Doppelmilchpumpe mit Hands-free Auffangschalen und wiederaufladbarem Akku.",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:10.945448+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524",
+        "https://www.amazon.de/dp/B0GL2ZZXXS"
+      ],
+      "sources": [
+        {
+          "citationId": 220,
+          "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524",
+          "quote": "A separate, palm-sized motor unit and hands-free collection cups that are among the lightest on the market, this pump does not weigh on your breast."
+        },
+        {
+          "citationId": 177,
+          "url": "https://www.amazon.de/dp/B0GL2ZZXXS",
+          "quote": "Medela Freestyle Mini Hands-Free tragbare elektrische Doppelmilchpumpe mit Hands-free Auffangschalen und wiederaufladbarem Akku."
+        },
+        {
+          "citationId": 177,
+          "url": "https://www.amazon.de/dp/B0GL2ZZXXS",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 177,
+          "url": "https://www.amazon.de/dp/B0GL2ZZXXS",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524",
+            "https://www.amazon.de/dp/B0GL2ZZXXS"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-mini-hands-free-double-electric-breast-pump?productId=45524"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Doppelmilchpumpe Eine Auswahl Set name treffen Doppelmilchpumpe Einzelmilchpumpe 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0GL2ZZXXS",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GL2ZZXXS?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Melody InBra",
+      "brand": "Medela",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485",
+      "manufacturerEvidenceQuote": "Melody InBra™ is a fully wearable, easy-to-use breast pump that stands out for its simplicity, comfort, and convenience.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G8L9ST82",
+      "observedAsin": "B0G8L9ST82",
+      "amazonTitle": "Medela Melody InBra Tragbare Einzelmilchpumpe, Hands-free, einfaches Pumpen & Aufbewahren, starke Leistung, 2 Modi & 9 Vakuumstufen, Brusthauben aus weichem Silikon, USB-C-Ladeanschluss",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:11.266685+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485",
+        "https://www.amazon.de/dp/B0G8L9ST82"
+      ],
+      "sources": [
+        {
+          "citationId": 225,
+          "url": "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485",
+          "quote": "Melody InBra™ is a fully wearable, easy-to-use breast pump that stands out for its simplicity, comfort, and convenience."
+        },
+        {
+          "citationId": 178,
+          "url": "https://www.amazon.de/dp/B0G8L9ST82",
+          "quote": "Medela Melody InBra Tragbare Einzelmilchpumpe, Hands-free, einfaches Pumpen & Aufbewahren, starke Leistung, 2 Modi & 9 Vakuumstufen, Brusthauben aus weichem Silikon, USB-C-Ladeanschluss"
+        },
+        {
+          "citationId": 178,
+          "url": "https://www.amazon.de/dp/B0G8L9ST82",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 178,
+          "url": "https://www.amazon.de/dp/B0G8L9ST82",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485",
+            "https://www.amazon.de/dp/B0G8L9ST82"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Herstellerseite international/US: keine dortigen Lieferumfänge auf die deutsche Angebotsvariante übertragen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://www.medela.com/en-us/breastfeeding-pumping/products/pumps/inbra-electric/melody-inbra?productId=45485"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Melody Einzelmilchpumpe Eine Auswahl Set name treffen Melody Einzelmilchpumpe Melody Shield 24mm Melody Shield 27mm Melody Container Melody Doppelmilchpumpe Melody Duckbill Valve Melody Outer Shield Melody Shield 21mm 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0G8L9ST82",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G8L9ST82?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Motion InBra",
+      "brand": "Medela",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198",
+      "manufacturerEvidenceQuote": "Motion InBra™ is a highly efficient wearable breast pump, designed for dependable performance and comfort and offering hassle-free handling and discreetness for every day use at home, at work and on the move.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0FPML11YW",
+      "observedAsin": "B0FPML11YW",
+      "amazonTitle": "Medela Motion InBra tragbare elektrische Milchpumpe + Aufbewahrungstasche - Hocheffizient, entwickelt für zuverlässige Leistung, hohen Komfort und diskretes, unkompliziertes Abpumpen",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:42.665468+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198",
+        "https://www.amazon.de/dp/B0FPML11YW"
+      ],
+      "sources": [
+        {
+          "citationId": 98,
+          "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198",
+          "quote": "Motion InBra™ is a highly efficient wearable breast pump, designed for dependable performance and comfort and offering hassle-free handling and discreetness for every day use at home, at work and on the move."
+        },
+        {
+          "citationId": 176,
+          "url": "https://www.amazon.de/dp/B0FPML11YW",
+          "quote": "Medela Motion InBra tragbare elektrische Milchpumpe + Aufbewahrungstasche - Hocheffizient, entwickelt für zuverlässige Leistung, hohen Komfort und diskretes, unkompliziertes Abpumpen"
+        },
+        {
+          "citationId": 176,
+          "url": "https://www.amazon.de/dp/B0FPML11YW",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 176,
+          "url": "https://www.amazon.de/dp/B0FPML11YW",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198",
+            "https://www.amazon.de/dp/B0FPML11YW"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/inbra-electric/motion-inbra?productId=45198"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Motion Doppelmilchpumpe Eine Auswahl Stil treffen Motion Doppelmilchpumpe Motion Einzelmilchpumpe 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0FPML11YW",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0FPML11YW",
+          "url": "https://www.amazon.de/dp/B0FPML11YW",
+          "status": 200,
+          "selectedAsin": "B0FPML11YW",
+          "title": "Medela Motion InBra tragbare elektrische Milchpumpe + Aufbewahrungstasche - Hocheffizient, entwickelt für zuverlässige Leistung, hohen Komfort und diskretes, unkompliziertes Abpumpen",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:42.665468+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0FPML11YW?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Solo Hands-free",
+      "brand": "Medela",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425",
+      "manufacturerEvidenceQuote": "Easy to fit in a pocket or carry due to its lightweight, compact design and built in battery.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0CG9JTMWK",
+      "observedAsin": "B0CG9JTMWK",
+      "amazonTitle": "Medela Solo Hands-free Elektrische Einzel-Milchpumpe – Tragbares und diskretes Design – Kompatibel mit der Medela Family App",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:12:43.742325+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425",
+        "https://www.amazon.de/dp/B0CG9JTMWK"
+      ],
+      "sources": [
+        {
+          "citationId": 185,
+          "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425",
+          "quote": "Easy to fit in a pocket or carry due to its lightweight, compact design and built in battery."
+        },
+        {
+          "citationId": 203,
+          "url": "https://www.amazon.de/dp/B0CG9JTMWK",
+          "quote": "Medela Solo Hands-free Elektrische Einzel-Milchpumpe – Tragbares und diskretes Design – Kompatibel mit der Medela Family App"
+        },
+        {
+          "citationId": 203,
+          "url": "https://www.amazon.de/dp/B0CG9JTMWK",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 203,
+          "url": "https://www.amazon.de/dp/B0CG9JTMWK",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425",
+            "https://www.amazon.de/dp/B0CG9JTMWK"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/solo-hands-free-single-electric-breast-pump?productId=4425"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Solo Hands-free Eine Auswahl Stil treffen Solo Hands-free Solo 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0CG9JTMWK",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0CG9JTMWK?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Swing Maxi Hands-free",
+      "brand": "Medela",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461",
+      "manufacturerEvidenceQuote": "The pump unit and the exterior of tubing can be wiped down with a damp cloth if needed.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0D6Z5P198",
+      "observedAsin": "B0D6Z5P198",
+      "amazonTitle": "Medela Swing Maxi Hands-free Elektrische Doppelmilchpumpe – Einfaches und intuitives Design für unterwegs – Verbindbar mit der Medela Family App",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:12:44.480871+00:00",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461",
+        "https://www.amazon.de/dp/B0D6Z5P198"
+      ],
+      "sources": [
+        {
+          "citationId": 121,
+          "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461",
+          "quote": "The pump unit and the exterior of tubing can be wiped down with a damp cloth if needed."
+        },
+        {
+          "citationId": 205,
+          "url": "https://www.amazon.de/dp/B0D6Z5P198",
+          "quote": "Medela Swing Maxi Hands-free Elektrische Doppelmilchpumpe – Einfaches und intuitives Design für unterwegs – Verbindbar mit der Medela Family App"
+        },
+        {
+          "citationId": 205,
+          "url": "https://www.amazon.de/dp/B0D6Z5P198",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 205,
+          "url": "https://www.amazon.de/dp/B0D6Z5P198",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461",
+            "https://www.amazon.de/dp/B0D6Z5P198"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/swing-maxi-hands-free?productId=38461"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Swing Maxi Hands-free Eine Auswahl Stil treffen Swing Maxi Hands-free Silikon Handmilchpumpe Collection Cups Doppelpumpe: Swing Maxi (2021) Swing Maxi 2 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0D6Z5P198",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0D6Z5P198?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Air 1",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+      "manufacturerEvidenceQuote": "Sensorbasierte Funktionen wie automatischer Moduswechsel, Milchmengen-Tracking und Benachrichtigungen bei vollem Auffangbehälter sorgen für zusätzliche Transparenz während des gesamten Abpumpvorgangs.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G2MQH1DF",
+      "observedAsin": "B0G2MQH1DF",
+      "amazonTitle": "Momcozy Air 1 Ultra-Slim Milchpumpe Elektrisch, 180 ml tragbare Milchpumpe Handsfree mit kabellosem Ladeetui & App-Steuerung Brustpumpen Automatikmodus & Vollmilch-Alarm",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:06.560643+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+        "https://www.amazon.de/dp/B0G2MQH1DF"
+      ],
+      "sources": [
+        {
+          "citationId": 160,
+          "url": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+          "quote": "Sensorbasierte Funktionen wie automatischer Moduswechsel, Milchmengen-Tracking und Benachrichtigungen bei vollem Auffangbehälter sorgen für zusätzliche Transparenz während des gesamten Abpumpvorgangs."
+        },
+        {
+          "citationId": 173,
+          "url": "https://www.amazon.de/dp/B0G2MQH1DF",
+          "quote": "Momcozy Air 1 Ultra-Slim Milchpumpe Elektrisch, 180 ml tragbare Milchpumpe Handsfree mit kabellosem Ladeetui & App-Steuerung Brustpumpen Automatikmodus & Vollmilch-Alarm"
+        },
+        {
+          "citationId": 173,
+          "url": "https://www.amazon.de/dp/B0G2MQH1DF",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 173,
+          "url": "https://www.amazon.de/dp/B0G2MQH1DF",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        },
+        {
+          "citationId": 160,
+          "url": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+          "quote": "kabellose Ladecase"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+            "https://www.amazon.de/dp/B0G2MQH1DF"
+          ]
+        },
+        {
+          "fact": "Hersteller nennt ein kabelloses Ladecase.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump"
+          ],
+          "evidenceQuote": "kabellose Ladecase"
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Air 1 - Rot, 2 Pack Eine Auswahl Set name treffen Air 1 - Rot, 2 Pack M5 - Grau, 2 Pack M6 - Rot, 1 Pack 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0G2MQH1DF",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G2MQH1DF?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "M5",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://support.momcozy.com/article/52731862475161",
+      "manufacturerEvidenceQuote": "All-in-one or not √",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": {
+        "condition": null,
+        "seller": null,
+        "deliveryContext": null
+      },
+      "availabilityEvidence": "Modell beim Hersteller-Support belegt, aber kein modellgenaues Amazon-DE-Angebot in diesem Suchlauf verifiziert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T20:16:29.102442+00:00",
+      "sourceUrls": [
+        "https://support.momcozy.com/article/52731862475161",
+        "https://www.amazon.de/s?k=momcozy+m5+milchpumpe"
+      ],
+      "sources": [
+        {
+          "citationId": 235,
+          "url": "https://support.momcozy.com/article/52731862475161",
+          "quote": "All-in-one or not √"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52731862475161"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Deutsche frühere M5-Produkt-URL wird aktuell auf M5 Smart umgeleitet. Aktuelle Amazon-DE-Suche zeigte M5 Smart; kein eigenständiges Original-M5-Angebot verifiziert. Hersteller-Support führt M5 und M5 Smart getrennt.",
+        "Internationale Support-Spezifikationen belegen Modell/Bauform, nicht einen deutschen Lieferumfang."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52731862475161"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52731862475161"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "not-found",
+      "originalBatchAsin": null,
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": null
+    },
+    {
+      "canonicalModel": "M5 Smart",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+      "manufacturerEvidenceQuote": "Mit nur 8 oz sitzt die M5 Smart bequem im BH und ermöglicht kabelloses, freihändiges Abpumpen",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G1MWP4FB",
+      "observedAsin": "B0G1MWP4FB",
+      "amazonTitle": "Momcozy M5Smart Milchpumpe Elektrische, handsfree App-steuerbar 1 Pack Grau",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Nur noch 10 auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Nur noch 10 auf Lager"
+      },
+      "availabilityEvidence": "Nur noch 10 auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:42.727920+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+        "https://www.amazon.de/dp/B0G1MWP4FB"
+      ],
+      "sources": [
+        {
+          "citationId": 182,
+          "url": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+          "quote": "Mit nur 8 oz sitzt die M5 Smart bequem im BH und ermöglicht kabelloses, freihändiges Abpumpen"
+        },
+        {
+          "citationId": 168,
+          "url": "https://www.amazon.de/dp/B0G1MWP4FB",
+          "quote": "Momcozy M5Smart Milchpumpe Elektrische, handsfree App-steuerbar 1 Pack Grau"
+        },
+        {
+          "citationId": 168,
+          "url": "https://www.amazon.de/dp/B0G1MWP4FB",
+          "quote": "Nur noch 10 auf Lager"
+        },
+        {
+          "citationId": 168,
+          "url": "https://www.amazon.de/dp/B0G1MWP4FB",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Nur noch 10 auf Lager"
+        },
+        {
+          "citationId": 182,
+          "url": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+          "quote": "Nur 4 abwaschbare Teile"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+            "https://www.amazon.de/dp/B0G1MWP4FB"
+          ]
+        },
+        {
+          "fact": "Hersteller nennt vier abwaschbare Teile.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control"
+          ],
+          "evidenceQuote": "Nur 4 abwaschbare Teile"
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: (mit App) Grau - 1 Pack Eine Auswahl Set name treffen (mit App) Grau - 1 Pack (mit App) Rot - 1 Pack Air1 - 2 Pack (mit App) Grau - 2 Pack (mit App) Rot - 2 Pack M5-Entenschnabelventile M5-Komplettes Set M5/M6/M9 - Flanscheinsatz 15 mm M5/M6/M9 - Flanscheinsatz 17 mm 30 Stück Reinigungsspray Stillmassagegerät Warm-Kalt-Gelkissen M5-Brusthauben M5/M6/M9 - Flanscheinsatz 15/17/19/21 mm M5/M6/M9 - Flanscheinsatz 21 mm M5-24 mm Flansch M5-27 mm Flansch M5/M6/M9 - Flanscheinsatz 19 mm 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 2 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "manufacturerAttempts": [
+        {
+          "url": "https://de.momcozy.com/products/all-in-one-m5-wearable-breast-pump",
+          "result": "HTTP 404"
+        },
+        {
+          "url": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump",
+          "result": "HTTP 404; korrekte aktuelle Produkt-URL separat gefunden"
+        }
+      ],
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0G1MWP4FB",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0G1MWP4FB",
+          "url": "https://www.amazon.de/dp/B0G1MWP4FB",
+          "status": 200,
+          "selectedAsin": "B0G1MWP4FB",
+          "title": "Momcozy M5Smart Milchpumpe Elektrische, handsfree App-steuerbar 1 Pack Grau",
+          "availabilityText": "Nur noch 10 auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "Smartlin Smartlin",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:42.727920+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G1MWP4FB?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Mobile Flow M9",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump",
+      "manufacturerEvidenceQuote": "Personalisieren Sie Ihre Einstellungen per Momcozy App, indem Sie Modus und Intensität an Ihren Komfort und Ihre Vorlieben anpassen.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GX538F1R",
+      "observedAsin": "B0GX538F1R",
+      "amazonTitle": "Momcozy M9 Mobile Flow Milchpumpe Elektrische handsfree 2 Pack Hellgrau",
+      "observedOffer": {
+        "condition": null,
+        "seller": null,
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "",
+        "deliveryQuote": null
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:44.413099+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump",
+        "https://www.amazon.de/dp/B0G6DCFK8Z",
+        "https://www.amazon.de/gp/offer-listing/B0G6DCFK8Z/ref=dp_olp_unknown_mbc",
+        "https://www.amazon.de/dp/B0GX538F1R"
+      ],
+      "sources": [
+        {
+          "citationId": 158,
+          "url": "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump",
+          "quote": "Personalisieren Sie Ihre Einstellungen per Momcozy App, indem Sie Modus und Intensität an Ihren Komfort und Ihre Vorlieben anpassen."
+        },
+        {
+          "citationId": 169,
+          "url": "https://www.amazon.de/dp/B0G6DCFK8Z",
+          "quote": "Momcozy M9 Mobile Flow Milchpumpe Elektrische handsfree 2 Pack Rot"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump",
+            "https://www.amazon.de/dp/B0G6DCFK8Z"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Keine Buybox in der geprüften roten Zweierpack-Variante. Alle-Angebote-Link war nicht auswertbar; nicht als ausverkauft interpretiert. Andere Farben/Packungen können Angebote haben.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Rot - 2 Pack Eine Auswahl Set name treffen Grau - 1 Pack Rot - 1 Pack Grau - 2 Pack Rot - 2 Pack 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "allOffersInspection": {
+        "url": "https://www.amazon.de/gp/offer-listing/B0G6DCFK8Z/ref=dp_olp_unknown_mbc",
+        "checkedAt": "2026-10-14T20:12:48.609858+00:00",
+        "result": "Öffentlicher Alle-Angebote-Link per GET gelesen; lieferte erneut Detailseite ohne auswertbare einzelne Angebote. Kein Verkäufer, Zustand oder Liefertermin verifiziert."
+      },
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0G6DCFK8Z",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0GX538F1R",
+          "url": "https://www.amazon.de/dp/B0GX538F1R",
+          "status": 200,
+          "selectedAsin": "B0GX538F1R",
+          "title": "Momcozy M9 Mobile Flow Milchpumpe Elektrische handsfree 2 Pack Hellgrau",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "Smartlin Smartlin",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:44.413099+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GX538F1R?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Mobile Style M6",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump",
+      "manufacturerEvidenceQuote": "Sie ist nicht nur freihändig, sondern bietet auch die ideale Unterstützung für Ihren Alltag.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0CTKLFN57",
+      "observedAsin": "B0CTKLFN57",
+      "amazonTitle": "Momcozy Mobile Style M6 Elektrische Milchpumpe (1er-Pack, Grau)",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:04.184627+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump",
+        "https://www.amazon.de/dp/B0CTKLFN57"
+      ],
+      "sources": [
+        {
+          "citationId": 157,
+          "url": "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump",
+          "quote": "Sie ist nicht nur freihändig, sondern bietet auch die ideale Unterstützung für Ihren Alltag."
+        },
+        {
+          "citationId": 170,
+          "url": "https://www.amazon.de/dp/B0CTKLFN57",
+          "quote": "Momcozy Mobile Style M6 Elektrische Milchpumpe (1er-Pack, Grau)"
+        },
+        {
+          "citationId": 170,
+          "url": "https://www.amazon.de/dp/B0CTKLFN57",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 170,
+          "url": "https://www.amazon.de/dp/B0CTKLFN57",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump",
+            "https://www.amazon.de/dp/B0CTKLFN57"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Grau - 1 Pack Eine Auswahl Set name treffen Grau - 1 Pack Grau - 2 Pack Rot - 2 Pack M6-2 Stück-Membran M6-24mm Flansch & Sammler M6-24mm Komplettset M6-4 Stück-Ventil M6-27mm Flansch & Sammler Rot - 1 Pack 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0CTKLFN57",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0CTKLFN57?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "S12 Pro",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://support.momcozy.com/article/52718189260313",
+      "manufacturerEvidenceQuote": "All-in-one or not √",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": {
+        "condition": null,
+        "seller": null,
+        "deliveryContext": null
+      },
+      "availabilityEvidence": "Modell beim Hersteller-Support belegt, aber kein modellgenaues Amazon-DE-Angebot in diesem Suchlauf verifiziert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T20:16:29.251138+00:00",
+      "sourceUrls": [
+        "https://support.momcozy.com/article/52718189260313",
+        "https://www.amazon.de/s?k=momcozy+s12+pro+milchpumpe"
+      ],
+      "sources": [
+        {
+          "citationId": 238,
+          "url": "https://support.momcozy.com/article/52718189260313",
+          "quote": "All-in-one or not √"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52718189260313"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Deutsche frühere S12-Pro-Produkt-URL wird aktuell auf S12 Pro Quick umgeleitet. Im Suchlauf kein Angebot der ursprünglichen Generation verifiziert. Hersteller-Support führt ursprüngliches S12 Pro getrennt vom Quick-Nachfolger.",
+        "Internationale Support-Spezifikationen belegen Modell/Bauform, nicht einen deutschen Lieferumfang."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52718189260313"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://support.momcozy.com/article/52718189260313"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "manufacturerAttempts": [
+        {
+          "url": "https://rootglobal.zendesk.com/hc/en-us/articles/52961206165145-Product-Description-of-S12-pro-Breast-Pump",
+          "result": "HTTP 403; offizielles Support-Dokument separat erreicht"
+        },
+        {
+          "url": "https://de.momcozy.com/products/momcozy-s12-pro-wearable-breast-pump",
+          "result": "Redirect zum S12 Pro Quick; nicht als Beleg für alte Generation verwendet"
+        }
+      ],
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "not-found",
+      "originalBatchAsin": null,
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": null
+    },
+    {
+      "canonicalModel": "S12 Pro Quick",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Sonstiges Zubehör ist speziell für jedes Modell konzipiert; bitte wählen Sie die Version, die zu Ihrer Pumpe passt.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GJBRVR54",
+      "observedAsin": "B0GJBRVR54",
+      "amazonTitle": "Momcozy S12 Pro Quick Milchpumpe Elektrisch, 2 Pack Weiß",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:06.309546+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump",
+        "https://www.amazon.de/dp/B0GJBRVR54"
+      ],
+      "sources": [
+        {
+          "citationId": 159,
+          "url": "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump",
+          "quote": "Sonstiges Zubehör ist speziell für jedes Modell konzipiert; bitte wählen Sie die Version, die zu Ihrer Pumpe passt."
+        },
+        {
+          "citationId": 172,
+          "url": "https://www.amazon.de/dp/B0GJBRVR54",
+          "quote": "Momcozy S12 Pro Quick Milchpumpe Elektrisch, 2 Pack Weiß"
+        },
+        {
+          "citationId": 172,
+          "url": "https://www.amazon.de/dp/B0GJBRVR54",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 172,
+          "url": "https://www.amazon.de/dp/B0GJBRVR54",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump",
+            "https://www.amazon.de/dp/B0GJBRVR54"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Quick ist vom ursprünglichen S12 Pro getrennt; nicht alle Zubehörteile sind kompatibel."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/s12-pro-quick-wearable-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Weiß, 2er-Pack Eine Auswahl Set name treffen Weiß, 2er-Pack Rosa, 1er-Pack Weiß, 1er-Pack S9 & S12 - Flanscheinsatz 17 mm S9 & S12 - Flanscheinsatz 21 mm S9 & S12 - Flansch 27 mm Rosa, 2er-Pack S9 & S12 - Entenschnabelventile Und Silikonmembran S9 & S12 - Full Set Collector S9 & S12 - Flanscheinsatz 19 mm S9 & S12 - Collector 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 2 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0GJBRVR54",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GJBRVR54?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "S9 Pro",
+      "brand": "Momcozy",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Everything you need in one compact pump, with no tubes or cords.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0H59ZRQWQ",
+      "observedAsin": "B0H59ZRQWQ",
+      "amazonTitle": "Momcozy S9 Pro Milchpumpe Elektrisch Tragbar 2 Pack Rot",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:05.979632+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump",
+        "https://www.amazon.de/dp/B0H59ZRQWQ"
+      ],
+      "sources": [
+        {
+          "citationId": 161,
+          "url": "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump",
+          "quote": "Everything you need in one compact pump, with no tubes or cords."
+        },
+        {
+          "citationId": 171,
+          "url": "https://www.amazon.de/dp/B0H59ZRQWQ",
+          "quote": "Momcozy S9 Pro Milchpumpe Elektrisch Tragbar 2 Pack Rot"
+        },
+        {
+          "citationId": 171,
+          "url": "https://www.amazon.de/dp/B0H59ZRQWQ",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 171,
+          "url": "https://www.amazon.de/dp/B0H59ZRQWQ",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump",
+            "https://www.amazon.de/dp/B0H59ZRQWQ"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Rot - 2 Pack Eine Auswahl Set name treffen Rot - 2 Pack Grau - 1 Pack Grau - 2 Pack Rot - 1 Pack 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0H59ZRQWQ",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0H59ZRQWQ?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "V1 Pro",
+      "brand": "Momcozy",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Lieferumfang Pumpenmotor * 1 Milchsammler * 2 Schläuche * 2",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0FQBRN294",
+      "observedAsin": "B0FQBRN294",
+      "amazonTitle": "Momcozy V1 Pro Milchpumpe Elektrisch, Tragbare Doppelmilchpumpe",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 46 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 46 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:12:46.458648+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump",
+        "https://www.amazon.de/dp/B0FQBRN294"
+      ],
+      "sources": [
+        {
+          "citationId": 162,
+          "url": "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump",
+          "quote": "Lieferumfang Pumpenmotor * 1 Milchsammler * 2 Schläuche * 2"
+        },
+        {
+          "citationId": 206,
+          "url": "https://www.amazon.de/dp/B0FQBRN294",
+          "quote": "Momcozy V1 Pro Milchpumpe Elektrisch, Tragbare Doppelmilchpumpe"
+        },
+        {
+          "citationId": 206,
+          "url": "https://www.amazon.de/dp/B0FQBRN294",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 206,
+          "url": "https://www.amazon.de/dp/B0FQBRN294",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 46 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump",
+            "https://www.amazon.de/dp/B0FQBRN294"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Älterer geteilter Hersteller-Amazon-Link zu generisch betitelter Pro-ASIN nicht als V1-Pro-Verfügbarkeitsbeleg genutzt. Modellgenaues Angebot separat geprüft."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v1-pro-hospital-grade-wearable-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "rejectedAmazonLeads": [
+        {
+          "requestedUrl": "https://www.amazon.de/dp/B0F1CRQVRG",
+          "observedSelectedAsin": "B0F1CRQVRG",
+          "observedTitle": "Momcozy Pro Milchpumpe, Breast Pump Electric mit Leak-Proof DoubleFit Flange",
+          "observedAvailability": "Derzeit nicht verfügbar. Ob und wann dieser Artikel wieder vorrätig sein wird, ist unbekannt.",
+          "reason": "Geteilter Hersteller-Link für V1 Pro und V2 Pro, Amazon nur generisch Pro; konkrete Modellzuordnung nicht belastbar."
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: V1 Pro - kräftige Saugkraft Eine Auswahl Set name treffen V1 Pro - kräftige Saugkraft V2 Pro - leicht und handlich 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0FQBRN294",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0FQBRN294?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "V2 Pro",
+      "brand": "Momcozy",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent",
+      "manufacturerEvidenceQuote": "Lieferumfang Pumpenmotor * 1 Milchsammler * 2 Schläuche * 2",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0H18FRZDT",
+      "observedAsin": "B0H18FRZDT",
+      "amazonTitle": "Momcozy V2 Pro Milchpumpe Elektrisch, Tragbare Doppelmilchpumpe",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Smartlin",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Verkäufer Smartlin Smartlin Verkäufer Smartlin",
+          "Versand Amazon Amazon Versand Amazon"
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:48.244585+00:00",
+      "sourceUrls": [
+        "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent",
+        "https://www.amazon.de/dp/B0H18FRZDT"
+      ],
+      "sources": [
+        {
+          "citationId": 163,
+          "url": "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent",
+          "quote": "Lieferumfang Pumpenmotor * 1 Milchsammler * 2 Schläuche * 2"
+        },
+        {
+          "citationId": 202,
+          "url": "https://www.amazon.de/dp/B0H18FRZDT",
+          "quote": "Momcozy V2 Pro Milchpumpe Elektrisch, Tragbare Doppelmilchpumpe"
+        },
+        {
+          "citationId": 202,
+          "url": "https://www.amazon.de/dp/B0H18FRZDT",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 202,
+          "url": "https://www.amazon.de/dp/B0H18FRZDT",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 47 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent",
+            "https://www.amazon.de/dp/B0H18FRZDT"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://de.momcozy.com/products/v2pro-hands-free-breast-pump-ultra-light-potent"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: V2 Pro - leicht und handlich Eine Auswahl Set name treffen V2 Pro - leicht und handlich V1 Pro - kräftige Saugkraft 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0H18FRZDT",
+      "additionalOfferObservations": [],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0H18FRZDT?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "8131",
+      "brand": "NCVI",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+      "manufacturerEvidenceQuote": "Seamless under-clothing fit for private pumping during baby sleep time or shared spaces.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0H4ZCN5J3",
+      "observedAsin": "B0H4ZCN5J3",
+      "amazonTitle": "NCVI Milchpumpe Elektrisch Freihändig für Stillende Mütter Rosa, 2 Stück",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:49.618140+00:00",
+      "sourceUrls": [
+        "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+        "https://www.amazon.de/dp/B0H4ZCN5J3"
+      ],
+      "sourceCitationIds": {
+        "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html": 11,
+        "https://www.amazon.de/dp/B0H4ZCN5J3": 12
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt 8131 Pink 2 Pack, Submodell AM8131-2; Amazon Modell 8131, Pink (Pink 2).",
+          "sourceUrls": [
+            "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+            "https://www.amazon.de/dp/B0H4ZCN5J3"
+          ]
+        }
+      ],
+      "caveats": [
+        "Hersteller nennt 1500 mAh/150 ml, Amazon-Text 1400 mAh/180 Minuten; technische regionale Gleichheit nicht gesichert.",
+        "Geteilte Amazon-Rezensionen nennen auch Wärme-/Neckbandmodelle und eignen sich nicht für 8131-spezifische Aussagen.",
+        "Farben nicht separat gezählt.",
+        "Lieferortsperre nicht als Deutschland-Ausverkauf interpretiert.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "8131: Pink (Pink 2); AM8161A: Brown"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0H4ZCN5J3",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0H4ZCN5J3",
+          "url": "https://www.amazon.de/dp/B0H4ZCN5J3",
+          "status": 200,
+          "selectedAsin": "B0H4ZCN5J3",
+          "title": "NCVI Milchpumpe Elektrisch Freihändig für Stillende Mütter Rosa, 2 Stück",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "NCVI-XINBEI NCVI-XINBEI",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:49.618140+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0H4ZCN5J3?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "AM8161A (beheiztes Wearable)",
+      "brand": "NCVI",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G7FJ6XKC",
+      "observedAsin": "B0G7FJ6XKC",
+      "amazonTitle": "NCVI Elektrische Milchpumpe Tragbar Freihändig mit Wärmefunktion, Krankenhausstandard -300mmHg Sog, Ultra-Leise, 4 Modi & 9 Stufen, Lange Akkulaufzeit, Passend für 19/21/24/28mm",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:53.353857+00:00",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0G7FJ6XKC"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/dp/B0G7FJ6XKC": 20
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell AM8161A, Braun, Wärmefunktion und Tragen im BH.",
+          "sourceUrl": "https://www.amazon.de/dp/B0G7FJ6XKC"
+        }
+      ],
+      "caveats": [
+        "Kein modellgenaues Primärdokument geprüft; nicht mit NCVI 8131 gleichsetzen.",
+        "Modellübergreifend gepoolte Rezensionen nennen Neckband-Ausführung; nicht als modellbezogene Testerfahrung verwertbar.",
+        "Kein Beleg für OEM-/White-Label-Exklusivität.",
+        "Generische Hersteller-Kategorie mit beheiztem Wearable nicht als Modellabgleich gezählt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "amazon-model-only-primary-unverified",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "8131: Pink (Pink 2); AM8161A: Brown"
+      },
+      "evidenceTier": "amazon-model-only-primary-missing",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0G7FJ6XKC",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0G7FJ6XKC",
+          "url": "https://www.amazon.de/dp/B0G7FJ6XKC",
+          "status": 200,
+          "selectedAsin": "B0G7FJ6XKC",
+          "title": "NCVI Elektrische Milchpumpe Tragbar Freihändig mit Wärmefunktion, Krankenhausstandard -300mmHg Sog, Ultra-Leise, 4 Modi & 9 Stufen, Lange Akkulaufzeit, Passend für 19/21/24/28mm",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "NCVI-XINBEI NCVI-XINBEI",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:53.353857+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G7FJ6XKC?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Sole (beobachtete Variante Sole Twin)",
+      "brand": "Neno",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://neno.pl/download/katalog_neno_en_2025.pdf",
+      "manufacturerEvidenceQuote": "Neno Sole Twin gives you complete freedom! You express milk hands-free, saving you valuable time.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G59DYCBX",
+      "observedAsin": "B0G59DYCBX",
+      "amazonTitle": "Elektrische Doppelmilchpumpe Hands Free, 3-Phasen-System - Neno Sole Twin",
+      "observedOffer": null,
+      "availabilityEvidence": "Nur noch 8 auf Lager | GRATIS Lieferung 17. - 19. Oktober für qualifizierte Erstbestellung. Details",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:51.760313+00:00",
+      "sourceUrls": [
+        "https://neno.pl/download/katalog_neno_en_2025.pdf",
+        "https://www.amazon.de/dp/B0G59DYCBX"
+      ],
+      "sourceCitationIds": {
+        "https://neno.pl/download/katalog_neno_en_2025.pdf": 17,
+        "https://www.amazon.de/dp/B0G59DYCBX": 18
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Herstellerkatalog 2025 S.20 nennt Sole und Sole Twin sowie 2 Pumpstationen/2×210 ml für Twin.",
+          "sourceUrl": "https://neno.pl/download/katalog_neno_en_2025.pdf"
+        },
+        {
+          "fact": "Amazon beschreibt zwei direkt im BH getragene separate Pumpeneinheiten ohne externe Schläuche, Modellnummer 5902479679495, Variante Sole Twin.",
+          "sourceUrl": "https://www.amazon.de/dp/B0G59DYCBX"
+        }
+      ],
+      "caveats": [
+        "Sole und Sole Twin als eine Modellfamilie geführt, nicht durch Doppelpack künstlich vervielfacht.",
+        "Hersteller-Katalog 2025, keine aktuelle Deutschland-Bestellbestätigung.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Sole Twin, 2 Einheiten"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0G59DYCBX",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0G59DYCBX",
+          "url": "https://www.amazon.de/dp/B0G59DYCBX",
+          "status": 200,
+          "selectedAsin": "B0G59DYCBX",
+          "title": "Elektrische Doppelmilchpumpe Hands Free, 3-Phasen-System - Neno Sole Twin",
+          "availabilityText": "Nur noch 8 auf Lager",
+          "deliveryText": "GRATIS Lieferung 17. - 19. Oktober für qualifizierte Erstbestellung. Details",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "Neno® Official Neno® Official",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:51.760313+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0G59DYCBX?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "S32",
+      "brand": "Nuliie",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://nuliie.com/products/s32-breast-pump-white",
+      "manufacturerEvidenceQuote": "No wires, no hassle! This lightweight and discreet electric breast pump lets you express milk confidently whether you're at home, in the office, or traveling.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GVHXGYFC",
+      "observedAsin": "B0GVHXGYFC",
+      "amazonTitle": "Nuliie S32 Elektrische Milchpumpe Tragbar, 2 Packs, Weiß",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:50.109586+00:00",
+      "sourceUrls": [
+        "https://nuliie.com/products/s32-breast-pump-white",
+        "https://www.amazon.de/dp/B0GVHXGYFC"
+      ],
+      "sourceCitationIds": {
+        "https://nuliie.com/products/s32-breast-pump-white": 13,
+        "https://www.amazon.de/dp/B0GVHXGYFC": 14
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt S32 Wearable, 4 Modi/9 Stufen und weiße Ausführung mit Wahl 1/2 Pcs.",
+          "sourceUrl": "https://nuliie.com/products/s32-breast-pump-white"
+        },
+        {
+          "fact": "Deutscher Amazon-Detailtitel S32 Weiß, 2 Packs; Verkäufer FLYING RABBITS wird auf der Detailseite benannt.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GVHXGYFC"
+        }
+      ],
+      "caveats": [
+        "Die ASIN ist in Händler-/Rezensionslinks der echten Produktseite sichtbar; explizites ASIN-Tabellenfeld fehlte im Extrakt.",
+        "Keine deutsche Lieferbarkeit oder Verkäuferautorisierung bestätigt.",
+        "Keine White-Label-Exklusivität bewiesen; Zubehörkompatibilität anderer Marken ist kein Nachweis gleicher Pumpen.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "de",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Weiß, 2 Packs"
+      },
+      "evidenceTier": "named-model-primary-and-amazon",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0GVHXGYFC",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0GVHXGYFC",
+          "url": "https://www.amazon.de/dp/B0GVHXGYFC",
+          "status": 200,
+          "selectedAsin": "B0GVHXGYFC",
+          "title": "Nuliie S32 Elektrische Milchpumpe Tragbar, 2 Packs, Weiß",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "FLYING RABBITS FLYING RABBITS",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:50.109586+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0GVHXGYFC?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Pump",
+      "brand": "Perifit",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://de.perifit.co/products/perifit-pump",
+      "manufacturerEvidenceQuote": "Völlig freihändig: Ohne Schläuche oder Kabel, einfach im BH platzieren",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": {
+        "condition": null,
+        "seller": null,
+        "deliveryContext": null
+      },
+      "availabilityEvidence": "Keine passende Amazon-DE-Detailseite verifiziert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T20:10:23.647590+00:00",
+      "sourceUrls": [
+        "https://de.perifit.co/products/perifit-pump",
+        "https://www.amazon.de/s?k=perifit+milchpumpe"
+      ],
+      "sources": [
+        {
+          "citationId": 165,
+          "url": "https://de.perifit.co/products/perifit-pump",
+          "quote": "Völlig freihändig: Ohne Schläuche oder Kabel, einfach im BH platzieren"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://de.perifit.co/products/perifit-pump"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Amazon-DE-Suche perifit milchpumpe zeigte als markenspezifischen Lead nur Bottle perifit pump; Zubehör ist keine eigenständige elektrische Milchpumpe."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://de.perifit.co/products/perifit-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://de.perifit.co/products/perifit-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "not-found",
+      "originalBatchAsin": null,
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": null
+    },
+    {
+      "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11",
+      "brand": "Philips Avent",
+      "pumpArchitecture": "in-bra-cups-with-tubing-and-external-portable-motor",
+      "manufacturerUrl": "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe",
+      "manufacturerEvidenceQuote": "**Silikonschläuche** 2 Stück",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0DWTCG66J",
+      "observedAsin": "B0DWTCG66J",
+      "amazonTitle": "Philips AVENT Hands-free elektronische Doppelmilchpumpe, Motor in Krankenhausqualität, spiegelt den Trinkrhythmus des Babys wider, bis zu 85 Pumpbewegungen pro Minute, 2 Auffangschalen, SCF547/11",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+      },
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:44.765368+00:00",
+      "sourceUrls": [
+        "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe",
+        "https://www.amazon.de/dp/B0DWTCG66J"
+      ],
+      "sources": [
+        {
+          "citationId": 133,
+          "url": "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe",
+          "quote": "**Silikonschläuche** 2 Stück"
+        },
+        {
+          "citationId": 179,
+          "url": "https://www.amazon.de/dp/B0DWTCG66J",
+          "quote": "Philips AVENT Hands-free elektronische Doppelmilchpumpe, Motor in Krankenhausqualität, spiegelt den Trinkrhythmus des Babys wider, bis zu 85 Pumpbewegungen pro Minute, 2 Auffangschalen, SCF547/11"
+        },
+        {
+          "citationId": 179,
+          "url": "https://www.amazon.de/dp/B0DWTCG66J",
+          "quote": "Auf Lager"
+        },
+        {
+          "citationId": 179,
+          "url": "https://www.amazon.de/dp/B0DWTCG66J",
+          "quote": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 48 Min. Lieferung an Rust 77977 – Standort aktualisieren Auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: in-bra-cups-with-tubing-and-external-portable-motor",
+          "sourceUrls": [
+            "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe",
+            "https://www.amazon.de/dp/B0DWTCG66J"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Milchbecher im BH und separater tragbarer Motor: Motoreinheit liegt nicht im BH-Becher.",
+          "sourceUrls": [
+            "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Schläuche und separate Motoreinheit müssen mitgeführt werden; nicht mit vollständig schlauchlosen In-Bra-Wearables gleichsetzen.",
+          "sourceUrls": [
+            "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Doppelmilchpumpe Eine Auswahl Set name treffen Doppelmilchpumpe Einlagen S Einlagen L Aufbewahrungsbecher Doppelmilchpumpe mit Zubehör Einweg-Stilleinlagen 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0DWTCG66J",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0DWTCG66J",
+          "url": "https://www.amazon.de/dp/B0DWTCG66J",
+          "status": 200,
+          "selectedAsin": "B0DWTCG66J",
+          "title": "Philips AVENT Hands-free elektronische Doppelmilchpumpe, Motor in Krankenhausqualität, spiegelt den Trinkrhythmus des Babys wider, bis zu 85 Pumpbewegungen pro Minute, 2 Auffangschalen, SCF547/11",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 29 Min.",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:44.765368+00:00"
+        }
+      ],
+      "architectureLabel": "BH-Becher, Schlauch und externer Motor",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0DWTCG66J?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Made for Me In-Bra Wearable",
+      "brand": "Tommee Tippee",
+      "pumpArchitecture": "fully-in-bra-electric-wearable",
+      "manufacturerUrl": "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Merci d'avoir acheté le tire-lait électrique portable de Tommee Tippee qui se porte dans le soutien-gorge.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0BF1D2MCH",
+      "observedAsin": "B0BF1D2MCH",
+      "amazonTitle": "Tommee Tippee Made for Me Doppelte Elektrische Tragbare Milchpumpe, Freihändig, In BH Stillpumpe, Tragbar, Leise, 1 Massage und 8 Express-Modi, 4 Stunden Akkulaufzeit",
+      "observedOffer": {
+        "condition": null,
+        "seller": "Amazon",
+        "deliveryContext": "Öffentlicher Seitenkontext: Rust 77977; keine Adresse eingegeben.",
+        "merchantEvidence": [
+          "Versender / Verkäufer Amazon Amazon Versender / Verkäufer Amazon",
+          ""
+        ],
+        "conditionCaveat": "Standard-Buybox gelesen; Zustand nicht separat als Neu geprüft.",
+        "stockQuote": "Nur noch 2 auf Lager",
+        "deliveryQuote": "GRATIS Lieferung Freitag, 23. Oktober Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 2 auf Lager"
+      },
+      "availabilityEvidence": "Nur noch 2 auf Lager | GRATIS Lieferung Freitag, 23. Oktober Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 2 auf Lager",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:11:48.110181+00:00",
+      "sourceUrls": [
+        "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump",
+        "https://www.amazon.de/dp/B0BF1D2MCH"
+      ],
+      "sources": [
+        {
+          "citationId": 221,
+          "url": "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump",
+          "quote": "Merci d'avoir acheté le tire-lait électrique portable de Tommee Tippee qui se porte dans le soutien-gorge."
+        },
+        {
+          "citationId": 201,
+          "url": "https://www.amazon.de/dp/B0BF1D2MCH",
+          "quote": "Tommee Tippee Made for Me Doppelte Elektrische Tragbare Milchpumpe, Freihändig, In BH Stillpumpe, Tragbar, Leise, 1 Massage und 8 Express-Modi, 4 Stunden Akkulaufzeit"
+        },
+        {
+          "citationId": 201,
+          "url": "https://www.amazon.de/dp/B0BF1D2MCH",
+          "quote": "Nur noch 2 auf Lager"
+        },
+        {
+          "citationId": 201,
+          "url": "https://www.amazon.de/dp/B0BF1D2MCH",
+          "quote": "GRATIS Lieferung Freitag, 23. Oktober Oder schnellste Lieferung Donnerstag, 22. Oktober Lieferung an Rust 77977 – Standort aktualisieren Nur noch 2 auf Lager"
+        }
+      ],
+      "confirmedFacts": [
+        {
+          "fact": "Bauform: fully-in-bra-electric-wearable",
+          "sourceUrls": [
+            "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump",
+            "https://www.amazon.de/dp/B0BF1D2MCH"
+          ]
+        }
+      ],
+      "caveats": [
+        "Herstellerangaben, kein eigener Praxistest.",
+        "Momentaufnahme; Angebot und Liefertermin können nach Variante und Lieferort abweichen.",
+        "UK-Hersteller-Support wurde auf französischen offiziellen Support umgeleitet. Deutsche Angebotsidentität anhand eigener Amazon-DE-Detailseite, kein FR-Lieferumfang übertragen."
+      ],
+      "rankingEvidence": [
+        {
+          "type": "architecture-quality",
+          "claim": "Integrierte elektrische BH-Pumpe; kein separater Motor am Körper erforderlich.",
+          "sourceUrls": [
+            "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump"
+          ],
+          "evidenceKind": "Bauform laut Hersteller, kein Vergleichstest"
+        },
+        {
+          "type": "architecture-trade-off",
+          "claim": "Motor und Milchauffangbehälter werden im BH getragen. Daraus folgt keine allgemeine Aussage über individuelle Passform oder Komfort.",
+          "sourceUrls": [
+            "https://www.tommeetippee.com/fr-fr/pages/support-in-bra-wearable-breast-pump"
+          ],
+          "evidenceKind": "Konstruktive Einordnung, nicht gemessen"
+        }
+      ],
+      "modelIdentityStatus": "manufacturer-confirmed",
+      "amazonVariantEvidence": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Doppelbett: Eine Auswahl Stil treffen Doppelbett: Einzelbett: 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+      "evidenceNotes": "rankingEvidence beschreibt Eigenschaften und Bauform-Trade-offs, keine Platzierung und keine Testnote.",
+      "sourceBatch": "mainstream",
+      "originalBatchAvailabilityStatus": "public-offer-observed",
+      "originalBatchAsin": "B0BF1D2MCH",
+      "additionalOfferObservations": [],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0BF1D2MCH?tag=andreasboeh09-21"
+    },
+    {
+      "canonicalModel": "Go (PDL60)",
+      "brand": "Willow",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://onewillow.com/products/willow-go-wearable-pump",
+      "manufacturerEvidenceQuote": "Internal circular motor encourages output",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0B2SK47X6",
+      "observedAsin": "B0B2SK47X6",
+      "amazonTitle": "Willow Go Tragbare Doppelmilchpumpe – tragbar, elektrisch in",
+      "observedOffer": null,
+      "availabilityEvidence": "Auf Lager | GRATIS Lieferung 28. Oktober - 3. November für qualifizierte Erstbestellung. Details",
+      "availabilityStatus": "public-offer-observed",
+      "checkedAt": "2026-10-14T20:30:46.514199+00:00",
+      "sourceUrls": [
+        "https://onewillow.com/products/willow-go-wearable-pump",
+        "https://www.amazon.de/dp/B0B2SK47X6"
+      ],
+      "sourceCitationIds": {
+        "https://onewillow.com/products/willow-go-wearable-pump": 3,
+        "https://www.amazon.de/dp/B0B2SK47X6": 4
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell PDL60 und ausdrücklich \"No external motor, tubes, or dangling bottles\".",
+          "sourceUrl": "https://www.amazon.de/dp/B0B2SK47X6"
+        }
+      ],
+      "caveats": [
+        "Aktuelle Herstellerseite kann neuere Go-Ausführung/ComfortFlow zeigen; keine vollständige Generationengleichheit mit PDL60 bewiesen.",
+        "Amazon-Titel doppelt, Größenfeld \"1 pc. (pack of 1)\": Lieferumfang nicht ausreichend konsistent.",
+        "Amazon-Text warnt vor Garantieausschluss bei Resellern; deutsche Herstellergarantie nicht bestätigt.",
+        "Öffentliche anonyme Amazon.de-Anzeige; Lieferadresse nicht gesetzt. Verfügbarkeit, Verkäuferzustand und Lieferbarkeit für den eigenen Ort im Angebot prüfen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-generation-unresolved",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Transparent White, Green; Titel doppelt, Größe 1 pc. (pack of 1) widersprüchlich"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat",
+      "sourceBatch": "other",
+      "originalBatchAvailabilityStatus": "detail-found-offer-unverified",
+      "originalBatchAsin": "B0B2SK47X6",
+      "additionalOfferObservations": [
+        {
+          "requestedAsin": "B0B2SK47X6",
+          "url": "https://www.amazon.de/dp/B0B2SK47X6",
+          "status": 200,
+          "selectedAsin": "B0B2SK47X6",
+          "title": "Willow Go Tragbare Doppelmilchpumpe – tragbar, elektrisch in",
+          "availabilityText": "Auf Lager",
+          "deliveryText": "GRATIS Lieferung 28. Oktober - 3. November für qualifizierte Erstbestellung. Details",
+          "deliveryLocation": "Standort aktualisieren",
+          "sellerText": "Sellify Shop Sellify Shop",
+          "identityVerified": true,
+          "checkedAt": "2026-10-14T20:30:46.514199+00:00"
+        }
+      ],
+      "architectureLabel": "Vollständig im BH",
+      "qualityScore": null,
+      "affiliateUrl": "https://www.amazon.de/dp/B0B2SK47X6?tag=andreasboeh09-21"
+    }
+  ],
+  "deferredDiscoveryNotIncludedInModelCount": [
+    {
+      "canonicalModel": "W38",
+      "brand": "Bellababy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://bellababy-med.com/products/wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Bellababy wearable pump is designed with 4 modes and 9 levels of suction strength.",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Herstellerseite W38 gelesen, aber keine passende deutsche Produktdetailseite gefunden; ausländische ASINs nicht nach .de transplantiert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://bellababy-med.com/products/wearable-breast-pump",
+        "https://www.amazon.de/s?k=tragbare+milchpumpe+bellababy"
+      ],
+      "sourceCitationIds": {
+        "https://bellababy-med.com/products/wearable-breast-pump": 23,
+        "https://www.amazon.de/s?k=tragbare+milchpumpe+bellababy": 24
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Herstellerseite W38 gelesen, aber keine passende deutsche Produktdetailseite gefunden; ausländische ASINs nicht nach .de transplantiert."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": "THE INs (YH-7005)",
+      "brand": "YOUHA",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "http://help.youha.com/contents/22714/43955.html",
+      "manufacturerEvidenceQuote": "YOUHA wearable breast pumps allow mamas to pump on-the-go and hands-free, offering a more enjoyable and discreet way to express breast milk.",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Hersteller-Support gelesen; kein passendes Amazon.de-Detailprodukt im begrenzten Suchlauf.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "http://help.youha.com/contents/22714/43955.html",
+        "https://www.amazon.de/s?k=YOUHA+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "http://help.youha.com/contents/22714/43955.html": 25,
+        "https://www.amazon.de/s?k=YOUHA+milchpumpe": 26
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Hersteller-Support gelesen; kein passendes Amazon.de-Detailprodukt im begrenzten Suchlauf."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": null,
+      "brand": "TSRETE",
+      "pumpArchitecture": null,
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Kein belastbarer modellgenauer Amazon.de-Detailtreffer. Suchseite zeigte fremde Marken; keine künstliche TSRETE-Modellnummer erzeugt.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/s?k=TSRETE+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/s?k=TSRETE+milchpumpe": 27
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Kein belastbarer modellgenauer Amazon.de-Detailtreffer. Suchseite zeigte fremde Marken; keine künstliche TSRETE-Modellnummer erzeugt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": null,
+      "brand": "GROWNSY",
+      "pumpArchitecture": null,
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Kein belastbarer modellgenauer Wearable-Detailtreffer. Fremde Produktkategorien und fremde Marken nicht gezählt.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/s?k=GROWNSY+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/s?k=GROWNSY+milchpumpe": 28
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Kein belastbarer modellgenauer Wearable-Detailtreffer. Fremde Produktkategorien und fremde Marken nicht gezählt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    }
+  ],
+  "limits": [
+    "Stock/delivery messages are observations in an anonymous page context, not address-specific delivery guarantees.",
+    "Offer existence is independent from confirmed architecture, exact manufacturer-generation mapping, warranty or comparative quality.",
+    "No own tests, numerical quality scores or exhaustive marketplace coverage."
+  ]
+}

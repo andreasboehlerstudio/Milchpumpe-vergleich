@@ -1,0 +1,12 @@
+{
+  "scope": ["src/niche-guides-a.ts", "src/niche-guides-b.ts"],
+  "articleCount": 14,
+  "reviewKind": "Independent read-only editorial and factual review",
+  "reviewResult": "Reviewer reported no evidenced factual blockers in the reviewed fourteen articles.",
+  "methodReported": "Full file reads and programmatic slug/count checks; selected manufacturer webpages, accordions, public manufacturer JSON and PDF bytes inspected.",
+  "specificReportedChecks": ["S12 Pro versus Quick generation separation", "Philips SCF554/11 compatibility and bundle distinctions", "Elvie Single/Double and Pump/Stride", "Haakaa capacities", "Model-specific spare parts", "App privacy statements", "Source contradictions rather than invented measurements"],
+  "editorialFollowup": "Twelve formulaic passages in niche-guides-b.ts were rewritten as direct practical instructions. Purchase-variant warnings, citations and substantive limitations were retained. Remaining library voice and the pending expansion will be checked in the final two passes.",
+  "limits": "This is the reviewer's reported finding, not an independent certification of every source or Amazon attribution. Several extractors omitted dynamic/PDF content. Amazon checks did not establish complete bundle contents or commissions. This review does not cover the separately pending expansion to fifty products and eight Muttermilch guides.",
+  "laterParentChange": "The S12 Quick article now also exposes contradictory official specifications for noise and parts count; a separate regression test covers this correction.",
+  "publicationStatus": "Not a deployment or publication confirmation. Final two-pass optimization and full expansion verification remain required."
+}

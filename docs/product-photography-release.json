@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-10-15",
+  "timezone": "Europe/Berlin",
+  "releaseStatus": "BLOCKED_NO_CLEARED_EXACT_PHOTOS",
+  "summary": "No photograph of any requested exact model has both verified identity and established permission for this commercial affiliate website. No product photographs were acquired or added. A genuine Medela launch visual and a Momcozy distributor press-image gallery were located, but neither inspected route established the required reuse grant. Public availability and attribution are not licences.",
+  "scope": {
+    "website": "https://milchpumpe-vergleich.de",
+    "use": "Self-hosted exact-product editorial photographs on a commercial comparison website containing Amazon.de affiliate purchase links",
+    "affiliateTag": "andreasboeh09-21",
+    "secondaryUseToClearSeparately": "Organic Pinterest article promotions; paid advertising is not assumed covered",
+    "constraintsRespected": ["No paid tools, credits or subscriptions purchased", "No Apify", "No logins, accounts or affiliate applications", "No Amazon image scraping, screenshotting, downloading or hotlinking", "No public manufacturer product photo treated as licensed", "No synthetic product packshots", "No unrelated fallback photograph", "No existing components, pages, styles or source-ledger files changed"],
+    "notLegalAdvice": true
+  },
+  "counts": {"targetModels": 9, "clearedExactModels": 0, "acquiredPhotographs": 0, "implementedProductPhotoComponents": 0},
+  "componentImplemented": false,
+  "assets": [],
+  "integrationHandoff": {
+    "actionThisTurn": "Do not add a ProductPhotography import or replace an exact-product illustration with the documentary photo. No real photo component was created because there is no cleared exact-model asset.",
+    "neutralLinks": "Manufacturer product/support/media pages below can inform neutral text links; these URLs are not photo licences, image src values or purchase destinations. Do not proxy or hotlink their images.",
+    "modelKeys": "The first six productId values are the existing PRODUCTS identifiers. The other three products use their existing market modelRef (brand + canonicalModel); productId remains null rather than inventing a registry ID.",
+    "futureComponentContract": "Only after clearance: look up exact productId or exact brand/canonicalModel, render the matching licensed asset with actual dimensions, descriptive model-specific alt text and required credit. Unknown IDs, excluded generations and missing/expired grants return null; no brand-wide or documentary fallback.",
+    "futureAssetEvidence": ["Canonical asset/source URL and provider asset ID", "Exact product generation, region, set and colour shown", "Licensor/photographer and an asset-specific grant or applicable public licence saved with its date and scope", "Explicit commercial affiliate website/self-hosting coverage; Pinterest and editing coverage recorded independently", "Original and derivative filename, byte count, width, height and SHA-256", "Required credit and licence URL", "EXIF/GPS stripped from public derivative", "No own-product-test or manufacturer-endorsement implication"],
+    "testCommand": "node node_modules/tsx/dist/cli.mjs --test scripts/product-photography.test.tsx"
+  },
+  "targets": [
+    {
+      "productId": "momcozy-m9", "brand": "Momcozy", "exactModel": "Mobile Flow M9",
+      "modelRef": {"brand": "Momcozy", "canonicalModel": "Mobile Flow M9"},
+      "generationExclusions": ["M5", "M5 Smart", "M6", "Air 1", "Different set or colour unless captioned"],
+      "neutralManufacturerUrl": "https://momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump",
+      "status": "CONDITIONAL_AFFILIATE_ROUTE_NOT_CLEARED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["momcozy-affiliate", "momcozy-contact", "momcozy-distributor-gallery", "mypresswire-terms"],
+      "blocker": "Momcozy's permission applies to assets supplied through an approved affiliate account, not all public product images. No approval, M9 creative or permission for Amazon-linked comparisons was obtained. The distributor gallery does not resolve the commercial reuse grant or exact asset identity.",
+      "nextAction": {"contactUrl": "https://momcozy.com/pages/contact-us", "email": "pr@momcozy.com", "request": "Request Mobile Flow M9 packshots and written permission covering the shared clearance-request scope, including Amazon-linked neutral comparisons without requiring a new affiliate account."}
+    },
+    {
+      "productId": "medela-freestyle", "brand": "Medela", "exactModel": "Freestyle Hands-free",
+      "modelRef": {"brand": "Medela", "canonicalModel": "Freestyle Hands-free"},
+      "generationExclusions": ["Freestyle Mini Hands-free", "Swing Maxi Hands-free", "Solo Hands-free", "Older bottle-based Freestyle set"],
+      "neutralManufacturerUrl": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+      "status": "EXACT_MODEL_PRESS_LEAD_CLEARANCE_REQUIRED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["medela-launch-browser", "medela-media-contact"],
+      "blocker": "The official 2022 launch release names a Freestyle Hands-free product visual and media flyer. An attachment, download control and source credit do not establish permission for this affiliate site. Its linked Medela launch media portal currently returns 404. No explicit asset-specific reuse licence was found on the inspected release.",
+      "nextAction": {"contactUrl": "https://www.medela.com/en/about-medela/medela-news/2025-global-breastfeeding-and-lactation-symposium-series", "email": "media.inquiries@medela.com", "request": "Request Freestyle Hands-free original (not Mini) packshots, referring to the 29 November 2022 launch visual, and written commercial editorial/self-hosting permission. Prefer a product-only image; lifestyle images additionally need the applicable model releases."}
+    },
+    {
+      "productId": "philips-avent-scf547", "brand": "Philips Avent", "exactModel": "SCF547/11 Hands-free",
+      "generationExclusions": ["SCF547/10", "SCD553/11 kit", "SCF395", "SCF398", "Other regional or single-pump set"],
+      "neutralManufacturerUrl": "https://www.philips.de/shop/mutter-und-kind/milchpumpen-und-brustpflege/hands-free-elektrische-doppelmilchpumpe/p/SCF547_11",
+      "status": "EXPLICIT_WRITTEN_AUTHORIZATION_REQUIRED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["philips-guidelines", "philips-media-contact"],
+      "blocker": "Philips explicitly requires written authorization for brand assets, including photographs. Neither the public product page nor a media-library invitation supplies this publisher with SCF547/11 photo rights.",
+      "nextAction": {"contactUrl": "https://www.philips.com/a-w/about/news-and-insights/media-contacts.html", "email": null, "request": "Ask the consumer-products media contact for SCF547/11 Hands-free double-pump packshots and asset-specific written authorization covering commercial editorial comparisons, self-hosting, Amazon-linked monetization, allowed crops/resizing and the exact required credit."}
+    },
+    {
+      "productId": "momcozy-s12-pro", "brand": "Momcozy", "exactModel": "S12 Pro",
+      "modelRef": {"brand": "Momcozy", "canonicalModel": "S12 Pro"},
+      "generationExclusions": ["S12 Pro Quick", "S9 Pro", "Different set or colour unless captioned"],
+      "neutralManufacturerUrl": "https://momcozy.com/blogs/momcare/s12-pro-quick-setup-pumping-cleaning",
+      "status": "CONDITIONAL_AFFILIATE_ROUTE_NOT_CLEARED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["momcozy-affiliate", "momcozy-contact", "momcozy-distributor-gallery", "mypresswire-terms"],
+      "blocker": "No supplied affiliate creative or independent grant was obtained. Current public Momcozy pages may describe the Quick successor; a brand match does not prove the original S12 Pro model.",
+      "nextAction": {"contactUrl": "https://momcozy.com/pages/contact-us", "email": "pr@momcozy.com", "request": "Request S12 Pro ORIGINAL packshots, explicitly excluding S12 Pro Quick, with exact asset identification and the shared commercial editorial/self-hosting clearance scope."}
+    },
+    {
+      "productId": "elvie-pump-single", "brand": "Elvie", "exactModel": "Pump Single",
+      "modelRef": {"brand": "Elvie", "canonicalModel": "Pump"},
+      "generationExclusions": ["Pump Double package", "Stride", "Stride 2", "Stride Plus", "Documentary Elvie-branded tubing/motor photo"],
+      "neutralManufacturerUrl": "https://www.elvie.com/de-de/haufig-gestellte-fragen-faqs/elvie-pump",
+      "status": "PUBLIC_REUSE_NOT_GRANTED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["elvie-terms-current", "elvie-press", "commons-file"],
+      "blocker": "Current UK terms reserve image and photograph rights to Willow/licensors, limit the service licence to personal noncommercial use and prohibit unpermitted reuse. The CC0 documentary photo shows an Elvie-branded external motor and tubing, not verified Pump Single identity or set.",
+      "nextAction": {"contactUrl": "https://uk.elvie.com/pages/press-enquiries", "email": "elviepress@onewillow.com", "mailLinkDiscrepancy": "Page displays elviepress@onewillow.com but its mailto still targets press@elvie.com.", "request": "Request Pump Single original all-in-one packshots, not Stride/Stride 2, plus written commercial comparison and self-hosting permission with required credits and permitted edits."}
+    },
+    {
+      "productId": "haakaa-gen3", "brand": "Haakaa", "exactModel": "Generation 3 Silikon-Milchpumpe",
+      "generationExclusions": ["Generation 1", "Generation 2", "Generation 2 Plus", "Ladybug collector", "Feeding bottle without pump flange", "160/250 ml variant not established"],
+      "neutralManufacturerUrl": "https://www.haakaa.com.au/products/generation-3-silicone-breast-pump",
+      "status": "EXACT_MODEL_LICENCE_NOT_ESTABLISHED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["haakaa-affiliate", "haakaa-press", "haakaa-contact"],
+      "blocker": "The affiliate page is an application route and the Press page is a gallery of third-party coverage, not an inspected Gen 3 photo licence. No grant covering this commercial website was located.",
+      "nextAction": {"contactUrl": "https://www.haakaa.co.nz/pages/contact-us", "email": null, "request": "Request Generation 3 Silikon-Milchpumpe 160 ml and/or 250 ml product-only photographs with the modular pump flange/ring/bottle shown, exact size/colour identification, and written commercial editorial/self-hosting permission."}
+    },
+    {
+      "productId": null, "brand": "Momcozy", "exactModel": "M5 Smart",
+      "modelRef": {"brand": "Momcozy", "canonicalModel": "M5 Smart"},
+      "generationExclusions": ["Original M5 without app", "M6", "M9", "Different single/double set unless captioned"],
+      "neutralManufacturerUrl": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+      "status": "CONDITIONAL_AFFILIATE_ROUTE_NOT_CLEARED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["momcozy-affiliate", "momcozy-contact", "momcozy-distributor-gallery", "mypresswire-terms"],
+      "blocker": "The general approved-affiliate creative permission is conditional. No approved account, M5 Smart asset or licence for Amazon-linked comparison use exists in this task; an original M5 image is not a verified Smart-generation photograph.",
+      "nextAction": {"contactUrl": "https://momcozy.com/pages/contact-us", "email": "pr@momcozy.com", "request": "Request M5 Smart app-generation packshots (not original M5), clarifying single/double set and colour, with the shared commercial editorial/self-hosting clearance scope."}
+    },
+    {
+      "productId": null, "brand": "Momcozy", "exactModel": "Air 1",
+      "modelRef": {"brand": "Momcozy", "canonicalModel": "Air 1"},
+      "generationExclusions": ["M5", "M5 Smart", "M9", "Pump-only photo implying a charging-case bundle", "Different set or colour unless captioned"],
+      "neutralManufacturerUrl": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+      "status": "CONDITIONAL_AFFILIATE_ROUTE_NOT_CLEARED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["momcozy-affiliate", "momcozy-contact", "momcozy-distributor-gallery", "mypresswire-terms"],
+      "blocker": "No approved affiliate creative, exact Air 1 asset grant or written permission for this commercial site was obtained. The public product page is evidence of the product, not a photo licence.",
+      "nextAction": {"contactUrl": "https://momcozy.com/pages/contact-us", "email": "pr@momcozy.com", "request": "Request Air 1 exact-model packshots, distinguishing the pump(s) from charging-case set contents, and written commercial editorial/self-hosting rights for the shared scope."}
+    },
+    {
+      "productId": null, "brand": "eufy", "exactModel": "S1 (T8D02)",
+      "modelRef": {"brand": "eufy", "canonicalModel": "S1 (T8D02)"},
+      "generationExclusions": ["S1 Pro charging-case bundle unless captioned", "E10", "S2", "S2 Pro", "Omni S1 Pro robot vacuum"],
+      "neutralManufacturerUrl": "https://www.eufy.com/eu-en/products/t8d02381",
+      "status": "SPECIFIC_REDISTRIBUTION_PERMISSION_REQUIRED", "rightsEstablished": false, "assetId": null,
+      "evidenceSourceIds": ["eufy-terms-current", "anker-media-browser", "eufy-affiliate"],
+      "blocker": "Current terms grant personal access only, exclude commercial reproduction and require specifically express redistribution permission. The two observed eufy product-assets catalogue pages did not list the S1 breast pump; an Omni S1 Pro vacuum is unrelated. No pump-specific overriding licence was established. Public FCC filings are not a third-party photo licence either.",
+      "nextAction": {"contactUrl": "https://www.eufy.com/affiliate", "email": "affiliate@eufylife.com", "request": "Ask for S1 (T8D02) product-only assets or referral to eufy Baby PR, explicitly identifying the S1 pump rather than S1 Pro case, E10 or S2. Request written self-hosted commercial editorial/Amazon-linked reuse permission and an authorized acquisition method; do not assume permission for automated downloads."}
+    }
+  ],
+  "sources": [
+    {
+      "id": "momcozy-affiliate", "url": "https://de.momcozy.com/pages/momcozy-affiliate-program", "retrievedAt": "2026-10-15T09:19:57.872011+02:00", "method": "Live public HTML", "bodySha256": "69754950a2b656f4c380ae44c4ce951c65cd50c33fde90cc14674200e4de05ba",
+      "quotes": ["Upon approval, you’ll gain access to our ready-made creatives and can jumpstart your affiliate marketing journey by sharing your unique link.", "You are welcome to use any of the creative assets available through your affiliate account across all your platforms, including your website, social media accounts, groups, communities, blogs, and vlogs."],
+      "observation": "The FAQ explicitly ties ready-made creatives to approval and use to assets available through the affiliate account; Awin, Impact and CJ network rules also apply.",
+      "licenceAssessment": "Conditional affiliate-asset grant, not unconditional public product-page reuse. No approved account, specific creative or agreement was accessed."
+    },
+    {
+      "id": "momcozy-contact", "url": "https://momcozy.com/pages/contact-us", "retrievedAt": "2026-10-15T09:25:59.138072+02:00", "method": "Live public HTML", "bodySha256": "b046e8bf16b987e7bc0d3ec06ab5dbcef3aafa884227c37d9e72361b96f628e8",
+      "quotes": ["Influencer: collab@momcozy.com", "Brand/Media: pr@momcozy.com"],
+      "observation": "Manufacturer supplies a direct brand/media permission-request contact, improving on the earlier creator-only contact route.", "licenceAssessment": "Actionable contact, not a grant. No email was sent."
+    },
+    {
+      "id": "momcozy-distributor-gallery", "url": "https://mypresswire.com/se/pressroom/42751/images", "retrievedAt": "2026-10-15T09:25:58.653561+02:00", "method": "Live public HTML and rendered browser", "bodySha256": "62a4eace46b56f80ecb1e619a07d670fb4d2203985ef804007276d5758f1177d",
+      "observation": "MomCozy Sverige gallery exposes ten download controls (image IDs 55641 through 55650). The linked 18 February 2026 release identifies Witt Denmark A/S as Nordic distributor. Individual pages 55645 and 55650 were also inspected; they showed dimensions/downloads, but no licence text or exact pump-model identification. No image master was downloaded.",
+      "licenceAssessment": "Promising publisher/distributor asset lead, not an established grant for this German commercial affiliate site. Do not infer rights or exact model from a download control.",
+      "relatedUrls": ["https://mypresswire.com/se/pressroom/42751/pressrelease/115786", "https://mypresswire.com/se/pressroom/42751/image/55645", "https://mypresswire.com/se/pressroom/42751/image/55650", "https://mypresswire.com/se/pressroom/42751/contacts"]
+    },
+    {
+      "id": "mypresswire-terms", "url": "https://mypresswire.com/se/info/terms", "retrievedAt": "2026-10-15T09:26:08.554378+02:00", "method": "Live public HTML", "bodySha256": "e84d098d20013d786b801d4d4758600be5c7005a8c35d5b5edde22228f78f47e",
+      "observation": "Reviewed public Swedish terms and journalist information. They describe the distribution service and customers' trading terms; no explicit photo-reuse grant for the inspected Momcozy gallery was located.",
+      "licenceAssessment": "A distribution service's invitation to journalists is not an asset-specific commercial affiliate photo licence. Publisher/rights-holder confirmation remains necessary."
+    },
+    {
+      "id": "medela-launch-browser", "url": "https://www.globenewswire.com/news-release/2022/11/29/2563688/0/en/Medela-enters-the-wearable-breast-pump-segment-with-launch-of-new-Freestyle-Hands-free-Breast-Pump.html", "retrievedAt": "2026-10-15T09:24:00+02:00", "timestampPrecision": "Approximate minute of browser inspection", "method": "Live rendered public browser; direct HTTP received 403",
+      "quotes": ["Medela Freestyle Hands-free Breast Pump - Product visual", "Mom with baby pumping hands-free", "Medela Freestyle Hands-free Breast Pump - Media flyer"],
+      "observation": "Official release dated 29 November 2022, Source: Medela, identifies an exact-model visual and a media flyer. The visual is a mother-with-baby lifestyle photograph, not necessarily a product-only packshot. Source contact: media.inquiries@medela.com. The old Medela media portal linked by the release returned 404; a modern-path candidate also rendered a 404 page.",
+      "licenceAssessment": "Genuine exact-model press lead, but no explicit licence on the inspected release covers this commercial affiliate website, self-hosting or social derivatives. No visual or flyer was acquired.",
+      "deadLinkedMediaPortal": "https://www.medela.com/company/news/freestyle-hands-free-media-launch?utm_source=news&utm_medium=press-release&utm_campaign=fshf_launch",
+      "observedVisualResourceId": "6c9eaa2c-1ede-444b-aa12-68ebb7c9c893",
+      "observedFlyerResourceId": "dff8f72a-36a2-4151-adc3-c6f283feec5c"
+    },
+    {
+      "id": "medela-media-contact", "url": "https://www.medela.com/en/about-medela/medela-news/2025-global-breastfeeding-and-lactation-symposium-series", "retrievedAt": "2026-10-15T09:24:06.125564+02:00", "method": "Live public HTML", "bodySha256": "2f193cfaca248d2ca01edfb1a1b2644e5b0a11e65ce2473f874c3df12b674793",
+      "quotes": ["Additional downloadable visual assets are available via the", "Symposium Medela media portal"],
+      "observation": "Official article links the media office to mailto:media.inquiries@medela.com?subject=Symposium and points to a symposium-specific media corner.",
+      "licenceAssessment": "Confirms the manufacturer contact, not Freestyle asset rights. The symposium portal must not be presented as a Freestyle licence."
+    },
+    {
+      "id": "philips-guidelines", "url": "https://www.philips.com/a-w/about/innovation/ips/philips-general-trademark-use-guidelines.html", "retrievedAt": "2026-10-15T09:19:57.278709+02:00", "method": "Live public HTML", "bodySha256": "925539984dddf9d82341d7d39ec5bdd72b16fa8d7f669ae92bd1b4ccc0397ff5",
+      "quotes": ["In addition to the Philips wordmark and the shield emblem, Philips owns multiple other trademarks for various products and solutions (all together “the Philips Trademarks”) as well as other assets such as photos, videos and apps (the “Philips Brand Assets”).", "The Philips Trademarks and Philips Brand Assets may only be used with explicit written authorization from Philips."],
+      "observation": "Guidelines include photographs as brand assets and require express written authorization; asset-specific terms may also apply.",
+      "licenceAssessment": "Public photographs are not cleared by attribution or the general media-library invitation. Written authorization is absent."
+    },
+    {
+      "id": "philips-media-contact", "url": "https://www.philips.com/a-w/about/news-and-insights/media-contacts.html", "retrievedAt": "2026-10-15T09:24:06.057061+02:00", "method": "Live public HTML", "bodySha256": "c941612153a78b5f88796046c1a72ba1ad20015aa6dcd8170ed8e7ac58e5348b",
+      "quotes": ["The contacts listed below are for requests or questions from media."],
+      "observation": "Official global media-contact page includes consumer products and a route to the media library.", "licenceAssessment": "Permission-request route, not permission itself."
+    },
+    {
+      "id": "elvie-terms-current", "url": "https://uk.elvie.com/pages/terms-and-conditions-of-use", "retrievedAt": "2026-10-15T09:24:06.039599+02:00", "method": "Live public HTML", "bodySha256": "a7335faedec0eb075b7ca643c70abf3844fc315212d600c8495e75b2a8c5bd0c",
+      "quotes": ["Use of the Willow Content for any purpose not expressly permitted by these Terms is strictly prohibited."],
+      "observation": "Current UK page announces updated terms effective 20 August 2025; its Limited License is personal/noncommercial, and Our Proprietary Rights explicitly includes images and photographs. The old global terms URL redirected to a short German page, so the full current UK terms were checked instead.",
+      "licenceAssessment": "No public commercial image-reuse grant. A proprietary-rights restriction is not overridden by a press-contact link."
+    },
+    {
+      "id": "elvie-press", "url": "https://uk.elvie.com/pages/press-enquiries", "retrievedAt": "2026-10-15T09:19:57.517620+02:00", "method": "Live public HTML", "bodySha256": "a2a02ad6ef8016eb93cd6ef6065e3cb727b2f38019d936fa0685d6c84708f1d8",
+      "quotes": ["For press and influencer enquiries only, please contact:", "elviepress@onewillow.com"],
+      "observation": "Visible email differs from the page's mailto:press@elvie.com destination; discrepancy preserved.", "licenceAssessment": "Request contact only. No account or email work performed."
+    },
+    {
+      "id": "haakaa-affiliate", "url": "https://www.haakaa.co.nz/pages/affiliate-programme", "retrievedAt": "2026-10-15T09:19:57.700192+02:00", "method": "Live public HTML", "bodySha256": "cee87abed98e4f13e422c08f08f68f3ff5bac25dc1c7bc3767bd7eefee4d7c84",
+      "observation": "Official affiliate route links an external application form. No exact Gen 3 asset or commercial image-reuse licence was located in the inspected page.", "licenceAssessment": "An invitation to apply is not approval or permission; no application made."
+    },
+    {
+      "id": "haakaa-press", "url": "https://www.haakaa.co.nz/pages/press", "retrievedAt": "2026-10-15T09:24:05.908477+02:00", "method": "Live public HTML", "bodySha256": "8a24da1ef113e7f35b97b85200552934d01fe66354889ac5b25a1710d1b62aba",
+      "quotes": ["Don't just take our word for it. Browse reviews, recommendations, and articles from some of the world's most trusted parenting and health publications."],
+      "observation": "Press page is a coverage/press-clipping gallery rather than a public Gen 3 licensable asset kit.", "licenceAssessment": "Linked publications' images are separately copyrighted; their appearance here is not this publisher's licence."
+    },
+    {
+      "id": "haakaa-contact", "url": "https://www.haakaa.co.nz/pages/contact-us", "retrievedAt": "2026-10-15T09:25:58.886448+02:00", "method": "Live public HTML", "bodySha256": "c19a08a2d143bf68dd48e8dc4b0cf9765e96799a596349f671f8fb267e24fd78",
+      "observation": "Manufacturer contact route verified. No permission request was submitted.", "licenceAssessment": "Actionable rights-holder request route, not a grant."
+    },
+    {
+      "id": "eufy-terms-current", "url": "https://www.eufy.com/policies/terms-of-service", "retrievedAt": "2026-10-15T09:24:06.026613+02:00", "method": "Live public HTML", "bodySha256": "3eecfa273604b1d4a23293f30f95efb303cf73deaf5cee0dbfc908b638311803",
+      "quotes": ["Reproduce, duplicate, copy or otherwise exploit material on Anker’s Services for a commercial purpose", "Redistribute material from Anker’s Services except for content specifically and expressly made available for redistribution"],
+      "observation": "Terms last updated 15 July 2026. Both quoted lines are in the list headed 'This license does not include, and you must not:'. Section 8 additionally requires express prior written consent for systematic or automated collection. A guessed /policies/terms-of-use URL returned 404; the actual footer-linked terms-of-service page was used.",
+      "licenceAssessment": "No S1-specific overriding redistribution permission was established. No product image acquisition attempted."
+    },
+    {
+      "id": "anker-media-browser", "url": "https://pr.anker-in.com/pr/product-assets?brand=eufy", "retrievedAt": "2026-10-15T09:24:00+02:00", "timestampPrecision": "Approximate minute of rendered-browser inspection", "method": "Live rendered browser, eufy filter and both observed pagination pages",
+      "observation": "Viewed both visible catalogue pages. They listed scale, cameras/display, vacuums and mowers; no wearable S1 breast pump entry was observed. The listing named 'eufy Robot Vacuum Omni S 1 Pro' is not a pump and was rejected. Initial plain HTML contained only the application shell, so it was not treated as the full catalogue.",
+      "licenceAssessment": "Official media lead, but no exact pump asset or licence found. This is a limited current catalogue observation, not proof no other Anker asset exists."
+    },
+    {
+      "id": "eufy-affiliate", "url": "https://www.eufy.com/affiliate", "retrievedAt": "2026-10-15T09:19:58.176928+02:00", "method": "Live public HTML", "bodySha256": "cfc51266d4c7db879977c396a78a0a33e3d15e4437b87ac1464f810c19734b63",
+      "observation": "Official affiliate page links mailto:affiliate@eufylife.com. Its public categories include product-review sites and publishers; no S1 asset-specific permission was established.", "licenceAssessment": "Contact/application route, not approval or an image licence."
+    },
+    {
+      "id": "commons-file", "url": "https://commons.wikimedia.org/wiki/File:Hands_Free_Breast_Pump.jpg", "retrievedAt": "2026-10-15T09:19:57.790857+02:00", "method": "Live file description and official imageinfo API; existing local original and derivative inspected", "bodySha256": "058e2529dae97db6868e2ce2e603ed7476dd3390d59db9b4ed0f0a72b6f86566",
+      "quotes": ["Hands free breast pump parts in microwave sterilizer", "Own work", "LeslieKnope345"],
+      "observation": "CC0 1.0 declaration verified. Official file SHA-1 e1dd1a19c5b96c962e4b9f9b4bdd83708daaa290 matches the existing original. Caption, description and API metadata do not identify an exact brand/model. Visual inspection reveals the elvie logo, external motor/tubing and a 'DO NOT MICROWAVE' marking, but no exact model label or single/double retail identity.",
+      "licenceAssessment": "Documented CC0 copyright basis for documentary use, but no conclusive identity for any of the nine requested products. Do not relabel it Pump Single or infer a Stride generation solely by resemblance.",
+      "officialApiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url%7Csize%7Csha1%7Cextmetadata&titles=File%3AHands+Free+Breast+Pump.jpg",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "commonsSearch": {
+    "method": "Official public MediaWiki file-namespace full-text search API, 50-result limit per query, 15 October 2026. Exact model and brand searches supplement the pump-category inventory; no photograph was selected from these search results.",
+    "queryCount": 9,
+    "queries": [
+      {"query": "\"Momcozy\"", "totalHits": 0, "collectedResults": 0, "hasMore": false, "responseSha256": "688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b"},
+      {"query": "\"Elvie\" \"pump\"", "totalHits": 4, "collectedResults": 4, "hasMore": false, "assessment": "Historical PDFs, not product photos", "responseSha256": "0ddba54a484a124483ffc44b67448df88be4ba6a34ae8d86af14421880a2f26d"},
+      {"query": "\"Haakaa\"", "totalHits": 2, "collectedResults": 2, "hasMore": false, "assessment": "Historical dictionary/grammar documents, not product photos", "responseSha256": "bef0d80e9188dc9f5148be1d564403ed47fccd563a6b487bd69119d970a8c614"},
+      {"query": "\"Medela\" \"Freestyle\"", "totalHits": 0, "collectedResults": 0, "hasMore": false, "responseSha256": "688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b"},
+      {"query": "\"Philips\" \"SCF547\"", "totalHits": 0, "collectedResults": 0, "hasMore": false, "responseSha256": "688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b"},
+      {"query": "\"eufy\" \"pump\"", "totalHits": 1, "collectedResults": 1, "hasMore": false, "assessment": "Historical Montreal Mining Company document, not a product photo", "responseSha256": "5b679dd88826d683da727cac9a23783659c60542e4b0320990cdc93f2fa41702"},
+      {"query": "\"M5 Smart\"", "totalHits": 0, "collectedResults": 0, "hasMore": false, "responseSha256": "688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b"},
+      {"query": "\"Air 1\" \"pump\"", "totalHits": 414, "collectedResults": 50, "hasMore": true, "assessment": "Broad ambiguous term returned unrelated historical/technical documents. Not exhaustively paginated; the narrower Momcozy brand query returned zero. This result must not be described as 414 reviewed files or proof no Air 1 image exists.", "responseSha256": "25920b9f24df87709501db586edee3a4f6e77eabfa5a28387c9fb04c91468f07"},
+      {"query": "\"S12 Pro\"", "totalHits": 1, "collectedResults": 1, "hasMore": false, "assessment": "1861 historical trade publication, not a product photo", "responseSha256": "8d1e8606dc12eda7197168bfd485daaa1d260c19bc48b7d668d9f6484518f022"}
+    ],
+    "reproduceEndpoint": "https://commons.wikimedia.org/w/api.php?action=query&format=json&list=search&srnamespace=6&srlimit=50&srinfo=totalhits&srsearch=URL_ENCODED_QUERY",
+    "limit": "Search indexing is imperfect, as the existing generic pump photo illustrates. Absence from brand/model text search is not proof of global non-existence. No unlicensed result is approved merely because it appears in Commons search."
+  },
+  "commonsDocumentaryAssessment": {
+    "existingPublicPath": "/editorial-photos/pump-parts.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hands_Free_Breast_Pump.jpg",
+    "creator": "LeslieKnope345", "licence": "CC0 1.0", "brandObserved": "elvie",
+    "legibleOtherText": "DO NOT MICROWAVE",
+    "exactProductIdentity": null, "approvedForExactProductSlots": false,
+    "reason": "The image and its metadata do not conclusively identify an exact model/generation or retail set. A visible Elvie brand and external motor/tubing are not proof of Pump Single. Similarity to a Stride family is not conclusive generation evidence. Keep documentary/editorial use only, with no own-test or general microwave-safety implication.",
+    "existingOriginal": {"path": "../design-media/wikimedia-pump-parts/Hands_Free_Breast_Pump-original.jpg", "bytes": 1913378, "width": 3024, "height": 4032, "sha1": "e1dd1a19c5b96c962e4b9f9b4bdd83708daaa290", "sha256": "b025ca53196ba4c3f15967819aa7d537dbaf82bbfb6e8975757fb630d34e5781", "officialApiSha1Matched": true},
+    "existingPublicDerivative": {"bytes": 313926, "width": 1350, "height": 1800, "sha256": "eff88060ed4706f95d23a388f5c9af9c8f2a6ea883e2dc0fb9391a1b39b85061", "exifEntries": 0},
+    "filesModified": false
+  },
+  "clearanceRequestTemplate": "Subject: Exact-model photo permission for milchpumpe-vergleich.de — [EXACT MODEL / REGION / SET]. We publish independent, neutral product comparisons on https://milchpumpe-vergleich.de, a commercial editorial website with Amazon.de affiliate links (tracking ID andreasboeh09-21). Please provide exact-model product-only photo asset IDs/files and confirm in writing that we may self-host and display the identified photographs on these pages, including comparisons with other brands and Amazon-linked monetization, without implying manufacturer endorsement or our own hands-on test. Please state the licensor/photographer, permitted term and territories (worldwide internet visibility), required credit/licence link, resize/crop rights, and whether any other releases are needed. Please confirm organic Pinterest reuploads linking to our editorial articles and text overlays separately; we will not assume paid advertising is covered. Please identify the approved acquisition channel and whether an automated download is permitted. If permission is restricted to your own affiliate programme or destination, please say so. No photograph will be published before this permission and exact model identity are established.",
+  "retrievalLimits": [
+    "Configured SearXNG was unreachable; search fell back to Exa/keyless results. Empty and irrelevant results were not treated as market-wide absence.",
+    "web_extract reported insufficient Firecrawl credits. No credits were purchased; live public HTML and ordinary rendered Chrome tabs were used instead.",
+    "The initial browser-use helper timed out; existing Chrome DevTools tooling worked in a separate isolated photo-rights browser context.",
+    "GlobeNewswire direct HTTP returned 403; the public release rendered normally in Chrome. A guessed GlobeNewswire terms URL also returned 403 and is not treated as legal authority.",
+    "The Medela launch portal linked by the release and a modern-path candidate returned 404. Neither was treated as a licence.",
+    "Research is limited, not a claim that no possible licence or exact photograph exists. Actual permission or a conclusively identified freely licensed photograph could change the decision.",
+    "Raw HTML/API research snapshots are in the temporary Hermes scratch product-photo-research folder and may expire. Relevant quotes, URLs, timestamps, hashes, decisions and actionable contacts are preserved in this report; scratch possession is not itself a photo licence."
+  ],
+  "verification": {
+    "testFirst": "A release-contract test was written and run before this report; it failed with 'Missing actionable exact-product photography release report'.",
+    "unapprovedImageAcquisitions": 0,
+    "fakePhotoComponentCreated": false,
+    "parentOwnsIntegrationAndCommits": true
+  }
+}

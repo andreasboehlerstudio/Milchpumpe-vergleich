@@ -1,8 +1,11 @@
+import { EDITORIAL_GUIDES } from './guides';
+import milkGuides from './milk-guides.json';
+
 export const SITE_URL = 'https://milchpumpe-vergleich.de';
 export const REVIEW_DATE = '16. Juli 2026';
 export const REVIEW_DATE_ISO = '2026-07-16';
 export const CONTACT_EMAIL = 'admin@andreasboehler.com';
-export const AFFILIATE_TAG = 'andyboeh-21';
+export const AFFILIATE_TAG = 'andreasboeh09-21';
 
 export type Product = {
   id: string;
@@ -25,6 +28,9 @@ export type Product = {
   color: string;
   initials: string;
   amazonQuery: string;
+  amazonAsin?: string;
+  amazonVariant?: string;
+  sourceCheckedDate?: string;
 };
 
 export const PRODUCTS: Product[] = [
@@ -48,12 +54,14 @@ export const PRODUCTS: Product[] = [
       'Hersteller nennt vier bis fünf Anwendungen pro Akkuladung',
     ],
     strengths: ['Viele Einstellmöglichkeiten', 'Bedienung ohne Griff in den BH', 'Vollständig tragbares System'],
-    limitations: ['App verlangt ein kompatibles Smartphone und Konto', 'Mehr Teile bedeuten mehr Reinigungsaufwand', 'Herstellerangaben ersetzen keinen Praxistest'],
+    limitations: ['App verlangt ein kompatibles Smartphone und Konto', 'Mehr Teile bedeuten mehr Reinigungsaufwand', 'Passform vor der Nutzung prüfen'],
     sourceUrl: 'https://momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump',
     sourceLabel: 'Momcozy Produktseite M9',
     color: '#d78672',
     initials: 'M9',
     amazonQuery: 'Momcozy M9 Milchpumpe',
+    amazonAsin: 'B0GX538F1R',
+    amazonVariant: 'Doppelset, Hellgrau',
   },
   {
     id: 'medela-freestyle',
@@ -81,6 +89,8 @@ export const PRODUCTS: Product[] = [
     color: '#e2b8a7',
     initials: 'MF',
     amazonQuery: 'Medela Freestyle Hands-Free Milchpumpe',
+    amazonAsin: 'B0BKGFBKHJ',
+    amazonVariant: 'Freestyle Hands-free Doppelmilchpumpe, nicht Freestyle Mini',
   },
   {
     id: 'philips-avent-scf547',
@@ -107,7 +117,9 @@ export const PRODUCTS: Product[] = [
     sourceLabel: 'Philips Produktseite SCF547/11',
     color: '#a7c5c1',
     initials: 'PA',
-    amazonQuery: 'Philips Avent SCF547 Milchpumpe',
+    amazonQuery: 'Philips Avent SCF547/11 Milchpumpe',
+    amazonAsin: 'B0DWTCG66J',
+    amazonVariant: 'SCF547/11 Doppelmilchpumpe',
   },
   {
     id: 'momcozy-s12-pro',
@@ -126,12 +138,13 @@ export const PRODUCTS: Product[] = [
       'Drei Modi mit jeweils neun Stufen laut Hersteller',
       '24-mm-Flansch im Standardumfang',
       'Als Einzel- und Doppelset angeboten',
-      'Hersteller nennt weniger als 45 dB und bis zu 240 Minuten Nutzung',
+      'Ältere S12-Pro-Generation; nicht mit S12 Pro Quick gleichzusetzen',
     ],
     strengths: ['Keine Konto- oder App-Abhängigkeit', 'Vollständig tragbar', 'Viele direkt wählbare Stufen'],
-    limitations: ['Motoreinheiten erhöhen das Gewicht im BH', 'Akku- und Lautstärkewerte sind Herstellerangaben', 'Passende Einsätze müssen gegebenenfalls separat gewählt werden'],
-    sourceUrl: 'https://uk.momcozy.com/products/momcozy-s12-pro-wearable-breast-pump',
-    sourceLabel: 'Momcozy Produktseite S12 Pro',
+    limitations: ['Motoreinheiten erhöhen das Gewicht im BH', 'S12 Pro Quick ist eine andere Generation; Angaben und Ersatzteile nicht ungeprüft übertragen', 'Passende Einsätze müssen gegebenenfalls separat gewählt werden'],
+    sourceUrl: 'https://momcozy.com/blogs/momcare/s12-pro-quick-setup-pumping-cleaning',
+    sourceLabel: 'Momcozy: S12 Pro und S12 Pro Quick unterscheiden',
+    sourceCheckedDate: '14. Oktober 2026',
     color: '#cfa0b3',
     initials: 'S12',
     amazonQuery: 'Momcozy S12 Pro Milchpumpe',
@@ -189,6 +202,8 @@ export const PRODUCTS: Product[] = [
     color: '#9eb5a7',
     initials: 'H3',
     amazonQuery: 'Haakaa Gen 3 Silikon Milchpumpe',
+    amazonAsin: 'B087DJSB8T',
+    amazonVariant: 'Generation 3, 160 ml, Nude, mit Kappe',
   },
 ];
 
@@ -197,10 +212,16 @@ export function productUrl(product: Product) {
 }
 
 export function amazonUrl(product: Product) {
+  if (product.amazonAsin) {
+    if (!/^[A-Z0-9]{10}$/.test(product.amazonAsin)) throw new Error(`Ungültige ASIN: ${product.amazonAsin}`);
+    return `https://www.amazon.de/dp/${product.amazonAsin}?tag=${AFFILIATE_TAG}`;
+  }
   return `https://www.amazon.de/s?k=${encodeURIComponent(product.amazonQuery)}&tag=${AFFILIATE_TAG}`;
 }
 
-export const GUIDE_ARTICLES = [
+export type GuideSummary = { slug: string; title: string; description: string; published?: string; updated?: string; category?: string; image?: string };
+
+export const GUIDE_ARTICLES: GuideSummary[] = [
   {
     slug: 'richtige-flanschgroesse',
     title: 'Flanschgröße richtig einordnen',
@@ -216,4 +237,6 @@ export const GUIDE_ARTICLES = [
     title: 'Tragbar, elektrisch oder manuell?',
     description: 'Die Pumpenarten nach Einsatzhäufigkeit, Bewegungsfreiheit und Reinigungsaufwand unterscheiden.',
   },
+  ...milkGuides.map(guide => ({slug:guide.slug,title:guide.title,description:guide.description,published:guide.published,updated:guide.updated,category:guide.category,image:`/editorial/${guide.slug}-og.png`})),
+  ...EDITORIAL_GUIDES.map(guide => ({ slug: guide.slug, title: guide.title, description: guide.description, published: guide.published, updated: guide.updated, category: guide.category, image: `/editorial/${guide.slug}-og.png` })),
 ];

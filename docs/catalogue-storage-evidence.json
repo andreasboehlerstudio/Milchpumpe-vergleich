@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "category": "Aufbewahrung & Transport",
+  "checkedAt": "2026-10-14",
+  "productCount": 13,
+  "brandCount": 6,
+  "verifiedFactCount": 47,
+  "methodology": {
+    "sourcePolicy": "Nur tatsächlich gelesene offizielle Hersteller-Produktseiten und Hersteller-Gebrauchshinweise; Suchtreffer dienten ausschließlich der Discovery. Produkttexte sind Herstellerangaben, kein unabhängiger Praxistest.",
+    "deduplication": "Eigenständige Produktfamilien nach Marke, Konstruktion und Verwendungszweck; Farben, Packungsgrößen und Flaschenvolumen nicht als zusätzliche Produkte gezählt. Kühltaschen sind eigenständige Transportprodukte, nicht zusätzliche Flaschensets.",
+    "datePolicy": "Prüfstichtag wie beauftragt: 2026-10-14. Keine Zukunfts-, Liefer- oder Verfügbarkeitszusagen.",
+    "quotePolicy": "Zitate wortgetreu aus extrahiertem Text beziehungsweise Hersteller-DOM; ausschließlich Leerraum zusammengeführt. Für jeden Fakt ist ein Quellenzitat verknüpft.",
+    "imagePolicy": "Keine Produktfotos heruntergeladen oder zur kommerziellen Verwendung freigegeben. Alle Bildrechte bleiben not-cleared.",
+    "safetyBoundary": "Keine eigene Lagerzeit-, Temperatur- oder Hygieneberatung und keine medizinische Sicherheitsgarantie. Werbliche Kühlstunden wurden nicht als allgemeine sichere Lagerdauer übernommen. Für Hygieneregeln sind behördliche Empfehlungen maßgeblich.",
+    "commerceBoundary": "Keine erfundenen ASINs, Preise oder Bestände; Amazon-Queries sind Suchbegriffe, keine verifizierten Amazon-Angebote."
+  },
+  "coverageNotes": [
+    "Sechs Hersteller mit Beuteln, Mehrwegflaschen, Mehrwegbechern, Kühltaschen und Chiller-Systemen.",
+    "Medela Easy Pour ist durch eine kanadische Produktseite belegt, Medela Cooler Bag durch eine US-Seite; regionale Lieferumfänge müssen vor Kauf geprüft werden.",
+    "Ceres Chill wird als aktuelle OG+-Bezeichnung geführt, nicht als alte Legacy-OG-Farbvariante.",
+    "Nicht eindeutig genannte Volumen, Maße und Lieferumfänge werden in den Produktgrenzen offengelegt."
+  ],
+  "excludedCandidates": [
+    {
+      "brand": "Philips Avent",
+      "name": "Muttermilchbehälter SCF618/10",
+      "sourceUrl": "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter",
+      "evidenceQuote": "Eingestellt",
+      "reason": "Offizielle deutsche Produktseite kennzeichnet dieses Modell als eingestellt; nicht für den aktuellen Katalog mitgezählt."
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "S01",
+      "url": "https://ardo.de/products/muttermilch-kuehltasche",
+      "publisherDomain": "ardo.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "die Ardo Kühltasche bietet Platz für 4 Milchflaschen und enthält bereits 3 Kühlelemente.",
+        "3 Kühlelemente",
+        "Lieferumfang Kühltasche 3 Kühlelemente",
+        "SKU: 63.00.82"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S02",
+      "url": "https://ardo.de/products/muttermilchbeutel",
+      "publisherDomain": "ardo.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "Aufgedruckte Skala zum Ablesen der Füllmenge (max. 180ml)",
+        "Doppelter Zip-Verschluss und stabile Nähte für höchste Auslaufsicherheit",
+        "Selbststehender oder stapelbarer Gefrierbeutel",
+        "Vorsterilisiert, zum Einmal-Gebrauch",
+        "SKU: 63.00.334"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S03",
+      "url": "https://ardo.de/products/muttermilchflaschen-3er-set",
+      "publisherDomain": "ardo.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "3 Milchflaschen 150 ml",
+        "Enthält 3 Fläschchen mit Skalierung und verschließbarem Deckel",
+        "Die hochwertigen Milchflaschen aus BPA- und BPS-freiem Kunststoff (Polypropylen) fassen 150 ml wertvolle Muttermilch",
+        "Passend für Ardo Pumpsets und die Ardo Amaryll Start Handmilchpumpe Kompatibel mit allen Trinksaugern für Standardflaschen (Schmalhals)",
+        "SKU: 63.00.263"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S04",
+      "url": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+      "publisherDomain": "eu.momcozy.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "The portable breast milk cooler has a total capacity of 22oz (approximately 650ml).",
+        "This is split between two separate 11oz (325ml) storage bottles",
+        "The cooler is precision-engineered to work with the included Momcozy storage bottles to ensure a perfect fit and optimal 360° cooling.",
+        "Other brands of bottles may not fit correctly and could significantly impact the cooling performance.",
+        "Ensure it is frozen solid before placing it into the breast milk storage cooler."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S05",
+      "url": "https://lansinoh.de/products/muttermilchbeutel",
+      "publisherDomain": "lansinoh.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "Jeder Lansinoh® Muttermilchbeutel kann mit bis zu 180 ml Muttermilch befüllt werden.",
+        "Die strapazierfähigen Beutel bestehen aus lebensmittelechtem Polyethylen, sind vorsterilisiert und hygienisch verschlossen.",
+        "Der doppelte Zip-Verschluss und die stabilen Nähte schützen die Muttermilch.",
+        "Bequem & zeitsparend direkt in den Beutel abpumpen",
+        "Da die Muttermilchbeutel nach der ersten Benutzung innen nicht mehr vorsterilisiert sind, solltest du die Beutel nur einmal benutzen und danach entsorgen.",
+        "Die aufgedruckte Skala dient als Richtwert."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S06",
+      "url": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+      "publisherDomain": "lansinoh.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Kompatibel mit allen Lansinoh® Milchpumpen und dem NaturalWave® Sauger",
+        "Platzsparende Aufbewahrung dank stapelbarem Deckel",
+        "Sie sind gefrier- und spülmaschinenfest, haben eine ergonomische Form und lassen sich dank ihres weiten Halses leicht befüllen."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S07",
+      "url": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+      "publisherDomain": "lansinoh.de",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "Wiederverwendbar – aus langlebigem, lebensmittelechtem Silikon",
+        "Mit bis zu 240 ml Muttermilch füllen.",
+        "Die Beutel sind selbststehend und können zusätzlich liegend und platzsparend verstaut werden.",
+        "Enthält 5 Silikon-Muttermilchbeutel & 1 flüssigen Kreidemarker",
+        "Er darf daher nicht ausgekocht oder sterilisiert werden.",
+        "UV-Sterilisatoren vermeiden, da diese die Lebensdauer der Beutel verkürzen können."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S08",
+      "url": "https://www.cereschill.com/products/og-chiller-warmer",
+      "publisherDomain": "www.cereschill.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract + isolated browser DOM",
+      "verbatimExcerpts": [
+        "OG+ Chiller/Warmer - 28oz",
+        "2 chilling options: use ice or a frozen inner chamber",
+        "Quick & Easy Cleaning - just 5 dishwasher-safe parts.",
+        "Food-grade stainless steel, platinum silicone, and safe, PFAS-free coatings.",
+        "Extra Large Capacity - stores up to 38 ounces total.",
+        "Check if your pump needs an adapter."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S09",
+      "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+      "publisherDomain": "www.mambaby.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Können beliebig oft gereinigt und sterilisiert werden.",
+        "Ideal zur Lagerung in Kühlschrank und Gefriertruhe. Und für unterwegs.",
+        "Dank des abwaschbaren Beschriftungsfeldes kann der Inhalt immer mit aktuellem Datum versehen werden.",
+        "5 Stück pro Packung"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S10",
+      "url": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+      "publisherDomain": "www.mambaby.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Doppeldruck-Verschluss zur sicheren Aufbewahrung",
+        "Standfest & Flaches Design für eine platzsparende Aufbewahrung"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S11",
+      "url": "https://www.mambaby.com/media/07/9a/22/1759234085/1182400_instructions_milk_storage_bag_DE_09_2025.pdf?ts=1759234085",
+      "publisherDomain": "www.mambaby.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Nicht über die 180-ml-Markierung hinaus befüllen.",
+        "Kompatibel mit MAM Handmilchpumpe und MAM 2in1 Milchpumpen. Kein zusätzlicher Adapter erforderlich.",
+        "Diese Muttermilchbeutel sind nur für den einmaligen Gebrauch bestimmt."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S12",
+      "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+      "publisherDomain": "www.medela.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+        "Die Muttermilchflaschen von Medela sind BPA-frei, spülmaschinen- und auch mikrowellenfest.",
+        "Kein unnötiges Umfüllen – ein Behälter zum Abpumpen, Aufbewahren und Einfrieren von Muttermilch"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S13",
+      "url": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+      "publisherDomain": "www.medela.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "Our Easy Pour Breast Milk Storage Bags can store up to 210ml/ 7oz of pumped breastmilk.",
+        "Easy Pour Breast Milk Storage Bags have two openings. Tab #1 for pouring in and Tab#2 for pouring out the breast milk with one hand.",
+        "Flat freezing & self-standing for space optimisation in the freezer or fridge",
+        "Our Easy Pour Breast Milk Storage Bags are made from LDPE.",
+        "Our Easy Pour Breast Milk Storage Bags are designed for single use only, and should be disposed of after use.",
+        "These bags cannot be converted to fit the breast pump for direct pumping.",
+        "Configuration may vary from country to country"
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    },
+    {
+      "sourceId": "S14",
+      "url": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+      "publisherDomain": "www.medela.com",
+      "checkedAt": "2026-10-14",
+      "retrievalMethod": "web_extract",
+      "verbatimExcerpts": [
+        "It comes with four Medela breast milk bottles and a separate cooling element.",
+        "The contoured ice pack is specially designed for Medela bottles and maximizes breast milk storage time.",
+        "The insulation on the inside of the bag will keep the expressed breast milk cool for longer."
+      ],
+      "verification": "All excerpts found in retrieved source text; only whitespace normalized."
+    }
+  ],
+  "products": [
+    {
+      "id": "lansinoh-muttermilchbeutel",
+      "brand": "Lansinoh",
+      "name": "Muttermilchbeutel",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Jeder Lansinoh® Muttermilchbeutel kann mit bis zu 180 ml Muttermilch befüllt werden.",
+      "factEvidence": [
+        {
+          "fact": "Bis zu 180 ml Füllmenge pro Beutel.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Jeder Lansinoh® Muttermilchbeutel kann mit bis zu 180 ml Muttermilch befüllt werden.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S05"
+        },
+        {
+          "fact": "Lebensmittelechtes Polyethylen; vorsterilisiert.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Die strapazierfähigen Beutel bestehen aus lebensmittelechtem Polyethylen, sind vorsterilisiert und hygienisch verschlossen.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S05"
+        },
+        {
+          "fact": "Doppelter Zip-Verschluss und stabile Nähte.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Der doppelte Zip-Verschluss und die stabilen Nähte schützen die Muttermilch.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S05"
+        },
+        {
+          "fact": "Direktes Abpumpen mit Lansinoh-Milchpumpen laut Hersteller.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Bequem & zeitsparend direkt in den Beutel abpumpen",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S05"
+        }
+      ],
+      "sourceLimitations": [
+        "Nur für einmaligen Gebrauch vorgesehen.",
+        "Die gedruckte Füllskala ist laut Hersteller ein Richtwert, kein präzises Messinstrument."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Da die Muttermilchbeutel nach der ersten Benutzung innen nicht mehr vorsterilisiert sind, solltest du die Beutel nur einmal benutzen und danach entsorgen.",
+          "sourceId": "S05"
+        },
+        {
+          "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+          "quote": "Die aufgedruckte Skala dient als Richtwert.",
+          "sourceId": "S05"
+        }
+      ],
+      "sourceId": "S05"
+    },
+    {
+      "id": "lansinoh-silikon-muttermilchbeutel",
+      "brand": "Lansinoh",
+      "name": "Silikon-Muttermilchbeutel",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Wiederverwendbar – aus langlebigem, lebensmittelechtem Silikon",
+      "factEvidence": [
+        {
+          "fact": "Wiederverwendbar und aus lebensmittelechtem Silikon.",
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "Wiederverwendbar – aus langlebigem, lebensmittelechtem Silikon",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S07"
+        },
+        {
+          "fact": "Füllmenge bis zu 240 ml.",
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "Mit bis zu 240 ml Muttermilch füllen.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S07"
+        },
+        {
+          "fact": "Selbststehend; auch liegend verstaubar.",
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "Die Beutel sind selbststehend und können zusätzlich liegend und platzsparend verstaut werden.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S07"
+        },
+        {
+          "fact": "Flüssiger Kreidemarker ist im Lieferumfang enthalten.",
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "Enthält 5 Silikon-Muttermilchbeutel & 1 flüssigen Kreidemarker",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S07"
+        }
+      ],
+      "sourceLimitations": [
+        "Der separate Polystyrol-Verschluss darf laut Hersteller nicht ausgekocht oder sterilisiert werden.",
+        "UV-Sterilisatoren sollen laut Hersteller vermieden werden; die Materialangaben des Silikons gelten nicht pauschal für alle Teile."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "Er darf daher nicht ausgekocht oder sterilisiert werden.",
+          "sourceId": "S07"
+        },
+        {
+          "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+          "quote": "UV-Sterilisatoren vermeiden, da diese die Lebensdauer der Beutel verkürzen können.",
+          "sourceId": "S07"
+        }
+      ],
+      "sourceId": "S07"
+    },
+    {
+      "id": "lansinoh-muttermilchflaschen",
+      "brand": "Lansinoh",
+      "name": "Muttermilchflaschen",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Kompatibel mit allen Lansinoh® Milchpumpen und dem NaturalWave® Sauger",
+      "factEvidence": [
+        {
+          "fact": "Mit Lansinoh-Milchpumpen und NaturalWave-Sauger kompatibel.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+          "quote": "Kompatibel mit allen Lansinoh® Milchpumpen und dem NaturalWave® Sauger",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S06"
+        },
+        {
+          "fact": "Stapelbare Verschlussdeckel.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+          "quote": "Platzsparende Aufbewahrung dank stapelbarem Deckel",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S06"
+        },
+        {
+          "fact": "Gefrier- und spülmaschinengeeignet.",
+          "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+          "quote": "Sie sind gefrier- und spülmaschinenfest, haben eine ergonomische Form und lassen sich dank ihres weiten Halses leicht befüllen.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S06"
+        }
+      ],
+      "sourceLimitations": [
+        "Die gelesene Produktbeschreibung nennt kein eindeutiges Fassungsvermögen und keine eindeutige Stückzahl des Angebots.",
+        "Eine universelle Verbindung mit Pumpen oder Saugern anderer Hersteller ist hier nicht belegt."
+      ],
+      "additionalEvidence": [],
+      "sourceId": "S06"
+    },
+    {
+      "id": "medela-easy-pour-storage-bags",
+      "brand": "Medela",
+      "name": "Easy Pour Breast Milk Storage Bags",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Our Easy Pour Breast Milk Storage Bags can store up to 210ml/ 7oz of pumped breastmilk.",
+      "factEvidence": [
+        {
+          "fact": "Bis zu 210 ml beziehungsweise 7 oz laut Hersteller.",
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Our Easy Pour Breast Milk Storage Bags can store up to 210ml/ 7oz of pumped breastmilk.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S13"
+        },
+        {
+          "fact": "Zwei Öffnungen: Tab #1 zum Einfüllen, Tab #2 zum Ausgießen.",
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Easy Pour Breast Milk Storage Bags have two openings. Tab #1 for pouring in and Tab#2 for pouring out the breast milk with one hand.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S13"
+        },
+        {
+          "fact": "Flach einfrierbar und selbststehend.",
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Flat freezing & self-standing for space optimisation in the freezer or fridge",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S13"
+        },
+        {
+          "fact": "Material LDPE.",
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Our Easy Pour Breast Milk Storage Bags are made from LDPE.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S13"
+        }
+      ],
+      "sourceLimitations": [
+        "Einwegprodukt; nicht zum Waschen und Wiederverwenden vorgesehen.",
+        "Nicht direkt an eine Pumpe anschließbar, auch nicht durch Umrüstung mit Adapter.",
+        "Gelesene Quelle ist die kanadische Herstellerseite; Packungsinhalt kann je nach Land variieren."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Our Easy Pour Breast Milk Storage Bags are designed for single use only, and should be disposed of after use.",
+          "sourceId": "S13"
+        },
+        {
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "These bags cannot be converted to fit the breast pump for direct pumping.",
+          "sourceId": "S13"
+        },
+        {
+          "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+          "quote": "Configuration may vary from country to country",
+          "sourceId": "S13"
+        }
+      ],
+      "sourceId": "S13"
+    },
+    {
+      "id": "medela-muttermilchflaschen",
+      "brand": "Medela",
+      "name": "Muttermilchflaschen",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+      "factEvidence": [
+        {
+          "fact": "150-ml-Flaschen im Dreierpack oder 250-ml-Flaschen im Zweierpack.",
+          "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+          "quote": "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S12"
+        },
+        {
+          "fact": "BPA-frei und spülmaschinengeeignet laut Hersteller.",
+          "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+          "quote": "Die Muttermilchflaschen von Medela sind BPA-frei, spülmaschinen- und auch mikrowellenfest.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S12"
+        },
+        {
+          "fact": "Ein Behälter zum Abpumpen, Aufbewahren und Einfrieren.",
+          "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+          "quote": "Kein unnötiges Umfüllen – ein Behälter zum Abpumpen, Aufbewahren und Einfrieren von Muttermilch",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S12"
+        }
+      ],
+      "sourceLimitations": [
+        "150 ml und 250 ml werden hier als Varianten eines Artikels geführt, nicht als getrennte Produkte.",
+        "Die pauschale Pumpenkompatibilität der Quelle ersetzt keinen Modell- und Anschlussabgleich, insbesondere bei Auffang-Cups."
+      ],
+      "additionalEvidence": [],
+      "sourceId": "S12"
+    },
+    {
+      "id": "medela-cooler-bag",
+      "brand": "Medela",
+      "name": "Cooler Bag breast milk storage",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "It comes with four Medela breast milk bottles and a separate cooling element.",
+      "factEvidence": [
+        {
+          "fact": "Lieferumfang der Quelle: vier Medela-Muttermilchflaschen und ein separates Kühlelement.",
+          "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+          "quote": "It comes with four Medela breast milk bottles and a separate cooling element.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S14"
+        },
+        {
+          "fact": "Konturiertes Kühlelement speziell für Medela-Flaschen.",
+          "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+          "quote": "The contoured ice pack is specially designed for Medela bottles and maximizes breast milk storage time.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S14"
+        },
+        {
+          "fact": "Isolierung an der Innenseite der Tasche.",
+          "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+          "quote": "The insulation on the inside of the bag will keep the expressed breast milk cool for longer.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S14"
+        }
+      ],
+      "sourceLimitations": [
+        "US-Herstellerseite: Lieferumfang und Flaschenvolumen des deutschen Angebots sind damit nicht eindeutig belegt.",
+        "Keine eigene Messung der Kühlleistung; Herstellerwerbung über Kühlstunden ist keine pauschale Sicherheitsgarantie."
+      ],
+      "additionalEvidence": [],
+      "sourceId": "S14"
+    },
+    {
+      "id": "ardo-easy-store",
+      "brand": "Ardo",
+      "name": "Ardo Easy Store Muttermilchbeutel",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Aufgedruckte Skala zum Ablesen der Füllmenge (max. 180ml)",
+      "factEvidence": [
+        {
+          "fact": "Maximale Füllmenge 180 ml mit aufgedruckter Skala.",
+          "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+          "quote": "Aufgedruckte Skala zum Ablesen der Füllmenge (max. 180ml)",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S02"
+        },
+        {
+          "fact": "Doppelter Zip-Verschluss und stabile Nähte.",
+          "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+          "quote": "Doppelter Zip-Verschluss und stabile Nähte für höchste Auslaufsicherheit",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S02"
+        },
+        {
+          "fact": "Selbststehend oder stapelbar.",
+          "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+          "quote": "Selbststehender oder stapelbarer Gefrierbeutel",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S02"
+        },
+        {
+          "fact": "Vorsterilisiert und für einmaligen Gebrauch vorgesehen.",
+          "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+          "quote": "Vorsterilisiert, zum Einmal-Gebrauch",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S02"
+        }
+      ],
+      "sourceLimitations": [
+        "Einwegprodukt, nicht als wiederverwendbarer Beutel ausgewiesen.",
+        "Direktes Abpumpen in diesen Beutel ist auf der gelesenen Produktseite nicht belegt."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+          "quote": "SKU: 63.00.334",
+          "sourceId": "S02"
+        }
+      ],
+      "sourceId": "S02"
+    },
+    {
+      "id": "ardo-bottle-set",
+      "brand": "Ardo",
+      "name": "Ardo Bottle Set Muttermilchflaschen (3 Stk.)",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "3 Milchflaschen 150 ml",
+      "factEvidence": [
+        {
+          "fact": "Drei Flaschen mit je 150 ml.",
+          "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+          "quote": "3 Milchflaschen 150 ml",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S03"
+        },
+        {
+          "fact": "Flaschen mit Skalierung und verschließbarem Deckel.",
+          "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+          "quote": "Enthält 3 Fläschchen mit Skalierung und verschließbarem Deckel",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S03"
+        },
+        {
+          "fact": "Polypropylen, BPA- und BPS-frei laut Hersteller.",
+          "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+          "quote": "Die hochwertigen Milchflaschen aus BPA- und BPS-freiem Kunststoff (Polypropylen) fassen 150 ml wertvolle Muttermilch",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S03"
+        },
+        {
+          "fact": "Für Ardo-Pumpsets und Ardo Amaryll Start; Schmalhals-Sauger laut Hersteller kompatibel.",
+          "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+          "quote": "Passend für Ardo Pumpsets und die Ardo Amaryll Start Handmilchpumpe Kompatibel mit allen Trinksaugern für Standardflaschen (Schmalhals)",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S03"
+        }
+      ],
+      "sourceLimitations": [
+        "Kompatibilität zu Wearable-Cups oder zu Pumpen anderer Marken ist damit nicht pauschal belegt.",
+        "Die Quelle beschreibt Aufbewahrung im Kühlschrank; eine eigene Gefriereignungsprüfung wurde nicht durchgeführt."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+          "quote": "SKU: 63.00.263",
+          "sourceId": "S03"
+        }
+      ],
+      "sourceId": "S03"
+    },
+    {
+      "id": "ardo-kuehltasche",
+      "brand": "Ardo",
+      "name": "Ardo Kühltasche für Muttermilch inkl. Kühlelementen",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "die Ardo Kühltasche bietet Platz für 4 Milchflaschen und enthält bereits 3 Kühlelemente.",
+      "factEvidence": [
+        {
+          "fact": "Platz für vier Milchflaschen laut Hersteller.",
+          "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+          "quote": "die Ardo Kühltasche bietet Platz für 4 Milchflaschen und enthält bereits 3 Kühlelemente.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S01"
+        },
+        {
+          "fact": "Drei Kühlelemente enthalten.",
+          "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+          "quote": "3 Kühlelemente",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S01"
+        },
+        {
+          "fact": "Lieferumfang der Quelle: Kühltasche und Kühlelemente.",
+          "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+          "quote": "Lieferumfang Kühltasche 3 Kühlelemente",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S01"
+        }
+      ],
+      "sourceLimitations": [
+        "Flaschen sind im gelesenen Lieferumfang nicht aufgeführt.",
+        "Die Quelle nennt keine Innenmaße oder eindeutig passende Flaschengrößen und belegt keine eigene Kühlleistungsmessung."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+          "quote": "SKU: 63.00.82",
+          "sourceId": "S01"
+        }
+      ],
+      "sourceId": "S01"
+    },
+    {
+      "id": "mam-aufbewahrungsbecher",
+      "brand": "MAM",
+      "name": "Aufbewahrungsbecher – für Muttermilch",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Können beliebig oft gereinigt und sterilisiert werden.",
+      "factEvidence": [
+        {
+          "fact": "Mehrfach reinigbar und sterilisierbar laut Hersteller.",
+          "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Können beliebig oft gereinigt und sterilisiert werden.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S09"
+        },
+        {
+          "fact": "Für Kühlschrank, Gefriertruhe und unterwegs ausgewiesen.",
+          "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Ideal zur Lagerung in Kühlschrank und Gefriertruhe. Und für unterwegs.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S09"
+        },
+        {
+          "fact": "Abwaschbares Beschriftungsfeld.",
+          "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Dank des abwaschbaren Beschriftungsfeldes kann der Inhalt immer mit aktuellem Datum versehen werden.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S09"
+        },
+        {
+          "fact": "Fünf Becher pro Packung der gelesenen Produktseite.",
+          "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "5 Stück pro Packung",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S09"
+        }
+      ],
+      "sourceLimitations": [
+        "Auf der gelesenen Produktseite ist kein eindeutiges Volumen pro Becher angegeben.",
+        "Die dargestellte Pumpenanbindung bezieht sich auf das MAM-System, nicht auf universelle Anschlüsse."
+      ],
+      "additionalEvidence": [],
+      "sourceId": "S09"
+    },
+    {
+      "id": "mam-muttermilchbeutel",
+      "brand": "MAM",
+      "name": "MAM Muttermilchbeutel - 25 Stk",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "Doppeldruck-Verschluss zur sicheren Aufbewahrung",
+      "factEvidence": [
+        {
+          "fact": "Doppeldruck-Verschluss.",
+          "sourceUrl": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+          "quote": "Doppeldruck-Verschluss zur sicheren Aufbewahrung",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S10"
+        },
+        {
+          "fact": "Standfestes, flaches Design.",
+          "sourceUrl": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+          "quote": "Standfest & Flaches Design für eine platzsparende Aufbewahrung",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S10"
+        },
+        {
+          "fact": "Befüllgrenze laut Gebrauchshinweis: 180 ml.",
+          "sourceUrl": "https://www.mambaby.com/media/07/9a/22/1759234085/1182400_instructions_milk_storage_bag_DE_09_2025.pdf?ts=1759234085",
+          "quote": "Nicht über die 180-ml-Markierung hinaus befüllen.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S11"
+        },
+        {
+          "fact": "Direktes Abpumpen mit MAM Handmilchpumpe und MAM 2in1 ohne zusätzlichen Adapter.",
+          "sourceUrl": "https://www.mambaby.com/media/07/9a/22/1759234085/1182400_instructions_milk_storage_bag_DE_09_2025.pdf?ts=1759234085",
+          "quote": "Kompatibel mit MAM Handmilchpumpe und MAM 2in1 Milchpumpen. Kein zusätzlicher Adapter erforderlich.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S11"
+        }
+      ],
+      "sourceLimitations": [
+        "Nur für einmaligen Gebrauch vorgesehen.",
+        "Direkter Pumpenanschluss ist ausdrücklich für MAM Handmilchpumpe und MAM 2in1 belegt, nicht für beliebige Milchpumpen."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://www.mambaby.com/media/07/9a/22/1759234085/1182400_instructions_milk_storage_bag_DE_09_2025.pdf?ts=1759234085",
+          "quote": "Diese Muttermilchbeutel sind nur für den einmaligen Gebrauch bestimmt.",
+          "sourceId": "S11"
+        }
+      ],
+      "sourceId": "S10"
+    },
+    {
+      "id": "ceres-chill-og-plus",
+      "brand": "Ceres Chill",
+      "name": "OG+ Chiller/Warmer - 28oz",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "OG+ Chiller/Warmer - 28oz",
+      "factEvidence": [
+        {
+          "fact": "Produktbezeichnung der aktuellen Quelle: OG+ Chiller/Warmer - 28oz.",
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "OG+ Chiller/Warmer - 28oz",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S08"
+        },
+        {
+          "fact": "Zwei Kühlkonfigurationen: Eis oder gefrorene Innenkammer.",
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "2 chilling options: use ice or a frozen inner chamber",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S08"
+        },
+        {
+          "fact": "Hersteller nennt fünf spülmaschinengeeignete Teile.",
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "Quick & Easy Cleaning - just 5 dishwasher-safe parts.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S08"
+        },
+        {
+          "fact": "Genannte Materialien: lebensmittelechter Edelstahl und Platinsilikon.",
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "Food-grade stainless steel, platinum silicone, and safe, PFAS-free coatings.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S08"
+        }
+      ],
+      "sourceLimitations": [
+        "28 oz für die beworbene Kühlkonfiguration und bis zu 38 oz Gesamtvolumen sind unterschiedliche Angaben; nicht als identische nutzbare Kühlkapazität behandeln.",
+        "Pumpen können einen Adapter benötigen; keine pauschale Passgarantie.",
+        "Die beworbene Kühlzeit ist eine Herstellerangabe, keine unabhängig geprüfte Lagerzeit- oder Sicherheitsgarantie."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "Extra Large Capacity - stores up to 38 ounces total.",
+          "sourceId": "S08"
+        },
+        {
+          "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+          "quote": "Check if your pump needs an adapter.",
+          "sourceId": "S08"
+        }
+      ],
+      "sourceId": "S08"
+    },
+    {
+      "id": "momcozy-portable-cooler-22oz",
+      "brand": "Momcozy",
+      "name": "Momcozy Portable Baby Bottle Cooler for Outdoor - 22oz",
+      "checkedAt": "2026-10-14",
+      "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+      "sourceType": "official-manufacturer",
+      "evidenceQuote": "The portable breast milk cooler has a total capacity of 22oz (approximately 650ml).",
+      "factEvidence": [
+        {
+          "fact": "Gesamtvolumen 22 oz, vom Hersteller als ungefähr 650 ml angegeben.",
+          "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+          "quote": "The portable breast milk cooler has a total capacity of 22oz (approximately 650ml).",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S04"
+        },
+        {
+          "fact": "Zwei separate Flaschen mit je 11 oz beziehungsweise 325 ml.",
+          "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+          "quote": "This is split between two separate 11oz (325ml) storage bottles",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S04"
+        },
+        {
+          "fact": "System ist auf die enthaltenen Momcozy-Aufbewahrungsflaschen abgestimmt.",
+          "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+          "quote": "The cooler is precision-engineered to work with the included Momcozy storage bottles to ensure a perfect fit and optimal 360° cooling.",
+          "verification": "verbatim-in-retrieved-text (whitespace normalized)",
+          "sourceId": "S04"
+        }
+      ],
+      "sourceLimitations": [
+        "Andere Flaschenmarken können laut Hersteller nicht passend sitzen und die Kühlleistung verändern.",
+        "Das Kühlelement muss vor der Nutzung nach Herstelleranleitung vorbereitet werden; keine aktive elektrische Kühlung belegt.",
+        "Die beworbene Kühlzeit ist keine unabhängig bestätigte Sicherheits- oder Lagerzeitgarantie."
+      ],
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+          "quote": "Other brands of bottles may not fit correctly and could significantly impact the cooling performance.",
+          "sourceId": "S04"
+        },
+        {
+          "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+          "quote": "Ensure it is frozen solid before placing it into the breast milk storage cooler.",
+          "sourceId": "S04"
+        }
+      ],
+      "sourceId": "S04"
+    }
+  ]
+}

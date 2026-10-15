@@ -1,0 +1,62 @@
+[
+  {
+    "id": "alltag",
+    "url": "/editorial-v2/alltag.svg",
+    "alt": "Ruhiges Stillleben mit petrolfarbener Kühltasche, Mulltuch, zwei geschlossenen Vorratsbechern und einer Zimmerpflanze.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "muttermilchbeutel-oder-mehrwegbecher",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  },
+  {
+    "id": "kuehltransport",
+    "url": "/editorial-v2/kuehltransport.svg",
+    "alt": "Geöffnete petrolfarbene Kühltasche mit zwei geschlossenen Aufbewahrungsbechern und einem separaten mintfarbenen Kühlakku.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  },
+  {
+    "id": "portionieren",
+    "url": "/editorial-v2/portionieren.svg",
+    "alt": "Zwei Muttermilchbeutel mit leeren Etiketten auf einem korallfarbenen Tablett, daneben Vorratsbecher und Stift.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "muttermilch-beschriften-portionen-gefrierfach",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  },
+  {
+    "id": "reinigung",
+    "url": "/editorial-v2/reinigung.svg",
+    "alt": "Helles Spülbecken neben einem Trockengestell mit sauberen, markenlosen Becher- und Trichterteilen auf einem Tuch.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "milchpumpe-reinigen",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  },
+  {
+    "id": "passform",
+    "url": "/editorial-v2/passform.svg",
+    "alt": "Drei neutrale Brusttrichter unterschiedlicher Größe auf einer weichen Unterlage, davor ein Maßband ohne Zahlen.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "richtige-flanschgroesse",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  },
+  {
+    "id": "handfrei",
+    "url": "/editorial-v2/handfrei.svg",
+    "alt": "Zwei abstrahierte, markenlose Sammelcups auf weich gefaltetem Stoff neben einem Smartphone mit unbeschriftetem dunklem Bildschirm.",
+    "width": 1200,
+    "height": 900,
+    "articleSlug": "hands-free-milchpumpe-kaufen",
+    "kind": "original-vector-illustration",
+    "creator": "Milchpumpe-Vergleich Redaktion"
+  }
+]

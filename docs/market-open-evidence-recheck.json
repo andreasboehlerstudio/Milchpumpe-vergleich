@@ -1,0 +1,1338 @@
+{
+  "schemaVersion": 1,
+  "language": "de-DE",
+  "status": "complete",
+  "scope": {
+    "requestedModels": [
+      "KISSBOBO K5",
+      "NCVI AM8161A",
+      "eufy S2 Pro",
+      "Willow Go (PDL60)",
+      "Kinderkraft MAMAFLOW"
+    ],
+    "purpose": "Resolve or narrow identity, region, architecture and use evidence gaps; no quality or availability ranking.",
+    "preserveHistoricalSnapshots": true,
+    "historicalInputs": [
+      "docs/wearable-comparison-editorial.json",
+      "src/wearable-market-data.json"
+    ],
+    "historicalAmazonObservationDate": "2026-10-14",
+    "historicalNoFindDoesNotMeanOutOfStock": true,
+    "onlyOwnedRepositoryOutput": "docs/market-open-evidence-recheck.json",
+    "runtimeOrCatalogueEdited": false,
+    "accountsAccessed": false,
+    "publicationOrPurchase": false
+  },
+  "progress": [
+    {
+      "batch": 1,
+      "completed": "Read historical model evidence and discovered model-specific KISSBOBO brand product/FAQ pages, NCVI AM8161 family product, official Kinderkraft MAMAFLOW v1.0 manual, eufy S2 bundle support and Willow region/generation leads.",
+      "limitations": [
+        "Search backend searxng unavailable; search returned keyless fallback results, used only as discovery.",
+        "NCVI web extraction returned an insufficient-credit error; no upgrade or paid API purchase made, switching to direct public reads.",
+        "Public browser timed out on the NCVI product page; alternative direct public HTTP will be attempted."
+      ]
+    },
+    {
+      "batch": 2,
+      "completed": "Fresh anonymous direct HTTP title/selected-ASIN reads succeeded for all five Amazon.de targets. Manufacturer-hosted Kinderkraft v1.0 manual explicitly specifies nursing-bra use and collector-mounted main unit. New Anker-authored S2 Pro quick-start guide names T60A1/T600P together; exact German official product is t60a13b0, not guessed t60a1181. NCVI current primary product says NC8161 while its linked manual is AM8161; AM8161A suffix remains unproven.",
+      "limitations": [
+        "Amazon direct anonymous pages requested a delivery address; buy controls/seller shown, but no current stock, price, delivery estimate or condition asserted.",
+        "Willow old Go product URL returned 404 on direct HTTP despite extractor returning product text; extractor-only content will not prove current exact generation.",
+        "KISSBOBO Amazon-linked manual is scanned (8 pages with no text layer); no OCR or invented manual quotations used."
+      ]
+    },
+    {
+      "batch": 3,
+      "completed": "Rechecked all five exact Amazon ASINs, including selected-ASIN and model fields; verified Kinderkraft Amazon-linked manual is byte-identical to official manual. Found current Willow product URLs and manufacturer-authored PDL60 ©2021 and Go ©2025 manuals, which must not be merged. Bounded discovery confirms NCVI AM8111 and Willow 360/renamed 3.0 as absent manufacturer model identities, not color/pack/case duplicates.",
+      "limitations": [
+        "Publicly linked NCVI download returned 403; no bypass attempted. Exact Amazon page supplied accessible NCVI AM8161 manual instead.",
+        "Old Willow Go product URL and old GoIFU route return 404; current product recovered via official FAQ product links, not access-control bypass.",
+        "Only two missing-model candidates verified; this is not a market census."
+      ]
+    }
+  ],
+  "models": [
+    {
+      "qualityScore": null,
+      "ownTests": false,
+      "amazonOfferIsArchitectureProof": false,
+      "brand": "KISSBOBO",
+      "canonicalModel": "K5",
+      "status": "partial",
+      "safePublicFacingShortLabel": "KISSBOBO K5 – schlauchfreie In-Bra-Pumpe; DE-Zweierset separat prüfen",
+      "statusMeaning": "Brand/model-specific primary page and integrated in-bra architecture found; exact DE variant specifications and manufacturing/bundle mapping not resolved.",
+      "resolvedClaims": [
+        {
+          "claim": "Current KISSBOBO brand K5 product explicitly fits in the bra with no external motor/tubes.",
+          "sourceIds": [
+            "kissbobo-k5-brand-product"
+          ]
+        },
+        {
+          "claim": "Exact DE ASIN identifies K5, Weiß 2 Stück.",
+          "sourceIds": [
+            "amazon-B0F3HY4N15"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "topic": "Maximum suction",
+          "values": [
+            {
+              "value": "280mmHg",
+              "sourceIds": [
+                "kissbobo-brand-faq",
+                "amazon-B0F3HY4N15"
+              ]
+            },
+            {
+              "value": "up to 320 mmHg per side",
+              "sourceIds": [
+                "kissbobo-k5-brand-product"
+              ]
+            }
+          ],
+          "action": "Omit maximum suction and any efficiency ranking; no unproven revision attribution."
+        },
+        {
+          "topic": "Auto-off",
+          "values": [
+            {
+              "value": "20-Minuten-Timer-Abschaltung",
+              "sourceIds": [
+                "amazon-B0F3HY4N15"
+              ]
+            },
+            {
+              "value": "30-minute automatic shut-off",
+              "sourceIds": [
+                "kissbobo-k5-brand-product"
+              ]
+            }
+          ],
+          "action": "Do not transfer timer/operating claims between pages."
+        }
+      ],
+      "remainingGaps": [
+        "No independently established connection between kissbobo.co K5 configuration and legal manufacturer Huizhou LVB Maternal And Infant Supplies Co,Ltd. named by Amazon.",
+        "Exact Amazon-linked scanned manual has no extracted text; not treated as read instruction evidence.",
+        "Primary page is not proof of OEM independence or a documented newer generation."
+      ],
+      "architecture": {
+        "value": "fully-in-bra-electric-wearable",
+        "confidence": "brand-K5-confirmed; exact-Amazon-configuration-transfer-limited",
+        "sourceIds": [
+          "kissbobo-k5-brand-product"
+        ]
+      },
+      "recommendation": {
+        "canEnterSourcedRecommendation": false,
+        "canEnterSourcedCatalogue": true,
+        "reason": "Descriptive K5/in-bra entry is supported; keep out of a DE use-case shortlist until exact-variant safety/instruction and conflicting spec mapping are settled.",
+        "prohibitedClaims": [
+          "best/strongest",
+          "painless",
+          "FDA approved",
+          "medically increased output",
+          "safe to pump while driving or asleep"
+        ]
+      },
+      "amazonSourceId": "amazon-B0F3HY4N15",
+      "sourceIds": [
+        "kissbobo-k5-brand-product",
+        "kissbobo-brand-faq",
+        "amazon-B0F3HY4N15"
+      ],
+      "nextEvidenceNeeded": "Model/revision-specific K5 instructions tied to the exact DE ASIN or an explicit manufacturer variant cross-reference.",
+      "historicalEvidencePreserved": {
+        "modelRef": {
+          "brand": "KISSBOBO",
+          "canonicalModel": "K5"
+        },
+        "inheritedArchitecture": {
+          "normalized": "fully-in-bra-electric-wearable",
+          "sourceValue": "vollintegriert-in-bra",
+          "status": "amazon-description-only-primary-unverified",
+          "buyerLabel": "Vollständig im BH (Motor integriert)",
+          "primaryQuoteAloneMayNotProveArchitecture": false,
+          "independentCheckSourceIds": []
+        },
+        "inheritedManufacturerStatus": "primary-missing",
+        "historicalAmazonObservation": {
+          "observedAsin": "B0F3HY4N15",
+          "checkedAt": "2026-10-14T20:30:53.530537+00:00",
+          "title": "KISSBOBO K5 Milchpumpe Elektrisch Doppel,4 Modi und 19 Stufen,280mmHg Starke Saugleistung elektrische milchpumpe freihändig,Schmerzfreie elektrisch tragbar(Weiß 2 Stück)",
+          "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min."
+        },
+        "historicalSeller": "KISSBOBO Global Store KISSBOBO Global Store",
+        "scopeNote": "Copied baseline context only; inherited architecture is not fresh primary proof. Historical Auf Lager/seller evidence does not describe the current observation."
+      }
+    },
+    {
+      "qualityScore": null,
+      "ownTests": false,
+      "amazonOfferIsArchitectureProof": false,
+      "brand": "NCVI",
+      "canonicalModel": "AM8161A (beheiztes Wearable)",
+      "status": "partial",
+      "safePublicFacingShortLabel": "NCVI AM8161A – Wärmefunktion laut DE-Angebot; Modellabgleich offen",
+      "statusMeaning": "8161 family primary page and exact-ASIN-linked NCVI manual located; suffix A and current NC prefix not reconciled.",
+      "resolvedClaims": [
+        {
+          "claim": "DE page explicitly prints AM8161A and describes in-bra use.",
+          "sourceIds": [
+            "amazon-B0G7FJ6XKC"
+          ]
+        },
+        {
+          "claim": "Exact AM8161A Amazon page links manufacturer-authored AM8161 manual, which describes wearable bra use.",
+          "sourceIds": [
+            "ncvi-amazon-supplied-manual"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "topic": "Exact identity",
+          "values": [
+            {
+              "value": "AM8161A",
+              "sourceIds": [
+                "amazon-B0G7FJ6XKC"
+              ]
+            },
+            {
+              "value": "AM8161",
+              "sourceIds": [
+                "ncvi-amazon-supplied-manual"
+              ]
+            },
+            {
+              "value": "NC8161",
+              "sourceIds": [
+                "ncvi-heated-current-product"
+              ]
+            }
+          ],
+          "action": "Do not remove suffix A or repair NC into AM. Indexed AM8161 snippet is not the live product model field."
+        },
+        {
+          "topic": "Container capacity",
+          "values": [
+            {
+              "value": "180 ml per side in DE listing bullet",
+              "sourceIds": [
+                "amazon-B0G7FJ6XKC"
+              ]
+            },
+            {
+              "value": "5 oz/150 ml",
+              "sourceIds": [
+                "ncvi-heated-current-product"
+              ]
+            }
+          ],
+          "action": "Omit capacity pending exact variant instructions; do not normalize away difference."
+        }
+      ],
+      "remainingGaps": [
+        "No explicit primary AM8161A-to-AM8161/NC8161 identity statement.",
+        "Public official AM8161.pdf download returned HTTP 403; no bypass.",
+        "Anzahl der Artikel 1 describes listing quantity, not independently verified physical pump count."
+      ],
+      "architecture": {
+        "value": "in-bra-wearable-supported-at-8161-family-level",
+        "confidence": "family-primary-and-exact-listing; suffix-specific-primary-not-established",
+        "sourceIds": [
+          "ncvi-amazon-supplied-manual",
+          "ncvi-heated-current-product",
+          "amazon-B0G7FJ6XKC"
+        ]
+      },
+      "recommendation": {
+        "canEnterSourcedRecommendation": false,
+        "canEnterSourcedCatalogue": true,
+        "reason": "Keep separate from 8131 and list heating only as the exact DE offer description. No manufacturer-confirmed AM8161A recommendation until mapping/capacity and package count clarified.",
+        "prohibitedClaims": [
+          "prevents clogged ducts",
+          "ensures complete emptying",
+          "boosts milk by 30%",
+          "clinically superior suction"
+        ]
+      },
+      "amazonSourceId": "amazon-B0G7FJ6XKC",
+      "sourceIds": [
+        "ncvi-heated-current-product",
+        "ncvi-amazon-supplied-manual",
+        "amazon-B0G7FJ6XKC"
+      ],
+      "nextEvidenceNeeded": "Official suffix-specific AM8161A manual/cross-reference and exact DE package contents.",
+      "historicalEvidencePreserved": {
+        "modelRef": {
+          "brand": "NCVI",
+          "canonicalModel": "AM8161A (beheiztes Wearable)"
+        },
+        "inheritedArchitecture": {
+          "normalized": "fully-in-bra-electric-wearable",
+          "sourceValue": "vollintegriert-in-bra",
+          "status": "amazon-description-only-primary-unverified",
+          "buyerLabel": "Vollständig im BH (Motor integriert)",
+          "primaryQuoteAloneMayNotProveArchitecture": false,
+          "independentCheckSourceIds": []
+        },
+        "inheritedManufacturerStatus": "primary-missing",
+        "historicalAmazonObservation": {
+          "observedAsin": "B0G7FJ6XKC",
+          "checkedAt": "2026-10-14T20:30:53.353857+00:00",
+          "title": "NCVI Elektrische Milchpumpe Tragbar Freihändig mit Wärmefunktion, Krankenhausstandard -300mmHg Sog, Ultra-Leise, 4 Modi & 9 Stufen, Lange Akkulaufzeit, Passend für 19/21/24/28mm",
+          "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min."
+        },
+        "historicalSeller": "NCVI-XINBEI NCVI-XINBEI",
+        "scopeNote": "Copied baseline context only; inherited architecture is not fresh primary proof. Historical Auf Lager/seller evidence does not describe the current observation."
+      }
+    },
+    {
+      "qualityScore": null,
+      "ownTests": false,
+      "amazonOfferIsArchitectureProof": false,
+      "brand": "eufy",
+      "canonicalModel": "S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+      "status": "partial",
+      "safePublicFacingShortLabel": "Anker eufy S2 Pro (T60A1) – In-Bra-Pumpe mit Ladecase",
+      "statusMeaning": "Material naming/architecture gap narrowed by shared Anker guide T60A1/T600P and German official product t60a13b0. Not full regional hardware/parts/bundle equivalence.",
+      "resolvedClaims": [
+        {
+          "claim": "Anker-authored S2 Pro quick-start guide explicitly names Model: T60A1/T600P.",
+          "sourceIds": [
+            "eufy-s2pro-qsg-v2"
+          ]
+        },
+        {
+          "claim": "German official S2 Pro product is explicitly sold with Ladecase, and DE Amazon exact model field is T60A1.",
+          "sourceIds": [
+            "eufy-de-s2pro-t60a13b0",
+            "amazon-B0GWH8M9DD"
+          ]
+        },
+        {
+          "claim": "Shared guide describes hub mounted directly to container and full-coverage nursing bra use.",
+          "sourceIds": [
+            "eufy-s2pro-qsg-v2"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "topic": "Washable parts",
+          "values": [
+            {
+              "value": "6 zu reinigenden Teilen",
+              "sourceIds": [
+                "eufy-de-s2pro-t60a13b0"
+              ]
+            },
+            {
+              "value": "5 washable parts (all except the pump hub)",
+              "sourceIds": [
+                "eufy-s2-parts-support"
+              ]
+            }
+          ],
+          "action": "Keep regional/document counting scopes separate. Do not claim five parts on DE recommendation or infer faster cleaning; do not silently force equivalence."
+        }
+      ],
+      "remainingGaps": [
+        "Shared guide is not an explicit component-for-component statement that regional T60A1 equals T600P+T60A0.",
+        "Exact charging-case label/code inside DE Amazon bundle not independently read.",
+        "No transfer of US warranty, runtime or washable-parts count into German bundle; physical pump count must be confirmed in package."
+      ],
+      "architecture": {
+        "value": "fully-in-bra-electric-wearable",
+        "confidence": "manufacturer-authored-shared-code-guide-confirmed",
+        "sourceIds": [
+          "eufy-s2pro-qsg-v2"
+        ]
+      },
+      "recommendation": {
+        "canEnterSourcedRecommendation": true,
+        "canEnterSourcedCatalogue": true,
+        "scope": "Conditional candidate for readers wanting an integrated in-bra pump with charging case and nipple-alignment light, using the German official S2 Pro description and the T60A1/T600P shared guide.",
+        "requiredCaveat": "Exakte T60A1-Setausstattung prüfen; internationale Teilezahl- und Laufzeitangaben nicht übertragen.",
+        "notPermitted": "No overall quality/availability rank, efficacy percentages, proven blockage treatment or globally identical code/bundle assertion.",
+        "sourceIds": [
+          "eufy-de-s2pro-t60a13b0",
+          "eufy-s2pro-qsg-v2",
+          "amazon-B0GWH8M9DD"
+        ]
+      },
+      "amazonSourceId": "amazon-B0GWH8M9DD",
+      "sourceIds": [
+        "eufy-de-s2pro-t60a13b0",
+        "eufy-s2pro-qsg-v2",
+        "eufy-s2-vs-pro-support",
+        "amazon-B0GWH8M9DD"
+      ],
+      "nextEvidenceNeeded": "Exact DE T60A1 component list and case model label; reconcile regional cleaning-part counting before any count-based comparison.",
+      "historicalEvidencePreserved": {
+        "modelRef": {
+          "brand": "eufy",
+          "canonicalModel": "S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)"
+        },
+        "inheritedArchitecture": {
+          "normalized": "fully-in-bra-electric-wearable",
+          "sourceValue": "vollintegriert-in-bra",
+          "status": "inherited-research-classification",
+          "buyerLabel": "Vollständig im BH (Motor integriert)",
+          "primaryQuoteAloneMayNotProveArchitecture": false,
+          "independentCheckSourceIds": []
+        },
+        "inheritedManufacturerStatus": "mapping-unresolved",
+        "historicalAmazonObservation": {
+          "observedAsin": "B0GWH8M9DD",
+          "checkedAt": "2026-10-14T20:30:48.348653+00:00",
+          "title": "ANKER eufy Tragbare elektrische Milchpumpe S2 Pro, kabelloses Ladecase",
+          "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min."
+        },
+        "historicalSeller": "AnkerDirect DE AnkerDirect DE",
+        "scopeNote": "Copied baseline context only; inherited architecture is not fresh primary proof. Historical Auf Lager/seller evidence does not describe the current observation."
+      }
+    },
+    {
+      "qualityScore": null,
+      "ownTests": false,
+      "amazonOfferIsArchitectureProof": false,
+      "brand": "Willow",
+      "canonicalModel": "Go (PDL60)",
+      "status": "partial",
+      "safePublicFacingShortLabel": "Willow Go (PDL60) – In-Bra-Pumpe; Region und Set prüfen",
+      "statusMeaning": "PDL60 is explicitly a Willow Go SKU in older manufacturer-authored manual; official regional policy and current Go product read. Exact DE stock revision, Splashguard kit and authorized-region support not proved.",
+      "resolvedClaims": [
+        {
+          "claim": "Older manufacturer-authored manual explicitly names Willow Go SKU PDL60 and two pumps/components for single/double use.",
+          "sourceIds": [
+            "willow-go-pdl60-2021-manual-mirror"
+          ]
+        },
+        {
+          "claim": "Current official Go product is fully in-bra, no external motor/tubes; Go must not be assigned numbered Willow generations by accessory analogy.",
+          "sourceIds": [
+            "willow-go-current-official",
+            "willow-official-region-faq"
+          ]
+        },
+        {
+          "claim": "Official FAQ mentions Canada Amazon and says other countries are not currently offered; DE ASIN exists with third-party seller.",
+          "sourceIds": [
+            "willow-official-region-faq",
+            "amazon-B0B2SK47X6"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "topic": "Configuration/revision and cleaning count",
+          "values": [
+            {
+              "value": "PDL60 older ©2021 IFU: 5 washable parts; no Splashguard in product list",
+              "sourceIds": [
+                "willow-go-pdl60-2021-manual-mirror"
+              ]
+            },
+            {
+              "value": "©2025 IFU: 6 washable parts and Splashguard Container Assembly",
+              "sourceIds": [
+                "willow-go-2025-manual-amazon-cdn"
+              ]
+            },
+            {
+              "value": "Current Go product includes SplashGuard containers",
+              "sourceIds": [
+                "willow-go-current-official"
+              ]
+            }
+          ],
+          "action": "Do not label PDL60 Gen 1/Gen 2, claim new motor technology, or apply current kit contents automatically to DE ASIN."
+        },
+        {
+          "topic": "Set count",
+          "values": [
+            {
+              "value": "Doppelmilchpumpe in DE title, one item/unit metadata",
+              "sourceIds": [
+                "amazon-B0B2SK47X6"
+              ]
+            },
+            {
+              "value": "Older PDL60 IFU lists two of each component; current official Go page offers Double and Single with different flange contents",
+              "sourceIds": [
+                "willow-go-pdl60-2021-manual-mirror",
+                "willow-go-current-official"
+              ]
+            }
+          ],
+          "action": "One retail unit may be a kit; do not declare a contradiction proves single or double contents. Exact delivered package requires confirmation."
+        }
+      ],
+      "remainingGaps": [
+        "No manufacturer-assigned generation for exact DE ASIN/revision.",
+        "Authorized seller/warranty, Germany app access, local parts, compliance and address-specific delivery not verified.",
+        "Manufacturer region statement is not evidence that Amazon.de is out of stock or cannot deliver."
+      ],
+      "architecture": {
+        "value": "fully-in-bra-electric-wearable",
+        "confidence": "official-Go-model-and-exact-Amazon-description-supported",
+        "sourceIds": [
+          "willow-go-current-official",
+          "amazon-B0B2SK47X6"
+        ]
+      },
+      "recommendation": {
+        "canEnterSourcedRecommendation": false,
+        "canEnterSourcedCatalogue": true,
+        "reason": "Useful sourced model context, but no routine German purchase recommendation until regional support and exact package/revision are confirmed.",
+        "prohibitedClaims": [
+          "EU/German official model",
+          "Willow Go Gen 1/Gen 2",
+          "current SplashGuard kit guaranteed at DE ASIN",
+          "manufacturer warranty guaranteed from the observed third-party seller"
+        ]
+      },
+      "amazonSourceId": "amazon-B0B2SK47X6",
+      "sourceIds": [
+        "willow-go-current-official",
+        "willow-go-pdl60-2021-manual-mirror",
+        "willow-go-2025-manual-amazon-cdn",
+        "willow-official-region-faq",
+        "amazon-B0B2SK47X6"
+      ],
+      "nextEvidenceNeeded": "Manufacturer-authorized DE-region statement and exact box/model/revision/parts information tied to B0B2SK47X6.",
+      "historicalEvidencePreserved": {
+        "modelRef": {
+          "brand": "Willow",
+          "canonicalModel": "Go (PDL60)"
+        },
+        "inheritedArchitecture": {
+          "normalized": "fully-in-bra-electric-wearable",
+          "sourceValue": "vollintegriert-in-bra",
+          "status": "inherited-research-classification",
+          "buyerLabel": "Vollständig im BH (Motor integriert)",
+          "primaryQuoteAloneMayNotProveArchitecture": false,
+          "independentCheckSourceIds": []
+        },
+        "inheritedManufacturerStatus": "mapping-unresolved",
+        "historicalAmazonObservation": {
+          "observedAsin": "B0B2SK47X6",
+          "checkedAt": "2026-10-14T20:30:46.514199+00:00",
+          "title": "Willow Go Tragbare Doppelmilchpumpe – tragbar, elektrisch in",
+          "availabilityEvidence": "Auf Lager | GRATIS Lieferung 28. Oktober - 3. November für qualifizierte Erstbestellung. Details"
+        },
+        "historicalSeller": "Sellify Shop Sellify Shop",
+        "scopeNote": "Copied baseline context only; inherited architecture is not fresh primary proof. Historical Auf Lager/seller evidence does not describe the current observation."
+      }
+    },
+    {
+      "qualityScore": null,
+      "ownTests": false,
+      "amazonOfferIsArchitectureProof": false,
+      "brand": "Kinderkraft",
+      "canonicalModel": "MAMAFLOW",
+      "status": "resolved",
+      "safePublicFacingShortLabel": "Kinderkraft MAMAFLOW – Einzelpumpe mit Motor im BH",
+      "statusMeaning": "Exact single-pump ASIN links byte-identical manufacturer MAMAFLOW v1.0 manual; manual explicitly places device in nursing bra and mounts main unit directly to collector. Architecture/use gap resolved for this model and single variant, not all sets.",
+      "resolvedClaims": [
+        {
+          "claim": "Place the device inside a nursing bra. It can be used both while sitting and standing.",
+          "sourceIds": [
+            "kinderkraft-mamaflow-manual-use"
+          ]
+        },
+        {
+          "claim": "Main unit is installed onto milk collector; no external motor/tubing inference from generic hands-free marketing needed.",
+          "sourceIds": [
+            "kinderkraft-mamaflow-manual-use"
+          ]
+        },
+        {
+          "claim": "Amazon exact title says Einzelmilchpumpe, model KEMAFL00GLD0000, Gold, and its linked manual is byte-identical to official MAMAFLOW v1.0 PDF.",
+          "sourceIds": [
+            "amazon-B0G3PZR61C",
+            "kinderkraft-mamaflow-manual-use"
+          ]
+        }
+      ],
+      "conflicts": [],
+      "remainingGaps": [
+        "MAMAFLOW DOUBLE physical/set equivalence not checked; retain one family, no extra model solely from set count.",
+        "No comparative noise, comfort, real output, durability or actual runtime established."
+      ],
+      "architecture": {
+        "value": "fully-in-bra-electric-wearable",
+        "confidence": "exact-manual-primary-confirmed",
+        "sourceIds": [
+          "kinderkraft-mamaflow-manual-use"
+        ]
+      },
+      "recommendation": {
+        "canEnterSourcedRecommendation": true,
+        "canEnterSourcedCatalogue": true,
+        "scope": "Conditional single-pump option for readers who want a fully in-bra integrated motor rather than external motor/tubing. No claim of best value or superior performance.",
+        "requiredCaveat": "Einzelpumpe, nicht Doppelset. Anleitung für Aufstellung, Passform und Reinigung beachten; Motoreinheit nicht waschen.",
+        "sourceIds": [
+          "kinderkraft-mamaflow-manual-use",
+          "amazon-B0G3PZR61C"
+        ]
+      },
+      "amazonSourceId": "amazon-B0G3PZR61C",
+      "sourceIds": [
+        "kinderkraft-mamaflow-manual-use",
+        "amazon-B0G3PZR61C"
+      ],
+      "nextEvidenceNeeded": "Only if discussing DOUBLE, verify its own exact product/manual and physical pump count. No remaining material single-model architecture gap.",
+      "historicalEvidencePreserved": {
+        "modelRef": {
+          "brand": "Kinderkraft",
+          "canonicalModel": "MAMAFLOW"
+        },
+        "inheritedArchitecture": {
+          "normalized": "unverified",
+          "sourceValue": "vollintegriert-in-bra",
+          "status": "provisional-needs-explicit-in-bra-proof",
+          "buyerLabel": "Bauform offen; integrierte Bauweise abgebildet",
+          "primaryQuoteAloneMayNotProveArchitecture": false,
+          "independentCheckSourceIds": [
+            4,
+            65,
+            66
+          ]
+        },
+        "inheritedManufacturerStatus": "named-model-supported-in-research",
+        "historicalAmazonObservation": {
+          "observedAsin": "B0G3PZR61C",
+          "checkedAt": "2026-10-14T20:30:55.231043+00:00",
+          "title": "Kinderkraft MAMAFLOW Elektrische Milchpumpe, Kabellos, 4 Modi, USB-C, Gold",
+          "availabilityEvidence": "Auf Lager | GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Freitag, 16. Oktober . Bestellung innerhalb 1 Std. 28 Min."
+        },
+        "historicalSeller": "",
+        "scopeNote": "Copied baseline context only; inherited architecture is not fresh primary proof. Historical Auf Lager/seller evidence does not describe the current observation."
+      }
+    }
+  ],
+  "boundedMissingModelDiscovery": [
+    {
+      "brand": "NCVI",
+      "canonicalModel": "8111 (AM8111)",
+      "status": "manufacturer-model-confirmed-missing-from-baseline",
+      "safePublicFacingShortLabel": "NCVI 8111 (AM8111) – In-Bra-Modell, DE-Angebot ungeprüft",
+      "sourceIds": [
+        "ncvi-8111-official"
+      ],
+      "whyNotVariantInflation": "Official product/model is 8111/AM8111, distinct name/code from baseline NCVI 8131 and AM8161A. Pink/White and 2 Pack are not new models. No claim of independent OEM design.",
+      "architecture": "one-piece in-bra according to model-specific official product",
+      "canEnterSourcedRecommendation": false,
+      "reason": "Discovery only; no exact Amazon.de identity/region/parts check performed.",
+      "catalogueChangeMade": false
+    },
+    {
+      "brand": "Willow",
+      "canonicalModel": "360 (renamed Willow 3.0)",
+      "status": "manufacturer-model-confirmed-missing-from-baseline",
+      "safePublicFacingShortLabel": "Willow 360 (ehemals 3.0) – separates In-Bra-Modell, Region prüfen",
+      "sourceIds": [
+        "willow-360-official",
+        "willow-official-region-faq"
+      ],
+      "whyNotVariantInflation": "Official page explicitly renames 3.0 to 360: one identity, not two. Distinct from Go: bag/continuous-latch system versus Go container/tug-and-release family. Colors, bags/containers and kit cases do not create additional models.",
+      "architecture": "fully integrated in-bra per official product",
+      "canEnterSourcedRecommendation": false,
+      "reason": "Region/authorized Germany channel unverified; no new DE ASIN accepted.",
+      "catalogueChangeMade": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "kissbobo-k5-brand-product",
+      "url": "https://kissbobo.co/products/electrical-breast-pump-k5",
+      "title": "KISSBOBO Electric Breast Pump -K5| Efficient & Comfortable",
+      "evidenceType": "brand-model-specific-product-page",
+      "readMethod": "public-extraction-then-independent-direct-HTTP-200-HTML-title-and-model-verified",
+      "quotes": [
+        "Hands-free Comfortable Breast Pump - K5",
+        "No wires, tubes or external motors required",
+        "Meet the KISSBOBO K5. Powerful, discreet, and perfectly fits in your bra.",
+        "19 levels of customizable suction power (up to 320 mmHg per side)",
+        "30-minute automatic shut-off",
+        "180ml/6oz capacity",
+        "K5 Breast pump*2"
+      ],
+      "scopeLimit": "Current brand page, not proof that the Amazon.de K5 variant has identical specifications or legal manufacturer. Do not endorse medical, painless, FDA, efficiency or safe-driving/sleeping marketing claims.",
+      "observedOn": "2026-10-15",
+      "verifiedH1": "Hands-free Comfortable Breast Pump - K5",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 7,
+        "httpStatus": 200,
+        "resolvedUrl": "https://kissbobo.co/products/electrical-breast-pump-k5"
+      }
+    },
+    {
+      "id": "kissbobo-brand-faq",
+      "url": "https://kissbobo.co/pages/faqs",
+      "title": "FAQs – KISSBOBO",
+      "evidenceType": "brand-faq-model-comparison",
+      "readMethod": "public-extraction-then-independent-direct-HTTP-200-HTML-title-and-model-verified",
+      "quotes": [
+        "K5 Hospital-grade Dual-mode (Massage+Pump) 280mmHg Button Working moms needing efficiency"
+      ],
+      "scopeLimit": "Brand FAQ conflicts with K5 product page: 280 versus 320 mmHg; generic tubing and noise text cannot be transferred to K5.",
+      "observedOn": "2026-10-15",
+      "quoteNormalization": "Table cells joined in displayed order with spaces.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 1,
+        "httpStatus": 200,
+        "resolvedUrl": "https://kissbobo.co/pages/faqs"
+      }
+    },
+    {
+      "id": "kinderkraft-mamaflow-manual-v1",
+      "url": "https://kinderkraft.pl/media/wysiwyg/manual/Kinderkraft-MAMAFLOW-v-1-0.pdf",
+      "title": "MAMAFLOW USER GUIDE, MODEL: MAMAFLOW v 1.0",
+      "evidenceType": "manufacturer-hosted-multilingual-manual",
+      "readMethod": "public-PDF-text-extraction",
+      "quotes": [
+        "MODEL: MAMAFLOW                               v 1.0"
+      ],
+      "scopeLimit": "Identity source retained from batch 1; precise assembly/use sections independently checked in kinder kraft manual-use source below.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 1,
+        "httpStatus": 200,
+        "resolvedUrl": "https://kinderkraft.pl/media/wysiwyg/manual/Kinderkraft-MAMAFLOW-v-1-0.pdf"
+      }
+    },
+    {
+      "id": "kinderkraft-mamaflow-manual-use",
+      "url": "https://kinderkraft.pl/media/wysiwyg/manual/Kinderkraft-MAMAFLOW-v-1-0.pdf",
+      "title": "MAMAFLOW USER GUIDE, MODEL: MAMAFLOW v 1.0",
+      "evidenceType": "manufacturer-hosted-manual",
+      "readMethod": "direct-HTTP-200-PDF-text",
+      "quotes": [
+        {
+          "page": 19,
+          "quote": "Then install the main unit (1) onto the milk collector (2) in the indicated direction (Fig. F). Ensure the main unit is properly mounted."
+        },
+        {
+          "page": 20,
+          "quote": "Place the device inside a nursing bra. It can be used both while sitting and standing.",
+          "extractionNote": "PDF text layer inserts Arabic ya between words on this bullet; quote uses spaces instead of those font/extraction artifacts."
+        },
+        {
+          "page": 21,
+          "quote": "Do not wash or disinfect the charging cable or the main unit in water; wipe the surface with a paper towel."
+        }
+      ],
+      "quoteNormalization": "Line wrapping joined; extraction-artifact replacement disclosed per quotation.",
+      "supports": [
+        "Integrated main unit on collector",
+        "Explicit nursing-bra use sitting/standing",
+        "Motor unit not washable"
+      ],
+      "doesNotProve": [
+        "DOUBLE set technical equivalence",
+        "Standing means suitability for driving/sleeping or unrestricted movement"
+      ],
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://kinderkraft.pl/media/wysiwyg/manual/Kinderkraft-MAMAFLOW-v-1-0.pdf"
+      }
+    },
+    {
+      "id": "eufy-s2pro-qsg-v2",
+      "url": "https://m.media-amazon.com/images/I/B14nz4ngPeL.pdf",
+      "title": "Quick Start Guide – Wearable Breast Pump S2 Pro – Model: T60A1/T600P – 51005006230_V2",
+      "evidenceType": "manufacturer-authored-guide-hosted-on-Amazon-CDN",
+      "readMethod": "direct-HTTP-200-PDF-text",
+      "quotes": [
+        {
+          "page": 1,
+          "quote": "Wearable Breast Pump S2 Pro"
+        },
+        {
+          "page": 1,
+          "quote": "Model: T60A1/T600P"
+        },
+        {
+          "page": 1,
+          "quote": "Anker Innovations Limited. All rights reserved, registered in the United States and other countries."
+        },
+        {
+          "page": 7,
+          "quote": "Align the peg on the pump hub with the hole in the diaphragm, and press the assembled container onto the hub until it clicks."
+        },
+        {
+          "page": 8,
+          "quote": "Use a full-coverage nursing bra with a flap to create a tight seal between your breasts and the flange."
+        },
+        {
+          "page": 3,
+          "quote": "Option 2: Charging Case"
+        }
+      ],
+      "quoteNormalization": "PDF line wrapping joined; bullet characters omitted.",
+      "scopeLimit": "Authorship self-identifies Anker; discovered via public search, not proved linked from the exact DE ASIN. Shared guide explicitly joins names/codes but does not certify every part, regional warranty or washable-part count identical.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 6,
+        "httpStatus": 200,
+        "resolvedUrl": "https://m.media-amazon.com/images/I/B14nz4ngPeL.pdf"
+      }
+    },
+    {
+      "id": "eufy-de-s2pro-t60a13b0",
+      "url": "https://www.anker.com/de/products/t60a13b0",
+      "title": "S2 Pro Tragbare Milchpumpe | Heizung, Massage & 6,5h Akku",
+      "verifiedH1": "Anker eufy Milchpumpe mit Ladecase S2 Pro",
+      "evidenceType": "official-German-model-specific-product",
+      "readMethod": "direct-HTTP-200-HTML",
+      "quotes": [
+        "Anker eufy Milchpumpe mit Ladecase S2 Pro",
+        "Einfach richtig anlegen mit 360°-Transparenz und Brustwarzen-Licht: Der sichtbare Tunnel und das integrierte Licht helfen dir, die Pumpe auf Anhieb richtig zu positionieren.",
+        "Mit nur 6 zu reinigenden Teilen und passgenauen Einsätzen bleibt deine Routine einfach und hygienisch."
+      ],
+      "scopeLimit": "Use regional product plus shared QSG for title/architecture/features. Do not transplant US five-parts-to-wash claim; no efficacy, safety or comparative cleaning-time endorsement.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.anker.com/de/products/t60a13b0"
+      }
+    },
+    {
+      "id": "eufy-s2-vs-pro-support",
+      "url": "https://service.eufy.com/article-description/What-is-the-difference-between-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0",
+      "title": "What is the difference between Wearable Breast Pump S2(T600P)/S2 Pro(T600P+T60A0)?",
+      "evidenceType": "manufacturer-model-specific-support",
+      "readMethod": "direct-HTTP-200-HTML",
+      "quotes": [
+        "What is the difference between Wearable Breast Pump S2(T600P)/S2 Pro(T600P+T60A0)?",
+        "The S2 does not come with a charging case, while the S2 Pro comes with a charging case. There are no other differences."
+      ],
+      "scopeLimit": "Statement specifically concerns the documented T600P pump/T60A0 case family. Not independent proof that Amazon T60A1 is identical in every component or that every regional bundle has identical contents.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 2,
+        "httpStatus": 200,
+        "resolvedUrl": "https://service.eufy.com/article-description/What-is-the-difference-between-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0"
+      }
+    },
+    {
+      "id": "ncvi-heated-current-product",
+      "url": "https://ncvi.com/NCVI-Heated-Wearable-Breast-Pump-pd528285148.html",
+      "title": "NCVI Heated Wearable Breast Pump | NCVI",
+      "verifiedH1": "NCVI Heated Wearable Breast Pump",
+      "evidenceType": "manufacturer-model-family-product",
+      "readMethod": "direct-HTTP-200-HTML",
+      "quotes": [
+        "Model: NC8161",
+        "Capacity: 5 oz/150 ml",
+        "The ultra-slim, in-bra design is virtually undetectable under clothing.",
+        "User Manual AM8161.pdf"
+      ],
+      "scopeLimit": "Whitespace-normalized item labels. Live model NC8161 differs from indexed search AM8161 and exact Amazon.de AM8161A. Do not silently repair suffix/prefix or transfer 150 ml to Amazon claim 180 ml.",
+      "manualLinkAsFound": "https://ncvi.com/phoenix/admin/download?fileId=oBApCeEhPqcn&dp=GvUApKfKKUAU",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 4,
+        "httpStatus": 200,
+        "resolvedUrl": "https://ncvi.com/NCVI-Heated-Wearable-Breast-Pump-pd528285148.html"
+      }
+    },
+    {
+      "id": "ncvi-amazon-supplied-manual",
+      "url": "https://m.media-amazon.com/images/I/C1e20HOGFyL.pdf",
+      "title": "Wearable Breast Pump User Manual – AM8161",
+      "evidenceType": "NCVI-authored-manual-linked-by-exact-Amazon.de-ASIN",
+      "readMethod": "direct-HTTP-200-PDF-text",
+      "linkedFrom": "https://www.amazon.de/dp/B0G7FJ6XKC",
+      "quotes": [
+        {
+          "page": 2,
+          "quote": "It is wearable and ﬁts in the bra, the rechargeable lithium battery allows you to pump anywhere and anytime."
+        },
+        {
+          "page": 9,
+          "quote": "AM8161"
+        }
+      ],
+      "scopeLimit": "Linked directly from exact AM8161A listing but printed model is AM8161, not AM8161A. Association narrows family/architecture; does not prove suffix equivalence. Medical output/prevention claims excluded.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 2,
+        "httpStatus": 200,
+        "resolvedUrl": "https://m.media-amazon.com/images/I/C1e20HOGFyL.pdf"
+      }
+    },
+    {
+      "id": "willow-official-region-faq",
+      "url": "https://onewillow.com/pages/faq",
+      "title": "Pump FAQ – Willow Pump",
+      "evidenceType": "manufacturer-model-specific-FAQ-sections",
+      "readMethod": "direct-HTTP-200-HTML",
+      "quotes": [
+        "Willow Go and accessories are available for purchase in Canada on Amazon.",
+        "Willow is not available in other countries at this time but our ultimate goal is to give women around the world their hands and their time back—so it’s something we hope to offer in the future.",
+        "Yes, Flextubes™, Milk Bags, Chargers, and Sizing Inserts are compatible with all Willow Generations (except Willow Go)."
+      ],
+      "scopeLimit": "FAQ is current-page observation, not proof no third-party DE offer exists. Go is explicitly excluded from older numbered-generation accessory claims. Seller-authorized warranty, Germany app access, EU compliance and DE parts supply remain unverified.",
+      "observedOn": "2026-10-15",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://onewillow.com/pages/faq"
+      }
+    },
+    {
+      "id": "willow-go-current-official",
+      "url": "https://onewillow.com/products/willow-go-pump-kit",
+      "title": "Willow Go® Wearable Breast Pump | #1 for Comfort & Milk Output – Willow Pump",
+      "evidenceType": "manufacturer-model-specific-product",
+      "readMethod": "direct-HTTP-200-HTML-product-title-and-kit-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        "DISCREET: Fully in-bra with a low profile and shape that mimics the breast — no cords, tubes, or external motors",
+        "Includes 5 oz SplashGuard™ containers & 21,24mm flanges.",
+        "2 Willow Go pumps",
+        "Please note the Willow Go Single Pump includes only 1 each of the above. 21mm flanges are not included with the Single Pump."
+      ],
+      "scopeLimit": "Current US-facing Go product; no exact PDL60 mapping established here. Manufacturer efficacy/ranking and runtime marketing not endorsed.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 4,
+        "httpStatus": 200,
+        "resolvedUrl": "https://onewillow.com/products/willow-go-pump-kit"
+      }
+    },
+    {
+      "id": "willow-go-new-kit-official",
+      "url": "https://onewillow.com/products/willow-go-wearable-breast-pump-kit",
+      "title": "Willow Go® Wearable Breast Pump Kit – Willow Pump",
+      "evidenceType": "manufacturer-model-specific-bundle-page",
+      "readMethod": "direct-HTTP-200-HTML-product-title-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        "Now comes with 15-19mm sizing inserts, 5 and 7 oz SplashGuard™ containers, plus a free pump storage case."
+      ],
+      "scopeLimit": "Do not count as another pump model or infer motor-generation change from inserts, 7 oz containers or storage case. Page also repeats a 5 oz parts list, so exact kit completeness needs checking.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 1,
+        "httpStatus": 200,
+        "resolvedUrl": "https://onewillow.com/products/willow-go-wearable-breast-pump-kit"
+      }
+    },
+    {
+      "id": "willow-go-pdl60-2021-manual-mirror",
+      "url": "https://pumpsformom.com/wp-content/uploads/Willow_Go_UserGuide.pdf",
+      "title": "Willow Go™ Breast Pump – Instructions for Use (©2021 Willow Innovations, Inc.)",
+      "evidenceType": "manufacturer-authored-manual-mirrored-by-specialist-supplier",
+      "readMethod": "direct-HTTP-200-PDF-authorship-and-model-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        {
+          "page": 7,
+          "printedPage": 5,
+          "quote": "The Willow Go™ Breast Pump (SKU PDL60) is a personal use, wearable breast pump for single and double pumping."
+        },
+        {
+          "page": 7,
+          "printedPage": 5,
+          "quote": "The product contains two (2) of each of the following parts and accessories listed here: Pump, Pump Diaphragm, Container Duckbill Valve, 5 ounce (150 milliliter) Container Bowl, Container Back, 21 mm Flange, 24 mm Flange, and USB Charging Cable."
+        },
+        {
+          "page": 7,
+          "printedPage": 5,
+          "quote": "Clean the 5 washable parts (milk-contacting parts and diaphragm) and then boil for 5 minutes."
+        },
+        {
+          "page": 42,
+          "printedPage": 40,
+          "quote": "©2021 Willow Innovations, Inc."
+        }
+      ],
+      "quoteNormalization": "PDF line wraps joined; variation selector after trademark ignored.",
+      "scopeLimit": "Official-authored content, not manufacturer hosting; older documented configuration, not a manufacturer-assigned generation number. Does not establish today’s DE-box contents or current motor/firmware revision.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 4,
+        "httpStatus": 200,
+        "resolvedUrl": "https://pumpsformom.com/wp-content/uploads/Willow_Go_UserGuide.pdf"
+      }
+    },
+    {
+      "id": "willow-go-2025-manual-amazon-cdn",
+      "url": "https://m.media-amazon.com/images/I/D1bjxgPwr2L.pdf",
+      "title": "Willow Go® Breast Pump – Instructions for Use (©2025 Willow Innovations, Inc.)",
+      "evidenceType": "manufacturer-authored-manual-Amazon-CDN",
+      "readMethod": "direct-HTTP-200-PDF-authorship-and-title-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        {
+          "page": 7,
+          "printedPage": 5,
+          "quote": "Clean the 6 washable parts (milk-contacting parts and diaphragm) and then boil for 5 minutes."
+        },
+        {
+          "page": 7,
+          "printedPage": 5,
+          "quote": "The following replacement parts and accessories are available for purchase: Pump Diaphragm, 5oz (150mL) and 7oz (200mL) Splashguard Container Assembly, Flange (21mm, 24mm, and 27mm), and USB Charger."
+        },
+        {
+          "page": 44,
+          "printedPage": 42,
+          "quote": "©2025 Willow Innovations, Inc."
+        }
+      ],
+      "scopeLimit": "Newer Splashguard-parts documentation, not a verified new motor generation; exact DE ASIN did not link this PDF in the read. Five-parts older manual and six-parts newer manual must not be collapsed.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://m.media-amazon.com/images/I/D1bjxgPwr2L.pdf"
+      }
+    },
+    {
+      "id": "ncvi-8111-official",
+      "url": "https://ncvi.com/ncvi-wearable-breast-pump-8111-pink.html",
+      "title": "NCVI Wearable Breast Pump 8111 (Pink) | NCVI",
+      "verifiedH1": "NCVI Wearable Breast Pump 8111",
+      "evidenceType": "manufacturer-model-specific-product",
+      "readMethod": "direct-HTTP-200-HTML-title-and-model-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        "Model: AM8111",
+        "Invisible & Comfortable Design: Experience discreet, hands-free pumping with a one-piece, semi-circular pump that fits seamlessly under any bra.",
+        "Pack: 2 Pack"
+      ],
+      "quoteNormalization": "Labels and values joined with spaces.",
+      "scopeLimit": "One manufacturer model identity, not an additional identity for each color/pack. Technical independence from OEM rebadges and exact Amazon.de availability not established.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://ncvi.com/ncvi-wearable-breast-pump-8111-pink.html"
+      }
+    },
+    {
+      "id": "willow-360-official",
+      "url": "https://onewillow.com/products/willow-pump-360",
+      "title": "Willow 360™: Hands-Free, Leak-Proof Wearable Breast Pump - 360° Mobility – Willow Pump",
+      "evidenceType": "manufacturer-model-specific-product",
+      "readMethod": "direct-HTTP-200-HTML-title-and-model-verified",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        "Willow 3.0 is now 360.",
+        "Totally in-bra with a shape that mimics the breast for discretion (no external motor, clips, or cords)",
+        "Compatible with self-sealing breast milk storage bags (360° leak-proof mobility) or reusable containers (leak-proof up to 180°)"
+      ],
+      "scopeLimit": "One identity for Willow 360/renamed 3.0, separate from Go. Claims are manufacturer descriptions, not own leak tests or permission to sleep/drive while pumping. DE authorized channel not established.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://onewillow.com/products/willow-pump-360"
+      }
+    },
+    {
+      "id": "amazon-B0F3HY4N15",
+      "url": "https://www.amazon.de/dp/B0F3HY4N15",
+      "title": "KISSBOBO K5 Milchpumpe Elektrisch Doppel,4 Modi und 19 Stufen,280mmHg Starke Saugleistung elektrische milchpumpe freihändig,Schmerzfreie elektrisch tragbar(Weiß 2 Stück)",
+      "evidenceType": "public-anonymous-marketplace-exact-detail",
+      "readMethod": "direct-HTTP-200-HTML-productTitle-and-selected-ASIN-verified",
+      "observedOn": "2026-10-15",
+      "batchStartedAt": "2026-10-15T00:52:04.429337+00:00",
+      "selectedAsin": "B0F3HY4N15",
+      "modelNumber": "K5",
+      "variantEvidence": "Weiß 2 Stück",
+      "sellerObserved": "KISSBOBO Global Store",
+      "quotes": [
+        "KISSBOBO K5 Milchpumpe Elektrisch Doppel,4 Modi und 19 Stufen,280mmHg Starke Saugleistung elektrische milchpumpe freihändig,Schmerzfreie elektrisch tragbar(Weiß 2 Stück)",
+        "Modellnummer K5",
+        "Lieferadresse wählen",
+        "Die 20-Minuten-Timer-Abschaltung sorgt für Sicherheit und Komfort",
+        "Huizhou LVB Maternal And Infant Supplies Co,Ltd."
+      ],
+      "observationStatus": "exact-detail-and-seller-observed-current-stock-unverified",
+      "price": null,
+      "stock": null,
+      "condition": null,
+      "deliveryEstimate": null,
+      "addressSpecificDeliverabilityConfirmed": false,
+      "scopeLimit": "No login, delivery address, basket or offer selection. Buy controls and seller text are not proof of current stock/price/condition. The 2026-10-14 Auf Lager snapshots remain separate historical observations.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 5,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.amazon.de/dp/B0F3HY4N15"
+      }
+    },
+    {
+      "id": "amazon-B0G7FJ6XKC",
+      "url": "https://www.amazon.de/dp/B0G7FJ6XKC",
+      "title": "NCVI Elektrische Milchpumpe Tragbar Freihändig mit Wärmefunktion, Krankenhausstandard -300mmHg Sog, Ultra-Leise, 4 Modi & 9 Stufen, Lange Akkulaufzeit, Passend für 19/21/24/28mm",
+      "evidenceType": "public-anonymous-marketplace-exact-detail",
+      "readMethod": "direct-HTTP-200-HTML-productTitle-and-selected-ASIN-verified",
+      "observedOn": "2026-10-15",
+      "batchStartedAt": "2026-10-15T00:52:04.429337+00:00",
+      "selectedAsin": "B0G7FJ6XKC",
+      "modelNumber": "AM8161A",
+      "variantEvidence": "Braun; Anzahl der Artikel 1 / Anzahl der Einheiten 1.0 stück",
+      "sellerObserved": "NCVI-XINBEI",
+      "quotes": [
+        "NCVI Elektrische Milchpumpe Tragbar Freihändig mit Wärmefunktion, Krankenhausstandard -300mmHg Sog, Ultra-Leise, 4 Modi & 9 Stufen, Lange Akkulaufzeit, Passend für 19/21/24/28mm",
+        "Modellnummer AM8161A",
+        "Lieferadresse wählen",
+        "Jede Seite fasst bis zu 180 ml",
+        "Dank des schlanken, tragbaren Designs passt diese elektrische Milchpumpe tragbar freihändig diskret in jeden BH und bleibt unter der Kleidung unsichtbar."
+      ],
+      "observationStatus": "exact-detail-and-seller-observed-current-stock-unverified",
+      "price": null,
+      "stock": null,
+      "condition": null,
+      "deliveryEstimate": null,
+      "addressSpecificDeliverabilityConfirmed": false,
+      "scopeLimit": "No login, delivery address, basket or offer selection. Buy controls and seller text are not proof of current stock/price/condition. The 2026-10-14 Auf Lager snapshots remain separate historical observations.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 5,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.amazon.de/dp/B0G7FJ6XKC"
+      }
+    },
+    {
+      "id": "amazon-B0GWH8M9DD",
+      "url": "https://www.amazon.de/dp/B0GWH8M9DD",
+      "title": "ANKER eufy Tragbare elektrische Milchpumpe S2 Pro, kabelloses Ladecase",
+      "evidenceType": "public-anonymous-marketplace-exact-detail",
+      "readMethod": "direct-HTTP-200-HTML-productTitle-and-selected-ASIN-verified",
+      "observedOn": "2026-10-15",
+      "batchStartedAt": "2026-10-15T00:52:04.429337+00:00",
+      "selectedAsin": "B0GWH8M9DD",
+      "modelNumber": "T60A1",
+      "variantEvidence": "Modellname eufy Wearable Breast Pump S2 Pro; Anzahl der Artikel 1",
+      "sellerObserved": "AnkerDirect DE",
+      "quotes": [
+        "ANKER eufy Tragbare elektrische Milchpumpe S2 Pro, kabelloses Ladecase",
+        "Modellnummer T60A1",
+        "Lieferadresse wählen"
+      ],
+      "observationStatus": "exact-detail-and-seller-observed-current-stock-unverified",
+      "price": null,
+      "stock": null,
+      "condition": null,
+      "deliveryEstimate": null,
+      "addressSpecificDeliverabilityConfirmed": false,
+      "scopeLimit": "No login, delivery address, basket or offer selection. Buy controls and seller text are not proof of current stock/price/condition. The 2026-10-14 Auf Lager snapshots remain separate historical observations.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.amazon.de/dp/B0GWH8M9DD"
+      }
+    },
+    {
+      "id": "amazon-B0B2SK47X6",
+      "url": "https://www.amazon.de/dp/B0B2SK47X6",
+      "title": "Willow Go Tragbare Doppelmilchpumpe – tragbar, elektrisch in",
+      "evidenceType": "public-anonymous-marketplace-exact-detail",
+      "readMethod": "direct-HTTP-200-HTML-productTitle-and-selected-ASIN-verified",
+      "observedOn": "2026-10-15",
+      "batchStartedAt": "2026-10-15T00:52:04.429337+00:00",
+      "selectedAsin": "B0B2SK47X6",
+      "modelNumber": "PDL60",
+      "variantEvidence": "Transparentes Weiß, Grün; Anzahl der Artikel 1 / Anzahl von Einheiten 1.0 stück",
+      "sellerObserved": "KC GROUP GLOBAL",
+      "quotes": [
+        "Willow Go Tragbare Doppelmilchpumpe – tragbar, elektrisch in",
+        "Modellnummer PDL60",
+        "Lieferadresse wählen",
+        "Vollständig im BH freihändiges Pumpen: Jede Pumpe passt vollständig in einen Standard-Still-BH; kein externer Motor, Schläuche oder baumelnde Flaschen; bewegen Sie sich frei, arbeiten Sie frei, pumpen Sie frei, ohne sichtbare Hardware unter Ihrer Kleidung"
+      ],
+      "observationStatus": "exact-detail-and-seller-observed-current-stock-unverified",
+      "price": null,
+      "stock": null,
+      "condition": null,
+      "deliveryEstimate": null,
+      "addressSpecificDeliverabilityConfirmed": false,
+      "scopeLimit": "No login, delivery address, basket or offer selection. Buy controls and seller text are not proof of current stock/price/condition. The 2026-10-14 Auf Lager snapshots remain separate historical observations.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 4,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.amazon.de/dp/B0B2SK47X6"
+      }
+    },
+    {
+      "id": "amazon-B0G3PZR61C",
+      "url": "https://www.amazon.de/dp/B0G3PZR61C",
+      "title": "Kinderkraft MAMAFLOW elektrische Einzelmilchpumpe, kabellos, tragbar, 4 Modi, 9 Intensitätsstufen, Speicherfunktion, bis zu 180 Min Akku, USB-C, einfache Reinigung, Gold",
+      "evidenceType": "public-anonymous-marketplace-exact-detail",
+      "readMethod": "direct-HTTP-200-HTML-productTitle-and-selected-ASIN-verified",
+      "observedOn": "2026-10-15",
+      "batchStartedAt": "2026-10-15T00:52:04.429337+00:00",
+      "selectedAsin": "B0G3PZR61C",
+      "modelNumber": "KEMAFL00GLD0000",
+      "variantEvidence": "Gold; Stil MAMAFLOW; Anzahl der Artikel 1",
+      "sellerObserved": "Amazon",
+      "quotes": [
+        "Kinderkraft MAMAFLOW elektrische Einzelmilchpumpe, kabellos, tragbar, 4 Modi, 9 Intensitätsstufen, Speicherfunktion, bis zu 180 Min Akku, USB-C, einfache Reinigung, Gold",
+        "Modellnummer KEMAFL00GLD0000",
+        "Lieferadresse wählen"
+      ],
+      "observationStatus": "exact-detail-and-seller-observed-current-stock-unverified",
+      "price": null,
+      "stock": null,
+      "condition": null,
+      "deliveryEstimate": null,
+      "addressSpecificDeliverabilityConfirmed": false,
+      "scopeLimit": "No login, delivery address, basket or offer selection. Buy controls and seller text are not proof of current stock/price/condition. The 2026-10-14 Auf Lager snapshots remain separate historical observations.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 3,
+        "httpStatus": 200,
+        "resolvedUrl": "https://www.amazon.de/dp/B0G3PZR61C"
+      }
+    },
+    {
+      "id": "eufy-s2-parts-support",
+      "url": "https://service.eufy.com/article-description/My-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-has-many-parts-what-is-the-function-of-each-part",
+      "title": "My Wearable Breast Pump S2 (T600P)/S2 Pro (T600P+T60A0) has many parts—what is the function of each part?",
+      "evidenceType": "manufacturer-model-specific-support",
+      "readMethod": "direct-HTTP-verification-batch",
+      "observedOn": "2026-10-15",
+      "quotes": [
+        "The S2 has 5 washable parts (all except the pump hub):"
+      ],
+      "scopeLimit": "Do not transfer five-part count to DE T60A1; German official product says six parts to clean.",
+      "quoteVerification": {
+        "verifiedAt": "2026-10-15T00:55:02.211806+00:00",
+        "allQuotesFound": true,
+        "checkedQuoteCount": 1,
+        "httpStatus": 200,
+        "resolvedUrl": "https://service.eufy.com/article-description/My-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-has-many-parts-what-is-the-function-of-each-part"
+      }
+    }
+  ],
+  "manualLinkIdentityChecks": [
+    {
+      "productAsin": "B0G3PZR61C",
+      "officialUrl": "https://kinderkraft.pl/media/wysiwyg/manual/Kinderkraft-MAMAFLOW-v-1-0.pdf",
+      "amazonLinkedManualUrl": "https://m.media-amazon.com/images/I/B1EYxmNlEGL.pdf",
+      "byteIdentical": true,
+      "sha256": "7b5c6d467ebffa8d111c8ee943b3098aa3893d47d13adf293c642db349d375b7",
+      "checkedAt": "2026-10-15T00:52:04.429337+00:00",
+      "meaning": "Exact single-pump Amazon page links the same manual bytes as the manufacturer; strengthens architecture/use mapping without assuming DOUBLE identity."
+    }
+  ],
+  "method": {
+    "decisionRule": "Resolved means the requested material gap is supported for the precisely scoped model/variant. Partial means at least one decisive question remains. A narrowly sourced recommendation can be allowed without claiming global regional/bundle equivalence.",
+    "quotes": "Exact source excerpts; HTML whitespace and PDF line breaks normalized. PDF font artifacts explicitly disclosed. Numerical/model identifiers never silently repaired.",
+    "primaryEvidence": "Manufacturer-hosted product/support/manual preferred. Manufacturer-authored PDFs hosted by Amazon or mirrored by a specialist are marked distinctly. Search snippets only locate pages.",
+    "recommendationNotRank": "Eligibility is an editorial evidence gate for conditional use cases, not a score, quality rank, availability rank or own test.",
+    "discoveryBound": "Two directly inspected official model identities only; no broad catalogue census and no baseline total changed.",
+    "accounts": "Anonymous direct public HTTP; failed browser attempt made no account interactions. No credentials, account files, messages, cart/purchase or publication."
+  },
+  "completedAt": "2026-10-15T00:55:02.211806+00:00",
+  "inputSnapshotHashes": {
+    "docs/wearable-comparison-editorial.json": "0146434fdb20bc39751bd1df1b4905175326af490bbb1df1989db14590679f8d",
+    "src/wearable-market-data.json": "159b264703e3b060c1d0732757e029a331e3cfaccd8bc3bd4de2de69d574a6fc"
+  },
+  "inputSnapshotHashNote": "Read-only SHA-256 fingerprints of preserved input snapshots during finalization; no baseline/runtime edits made by this task.",
+  "failedOrLimitedReads": [
+    {
+      "url": "https://ncvi.com/phoenix/admin/download?fileId=oBApCeEhPqcn&dp=GvUApKfKKUAU",
+      "result": "HTTP 403 on public product-linked manual download",
+      "handling": "Stopped; used exact Amazon-linked accessible AM8161 manual; did not force suffix mapping."
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/E1UTvNBXPDL.pdf",
+      "result": "HTTP 200, eight scanned pages, no extractable text",
+      "handling": "No manual-content claims or invented quotations; available brand K5 page and conflicting FAQ used instead."
+    },
+    {
+      "url": "https://onewillow.com/products/willow-go-wearable-pump",
+      "result": "Direct HTTP 404 despite earlier extractor product text",
+      "handling": "Used actual current official product routes found on manufacturer FAQ; extractor content not accepted as current identity proof."
+    },
+    {
+      "url": "https://onewillow.com/GoIFU",
+      "finalUrl": "https://help.onewillow.com/s/article/Instructions-For-Use-IFU-Willow-Go",
+      "result": "HTTP 404",
+      "handling": "Manufacturer-authored mirrored ©2021 and Amazon-CDN ©2025 IFUs explicitly attributed; no generation equivalence assumed."
+    },
+    {
+      "url": "https://www.eufy.com/de/products/t60a1181",
+      "finalUrl": "https://www.anker.com/de/products/t60a1181",
+      "result": "Guessed regional product route HTTP 404",
+      "handling": "Rejected; discovered and directly verified actual exact German t60a13b0 product route."
+    }
+  ],
+  "verification": {
+    "requestedModelCount": 5,
+    "completedModelCount": 5,
+    "statuses": {
+      "partial": 4,
+      "resolved": 1
+    },
+    "conditionalRecommendationEligible": [
+      "eufy S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+      "Kinderkraft MAMAFLOW"
+    ],
+    "sourceRecordCount": 22,
+    "distinctCitedUrls": 21,
+    "quoteCountChecked": 71,
+    "allQuotesVerified": true,
+    "quotedPageHttpSuccess": true,
+    "quoteValidationAt": "2026-10-15T00:55:02.211806+00:00",
+    "normalization": "Unicode NFKC, whitespace collapse, variation-selector removal; Arabic ya font artifacts replaced with spaces for Kinderkraft PDF. No model identifiers or numeric values repaired.",
+    "baselineModelCountUnchanged": 35,
+    "boundedDiscoveryCount": 2,
+    "newModelCountAcceptedIntoRuntime": 0,
+    "historicalSourcesUntouched": true,
+    "runtimeCatalogueCanvasDeploymentAccountsUntouched": true,
+    "sourceReferencesValid": true,
+    "discoveredIdentitiesAbsentFromBaseline": true
+  }
+}

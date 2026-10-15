@@ -1,0 +1,32 @@
+{
+  "observedAt": "2026-10-14",
+  "method": "Qualitative web-search sample, up to five results per query. Configured SearXNG unavailable; Exa fallback returned results. Not a localized Google SERP, no demand/competition scores inferred.",
+  "queries": [
+    {
+      "query": "\"Momcozy M9\" \"ohne App\"",
+      "returned": 5,
+      "observation": "Four returned manufacturer articles plus a cooperation-labeled review. The practical answer already exists; opportunity is clearer mode-by-mode separation and decision matrix, not claiming an empty niche.",
+      "sampleUrls": ["https://de.momcozy.com/blogs/stillen/smart-breast-pump-for-modern-moms", "https://momcozy.com/de/blogs/momcare/momcozy-m5-vs-m9-comparison", "https://www.familystop.de/artikel/produktempfehlung-fur-stillende-mutter-die-neue-brustpumpe-m9-von-momcozy-im-test.html"]
+    },
+    {
+      "query": "\"S12 Pro\" \"Quick\" Unterschied",
+      "returned": 0,
+      "retry": "Momcozy S12 Pro Quick vs S12 Pro comparison",
+      "retryReturned": 5,
+      "observation": "Broader retry found official comparison, FAQ, product and specification pages plus a review. Empty first result is not evidence of no competition. Contradictory official noise and parts figures create a fact-checking task, not a ranking promise.",
+      "sampleUrls": ["https://momcozy.com/blogs/momcare/momcozy-s12-pro-vs-s12-pro-quick", "https://momcozy.com/products/s12-pro-quick-wearable-breast-pump", "https://support.momcozy.com/article/54304706850713", "https://pumpingmilk.com/momcozy-s12-pro-review/"]
+    },
+    {
+      "query": "\"SCF547/11\" \"SCD553/11\"",
+      "returned": 5,
+      "observation": "Returned manufacturer pages across regions and an Amazon category. Exact model-code query is largely product/retail oriented in this sample. German bundle decision and explicit destination-variant labeling are useful, but German search volume is unmeasured.",
+      "sampleUrls": ["https://www.philips.co.uk/c-m-mo/breast-pumps-and-care/hands-free-electric-breast-pump", "https://www.philips.ie/c-m-mo/breast-pumps-and-care/hands-free-electric-breast-pump", "https://www.amazon.de/philips-avent-milchpumpe/s?k=philips+avent+milchpumpe"]
+    },
+    {
+      "query": "\"Elvie Pump\" \"Single\" \"Double\" Unterschied",
+      "returned": 5,
+      "observation": "Official FAQ and set lists already answer the core distinction. Added editorial value is hub count versus spare-bottle count, regional set caveat and clear separation from Stride; not an invented test.",
+      "sampleUrls": ["https://elvie.com/products/elvie-pump", "https://uk.elvie.com/products/elvie-pump", "https://global.elvie.com/en-us/faqs/elvie-pump/shipping-purchasing-and-returns/turn-single-into-into-a-double"]
+    }
+  ]
+}

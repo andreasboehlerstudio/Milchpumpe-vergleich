@@ -1,0 +1,16 @@
+{
+  "target": "Local production build at http://127.0.0.1:3018/",
+  "published": false,
+  "method": "Chromium rendered each sitemap route in same-origin frames at four layout widths, waited for fonts, and inspected text range rectangles against clipping ancestors and the real document client width.",
+  "routes": 45,
+  "widths": [320, 390, 768, 1440],
+  "checks": 180,
+  "uniqueChecks": 180,
+  "perWidth": {"320": 45, "390": 45, "768": 45, "1440": 45},
+  "failures": 0,
+  "fontsLoaded": true,
+  "computedWeights": {"h1": 400, "heroLead": 300, "navigation": 500, "buttons": 500, "eyebrows": 500, "footerBody": 400},
+  "intentionalExclusions": ["Hidden elements", "Offscreen skip link", "One-pixel clipped screen-reader captions", "Intentionally horizontal-scrollable tables"],
+  "fixes": ["Removed a 320px body minimum that overflowed the usable viewport beside a scrollbar", "Restored intentionally hidden brand sublabels in compact model marks with adequate selector specificity", "Changed methodology grid tracks to minmax(0,1fr), with shrinkable cards and wrapping for long words"],
+  "limitations": ["DOM rectangle checks are supplemented by visual inspection; they are not pixel-level measurements of every glyph", "Frame layout widths are not a substitute for separate real mobile emulation", "No live publication or search ranking claim"]
+}

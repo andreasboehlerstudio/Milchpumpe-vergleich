@@ -1,0 +1,21 @@
+{
+  "draftId": "cf2cdb51-022c-4be3-9118-28391b49d716",
+  "version": 3,
+  "previewUrl": "https://p.superdesign.dev/draft/cf2cdb51-022c-4be3-9118-28391b49d716",
+  "status": "Canvas proposal, not implemented or published",
+  "authoring": "Direct HTML import using existing documented generation-credit fallback; no paid generation or upgrade",
+  "checks": [
+    {"width": 320, "scrollWidth": 320, "overflow": [], "textClipping": [], "heroPhotoY": 482.3125, "loadedPhotoWidth": 1600},
+    {"width": 390, "scrollWidth": 390, "overflow": [], "textClipping": [], "heroPhotoY": 486.90625, "h1Px": 48.8, "loadedPhotoWidth": 1600},
+    {"width": 768, "scrollWidth": 768, "overflow": [], "textClipping": [], "h1Px": 49.6, "loadedPhotoWidth": 1600},
+    {"width": 1440, "scrollWidth": 1440, "overflow": [], "textClipping": [], "h1Px": 87.84, "loadedPhotoWidth": 1600, "photoCreditUnobscured": true}
+  ],
+  "structure": {"h1": 1, "exactBrandLogoPositions": 2, "footerNavigationGroups": 3, "researchedModelRows": 35, "fakeRatings": false},
+  "behaviour320": {"medelaSearchOnlyMatchingRows": true, "medelaResultCount": 6, "resetCount": 35, "menuOpened": true, "escapeClosedMenu": true, "cookiePreviewOpened": true, "cookiePreviewClosed": true, "cookieTriggerFocusRestored": true},
+  "repairs": ["768px long German compound in shortlist body wrapped without clipping", "Mobile hero places photo ahead of long lead paragraph", "Photo attribution moved clear of overlapping note card"],
+  "screenshots": {
+    "mobile390": "C:/Users/andy_/AppData/Local/hermes/cache/images/img_7643fc999bdc.png",
+    "desktop1440": "C:/Users/andy_/AppData/Local/hermes/cache/images/img_3c5c98d4f810.png"
+  },
+  "scopeLimits": ["Measured at four browser viewport widths, not every device/browser", "Market observations are dated 14 October 2026, not address-specific delivery confirmation", "Nursery stock photo is not a product photograph or a user testimonial", "Canvas cookie dialog is a preview, not production consent", "No Amazon product image integration or 20 Imagegen originals claimed"]
+}

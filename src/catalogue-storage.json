@@ -1,0 +1,429 @@
+[
+  {
+    "id": "lansinoh-muttermilchbeutel",
+    "brand": "Lansinoh",
+    "name": "Muttermilchbeutel",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die Beutel eignen sich für einen flach verstauten Milchvorrat im Kühlschrank oder Gefrierfach. Mit Lansinoh-Pumpen ist direktes Abpumpen in den Beutel möglich, während andere Pumpen einen passenden Adapter benötigen können.",
+    "useCase": "Einwegbeutel für portionierte Vorräte und direktes Abpumpen mit passender Pumpe",
+    "facts": [
+      "Bis zu 180 ml Füllmenge pro Beutel.",
+      "Lebensmittelechtes Polyethylen; vorsterilisiert.",
+      "Doppelter Zip-Verschluss und stabile Nähte.",
+      "Direktes Abpumpen mit Lansinoh-Milchpumpen laut Hersteller."
+    ],
+    "limitations": [
+      "Nur für einmaligen Gebrauch vorgesehen.",
+      "Die gedruckte Füllskala ist laut Hersteller ein Richtwert, kein präzises Messinstrument."
+    ],
+    "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+    "sourceLabel": "Lansinoh – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Jeder Lansinoh® Muttermilchbeutel kann mit bis zu 180 ml Muttermilch befüllt werden.",
+    "amazonQuery": "Lansinoh Muttermilchbeutel",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://lansinoh.de/products/muttermilchbeutel",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Pumpenmodell und gegebenenfalls erforderlichen Adapter vor dem Kauf abgleichen.",
+      "Einweg-PE-Beutel nicht mit den wiederverwendbaren Silikonbeuteln von Lansinoh verwechseln."
+    ]
+  },
+  {
+    "id": "lansinoh-silikon-muttermilchbeutel",
+    "brand": "Lansinoh",
+    "name": "Silikon-Muttermilchbeutel",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die wiederverwendbaren Silikonbeutel sind eine Alternative zu Einwegbeuteln für Milchvorräte und Transport. Die weite Öffnung und das erneuerbar beschriftbare Feld erleichtern Befüllen und Zuordnen.",
+    "useCase": "Wiederverwendbare Beutel für Vorräte mit abwaschbarer Beschriftung",
+    "facts": [
+      "Wiederverwendbar und aus lebensmittelechtem Silikon.",
+      "Füllmenge bis zu 240 ml.",
+      "Selbststehend; auch liegend verstaubar.",
+      "Flüssiger Kreidemarker ist im Lieferumfang enthalten."
+    ],
+    "limitations": [
+      "Der separate Polystyrol-Verschluss darf laut Hersteller nicht ausgekocht oder sterilisiert werden.",
+      "UV-Sterilisatoren sollen laut Hersteller vermieden werden; die Materialangaben des Silikons gelten nicht pauschal für alle Teile."
+    ],
+    "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+    "sourceLabel": "Lansinoh – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Wiederverwendbar – aus langlebigem, lebensmittelechtem Silikon",
+    "amazonQuery": "Lansinoh Silikon-Muttermilchbeutel",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://lansinoh.de/products/neu-silikon-muttermilchbeutel",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Pflegevorgaben für Silikonbeutel und separaten Kunststoffverschluss getrennt prüfen.",
+      "Prüfen, ob der passende abwaschbare Kreidemarker beim angebotenen Set enthalten ist."
+    ]
+  },
+  {
+    "id": "lansinoh-muttermilchflaschen",
+    "brand": "Lansinoh",
+    "name": "Muttermilchflaschen",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die Flaschen verbinden Abpumpen und Aufbewahren innerhalb des Lansinoh-Systems ohne zusätzlichen Behälterwechsel. Stapelbare Deckel und ein weiter Hals sind praktisch, wenn der Vorrat regelmäßig neu befüllt wird.",
+    "useCase": "Wiederverwendbare Systemflaschen zum Abpumpen und Aufbewahren",
+    "facts": [
+      "Mit Lansinoh-Milchpumpen und NaturalWave-Sauger kompatibel.",
+      "Stapelbare Verschlussdeckel.",
+      "Gefrier- und spülmaschinengeeignet."
+    ],
+    "limitations": [
+      "Die gelesene Produktbeschreibung nennt kein eindeutiges Fassungsvermögen und keine eindeutige Stückzahl des Angebots.",
+      "Eine universelle Verbindung mit Pumpen oder Saugern anderer Hersteller ist hier nicht belegt."
+    ],
+    "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+    "sourceLabel": "Lansinoh – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Kompatibel mit allen Lansinoh® Milchpumpen und dem NaturalWave® Sauger",
+    "amazonQuery": "Lansinoh Muttermilchflaschen",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://lansinoh.de/products/muttermilchflaschen-neue-flaschenform",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Fassungsvermögen und tatsächlich enthaltene Flaschenzahl im konkreten Angebot prüfen.",
+      "NaturalWave-Sauger und Pumpenanschluss mit den vorhandenen Teilen abgleichen."
+    ]
+  },
+  {
+    "id": "medela-easy-pour-storage-bags",
+    "brand": "Medela",
+    "name": "Easy Pour Breast Milk Storage Bags",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die Beutel haben getrennte Öffnungen zum Einfüllen und Ausgießen und lassen sich flach lagern. Sie passen zu einem Vorrat aus umgefüllter Milch, nicht zum direkten Anschluss an eine Milchpumpe.",
+    "useCase": "Einwegbeutel mit separatem Ausgießbereich für portionierte Vorräte",
+    "facts": [
+      "Bis zu 210 ml beziehungsweise 7 oz laut Hersteller.",
+      "Zwei Öffnungen: Tab #1 zum Einfüllen, Tab #2 zum Ausgießen.",
+      "Flach einfrierbar und selbststehend.",
+      "Material LDPE."
+    ],
+    "limitations": [
+      "Einwegprodukt; nicht zum Waschen und Wiederverwenden vorgesehen.",
+      "Nicht direkt an eine Pumpe anschließbar, auch nicht durch Umrüstung mit Adapter.",
+      "Gelesene Quelle ist die kanadische Herstellerseite; Packungsinhalt kann je nach Land variieren."
+    ],
+    "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+    "sourceLabel": "Medela – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Our Easy Pour Breast Milk Storage Bags can store up to 210ml/ 7oz of pumped breastmilk.",
+    "amazonQuery": "Medela Easy Pour Breast Milk Storage Bags",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.medela.com/en-ca/breastfeeding-pumping/products/bottles-bags/easy-pour-breast-milk-storage-bags?bvstate=pg%3A2%2Fct%3Ar&productId=1036",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Auf die Bezeichnung Easy Pour achten; ältere Medela-Beutel sind nicht dieselbe Generation.",
+      "Packungsgröße und enthaltene Transporthülle des konkreten Länderangebots abgleichen."
+    ]
+  },
+  {
+    "id": "medela-muttermilchflaschen",
+    "brand": "Medela",
+    "name": "Muttermilchflaschen",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die wiederverwendbaren Flaschen dienen als Behälter zum Abpumpen und anschließenden Aufbewahren. Die Herstellerseite führt zwei Volumenvarianten, sodass sich das Angebot nach Portionsgröße auswählen lässt.",
+    "useCase": "Systemflaschen für Abpumpen, Kühlschrankvorrat und Einfrieren",
+    "facts": [
+      "150-ml-Flaschen im Dreierpack oder 250-ml-Flaschen im Zweierpack.",
+      "BPA-frei und spülmaschinengeeignet laut Hersteller.",
+      "Ein Behälter zum Abpumpen, Aufbewahren und Einfrieren."
+    ],
+    "limitations": [
+      "150 ml und 250 ml werden hier als Varianten eines Artikels geführt, nicht als getrennte Produkte.",
+      "Die pauschale Pumpenkompatibilität der Quelle ersetzt keinen Modell- und Anschlussabgleich, insbesondere bei Auffang-Cups."
+    ],
+    "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+    "sourceLabel": "Medela – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+    "amazonQuery": "Medela Muttermilchflaschen",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Vor dem Kauf 150-ml- und 250-ml-Variante sowie Flaschenzahl unterscheiden.",
+      "Direkten Flaschenanschluss der eigenen Medela-Pumpe in deren Anleitung prüfen."
+    ]
+  },
+  {
+    "id": "medela-cooler-bag",
+    "brand": "Medela",
+    "name": "Cooler Bag breast milk storage",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die isolierte Tasche ist ein zusätzlicher Transportbehälter für Milch in Flaschen. Das beschriebene US-Set kombiniert die Tasche mit vier Medela-Flaschen und einem herausnehmbaren Kühlelement.",
+    "useCase": "Transporttasche für mehrere Flaschen zwischen Zuhause, Arbeit und Betreuung",
+    "facts": [
+      "Lieferumfang der Quelle: vier Medela-Muttermilchflaschen und ein separates Kühlelement.",
+      "Konturiertes Kühlelement speziell für Medela-Flaschen.",
+      "Isolierung an der Innenseite der Tasche."
+    ],
+    "limitations": [
+      "US-Herstellerseite: Lieferumfang und Flaschenvolumen des deutschen Angebots sind damit nicht eindeutig belegt.",
+      "Keine eigene Messung der Kühlleistung; Herstellerwerbung über Kühlstunden ist keine pauschale Sicherheitsgarantie."
+    ],
+    "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+    "sourceLabel": "Medela – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "It comes with four Medela breast milk bottles and a separate cooling element.",
+    "amazonQuery": "Medela Cooler Bag breast milk storage",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.medela.com/en-us/breastfeeding-pumping/products/bottles-bags/cooler-bag-breast-milk-storage?productId=4479",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Prüfen, ob das Angebot Tasche, Kühlelement und vier Flaschen oder nur die Tasche umfasst.",
+      "Form und Größe eigener Flaschen mit dem konturierten Kühlelement abgleichen."
+    ]
+  },
+  {
+    "id": "ardo-easy-store",
+    "brand": "Ardo",
+    "name": "Ardo Easy Store Muttermilchbeutel",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": "63.00.334",
+    "summary": "Die vorsterilisierten Einwegbeutel lassen sich stehend befüllen und platzsparend stapeln. Skala und Beschriftungsfelder helfen beim Zuordnen einzelner Portionen.",
+    "useCase": "Einwegbeutel für beschriftete Kühl- und Gefriervorräte",
+    "facts": [
+      "Maximale Füllmenge 180 ml mit aufgedruckter Skala.",
+      "Doppelter Zip-Verschluss und stabile Nähte.",
+      "Selbststehend oder stapelbar.",
+      "Vorsterilisiert und für einmaligen Gebrauch vorgesehen."
+    ],
+    "limitations": [
+      "Einwegprodukt, nicht als wiederverwendbarer Beutel ausgewiesen.",
+      "Direktes Abpumpen in diesen Beutel ist auf der gelesenen Produktseite nicht belegt."
+    ],
+    "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+    "sourceLabel": "Ardo – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Aufgedruckte Skala zum Ablesen der Füllmenge (max. 180ml)",
+    "amazonQuery": "Ardo Easy Store Muttermilchbeutel",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://ardo.de/products/muttermilchbeutel",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Maximale 180-ml-Füllmenge mit der gewünschten Portionsgröße abgleichen.",
+      "Nicht mit Ardo Easy Clean verwechseln: Das sind Reinigungsbeutel, keine Aufbewahrungsbeutel."
+    ]
+  },
+  {
+    "id": "ardo-bottle-set",
+    "brand": "Ardo",
+    "name": "Ardo Bottle Set Muttermilchflaschen (3 Stk.)",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": "63.00.263",
+    "summary": "Das Flaschenset hält mehrere wiederverwendbare Behälter für Abpumpen und Aufbewahren bereit. Wer eine passende Ardo-Pumpe nutzt, kann die Flaschen innerhalb desselben Systems weiterverwenden.",
+    "useCase": "Wiederverwendbare Schmalhalsflaschen als Vorrat im Ardo-Pumpensystem",
+    "facts": [
+      "Drei Flaschen mit je 150 ml.",
+      "Flaschen mit Skalierung und verschließbarem Deckel.",
+      "Polypropylen, BPA- und BPS-frei laut Hersteller.",
+      "Für Ardo-Pumpsets und Ardo Amaryll Start; Schmalhals-Sauger laut Hersteller kompatibel."
+    ],
+    "limitations": [
+      "Kompatibilität zu Wearable-Cups oder zu Pumpen anderer Marken ist damit nicht pauschal belegt.",
+      "Die Quelle beschreibt Aufbewahrung im Kühlschrank; eine eigene Gefriereignungsprüfung wurde nicht durchgeführt."
+    ],
+    "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+    "sourceLabel": "Ardo – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "3 Milchflaschen 150 ml",
+    "amazonQuery": "Ardo Bottle Set Muttermilchflaschen (3 Stk.)",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://ardo.de/products/muttermilchflaschen-3er-set",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Anschluss der konkreten Ardo-Pumpe abgleichen, statt nur nach Markenname zu kaufen.",
+      "150-ml-Flaschen und Schmalhals-Sauger mit dem vorhandenen Fütterungssystem abgleichen."
+    ]
+  },
+  {
+    "id": "ardo-kuehltasche",
+    "brand": "Ardo",
+    "name": "Ardo Kühltasche für Muttermilch inkl. Kühlelementen",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": "63.00.82",
+    "summary": "Die Tasche ist für den gemeinsamen Transport mehrerer Milchflaschen gedacht. Im beschriebenen Lieferumfang sind die Kühlelemente enthalten, während die Flaschen gesondert einzuplanen sind.",
+    "useCase": "Transporttasche für bis zu vier Milchflaschen",
+    "facts": [
+      "Platz für vier Milchflaschen laut Hersteller.",
+      "Drei Kühlelemente enthalten.",
+      "Lieferumfang der Quelle: Kühltasche und Kühlelemente."
+    ],
+    "limitations": [
+      "Flaschen sind im gelesenen Lieferumfang nicht aufgeführt.",
+      "Die Quelle nennt keine Innenmaße oder eindeutig passende Flaschengrößen und belegt keine eigene Kühlleistungsmessung."
+    ],
+    "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+    "sourceLabel": "Ardo – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "die Ardo Kühltasche bietet Platz für 4 Milchflaschen und enthält bereits 3 Kühlelemente.",
+    "amazonQuery": "Ardo Kühltasche für Muttermilch inkl. Kühlelementen",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://ardo.de/products/muttermilch-kuehltasche",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Vor dem Kauf die Außenmaße eigener Flaschen mit dem Hersteller abgleichen.",
+      "Kontrollieren, ob alle drei Kühlelemente im angebotenen Lieferumfang enthalten sind."
+    ]
+  },
+  {
+    "id": "mam-aufbewahrungsbecher",
+    "brand": "MAM",
+    "name": "Aufbewahrungsbecher – für Muttermilch",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die Mehrwegbecher dienen als beschriftbare Behälter für Milchvorräte und unterwegs. Das abwaschbare Feld lässt sich bei jeder erneuten Befüllung neu datieren.",
+    "useCase": "Wiederverwendbare Becher für Kühlschrank, Gefrierfach und Transport",
+    "facts": [
+      "Mehrfach reinigbar und sterilisierbar laut Hersteller.",
+      "Für Kühlschrank, Gefriertruhe und unterwegs ausgewiesen.",
+      "Abwaschbares Beschriftungsfeld.",
+      "Fünf Becher pro Packung der gelesenen Produktseite."
+    ],
+    "limitations": [
+      "Auf der gelesenen Produktseite ist kein eindeutiges Volumen pro Becher angegeben.",
+      "Die dargestellte Pumpenanbindung bezieht sich auf das MAM-System, nicht auf universelle Anschlüsse."
+    ],
+    "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+    "sourceLabel": "MAM – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Können beliebig oft gereinigt und sterilisiert werden.",
+    "amazonQuery": "MAM Aufbewahrungsbecher – für Muttermilch",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Volumen pro Becher vor dem Kauf anhand des konkreten Angebots oder der Verpackung prüfen.",
+      "Bei direkter Pumpennutzung erforderliche MAM-Flaschen- beziehungsweise Adapterteile abgleichen."
+    ]
+  },
+  {
+    "id": "mam-muttermilchbeutel",
+    "brand": "MAM",
+    "name": "MAM Muttermilchbeutel - 25 Stk",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Die Einwegbeutel lassen sich flach verstauen und haben eine weite Öffnung zum Befüllen und Ausgießen. Mit den ausdrücklich genannten MAM-Pumpen kann direkt ohne zusätzlichen Adapter in den Beutel abgepumpt werden.",
+    "useCase": "Einwegbeutel für flache Vorräte und direktes Abpumpen im MAM-System",
+    "facts": [
+      "Doppeldruck-Verschluss.",
+      "Standfestes, flaches Design.",
+      "Befüllgrenze laut Gebrauchshinweis: 180 ml.",
+      "Direktes Abpumpen mit MAM Handmilchpumpe und MAM 2in1 ohne zusätzlichen Adapter."
+    ],
+    "limitations": [
+      "Nur für einmaligen Gebrauch vorgesehen.",
+      "Direkter Pumpenanschluss ist ausdrücklich für MAM Handmilchpumpe und MAM 2in1 belegt, nicht für beliebige Milchpumpen."
+    ],
+    "sourceUrl": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+    "sourceLabel": "MAM – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Doppeldruck-Verschluss zur sicheren Aufbewahrung",
+    "amazonQuery": "MAM Muttermilchbeutel - 25 Stk",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.mambaby.com/de/p/mam-muttermilchbeutel-25-stk/100018346",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "180-ml-Befüllgrenze und gewünschte Portionsgrößen vor dem Kauf abgleichen.",
+      "25er- und 100er-Packungen nicht als unterschiedliche Beutelmodelle behandeln; benötigte Stückzahl prüfen."
+    ]
+  },
+  {
+    "id": "ceres-chill-og-plus",
+    "brand": "Ceres Chill",
+    "name": "OG+ Chiller/Warmer - 28oz",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": "OG+",
+    "summary": "Der OG+ kombiniert einen Transportbehälter mit einer inneren Kühlkammer statt einer separaten Kühltasche. Für das Abpumpen in den Behälter muss die jeweilige Pumpe samt gegebenenfalls nötigem Adapter geprüft werden.",
+    "useCase": "Transport von Muttermilch in einem Chiller mit innerer Kühlkammer",
+    "facts": [
+      "Produktbezeichnung der aktuellen Quelle: OG+ Chiller/Warmer - 28oz.",
+      "Zwei Kühlkonfigurationen: Eis oder gefrorene Innenkammer.",
+      "Hersteller nennt fünf spülmaschinengeeignete Teile.",
+      "Genannte Materialien: lebensmittelechter Edelstahl und Platinsilikon."
+    ],
+    "limitations": [
+      "28 oz für die beworbene Kühlkonfiguration und bis zu 38 oz Gesamtvolumen sind unterschiedliche Angaben; nicht als identische nutzbare Kühlkapazität behandeln.",
+      "Pumpen können einen Adapter benötigen; keine pauschale Passgarantie.",
+      "Die beworbene Kühlzeit ist eine Herstellerangabe, keine unabhängig geprüfte Lagerzeit- oder Sicherheitsgarantie."
+    ],
+    "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+    "sourceLabel": "Ceres Chill – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "OG+ Chiller/Warmer - 28oz",
+    "amazonQuery": "Ceres Chill OG+ Chiller/Warmer - 28oz",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.cereschill.com/products/og-chiller-warmer",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Beim Kauf OG+ von Legacy OG unterscheiden und das passende Innenkammer-Set bestätigen.",
+      "Für die eigene Pumpe Adapterbedarf in der Hersteller-Kompatibilitätsliste prüfen."
+    ]
+  },
+  {
+    "id": "momcozy-portable-cooler-22oz",
+    "brand": "Momcozy",
+    "name": "Momcozy Portable Baby Bottle Cooler for Outdoor - 22oz",
+    "category": "Aufbewahrung & Transport",
+    "modelCode": null,
+    "summary": "Der Transportkühler nimmt zwei getrennte Aufbewahrungsflaschen innerhalb einer gemeinsamen Hülle auf. Er ist auf die mitgelieferten Flaschen abgestimmt und eignet sich daher nicht als pauschal universelle Flaschenkühltasche.",
+    "useCase": "Muttermilchtransport mit zwei getrennten Flaschen in einem Kühler",
+    "facts": [
+      "Gesamtvolumen 22 oz, vom Hersteller als ungefähr 650 ml angegeben.",
+      "Zwei separate Flaschen mit je 11 oz beziehungsweise 325 ml.",
+      "System ist auf die enthaltenen Momcozy-Aufbewahrungsflaschen abgestimmt."
+    ],
+    "limitations": [
+      "Andere Flaschenmarken können laut Hersteller nicht passend sitzen und die Kühlleistung verändern.",
+      "Das Kühlelement muss vor der Nutzung nach Herstelleranleitung vorbereitet werden; keine aktive elektrische Kühlung belegt.",
+      "Die beworbene Kühlzeit ist keine unabhängig bestätigte Sicherheits- oder Lagerzeitgarantie."
+    ],
+    "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+    "sourceLabel": "Momcozy – offizielle Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "The portable breast milk cooler has a total capacity of 22oz (approximately 650ml).",
+    "amazonQuery": "Momcozy Portable Baby Bottle Cooler for Outdoor - 22oz",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://eu.momcozy.com/products/portable-breast-milk-cooler-for-outdoor-22oz",
+      "note": "Keine explizite kommerzielle Bildfreigabe belegt; öffentliche Produktbilder sind keine Nutzungslizenz. Keine Bilder heruntergeladen."
+    },
+    "tips": [
+      "Auf die 22-oz-Version mit zwei Flaschen achten; nicht allein anhand der Farbe bestellen.",
+      "Ersatzflaschen, passendes Kühlelement und deren Vorbereitung im konkreten Angebot prüfen."
+    ]
+  }
+]

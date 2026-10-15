@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "implementedAt": "2026-10-15T00:16:45+02:00",
+  "status": "standalone-not-wired",
+  "component": {
+    "module": "src/wearable-market.tsx",
+    "export": "WearableMarketOverview",
+    "usage": "import { WearableMarketOverview } from './wearable-market';\nimport './wearable-market.css';\n// Parent: render <WearableMarketOverview /> beneath the existing six-model comparison.",
+    "props": {
+      "initialFilters": "optional { query?: string; brand?: string; architecture?: string; offers?: string }; empty by default"
+    },
+    "otherExports": [
+      "WEARABLE_MARKET",
+      "filterWearableModels",
+      "wearableMarketDestination"
+    ],
+    "typeExports": [
+      "WearableMarketModel",
+      "WearableMarketFilters"
+    ],
+    "cssImportReason": "Host imports scoped CSS once. The component remains directly renderable by Node SSR tests, without a CSS loader."
+  },
+  "createdFiles": [
+    "src/wearable-market.tsx",
+    "src/wearable-market.css",
+    "src/wearable-market-data.json",
+    "scripts/wearable-market-ui.test.tsx",
+    "docs/wearable-market-ui-integration.json"
+  ],
+  "sourcePolicy": {
+    "data": "Exact editorial JSON snapshot copied into runtime data; models, all source records, provenance and original timestamps retained without normalization.",
+    "editorialSource": "docs/wearable-comparison-editorial.json",
+    "reconciledSource": "docs/wearable-market-reconciled.json",
+    "editorialGeneratedAt": "2026-10-14T21:14:06.141239+00:00",
+    "researchReconciledAt": "2026-10-14T20:34:27.996385+00:00",
+    "newExternalProductRetrievals": false,
+    "historicalOffersOnly": true,
+    "completeGermanMarketClaim": false,
+    "todayDeliveryClaim": false,
+    "imagesRendered": false,
+    "numericQualityScoresRendered": false,
+    "scopeNote": "sourceUiChanged in the copied snapshot describes the original research scope, not this component implementation."
+  },
+  "counts": {
+    "models": 35,
+    "uniqueIdentities": 35,
+    "offerObservations": {
+      "public-offer-observed": 31,
+      "not-found": 4
+    },
+    "auditedArchitecture": {
+      "fully-in-bra-electric-wearable": 25,
+      "in-bra-cups-with-tubing-and-external-portable-motor": 9,
+      "unverified": 1
+    },
+    "exactOfferDestinations": 29,
+    "modelSearchDestinations": 6,
+    "buyingCases": 3
+  },
+  "destinationPolicy": {
+    "tag": "andreasboeh09-21",
+    "rel": "sponsored noopener noreferrer",
+    "searchFallbacks": [
+      {
+        "brand": "Elvie",
+        "canonicalModel": "Stride 2",
+        "reason": "No exact observed ASIN"
+      },
+      {
+        "brand": "eufy",
+        "canonicalModel": "S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+        "reason": "Manufacturer/generation mapping unresolved"
+      },
+      {
+        "brand": "Momcozy",
+        "canonicalModel": "M5",
+        "reason": "No exact observed ASIN"
+      },
+      {
+        "brand": "Momcozy",
+        "canonicalModel": "S12 Pro",
+        "reason": "No exact observed ASIN"
+      },
+      {
+        "brand": "Perifit",
+        "canonicalModel": "Pump",
+        "reason": "No exact observed ASIN"
+      },
+      {
+        "brand": "Willow",
+        "canonicalModel": "Go (PDL60)",
+        "reason": "Manufacturer/generation mapping unresolved"
+      }
+    ],
+    "manufacturerEvidenceLinks": "Neutral, untaged citations; not purchase CTAs."
+  },
+  "verification": {
+    "tdd": "Seven vertical RED→GREEN behavior slices; first missing-component assertion failed before creating production files. A 320px native-select clipping regression was reproduced visually, tested red, shortened, and reverified.",
+    "targetedCommand": "npx tsx --test scripts/wearable-market-ui.test.tsx",
+    "targetedResult": {
+      "tests": 7,
+      "pass": 7,
+      "fail": 0
+    },
+    "standaloneTypecheckCommand": "npx tsc --noEmit --module esnext --moduleResolution bundler --target ES2022 --jsx react-jsx --resolveJsonModule --allowSyntheticDefaultImports --skipLibCheck src/wearable-market.tsx scripts/wearable-market-ui.test.tsx",
+    "standaloneTypecheck": "passed",
+    "projectBuild": "npm test production build and prerender passed at first whole-suite invocation; standalone esbuild harness passed after final UI changes.",
+    "wholeSuiteObserved": {
+      "tests": 111,
+      "pass": 103,
+      "fail": 8,
+      "outsideOwnedScope": [
+        "scripts/methodology-v4.test.tsx: missing diagram identities",
+        "scripts/pinterest-single-product.test.tsx: six existing article commercial-focus assertions",
+        "scripts/problem-pinterest-focus.test.ts: one existing focus mapping assertion"
+      ]
+    },
+    "latestProjectLint": "Blocked by concurrent outside-scope PROBLEM_PRODUCT_FOCUS export changes in src/problem-product-focus; own standalone typecheck passes.",
+    "browserHarness": "Temporary scratch-only esbuild React mount with existing index.css, new scoped CSS and locally served existing fonts. No route files changed.",
+    "browserLayouts": [
+      {
+        "viewport": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "clippedVisibleText": 0,
+        "nativeSelectedLabels": "Externer Motor / Kein Angebot belegt fully visible after repair"
+      },
+      {
+        "viewport": 375,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "clippedVisibleText": 0
+      },
+      {
+        "viewport": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "clippedVisibleText": 0,
+        "cardColumns": 2
+      },
+      {
+        "viewport": 1280,
+        "clientWidth": 1265,
+        "scrollWidth": 1265,
+        "clippedVisibleText": 0,
+        "cardColumns": 2,
+        "shortlistColumns": 3
+      }
+    ],
+    "browserInteractions": {
+      "searchM5Smart": 1,
+      "brandMedelaAndExternalMotor": 4,
+      "noMatch": 0,
+      "reset": 35
+    },
+    "browserToolFallback": "Browser Use rejected loopback; local chrome-devtools isolatedContext successfully verified actual React state and layouts."
+  },
+  "remaining": "Parent imports component and CSS and reruns integrated route QA. No existing route/source files modified; no accounts, commit, push or deployment.",
+  "parentVerification": {
+    "checkedAt": "2026-10-14T22:35:48.788642+00:00",
+    "fullSuite": {
+      "tests": 135,
+      "passed": 135,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "canvasContractTest": "passed",
+    "diffCheck": "passed",
+    "concurrentSubagentFailures": "Historical snapshots during editing; parent final suite/typecheck now pass.",
+    "routesWired": true,
+    "routeIntegration": {
+      "status": "locally-routed-and-verified",
+      "checkedAt": "2026-10-14T22:59:54.769967+00:00",
+      "report": "docs/market-methodology-route-integration.json",
+      "routes": [
+        "/testmethodik/",
+        "/tragbare-milchpumpen/"
+      ],
+      "focusedTests": {
+        "tests": 9,
+        "passed": 9,
+        "failed": 0
+      },
+      "fullSuite": {
+        "tests": 144,
+        "passed": 144,
+        "failed": 0
+      },
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "diffCheck": "passed",
+      "browser": "Actual production routes, isolatedContext market-methodology-integration; 320/390/768/1440px with no document overflow, no clipped audited text; React filtering 1/4/0/35.",
+      "published": false
+    },
+    "published": false,
+    "previewUrl": "http://127.0.0.1:3017/.superdesign/tmp/review-wearable-market.html",
+    "runtimeDataEqualsEditorialSource": true,
+    "browser": {
+      "desktopClientWidth": 1425,
+      "desktopScrollWidth": 1425,
+      "mobileClientWidth": 320,
+      "mobileScrollWidth": 320,
+      "clippedText": [],
+      "realReactFiltering": {
+        "search": 1,
+        "combined": 4,
+        "empty": 0,
+        "reset": 35
+      },
+      "allAffiliateTagsAndSponsored": true
+    }
+  }
+}

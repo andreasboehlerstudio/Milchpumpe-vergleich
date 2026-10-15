@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+ <linearGradient id="cream" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fffef9"/><stop offset=".52" stop-color="#f4f0e5"/><stop offset="1" stop-color="#d7d9ca"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2=".9"><stop stop-color="#45978a"/><stop offset=".48" stop-color="#086d61"/><stop offset="1" stop-color="#064b43"/></linearGradient>
+ <linearGradient id="mint" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f0f8ec"/><stop offset=".55" stop-color="#dceee5"/><stop offset="1" stop-color="#a5c7b9"/></linearGradient>
+ <linearGradient id="coral" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f5bf9e"/><stop offset=".55" stop-color="#ed977f"/><stop offset="1" stop-color="#cf7d69"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#fffef5" stop-opacity=".96"/><stop offset=".3" stop-color="#edf4eb" stop-opacity=".7"/><stop offset=".8" stop-color="#c8ddd1" stop-opacity=".88"/><stop offset="1" stop-color="#a4beb0" stop-opacity=".9"/></linearGradient>
+ <radialGradient id="light" cx=".23" cy=".1" r=".95"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#f4e9d7"/></radialGradient>
+ <radialGradient id="bowl"><stop stop-color="#718e7f"/><stop offset=".8" stop-color="#a8bcae"/><stop offset="1" stop-color="#d6ddd0"/></radialGradient>
+ <radialGradient id="cup"><stop stop-color="#fffef8"/><stop offset=".55" stop-color="#f1f0e6"/><stop offset=".84" stop-color="#d2ded3"/><stop offset="1" stop-color="#a8c4b5"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-50%" width="180%" height="210%"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+ <filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".58" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ </defs>
+<g filter="url(#paper)">
+<rect width="1200" height="900" fill="url(#light)"/>
+<path d="M0 0H346Q471 194 222 370L0 403Z" fill="#dceee5"/>
+<!-- Broad, weighted folds rather than a repeated still-life backdrop. -->
+<path d="M0 535Q121 367 335 385Q477 415 557 347Q721 271 879 408Q982 477 1200 434V900H0Z" fill="#e9dfca"/>
+<path d="M0 562Q156 401 325 428Q466 469 570 393Q741 312 878 446Q1002 519 1200 473V900H0Z" fill="url(#cream)"/>
+<path d="M78 900Q141 667 332 486Q361 452 387 439M481 900Q449 669 562 435M713 900Q664 721 783 479M1009 900Q874 716 1018 520" fill="none" stroke="#c7cabb" stroke-width="17" opacity=".24"/>
+<path d="M105 900Q162 658 350 484M501 900Q469 663 574 441M731 900Q690 727 795 480" fill="none" stroke="#fffdf3" stroke-width="14" opacity=".72"/>
+<!-- Abstractions of wearable collecting cups, no branded pump geometry. -->
+<ellipse cx="410" cy="659" rx="186" ry="54" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+<g transform="translate(393 497) rotate(-16)">
+<path d="M-157 -55Q-145 -153 -47 -171Q55 -201 129 -114Q176 -63 166 38Q151 152 24 169Q-84 179 -144 83Q-170 38 -157 -55Z" fill="url(#cup)" stroke="#b5cbbb" stroke-width="3"/>
+<path d="M-143 -49Q-121 -139 -42 -154Q55 -176 120 -96" fill="none" stroke="#fffef6" stroke-width="13" stroke-linecap="round" opacity=".88"/>
+<path d="M-140 61Q-59 132 79 95Q129 80 158 39Q147 149 22 162Q-77 173 -140 61Z" fill="#c2daca" opacity=".62"/>
+<path d="M-125 87Q-41 151 69 115" fill="none" stroke="#a2c2af" stroke-width="3"/>
+<ellipse cx="20" cy="-15" rx="77" ry="83" fill="#f9faf0" opacity=".82"/>
+<ellipse cx="20" cy="-15" rx="42" ry="46" fill="url(#mint)"/>
+<ellipse cx="20" cy="-15" rx="21" ry="25" fill="#a5c6b2"/>
+<path d="M-23 -164Q-16 -191 9 -192Q38 -189 39 -169L36 -145Q5 -134 -23 -149Z" fill="url(#mint)"/>
+<path d="M-8 -174L23 -173" stroke="#f8fcef" stroke-width="5" stroke-linecap="round"/>
+</g>
+<ellipse cx="694" cy="694" rx="155" ry="44" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+<g transform="translate(682 561) rotate(17) scale(.87)">
+<path d="M-157 -55Q-145 -153 -47 -171Q55 -201 129 -114Q176 -63 166 38Q151 152 24 169Q-84 179 -144 83Q-170 38 -157 -55Z" fill="url(#cup)" stroke="#b5cbbb" stroke-width="3"/>
+<path d="M-141 -48Q-123 -133 -41 -153Q50 -171 113 -102" fill="none" stroke="#fffef8" stroke-width="13" stroke-linecap="round"/>
+<path d="M-140 61Q-59 132 79 95Q129 80 158 39Q147 149 22 162Q-77 173 -140 61Z" fill="#c2daca" opacity=".65"/>
+<ellipse cx="20" cy="-15" rx="77" ry="83" fill="#f9faf0" opacity=".8"/>
+<ellipse cx="20" cy="-15" rx="42" ry="46" fill="url(#mint)"/>
+<ellipse cx="20" cy="-15" rx="21" ry="25" fill="#a5c6b2"/>
+<path d="M-23 -164Q-16 -191 9 -192Q38 -189 39 -169L36 -145Q5 -134 -23 -149Z" fill="url(#mint)"/>
+<path d="M-8 -174L23 -173" stroke="#f8fcef" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- Blank sleeping screen, explicitly no invented app or data. -->
+<ellipse cx="948" cy="561" rx="105" ry="38" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+<g transform="translate(877 302) rotate(16 78 138)">
+<rect x="-5" y="4" width="166" height="294" rx="30" fill="#073f38"/>
+<rect width="156" height="289" rx="28" fill="url(#teal)"/>
+<rect x="10" y="13" width="136" height="263" rx="19" fill="#234c43"/>
+<path d="M20 28Q20 23 28 23H131L20 218Z" fill="#bed8c4" opacity=".1"/>
+<path d="M156 79V110M-5 63V91" stroke="#578375" stroke-width="4" stroke-linecap="round"/>
+<path d="M54 13H102" stroke="#0a3832" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- Small coral fabric edge adds warm counterweight. -->
+<path d="M990 735Q1070 681 1200 711V900H979Q1039 812 990 735Z" fill="url(#coral)"/>
+<path d="M1009 743Q1084 700 1200 728M1008 872Q1061 806 1033 750" stroke="#fbc6aa" stroke-width="5" fill="none" opacity=".7"/>
+</g>
+</svg>

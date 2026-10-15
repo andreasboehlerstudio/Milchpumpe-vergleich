@@ -1,0 +1,84 @@
+{
+  "pins": [
+    {
+      "slug": "muttermilch-beschriften-portionen-gefrierfach",
+      "primaryProductId": "medela-easy-pour-storage-bags"
+    },
+    {
+      "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+      "primaryProductId": "medela-cooler-bag"
+    },
+    {
+      "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+      "primaryProductId": "philips-avent-scf149-00"
+    },
+    {
+      "slug": "muttermilchbeutel-oder-mehrwegbecher",
+      "primaryProductId": "medela-easy-pour-storage-bags"
+    },
+    {
+      "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+      "primaryProductId": "medela-muttermilchflaschen"
+    },
+    {
+      "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+      "primaryProductId": "philips-avent-scf358-00"
+    },
+    {
+      "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+      "primaryProductId": "medela-calma-feeding-system"
+    },
+    {
+      "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+      "primaryProductId": "lansinoh-blue-lock-stilleinlagen"
+    },
+    {
+      "slug": "hands-free-milchpumpe-kaufen",
+      "primaryProductId": "momcozy-m9"
+    },
+    {
+      "slug": "milchpumpe-fuer-unterwegs",
+      "primaryProductId": "medela-freestyle"
+    },
+    {
+      "slug": "milchpumpe-einzel-oder-doppelpumpe",
+      "primaryProductId": "momcozy-m9"
+    },
+    {
+      "slug": "milchpumpe-zubehoer-checkliste",
+      "primaryProductId": "philips-avent-scf149-00"
+    },
+    {
+      "slug": "momcozy-m9-ohne-app",
+      "primaryProductId": "momcozy-m9"
+    },
+    {
+      "slug": "momcozy-m9-einzel-oder-doppelset",
+      "primaryProductId": "momcozy-m9"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+      "primaryProductId": "medela-freestyle"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+      "primaryProductId": "medela-freestyle"
+    },
+    {
+      "slug": "elvie-pump-oder-elvie-stride",
+      "primaryProductId": "elvie-pump-single"
+    },
+    {
+      "slug": "milchpumpe-ersatzteile-ventile-membranen",
+      "primaryProductId": "philips-avent-cp2203-01"
+    },
+    {
+      "slug": "momcozy-s12-pro-quick-unterschiede",
+      "primaryProductId": "momcozy-s12-pro"
+    },
+    {
+      "slug": "milchpumpe-app-datenschutz",
+      "primaryProductId": "momcozy-m9"
+    }
+  ]
+}

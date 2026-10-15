@@ -1,0 +1,21 @@
+{
+  "draftId":"cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion":11,
+  "scope":"Source-grounded case-first recommendations and bounded recheck of five model-evidence contexts; Canvas only",
+  "inputReports":["docs/ranking-next-evidence.json","docs/ranking-next-audit.md","docs/market-open-evidence-recheck.json"],
+  "researchScope":{"comparedModels":6,"visibleMainCases":3,"visibleAlternatives":3,"marketIdentitiesRetained":35,"completeCurrentMarketClaim":false,"overallPerformanceRanking":false,"freshStockPriceOrDeliveryVerification":false},
+  "caseOrder":[{"main":"Momcozy M5 Smart","alternative":"Elvie Pump","criterion":"Direct controls, optional app; versus sensor-based full-container pause"},{"main":"Medela Freestyle Hands-free","alternative":"Philips Avent SCF547/11","criterion":"External motor; compare documented DE sizing kit"},{"main":"Momcozy Air 1","alternative":"eufy S1 T8D02","criterion":"Case charging versus integrated warmth; S1 base kit explicitly has no case"}],
+  "evidenceRecheck":{"resolved":["Kinderkraft MAMAFLOW"],"partial":["KISSBOBO K5","NCVI AM8161A","eufy S2 Pro","Willow Go PDL60"],"newModelsNotAddedWithoutDEAvailabilityVerification":["NCVI AM8111","Willow 360/renamed 3.0"]},
+  "parentPrimaryChecks":["M5 Smart and Air 1 official DE feature pages","Philips SCF547/11 exact DE size kit","Medela Freestyle Hands-free separate motor and cup construction","Elvie Pump official UK feature scope","eufy S1 EU heating and S1-vs-Pro case distinction","Kinderkraft exact manual: nursing-bra use, collector-mounted motor, motor not washable","S2 Pro Anker DE product and Anker-authored T60A1/T600P guide","KISSBOBO K5 brand page; NCVI NC8161 current product/AM8161 manual link; current Willow kit generation boundary"],
+  "parentRetrievalIssue":"Direct urllib PDF fetch returned 403; public document extraction subsequently returned all three exact Kinderkraft manual passages. No authentication, browser-permission approval or access-control bypass.",
+  "tests":{"twoNewContractsFailedBeforeImplementation":true,"remoteCanvasContractsPassed":16,"historicalV4ContractsRemainPassing":true,"typecheck":"passed","diffCheck":"passed","exactReadback":true,"readbackNormalization":"CRLF to LF only"},
+  "browserChecks":[{"viewport":320,"scrollWidth":320,"outside":[],"main":1,"h1":1,"longestSelectLabelFits":true},{"viewport":390,"scrollWidth":390,"outside":[],"main":1,"h1":1},{"viewport":768,"scrollWidth":768,"outside":[],"main":1,"h1":1,"shortlistColumns":1},{"viewport":1440,"scrollWidth":1440,"outside":[],"main":1,"h1":1,"comparisonModelPairsTested":35,"failedKeys":[]}],
+  "interactionChecks":{"allThreeExplicitAlternativePairsSelectBothModels":true,"comparisonOpensAndFocusesFirstSelector":true,"allThreeCaseFiltersWork":true,"kinderkraftInIntegratedMotorFilter":true,"integratedCount":26,"externalMotorCount":9,"unknownArchitectureCount":0,"emptyStateAndResetWork":true,"all35OpaqueKeysPreserved":true,"all35PurchaseTargetsPreserved":true},
+  "visualReview":{"desktop":"C:/Users/andy_/AppData/Local/hermes/cache/images/img_3573365004c4.png","phone320":"C:/Users/andy_/AppData/Local/hermes/cache/images/img_1efc74d83754.png"},
+  "preserved":["All exact historical ASINs and Single/Double labels","All image markup and licensed photographs","Actual logo","Illustrated methodology","Historical market snapshots"],
+  "implementationApproved":false,
+  "runtimeWebsiteChanged":false,
+  "published":false,
+  "generationCreditsSpent":0,
+  "newProductPhotoRightsAcquired":false
+}

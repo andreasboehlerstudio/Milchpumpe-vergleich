@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:3017/",
+  "environment": "local Vite development preview, not deployed website",
+  "device": "mobile",
+  "mode": "navigation",
+  "categories": {
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "agenticBrowsing": 100
+  },
+  "passed": 59,
+  "failed": 0,
+  "performanceMeasured": false,
+  "rankingMeasured": false,
+  "llmsTxt": "Optional emerging navigation convention, not crawl/training permission or a ranking guarantee",
+  "rawReport": "C:/Users/andy_/AppData/Local/Temp/chrome-devtools-mcp-j9eUZn/report.json"
+}

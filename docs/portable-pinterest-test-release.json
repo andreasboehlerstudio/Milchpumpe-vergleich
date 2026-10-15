@@ -1,0 +1,120 @@
+{
+  "scope": "Portable Pinterest website integration tests only; no publishing or CI configuration changes",
+  "baselineCommit": "bf7a3519997949498de699a9337a56241c8e4b98",
+  "filesChanged": [
+    "scripts/imagegen-production-mapping.test.tsx",
+    "scripts/pinterest-single-product.test.tsx",
+    "scripts/fixtures/pinterest-production-mapping.json",
+    "scripts/fixtures/pinterest-editorial-queue.json",
+    "docs/portable-pinterest-test-release.json"
+  ],
+  "fixtures": [
+    {
+      "path": "scripts/fixtures/pinterest-production-mapping.json",
+      "sourceBasename": "pinterest-production-run.json",
+      "schema": {
+        "pins": [
+          {
+            "pinNumber": "integer",
+            "slug": "string",
+            "articleDestination": "string",
+            "primaryProductId": "string"
+          }
+        ]
+      },
+      "records": 20,
+      "distinctPinNumbers": 20,
+      "distinctArticleSlugs": 18,
+      "exactSourceProjectionVerified": true,
+      "preservation": "Original record order, URLs including query strings and the pin 12 #groessen fragment, and product identities are unchanged. Repeated article destinations are intentional."
+    },
+    {
+      "path": "scripts/fixtures/pinterest-editorial-queue.json",
+      "sourceBasename": "pinterest-imagegen-queue.json",
+      "schema": {
+        "pins": [
+          {
+            "slug": "string",
+            "primaryProductId": "string"
+          }
+        ]
+      },
+      "records": 20,
+      "distinctArticleSlugs": 20,
+      "exactSourceProjectionVerified": true,
+      "preservation": "Original queue order and identities are unchanged. This editorial set is not replaced with the produced-pin set."
+    }
+  ],
+  "privacy": {
+    "fixtureKeysRestrictedByTests": true,
+    "containsRawPrompts": false,
+    "containsImageSessionIds": false,
+    "containsPersonalPaths": false,
+    "containsDownloads": false,
+    "containsCredentials": false
+  },
+  "redReproduction": {
+    "method": "git archive HEAD extracted into an isolated website directory under Hermes scratch; only node_modules linked from the working repository",
+    "privateSiblingPresent": false,
+    "command": "node --import tsx --test scripts/imagegen-production-mapping.test.tsx scripts/pinterest-single-product.test.tsx",
+    "actualLauncher": "node with the installed tsx/dist/cli.mjs entry point and --test",
+    "exitCode": 1,
+    "failedModules": 2,
+    "observedErrorCode": "ENOENT",
+    "missingSourceBasenames": [
+      "pinterest-production-run.json",
+      "pinterest-imagegen-queue.json"
+    ]
+  },
+  "greenVerification": {
+    "method": "Same isolated archive plus only the two patched tests and two public fixtures; dependency directory remains linked",
+    "privateSiblingPresent": false,
+    "command": "node --import ../deny-private-files.mjs --import tsx --test scripts/imagegen-production-mapping.test.tsx scripts/pinterest-single-product.test.tsx",
+    "filesystemGuard": "Scratch-only preload rejects private sibling paths in synchronous, callback, and promise filesystem read/access operations; patches built-in ESM exports and fails on any attempt",
+    "privateSiblingAccessAttempts": 0,
+    "testSourcesContainPrivateSiblingReferences": false,
+    "exitCode": 0,
+    "tests": 64,
+    "passed": 64,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "perFileLocalFocusedRuns": [
+      {
+        "file": "scripts/imagegen-production-mapping.test.tsx",
+        "tests": 2,
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "exitCode": 0
+      },
+      {
+        "file": "scripts/pinterest-single-product.test.tsx",
+        "tests": 62,
+        "passed": 62,
+        "failed": 0,
+        "skipped": 0,
+        "exitCode": 0
+      }
+    ]
+  },
+  "assertionPreservation": {
+    "allOriginalAssertionLinesRetained": true,
+    "originalAssertionLinesByFile": {
+      "scripts/imagegen-production-mapping.test.tsx": 12,
+      "scripts/pinterest-single-product.test.tsx": 35
+    },
+    "addedFixtureContractTests": 2,
+    "retainedChecks": [
+      "Produced pin topics, destination paths, sizing fragment and canonical article product focus",
+      "Task-specific reasons, useful no-purchase alternatives, manufacturer evidence and product limitations",
+      "One exact task-appropriate Amazon identity, affiliate tag, sponsored links, advertising disclosure and honest model-search labels",
+      "Substantive article length, all sections, paragraphs, bullets, citations, single heading and absence of fabricated firsthand claims"
+    ]
+  },
+  "remoteCi": {
+    "status": "Not reverified; no commit or push performed",
+    "remainingAction": "Parent must review, commit/push and verify the resulting GitHub CI run before claiming remote CI is green"
+  }
+}

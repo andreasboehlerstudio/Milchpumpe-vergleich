@@ -1,4 +1,10 @@
 import { GUIDE_ARTICLES, PRODUCTS, REVIEW_DATE_ISO, SITE_URL, productUrl } from './data';
+import { EDITORIAL_GUIDES } from './guides';
+import { GUIDE_SEARCH_TITLES } from './search-intents';
+import { PRODUCT_CATALOGUE } from './product-catalogue';
+import { MILK_GUIDES } from './milk-articles';
+import { catalogueProductUrl } from './catalogue';
+import { WEARABLE_MARKET as marketData } from './wearable-market';
 
 export type RouteSeo = {
   path: string;
@@ -8,30 +14,53 @@ export type RouteSeo = {
   changefreq: 'weekly' | 'monthly' | 'yearly';
   priority: number;
   noindex?: boolean;
+  datePublished?: string;
+  dateModified?: string;
+  image?: string;
 };
 
 const STATIC_ROUTES: RouteSeo[] = [
   {
     path: '/',
-    title: 'Milchpumpen im Vergleich: 6 Modelle transparent eingeordnet',
-    description: 'Vergleiche sechs tragbare und manuelle Milchpumpen anhand nachvollziehbarer Herstellerangaben, Einsatzbereiche und Auswahlkriterien.',
-    heading: 'Milchpumpen transparent vergleichen',
+    title: 'Milchpumpen-Vergleich: Tragbare Modelle & Kaufhilfe',
+    description: 'Finde eine Milchpumpe für deinen Alltag: 40 recherchierte tragbare Modelle, Bauarten und Setumfang im Vergleich. Dazu Ratgeber zu Passform, Reinigung und Muttermilch.',
+    heading: 'Tragbare Milchpumpen. Für deinen Alltag.',
+    dateModified: '2026-10-15',
     changefreq: 'weekly',
     priority: 1,
   },
   {
     path: '/vergleich/',
     title: 'Milchpumpen-Vergleich: Funktionen und Bauarten im Überblick',
-    description: 'Vergleiche App-Steuerung, Pumpenart, Energieversorgung und Reinigung von sechs Milchpumpen ohne erfundene Testnoten.',
+    description: 'Vergleiche sechs Milchpumpen nach App-Steuerung, Bauart, Energieversorgung und Reinigung. Mit Modellinfos, Herstellerquellen und Kaufhilfe.',
     heading: 'Sechs Milchpumpen im direkten Vergleich',
     changefreq: 'weekly',
+    priority: 0.9,
+  },
+  {
+    path: '/tragbare-milchpumpen/',
+    title: 'Tragbare Milchpumpen: 40 recherchierte Modelle und Kaufhilfe',
+    description: '40 recherchierte Wearable-Modelle und Hands-free-Systeme: Bauformen, Herstellerquellen und fallbezogene Kaufhilfe. Angebotsbeobachtungen vom 15.10.2026.',
+    heading: 'Tragbare Milchpumpen: Modelle und Kaufhilfe',
+    dateModified: '2026-10-15',
+    changefreq: 'monthly',
     priority: 0.9,
   },
   {
     path: '/ratgeber/',
     title: 'Milchpumpen-Ratgeber: Auswahl, Passform und Reinigung',
     description: 'Verständliche Orientierung zu Pumpenarten, Flanschgröße, Reinigung und sicherem Umgang mit abgepumpter Muttermilch.',
-    heading: 'Ratgeber rund ums Abpumpen',
+    heading: 'Milchpumpen-Ratgeber. Mehr Überblick.',
+    dateModified: '2026-10-14',
+    changefreq: 'monthly',
+    priority: 0.8,
+  },
+  {
+    path: '/produkte/',
+    title: 'Abpumpen & Muttermilch: Produktwegweiser mit Herstellerquellen',
+    description: 'Milchpumpen, Aufbewahrung, Transport und Zubehör nach ihrem Zweck auswählen. Recherchierte Merkmale, klare Grenzen und konkrete Kaufprüfpunkte.',
+    heading: 'Was brauchst du wirklich? Der Produktwegweiser.',
+    dateModified: '2026-10-14',
     changefreq: 'monthly',
     priority: 0.8,
   },
@@ -39,7 +68,8 @@ const STATIC_ROUTES: RouteSeo[] = [
     path: '/testmethodik/',
     title: 'Unsere Vergleichsmethodik: Quellen, Kriterien und Grenzen',
     description: 'So recherchiert Milchpumpe-Vergleich.de Produktdaten, trennt Herstellerangaben von redaktioneller Einordnung und finanziert die Seite.',
-    heading: 'So entsteht unser Vergleich',
+    heading: 'So entsteht unser Milchpumpen-Vergleich',
+    dateModified: '2026-10-15',
     changefreq: 'monthly',
     priority: 0.7,
   },
@@ -80,9 +110,12 @@ const PRODUCT_ROUTES: RouteSeo[] = PRODUCTS.map((product) => ({
 
 const GUIDE_ROUTES: RouteSeo[] = GUIDE_ARTICLES.map((article) => ({
   path: `/ratgeber/${article.slug}/`,
-  title: `${article.title} | Milchpumpen-Ratgeber`,
+  title: GUIDE_SEARCH_TITLES[article.slug] || article.title,
   description: article.description,
   heading: article.title,
+  datePublished: article.published || REVIEW_DATE_ISO,
+  dateModified: article.updated || REVIEW_DATE_ISO,
+  image: article.image,
   changefreq: 'monthly',
   priority: 0.7,
 }));
@@ -115,12 +148,13 @@ function breadcrumbs(path: string) {
   let current = '';
   for (const [index, part] of parts.entries()) {
     current += `/${part}`;
-    const route = getRouteSeo(`${current}/`);
+    const crumbPath = current === '/produkte' && parts.length > 1 ? '/vergleich/' : `${current}/`;
+    const route = getRouteSeo(crumbPath);
     items.push({
       '@type': 'ListItem',
       position: index + 2,
       name: route.heading,
-      item: `${SITE_URL}${current}/`,
+      item: `${SITE_URL}${crumbPath}`,
     });
   }
   return items;
@@ -152,6 +186,23 @@ export function getStructuredData(path: string) {
   }
 
   const product = PRODUCTS.find((item) => productUrl(item) === normalized);
+  const isArticle = normalized.startsWith('/ratgeber/') && normalized !== '/ratgeber/';
+  const entityId = product ? `${SITE_URL}${normalized}#product`
+    : isArticle ? `${SITE_URL}${normalized}#article`
+    : normalized === '/tragbare-milchpumpen/' ? `${SITE_URL}${normalized}#modellverzeichnis`
+    : ['/vergleich/', '/produkte/'].includes(normalized) ? `${SITE_URL}${normalized}#liste` : undefined;
+  graph.push({
+    '@type': normalized === '/tragbare-milchpumpen/' ? 'CollectionPage' : 'WebPage',
+    '@id': `${SITE_URL}${normalized}#webpage`,
+    name: route.heading,
+    description: route.description,
+    url: `${SITE_URL}${normalized}`,
+    inLanguage: 'de-DE',
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    publisher: { '@id': `${SITE_URL}/#publisher` },
+    dateModified: route.dateModified || REVIEW_DATE_ISO,
+    ...(entityId ? { mainEntity: { '@id': entityId } } : {}),
+  });
   if (product) {
     graph.push({
       '@type': 'Product',
@@ -163,9 +214,28 @@ export function getStructuredData(path: string) {
       category: product.category,
       additionalProperty: product.facts.map((fact) => ({ '@type': 'PropertyValue', name: 'Merkmal', value: fact })),
     });
+  } else if (normalized === '/tragbare-milchpumpen/') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${SITE_URL}${normalized}#modellverzeichnis`,
+      name: 'Recherchierte tragbare Milchpumpen und Hands-free-Systeme',
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      numberOfItems: marketData.models.length,
+      itemListElement: marketData.models.map((model, index) => ({
+        '@type': 'ListItem', position: index + 1,
+        name: `${model.brand} ${model.canonicalModel}`,
+        url: `${SITE_URL}${normalized}#modell-${index + 1}`,
+      })),
+    });
+  } else if (normalized === '/produkte/') {
+    graph.push({
+      '@type': 'ItemList', '@id': `${SITE_URL}${normalized}#liste`, name: 'Produktwegweiser für Abpumpen und Muttermilch-Alltag',
+      itemListElement: PRODUCT_CATALOGUE.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: `${item.brand} ${item.name}`, url: `${SITE_URL}${catalogueProductUrl(item)}` })),
+    });
   } else if (normalized === '/vergleich/') {
     graph.push({
       '@type': 'ItemList',
+      '@id': `${SITE_URL}${normalized}#liste`,
       name: 'Verglichene Milchpumpen',
       itemListElement: PRODUCTS.map((item, index) => ({
         '@type': 'ListItem',
@@ -175,25 +245,25 @@ export function getStructuredData(path: string) {
       })),
     });
   } else if (normalized.startsWith('/ratgeber/') && normalized !== '/ratgeber/') {
+    const guide = EDITORIAL_GUIDES.find(g => `/ratgeber/${g.slug}/` === normalized);
+    const milk = MILK_GUIDES.find(g=>`/ratgeber/${g.slug}/`===normalized);
+    const citedSources = guide?.sources || milk?.sources;
+    const milkProducts = milk?.productIds.map(id=>PRODUCT_CATALOGUE.find(p=>p.id===id)!);
     graph.push({
       '@type': 'Article',
+      '@id': `${SITE_URL}${normalized}#article`,
       headline: route.heading,
+      isAccessibleForFree: true,
+      citation: citedSources?.map(source => source.url) || ['https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen'],
+      about: milkProducts?.map(p=>({ '@type':'Product',name:`${p.brand} ${p.name}`,url:`${SITE_URL}${catalogueProductUrl(p)}` })) || guide?.productIds.map(id => { const p = PRODUCTS.find(product => product.id === id)!; return { '@type': 'Product', '@id': `${SITE_URL}${productUrl(p)}#product`, name: `${p.brand} ${p.name}` }; }),
       description: route.description,
-      datePublished: REVIEW_DATE_ISO,
-      dateModified: REVIEW_DATE_ISO,
+      datePublished: route.datePublished || REVIEW_DATE_ISO,
+      dateModified: route.dateModified || REVIEW_DATE_ISO,
+      image: `${SITE_URL}${route.image || '/og-cover.png'}`,
       inLanguage: 'de-DE',
       author: { '@id': `${SITE_URL}/#publisher` },
       publisher: { '@id': `${SITE_URL}/#publisher` },
       mainEntityOfPage: `${SITE_URL}${normalized}`,
-    });
-  } else {
-    graph.push({
-      '@type': 'WebPage',
-      name: route.heading,
-      description: route.description,
-      url: `${SITE_URL}${normalized === '/' ? '/' : normalized}`,
-      inLanguage: 'de-DE',
-      dateModified: REVIEW_DATE_ISO,
     });
   }
 

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+ <linearGradient id="cream" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fffef9"/><stop offset=".52" stop-color="#f4f0e5"/><stop offset="1" stop-color="#d7d9ca"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2=".9"><stop stop-color="#45978a"/><stop offset=".48" stop-color="#086d61"/><stop offset="1" stop-color="#064b43"/></linearGradient>
+ <linearGradient id="mint" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f0f8ec"/><stop offset=".55" stop-color="#dceee5"/><stop offset="1" stop-color="#a5c7b9"/></linearGradient>
+ <linearGradient id="coral" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f5bf9e"/><stop offset=".55" stop-color="#ed977f"/><stop offset="1" stop-color="#cf7d69"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#fffef5" stop-opacity=".96"/><stop offset=".3" stop-color="#edf4eb" stop-opacity=".7"/><stop offset=".8" stop-color="#c8ddd1" stop-opacity=".88"/><stop offset="1" stop-color="#a4beb0" stop-opacity=".9"/></linearGradient>
+ <radialGradient id="light" cx=".23" cy=".1" r=".95"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#f4e9d7"/></radialGradient>
+ <radialGradient id="bowl"><stop stop-color="#718e7f"/><stop offset=".8" stop-color="#a8bcae"/><stop offset="1" stop-color="#d6ddd0"/></radialGradient>
+ <radialGradient id="cup"><stop stop-color="#fffef8"/><stop offset=".55" stop-color="#f1f0e6"/><stop offset=".84" stop-color="#d2ded3"/><stop offset="1" stop-color="#a8c4b5"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-50%" width="180%" height="210%"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+ <filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".58" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ </defs>
+<g filter="url(#paper)">
+<rect width="1200" height="900" fill="url(#light)"/>
+<path d="M843 0H1200V900H990Q918 611 843 0Z" fill="#dceee5" opacity=".55"/>
+<path d="M0 727Q466 663 1200 708V900H0Z" fill="#eee4cf"/>
+<ellipse cx="614" cy="754" rx="388" ry="45" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+<!-- Raised, padded lid; inner lining catches the light. -->
+<path d="M320 381L330 202Q332 159 382 151L772 173Q817 180 823 222L844 407Z" fill="url(#teal)"/>
+<path d="M351 351L360 218Q360 192 389 185L755 202Q784 208 788 236L805 370Z" fill="url(#mint)"/>
+<path d="M371 220L755 240M371 246L757 266" stroke="#97b9a6" stroke-width="2" opacity=".55"/>
+<path d="M425 301Q574 271 729 309" stroke="#fdfff4" stroke-width="16" opacity=".4" fill="none"/>
+<!-- Opening and insulated rim, oblique rather than a frontal icon. -->
+<path d="M264 430L396 345Q414 333 446 338L845 399Q868 404 868 431L852 650L684 766L286 678Z" fill="url(#teal)"/>
+<path d="M284 423L414 354L841 416L700 517Z" fill="#c7dbcb"/>
+<path d="M314 425L421 373L809 425L691 491Z" fill="#436e60"/>
+<path d="M315 425L335 534L688 597L690 491Z" fill="#89ad98"/>
+<!-- Unbranded closed storage containers, deliberately not pump parts. -->
+<g transform="translate(425 331) scale(0.95)">
+    <ellipse cx="68" cy="170" rx="74" ry="15" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+    <path d="M9 29Q4 15 21 10L115 10Q132 13 128 32L122 147Q120 165 99 168L35 168Q13 165 12 148Z" fill="url(#glass)" stroke="#9cbcac" stroke-width="2"/>
+    <path d="M18 86Q69 96 121 86L117 146Q115 159 99 160L36 160Q21 157 20 145Z" fill="#fff6d8" opacity=".88"/>
+    <ellipse cx="68" cy="88" rx="50" ry="8" fill="#fffae9"/>
+    <path d="M23 38L26 130" stroke="#fffef8" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+    <rect x="3" y="3" width="130" height="27" rx="10" fill="url(#mint)"/>
+    <ellipse cx="68" cy="5" rx="64" ry="9" fill="#e9f4e9"/>
+    <path d="M13 25Q68 34 122 25" fill="none" stroke="#507b66" stroke-opacity=".2" stroke-width="2"/>
+    </g><g transform="translate(588 354) scale(0.92)">
+    <ellipse cx="68" cy="170" rx="74" ry="15" fill="#325e4a" opacity=".14" filter="url(#shadow)"/>
+    <path d="M9 29Q4 15 21 10L115 10Q132 13 128 32L122 147Q120 165 99 168L35 168Q13 165 12 148Z" fill="url(#glass)" stroke="#9cbcac" stroke-width="2"/>
+    <path d="M18 86Q69 96 121 86L117 146Q115 159 99 160L36 160Q21 157 20 145Z" fill="#fff6d8" opacity=".88"/>
+    <ellipse cx="68" cy="88" rx="50" ry="8" fill="#fffae9"/>
+    <path d="M23 38L26 130" stroke="#fffef8" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+    <rect x="3" y="3" width="130" height="27" rx="10" fill="url(#mint)"/>
+    <ellipse cx="68" cy="5" rx="64" ry="9" fill="#e9f4e9"/>
+    <path d="M13 25Q68 34 122 25" fill="none" stroke="#507b66" stroke-opacity=".2" stroke-width="2"/>
+    </g>
+<path d="M281 445L700 526L685 765L296 690Q266 682 266 650L264 461Q264 449 281 445Z" fill="url(#teal)"/>
+<path d="M700 526L869 433L858 646Q856 666 833 681L685 765Z" fill="#08574e"/>
+<path d="M294 470L673 546L661 731L309 662Q293 659 294 642Z" fill="none" stroke="#5d9f8b" stroke-width="2"/>
+<path d="M348 480Q339 601 414 657Q504 693 555 571" fill="none" stroke="#064c43" stroke-width="24" stroke-linecap="round"/>
+<path d="M349 484Q345 589 410 643Q499 682 548 574" fill="none" stroke="#4d9986" stroke-width="6" stroke-linecap="round"/>
+<path d="M699 528L683 756M273 440L698 518L857 425" stroke="#b2ceba" stroke-width="5" fill="none"/>
+<path d="M805 460L809 491L824 483L821 451" fill="#ede9cf"/>
+<!-- A slim ice pack outside, leaning on its soft cloth. -->
+<path d="M841 706Q862 681 911 693L1068 740L1025 800L814 755Z" fill="#fffaf0"/>
+<g transform="translate(902 525) rotate(14)">
+<rect width="119" height="212" rx="28" fill="url(#mint)" stroke="#7fae9b" stroke-width="3"/>
+<rect x="14" y="17" width="90" height="176" rx="21" fill="#c6e4d7"/>
+<path d="M36 42V155M61 42V155M85 42V155" stroke="#eff8ea" stroke-width="8" stroke-linecap="round"/>
+<path d="M43 -1V-9Q60 -22 78 -9V0" fill="#9ec5b2"/>
+</g>
+</g>
+</svg>

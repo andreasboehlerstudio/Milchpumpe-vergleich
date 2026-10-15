@@ -1,0 +1,19 @@
+{
+  "target": "Local production build at http://127.0.0.1:3018/",
+  "published": false,
+  "routes": 49,
+  "widths": [320, 390, 768, 1440],
+  "checks": 196,
+  "uniqueChecks": 196,
+  "failures": 0,
+  "method": "Chromium visited all current sitemap routes in same-origin frames, awaited fonts, checked usable document client width and horizontal scroll width, and compared visible text range rectangles to clipping ancestors. One H1 required on each route.",
+  "exclusions": ["Invisible elements", "Screen-reader-only text", "Offscreen skip link", "Intentionally horizontally scrollable tables"],
+  "testsPassed": 62,
+  "additionalConsentChecks": {"viewport": "320x568", "panelTop": 20, "panelBottom": 548, "scrollable": true, "keyboardTrap": "PASS", "backgroundInertAndRestored": "PASS", "escapeAndFocusReturn": "PASS", "declinedAnalyticsScripts": 0, "declinedAnalyticsResourceRequests": 0},
+  "typecheck": "PASS",
+  "build": "PASS",
+  "gitDiffCheck": "PASS",
+  "longtailArticlesAdded": ["milchpumpe-reinigen-ohne-spuelmaschine", "muttermilch-kita-mitgeben", "medela-muttermilchflaschen-150-250-ml", "milchpumpe-mikrowellenbeutel-desinfizieren"],
+  "articleLibraryCount": 35,
+  "limitations": ["Frame layout checks are not exhaustive physical-device testing", "DOM text range checks do not prove every glyph pixel is unclipped", "New Superdesign proposal is separate from implemented production source", "All-route frame audit preceded the consent-specific fixes; the final build and consent-specific real browser checks were rerun afterward", "No ranking, traffic, sales or legal-certification claim"]
+}

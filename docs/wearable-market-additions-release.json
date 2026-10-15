@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-15T08:03:50.431383+00:00",
+  "scope": "New supplemental dataset only; no baseline snapshots edited or merged.",
+  "freshPrimaryReadWindowUtc": {
+    "start": "2026-10-15T07:59:40.525932+00:00",
+    "end": "2026-10-15T08:03:50.431383+00:00",
+    "timingNote": "Start from terminal timestamp before initial reads; end is registration upper bound, not an invented per-request timestamp."
+  },
+  "inputHashesSha256": {
+    "src/wearable-market-data.json": "159b264703e3b060c1d0732757e029a331e3cfaccd8bc3bd4de2de69d574a6fc",
+    "docs/amazon-market-release-recheck.json": "c63a171edf08c30f53479797c99f47f404f2529b21e6dbf980734a535e0685e0",
+    "docs/amazon-market-release-recheck.md": "75410021310c8a2d16d62cd9dde44fd0ef928341e504a37e70f6cfed216a8e5e"
+  },
+  "output": {
+    "path": "src/wearable-market-additions.json",
+    "sha256": "51579533917c1a267c0ab022607258cc1756f9c7b9b0c9a27e0fe042604bc89d"
+  },
+  "verified": {
+    "newModels": 5,
+    "uniqueBrandModelKeys": 5,
+    "baselineIdentities": 35,
+    "mergedIdentityCountIfParentAppends": 40,
+    "mergedBrandCountIfParentAppends": 18,
+    "overlapWithBaseline": 0,
+    "modelTopLevelFieldsAndTypesMatchBaselineTemplate": true,
+    "nestedObjectFieldSetsMatchBaselineTemplate": true,
+    "exactSelectedAsinMatchesHistoricalObservation": true,
+    "sortedByCaseInsensitiveBrandAndCanonicalModel": true,
+    "qualityScoresNull": true,
+    "pricesNull": true,
+    "allCommercialLinksUseConfirmedAffiliateTag": true,
+    "completeMarketCoverage": false,
+    "freshPrimaryPagesRead": 9,
+    "freshAmazonOffersThisRun": 0
+  },
+  "modelKeys": [
+    {
+      "brand": "Ardo",
+      "canonicalModel": "Alyssa Hands-Free"
+    },
+    {
+      "brand": "eufy",
+      "canonicalModel": "E10 (T8D03)"
+    },
+    {
+      "brand": "eufy",
+      "canonicalModel": "E20"
+    },
+    {
+      "brand": "Fizimed",
+      "canonicalModel": "Emy Pump"
+    },
+    {
+      "brand": "Philips Avent",
+      "canonicalModel": "Natural Care SCF495/11"
+    }
+  ],
+  "amazonEvidence": [
+    {
+      "asin": "B0CY2ZXJCW",
+      "selectedAsin": "B0CY2ZXJCW",
+      "title": "Ardo Alyssa Handsfree tragbare elektrische Doppel-Milchpumpe mit App",
+      "stock": "Nur noch 4 auf Lager",
+      "featuredTotalPriceText": "199,99€",
+      "seller": "Ardo medical",
+      "newOffersText": null,
+      "observedAt": "2026-10-15T07:25:30.783Z",
+      "brand": "Ardo",
+      "model": "Alyssa Hands-Free",
+      "kind": "new-model-candidate",
+      "delivery": "GRATIS Lieferung Samstag, 17. Oktober für qualifizierte Erstbestellung.",
+      "deliveryContext": "Public anonymous browser: Lieferung an Rust 77977; no address entered",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0CY2ZXJCW?language=de_DE"
+      ],
+      "identityVerified": true,
+      "offerObserved": true,
+      "status": "partial",
+      "limit": "No full-market absence conclusion; sets/bundles and colors do not add model identities.",
+      "conditionEvidence": null,
+      "setVariant": null
+    },
+    {
+      "asin": "B0H4WJ9YCN",
+      "selectedAsin": "B0H4WJ9YCN",
+      "title": "Philips Avent Natural Care Hands-free tragbare elektrische Doppelmilchpumpe – spiegelt den Trinkrhythmus des Babys wider, SkinSense Brustkissen für ultimativen Komfort, Krankenhausqualität, SCF495/11",
+      "stock": "Auf Lager",
+      "featuredTotalPriceText": "209,99€",
+      "seller": null,
+      "newOffersText": "Neu (2) ab 209,99€",
+      "observedAt": "2026-10-15T07:25:30.566Z",
+      "brand": "Philips Avent",
+      "model": "Natural Care SCF495/11",
+      "kind": "new-model-candidate",
+      "delivery": "GRATIS Lieferung Montag, 19. Oktober; schnellste Samstag, 17. Oktober",
+      "deliveryContext": "Public anonymous browser: Lieferung an Rust 77977; no address entered",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0H4WJ9YCN?language=de_DE"
+      ],
+      "identityVerified": true,
+      "offerObserved": true,
+      "status": "verified",
+      "limit": "No full-market absence conclusion; sets/bundles and colors do not add model identities.",
+      "conditionEvidence": "Neu (2) ab 209,99€",
+      "setVariant": null
+    },
+    {
+      "asin": "B0D9LV8YLF",
+      "selectedAsin": "B0D9LV8YLF",
+      "title": "Emy Pump Freihändige tragbare Milchpumpe | Inklusive 6 Brusthaubengrößen",
+      "stock": "Nur noch 18 auf Lager",
+      "featuredTotalPriceText": "89,00€",
+      "seller": "Fizimed",
+      "newOffersText": null,
+      "observedAt": "2026-10-15T07:25:30.458Z",
+      "brand": "Fizimed",
+      "model": "Emy Pump",
+      "kind": "new-model-candidate",
+      "delivery": "GRATIS Lieferung Montag, 19. Oktober; schnellste Samstag, 17. Oktober",
+      "deliveryContext": "Public anonymous browser: Lieferung an Rust 77977; no address entered",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0D9LV8YLF?language=de_DE"
+      ],
+      "identityVerified": true,
+      "offerObserved": true,
+      "status": "verified",
+      "limit": "No full-market absence conclusion; sets/bundles and colors do not add model identities.",
+      "conditionEvidence": "Selected variant JSON buyingOptionType NEW",
+      "setVariant": "Standard; 1 Stück"
+    },
+    {
+      "asin": "B0D6W5PBKX",
+      "selectedAsin": "B0D6W5PBKX",
+      "title": "eufy Tragbare elektrische Milchpumpe E10, Anpassbarer Smart-Rhythmus, Mobi",
+      "stock": "Auf Lager",
+      "featuredTotalPriceText": "129,99€",
+      "seller": "AnkerDirect DE",
+      "newOffersText": null,
+      "observedAt": "2026-10-15T07:25:30.628Z",
+      "brand": "eufy",
+      "model": "E10 (T8D03)",
+      "kind": "new-model-candidate",
+      "delivery": "GRATIS Lieferung Montag, 19. Oktober; schnellste Morgen, 16. Oktober",
+      "deliveryContext": "Public anonymous browser: Lieferung an Rust 77977; no address entered",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0D6W5PBKX?language=de_DE"
+      ],
+      "identityVerified": true,
+      "offerObserved": true,
+      "status": "verified",
+      "limit": "No full-market absence conclusion; sets/bundles and colors do not add model identities.",
+      "conditionEvidence": "Selected variant JSON buyingOptionType NEW",
+      "setVariant": "Milchpumpe E10"
+    },
+    {
+      "asin": "B0F1Y3S96S",
+      "selectedAsin": "B0F1Y3S96S",
+      "title": "eufy elektrische Milchpumpe E20, Elektrische Milchpumpe mit Wärmefunktion",
+      "stock": "Auf Lager",
+      "featuredTotalPriceText": "149,99€",
+      "seller": "AnkerDirect DE",
+      "newOffersText": null,
+      "observedAt": "2026-10-15T07:29:53.993Z",
+      "brand": "eufy",
+      "model": "E20",
+      "kind": "new-model-candidate",
+      "status": "partial",
+      "offerObserved": true,
+      "identityVerified": true,
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0F1Y3S96S?language=de_DE"
+      ],
+      "delivery": "GRATIS Lieferung Montag, 19. Oktober Oder schnellste Lieferung Morgen, 16. Oktober.",
+      "deliveryContext": "Public anonymous browser: Lieferung an Rust 77977; no address entered",
+      "conditionEvidence": null
+    }
+  ],
+  "manufacturerEvidence": [
+    {
+      "modelRef": {
+        "brand": "Ardo",
+        "canonicalModel": "Alyssa Hands-Free"
+      },
+      "sourceIds": [
+        67
+      ],
+      "mappingLimit": "Modellname und Bauform primär bestätigt; vollständige DE-ASIN-Kit-, Ersatzteil- und Sicherheitsprüfung nicht abgeschlossen.",
+      "buyerNote": "BH-Schalen mit separatem Alyssa-Motor und Schlauch, nicht die schlauchfreie Melia. Hersteller-Doppelkit: zwei 24-mm-Schalen und zwei 19-mm-Einsätze; Vakuum und Zyklus getrennt einstellbar, Memory-Funktion. Für einen bewusst extern getragenen Motor ansehen; exakten Amazon-Lieferumfang und passende Größen vor Kauf bestätigen."
+    },
+    {
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "E10 (T8D03)"
+      },
+      "sourceIds": [
+        70,
+        71
+      ],
+      "mappingLimit": "Modellname und Bauform primär bestätigt; vollständige DE-ASIN-Kit-, Ersatzteil- und Sicherheitsprüfung nicht abgeschlossen.",
+      "buyerNote": "In-Bra-Pumpe mit App-Steuerung und USB-C; der EU-Modellvergleich führt E10 ohne Heizung und ohne Ladecase. Nicht mit S1, E20 oder Zubehör in derselben Amazon-Variantenfamilie verwechseln. Anzahl der vollständigen Pumpen und mitgelieferte Größen der deutschen ASIN bleiben offen; vor Kauf bestätigen. Kein belegter automatischer Milchmengensensor."
+    },
+    {
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "E20"
+      },
+      "sourceIds": [
+        72,
+        73,
+        74
+      ],
+      "mappingLimit": "Modellname und Bauform primär bestätigt; vollständige DE-ASIN-Kit-, Ersatzteil- und Sicherheitsprüfung nicht abgeschlossen.",
+      "buyerNote": "Beheiztes In-Bra-Modell, getrennt von E10 und S1. Hersteller-Support nennt drei Wärmestufen und USB-C statt magnetischem S1-Laden. Deutsche Amazon-Pumpenanzahl, Größenkit und genaue regionale Modellcodes bleiben offen; nicht aus US- oder S1-Kits übernehmen. Wärme ist ein Ausstattungsmerkmal, kein Versprechen von mehr Milch oder medizinischem Nutzen."
+    },
+    {
+      "modelRef": {
+        "brand": "Fizimed",
+        "canonicalModel": "Emy Pump"
+      },
+      "sourceIds": [
+        69
+      ],
+      "mappingLimit": "Modellname und Bauform primär bestätigt; vollständige DE-ASIN-Kit-, Ersatzteil- und Sicherheitsprüfung nicht abgeschlossen.",
+      "buyerNote": "Kabellose In-Bra-Pumpe ohne nötige App. Heute um 09:25 CEST beobachtete Amazon-Auswahl: Standard, 1 Stück – kein Doppelset. Hersteller-Singlekit: 28-mm-Basis plus Einsätze 15/17/19/21/24 mm. 30-Minuten-Abschaltung ist ein Timer, kein belegter Vollstand-Autostopp; Passform und Ersatzteile prüfen."
+    },
+    {
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Natural Care SCF495/11"
+      },
+      "sourceIds": [
+        68
+      ],
+      "mappingLimit": "Modellname und Bauform primär bestätigt; vollständige DE-ASIN-Kit-, Ersatzteil- und Sicherheitsprüfung nicht abgeschlossen.",
+      "buyerNote": "Eigenständiges In-Bra-Doppelsystem mit zwei wiederaufladbaren Motoreinheiten, nicht SCF547/11 mit externer Einzelmotoreinheit und Schläuchen. DE-Herstellerkit: zwei 27-mm-Brustkissen plus jeweils zwei Einsätze in 15/17/19/21/24 mm; USB-C-Netzadapter nicht enthalten. Genauen Lieferumfang am Angebot prüfen; Baby+ ist hier kein Beleg einer Pumpenfernsteuerung."
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "id": 67,
+      "url": "https://ardo.de/products/ardo-alyssa-hands-free",
+      "title": "Ardo Alyssa Hands-Free – Hersteller DE",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "kompakt verstaut in Deinem Still-BH, der Deine Brust vor Blicken schützt.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Tragbar mittels Umhängeband (oder in Handtasche)",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "2x Hands-Free Pumpset mit Brustglocke Ø 24 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "2x Hands-Free Brustglockeneinsatz Ø 19 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "C - Schlauch mit Schlauchadapter",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Du kannst dabei die Saugstärke (Vakuum) und die Saugfrequenz (Zyklus) in beiden Phasen mit je 8 Levels",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Memory-Funktion - speichert Einstellungen und Abpumpverlauf",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Bauform folgt aus BH-Pumpsets, separat tragbarer Alyssa-Pumpe und Schlauch im Lieferumfang. Hersteller-Doppelkit belegt; vollständiger ASIN-Komponentenabgleich nicht erfolgt. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 68,
+      "url": "https://www.philips.de/c-p/SCF495_11/doppelte-elektronische-milchpumpe-natural-care-hands-free-tragbar",
+      "title": "Philips Avent SCF495/11 – Hersteller DE",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "SCF495/11",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Diese erste tragbare Milchpumpe vereint Leistung in Krankenhausqualität mit einem leichten Design, das bequem im BH sitzt.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Wiederaufladbare Motoreinheit",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Brustkissen (27 mm)",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Einsatz 15 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Einsatz 17 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Einsatz 19 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Einsatz 21 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Einsatz 24 mm",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Wiederaufladbarer Akku/USB-C (Adapter nicht im Lieferumfang enthalten)",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Die gelesene Lieferumfangstabelle nennt 2 Auffangschalen, 2 Motoreinheiten, jeweils 2 Brustkissen/Einsätze und 1 USB-C-Kabel. Keine Pumpensteuerung aus Baby+-App-Werbebanner ableiten. Herstellerseite, nicht vollständige Bedienungsanleitung gelesen. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 69,
+      "url": "https://emy.fizimed.com/de-eu/products/tragbare-milchpumpe-emy",
+      "title": "Fizimed Emy Pump – Hersteller DE/EU",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "eine kabellose, leistungsstarke und diskrete elektrische Milchpumpe",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "setzen Sie die Freihand-Milchpumpe in Ihren Still-BH ein",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "1 Elektronikbox",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "1 Basis-Brusthaube (28 mm)",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "5 Brusthauben-Aufsätze (15 mm, 17 mm, 19 mm , 21 mm, 24 mm)",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "schon gar nicht an eine Steckdose angeschlossen oder mit einer App verbunden sein.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Nach 30 Minuten Gebrauch stoppt die Milchpumpe automatisch.",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Hersteller bietet Single und Double; exakte Amazon-Auswahl heute historisch als Standard/1 Stück gelesen. 30-Minuten-Timer ist kein Füllstandsensor. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 70,
+      "url": "https://www.eufy.com/eu-en/products/t8d03321",
+      "title": "eufy Wearable Breast Pump E10 – Hersteller EU",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "eufy Wearable Breast Pump E10",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Leverage the eufy Baby app’s smart features",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Compact and lightweight, our breast pump is ideal for discreet in-bra use.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Type-C Charging Port",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Save time with only four detachable parts to clean.",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Direkte EU-Produktseite nennt E10; T8D03 in Produktpfad und Hersteller-Vergleichsgrafik-Dateiname, zusätzlich Amazon-Code im heutigen Forschungsprotokoll. Deutsche ASIN-Stückzahl und komplettes Größenkit nicht bestätigt; kein S1-Lieferumfang übertragen. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 71,
+      "url": "https://www.eufy.com/eu-en/products/t8d02381",
+      "title": "eufy EU Herstellervergleich S1 / E10",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "Wearable Breast Pump E10",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "APP Control: ✓",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Capacity: 5 oz.(150ml)",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Gelesene E10-Spalte: App und Smart Rhythm mit Haken; Heating Tech und Charging Case jeweils /. Nicht die Wärme- oder Lieferumfangs-FAQ der S1-Seite E10 zuschreiben. App-Log erfasst eingegebene Menge; kein bewiesener Milchmengensensor. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 72,
+      "url": "https://www.eufy.com/eu-en/products/t6060321",
+      "title": "eufy Breast Pump E20 – Hersteller EU",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "eufy Breast Pump E20",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "The Innovative Heated Wearable Breast Pump",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "it's ideal for in-bra use with a compact and lightweight build.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Smart, Hands-Free Pumping",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Heizfunktion und In-Bra-Modell bestätigt. EU-Auszug ohne vollständige Kit-/Größenliste, daher Pumpenanzahl des deutschen Amazon-Sets offen. Nicht aus US-Kit ableiten. Hersteller behauptet Mehrmilch/Verstopfungsprävention: nicht als redaktionelle Wirksamkeit übernommen. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 73,
+      "url": "https://service.eufy.com/article-description/What-s-the-difference-between-the-Breast-Pump-E20-S1?urlName=What-s-the-difference-between-the-Breast-Pump-E20-S1",
+      "title": "eufy Support: E20 versus S1",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "The S1 offers 7 levels of customizable heating, while the E20 provides 3 levels of quick heating.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "The S1 uses magnetic charging, whereas the E20 utilizes USB-C charging.",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Globaler Hersteller-Support, keine Bestätigung eines vollständigen DE-ASIN-Kits. Gelieferter Auszug endet vor genauer E20-Zubehörliste; Suchsnippet dazu nicht als gelesenes Kit übernommen. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 74,
+      "url": "https://www.eufy.com/products/t6060121",
+      "title": "eufy E20 US – ergänzende Bauformbestätigung",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "Make sure the heating pins are fully extended, the pump hub is secured, and there's no gap between the hub and diaphragm.",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "E20 offers 3 heat levels.",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Nur ergänzende bauliche Bestätigung: Pumpenhub direkt an Membran; keine US-Preis-, Versicherungs- oder Lieferumfangsübertragung auf DE. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 75,
+      "url": "https://www.philips.de/c-p/SCF495_11/doppelte-elektronische-milchpumpe-natural-care-hands-free-tragbar/support",
+      "title": "Philips SCF495/11 – Modell-Support DE",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "SCF495/11",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Benutzerhandbuch",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "28 July 2026",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "fresh-web-extract-this-run",
+      "checkedAt": "2026-10-15T08:03:50.431383+00:00",
+      "limitation": "Modellspezifischer Support-Einstieg gelesen. PDF-Datei selbst nicht abgerufen; keine Behauptung einer vollständigen Anleitungs- oder Sicherheitsprüfung. checkedAt ist Registrierungszeit nach Abruf; Abruffenster im Release-Protokoll."
+    },
+    {
+      "id": 76,
+      "url": "https://www.amazon.de/dp/B0CY2ZXJCW?language=de_DE",
+      "title": "Ardo Alyssa Handsfree tragbare elektrische Doppel-Milchpumpe mit App",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "Ardo Alyssa Handsfree tragbare elektrische Doppel-Milchpumpe mit App",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Nur noch 4 auf Lager",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "inherited-exact-public-amazon-observation-from-docs/amazon-market-release-recheck.json",
+      "checkedAt": "2026-10-15T07:25:30.783Z",
+      "limitation": "Nicht in diesem Ergänzungslauf neu gelesen. Öffentlicher Rust-77977-Kontext; keine echte Adresse oder Checkout-Zusage."
+    },
+    {
+      "id": 77,
+      "url": "https://www.amazon.de/dp/B0H4WJ9YCN?language=de_DE",
+      "title": "Philips Avent Natural Care Hands-free tragbare elektrische Doppelmilchpumpe – spiegelt den Trinkrhythmus des Babys wider, SkinSense Brustkissen für ultimativen Komfort, Krankenhausqualität, SCF495/11",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "Philips Avent Natural Care Hands-free tragbare elektrische Doppelmilchpumpe – spiegelt den Trinkrhythmus des Babys wider, SkinSense Brustkissen für ultimativen Komfort, Krankenhausqualität, SCF495/11",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Auf Lager",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "inherited-exact-public-amazon-observation-from-docs/amazon-market-release-recheck.json",
+      "checkedAt": "2026-10-15T07:25:30.566Z",
+      "limitation": "Nicht in diesem Ergänzungslauf neu gelesen. Öffentlicher Rust-77977-Kontext; keine echte Adresse oder Checkout-Zusage."
+    },
+    {
+      "id": 78,
+      "url": "https://www.amazon.de/dp/B0D9LV8YLF?language=de_DE",
+      "title": "Emy Pump Freihändige tragbare Milchpumpe | Inklusive 6 Brusthaubengrößen",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "Emy Pump Freihändige tragbare Milchpumpe | Inklusive 6 Brusthaubengrößen",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Nur noch 18 auf Lager",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "inherited-exact-public-amazon-observation-from-docs/amazon-market-release-recheck.json",
+      "checkedAt": "2026-10-15T07:25:30.458Z",
+      "limitation": "Nicht in diesem Ergänzungslauf neu gelesen. Öffentlicher Rust-77977-Kontext; keine echte Adresse oder Checkout-Zusage."
+    },
+    {
+      "id": 79,
+      "url": "https://www.amazon.de/dp/B0D6W5PBKX?language=de_DE",
+      "title": "eufy Tragbare elektrische Milchpumpe E10, Anpassbarer Smart-Rhythmus, Mobi",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "eufy Tragbare elektrische Milchpumpe E10, Anpassbarer Smart-Rhythmus, Mobi",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Auf Lager",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "inherited-exact-public-amazon-observation-from-docs/amazon-market-release-recheck.json",
+      "checkedAt": "2026-10-15T07:25:30.628Z",
+      "limitation": "Nicht in diesem Ergänzungslauf neu gelesen. Öffentlicher Rust-77977-Kontext; keine echte Adresse oder Checkout-Zusage."
+    },
+    {
+      "id": 80,
+      "url": "https://www.amazon.de/dp/B0F1Y3S96S?language=de_DE",
+      "title": "eufy elektrische Milchpumpe E20, Elektrische Milchpumpe mit Wärmefunktion",
+      "accessed": "2026-10-15",
+      "quotes": [
+        {
+          "text": "eufy elektrische Milchpumpe E20, Elektrische Milchpumpe mit Wärmefunktion",
+          "added": "2026-10-15"
+        },
+        {
+          "text": "Auf Lager",
+          "added": "2026-10-15"
+        }
+      ],
+      "provenance": "inherited-exact-public-amazon-observation-from-docs/amazon-market-release-recheck.json",
+      "checkedAt": "2026-10-15T07:29:53.993Z",
+      "limitation": "Nicht in diesem Ergänzungslauf neu gelesen. Öffentlicher Rust-77977-Kontext; keine echte Adresse oder Checkout-Zusage."
+    }
+  ],
+  "limits": [
+    "Fresh Amazon browser attempt timed out after 60 seconds. Existing same-day exact records retained with original timestamps; no new offer, delivery, seller or condition claim.",
+    "Ardo Alyssa Hands-Free remains external motor plus tubing, distinct from Melia. Manufacturer double kit confirmed; Amazon components not exhaustively matched.",
+    "Philips SCF495/11 is two in-bra motors, distinct from SCF547/11 external-motor/tubing system. Manufacturer DE kit documented; no Baby+ pump-control claim.",
+    "Fizimed Emy Pump exact historical Amazon selection is Single/Standard, not the optional manufacturer Double.",
+    "eufy E10 direct EU page and comparison confirm named model, in-bra form and no heating/case; Amazon T8D03 retained. Exact DE-ASIN pump quantity and complete sizes not confirmed.",
+    "eufy E20 heated in-bra model supported by EU page and global support; pump-hub attachment corroborated by US FAQ. Three heat levels/USB-C supported; DE ASIN quantity, complete kit and regional code suffix unresolved.",
+    "Philips support page lists a July 2026 manual, but PDF not opened. No claim of exhaustive manual/safety validation for any model.",
+    "No comparative efficacy, output, comfort, reliability, sensor precision, cleaning-time or unrestricted photo rights established.",
+    "All five are named model identities, not proof of physically independent OEM designs. No complete-market claim, no ranking."
+  ],
+  "integrationNotes": [
+    "Merge models by exact brand|canonicalModel; do not normalize Philips generations, Ardo families, sets or colors into extra rows.",
+    "Append sources preserving source IDs, or consistently rebase all sourceIds, independentCheckSourceIds and originalBatchCitationIds. New range 67–80.",
+    "Original dataset model keys and snapshots unchanged; parent owns integration and live-site release.",
+    "Parent should regenerate global counts rather than add supplemental brand count, because four of the five rows use existing brands. Only Fizimed is a new brand."
+  ]
+}

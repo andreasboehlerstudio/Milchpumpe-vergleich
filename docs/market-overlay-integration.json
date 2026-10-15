@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "sourceUpdatedOn": "2026-10-15",
+  "status": "implemented-with-focused-verification",
+  "scope": {
+    "newResearchRun": false,
+    "sourceReports": [
+      "docs/ranking-next-evidence.json",
+      "docs/market-open-evidence-recheck.json"
+    ],
+    "approvedCopyReference": ".superdesign/tmp/ranking-readback.html",
+    "historicalOfferObservationDate": "2026-10-14",
+    "accountsAccessed": false,
+    "remoteWrites": false,
+    "commitOrDeploy": false
+  },
+  "files": [
+    "src/wearable-market.tsx",
+    "src/wearable-market-evidence-overlay.ts",
+    "src/seo.ts",
+    "scripts/market-overlay-integration.test.tsx",
+    "docs/market-overlay-integration.json"
+  ],
+  "historicalInputs": {
+    "src/wearable-market-data.json": "159b264703e3b060c1d0732757e029a331e3cfaccd8bc3bd4de2de69d574a6fc",
+    "docs/wearable-comparison-editorial.json": "0146434fdb20bc39751bd1df1b4905175326af490bbb1df1989db14590679f8d",
+    "bytePreservationVerifiedByTest": true
+  },
+  "compatibility": {
+    "historicalExport": "WEARABLE_MARKET remains the unchanged raw snapshot, including original counts, dates, modelRef tuples, historical sources, manufacturer statuses, offer history and shortlist. Presentation and architecture filtering consult a separate overlay.",
+    "identityKey": "Exact brand|canonicalModel opaque tuple; no rewritten codes, added models or invented product IDs.",
+    "modelCount": 35,
+    "historicalOffersObserved": 31,
+    "historicalOffersNotFound": 4,
+    "renderedArchitectureCounts": {
+      "fullyInBra": 26,
+      "externalMotorWithTubing": 9,
+      "unverified": 0
+    },
+    "historicalArchitectureCountsNotRewritten": true,
+    "purchaseDestinationRuleUnchanged": "Exact historical ASIN when present and historical mapping is not mapping-unresolved; otherwise an explicitly labelled model search. S2 Pro and Willow retain model searches despite narrower evidence gaps.",
+    "affiliateTag": "andreasboeh09-21",
+    "sixModelDetailComparisonPreserved": true,
+    "publicComponentAndFilterTypesPreserved": true
+  },
+  "currentCases": [
+    {
+      "model": "Momcozy|M5 Smart",
+      "alternative": "Elvie Pump",
+      "boundary": "Single target, optional app, manual milk log, scoped four-part count; Elvie sensor pause and estimated milk volume distinguished."
+    },
+    {
+      "model": "Medela|Freestyle Hands-free",
+      "alternative": "Philips Avent SCF547/11",
+      "boundary": "External motor and tubes, three parts per cup not entire system, no full-level automatic stop; Philips exact DE sizing kit and separate accessories."
+    },
+    {
+      "model": "Momcozy|Air 1",
+      "alternative": "eufy S1",
+      "boundary": "Full notification requires manual switch-off. S1 base kit has no charging case; exact S1 Pro bundle or compatible accessory must be checked separately. No 180-ml or comparable-runtime claim carried forward."
+    }
+  ],
+  "modelEvidenceUpdates": [
+    {
+      "key": "Kinderkraft|MAMAFLOW",
+      "status": "resolved-for-single-model-architecture",
+      "scope": "Exact v1.0 manual confirms collector-mounted motor and nursing-bra use. Motor not washable; DOUBLE equivalence unverified."
+    },
+    {
+      "key": "KISSBOBO|K5",
+      "status": "partial",
+      "scope": "K5 brand page supports in-bra architecture, not legal manufacturer or identical DE set specifications. Conflicting suction and timer claims not adopted."
+    },
+    {
+      "key": "NCVI|AM8161A (beheiztes Wearable)",
+      "status": "partial",
+      "scope": "AM8161 manual and NC8161 product page support the family, not AM8161A suffix equivalence. Exact count and capacity remain open."
+    },
+    {
+      "key": "eufy|S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+      "status": "partial",
+      "scope": "Shared T60A1/T600P guide and German t60a13b0 page support integrated architecture/case. Regional components and six-versus-five cleaning scope unresolved."
+    },
+    {
+      "key": "Willow|Go (PDL60)",
+      "status": "partial",
+      "scope": "Older PDL60 manual distinguished from newer SplashGuard kit; region, support, authorization, actual DE kit and warranty not established. No numbered generation inferred."
+    }
+  ],
+  "seo": {
+    "homeHeading": "Tragbare Milchpumpen. Für deinen Alltag.",
+    "homeAndMarketModifiedDate": "2026-10-15",
+    "meaning": "35 researched model identities and practical case-based help; six-model detail comparison remains distinct. No exhaustive current availability, scores, measured winner or current stock claim."
+  },
+  "verification": {
+    "strictTdd": [
+      "Kinderkraft card/filter test failed on existing unverified architecture before implementation, then passed.",
+      "Partial mapping test failed on missing four overlay records before implementation, then passed.",
+      "Buying-case test failed on legacy case order before implementation, then passed.",
+      "Home SEO test failed on old heading before implementation, then passed."
+    ],
+    "focusedTestsCommand": "npx tsx --test scripts/market-overlay-integration.test.tsx scripts/market-evidence.test.ts scripts/metadata.test.ts scripts/affiliate.test.ts",
+    "focusedTestsResult": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "ownedSourceTypecheckCommand": "npx tsc --noEmit --target ES2022 --module ESNext --moduleResolution bundler --jsx react-jsx --skipLibCheck --allowSyntheticDefaultImports --resolveJsonModule --allowImportingTsExtensions src/wearable-market.tsx src/wearable-market-evidence-overlay.ts src/seo.ts scripts/market-overlay-integration.test.tsx",
+    "ownedSourceTypecheckResult": "passed; exit 0",
+    "wholeProjectTypecheckCommand": "npx tsc --noEmit",
+    "wholeProjectTypecheckResult": "Blocked by out-of-scope scripts/editorial-shell.test.tsx(19,39): TS2339 Property children does not exist on type unknown. No out-of-scope edit made.",
+    "legacyUiSuite": {
+      "command": "npx tsx --test scripts/market-overlay-integration.test.tsx scripts/market-evidence.test.ts scripts/wearable-market-ui.test.tsx scripts/metadata.test.ts scripts/affiliate.test.ts",
+      "tests": 16,
+      "passed": 13,
+      "failed": 3,
+      "reason": "Three legacy wearable-market-ui assertions require the historical 25/1 architecture split or literal old shortlist copy. Current requested overlay correctly uses 26/0 and approved updated case wording. Historical raw data equality and commercial destination assertions still pass. Other tests were not edited."
+    },
+    "buildOrBrowserQa": "Not run by this scoped subtask; parent owns integrated homepage/layout/build verification.",
+    "parentFinalVerification": {
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "testsPassed": 169,
+      "testsFailed": 0,
+      "legacyAssertionsReconciledWithApprovedDesign": true,
+      "productionRouteAudit": "50 routes, 163 commercial link occurrences, 2145 local targets, zero errors",
+      "qaPath": "docs/editorial-home-integration-parent.json"
+    }
+  }
+}
