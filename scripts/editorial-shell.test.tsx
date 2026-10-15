@@ -158,7 +158,7 @@ test('editorial header uses the Canvas classes, stable IDs, local logo and canon
     ['header-guides', '/ratgeber/', 'Ratgeber'],
     ['header-products', '/produkte/', 'Zubehör'],
   ]) assert.ok(html.includes(`<a id="${id}" href="${href}">${label}</a>`));
-  assert.match(html, /<a id="header-finder" class="nav-pill" href="\/ratgeber\/#pumpenfinder">Deine Kaufhilfe/);
+  assert.ok(html.includes('<a id="header-finder" class="nav-pill" href="/#v9-comparison">Direkt vergleichen'), 'The shared header must enter the approved direct model comparison');
 });
 
 test('editorial footer preserves Canvas structure, responsible publisher, sources and both comparison scopes', () => {

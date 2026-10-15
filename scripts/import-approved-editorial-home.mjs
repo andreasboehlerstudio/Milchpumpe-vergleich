@@ -1,58 +1,113 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { parseArgs, isDeepStrictEqual } from 'node:util';
+import { Window } from 'happy-dom';
 import postcss from 'postcss';
 
+// Run from the repository root. Explicit source paths also work in a clean checkout.
+// --output-dir contains the three generated files (default: src).
 const root = process.cwd();
-const sourcePath = path.join(root, '.superdesign/tmp/ranking-readback.html');
-const source = fs.readFileSync(sourcePath, 'utf8');
-const metadata = JSON.parse(fs.readFileSync('.superdesign/tmp/ranking-readback.json', 'utf8'));
-if (metadata.draftId !== 'cf2cdb51-022c-4be3-9118-28391b49d716' || metadata.currentVersion !== 11) throw new Error('Unexpected approved draft');
+const { values } = parseArgs({ options: {
+  'source-html': { type: 'string', default: '.superdesign/tmp/integration-readback.html' },
+  'source-metadata': { type: 'string', default: '.superdesign/tmp/integration-readback.json' },
+  'approved-version': { type: 'string', default: '15' },
+  'output-dir': { type: 'string', default: 'src' },
+} });
+const readJson = file => JSON.parse(fs.readFileSync(path.resolve(root, file), 'utf8'));
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
-const nursery = JSON.parse(fs.readFileSync('docs/editorial-v4-photo-rights.json', 'utf8')).selected;
-const parts = JSON.parse(fs.readFileSync('docs/editorial-pump-parts-photo-rights.json', 'utf8'));
-fs.mkdirSync('public/editorial-photos', { recursive: true });
-const nurseryTarget = 'public/editorial-photos/nursery.jpg';
-if (!fs.existsSync(nurseryTarget)) {
-  const response = await fetch(nursery.remoteResource);
-  if (!response.ok) throw new Error(`Licensed nursery resource: HTTP ${response.status}`);
-  const bytes = Buffer.from(await response.arrayBuffer());
-  if (bytes.length > 3_000_000 || sha(bytes) !== nursery.sha256) throw new Error('Nursery photo identity mismatch');
-  fs.writeFileSync(nurseryTarget, bytes);
+const metadata = readJson(values['source-metadata']);
+if (values['approved-version'] !== '15' ||
+    metadata.draftId !== 'cf2cdb51-022c-4be3-9118-28391b49d716' || metadata.currentVersion !== 15) {
+  throw new Error('Unexpected approved draft or version: this importer is pinned to version 15');
 }
-if (sha(fs.readFileSync(nurseryTarget)) !== nursery.sha256) throw new Error('Nursery photo hash mismatch');
-const partsOriginal = path.resolve(root, '../design-media/wikimedia-pump-parts/pump-parts-editorial.jpg');
-if (sha(fs.readFileSync(partsOriginal)) !== parts.publicDerivativeSha256) throw new Error('Pump-parts derivative identity mismatch');
-fs.copyFileSync(partsOriginal, 'public/editorial-photos/pump-parts.jpg');
-const assetMap = new Map([[nursery.remoteResource, '/editorial-photos/nursery.jpg'], [parts.publicUrl, '/editorial-photos/pump-parts.jpg']]);
-for (const match of source.matchAll(/<img\b[^>]*src="([^"]+)"/g)) {
-  const remote = match[1];
-  if (remote.endsWith('/brand-symbol.svg')) assetMap.set(remote, '/brand-symbol.svg');
-  else if (remote.endsWith('.svg')) {
-    const local = `/editorial-v2/${path.posix.basename(new URL(remote).pathname)}`;
-    if (!fs.existsSync(`public${local}`)) throw new Error(`Selected illustration missing: ${local}`);
-    assetMap.set(remote, local);
-  } else if (!assetMap.has(remote)) throw new Error(`Unapproved content asset: ${remote}`);
-}
-let main = source.match(/<main\b[^>]*>[\s\S]*?<\/main>/)?.[0];
+const source = fs.readFileSync(path.resolve(root, values['source-html']), 'utf8');
+const registry = readJson('src/home-editorial-data.json');
+const currentTemplate = readJson('src/home-editorial-template.json');
+const window = new Window({ settings: {
+  disableJavaScriptEvaluation: true, disableCSSFileLoading: true,
+  disableJavaScriptFileLoading: true, disableIframePageLoading: true,
+} });
+const document = window.document;
+document.write(source);
+const main = document.querySelector('main');
 if (!main) throw new Error('Approved main landmark missing');
-main = main.replaceAll('https://milchpumpe-vergleich.de', '');
-for (const [remote, local] of assetMap) main = main.replaceAll(remote, local);
-if (/<script\b|<iframe\b|\son[a-z]+\s*=/i.test(main)) throw new Error('Executable or embedded content in static template');
-const models = JSON.parse(source.match(/<script id="v9-comparison-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
-if (models.length !== 35 || new Set(models.map(m => m.key)).size !== 35) throw new Error('Model identity count changed');
-const escapeHtml = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-// Canvas updated its default cells only at runtime. Export the same current values into SSR HTML.
-for (const [side, key] of [['a', 'Momcozy|M5 Smart'], ['b', 'Medela|Freestyle Hands-free']]) {
-  const model = models.find(model => model.key === key);
-  if (!model) throw new Error(`Default comparison identity missing: ${key}`);
-  const cardPattern = new RegExp(`<article\\b(?=[^>]*id="v9-card-${side}")[\\s\\S]*?</article>`);
-  if (!cardPattern.test(main)) throw new Error(`Default comparison card missing: ${side}`);
-  main = main.replace(cardPattern, card => card.replace(/(<h3[^>]*>)[\s\S]*?(<\/h3>)/, `$1${escapeHtml(model.name)}$2`).replace(/(<dd[^>]*data-value="([^"]+)"[^>]*>)[\s\S]*?(<\/dd>)/g, (_, open, field, close) => `${open}${escapeHtml(model[field] ?? 'Noch offen.')}${close}`));
+const nursery = readJson('docs/editorial-v4-photo-rights.json').selected;
+const parts = readJson('docs/editorial-pump-parts-photo-rights.json');
+// Public derivatives are already approved and checked in. Never fetch or consult private siblings.
+for (const [local, expected] of [['nursery.jpg', nursery.sha256], ['pump-parts.jpg', parts.publicDerivativeSha256]]) {
+  const file = path.join(root, 'public/editorial-photos', local);
+  if (!/^[a-f0-9]{64}$/.test(expected) || sha(fs.readFileSync(file)) !== expected) {
+    throw new Error(`Licensed public photo hash mismatch: ${local}`);
+  }
 }
-const styleText = source.match(/<style>([\s\S]*?)<\/style>/)?.[1];
-if (!styleText) throw new Error('Approved stylesheet missing');
-const style = postcss.parse(styleText);
+const productionOrigin = 'https://milchpumpe-vergleich.de';
+const localAssets = ['/editorial-photos/nursery.jpg', '/editorial-photos/pump-parts.jpg',
+  '/editorial-v2/alltag.svg', '/editorial-v2/portionieren.svg', '/editorial-v2/reinigung.svg', '/brand-symbol.svg'];
+const assetMap = new Map(localAssets.flatMap(local => [[local, local], [`${productionOrigin}${local}`, local]]));
+assetMap.set(nursery.remoteResource, '/editorial-photos/nursery.jpg');
+assetMap.set(parts.publicUrl, '/editorial-photos/pump-parts.jpg');
+assetMap.set('https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/ec166314-d8f4-47fa-977e-5848c252f006/brand-assets/public-brand-symbol.svg/brand-symbol.svg', '/brand-symbol.svg');
+for (const image of main.querySelectorAll('img')) {
+  const remote = image.getAttribute('src');
+  const local = assetMap.get(remote);
+  if (!local) throw new Error(`Unapproved content asset: ${remote}`);
+  if (!fs.existsSync(path.join(root, 'public', local))) throw new Error(`Selected local asset missing: ${local}`);
+  image.setAttribute('src', local);
+}
+for (const link of main.querySelectorAll('a[href]')) {
+  const href = link.getAttribute('href');
+  if (href.startsWith(`${productionOrigin}/`) || href === productionOrigin) {
+    const url = new URL(href);
+    link.setAttribute('href', `${url.pathname}${url.search}${url.hash}`);
+  }
+}
+const modelScript = document.getElementById('v9-comparison-data');
+if (!modelScript) throw new Error('Approved comparison data missing');
+const sourceModels = JSON.parse(modelScript.textContent);
+if (!Array.isArray(sourceModels) || sourceModels.length !== 40 ||
+    new Set(sourceModels.map(model => model.key)).size !== 40 ||
+    !isDeepStrictEqual(sourceModels, registry.models)) {
+  throw new Error('Model registry identity mismatch: all 40 full research objects must remain unchanged');
+}
+// Write the existing registry, never a new research payload taken from the prototype.
+const models = registry.models;
+// Canvas runtimes are deliberately excluded; resolve their default state for SSR here.
+const defaults = [['a', 'Momcozy|M5 Smart'], ['b', 'Medela|Freestyle Hands-free']];
+const selectedModels = defaults.map(([side, key]) => {
+  const model = models.find(item => item.key === key);
+  const card = main.querySelector(`#v9-card-${side}`);
+  const select = main.querySelector(`#v9-compare-${side}`);
+  if (!model || !card || !select) throw new Error(`Default comparison identity or controls missing: ${key}`);
+  card.querySelector('h3').textContent = model.name;
+  card.querySelectorAll('[data-value]').forEach(cell => {
+    cell.textContent = model[cell.getAttribute('data-value')] ?? 'Noch offen.';
+  });
+  for (const option of select.querySelectorAll('option')) {
+    option.toggleAttribute('selected', option.getAttribute('value') === key);
+  }
+  const primary = card.querySelector(`#v9-source-${side}`);
+  primary.toggleAttribute('hidden', !model.source);
+  if (model.source) primary.setAttribute('href', model.source);
+  else primary.removeAttribute('href');
+  primary.setAttribute('target', '_blank');
+  primary.setAttribute('rel', 'noopener noreferrer');
+  card.querySelector('.v9-source-missing').toggleAttribute('hidden', Boolean(model.source));
+  const shop = card.querySelector(`#v9-amazon-${side}`);
+  shop.setAttribute('href', model.amazon);
+  shop.removeAttribute('hidden');
+  shop.setAttribute('target', '_blank');
+  shop.setAttribute('rel', 'sponsored noopener noreferrer');
+  shop.textContent = `${model.exact ? 'Ausführung bei Amazon prüfen*' : 'Modell bei Amazon suchen*'} ↗`;
+  return model;
+});
+const [first, second] = selectedModels;
+const summary = main.querySelector('#v14-selected-models');
+if (summary) summary.textContent = `${first.name} ↔ ${second.name}`;
+const status = main.querySelector('#v9-compare-status');
+if (status) status.textContent = `${first.name} und ${second.name} im Vergleich.`;
+// querySelectorAll preserves document order, including styles added after the original head.
+const style = postcss.parse([...document.querySelectorAll('style')].map(node => node.textContent).join('\n'));
 style.walkRules(rule => {
   if (rule.parent.type === 'atrule' && /keyframes$/i.test(rule.parent.name)) return;
   rule.selector = postcss.list.comma(rule.selector).map(selector => {
@@ -62,8 +117,15 @@ style.walkRules(rule => {
     return `.editorial-home ${selected}`;
   }).join(',');
 });
-const css = `/* Approved Superdesign v11. Scoped to the editorial shell; no remote CSS or scripts. */\n${style.toString()}\n.editorial-home{min-height:100vh}\n.editorial-home h1,.editorial-home h2,.editorial-home h3,.editorial-home h4{font-family:inherit}\n@media(prefers-reduced-motion:reduce){.editorial-home *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}\n`;
-fs.writeFileSync('src/home-editorial-template.json', JSON.stringify({ sourceDraft:metadata.draftId, sourceVersion:11, html:main }, null, 2)+'\n');
-fs.writeFileSync('src/home-editorial-data.json', JSON.stringify({ sourceVersion:11, models }, null, 2)+'\n');
-fs.writeFileSync('src/home-editorial.css', css);
-console.log(JSON.stringify({ sourceVersion:11, sourceSha256:sha(source.replaceAll('\r\n','\n')), localAssets:[...new Set(assetMap.values())], modelCount:models.length, scopedCss:true, scriptsCopied:false }));
+const css = `/* Approved Superdesign v15. Scoped to the editorial shell; no remote CSS or scripts. */\n${style.toString()}\n.editorial-home{min-height:100vh}\n.editorial-home h1,.editorial-home h2,.editorial-home h3,.editorial-home h4{font-family:inherit}\n@media(prefers-reduced-motion:reduce){.editorial-home *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}\n`;
+const output = path.resolve(root, values['output-dir']);
+fs.mkdirSync(output, { recursive: true });
+fs.writeFileSync(path.join(output, 'home-editorial-template.json'), JSON.stringify({
+  ...currentTemplate, sourceDraft: metadata.draftId, sourceVersion: 15, html: main.outerHTML,
+}, null, 2) + '\n');
+fs.writeFileSync(path.join(output, 'home-editorial-data.json'), JSON.stringify({
+  ...registry, sourceVersion: 15, models,
+}, null, 2) + '\n');
+fs.writeFileSync(path.join(output, 'home-editorial.css'), css);
+console.log(JSON.stringify({ sourceVersion: 15, sourceSha256: sha(source.replaceAll('\r\n', '\n')),
+  modelCount: models.length, scopedCss: true, scriptsCopied: false, outputDir: output }));

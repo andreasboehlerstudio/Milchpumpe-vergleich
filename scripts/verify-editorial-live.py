@@ -15,6 +15,17 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://milchpumpe-vergleich.de'
 
+def html_identity(body):
+    # The Windows build retains one extra empty template line before </body>.
+    return re.sub(br'\n[ \t]*\n(?=[ \t]*</body>)', b'\n', body.replace(b'\r\n', b'\n').replace(b'\r', b'\n'))
+
+def asset_identity(path, body):
+    return body.replace(b'\r\n', b'\n') if path.endswith('.svg') else body
+
+def is_commercial_amazon(href):
+    parsed = urlparse(href)
+    return parsed.netloc in ('www.amazon.de', 'amazon.de') and (parsed.path.startswith(('/dp/', '/gp/product/')) or parsed.path == '/s')
+
 class Page(HTMLParser):
     def __init__(self, html):
         super().__init__(); self.tags = []; self.feed(html)
@@ -38,17 +49,17 @@ def audit(url):
         html = body.decode('utf-8'); page = Page(html)
         local = (ROOT/'dist'/path.lstrip('/')/'index.html').read_bytes()
         canonical = [attrs.get('href') for tag, attrs in page.tags if tag == 'link' and attrs.get('rel') == 'canonical']
-        commercial = [(tag, attrs) for tag, attrs in page.tags if tag == 'a' and urlparse(attrs.get('href', '')).netloc == 'www.amazon.de']
+        commercial = [(tag, attrs) for tag, attrs in page.tags if tag == 'a' and is_commercial_amazon(attrs.get('href', ''))]
         errors = []
         if code != 200 or destination != url: errors.append('status-or-redirect')
-        if hashlib.sha256(body).digest() != hashlib.sha256(local).digest(): errors.append('not-exact-release-html')
+        if html_identity(body) != html_identity(local): errors.append('not-equivalent-release-html')
         if canonical != [url]: errors.append('canonical')
         if sum(tag == 'h1' for tag, _ in page.tags) != 1: errors.append('h1')
         if sum(tag == 'main' for tag, _ in page.tags) != 1: errors.append('main')
         if 'editorial-home v4' not in html: errors.append('editorial-shell')
         for _, attrs in commercial:
             if parse_qs(urlparse(attrs['href']).query).get('tag') != ['andreasboeh09-21'] or 'sponsored' not in attrs.get('rel', '').split(): errors.append('affiliate')
-        return {'url': url, 'status': code, 'sha256': hashlib.sha256(body).hexdigest(), 'exactReleaseHtml': body == local, 'amazonLinks': len(commercial), 'errors': errors}
+        return {'url': url, 'status': code, 'sha256': hashlib.sha256(body).hexdigest(), 'exactReleaseHtml': body == local, 'equivalentReleaseHtml': html_identity(body) == html_identity(local), 'amazonLinks': len(commercial), 'errors': errors}
     except Exception as error:
         return {'url': url, 'errors': [str(error)]}
 
@@ -65,13 +76,15 @@ for url in local_urls:
 def asset_check(path):
     try:
         code, _, body = get(ORIGIN + path)
-        exact = body == (ROOT/'dist'/path.lstrip('/')).read_bytes()
-        return {'path': path, 'status': code, 'exactReleaseAsset': exact}
+        local = (ROOT/'dist'/path.lstrip('/')).read_bytes()
+        exact = body == local
+        equivalent = asset_identity(path, body) == asset_identity(path, local)
+        return {'path': path, 'status': code, 'exactReleaseAsset': exact, 'equivalentReleaseAsset': equivalent}
     except Exception as error: return {'path': path, 'error': str(error), 'exactReleaseAsset': False}
 
 with ThreadPoolExecutor(max_workers=5) as pool:
     asset_rows = list(pool.map(asset_check, sorted(assets)))
-report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'sitemapStatus': status, 'sitemapMatchesRelease': sitemap == local_sitemap, 'sitemapUrlSetsMatch': set(urls) == set(local_urls), 'routes': len(rows), 'exactReleaseHtml': sum(row.get('exactReleaseHtml', False) for row in rows), 'commercialLinkOccurrences': sum(row.get('amazonLinks', 0) for row in rows), 'assets': len(asset_rows), 'exactReleaseAssets': sum(row['exactReleaseAsset'] for row in asset_rows), 'errors': errors, 'pages': rows, 'assetChecks': asset_rows, 'limits': 'Public deployment verification; does not establish Google indexing, rankings, sales or commissions.'}
+report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'sitemapStatus': status, 'sitemapMatchesRelease': sitemap == local_sitemap, 'sitemapUrlSetsMatch': set(urls) == set(local_urls), 'routes': len(rows), 'exactReleaseHtml': sum(row.get('exactReleaseHtml', False) for row in rows), 'equivalentReleaseHtml': sum(row.get('equivalentReleaseHtml', False) for row in rows), 'equivalentReleaseAssets': sum(row.get('equivalentReleaseAsset', False) for row in asset_rows), 'normalization': 'Only CRLF versus LF; one empty template line immediately before closing body; SVG line endings. Binary assets remain byte-exact.', 'commercialLinkOccurrences': sum(row.get('amazonLinks', 0) for row in rows), 'assets': len(asset_rows), 'exactReleaseAssets': sum(row['exactReleaseAsset'] for row in asset_rows), 'errors': errors, 'pages': rows, 'assetChecks': asset_rows, 'limits': 'Public deployment verification; does not establish Google indexing, rankings, sales or commissions.'}
 (ROOT/'docs/editorial-site-live-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 print(json.dumps({key: value for key, value in report.items() if key not in ('pages','assetChecks')}, ensure_ascii=False))
-assert not errors and report['sitemapMatchesRelease'] and report['sitemapUrlSetsMatch'] and all(row['exactReleaseAsset'] for row in asset_rows), 'Live release not completely verified'
+assert not errors and report['sitemapMatchesRelease'] and report['sitemapUrlSetsMatch'] and all(row.get('equivalentReleaseAsset', False) for row in asset_rows), 'Live release not completely verified'

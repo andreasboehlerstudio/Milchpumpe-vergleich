@@ -44,6 +44,14 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 15. Oktober 2026 – Klarerer Pumpeneinstieg und Direktvergleich
+
+- Freigegebenen Homepage-Feinschliff mit früherer Modellauswahl, klar beschrifteten Aufbau-/Bedienungsmerkmalen und nützlichem Einzel-/Doppelset-Hinweis übernommen.
+- Die vollständige 40-Modellübersicht ist direkt vom Einstieg erreichbar; Auswahl und Direktvergleich stehen vor den Alltagsratgebern.
+- Ausgewählte Modellnamen bleiben am zugeklappten Vergleich sichtbar. Header-Verknüpfung und direkte Sprunglinks öffnen die passenden Auswahlbereiche mit Tastaturfokus.
+- Alle Bilddateien und Schriften bleiben lokal; bestehende Quellen, genaue Angebotsvarianten, Affiliate-Kennzeichnung und Einwilligungsverwaltung bleiben erhalten.
+- Designimport auf den freigegebenen Versionsstand fixiert, alle Stil-Ebenen übernommen und unabhängige Prüfungen ohne private Medienordner ergänzt.
+
 ### 15. Oktober 2026 – Stillalltag-Editorial auf allen Seiten
 
 - Marktbestand auf 40 unterschiedliche Modellidentitäten aus 18 Marken erweitert. 36 Modelle mit am 15.10. beobachtetem Amazon-Angebot; vier ohne bestätigtes Angebot separat gekennzeichnet. Farben, Sets und Zubehör nicht zusätzlich gezählt.

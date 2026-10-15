@@ -1,0 +1,26 @@
+{
+  "sourceDraft": "cf2cdb51-022c-4be3-9118-28391b49d716",
+  "sourceVersion": 15,
+  "sourceSha256Lf": "b3bf26479cfeda478287d15834cb172082135b6ec4886a836a95c137c6a91321",
+  "implementation": "Native prerendered React route with locally hosted licensed images/fonts and scoped CSS; no remote draft embed or prototype scripts",
+  "models": 40,
+  "researchObjectsUnchanged": true,
+  "validation": {
+    "typecheck": "passed",
+    "fullSuite": {"passed":250,"failed":0,"skipped":0},
+    "productionHtmlAudit": {"routes":50,"sitemapUrls":50,"commercialLinkOccurrences":171,"checkedLocalTargets":2430,"errors":[]},
+    "releaseIdentityPythonTests": {"passed":3},
+    "browserSelections":80,
+    "browserIssues":[],
+    "allMainImageUrlsLocal":true,
+    "responsiveFrames": [
+      {"outerViewport":320,"usableClientWidth":305,"scrollWidth":305,"clippingFindings":[]},
+      {"outerViewport":390,"usableClientWidth":375,"scrollWidth":375,"clippingFindings":[]},
+      {"outerViewport":768,"usableClientWidth":753,"scrollWidth":753,"clippingFindings":[]},
+      {"outerViewport":1440,"usableClientWidth":1425,"scrollWidth":1425,"clippingFindings":[]}
+    ],
+    "scrollbarNote":"The production CSS permits classic 15px vertical scrollbars. Recorded usable widths, rather than outer viewport widths, are compared against document scrollWidth. Inventory, comparison and alternatives were expanded during responsive checks."
+  },
+  "preserved": ["Exact model identities and generation/set caveats", "Historical offer dates", "Manufacturer citations", "Affiliate id and sponsored attributes", "Licensed photo bytes", "Consent gate and revocation", "Existing full guide library"],
+  "publication":"Verified separately after the GitHub Pages release; this pre-release manifest does not assert deployment success."
+}
