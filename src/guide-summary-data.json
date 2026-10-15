@@ -1,0 +1,509 @@
+{
+  "summaries": [
+    {
+      "slug": "richtige-flanschgroesse",
+      "title": "Flanschgröße richtig einordnen",
+      "updated": "2026-10-15",
+      "description": "Warum die Passform wichtig ist, wie Hersteller messen lassen und wann fachliche Unterstützung sinnvoll ist."
+    },
+    {
+      "slug": "milchpumpe-reinigen",
+      "title": "Milchpumpe hygienisch reinigen",
+      "updated": "2026-10-15",
+      "description": "Ein praktischer Ablauf auf Basis der Empfehlungen des Bundeszentrums für Ernährung."
+    },
+    {
+      "slug": "tragbar-oder-elektrisch",
+      "title": "Tragbar, elektrisch oder manuell?",
+      "updated": "2026-10-15",
+      "description": "Die Pumpenarten nach Einsatzhäufigkeit, Bewegungsfreiheit und Reinigungsaufwand unterscheiden."
+    },
+    {
+      "slug": "muttermilchbeutel-oder-mehrwegbecher",
+      "title": "Muttermilchbeutel oder Mehrwegbecher: Was passt zu deinem Vorrat?",
+      "description": "Beutel oder Mehrwegbecher für Muttermilch? Entscheide nach Gefrierfach, Umfüllen und Spülroutine – mit zwei Herstellerbeispielen und Einkaufsliste.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilchbeutel-oder-mehrwegbecher-og.png"
+    },
+    {
+      "slug": "muttermilch-beschriften-portionen-gefrierfach",
+      "title": "Muttermilch beschriften und sortieren: Ein Gefrierfach ohne Sucherei",
+      "description": "Gefrorene Muttermilch nach Datum und Menge ordnen: mit lesbaren Etiketten, kleinen Reserveportionen und einem kurzen Check vor dem Auftauen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilch-beschriften-portionen-gefrierfach-og.png"
+    },
+    {
+      "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+      "title": "Muttermilch vom Arbeitsplatz nach Hause: Die Kühlkette planen",
+      "description": "Muttermilch vom Arbeitsplatz nach Hause bringen: Kühlplatz, vorbereiteten Kühlakku und Übergabe planen. Mit Packcheck und Grenzen der Kühltasche.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilch-arbeitsplatz-transport-kuehlkette-og.png"
+    },
+    {
+      "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+      "title": "Muttermilch im Kühlschrank: Eine eigene Box statt lose Flaschen",
+      "description": "Eine eigene Kühlschrankbox für Muttermilch: Finde einen kalten Stellplatz, trenne Milch von benutzten Teilen und halte Portionen sichtbar.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilch-kuehlschrankbox-getrennt-aufbewahren-og.png"
+    },
+    {
+      "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+      "title": "Muttermilch erwärmen ohne Flaschenwärmer: Wann ein Wasserbad reicht",
+      "description": "Ein Flaschenwärmer ist für Muttermilch nicht Pflicht. So planst du schonendes Erwärmen, passende Behälter und kleine Portionen ohne Gerätezwang.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilch-erwaermen-ohne-flaschenwaermer-og.png"
+    },
+    {
+      "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+      "title": "Reserve-Pumpset organisieren: Sauber, trocken und wirklich passend",
+      "description": "Pumpset noch nass? Plane Reinigung, Trockenplatz und eine getrennte Reserve. Mit Modellabgleich und Philips Avent Trockengestell SCF149/00 als Option.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/reserve-pumpset-reinigen-trocknen-organisieren-og.png"
+    },
+    {
+      "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+      "title": "Flasche und Sauger für abgepumpte Milch: Was du wirklich prüfen kannst",
+      "description": "Flasche für abgepumpte Muttermilch auswählen: Vergleiche Milchfluss, Zusammenbau und Baby-Signale – ohne Versprechen gegen Saugverwirrung.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/abgepumpte-muttermilch-flasche-sauger-auswaehlen-og.png"
+    },
+    {
+      "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+      "title": "Stilleinlagen unterwegs: Einweg, Mehrweg und eine saubere Wechselroutine",
+      "description": "Stilleinlagen für Arbeit und unterwegs organisieren: Halte Ersatz trocken, trenne benutzte Einlagen und plane die Wäsche ohne Vorratskauf.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/stilleinlagen-einweg-mehrweg-unterwegs-organisieren-og.png"
+    },
+    {
+      "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+      "title": "Milchpumpe ohne Spülmaschine reinigen: der Handspül-Ablauf",
+      "description": "Pumpset von Hand reinigen: Teile zuordnen, Milchreste entfernen, klar nachspülen und trocknen. Wo eine Flaschenbürste hilft und wo sie nichts zu suchen hat.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/milchpumpe-reinigen-ohne-spuelmaschine-og.png"
+    },
+    {
+      "slug": "muttermilch-kita-mitgeben",
+      "title": "Muttermilch in die Kita mitgeben: Absprachen und Übergabe",
+      "description": "Welche Behälter nimmt die Kita an? Kläre Beschriftung, Kühlplatz, Übergabe und Rückmeldung vor dem ersten Betreuungstag – ohne feste Trinkmengentabelle.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/muttermilch-kita-mitgeben-og.png"
+    },
+    {
+      "slug": "medela-muttermilchflaschen-150-250-ml",
+      "title": "Medela Muttermilchflaschen: 150 oder 250 ml auswählen",
+      "description": "150 ml im Dreierpack oder 250 ml im Zweierpack? Prüfe Flaschenzahl, Schraubdeckel, Platz und den Anschluss deiner Pumpe vor dem Zubehörkauf.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/medela-muttermilchflaschen-150-250-ml-og.png"
+    },
+    {
+      "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+      "title": "Milchpumpenteile im Mikrowellenbeutel desinfizieren: Quick Clean",
+      "description": "Medela Quick Clean richtig einordnen: erst reinigen, Teilefreigabe prüfen, 60 ml Wasser und Wattangaben beachten. Mit Grenzen der EU-Anleitung und Hitzeschutz.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Muttermilch-Alltag",
+      "image": "/editorial/milchpumpe-mikrowellenbeutel-desinfizieren-og.png"
+    },
+    {
+      "slug": "momcozy-m9-oder-s12-pro",
+      "title": "Momcozy M9 oder S12 Pro: App-Komfort oder direkte Bedienung?",
+      "description": "M9 und ursprüngliche S12 Pro nach Bedienung, Passform und Alltag vergleichen – mit klarer Abgrenzung zur S12 Pro Quick.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellvergleich",
+      "image": "/editorial/momcozy-m9-oder-s12-pro-og.png"
+    },
+    {
+      "slug": "medela-freestyle-oder-philips-avent",
+      "title": "Medela Freestyle oder Philips Avent: Zwei Hands-free-Systeme einordnen",
+      "description": "Freestyle Hands-free und Philips Avent SCF547/11 nach Cups, Bedienung, Reinigung und konkretem Setumfang vergleichen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellvergleich",
+      "image": "/editorial/medela-freestyle-oder-philips-avent-og.png"
+    },
+    {
+      "slug": "hands-free-milchpumpe-kaufen",
+      "title": "Hands-free-Milchpumpe kaufen: Die Bauweise muss zum Alltag passen",
+      "description": "Ein Entscheidungsweg für Hands-free-Pumpen: Bauweise, Einsatzhäufigkeit, Passform, Bedienung und Aufwand nach der Sitzung.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufberatung",
+      "image": "/editorial/hands-free-milchpumpe-kaufen-og.png"
+    },
+    {
+      "slug": "milchpumpe-fuer-unterwegs",
+      "title": "Milchpumpe für unterwegs: Nicht nur den Akku einplanen",
+      "description": "Eine praktische Planung für Arbeit und Ausflüge: Pumpplatz, saubere Teile, Energieversorgung, Umfüllen und Rückweg.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Alltag und Planung",
+      "image": "/editorial/milchpumpe-fuer-unterwegs-og.png"
+    },
+    {
+      "slug": "milchpumpe-einzel-oder-doppelpumpe",
+      "title": "Milchpumpe: Einzel- oder Doppelpumpe sinnvoll auswählen",
+      "description": "Einzelset und Doppelset nach Ablauf, Reinigungsaufwand und Lieferumfang unterscheiden, ohne garantierte Zeit- oder Mengenvorteile.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufberatung",
+      "image": "/editorial/milchpumpe-einzel-oder-doppelpumpe-og.png"
+    },
+    {
+      "slug": "milchpumpe-zubehoer-checkliste",
+      "title": "Milchpumpen-Zubehör: Eine Checkliste ohne unnötige Extras",
+      "description": "Passende Größen, modellbezogene Ersatzteile, Reinigung und Transport systematisch prüfen statt beliebige Zubehör-Bundles kaufen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Zubehör und Pflege",
+      "image": "/editorial/milchpumpe-zubehoer-checkliste-og.png"
+    },
+    {
+      "slug": "momcozy-m9-ohne-app",
+      "title": "Momcozy M9 ohne App: Welche Funktionen bleiben am Gerät?",
+      "description": "Die M9 funktioniert auch mit Tasten. Welche Modi ohne Smartphone erreichbar sind und welche Zusatzfunktionen die Momcozy-App benötigen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/momcozy-m9-ohne-app-og.png"
+    },
+    {
+      "slug": "momcozy-m9-einzel-oder-doppelset",
+      "title": "Momcozy M9: Einzel- oder Doppelset ohne Mengenverwechslung kaufen",
+      "description": "Single und Double bei der M9 richtig lesen: vollständige Pumpeneinheiten, Bestellmenge, Ersatzcups und den tatsächlichen Setumfang auseinanderhalten.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufentscheidung",
+      "image": "/editorial/momcozy-m9-einzel-oder-doppelset-og.png"
+    },
+    {
+      "slug": "momcozy-s12-pro-quick-unterschiede",
+      "title": "Momcozy S12 Pro und S12 Pro Quick: Generation und Zubehör unterscheiden",
+      "description": "Welche Änderungen Momcozy für die S12 Pro Quick dokumentiert und warum ursprüngliche S12-Pro-Angebote und Ersatzteile separat geprüft werden müssen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/momcozy-s12-pro-quick-unterschiede-og.png"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+      "title": "Medela Freestyle Hands-free: Drei Cup-Teile richtig reinigen",
+      "description": "Was die Drei-Teile-Angabe umfasst, wie der O-Ring einzuordnen ist und welcher Wasch-, Trocknungs- und Desinfektionsablauf dokumentiert ist.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Zubehör & Pflege",
+      "image": "/editorial/medela-freestyle-hands-free-drei-teile-reinigung-og.png"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+      "title": "Medela Freestyle Hands-free: Warum Motor und Schläuche außerhalb des BHs bleiben",
+      "description": "Die Freestyle-Bauweise verstehen: separate Motoreinheit, Luftweg über Schläuche, milchführende Cups und praktische Grenzen von Hands-free.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/medela-freestyle-hands-free-schlaeuche-motor-og.png"
+    },
+    {
+      "slug": "philips-avent-scf547-11-oder-scd553-11",
+      "title": "Philips Avent SCF547/11 oder SCD553/11: Den Setinhalt statt den Namen vergleichen",
+      "description": "Offizielle Lieferumfänge der Philips-Doppelpumpe und des Startersets: Größen, Beutel, Flasche, Stilleinlagen und Etui sauber auseinanderhalten.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufentscheidung",
+      "image": "/editorial/philips-avent-scf547-11-oder-scd553-11-og.png"
+    },
+    {
+      "slug": "philips-avent-scf547-einsaetze-15-17-mm",
+      "title": "Philips Avent SCF547/11: 15- und 17-mm-Einsätze SCF554/11 zuordnen",
+      "description": "Kleine Philips-Einsätze erkennen: SCF554/11 ist für 15 und 17 mm vorgesehen und wird mit 21-mm-Brustkissen und kompatiblen Hands-free-Cups kombiniert.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Zubehör & Pflege",
+      "image": "/editorial/philips-avent-scf547-einsaetze-15-17-mm-og.png"
+    },
+    {
+      "slug": "elvie-pump-single-oder-double",
+      "title": "Elvie Pump Single oder Double: Eine oder zwei vollständige Pumpeneinheiten?",
+      "description": "Elvie Pump Single und Double unterscheiden: Hub-Anzahl, Lieferumfang, gleichzeitiges Pumpen und Reinigung statt einer pauschalen Effizienzempfehlung.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufentscheidung",
+      "image": "/editorial/elvie-pump-single-oder-double-og.png"
+    },
+    {
+      "slug": "elvie-pump-oder-elvie-stride",
+      "title": "Elvie Pump oder Elvie Stride: All-in-one oder externer Motor?",
+      "description": "Elvie Pump und ursprüngliche Elvie Stride nach Bauweise, Hub-Anzahl, App-Funktionen und Setumfang vergleichen – getrennt von Stride 2.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/elvie-pump-oder-elvie-stride-og.png"
+    },
+    {
+      "slug": "haakaa-generation-3-oder-generation-2",
+      "title": "Haakaa Generation 3 oder Generation 2: Modular oder aus einem Stück?",
+      "description": "Haakaa Gen 3 mit abnehmbarer Silikonflasche und Gen 2 mit einteiligem Körper unterscheiden: Bauform, Zubehör, Kapazität und Pflegehinweise.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/haakaa-generation-3-oder-generation-2-og.png"
+    },
+    {
+      "slug": "haakaa-generation-3-groessen",
+      "title": "Haakaa Generation 3 Größen: 160 ml, 250 ml und Kit-Varianten richtig lesen",
+      "description": "Offiziell dokumentierte Haakaa-Gen-3-Kapazitäten und das 160-ml-Pump-and-Bottle-Pack einordnen, ohne deutsche Verfügbarkeit oder universelle Aufsätze anzunehmen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufentscheidung",
+      "image": "/editorial/haakaa-generation-3-groessen-og.png"
+    },
+    {
+      "slug": "milchpumpe-app-datenschutz",
+      "title": "Milchpumpe mit App: Datenschutz bei Momcozy M9, Elvie und Medela prüfen",
+      "description": "App-Steuerung und Dokumentation unterscheiden: M9, Pump with Elvie und Medela Family nach Datenarten, Berechtigungen und Löschwegen einordnen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Kaufentscheidung",
+      "image": "/editorial/milchpumpe-app-datenschutz-og.png"
+    },
+    {
+      "slug": "milchpumpe-ersatzteile-ventile-membranen",
+      "title": "Milchpumpen-Ersatzteile: Ventile und Membranen für M9, Medela und Avent",
+      "description": "M9-Entenschnabelventile, Medela-Hands-free-Membranen und Philips CP2203/01 sowie CP2218/01 modellbezogen zuordnen statt universelle Sets kaufen.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Zubehör & Pflege",
+      "image": "/editorial/milchpumpe-ersatzteile-ventile-membranen-og.png"
+    },
+    {
+      "slug": "milchpumpe-lautstaerke-herstellerangaben",
+      "title": "Milchpumpen-Lautstärke: Warum Hersteller-dB keinen unabhängigen Vergleich ersetzen",
+      "description": "M9-Angaben von ≤48 dB und ≤42 dB sowie Elvies Lautstärkewerbung richtig zuordnen: Quellenstand, Messbedingungen und Generation statt scheinbarer Testsieger.",
+      "published": "2026-10-14",
+      "updated": "2026-10-14",
+      "category": "Modellwissen",
+      "image": "/editorial/milchpumpe-lautstaerke-herstellerangaben-og.png"
+    }
+  ],
+  "links": [
+    {
+      "slug": "momcozy-m9-oder-s12-pro",
+      "title": "Momcozy M9 oder S12 Pro: App-Komfort oder direkte Bedienung?",
+      "description": "M9 und ursprüngliche S12 Pro nach Bedienung, Passform und Alltag vergleichen – mit klarer Abgrenzung zur S12 Pro Quick.",
+      "category": "Modellvergleich",
+      "productIds": [
+        "momcozy-m9",
+        "momcozy-s12-pro"
+      ]
+    },
+    {
+      "slug": "medela-freestyle-oder-philips-avent",
+      "title": "Medela Freestyle oder Philips Avent: Zwei Hands-free-Systeme einordnen",
+      "description": "Freestyle Hands-free und Philips Avent SCF547/11 nach Cups, Bedienung, Reinigung und konkretem Setumfang vergleichen.",
+      "category": "Modellvergleich",
+      "productIds": [
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "hands-free-milchpumpe-kaufen",
+      "title": "Hands-free-Milchpumpe kaufen: Die Bauweise muss zum Alltag passen",
+      "description": "Ein Entscheidungsweg für Hands-free-Pumpen: Bauweise, Einsatzhäufigkeit, Passform, Bedienung und Aufwand nach der Sitzung.",
+      "category": "Kaufberatung",
+      "productIds": [
+        "momcozy-m9",
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "milchpumpe-fuer-unterwegs",
+      "title": "Milchpumpe für unterwegs: Nicht nur den Akku einplanen",
+      "description": "Eine praktische Planung für Arbeit und Ausflüge: Pumpplatz, saubere Teile, Energieversorgung, Umfüllen und Rückweg.",
+      "category": "Alltag und Planung",
+      "productIds": [
+        "momcozy-m9",
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "milchpumpe-einzel-oder-doppelpumpe",
+      "title": "Milchpumpe: Einzel- oder Doppelpumpe sinnvoll auswählen",
+      "description": "Einzelset und Doppelset nach Ablauf, Reinigungsaufwand und Lieferumfang unterscheiden, ohne garantierte Zeit- oder Mengenvorteile.",
+      "category": "Kaufberatung",
+      "productIds": [
+        "momcozy-m9",
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "milchpumpe-zubehoer-checkliste",
+      "title": "Milchpumpen-Zubehör: Eine Checkliste ohne unnötige Extras",
+      "description": "Passende Größen, modellbezogene Ersatzteile, Reinigung und Transport systematisch prüfen statt beliebige Zubehör-Bundles kaufen.",
+      "category": "Zubehör und Pflege",
+      "productIds": [
+        "momcozy-m9",
+        "momcozy-s12-pro",
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "momcozy-m9-ohne-app",
+      "title": "Momcozy M9 ohne App: Welche Funktionen bleiben am Gerät?",
+      "description": "Die M9 funktioniert auch mit Tasten. Welche Modi ohne Smartphone erreichbar sind und welche Zusatzfunktionen die Momcozy-App benötigen.",
+      "category": "Modellwissen",
+      "productIds": [
+        "momcozy-m9"
+      ]
+    },
+    {
+      "slug": "momcozy-m9-einzel-oder-doppelset",
+      "title": "Momcozy M9: Einzel- oder Doppelset ohne Mengenverwechslung kaufen",
+      "description": "Single und Double bei der M9 richtig lesen: vollständige Pumpeneinheiten, Bestellmenge, Ersatzcups und den tatsächlichen Setumfang auseinanderhalten.",
+      "category": "Kaufentscheidung",
+      "productIds": [
+        "momcozy-m9"
+      ]
+    },
+    {
+      "slug": "momcozy-s12-pro-quick-unterschiede",
+      "title": "Momcozy S12 Pro und S12 Pro Quick: Generation und Zubehör unterscheiden",
+      "description": "Welche Änderungen Momcozy für die S12 Pro Quick dokumentiert und warum ursprüngliche S12-Pro-Angebote und Ersatzteile separat geprüft werden müssen.",
+      "category": "Modellwissen",
+      "productIds": [
+        "momcozy-s12-pro"
+      ]
+    },
+    {
+      "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+      "title": "Medela Freestyle Hands-free: Drei Cup-Teile richtig reinigen",
+      "description": "Was die Drei-Teile-Angabe umfasst, wie der O-Ring einzuordnen ist und welcher Wasch-, Trocknungs- und Desinfektionsablauf dokumentiert ist.",
+      "category": "Zubehör & Pflege",
+      "productIds": [
+        "medela-freestyle"
+      ]
+    },
+    {
+      "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+      "title": "Medela Freestyle Hands-free: Warum Motor und Schläuche außerhalb des BHs bleiben",
+      "description": "Die Freestyle-Bauweise verstehen: separate Motoreinheit, Luftweg über Schläuche, milchführende Cups und praktische Grenzen von Hands-free.",
+      "category": "Modellwissen",
+      "productIds": [
+        "medela-freestyle"
+      ]
+    },
+    {
+      "slug": "philips-avent-scf547-11-oder-scd553-11",
+      "title": "Philips Avent SCF547/11 oder SCD553/11: Den Setinhalt statt den Namen vergleichen",
+      "description": "Offizielle Lieferumfänge der Philips-Doppelpumpe und des Startersets: Größen, Beutel, Flasche, Stilleinlagen und Etui sauber auseinanderhalten.",
+      "category": "Kaufentscheidung",
+      "productIds": [
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "philips-avent-scf547-einsaetze-15-17-mm",
+      "title": "Philips Avent SCF547/11: 15- und 17-mm-Einsätze SCF554/11 zuordnen",
+      "description": "Kleine Philips-Einsätze erkennen: SCF554/11 ist für 15 und 17 mm vorgesehen und wird mit 21-mm-Brustkissen und kompatiblen Hands-free-Cups kombiniert.",
+      "category": "Zubehör & Pflege",
+      "productIds": [
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "elvie-pump-single-oder-double",
+      "title": "Elvie Pump Single oder Double: Eine oder zwei vollständige Pumpeneinheiten?",
+      "description": "Elvie Pump Single und Double unterscheiden: Hub-Anzahl, Lieferumfang, gleichzeitiges Pumpen und Reinigung statt einer pauschalen Effizienzempfehlung.",
+      "category": "Kaufentscheidung",
+      "productIds": [
+        "elvie-pump-single"
+      ]
+    },
+    {
+      "slug": "elvie-pump-oder-elvie-stride",
+      "title": "Elvie Pump oder Elvie Stride: All-in-one oder externer Motor?",
+      "description": "Elvie Pump und ursprüngliche Elvie Stride nach Bauweise, Hub-Anzahl, App-Funktionen und Setumfang vergleichen – getrennt von Stride 2.",
+      "category": "Modellwissen",
+      "productIds": [
+        "elvie-pump-single"
+      ]
+    },
+    {
+      "slug": "haakaa-generation-3-oder-generation-2",
+      "title": "Haakaa Generation 3 oder Generation 2: Modular oder aus einem Stück?",
+      "description": "Haakaa Gen 3 mit abnehmbarer Silikonflasche und Gen 2 mit einteiligem Körper unterscheiden: Bauform, Zubehör, Kapazität und Pflegehinweise.",
+      "category": "Modellwissen",
+      "productIds": [
+        "haakaa-gen3"
+      ]
+    },
+    {
+      "slug": "haakaa-generation-3-groessen",
+      "title": "Haakaa Generation 3 Größen: 160 ml, 250 ml und Kit-Varianten richtig lesen",
+      "description": "Offiziell dokumentierte Haakaa-Gen-3-Kapazitäten und das 160-ml-Pump-and-Bottle-Pack einordnen, ohne deutsche Verfügbarkeit oder universelle Aufsätze anzunehmen.",
+      "category": "Kaufentscheidung",
+      "productIds": [
+        "haakaa-gen3"
+      ]
+    },
+    {
+      "slug": "milchpumpe-app-datenschutz",
+      "title": "Milchpumpe mit App: Datenschutz bei Momcozy M9, Elvie und Medela prüfen",
+      "description": "App-Steuerung und Dokumentation unterscheiden: M9, Pump with Elvie und Medela Family nach Datenarten, Berechtigungen und Löschwegen einordnen.",
+      "category": "Kaufentscheidung",
+      "productIds": [
+        "momcozy-m9",
+        "elvie-pump-single",
+        "medela-freestyle"
+      ]
+    },
+    {
+      "slug": "milchpumpe-ersatzteile-ventile-membranen",
+      "title": "Milchpumpen-Ersatzteile: Ventile und Membranen für M9, Medela und Avent",
+      "description": "M9-Entenschnabelventile, Medela-Hands-free-Membranen und Philips CP2203/01 sowie CP2218/01 modellbezogen zuordnen statt universelle Sets kaufen.",
+      "category": "Zubehör & Pflege",
+      "productIds": [
+        "momcozy-m9",
+        "medela-freestyle",
+        "philips-avent-scf547"
+      ]
+    },
+    {
+      "slug": "milchpumpe-lautstaerke-herstellerangaben",
+      "title": "Milchpumpen-Lautstärke: Warum Hersteller-dB keinen unabhängigen Vergleich ersetzen",
+      "description": "M9-Angaben von ≤48 dB und ≤42 dB sowie Elvies Lautstärkewerbung richtig zuordnen: Quellenstand, Messbedingungen und Generation statt scheinbarer Testsieger.",
+      "category": "Modellwissen",
+      "productIds": [
+        "momcozy-m9",
+        "elvie-pump-single",
+        "philips-avent-scf547"
+      ]
+    }
+  ]
+}

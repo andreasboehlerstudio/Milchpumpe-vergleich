@@ -118,6 +118,13 @@
 .magazine-upgrade .mu-pair-controls legend { font-size: .875rem; padding: 0 0 18px; color: var(--mu-deep); }
 .magazine-upgrade .mu-select-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .magazine-upgrade .mu-pair-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.magazine-upgrade .mu-share-panel { margin-top: 22px; }
+.magazine-upgrade .mu-share-panel label { display: block; font-size: .875rem; margin-bottom: 8px; color: var(--mu-deep); }
+.magazine-upgrade .mu-share-panel textarea { field-sizing: content; width: 100%; max-width: 100%; min-height: 92px; resize: vertical; padding: 12px; border: 1px solid #9bb7ac; border-radius: 10px; background: var(--mu-paper); color: var(--mu-ink); font: inherit; font-size: .875rem; line-height: 1.7; overflow-wrap: anywhere; }
+.magazine-upgrade #mu-share-status { font-size: .875rem; }
+.magazine-upgrade #mu-share-status:empty { margin: 0; }
+.magazine-upgrade .mu-search-help { font-size: .875rem; }
+.magazine-upgrade .mu-pair-actions button:disabled { cursor: progress; opacity: .7; }
 .magazine-upgrade .mu-manual-warning { padding: 18px 22px; border-left: 3px solid #b55c46; background: #fbe5dc; }
 .magazine-upgrade .mu-differences-control { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 6px 10px; align-items: center; margin-block: 24px 30px; }
 .magazine-upgrade .mu-differences-control input { width: 20px; height: 20px; accent-color: var(--mu-petrol); margin: 0; }

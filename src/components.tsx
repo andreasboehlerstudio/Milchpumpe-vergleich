@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { Check, Cookie, ExternalLink, Menu, ShieldCheck, X } from 'lucide-react';
 import { getConsent, loadAnalytics, resetConsent, setConsent, trackAffiliateClick } from './analytics';
-import { CONTACT_EMAIL, PRODUCTS, type Product, amazonUrl, productUrl } from './data';
+import { CONTACT_EMAIL, PRODUCTS, type Product, amazonUrl, productUrl } from './product-data';
 
 export function ProductVisual({ product, compact = false }: { product: Product; compact?: boolean }) {
   const manual = product.id === 'haakaa-gen3';
@@ -273,6 +273,9 @@ function EditorialFooter() {
     </footer>
   );
 }
+
+// Shared by the fail-safe bootstrap without importing any page family.
+export { CookieConsent as RouteLoadingConsent };
 
 export function Layout({ children, variant = 'standard' }: { children: ReactNode; variant?: 'standard' | 'editorial' | 'editorial-inner' }) {
   if (variant === 'editorial' || variant === 'editorial-inner') {

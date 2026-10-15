@@ -5,8 +5,8 @@ import { existsSync, readFileSync } from 'node:fs';
 import { Window, type HTMLInputElement as HappyInput, type HTMLSelectElement as HappySelect } from 'happy-dom';
 import { act, StrictMode, type ReactNode } from 'react';
 
-async function mount(content: ReactNode) {
-  const window = new Window({ url: 'http://localhost/' });
+async function mount(content: ReactNode, url = 'http://localhost/') {
+  const window = new Window({ url });
   const overrides = { window, document: window.document, HTMLElement: window.HTMLElement, Element: window.Element, Node: window.Node, Event: window.Event, IS_REACT_ACT_ENVIRONMENT: true };
   const previous = new Map(Object.keys(overrides).map(key => [key, Object.getOwnPropertyDescriptor(globalThis, key)]));
   for (const [key, value] of Object.entries(overrides)) Object.defineProperty(globalThis, key, { configurable: true, writable: true, value });
@@ -258,6 +258,93 @@ test('intent jump links recover filtered-out sections and native search forms do
     }
     assert.equal(app.document.querySelectorAll('[tabindex]:not([tabindex="0"]):not([tabindex="-1"])').length, 0);
   } finally { await app.cleanup(); }
+});
+
+test('magazine search accepts German transliterations and Escape clears only the search without losing its topic', async () => {
+  const { MagazineGuideHub } = await loadUpgrade();
+  const app = await mount(<MagazineGuideHub />);
+  try {
+    const input = app.document.querySelector<HappyInput>('#mu-guide-search')!;
+    const visible = () => [...app.document.querySelectorAll('[data-guide-slug]')].filter(row => !row.hasAttribute('hidden'));
+    for (const [query, slug] of [[' FLANSCHGROESSE ', 'richtige-flanschgroesse'], ['schlaeuche', 'medela-freestyle-hands-free-schlaeuche-motor']]) {
+      input.value = query;
+      await act(async () => input.dispatchEvent(new app.window.Event('input', { bubbles: true })));
+      assert.ok(visible().some(row => row.getAttribute('data-guide-slug') === slug), `${query} should find ${slug}`);
+    }
+    const topic = app.document.querySelector<HappySelect>('#mu-guide-topic')!;
+    topic.value = 'Passform & Anwendung';
+    await act(async () => topic.dispatchEvent(new app.window.Event('change', { bubbles: true })));
+    input.focus();
+    await act(async () => input.dispatchEvent(new app.window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true })));
+    assert.equal(input.value, '');
+    assert.equal(topic.value, 'Passform & Anwendung');
+    assert.equal(app.document.activeElement?.id, 'mu-guide-search');
+    assert.ok(visible().length > 0);
+    assert.ok(visible().every(row => row.getAttribute('data-guide-intent') === 'Passform & Anwendung'));
+  } finally { await app.cleanup(); }
+});
+
+test('comparison restores a linked selection, updates only its URL parameters, resets and handles history navigation', async () => {
+  const { VisualComparisonPage } = await loadUpgrade();
+  const app = await mount(<VisualComparisonPage />, 'https://milchpumpe-vergleich.de/vergleich/?utm_source=pinterest&modell-a=haakaa-gen3&modell-b=elvie-pump-single&unterschiede=0#mu-pair');
+  try {
+    const a = app.document.querySelector<HappySelect>('#mu-compare-a')!;
+    const b = app.document.querySelector<HappySelect>('#mu-compare-b')!;
+    assert.deepEqual([a.value, b.value], ['haakaa-gen3', 'elvie-pump-single']);
+    assert.equal(app.document.querySelector<HappyInput>('#mu-differences')!.checked, false);
+    await act(async () => (app.document.querySelector('#mu-compare-swap') as unknown as HTMLButtonElement).click());
+    assert.equal(new URL(app.window.location.href).searchParams.get('modell-a'), 'elvie-pump-single');
+    assert.equal(new URL(app.window.location.href).searchParams.get('utm_source'), 'pinterest');
+    assert.equal(app.window.location.hash, '#mu-pair');
+    await act(async () => (app.document.querySelector('#mu-compare-reset') as unknown as HTMLButtonElement).click());
+    assert.deepEqual([a.value, b.value], ['momcozy-m9', 'medela-freestyle']);
+    assert.equal(app.document.querySelector<HappyInput>('#mu-differences')!.checked, true);
+    assert.equal(app.window.location.search, '?utm_source=pinterest');
+    await act(async () => {
+      app.window.history.replaceState(null, '', '?modell-a=haakaa-gen3&modell-b=haakaa-gen3');
+      app.window.dispatchEvent(new app.window.PopStateEvent('popstate'));
+    });
+    assert.deepEqual([a.value, b.value], ['haakaa-gen3', 'haakaa-gen3']);
+    assert.match(app.document.querySelector('#mu-compare-status')!.textContent, /zweimal/);
+  } finally { await app.cleanup(); }
+});
+
+test('share control exposes a current manual-copy link when clipboard permission is unavailable', async () => {
+  const { VisualComparisonPage } = await loadUpgrade();
+  const app = await mount(<VisualComparisonPage />, 'https://milchpumpe-vergleich.de/vergleich/?utm_source=pin#mu-pair');
+  try {
+    Object.defineProperty(app.window.navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Permission denied'); } } });
+    const a = app.document.querySelector<HappySelect>('#mu-compare-a')!;
+    a.value = 'elvie-pump-single';
+    await act(async () => a.dispatchEvent(new app.window.Event('change', { bubbles: true })));
+    const button = app.document.querySelector('#mu-compare-share');
+    assert.ok(button, 'A clearly labelled share action is required');
+    await act(async () => (button as unknown as HTMLButtonElement).click());
+    const input = app.document.querySelector<HappyInput>('#mu-share-url')!;
+    assert.ok(input?.readOnly);
+    assert.equal(new URL(input.value).searchParams.get('modell-a'), 'elvie-pump-single');
+    assert.equal(new URL(input.value).searchParams.get('utm_source'), 'pin');
+    assert.match(app.document.querySelector('#mu-share-status')!.textContent, /markieren.*kopieren/i);
+    assert.equal(app.document.querySelector('#mu-share-status')!.getAttribute('role'), 'status');
+    a.value = 'haakaa-gen3';
+    await act(async () => a.dispatchEvent(new app.window.Event('change', { bubbles: true })));
+    assert.equal(new URL(input.value).searchParams.get('modell-a'), 'haakaa-gen3', 'An open share link must not become stale');
+    assert.equal(app.document.querySelector('#mu-share-status')!.textContent, '');
+  } finally { await app.cleanup(); }
+});
+
+test('narrow comparison choices keep exact generation and region codes without overlong redundant wording', async () => {
+  const { VisualComparisonPage } = await loadUpgrade();
+  const document = parse(renderToStaticMarkup(<VisualComparisonPage />));
+  for (const select of document.querySelectorAll('#mu-compare-a, #mu-compare-b')) {
+    assert.equal(select.querySelector('option[value="philips-avent-scf547"]')!.textContent, 'Philips Avent SCF547/11');
+    assert.equal(select.querySelector('option[value="haakaa-gen3"]')!.textContent, 'Haakaa Generation 3');
+    assert.match(select.querySelector('option[value="elvie-pump-single"]')!.textContent, /Single/);
+  }
+  for (const id of ['philips-avent-scf547', 'haakaa-gen3']) {
+    const product = PRODUCTS.find(product => product.id === id)!;
+    assert.ok(document.querySelector(`[data-detail-model="${id}"]`)!.textContent.includes(`${product.brand} ${product.name}`));
+  }
 });
 
 test('page H1s preserve natural word boundaries for accessibility and route metadata', async () => {
