@@ -1,3 +1,4 @@
+import { normalizePath } from './route-path';
 import { GUIDE_ARTICLES, PRODUCTS, REVIEW_DATE_ISO, SITE_URL, productUrl } from './data';
 import { EDITORIAL_GUIDES } from './guides';
 import { GUIDE_SEARCH_TITLES } from './search-intents';
@@ -123,10 +124,7 @@ const GUIDE_ROUTES: RouteSeo[] = GUIDE_ARTICLES.map((article) => ({
 
 export const ROUTES = [...STATIC_ROUTES, ...PRODUCT_ROUTES, ...GUIDE_ROUTES];
 
-export function normalizePath(path: string) {
-  const clean = path.split('?')[0].split('#')[0].replace(/\/+/g, '/');
-  return clean === '/' ? '/' : `${clean.replace(/\/$/, '')}/`;
-}
+export { normalizePath } from './route-path';
 
 export function getRouteSeo(path: string): RouteSeo {
   const normalized = normalizePath(path);

@@ -44,6 +44,14 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 15. Oktober 2026 – Gezielt laden und Vergleiche wieder öffnen
+
+- Browser lädt nur die benötigte Seitenfamilie statt sämtliche Ratgeber-, Katalog- und Marktdaten auf jeder Seite. Vollständiges vorgerendertes HTML und derselbe Seitenbaum bleiben erhalten; Cookie-Auswahl funktioniert auch bei verzögertem oder fehlgeschlagenem Seitenmodul.
+- Vergleichsauswahl über kontrollierte Modell-IDs in Links wiederherstellbar gemacht; Tauschen, Zurücksetzen und Zurück-/Vorwärtsnavigation berücksichtigen den URL-Zustand. Linkkopie mit beschriftetem manuellem Ersatzweg ergänzt.
+- Ratgebersuche versteht Umlaute und ae/oe/ue/ss; Escape leert nur die Suche und erhält das gewählte Thema. Freie Suchbegriffe werden nicht zusätzlich gespeichert oder in die URL geschrieben.
+- Zwei zu lange mobile Auswahllabels gekürzt, ohne Generation, Single-Variante oder Regionscode zu verlieren. Vollständige Namen und Fakten stehen weiterhin an den Modellkarten.
+- Bestehende 50 Inhaltsrouten, 35 Ratgeber, genaue Modell-/Setdaten, Quellen und Affiliate-Ziele unverändert erhalten. Newsletter bleibt bis zu echten Zustell-/DOI-Nachweisen deaktiviert.
+
 ### 15. Oktober 2026 – Magazin, Direktvergleich und PDF-Kaufcheck
 
 - Ratgeber-Einstieg als Magazin mit drei Alltagsthemen, Fotostorys, Suche und Themenfilter ausgebaut; alle 35 Artikel bleiben bereits ohne JavaScript crawlbar.

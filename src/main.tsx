@@ -1,6 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
-import App from './App';
+import { RouteView } from './route-view';
+import { loadRoute } from './route-loader';
+import { RouteLoadingConsent } from './components';
 import './index.css';
 import './editorial.css';
 import './visual-editorial.css';
@@ -17,14 +19,23 @@ if (!container) {
   throw new Error('Root element not found');
 }
 
-const app = (
-  <StrictMode>
-    <App initialPath={window.location.pathname} />
-  </StrictMode>
-);
+// This independent, empty sibling never touches the complete SSR subtree. It keeps
+// consent available during a slow/failed import, including the SSR footer control.
+const consentContainer = document.createElement('div');
+document.body.appendChild(consentContainer);
+const consentRoot = createRoot(consentContainer);
+consentRoot.render(<StrictMode><RouteLoadingConsent /></StrictMode>);
+const cookieButton = document.getElementById('cookie-settings');
+const reopenCookies = () => window.dispatchEvent(new Event('open-cookie-settings'));
+cookieButton?.addEventListener('click', reopenCookies);
 
-if (container.hasChildNodes()) {
-  hydrateRoot(container, app);
-} else {
-  createRoot(container).render(app);
-}
+// Keep complete prerendered markup untouched until the selected family is ready.
+const initialPath = window.location.pathname;
+loadRoute(initialPath).then(Page => {
+  cookieButton?.removeEventListener('click', reopenCookies);
+  consentRoot.unmount();
+  consentContainer.remove();
+  const app = <StrictMode><RouteView initialPath={initialPath} Page={Page} /></StrictMode>;
+  if (container.hasChildNodes()) hydrateRoot(container, app);
+  else createRoot(container).render(app);
+}).catch(error => console.error('Route hydration unavailable; retaining server content.', error));

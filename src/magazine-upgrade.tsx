@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { Breadcrumbs, ProductVisual, SourceLink } from './components';
 import { GUIDE_ARTICLES, PRODUCTS, productUrl, type GuideSummary, type Product } from './data';
@@ -7,9 +7,14 @@ import { EDITORIAL_GUIDES } from './guides';
 import { WEARABLE_MARKET } from './wearable-market';
 import { responsiveEditorialPhoto } from './responsive-editorial-photos';
 import { EDITORIAL_ART, EditorialImage } from './editorial-images';
+import { buildComparisonUrl, DEFAULT_COMPARISON_PAIR, readComparisonSelection } from './comparison-url';
 
 const INTENTS = ['Auswählen & vergleichen', 'Passform & Anwendung', 'Muttermilch im Alltag'] as const;
 type Intent = typeof INTENTS[number];
+
+function normalizeGuideSearch(value: string): string {
+  return value.normalize('NFC').toLocaleLowerCase('de').replaceAll('ä', 'ae').replaceAll('ö', 'oe').replaceAll('ü', 'ue').replaceAll('ß', 'ss').replace(/\s+/g, ' ').trim();
+}
 
 function intentFor(article: GuideSummary): Intent {
   if (article.category === 'Muttermilch-Alltag' || article.slug === 'milchpumpe-fuer-unterwegs') return INTENTS[2];
@@ -19,10 +24,17 @@ function intentFor(article: GuideSummary): Intent {
 
 const ELECTRIC_MODELS = PRODUCTS.filter(product => product.category.startsWith('Elektrisch'));
 const MANUAL_MODELS = PRODUCTS.filter(product => !product.category.startsWith('Elektrisch'));
+const MODEL_IDS = PRODUCTS.map(product => product.id);
 const FACT_ROWS = [
   ['focus', 'Schwerpunkt'], ['category', 'Bauart'], ['set', 'Ausführung'], ['app', 'App vorhanden'],
   ['energy', 'Energie'], ['wearStyle', 'Trageweise'], ['cleaning', 'Reinigung'],
 ] as const;
+
+function modelSelectLabel(product: Product): string {
+  if (product.id === 'philips-avent-scf547') return 'Philips Avent SCF547/11';
+  if (product.id === 'haakaa-gen3') return 'Haakaa Generation 3';
+  return `${product.brand} ${product.name}`;
+}
 
 function ModelFacts({ product, other, emphasize = false }: { product: Product; other?: Product; emphasize?: boolean }) {
   return <dl className="mu-facts">{FACT_ROWS.map(([key, label]) => {
@@ -42,20 +54,62 @@ function ModelDetail({ product, compareSide, other, emphasize }: { product: Prod
 }
 
 export function VisualComparisonPage({ footerSlot }: { footerSlot?: ReactNode } = {}) {
-  const [pair, setPair] = useState<readonly [string, string]>(['momcozy-m9', 'medela-freestyle']);
+  const [pair, setPair] = useState<readonly [string, string]>(DEFAULT_COMPARISON_PAIR);
   const [emphasize, setEmphasize] = useState(true);
+  const [shareUrl, setShareUrl] = useState('');
+  const [shareStatus, setShareStatus] = useState('');
+  const [copying, setCopying] = useState(false);
+  const selectionRevision = useRef(0);
   const firstSelect = useRef<HTMLSelectElement>(null);
   const left = PRODUCTS.find(product => product.id === pair[0])!;
   const right = PRODUCTS.find(product => product.id === pair[1])!;
-  const resetPair = () => { setPair(['momcozy-m9', 'medela-freestyle']); firstSelect.current?.focus(); };
+  useEffect(() => {
+    const target = window;
+    const restore = () => {
+      const selection = readComparisonSelection(target.location.search, MODEL_IDS);
+      selectionRevision.current += 1;
+      setPair(selection.pair);
+      setEmphasize(selection.emphasize);
+      setShareUrl(current => current ? buildComparisonUrl(target.location.href, selection, MODEL_IDS) : '');
+      setShareStatus('');
+    };
+    restore();
+    target.addEventListener('popstate', restore);
+    return () => target.removeEventListener('popstate', restore);
+  }, []);
+  const updateSelection = (next: readonly [string, string], nextEmphasis = emphasize) => {
+    const url = buildComparisonUrl(window.location.href, { pair: next, emphasize: nextEmphasis }, MODEL_IDS);
+    selectionRevision.current += 1;
+    setPair(next);
+    setEmphasize(nextEmphasis);
+    setShareUrl(current => current ? url : '');
+    setShareStatus('');
+    window.history.replaceState(window.history.state, '', url);
+  };
+  const copySelection = async () => {
+    const url = buildComparisonUrl(window.location.href, { pair, emphasize }, MODEL_IDS);
+    const revision = selectionRevision.current;
+    setShareUrl(url);
+    setCopying(true);
+    try {
+      if (!window.navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await window.navigator.clipboard.writeText(url);
+      if (selectionRevision.current === revision) setShareStatus('Link zu deiner Auswahl kopiert.');
+    } catch {
+      if (selectionRevision.current === revision) setShareStatus('Du kannst den Link unten markieren und kopieren.');
+    } finally { setCopying(false); }
+  };
+  const resetPair = () => { updateSelection(DEFAULT_COMPARISON_PAIR, true); firstSelect.current?.focus(); };
   return <main id="inhalt" className="magazine-upgrade mu-comparison">
     <section className="mu-section mu-intro"><Breadcrumbs items={[{ href: '/vergleich/', label: 'Vergleich' }]} /><p className="mu-kicker">Funktionen statt Gesamtnoten</p><h1>Was unterscheidet<br /> <em>deine Auswahl?</em></h1><p className="mu-lead">Sechs ausgewählte Detailmodelle: fünf elektrische Milchpumpen und Haakaa als manuelle Ergänzung. Vergleiche dokumentierte Merkmale – nicht versprochene Milchmengen.</p><div className="mu-actions"><a href="#mu-electric-models" className="mu-button">Die fünf elektrischen Modelle →</a><a href="#mu-manual-models">Haakaa manuell einordnen →</a></div></section>
     <aside className="mu-section mu-market-note"><h2>Sechs Detailmodelle ≠ der ganze Markt.</h2><p>Der größere Überblick enthält {WEARABLE_MARKET.models.length} recherchierte elektrische Wearables und Hands-free-Systeme. Diese Detailauswahl ist keine Rangliste und keine vollständige Marktübersicht.</p><a href="/tragbare-milchpumpen/">Alle {WEARABLE_MARKET.models.length} recherchierten Modelle und ihre Quellen →</a></aside>
     <section className="mu-section mu-pair" id="mu-pair" aria-labelledby="mu-pair-title"><header className="mu-section-heading"><div><p className="mu-kicker">Zwei Modelle, deine Prioritäten</p><h2 id="mu-pair-title">Direkt nebeneinander.</h2></div><a href="#mu-electric-models">Alle Merkmale der sechs Detailmodelle ↓</a></header><p id="mu-compare-scope">Wählbar sind die sechs Detailmodelle dieser Seite, nicht alle {WEARABLE_MARKET.models.length} Modelle des Marktüberblicks.</p>
-      <form className="mu-pair-controls" onSubmit={event => event.preventDefault()} aria-label="Zwei Detailmodelle auswählen"><fieldset><legend>Deine Gegenüberstellung</legend><div className="mu-select-pair">{(['a', 'b'] as const).map((side, index) => <div key={side}><label htmlFor={`mu-compare-${side}`}>Modell {side.toUpperCase()}</label><select ref={side === 'a' ? firstSelect : undefined} id={`mu-compare-${side}`} value={pair[index]} aria-describedby="mu-compare-scope" aria-controls="mu-pair-results" onChange={event => setPair(current => index === 0 ? [event.target.value, current[1]] : [current[0], event.target.value])}><optgroup label="Elektrisch · 5 Modelle">{ELECTRIC_MODELS.map(product => <option key={product.id} value={product.id}>{product.brand} {product.name}</option>)}</optgroup><optgroup label="Manuell · separat einordnen">{MANUAL_MODELS.map(product => <option key={product.id} value={product.id}>{product.brand} {product.name}</option>)}</optgroup></select></div>)}</div></fieldset><div className="mu-pair-actions"><button type="button" id="mu-compare-swap" onClick={() => setPair(current => [current[1], current[0]])}>Modelle tauschen ↔</button><button type="button" id="mu-compare-reset" onClick={resetPair}>Auswahl zurücksetzen</button></div></form>
+      <form className="mu-pair-controls" onSubmit={event => event.preventDefault()} aria-label="Zwei Detailmodelle auswählen"><fieldset><legend>Deine Gegenüberstellung</legend><div className="mu-select-pair">{(['a', 'b'] as const).map((side, index) => <div key={side}><label htmlFor={`mu-compare-${side}`}>Modell {side.toUpperCase()}</label><select ref={side === 'a' ? firstSelect : undefined} id={`mu-compare-${side}`} value={pair[index]} aria-describedby="mu-compare-scope" aria-controls="mu-pair-results" onChange={event => updateSelection(index === 0 ? [event.target.value, pair[1]] : [pair[0], event.target.value])}><optgroup label="Elektrisch · 5 Modelle">{ELECTRIC_MODELS.map(product => <option key={product.id} value={product.id} title={`${product.brand} ${product.name}`}>{modelSelectLabel(product)}</option>)}</optgroup><optgroup label="Manuell · separat einordnen">{MANUAL_MODELS.map(product => <option key={product.id} value={product.id} title={`${product.brand} ${product.name}`}>{modelSelectLabel(product)}</option>)}</optgroup></select></div>)}</div></fieldset><div className="mu-pair-actions"><button type="button" id="mu-compare-swap" onClick={() => updateSelection([pair[1], pair[0]])}>Modelle tauschen ↔</button><button type="button" id="mu-compare-reset" onClick={resetPair}>Auswahl zurücksetzen</button><button type="button" id="mu-compare-share" disabled={copying} onClick={copySelection}>{copying ? 'Link wird kopiert …' : 'Auswahl-Link kopieren'}</button></div></form>
+      {shareUrl && <div className="mu-share-panel"><label htmlFor="mu-share-url">Link zu deiner aktuellen Auswahl</label><textarea id="mu-share-url" rows={5} readOnly value={shareUrl} onFocus={event => event.currentTarget.select()} aria-describedby="mu-share-status" /></div>}
+      <p id="mu-share-status" role="status" aria-live="polite" aria-atomic="true">{shareStatus}</p>
       <p id="mu-compare-status" role="status" aria-live="polite" aria-atomic="true">{left.id === right.id ? `Du hast zweimal dasselbe Modell ausgewählt: ${left.brand} ${left.name}. Wähle ein anderes Modell für die Gegenüberstellung.` : `${left.brand} ${left.name} und ${right.brand} ${right.name} im Vergleich.`}</p>
       <p id="mu-manual-warning" className="mu-manual-warning" hidden={!MANUAL_MODELS.some(product => pair.includes(product.id))}>Manuelle Einordnung: Haakaa hat keinen Motor und keine geregelten Pumpzyklen. Ein Merkmalsvergleich bedeutet nicht, dass sie eine elektrische Doppelpumpe ersetzt.</p>
-      <div className="mu-differences-control"><input id="mu-differences" type="checkbox" checked={emphasize} onChange={event => setEmphasize(event.target.checked)} aria-describedby="mu-differences-note" /><label htmlFor="mu-differences">Unterschiede hervorheben</label><p id="mu-differences-note">Markiert abweichende Angaben in den sieben Kernmerkmalen. Gleiche Angaben und alle weiteren Fakten bleiben sichtbar; keine Bewertung der Pumpenleistung.</p></div>
+      <div className="mu-differences-control"><input id="mu-differences" type="checkbox" checked={emphasize} onChange={event => updateSelection(pair, event.target.checked)} aria-describedby="mu-differences-note" /><label htmlFor="mu-differences">Unterschiede hervorheben</label><p id="mu-differences-note">Markiert abweichende Angaben in den sieben Kernmerkmalen. Gleiche Angaben und alle weiteren Fakten bleiben sichtbar; keine Bewertung der Pumpenleistung.</p></div>
       <div className="mu-pair-grid" id="mu-pair-results"><ModelDetail product={left} compareSide="a" other={right} emphasize={emphasize} /><ModelDetail product={right} compareSide="b" other={left} emphasize={emphasize} /></div>
     </section>
     <section className="mu-section" id="mu-electric-models" aria-labelledby="mu-electric-title"><p className="mu-kicker">Elektrisch · fünf Modelle</p><h2 id="mu-electric-title">Die vollständigen Merkmale.</h2><p>Ausführung, App, Energie, Bauart und Reinigung bleiben für alle fünf elektrischen Modelle zugänglich – auch ohne JavaScript.</p><div className="mu-detail-grid">{ELECTRIC_MODELS.map(product => <ModelDetail product={product} key={product.id} />)}</div></section>
@@ -70,7 +124,7 @@ export function MagazineGuideHub({ footerSlot }: { footerSlot?: ReactNode } = {}
   const [query, setQuery] = useState('');
   const [topic, setTopic] = useState('');
   const searchRef = useRef<HTMLInputElement>(null);
-  const matches = (article: GuideSummary) => (!topic || intentFor(article) === topic) && `${article.title} ${article.description}`.toLocaleLowerCase('de').includes(query.trim().toLocaleLowerCase('de'));
+  const matches = (article: GuideSummary) => (!topic || intentFor(article) === topic) && normalizeGuideSearch(`${article.title} ${article.description}`).includes(normalizeGuideSearch(query));
   const visibleCount = GUIDE_ARTICLES.filter(matches).length;
   const reset = () => { setQuery(''); setTopic(''); searchRef.current?.focus(); };
   return <main id="inhalt" className="magazine-upgrade">
@@ -93,10 +147,11 @@ export function MagazineGuideHub({ footerSlot }: { footerSlot?: ReactNode } = {}
     <section className="mu-section mu-library" id="artikel" aria-labelledby="mu-library-title">
       <header className="mu-section-heading"><div><p className="mu-kicker">Antworten statt offener Tabs</p><h2 id="mu-library-title">Die Ratgeber-Bibliothek</h2></div><span>{GUIDE_ARTICLES.length} Artikel</span></header>
       <form className="mu-filters" onSubmit={event => event.preventDefault()} role="search" aria-label="Ratgeber filtern">
-        <div><label htmlFor="mu-guide-search">Ratgeber durchsuchen</label><input ref={searchRef} id="mu-guide-search" type="search" value={query} onInput={event => setQuery(event.currentTarget.value)} placeholder="z. B. Reinigung oder M9" aria-controls="mu-guide-results" /></div>
+        <div><label htmlFor="mu-guide-search">Ratgeber durchsuchen</label><input ref={searchRef} id="mu-guide-search" type="search" value={query} onInput={event => setQuery(event.currentTarget.value)} onKeyDown={event => { if (event.key === 'Escape') { event.preventDefault(); setQuery(''); } }} placeholder="z. B. Reinigung oder M9" aria-describedby="mu-guide-search-help" aria-controls="mu-guide-results" /></div>
         <div><label htmlFor="mu-guide-topic">Thema</label><select id="mu-guide-topic" value={topic} onChange={event => setTopic(event.target.value)} aria-controls="mu-guide-results"><option value="">Alle Themen</option>{INTENTS.map(intent => <option key={intent}>{intent}</option>)}</select></div>
         <button id="mu-guide-reset" type="button" onClick={reset}>Filter zurücksetzen</button>
       </form>
+      <p id="mu-guide-search-help" className="mu-search-help">Tipp: „Flanschgroesse“ findet auch „Flanschgröße“. Mit Esc leerst du nur die Suche; dein Thema bleibt ausgewählt.</p>
       <p id="mu-guide-status" role="status" aria-live="polite" aria-atomic="true">{visibleCount} von {GUIDE_ARTICLES.length} Artikeln{topic ? ` · ${topic}` : ''}{query.trim() ? ` · Suche: „${query.trim()}“` : ''}</p>
       <p id="mu-guide-empty" hidden={visibleCount !== 0}>Kein passender Artikel gefunden. Versuche einen allgemeineren Suchbegriff oder setze die Filter zurück.</p>
       <div id="mu-guide-results">{INTENTS.map((intent, index) => <section className="mu-library-group" id={`magazin-thema-${index + 1}`} key={intent} hidden={!GUIDE_ARTICLES.some(article => intentFor(article) === intent && matches(article))}><h3>{intent}</h3><div className="mu-library-list">{GUIDE_ARTICLES.filter(article => intentFor(article) === intent).map(article => <article key={article.slug} data-guide-slug={article.slug} data-guide-intent={intent} hidden={!matches(article)}><a href={`/ratgeber/${article.slug}/`}>{EDITORIAL_ART.some(asset => asset.articleSlug === article.slug) && <EditorialImage slug={article.slug} title={article.title} />}<h4>{article.title}</h4><p>{article.description}</p><span>Artikel lesen <ArrowRight size={15} aria-hidden="true" /></span></a></article>)}</div></section>)}</div>
