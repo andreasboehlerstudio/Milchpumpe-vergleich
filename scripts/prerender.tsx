@@ -19,7 +19,7 @@ function pageHtml(routePath: string) {
   const jsonLd = JSON.stringify(getStructuredData(routePath)).replaceAll('<', '\u003c');
   const isArticle = seo.path.startsWith('/ratgeber/') && seo.path !== '/ratgeber/' && !seo.noindex;
   const image = `${SITE_URL}${seo.image || '/og-cover.png'}`;
-  const articleMeta = isArticle ? `<meta name="author" content="Andreas Böhler" /><meta property="article:author" content="${SITE_URL}/ueber-uns/" /><meta property="article:published_time" content="${seo.datePublished || REVIEW_DATE_ISO}" /><meta property="article:modified_time" content="${seo.dateModified || REVIEW_DATE_ISO}" />` : '';
+  const articleMeta = isArticle ? `<meta name="author" content="Andreas Böhler" /><meta property="article:author" content="${SITE_URL}/ueber-uns/" />${seo.datePublished ? `<meta property="article:published_time" content="${seo.datePublished}" />` : ''}<meta property="article:modified_time" content="${seo.dateModified || REVIEW_DATE_ISO}" />` : '';
 
   return template
     .replace(/<title>.*?<\/title>/, `<title>${escapeHtml(seo.title)}</title>`)

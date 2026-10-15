@@ -53,7 +53,7 @@ test('the complete guide library includes the six topic illustrations as crawlab
   const html = renderToStaticMarkup(<App initialPath="/ratgeber/" />);
   const assets = JSON.parse(readFileSync('docs/editorial-art-v2.json', 'utf8'));
   for (const asset of assets) assert.ok(html.includes(`src="${asset.url}"`), `Library artwork missing for ${asset.articleSlug}`);
-  assert.ok(html.includes(`${GUIDE_ARTICLES.length} Artikel`));
+  assert.equal([...html.matchAll(/data-guide-slug=/g)].length, GUIDE_ARTICLES.length);
   assert.equal(new Set(GUIDE_ARTICLES.map(item => item.slug)).size, GUIDE_ARTICLES.length);
 });
 

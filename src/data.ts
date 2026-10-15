@@ -225,16 +225,19 @@ export const GUIDE_ARTICLES: GuideSummary[] = [
   {
     slug: 'richtige-flanschgroesse',
     title: 'Flanschgröße richtig einordnen',
+    updated: '2026-10-15',
     description: 'Warum die Passform wichtig ist, wie Hersteller messen lassen und wann fachliche Unterstützung sinnvoll ist.',
   },
   {
     slug: 'milchpumpe-reinigen',
     title: 'Milchpumpe hygienisch reinigen',
+    updated: '2026-10-15',
     description: 'Ein praktischer Ablauf auf Basis der Empfehlungen des Bundeszentrums für Ernährung.',
   },
   {
     slug: 'tragbar-oder-elektrisch',
     title: 'Tragbar, elektrisch oder manuell?',
+    updated: '2026-10-15',
     description: 'Die Pumpenarten nach Einsatzhäufigkeit, Bewegungsfreiheit und Reinigungsaufwand unterscheiden.',
   },
   ...milkGuides.map(guide => ({slug:guide.slug,title:guide.title,description:guide.description,published:guide.published,updated:guide.updated,category:guide.category,image:`/editorial/${guide.slug}-og.png`})),
