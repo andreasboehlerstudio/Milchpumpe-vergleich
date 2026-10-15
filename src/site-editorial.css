@@ -153,6 +153,30 @@
   .editorial-site > main .comparison-toolbar { align-items: flex-start; flex-direction: column; }
   .editorial-site > main .section-heading--row { align-items: flex-start; flex-direction: column; }
 }
+/* Article enrichment: image-led pauses, quiet captions and readable shortcuts. */
+.editorial-site > main .article-reading-tools { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .75rem 1.5rem; margin-block: 1.5rem; padding-block: .8rem; border-block: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+.editorial-site > main .article-reading-tools > div { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; }
+.editorial-site > main .article-reading-tools a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; color: var(--deep); }
+.editorial-site > main .article-toc ol { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .35rem 2.5rem; padding-left: 1.5rem; }
+.editorial-site > main .article-toc li { padding-left: .25rem; }
+.editorial-site > main .article-toc a { display: inline-flex; align-items: center; min-height: 44px; font-size: .95rem; line-height: 1.75; }
+.editorial-site > main .article-body .article-inline-visual { margin: 2.2rem 0 .25rem; border: 1px solid var(--line); border-radius: 44px 12px 30px 12px; background: var(--paper); box-shadow: 7px 8px 0 #e6f3e9; }
+.editorial-site > main .article-inline-image { padding: .65rem; background: var(--mint); border-radius: 44px 12px 0 0; }
+.editorial-site > main .article-inline-image img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: contain; border-radius: 35px 8px 8px 8px; }
+.editorial-site > main .article-inline-visual--photo .article-inline-image { padding: 1.1rem; background: #f8e6d5; }
+.editorial-site > main .article-inline-visual--photo .article-inline-image img { width: auto; max-width: 100%; margin-inline: auto; border-radius: 25px 8px 25px 8px; }
+.editorial-site > main .article-inline-visual figcaption { padding: 1.4rem clamp(1.1rem, 3vw, 1.8rem); overflow-wrap: anywhere; }
+.editorial-site > main .article-inline-visual .article-image-label { font-size: .8rem; letter-spacing: .055em; color: var(--petrol); font-weight: 500; }
+.editorial-site > main .article-inline-visual figcaption p { font-size: 1rem; line-height: 1.8; font-weight: 400; margin-block: .45rem .75rem; }
+.editorial-site > main .article-inline-visual figcaption small { display: block; font-size: .8rem; line-height: 1.8; color: var(--muted); }
+.editorial-site > main .article-page :is([id],section) { scroll-margin-top: 125px; }
+.editorial-site > main .article-inline-visual a:focus-visible, .editorial-site > main .article-reading-tools a:focus-visible { outline: 3px solid var(--petrol); outline-offset: 4px; border-radius: 3px; }
+@media (max-width: 760px) {
+  .editorial-site > main .article-toc ol { grid-template-columns: minmax(0,1fr); }
+  .editorial-site > main .article-reading-tools { align-items: flex-start; flex-direction: column; }
+  .editorial-site > main .article-body .article-inline-visual { box-shadow: 4px 5px 0 #e6f3e9; margin-right: 5px; }
+  .editorial-site > main .article-inline-image, .editorial-site > main .article-inline-visual--photo .article-inline-image { padding: .55rem; }
+}
 @media (max-width: 359px) {
   .editorial-site > main .section, .editorial-site > main :is(.article-page,.buying-article,.legal-page) { width: calc(100% - 32px); }
   .editorial-site > main .decision-board { box-shadow: 6px 7px 0 #f8e6d5; margin-right: 7px; }

@@ -44,6 +44,15 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 15. Oktober 2026 – Bilder und Leseführung in den Artikeln
+
+- Alle 35 Ratgeber mit zwei zusätzlichen, thematisch zugeordneten Abbildungen direkt im Lesefluss ergänzt; bestehende Titelmotive und Quellen bleiben erhalten.
+- Neue redaktionelle Vektorszenen erklären Bauart, Einzel-/Doppelset, Passformprüfung, Teilezuordnung, Reinigung, Vorrat und Transport. Sie sind keine Fotos konkreter Modelle.
+- Dokumentarische Themenfotos mit einzeln dokumentierter Gemeinfreiheit beziehungsweise CC-BY-SA-Lizenz lokal eingebunden; sichtbare Urheber-/Lizenzlinks und Bearbeitungshinweise sowie öffentliche Lizenzdatei ergänzt.
+- Fotos als kleine responsive WebP-Varianten ausgeliefert, Abmessungen reserviert und zusätzliche Artikelbilder verzögert geladen.
+- Geschätzte Lesezeit, direkte Sprünge zu Inhalt, Produktbeispielen und Quellen sowie ein auf großen Bildschirmen zweispaltiges Inhaltsverzeichnis ergänzt. Leichte Typografie und warme Gestaltung bleiben erhalten.
+- Öffentliche selbstreferenzielle Produktionshinweise bereinigt; medizinische Grenzen, Herstellerbelege, Werbekennzeichnung und Affiliate-Ziele bleiben bestehen.
+
 ### 15. Oktober 2026 – Klarerer Pumpeneinstieg und Direktvergleich
 
 - Freigegebenen Homepage-Feinschliff mit früherer Modellauswahl, klar beschrifteten Aufbau-/Bedienungsmerkmalen und nützlichem Einzel-/Doppelset-Hinweis übernommen.

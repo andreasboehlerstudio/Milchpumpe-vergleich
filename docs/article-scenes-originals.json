@@ -1,0 +1,90 @@
+[
+  {
+    "id": "clean-dry",
+    "src": "/article-scenes/clean-dry.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Einzelteile auf einem Abtropfgestell, Motor separat und ausgesteckt",
+    "description": "Originale schematische Illustration: getrennte Flasche, Brusthaube, Ventil und Membran auf einem sauberen Gestell. Der Motor liegt daneben; sein Stecker ist sichtbar nicht angeschlossen. Keine Anleitung für ein bestimmtes Modell.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "milk-portions",
+    "src": "/article-scenes/milk-portions.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Verschlossene Milchbeutel und Flaschen mit unbeschrifteten Etiketten",
+    "description": "Zwei geschlossene Milchbeutel und zwei geschlossene Flaschen stehen auf einer hellen Arbeitsfläche. Daneben liegen leere Etiketten. Die Illustration enthält keine Mengen-, Temperatur- oder Zeitangaben.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "cool-journey",
+    "src": "/article-scenes/cool-journey.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Geöffnete Kühltasche mit verschlossenen Flaschen und Kühlakkus",
+    "description": "Eine abstrakte isolierte Tragetasche mit offenem Deckel enthält zwei geschlossene Flaschen und zwei Kühlakkus. Keine Marke, keine zugesicherte Kühldauer und keine Temperaturangaben.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "pump-architecture",
+    "src": "/article-scenes/pump-architecture.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Schematischer Vergleich: integrierter Motor und separat verbundener Motor",
+    "description": "Links sitzt ein abstrakter Motor direkt auf einer Auffangschale. Rechts führt ein sichtbarer Schlauch von einer zweiten Schale zu einem separaten Motor. Die Formen stellen kein konkretes Produkt dar.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "single-double",
+    "src": "/article-scenes/single-double.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Ein vollständiges Pumpensystem gegenüber zwei vollständigen Systemen",
+    "description": "Links steht eine abstrakte vollständige Einheit aus Motor, Schlauch, Brusthaube und Flasche. Rechts stehen zwei solche vollständigen Einheiten. Schematischer Mengenvergleich ohne Produkt- oder Leistungsversprechen.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "fit-check",
+    "src": "/article-scenes/fit-check.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Brusthaube und Einsatz neben einem Lineal ohne Zahlen und einer leeren Modellkarte",
+    "description": "Eine generische Brusthaube und ein separater Einsatz liegen neben einem unbezifferten Lineal und einer unbeschrifteten Karte. Ohne Anatomiedarstellung, Größenempfehlung oder Zuordnung zu einem Modell.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "controls-privacy",
+    "src": "/article-scenes/controls-privacy.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Abstraktes Pumpenbedienfeld neben Smartphone mit Datenschutzschild",
+    "description": "Ein generisches Bediengerät mit einfachen Tasten steht neben einem Smartphone. Ein Schild mit Schloss überdeckt dessen ansonsten leere Fläche. Keine App-Oberfläche, keine Marke und keine Leistungs- oder Datenschutzgarantie.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  },
+  {
+    "id": "parts-identity",
+    "src": "/article-scenes/parts-identity.svg",
+    "width": 1200,
+    "height": 760,
+    "alt": "Unterschiedliche Ventil- und Membranformen mit Anleitung und leerem Modellanhänger",
+    "description": "Ein längliches Lippenventil und eine runde Membran sind klar getrennt dargestellt. Daneben liegen eine abstrakte aufgeschlagene Anleitung und ein unbeschrifteter Modellanhänger. Keine Aussage zur Kompatibilität bestimmter Ersatzteile.",
+    "creator": "Milchpumpe-Vergleich Redaktion",
+    "rights": "Original editorial vector illustration created for this website",
+    "kind": "editorial-illustration"
+  }
+]
