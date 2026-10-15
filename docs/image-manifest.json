@@ -1,0 +1,642 @@
+[
+  {
+    "slug": "momcozy-m9-oder-s12-pro",
+    "kind": "pin",
+    "path": "public\\editorial\\momcozy-m9-oder-s12-pro-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-m9-oder-s12-pro",
+    "kind": "og",
+    "path": "public\\editorial\\momcozy-m9-oder-s12-pro-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-oder-philips-avent",
+    "kind": "pin",
+    "path": "public\\editorial\\medela-freestyle-oder-philips-avent-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-oder-philips-avent",
+    "kind": "og",
+    "path": "public\\editorial\\medela-freestyle-oder-philips-avent-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "hands-free-milchpumpe-kaufen",
+    "kind": "pin",
+    "path": "public\\editorial\\hands-free-milchpumpe-kaufen-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "hands-free-milchpumpe-kaufen",
+    "kind": "og",
+    "path": "public\\editorial\\hands-free-milchpumpe-kaufen-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-fuer-unterwegs",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-fuer-unterwegs-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-fuer-unterwegs",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-fuer-unterwegs-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-einzel-oder-doppelpumpe",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-einzel-oder-doppelpumpe-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-einzel-oder-doppelpumpe",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-einzel-oder-doppelpumpe-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-zubehoer-checkliste",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-zubehoer-checkliste-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-zubehoer-checkliste",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-zubehoer-checkliste-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-m9-ohne-app",
+    "kind": "pin",
+    "path": "public\\editorial\\momcozy-m9-ohne-app-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-m9-ohne-app",
+    "kind": "og",
+    "path": "public\\editorial\\momcozy-m9-ohne-app-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-m9-einzel-oder-doppelset",
+    "kind": "pin",
+    "path": "public\\editorial\\momcozy-m9-einzel-oder-doppelset-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-m9-einzel-oder-doppelset",
+    "kind": "og",
+    "path": "public\\editorial\\momcozy-m9-einzel-oder-doppelset-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-s12-pro-quick-unterschiede",
+    "kind": "pin",
+    "path": "public\\editorial\\momcozy-s12-pro-quick-unterschiede-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "momcozy-s12-pro-quick-unterschiede",
+    "kind": "og",
+    "path": "public\\editorial\\momcozy-s12-pro-quick-unterschiede-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+    "kind": "pin",
+    "path": "public\\editorial\\medela-freestyle-hands-free-drei-teile-reinigung-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+    "kind": "og",
+    "path": "public\\editorial\\medela-freestyle-hands-free-drei-teile-reinigung-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+    "kind": "pin",
+    "path": "public\\editorial\\medela-freestyle-hands-free-schlaeuche-motor-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+    "kind": "og",
+    "path": "public\\editorial\\medela-freestyle-hands-free-schlaeuche-motor-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "philips-avent-scf547-11-oder-scd553-11",
+    "kind": "pin",
+    "path": "public\\editorial\\philips-avent-scf547-11-oder-scd553-11-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "philips-avent-scf547-11-oder-scd553-11",
+    "kind": "og",
+    "path": "public\\editorial\\philips-avent-scf547-11-oder-scd553-11-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "philips-avent-scf547-einsaetze-15-17-mm",
+    "kind": "pin",
+    "path": "public\\editorial\\philips-avent-scf547-einsaetze-15-17-mm-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "philips-avent-scf547-einsaetze-15-17-mm",
+    "kind": "og",
+    "path": "public\\editorial\\philips-avent-scf547-einsaetze-15-17-mm-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "elvie-pump-single-oder-double",
+    "kind": "pin",
+    "path": "public\\editorial\\elvie-pump-single-oder-double-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "elvie-pump-single-oder-double",
+    "kind": "og",
+    "path": "public\\editorial\\elvie-pump-single-oder-double-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "elvie-pump-oder-elvie-stride",
+    "kind": "pin",
+    "path": "public\\editorial\\elvie-pump-oder-elvie-stride-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "elvie-pump-oder-elvie-stride",
+    "kind": "og",
+    "path": "public\\editorial\\elvie-pump-oder-elvie-stride-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "haakaa-generation-3-oder-generation-2",
+    "kind": "pin",
+    "path": "public\\editorial\\haakaa-generation-3-oder-generation-2-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "haakaa-generation-3-oder-generation-2",
+    "kind": "og",
+    "path": "public\\editorial\\haakaa-generation-3-oder-generation-2-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "haakaa-generation-3-groessen",
+    "kind": "pin",
+    "path": "public\\editorial\\haakaa-generation-3-groessen-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "haakaa-generation-3-groessen",
+    "kind": "og",
+    "path": "public\\editorial\\haakaa-generation-3-groessen-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-app-datenschutz",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-app-datenschutz-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-app-datenschutz",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-app-datenschutz-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-ersatzteile-ventile-membranen",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-ersatzteile-ventile-membranen-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-ersatzteile-ventile-membranen",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-ersatzteile-ventile-membranen-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-lautstaerke-herstellerangaben",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-lautstaerke-herstellerangaben-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-lautstaerke-herstellerangaben",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-lautstaerke-herstellerangaben-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilchbeutel-oder-mehrwegbecher",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilchbeutel-oder-mehrwegbecher-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilchbeutel-oder-mehrwegbecher",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilchbeutel-oder-mehrwegbecher-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-beschriften-portionen-gefrierfach",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilch-beschriften-portionen-gefrierfach-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-beschriften-portionen-gefrierfach",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilch-beschriften-portionen-gefrierfach-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilch-arbeitsplatz-transport-kuehlkette-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilch-arbeitsplatz-transport-kuehlkette-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilch-kuehlschrankbox-getrennt-aufbewahren-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilch-kuehlschrankbox-getrennt-aufbewahren-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilch-erwaermen-ohne-flaschenwaermer-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilch-erwaermen-ohne-flaschenwaermer-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+    "kind": "pin",
+    "path": "public\\editorial\\reserve-pumpset-reinigen-trocknen-organisieren-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+    "kind": "og",
+    "path": "public\\editorial\\reserve-pumpset-reinigen-trocknen-organisieren-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+    "kind": "pin",
+    "path": "public\\editorial\\abgepumpte-muttermilch-flasche-sauger-auswaehlen-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+    "kind": "og",
+    "path": "public\\editorial\\abgepumpte-muttermilch-flasche-sauger-auswaehlen-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+    "kind": "pin",
+    "path": "public\\editorial\\stilleinlagen-einweg-mehrweg-unterwegs-organisieren-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+    "kind": "og",
+    "path": "public\\editorial\\stilleinlagen-einweg-mehrweg-unterwegs-organisieren-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-reinigen-ohne-spuelmaschine-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-reinigen-ohne-spuelmaschine-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-kita-mitgeben",
+    "kind": "pin",
+    "path": "public\\editorial\\muttermilch-kita-mitgeben-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "muttermilch-kita-mitgeben",
+    "kind": "og",
+    "path": "public\\editorial\\muttermilch-kita-mitgeben-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-muttermilchflaschen-150-250-ml",
+    "kind": "pin",
+    "path": "public\\editorial\\medela-muttermilchflaschen-150-250-ml-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "medela-muttermilchflaschen-150-250-ml",
+    "kind": "og",
+    "path": "public\\editorial\\medela-muttermilchflaschen-150-250-ml-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+    "kind": "pin",
+    "path": "public\\editorial\\milchpumpe-mikrowellenbeutel-desinfizieren-pin.png",
+    "size": [
+      1000,
+      1500
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  },
+  {
+    "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+    "kind": "og",
+    "path": "public\\editorial\\milchpumpe-mikrowellenbeutel-desinfizieren-og.png",
+    "size": [
+      1200,
+      630
+    ],
+    "rights": "Original editorial layout; no third-party photos"
+  }
+]

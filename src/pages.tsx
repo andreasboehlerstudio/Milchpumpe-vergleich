@@ -1,30 +1,43 @@
 import { useMemo, useState } from 'react';
 import { ArrowRight, BatteryCharging, Check, CircleHelp, Droplets, ExternalLink, HeartHandshake, Search, Settings2, ShieldCheck, Smartphone, Sparkles, X } from 'lucide-react';
 import { AffiliateLink, AllProductsAside, Breadcrumbs, ProductCard, ProductVisual, SourceLink, TrustStrip } from './components';
-import { CONTACT_EMAIL, GUIDE_ARTICLES, PRODUCTS, REVIEW_DATE, type Product, productUrl } from './data';
+import { CONTACT_EMAIL, GUIDE_ARTICLES, PRODUCTS, REVIEW_DATE, REVIEW_DATE_ISO, type Product, productUrl } from './data';
+import { DecisionBoard, EditorialGuideHub } from './editorial';
+import { EDITORIAL_GUIDES } from './guides';
+import { BuyingGuidePage } from './article';
+import { guidesForProduct } from './contextual-links';
+import { ExternalReports } from './external-reports';
+import { MILK_GUIDES, MilkGuidePage } from './milk-articles';
+import { EDITORIAL_ART, EditorialImage } from './editorial-images';
+import { MethodologyV4 } from './methodology-v4';
+import { WearableMarketOverview } from './wearable-market';
 
 export function HomePage() {
   return (
     <main id="inhalt">
-      <section className="hero section">
+      <section className="hero section image-led-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Redaktionell recherchiert · aktualisiert am {REVIEW_DATE}</p>
-          <h1>Milchpumpen transparent vergleichen</h1>
-          <p className="hero-lead">Sechs tragbare und manuelle Modelle, nachvollziehbar nach Bauart, Bedienung und Alltagseinsatz eingeordnet – mit Herstellerquellen und ohne erfundene Testnoten.</p>
+          <p className="eyebrow">Milchpumpen & Stillalltag</p>
+          <h1>Milchpumpen vergleichen.<br /><em>Für deinen Alltag.</em></h1>
+        </div>
+        <a className="hero-art" href="/ratgeber/muttermilchbeutel-oder-mehrwegbecher/">
+          <EditorialImage slug="muttermilchbeutel-oder-mehrwegbecher" title="Muttermilch aufbewahren" eager />
+          <span className="hero-art__caption">Muttermilch aufbewahren <ArrowRight size={18} aria-hidden="true" /></span>
+        </a>
+        <div className="hero-details">
+          <p className="hero-lead">Finde eine Milchpumpe, die zu deinem Alltag passt – und praktische Antworten zu Aufbewahrung, Reinigung und unterwegs.</p>
           <div className="hero-actions">
-            <a className="button button--primary" href="/vergleich/">Zum direkten Vergleich<ArrowRight size={18} aria-hidden="true" /></a>
-            <a className="button button--secondary" href="/testmethodik/">So vergleichen wir</a>
+            <a className="button button--primary" href="/tragbare-milchpumpen/">Tragbare Milchpumpen entdecken<ArrowRight size={18} aria-hidden="true" /></a>
+            <a className="text-link" href="/vergleich/">Sechs ausgewählte Modelle im Detail vergleichen</a>
+            <a className="button button--secondary" href="/ratgeber/#pumpenfinder">Zur interaktiven Kaufhilfe</a>
+            <a className="text-link" href="/produkte/">Produkte für Aufbewahrung, Reinigung und Stillalltag <ArrowRight size={18} aria-hidden="true" /></a>
           </div>
           <p className="medical-note"><ShieldCheck size={18} aria-hidden="true" /> Kein Ersatz für Hebammen-, Still- oder ärztliche Beratung.</p>
-        </div>
-        <div className="hero-visual" aria-hidden="true">
-          <div className="hero-orbit hero-orbit--one" />
-          <div className="hero-orbit hero-orbit--two" />
-          <div className="hero-pump"><Droplets /><span>Orientierung<br />statt Werbeversprechen</span></div>
         </div>
       </section>
 
       <TrustStrip />
+      <div className="section home-decisions"><details><summary>Drei Fragen vor dem Kauf <ArrowRight size={18} aria-hidden="true" /></summary><DecisionBoard /></details></div>
 
       <section className="section intro-section" aria-labelledby="start-title">
         <div className="section-heading">
@@ -48,12 +61,16 @@ export function HomePage() {
       </section>
 
       <section className="section" aria-labelledby="guide-title">
-        <div className="section-heading"><p className="eyebrow">Vor dem Kauf</p><h2 id="guide-title">Drei Entscheidungen mit größerem Einfluss als eine Testnote</h2></div>
-        <div className="article-grid">
-          {GUIDE_ARTICLES.map((article, index) => {
-            const icons = [<Sparkles key="fit" />, <Droplets key="clean" />, <Settings2 key="type" />];
-            return <a href={`/ratgeber/${article.slug}/`} className="article-card" key={article.slug}>{icons[index]}<span className="eyebrow">Ratgeber</span><h3>{article.title}</h3><p>{article.description}</p><span className="text-link">Artikel lesen<ArrowRight size={16} /></span></a>;
-          })}
+        <div className="section-heading section-heading--row"><div><p className="eyebrow">Für deinen Stillalltag</p><h2 id="guide-title">Was beschäftigt dich gerade?</h2></div><a className="text-link" href="/ratgeber/">Alle Ratgeber entdecken <ArrowRight size={16} aria-hidden="true" /></a></div>
+        <div className="article-grid home-stories">
+          {[
+            ['hands-free-milchpumpe-kaufen', 'Welche Hands-free-Pumpe passt zu dir?', 'Passform, Bauart und Reinigung vor dem Kauf einordnen.'],
+            ['richtige-flanschgroesse', 'Und die Passform?', 'Den passenden Brusttrichter mit Anleitung und fachlicher Hilfe einordnen.'],
+            ['muttermilchbeutel-oder-mehrwegbecher', 'Beutel oder Mehrwegbecher?', 'Weniger Platzbedarf oder lieber wiederverwenden?'],
+            ['muttermilch-beschriften-portionen-gefrierfach', 'Kleine Portionen, mehr Überblick', 'Muttermilch im Gefrierfach übersichtlich organisieren.'],
+            ['milchpumpe-reinigen', 'Saubere Teile, klarer Ablauf', 'Reinigung und Trocknen nach der Herstelleranleitung organisieren.'],
+            ['muttermilch-arbeitsplatz-transport-kuehlkette', 'Muttermilch mit zur Arbeit nehmen', 'Kühltasche, Übergabe und Aufbewahrung vorbereiten.'],
+          ].map(([slug, title, description]) => <a href={`/ratgeber/${slug}/`} className="article-card visual-story" data-story={slug} key={slug}><div className="visual-story__image"><EditorialImage slug={slug} title={title} /></div><div className="visual-story__body"><span className="eyebrow">{GUIDE_ARTICLES.find(article => article.slug === slug)?.category || 'Ratgeber'}</span><h3>{title}</h3><p>{description}</p><span className="text-link">Artikel lesen <ArrowRight size={16} aria-hidden="true" /></span></div></a>)}
         </div>
       </section>
 
@@ -89,9 +106,10 @@ export function ComparisonPage() {
     <main id="inhalt">
       <section className="page-hero section">
         <Breadcrumbs items={[{ href: '/vergleich/', label: 'Vergleich' }]} />
-        <p className="eyebrow">Funktionsvergleich · keine Rangliste</p>
+        <p className="eyebrow">Funktionen im Vergleich</p>
         <h1>Sechs Milchpumpen im direkten Vergleich</h1>
         <p>Die Tabelle stellt öffentlich dokumentierte Merkmale gegenüber. Sie bewertet weder individuelle Milchmenge noch Komfort und ersetzt keinen eigenen Passformtest.</p>
+        <p>Diese Auswahl umfasst fünf elektrische Modelle und Haakaa als manuelle Silikonpumpe, nicht den gesamten Markt. <a href="/tragbare-milchpumpen/">Weitere tragbare Milchpumpen und fallbezogene Kaufhilfe ansehen</a>.</p>
       </section>
       <section className="section comparison-section" aria-labelledby="table-title">
         <div className="comparison-toolbar">
@@ -127,6 +145,7 @@ export function ComparisonPage() {
 }
 
 export function ProductPage({ product }: { product: Product }) {
+  const modelGuides = guidesForProduct(product.id, EDITORIAL_GUIDES);
   return (
     <main id="inhalt">
       <section className="product-hero section">
@@ -134,37 +153,37 @@ export function ProductPage({ product }: { product: Product }) {
           <Breadcrumbs items={[{ href: '/vergleich/', label: 'Vergleich' }, { href: productUrl(product), label: `${product.brand} ${product.name}` }]} />
           <p className="eyebrow">{product.focus}</p>
           <h1>{product.brand} {product.name}</h1>
+          <p className="article-byline">Redaktion: <a href="/ueber-uns/">Andreas Böhler</a> · Herstellerinfos und Quellen</p>
           <p className="hero-lead">{product.summary}</p>
+          <dl className="product-offer-spec"><div data-selected-set><dt>{product.amazonAsin ? 'Verlinkte Ausführung' : 'Modell-Ausführungen'}</dt><dd>{product.amazonVariant || product.set}</dd></div><div><dt>Quellenabgleich</dt><dd><time dateTime={product.sourceCheckedDate || REVIEW_DATE_ISO}>{product.sourceCheckedDate || REVIEW_DATE}</time> · <a href="#quellen">Herstellerunterlagen</a></dd></div></dl>
           <div className="hero-actions"><AffiliateLink product={product} /><a className="button button--secondary" href="#quellen">Quellen ansehen</a></div>
-          <p className="affiliate-inline">* Affiliate-Link. Preis und Verfügbarkeit werden beim Händler angezeigt.</p>
+          <p className="affiliate-inline">* Affiliate-Link. {product.amazonAsin ? `Verlinkte Ausführung: ${product.amazonVariant}.` : 'Öffnet eine Amazon-Suche; genaue Modellgeneration und Ausführung prüfen.'} Preis und Verfügbarkeit werden beim Händler angezeigt.</p>
         </div>
         <ProductVisual product={product} />
       </section>
+      <section className="section product-answer"><p className="eyebrow">Kurz eingeordnet</p><h2>Für wen ist dieses Modell interessant?</h2><p>{product.summary} Entscheidend bleiben die genaue Ausführung, deine Passform und der Reinigungsaufwand. Die Angaben stammen aus den verlinkten Herstellerunterlagen.</p><a href="/ratgeber/hands-free-milchpumpe-kaufen/">Zur vollständigen Kauf-Checkliste</a></section>
+      <ExternalReports productId={product.id} />
       <section className="section detail-grid">
         <article>
           <p className="eyebrow">Dokumentierte Merkmale</p><h2>Was der Hersteller beschreibt</h2>
           <ul className="check-list">{product.facts.map((fact) => <li key={fact}><Check aria-hidden="true" />{fact}</li>)}</ul>
-          <div className="source-box" id="quellen"><ShieldCheck aria-hidden="true" /><div><h3>Primärquelle</h3><p>Die technischen Angaben auf dieser Seite wurden am {REVIEW_DATE} mit der verlinkten Herstellerseite abgeglichen.</p><SourceLink href={product.sourceUrl}>{product.sourceLabel}</SourceLink></div></div>
+          <div className="source-box" id="quellen"><ShieldCheck aria-hidden="true" /><div><h3>Primärquelle</h3><p>Die technischen Angaben auf dieser Seite wurden am {product.sourceCheckedDate || REVIEW_DATE} mit der verlinkten Herstellerquelle abgeglichen.</p><SourceLink href={product.sourceUrl}>{product.sourceLabel}</SourceLink></div></div>
         </article>
-        <aside className="spec-card"><h2>Einordnung</h2><dl><div><dt>Bauart</dt><dd>{product.category}</dd></div><div><dt>Ausführung</dt><dd>{product.set}</dd></div><div><dt>App</dt><dd>{product.app ? 'Vorhanden' : 'Nicht vorgesehen'}</dd></div><div><dt>Energie</dt><dd>{product.energy}</dd></div><div><dt>Trageweise</dt><dd>{product.wearStyle}</dd></div><div><dt>Reinigung</dt><dd>{product.cleaning}</dd></div></dl></aside>
+        <aside className="spec-card"><h2>Dokumentierte Produktmerkmale</h2><dl><div><dt>Bauart</dt><dd>{product.category}</dd></div><div><dt>Ausführung</dt><dd>{product.set}</dd></div><div><dt>App</dt><dd>{product.app ? 'Vorhanden' : 'Nicht vorgesehen'}</dd></div><div><dt>Energie</dt><dd>{product.energy}</dd></div><div><dt>Trageweise</dt><dd>{product.wearStyle}</dd></div><div><dt>Reinigung</dt><dd>{product.cleaning}</dd></div></dl></aside>
       </section>
       <section className="section section--tinted pros-cons">
         <article><h2>Kann gut passen, wenn …</h2><ul>{product.strengths.map((item) => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul></article>
         <article><h2>Vor dem Kauf prüfen</h2><ul>{product.limitations.map((item) => <li key={item}><CircleHelp aria-hidden="true" />{item}</li>)}</ul></article>
       </section>
-      <section className="section editorial-boundary"><HeartHandshake aria-hidden="true" /><div><h2>Redaktionelle Grenze</h2><p>Wir haben dieses Modell nicht in einem standardisierten Labor- oder Alltagstest geprüft. Die Einordnung beruht auf Herstellerunterlagen und einem strukturierten Merkmalsvergleich. Komfort, Passform, Lautstärke und Milchausbeute können individuell abweichen.</p></div></section>
+      <section className="section editorial-boundary"><HeartHandshake aria-hidden="true" /><div><h2>Vor deiner Entscheidung</h2><p>Gleiche die Größen und den vollständigen Setumfang mit deinem Bedarf ab. Die Angaben hier stammen aus den verlinkten Herstellerunterlagen. Wie angenehm sich die Pumpe trägt und wie viel Milch du gewinnst, hängt von deiner persönlichen Situation ab. <a href="/testmethodik/#kaufentscheidung">So leiten wir die Kaufhilfe aus den Merkmalen ab</a>.</p></div></section>
+      <section className="section model-guide-links"><p className="eyebrow">Die nächste Frage beantworten</p><h2>Ratgeber zu {product.brand} {product.name}</h2><p>Genauere Fragen zu diesem Modell statt allgemeiner Kaufversprechen.</p><div className="article-grid">{modelGuides.map(guide => <a className="article-card" key={guide.slug} href={`/ratgeber/${guide.slug}/`}><span className="eyebrow">{guide.category}</span><h3>{guide.title}</h3><p>{guide.description}</p><span className="text-link">Details lesen <ArrowRight size={16} aria-hidden="true" /></span></a>)}</div></section>
       <section className="section"><AllProductsAside currentId={product.id} /></section>
     </main>
   );
 }
 
 export function GuideIndexPage() {
-  return (
-    <main id="inhalt"><section className="page-hero section"><Breadcrumbs items={[{ href: '/ratgeber/', label: 'Ratgeber' }]} /><p className="eyebrow">Auswahl und Anwendung</p><h1>Ratgeber rund ums Abpumpen</h1><p>Praktische Orientierung mit klaren Quellen und dem Hinweis, wann individuelle Beratung wichtiger ist als allgemeine Information.</p></section>
-      <section className="section"><div className="article-grid article-grid--wide">{GUIDE_ARTICLES.map((article, index) => <a className="article-card" href={`/ratgeber/${article.slug}/`} key={article.slug}><span className="article-number">0{index + 1}</span><span className="eyebrow">Ratgeber</span><h2>{article.title}</h2><p>{article.description}</p><span className="text-link">Artikel lesen<ArrowRight size={16} /></span></a>)}</div></section>
-      <section className="section section--tinted advice-banner"><ShieldCheck aria-hidden="true" /><div><h2>Bei Schmerzen oder Unsicherheit</h2><p>Eine Website kann Passform, Milchbildung oder gesundheitliche Beschwerden nicht beurteilen. Wende dich an deine Hebamme, eine qualifizierte Still- und Laktationsberatung oder ärztliches Fachpersonal.</p></div></section>
-    </main>
-  );
+  return <EditorialGuideHub />;
 }
 
 const ARTICLE_CONTENT: Record<string, { title: string; lead: string; sections: { title: string; body: React.ReactNode }[] }> = {
@@ -198,34 +217,42 @@ const ARTICLE_CONTENT: Record<string, { title: string; lead: string; sections: {
 };
 
 export function GuideArticlePage({ slug }: { slug: string }) {
+  const buyingGuide = EDITORIAL_GUIDES.find(guide => guide.slug === slug);
+  if (buyingGuide) return <BuyingGuidePage guide={buyingGuide} />;
+  if (MILK_GUIDES.some(g=>g.slug===slug)) return <MilkGuidePage slug={slug} />;
   const article = ARTICLE_CONTENT[slug];
   if (!article) return <NotFoundPage />;
+  const relevantIds = slug === 'milchpumpe-reinigen' ? ['medela-freestyle', 'philips-avent-scf547'] : slug === 'richtige-flanschgroesse' ? ['momcozy-m9', 'philips-avent-scf547'] : ['haakaa-gen3', 'medela-freestyle'];
   return (
-    <main id="inhalt"><article className="article-page section"><Breadcrumbs items={[{ href: '/ratgeber/', label: 'Ratgeber' }, { href: `/ratgeber/${slug}/`, label: article.title }]} /><p className="eyebrow">Geprüft am {REVIEW_DATE}</p><h1>{article.title}</h1><p className="hero-lead">{article.lead}</p><div className="article-body">{article.sections.map((section) => <section key={section.title}><h2>{section.title}</h2>{section.body}</section>)}</div>
-      <div className="source-box"><ShieldCheck aria-hidden="true" /><div><h2>Quellen und Einordnung</h2><p>Grundlage sind die Hinweise des Bundeszentrums für Ernährung. Bei gesundheitlichen Problemen oder für eine individuelle Pumpstrategie ist fachliche Beratung erforderlich.</p><SourceLink href="https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen">BZfE: Muttermilch abpumpen</SourceLink></div></div></article></main>
+    <main id="inhalt"><article className="article-page section"><Breadcrumbs items={[{ href: '/ratgeber/', label: 'Ratgeber' }, { href: `/ratgeber/${slug}/`, label: article.title }]} /><p className="eyebrow">Grundlagen · Quellenbasierte Orientierung</p><h1>{article.title}</h1><p className="article-byline">Redaktion: <a href="/ueber-uns/">Andreas Böhler</a> · Herstellerinfos und Quellen</p><p className="hero-lead">{article.lead}</p>{EDITORIAL_ART.some(item => item.articleSlug === slug) && <figure className="article-visual"><EditorialImage slug={slug} title={article.title} /><figcaption>Themenillustration zum Artikel.</figcaption></figure>}<nav className="article-toc" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>{article.sections.map((section, i) => <li key={section.title}><a href={`#abschnitt-${i + 1}`}>{section.title}</a></li>)}</ol></nav><div className="article-body">{article.sections.map((section, i) => <section id={`abschnitt-${i + 1}`} key={section.title}><h2>{section.title}</h2>{section.body}</section>)}</div>
+      <div className="source-box"><ShieldCheck aria-hidden="true" /><div><h2>Quellen und Einordnung</h2><p>Grundlage sind die Hinweise des Bundeszentrums für Ernährung. Bei gesundheitlichen Problemen oder für eine individuelle Pumpstrategie ist fachliche Beratung erforderlich.</p><SourceLink href="https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen">BZfE: Muttermilch abpumpen</SourceLink></div></div><section className="article-model-section"><h2>Konkrete Modelle zum Thema</h2><p>Diese Modelle zeigen unterschiedliche Bauarten. Prüfe die jeweilige Anleitung und den Lieferumfang; die Verlinkung ist keine individuelle Empfehlung. Die Händlerbuttons sind Affiliate-Links.</p><div className="article-product-list">{PRODUCTS.filter(p => relevantIds.includes(p.id)).map(p => <ProductCard key={p.id} product={p} />)}</div><a className="text-link" href="/ratgeber/">Weitere Ratgeber und Modellvergleiche</a></section></article></main>
   );
 }
 
+export function WearableMarketPage() {
+  return <main id="inhalt">
+    <section className="page-hero section">
+      <Breadcrumbs items={[{ href: '/tragbare-milchpumpen/', label: 'Tragbare Milchpumpen' }]} />
+      <p className="eyebrow">Wearables und Hands-free-Systeme</p>
+      <h1>Tragbare Milchpumpen: Modelle und Kaufhilfe</h1>
+      <p>Vergleiche recherchierte Wearable-Modelle mit Motor im BH und Hands-free-Systeme mit externem Motor. Die Übersicht ergänzt den <a href="/vergleich/">detaillierten Vergleich von sechs ausgewählten Milchpumpen</a>.</p>
+      <h2>Welche ist die beste tragbare Milchpumpe?</h2>
+      <p>Für schlauchfreies Abpumpen mit optionaler App und vier abwaschbaren Teilen ist die Momcozy M5 Smart ein möglicher Einstieg. Wenn ein Ladecase und sensorbasierte Anzeigen wichtig sind, lohnt sich ein Blick auf die Momcozy Air 1. Möchtest du den Motor außerhalb des BHs tragen, kommt die Medela Freestyle Hands-free infrage. Diese Auswahl folgt dokumentierten Merkmalen und deinem Einsatzfall; sie ist keine Rangfolge der Abpumpleistung oder des Komforts.</p>
+      <p><a href="#kaufhilfe">Die fallbezogene Kaufhilfe mit Herstellerbelegen und Abwägungen lesen</a>. Wie wir Quellen und Kriterien gewichten, erklärt die <a href="/testmethodik/#kaufentscheidung">Vergleichsmethodik</a>; die <a href="/testmethodik/#quellen">Herstellerquellen</a> bleiben direkt zugänglich.</p>
+      <p>Kläre zuerst die <a href="/ratgeber/richtige-flanschgroesse/">passende Flanschgröße</a> und prüfe, ob deine vorhandene Pumpe mit passenden Einsätzen genügt. Bei Schmerzen oder Problemen mit der Milchversorgung hilft eine qualifizierte Stillberatung.</p>
+    </section>
+    <div className="section" id="kaufhilfe"><WearableMarketOverview /></div>
+  </main>;
+}
+
 export function MethodologyPage() {
-  return (
-    <main id="inhalt"><section className="page-hero section"><Breadcrumbs items={[{ href: '/testmethodik/', label: 'Methodik' }]} /><p className="eyebrow">Transparenz statt Punktesystem</p><h1>So entsteht unser Vergleich</h1><p>Wir trennen dokumentierte Fakten, Herstellerbehauptungen und redaktionelle Einordnung. Der aktuelle Vergleich ist kein eigener Labor- oder Praxistest.</p></section>
-      <section className="section methodology-grid">
-        <article><span>01</span><h2>Auswahl</h2><p>Wir bilden unterschiedliche Bauarten und Bedienkonzepte ab: komplett tragbare Pumpen, Hands-free-Cups mit externer Motoreinheit und eine manuelle Ergänzung. Eine Aufnahme ist keine Auszeichnung.</p></article>
-        <article><span>02</span><h2>Quellen</h2><p>Technische Merkmale werden mit offiziellen Produktseiten oder Handbüchern abgeglichen. Jede Produktseite verlinkt die verwendete Primärquelle und nennt das Prüfdatum.</p></article>
-        <article><span>03</span><h2>Kriterien</h2><p>Verglichen werden Bauart, Einzel- oder Doppelset, App, Energieversorgung, Trageweise und Reinigungsaufwand. Preise und Händlerbewertungen werden nicht festgeschrieben, weil sie sich laufend ändern.</p></article>
-        <article><span>04</span><h2>Grenzen</h2><p>Ohne standardisierten Eigenversuch vergeben wir keine Noten für Saugkraft, Lautstärke, Komfort oder Milchmenge. Herstellerangaben werden als solche bezeichnet.</p></article>
-        <article><span>05</span><h2>Finanzierung</h2><p>Einige Händlerlinks sind Affiliate-Links. Bei einem qualifizierten Kauf kann eine Provision entstehen. Sie verändert weder den Preis noch die redaktionelle Reihenfolge.</p></article>
-        <article><span>06</span><h2>Korrekturen</h2><p>Produktdaten ändern sich. Hinweise mit nachvollziehbarer Quelle nehmen wir unter <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> entgegen.</p></article>
-      </section>
-      <section className="section section--tinted source-register"><h2>Aktuelles Quellenregister</h2><p>Zuletzt redaktionell geprüft am {REVIEW_DATE}.</p><ul>{PRODUCTS.map((product) => <li key={product.id}><span>{product.brand} {product.name}</span><SourceLink href={product.sourceUrl}>{product.sourceLabel}</SourceLink></li>)}</ul></section>
-    </main>
-  );
+  return <MethodologyV4 />;
 }
 
 export function AboutPage() {
   return (
     <main id="inhalt"><section className="page-hero section"><Breadcrumbs items={[{ href: '/ueber-uns/', label: 'Über uns' }]} /><p className="eyebrow">Betreiber und redaktionelle Verantwortung</p><h1>Über dieses Vergleichsportal</h1><p>Milchpumpe-Vergleich.de wird von Andreas Böhler betrieben. Ziel ist eine verständliche, quellenbasierte Orientierung zu Produkten und Auswahlkriterien.</p></section>
-      <section className="section about-grid"><article><h2>Was wir leisten</h2><p>Wir strukturieren öffentlich verfügbare Herstellerinformationen, erklären Unterschiede zwischen Bauarten und verlinken die Primärquellen. Leserinnen sollen Aussagen selbst nachvollziehen können.</p></article><article><h2>Was wir nicht leisten</h2><p>Die Redaktion ist keine medizinische Beratungsstelle. Wir stellen keine Diagnosen, erstellen keine individuelle Pumpstrategie und ersetzen weder Hebamme noch Still- oder ärztliche Beratung.</p></article><article><h2>Wie wir uns finanzieren</h2><p>Über gekennzeichnete Affiliate-Links kann eine Provision entstehen. Produktaufnahme, Reihenfolge und Wortlaut werden redaktionell festgelegt. Bezahlte Platzierungen gibt es derzeit nicht.</p></article><article><h2>Verantwortung und Kontakt</h2><p>Inhaltlich verantwortlich ist Andreas Böhler. Sachliche Korrekturen oder Quellenhinweise bitte an <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p></article></section>
+      <section className="section about-grid"><article><h2>Was wir leisten</h2><p>Wir strukturieren öffentlich verfügbare Herstellerinformationen, erklären Unterschiede zwischen Bauarten und verlinken die Primärquellen. Leserinnen sollen Aussagen selbst nachvollziehen können.</p></article><article><h2>Was wir nicht leisten</h2><p>Die Redaktion ist keine medizinische Beratungsstelle. Wir stellen keine Diagnosen, erstellen keine individuelle Pumpstrategie und ersetzen weder Hebamme noch Still- oder ärztliche Beratung. Die Strukturierung und Formulierung der Inhalte erfolgt teilweise KI-gestützt. Grundlage bleiben offen verlinkte Quellen; daraus entsteht kein eigener Produkttest.</p></article><article><h2>Wie wir uns finanzieren</h2><p>Über gekennzeichnete Affiliate-Links kann eine Provision entstehen. Produktaufnahme, Reihenfolge und Wortlaut werden redaktionell festgelegt. Bezahlte Platzierungen gibt es derzeit nicht.</p></article><article><h2>Verantwortung und Kontakt</h2><p>Inhaltlich verantwortlich ist Andreas Böhler. Sachliche Korrekturen oder Quellenhinweise bitte an <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p></article></section>
     </main>
   );
 }
@@ -242,7 +269,7 @@ export function PrivacyPage() {
       <section><h2>1. Verantwortlicher</h2><p>Andreas Böhler, Am Mühlbach 14, 79114 Freiburg<br />E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p></section>
       <section><h2>2. Hosting über GitHub Pages</h2><p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA. Beim Abruf einer Website werden technisch erforderliche Verbindungsdaten wie IP-Adresse, Zeitpunkt, angeforderte Datei, Referrer und Browserinformationen an den Hostinganbieter übertragen. Die Verarbeitung dient der sicheren und stabilen Bereitstellung der Website auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p><SourceLink href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzhinweise von GitHub</SourceLink></section>
       <section><h2>3. Lokale Einwilligungseinstellung</h2><p>Die Entscheidung zum Analytics-Einsatz wird im Local Storage des Browsers unter dem Schlüssel <code>mv-analytics-consent-v1</code> gespeichert. Sie wird spätestens nach 180 Tagen erneut abgefragt. Diese Speicherung ist erforderlich, um deine Auswahl umzusetzen. Über „Cookie-Einstellungen“ im Footer kannst du die Entscheidung jederzeit ändern.</p></section>
-      <section><h2>4. Google Analytics 4</h2><p>Nur nach deiner ausdrücklichen Einwilligung laden wir Google Analytics 4 direkt über <code>gtag.js</code>. Verwendet wird ausschließlich die Mess-ID <strong>G-4MTYQGF7VK</strong>. Ein Google-Tag-Manager-Container wird nicht eingesetzt.</p><p>Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Analytics verarbeitet Nutzungsdaten wie aufgerufene Seiten, ungefähre Region, Gerätetyp, Browserdaten, Sitzungsdauer und Interaktionen. Die IP-Adresse wird von Google für die Standortbestimmung verarbeitet; wir aktivieren keine Google-Signale und keine personalisierten Werbefunktionen.</p><p>Rechtsgrundlage ist deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Die Analytics-Cookies <code>_ga</code> und <code>_ga_*</code> werden technisch auf höchstens 180 Tage begrenzt. Daten können auch in Staaten außerhalb des Europäischen Wirtschaftsraums verarbeitet werden. Google beschreibt hierfür eigene Übertragungsmechanismen und Schutzmaßnahmen.</p><p>Die Einwilligung kann jederzeit über den Footer widerrufen werden. Dabei versucht die Website vorhandene Analytics-Cookies zu löschen. Bereits übermittelte Daten bleiben von einem späteren Widerruf unberührt.</p><SourceLink href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</SourceLink></section>
+      <section><h2>4. Google Analytics 4</h2><p>Nur nach deiner ausdrücklichen Einwilligung laden wir Google Analytics 4 direkt über <code>gtag.js</code>. Verwendet wird ausschließlich die Mess-ID <strong>G-4MTYQGF7VK</strong>. Ein Google-Tag-Manager-Container wird nicht eingesetzt.</p><p>Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Analytics verarbeitet Nutzungsdaten wie aufgerufene Seiten, ungefähre Region, Gerätetyp, Browserdaten, Sitzungsdauer und Interaktionen. Die IP-Adresse wird von Google für die Standortbestimmung verarbeitet; wir aktivieren keine Google-Signale und keine personalisierten Werbefunktionen.</p><p>Rechtsgrundlage ist deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Die Analytics-Cookies <code>_ga</code> und <code>_ga_*</code> werden technisch auf höchstens 180 Tage begrenzt. Daten können auch in Staaten außerhalb des Europäischen Wirtschaftsraums verarbeitet werden. Google beschreibt hierfür eigene Übertragungsmechanismen und Schutzmaßnahmen.</p><p>Die Einwilligung kann jederzeit über den Footer widerrufen werden. Dabei deaktiviert die Website weitere Analytics-Ereignisse und versucht vorhandene Analytics-Cookies zu löschen. Wenn Analytics bereits geladen wurde, wird die Seite neu geladen, um den geladenen Code zu beenden. Bereits übermittelte Daten bleiben von einem späteren Widerruf unberührt.</p><SourceLink href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</SourceLink></section>
       <section><h2>5. Affiliate-Links zu Amazon</h2><p>Diese Website nimmt am Amazon-EU-Partnerprogramm teil. Erst wenn du einen entsprechend gekennzeichneten externen Link anklickst, verlässt du unsere Website und Amazon kann den Aufruf sowie weitere Daten nach den dort geltenden Bedingungen verarbeiten. Anbieter ist je nach aufgerufenem Angebot eine Gesellschaft der Amazon-Unternehmensgruppe. Auf unserer Website selbst werden durch die bloße Anzeige eines Amazon-Links keine Amazon-Skripte geladen.</p><SourceLink href="https://www.amazon.de/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Amazon-Datenschutzerklärung</SourceLink></section>
       <section><h2>6. Kontaktaufnahme</h2><p>Bei einer Kontaktaufnahme per E-Mail verarbeiten wir die von dir übermittelten Daten zur Bearbeitung der Anfrage. Rechtsgrundlage ist je nach Inhalt Art. 6 Abs. 1 lit. b oder lit. f DSGVO. Die Daten werden gelöscht, wenn die Anfrage abgeschlossen ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p></section>
       <section><h2>7. Deine Rechte</h2><p>Du hast im Rahmen der gesetzlichen Voraussetzungen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kannst du mit Wirkung für die Zukunft widerrufen. Außerdem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde.</p></section>

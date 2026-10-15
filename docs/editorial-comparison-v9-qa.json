@@ -1,0 +1,32 @@
+{
+  "scope":"Actual Superdesign v9 two-model comparison UI, not a quality/performance ranking or current availability verification",
+  "draftId":"cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion":9,
+  "readbackMatchesAuthoredHtml":true,
+  "readbackNormalization":"CRLF to LF only",
+  "newTestsRedThenGreen":3,
+  "allCanvasContractsPassed":11,
+  "typecheck":"passed",
+  "diffCheck":"passed",
+  "browserChecks":[
+    {"viewport":320,"clientWidth":320,"scrollWidth":320,"overflow":[],"main":1,"h1":1,"optionsPerSelector":35},
+    {"viewport":390,"clientWidth":390,"scrollWidth":390,"overflow":[],"main":1,"h1":1,"optionsPerSelector":35},
+    {"viewport":768,"clientWidth":768,"scrollWidth":768,"overflow":[],"main":1,"h1":1,"optionsPerSelector":35},
+    {"viewport":1440,"clientWidth":1440,"scrollWidth":1440,"overflow":[],"main":1,"h1":1,"optionsPerSelector":35}
+  ],
+  "browserState":"Comparison, model directory, existing case details and FAQs expanded for geometry checks. Native disclosure remains closed by default in the saved artifact.",
+  "selectRegression":{"initialMeasuredWorstTextWidth":198.70419311523438,"initialUsableWidth":195,"initialFits":false,"fix":"Deliberate compact unique dropdown labels; full exact name remains in aria-label/title and the comparison card","finalWorstLabel":"Medela Swing Maxi Hands…","finalTextWidth":175.4362030029297,"finalUsableWidth":195,"finalFits":true},
+  "remoteModelLoop":{
+    "testedKeys":["Ardo|Melia","Bebeconfort|Discreet (3101202300)","Elvie|Pump","Elvie|Stride","Elvie|Stride 2","eufy|S1 (T8D02)","eufy|S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)","Kinderkraft|MAMAFLOW","KISSBOBO|K5","Lansinoh|Tragbare Milchpumpe (Wearable)","Lionelo|Fidi Free Slim (LOC-FIDI FREE SLIM)","Medela|Freestyle Hands-free","Medela|Freestyle Mini Hands-free","Medela|Melody InBra","Medela|Motion InBra","Medela|Solo Hands-free","Medela|Swing Maxi Hands-free","Momcozy|Air 1","Momcozy|M5","Momcozy|M5 Smart","Momcozy|Mobile Flow M9","Momcozy|Mobile Style M6","Momcozy|S12 Pro","Momcozy|S12 Pro Quick","Momcozy|S9 Pro","Momcozy|V1 Pro","Momcozy|V2 Pro","NCVI|8131","NCVI|AM8161A (beheiztes Wearable)","Neno|Sole (beobachtete Variante Sole Twin)","Nuliie|S32","Perifit|Pump","Philips Avent|Hands-free elektrische Doppelmilchpumpe SCF547/11","Tommee Tippee|Made for Me In-Bra Wearable","Willow|Go (PDL60)"],
+    "failedKeys":[],
+    "assertions":"For each model: exact A/B heading, complete cells, missing-primary visibility, sponsored Amazon link with andreasboeh09-21. Thirty-five shifted pairs checked, not all 1225 possible pairs.",
+    "swapWorks":true,"sameModelNotice":true,"resetWorks":true,"resetFocus":"v9-compare-a","purchaseEntryPathsOpenedAndSelectedCorrectly":["Momcozy|M5 Smart","Momcozy|Air 1","Medela|Freestyle Hands-free"],"clippedComparisonText":[]
+  },
+  "directoryEvidenceBadges":5,
+  "screenshots":{"desktop":"img_804298450e10.png","phone320":"img_547ba5be605e.png"},
+  "preserved":["Actual brand logo in both positions","Licensed nursery and CC0 pump-parts photographs","Illustrated methodology and four-step explanation","35 identities and historical source evidence","Existing affiliate disclosure and source links"],
+  "rankingResearch":"Two independent bounded evidence workstreams dispatched separately; not yet incorporated or claimed complete by this UI report",
+  "published":false,
+  "implementedInProductionHomepage":false,
+  "generationCreditsSpent":0
+}

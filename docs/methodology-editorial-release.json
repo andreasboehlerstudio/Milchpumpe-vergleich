@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "route": "/testmethodik/",
+  "component": "MethodologyV4",
+  "status": "implemented-and-locally-verified-not-deployed-by-this-task",
+  "ownedFiles": [
+    "src/methodology-v4.tsx",
+    "src/methodology-v4.css",
+    "scripts/methodology-v4.test.tsx",
+    "docs/methodology-editorial-release.json"
+  ],
+  "content": {
+    "language": "de-DE",
+    "address": "Du",
+    "ssrWordsIncludingAccessibleDiagramText": 2445,
+    "browserVisibleWords": 2351,
+    "minimumRequiredWords": 1400,
+    "marketModelIdentities": 35,
+    "detailModels": 6,
+    "catalogueRecordsIncludingAccessories": 61,
+    "countsVerifiedAgainst": [
+      "WEARABLE_MARKET.models",
+      "PRODUCTS",
+      "PRODUCT_CATALOGUE"
+    ],
+    "scopeClarification": "The six long-form detail models are not identical to the six-model case-selection audit. M5 Smart and Air 1 do not acquire long-form detail-page status through these dossiers.",
+    "workedDossiers": [
+      {
+        "modelId": "m5-smart",
+        "model": "Momcozy M5 Smart, not M5",
+        "factIds": ["m5-app", "m5-log", "m5-clean"],
+        "historicalSet": "B0G1MWP4FB, Grau, 1 Pack, Single",
+        "case": "Integrated, tube-free operation with direct controls and optional app",
+        "alternative": "Elvie Pump when sensor-triggered full-bottle pause matters more",
+        "limits": ["Manual milk-volume entries", "No comparable cleaning-time claim", "Single is not a double kit"]
+      },
+      {
+        "modelId": "freestyle-hands-free",
+        "model": "Medela Freestyle Hands-free, not Mini or standalone Collection Cups",
+        "factIds": ["freestyle-motor", "freestyle-clean", "freestyle-full"],
+        "historicalSet": "B0BKGFBKHJ, complete double system",
+        "case": "Motor deliberately carried outside the bra",
+        "alternative": "Philips Avent SCF547/11 with its documented DE sizing kit and separate sizing accessories",
+        "limits": ["Three parts describe the cup assembly, not the complete system", "No automatic full-container shutoff", "PersonalFit Flex parts separate", "Do not rinse the tubing interior"]
+      },
+      {
+        "modelId": "air-1",
+        "model": "Momcozy Air 1",
+        "factIds": ["air-case", "air-manual-stop", "air-clean"],
+        "historicalSet": "B0G2MQH1DF, Rot, 2 Pack, double kit; current case contents need confirmation",
+        "case": "Charging between sessions in the case",
+        "alternative": "eufy S1 T8D02 for warmth; distinguish base S1 from S1 Pro or separately sourced case",
+        "limits": ["Full-container notification is not a verified automatic stop", "Five non-electrical parts", "Motor stays dry", "Case is not milk cooling or cleaning", "No comparable pump-runtime ranking"]
+      }
+    ],
+    "preservedFragmentIds": ["inhalt", "informationen", "auswahl", "kriterien", "kaufentscheidung", "beispiele", "erfahrungsberichte", "aktualisierung", "grenzen", "finanzierung", "quellen"],
+    "contextualLimits": "One concise source-research/own-comparative-measurement explanation in grenzen; product-specific safety and feature limits remain beside the relevant facts. Hero contains no repeated AI/no-tests slogans.",
+    "medicalAndNoPurchasePathsPreserved": true,
+    "newPurchaseLinks": 0,
+    "newPersonalTestsOrTestimonials": 0,
+    "newPerformanceScoresOrOutcomeClaims": 0,
+    "newManufacturerQuotations": 0
+  },
+  "evidenceInputs": [
+    "docs/ranking-next-evidence.json",
+    "docs/ranking-next-audit.md",
+    "src/wearable-market-evidence-overlay.ts"
+  ],
+  "visual": {
+    "palette": ["#fff9ee", "#086d61", "#e6f3e9", "#f4a394"],
+    "font": "Locally hosted Methodology Manrope, display weight 300, reading weight 400",
+    "headingScope": ":is(.method-v4, .editorial-home.editorial-site .method-v4)",
+    "minimumMeasuredVisibleTextPx": 14,
+    "layout": "Documentary photo with paper note, full-width cream/mint/peach sections, paper evidence dossiers, responsive HTML diagram annotations and sourced evidence table",
+    "accessibleDiagrams": ["evidence-flow", "integrated-motor", "external-motor", "variant-check"],
+    "evidenceTables": 2,
+    "tableAccessibility": "Visible captions, column and row header scopes, named focusable horizontally scrollable regions; no global overflow hiding or text truncation"
+  },
+  "photograph": {
+    "path": "/editorial-photos/pump-parts.jpg",
+    "dimensions": [1350, 1800],
+    "source": "https://commons.wikimedia.org/wiki/File:Hands_Free_Breast_Pump.jpg",
+    "creator": "LeslieKnope345",
+    "licence": "CC0 1.0 Universal",
+    "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "rightsManifest": "docs/editorial-pump-parts-photo-rights.json",
+    "sha256VerifiedByFocusedTest": "eff88060ed4706f95d23a388f5c9af9c8f2a6ea883e2dc0fb9391a1b39b85061",
+    "visibleSourceAndLicenceCredit": true,
+    "notAnExactRecommendedModelImage": true,
+    "notAMicrowaveCompatibilityInstruction": true,
+    "newAssetGenerationOrDownload": false
+  },
+  "verification": {
+    "tdd": {
+      "oldBaseline": "Original five focused tests passed before edits",
+      "observedRedSlices": [
+        "Research scopes/dossiers and substantive minimum: old page had 1315 SSR-stripped words and no market scope block",
+        "Licensed documentary photo and diagram annotations: old four-vector image set failed the new asset expectation",
+        "Scoped integrated typography: old stylesheet lacked the editorial-shell-specific scope",
+        "Model evidence table: old page had no sourced parts-count comparison region"
+      ],
+      "finalFocusedCommand": "npx tsx --test scripts/methodology-v4.test.tsx",
+      "finalFocusedResult": {"tests": 7, "passed": 7, "failed": 0}
+    },
+    "integratedRouteCommand": "npx tsx --test --test-name-pattern='actual methodology route' scripts/integrated-market-methodology.test.tsx",
+    "integratedRouteResult": {"tests": 1, "passed": 1, "failed": 0},
+    "typecheckCommand": "npm run lint",
+    "typecheckResult": "tsc --noEmit exited 0",
+    "ssr": {"mainLandmarks": 1, "h1Elements": 1, "dossiers": 3, "accessibleDiagrams": 4},
+    "browser": {
+      "target": "Actual /testmethodik/ route through current App and editorial-home v4 editorial-site shell, served from current Vite source on localhost:3049",
+      "requestedWidths": [320, 375, 760, 1024, 1440],
+      "documentClientAndScrollWidths": [[320, 320], [375, 375], [745, 745], [1009, 1009], [1425, 1425]],
+      "classicScrollbarNote": "Desktop client width is smaller than requested viewport by the scrollbar gutter",
+      "clippedTextOutsideBoundedTables": 0,
+      "visibleTextBelow14px": 0,
+      "localFragmentFailuresAt1024": 0,
+      "photoNaturalWidth": 1350,
+      "bothTablesAt375": "339px containers, 620px content; scrollLeft changes and tabIndex is 0",
+      "screenshotsInspected": ["1440px hero with credit", "1440px annotated construction diagrams", "320px M5 Smart paper dossier"],
+      "analytics": "Only necessary functions selected in isolated local browser context"
+    },
+    "notPerformed": ["Production deployment", "Repository-wide build/test run delegated to parent", "Fresh Amazon offer checks", "Fresh manufacturer retrieval beyond provided evidence", "Commit or push"]
+  },
+  "issues": [
+    "Initial localhost:3018 probe was an older production server, not the newly requested Vite process; its output was excluded. Repeated QA on confirmed current source server localhost:3049.",
+    "Screenshot export to scratch was rejected by Chrome MCP workspace policy; screenshots were instead captured to its default image cache and visually inspected.",
+    "Full-file CSS write was refused by the file freshness guard; targeted patches were used without bypassing that guard."
+  ]
+}

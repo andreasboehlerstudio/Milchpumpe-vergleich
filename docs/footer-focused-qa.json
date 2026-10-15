@@ -1,0 +1,28 @@
+{
+  "scope": "Footer-only review and deterministic refinement of the current proposed Superdesign draft; no production footer redesign or deployment",
+  "draftId": "276bbe56-1de4-4ed3-9c50-a739481957e9",
+  "currentVersion": 3,
+  "previewUrl": "https://p.superdesign.dev/draft/276bbe56-1de4-4ed3-9c50-a739481957e9",
+  "before": {"canvasFooterLinkFontPx": 12.48, "canvasAffiliateFontPx": 12.16, "canvasBottomFontPx": 11.2, "localProductionControlHeightPx": 40},
+  "changes": ["Footer links, disclosure and bottom line now at least 14px", "Normal-case group headings with weight 500", "Footer brand control at least 48px", "Named footer landmark and three named navigation groups", "Existing logo, operator attribution, real destinations, legal links, cookie control and affiliate disclosure preserved"],
+  "checks": [
+    {"width": 320, "scroll": 320, "clippingOrOverflowFindings": 0, "minimumControlHeightPx": 44, "minimumControlFontPx": 14, "minimumLegalFontPx": 14, "minimumMeasuredTextContrast": 7.419772630312575, "navigationGroups": 3, "brandLoaded": true},
+    {"width": 390, "scroll": 390, "clippingOrOverflowFindings": 0, "minimumControlHeightPx": 44, "minimumControlFontPx": 14, "minimumLegalFontPx": 14, "minimumMeasuredTextContrast": 7.419772630312575, "navigationGroups": 3, "brandLoaded": true},
+    {"width": 768, "scroll": 768, "clippingOrOverflowFindings": 0, "minimumControlHeightPx": 44, "minimumControlFontPx": 14, "minimumLegalFontPx": 14, "minimumMeasuredTextContrast": 7.419772630312575, "navigationGroups": 3, "brandLoaded": true},
+    {"width": 1440, "scroll": 1440, "clippingOrOverflowFindings": 0, "minimumControlHeightPx": 44, "minimumControlFontPx": 14, "minimumLegalFontPx": 14, "minimumMeasuredTextContrast": 7.419772630312575, "navigationGroups": 3, "brandLoaded": true}
+  ],
+  "realMobileCheck": {"width": 390, "scroll": 390, "minimumControlHeightPx": 44, "minimumControlFontPx": 14, "affiliateFontPx": 14, "cookiePreviewOpensAndCloses": true, "focusReturned": true},
+  "method": "Actual refreshed remote preview rendered in same-origin frames at four widths; fonts awaited, text ranges checked against viewport/clipping ancestors and computed colour contrast measured against the solid footer background. Real mobile emulation and screenshots supplement frame checks.",
+  "footerPageTargets": {
+    "uniquePages": 12,
+    "localStatus": "All twelve HTTP 200 with actual expected page titles",
+    "liveNotPublished404": ["/produkte/", "/ratgeber/muttermilch-arbeitsplatz-transport-kuehlkette/", "/ratgeber/muttermilchbeutel-oder-mehrwegbecher/"],
+    "source": "Public HTTP GET checks of the exact footer targets"
+  },
+  "seoGeo": {"clearCrawlableInternalLinks": true, "namedTopicGroups": true, "operatorVisible": true, "methodologyAndEditorialContactLinked": true, "legalAndConsentPresent": true, "keywordDumpAdded": false, "inventedRatingsOrCredentialsAdded": false, "rankingOrAiCitationGuarantee": false},
+  "published": false,
+  "implementationApproval": "Still required for production redesign",
+  "finderAnchor": {"localPresent": true, "livePresent": false, "target": "/ratgeber/#pumpenfinder"},
+  "releaseGate": "Publish destination pages and the finder anchor with the footer; do not deploy the new footer alone with known dead destinations",
+  "legalCertification": false
+}

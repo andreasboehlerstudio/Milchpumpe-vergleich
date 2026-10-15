@@ -1,0 +1,205 @@
+{
+  "status": "integrated-and-parent-verified",
+  "parentVerification": {
+    "runtimeProductMappingsResolved": true,
+    "explicitRelatedSlugsRendered": true,
+    "fourFallbackImagesGenerated": true,
+    "legacyTestsUpdatedWithoutRemovingOriginalArticleRequirements": true,
+    "testsPassed": 62,
+    "typecheck": "PASS",
+    "build": "PASS",
+    "gitDiffCheck": "PASS",
+    "responsiveEvidence": "docs/responsive-oct14-final.json",
+    "originalSubagentDiagnosticsBelowAreHistorical": true,
+    "published": false
+  },
+  "scope": {
+    "ownedFiles": [
+      "src/milk-guides.json",
+      "src/problem-product-focus.ts",
+      "src/search-intents.ts",
+      "scripts/longtail-expansion.test.tsx",
+      "scripts/longtail-content.test.ts",
+      "docs/longtail-integration.json"
+    ],
+    "productionBuild": "parent-owned; not run",
+    "accountsCommitsPushDeploy": "not touched"
+  },
+  "articles": [
+    {
+      "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+      "primaryProductId": "mam-soft-brush",
+      "draftSource": "docs/longtail-guides-draft.json"
+    },
+    {
+      "slug": "muttermilch-kita-mitgeben",
+      "primaryProductId": "mam-aufbewahrungsbecher",
+      "draftSource": "docs/longtail-guides-draft.json"
+    },
+    {
+      "slug": "medela-muttermilchflaschen-150-250-ml",
+      "primaryProductId": "medela-muttermilchflaschen",
+      "draftSource": "docs/longtail-guides-draft.json"
+    },
+    {
+      "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+      "primaryProductId": "medela-quick-clean-microwave-bags",
+      "draftSource": "docs/longtail-guides-draft.json"
+    }
+  ],
+  "preservation": {
+    "existingArticles": [
+      {
+        "slug": "muttermilchbeutel-oder-mehrwegbecher",
+        "sha256": "9d7f2d5fcd28fd40e63f82d95cc4ca00bc7ee8bcf688244a1897f5320b62280a"
+      },
+      {
+        "slug": "muttermilch-beschriften-portionen-gefrierfach",
+        "sha256": "50cf956b32d283fbbcab17f9194f8bda562103b3935ba89000817d7f610a12ae"
+      },
+      {
+        "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+        "sha256": "84a082972585241096b749ec4abf484dfb21f21eaebda3b0c6513177540c2de1"
+      },
+      {
+        "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+        "sha256": "6da6093f7d013c455bbcc954a2bd0948c14f498ad94fc7c1f47c52402053d49a"
+      },
+      {
+        "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+        "sha256": "cd0e9762b22acaf0648a4ff33467b2205f87923522bf70a5d21cd585873acf3d"
+      },
+      {
+        "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+        "sha256": "f76be09690dff779e885bd95ff3c61977ab66120c63d380418a7315da6defadf"
+      },
+      {
+        "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+        "sha256": "bb4a4af297f9a33b3755f318105790906e68915713a86d24224ab8007186de38"
+      },
+      {
+        "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+        "sha256": "555b6fc88f9b3dae3d7a6e149ea8c9c78b26a897a1eb38a25afd4a1e3f670bac"
+      }
+    ],
+    "existingFocusSlugs": [
+      "muttermilch-beschriften-portionen-gefrierfach",
+      "muttermilch-arbeitsplatz-transport-kuehlkette",
+      "reserve-pumpset-reinigen-trocknen-organisieren"
+    ],
+    "existingFocusFileSha256": "79315057252b450950b6b14bef61cbc35c4b4875b0c2c83cd4dafd8db32a95e6",
+    "existingSearchIntentFileSha256": "2969e988924640e432a099b78e5053a2654961cba363b1572d78a6b32668f3f0"
+  },
+  "draftReview": {
+    "articleCount": 4,
+    "sourceIndexes": "local zero-based indexes retained",
+    "evidenceFile": "docs/longtail-guide-evidence.json",
+    "quotesInEvidence": 53,
+    "primaryProductNamesAndIds": "all four match the existing catalogue",
+    "copy": "practical Du; no invented tests, testimonials, medical guarantees, prices, ASINs or search-volume claims",
+    "safety": [
+      "Soft Brush: not for valve slits/membranes; no boiling/steam/microwave treatment of the brush",
+      "Kita: Swiss guidance is labelled; no German legal entitlement, fixed age-based milk portions or invented cup volume",
+      "Medela bottles: sizes and pack quantities differentiated; no universal direct pump connection claim",
+      "Quick Clean: pre-cleaning, 60 ml water, up to 20 uses, no tubing/electric pump; ambiguous EU watt bounds kept visible; no invented timing table"
+    ],
+    "citationVerificationScope": "Validated all 53 fact-to-article-source and visible-section mappings against the existing retrieved-evidence ledger. No new HTTP fetch or independent re-verification of the original 53 quotations in this integration step."
+  },
+  "verification": [
+    {
+      "command": "npx tsx --test scripts/longtail-expansion.test.tsx",
+      "phase": "RED",
+      "exitCode": 1,
+      "result": "route missing for milchpumpe-reinigen-ohne-spuelmaschine"
+    },
+    {
+      "command": "npx tsx --test scripts/longtail-content.test.ts",
+      "phase": "RED",
+      "exitCode": 1,
+      "passed": 2,
+      "failed": 1,
+      "result": "draft not integrated"
+    },
+    {
+      "command": "npx tsx --test scripts/longtail-content.test.ts",
+      "phase": "GREEN",
+      "exitCode": 0,
+      "passed": 3,
+      "failed": 0,
+      "result": "draft content, source/section mappings, catalogue IDs, focus, preservation and safety checks pass"
+    },
+    {
+      "command": "npx tsx --test scripts/longtail-expansion.test.tsx scripts/problem-story.test.tsx scripts/intent.test.tsx scripts/titles.test.ts",
+      "exitCode": 1,
+      "result": "All four test modules blocked at shared runtime import: Unresolved article product: MAM Soft Brush"
+    },
+    {
+      "command": "npx tsx --test scripts/longtail-content.test.ts scripts/longtail-expansion.test.tsx",
+      "exitCode": 1,
+      "passed": 3,
+      "failedModules": 1,
+      "result": "Content tests green; SSR route integration cannot load the existing renderer because MAM Soft Brush is unmapped. No claim that renderer tests passed."
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "result": "tsc --noEmit passed after all source and test edits"
+    },
+    {
+      "command": "programmatic preservation checks",
+      "exitCode": 0,
+      "result": "All eight previous article objects, the three prior focus blocks and all prior decision cards are unchanged"
+    }
+  ],
+  "outsideOwnedScope": [
+    {
+      "file": "src/milk-articles.tsx",
+      "requiredChange": "Resolve the exact product names MAM Soft Brush → mam-soft-brush and Medela Quick Clean™ Microwave bags → medela-quick-clean-microwave-bags. Current local name map throws on both.",
+      "severity": "blocking-site-wide-module-import"
+    },
+    {
+      "file": "src/milk-articles.tsx",
+      "requiredChange": "Render explicit relatedSlugs through the existing article library, including generic guides. Current product-overlap heuristic ignores these fields and cannot show required basic hygiene/Freestyle crosslinks.",
+      "severity": "required-related-route-assertions-not-yet-exercised"
+    },
+    {
+      "file": "public/editorial/* or existing editorial manifest",
+      "requiredChange": "Provide existing-design artwork for the four new slugs; current renderer falls back to slug-og.png files.",
+      "severity": "all-four-slug-og-files-currently-missing; parent artwork/asset QA required"
+    },
+    {
+      "file": "scripts/milk-guides.test.tsx",
+      "requiredChange": "Parent full-QA: legacy test hardcodes eight guides and >=2 products for every article; it conflicts with requested one-product expansion.",
+      "severity": "known-legacy-contract-conflict; parent-full-QA"
+    }
+  ],
+  "checkedAt": "2026-10-14T23:11:09+02:00",
+  "changedFiles": [
+    "src/milk-guides.json",
+    "src/problem-product-focus.ts",
+    "src/search-intents.ts",
+    "scripts/longtail-expansion.test.tsx",
+    "scripts/longtail-content.test.ts",
+    "docs/longtail-integration.json"
+  ],
+  "integration": {
+    "newArticles": 4,
+    "totalMilkGuides": 12,
+    "newSections": 24,
+    "newFAQs": 15,
+    "newProductCounts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "preservedPriorArticles": 8,
+    "allPriorArticleObjectsAndLocalSourceIndexesPreserved": true,
+    "existingThreeFocusBlocksTextPreserved": true,
+    "existingDecisionCardsTextPreserved": true,
+    "draftTextChanges": [],
+    "intentRelatedLinks": "Union of intent-plan required related slugs and draft related slugs, required links first; sources unchanged",
+    "rendererDesignChanges": "none; parent-owned prerequisites remain below"
+  },
+  "nextVerification": "Parent prerequisites and complete local QA now pass. Remaining gate is publication approval, not renderer repair."
+}

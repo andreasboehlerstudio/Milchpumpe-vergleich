@@ -1,0 +1,1015 @@
+{
+  "schemaVersion": 1,
+  "status": "researched-draft-not-published",
+  "checkedAt": "2026-10-14T22:58:32.148607+02:00",
+  "systemDateCommand": "date -Iseconds → 2026-10-14T22:50:15+02:00",
+  "scope": {
+    "createdRepositoryFiles": [
+      "docs/longtail-guides-draft.json",
+      "docs/longtail-guide-evidence.json"
+    ],
+    "websiteChanged": false,
+    "accountsCommitsUploadsPublication": false,
+    "publicSourcesOnly": true,
+    "apifyUsed": false
+  },
+  "citationConvention": "Artikel: sourceIndexes sind nullbasiert und lokal zum sources-Array. Belegdatei: ledgerId ist separat, einsbasiert. Wörtliche Zitate sind aus tatsächlich geladenem Volltext übernommen; ausschließlich Zeilenumbrüche/Leerraum wurden vereinheitlicht. Keine Suchsnippets als Faktenbeleg.",
+  "searchLimitations": {
+    "configuredBackend": "searxng unavailable (local endpoint refused connection)",
+    "servedBy": "parallel keyless fallback",
+    "region": "Keine belastbare DE-SERP-Lokalisierung oder reproduzierbare Rankingmessung zugesichert. Ergebnisse teils englisch; breitere/deutsche exakte Folgequeries genutzt.",
+    "searchVolumeDifficulty": "not-claimed",
+    "interpretation": "Suchtreffer belegen thematische Suchintention, nicht Nachfragehöhe, Rankingchance oder geringe Konkurrenz."
+  },
+  "retrievalIssues": [
+    {
+      "issue": "web_extract ließ beim wiederholten Lesen Passagen aus GIL, MAM-Seiten und Bürsten-PDF aus.",
+      "resolution": "Alle acht Kernquellen zusätzlich nativ per HTTPS gelesen; HTML/PDF-Volltext für Belegprüfung verwendet. Alle acht HTTP200."
+    },
+    {
+      "issue": "Quick Clean EU-Anleitung: überschneidende1100-Watt-Grenzen und Lücke750–800W; keine feste Abkühlminute.",
+      "resolution": "Im Artikel offen ausgewiesen; keine eigene Zeittabelle, keine pauschale90-Sekunden-Anweisung, Herstellerklärung für unklare Fälle."
+    },
+    {
+      "issue": "Hersteller-Kompatibilitätswerbung Medela lautet pauschal.",
+      "resolution": "Nicht als garantierter InBra-/Cup-Direktanschluss übernommen. Konkrete Anleitung/Herstellerbestätigung verlangt."
+    },
+    {
+      "issue": "Schweizer Kita-Empfehlung, regionale ältere DE-Treffer und unterschiedliche Lagerfristen.",
+      "resolution": "Schweizer Herkunft sichtbar; kein bundesweiter Rechtsanspruch, kein Transfer regionaler Regeln und keine gemischte Haltbarkeitstabelle."
+    }
+  ],
+  "excludedEvidence": [
+    {
+      "url": "https://l6i2e2.atlantafigures.org/",
+      "reason": "Suchtreffer mit zusammenkopierten widersprüchlichen Inhalten; kein Primärbeleg."
+    },
+    {
+      "url": "https://www.landkreis-osnabrueck.de/sites/default/files/2019-12/28_umgang_mit_muttermilch_in_kitas_mfb-05-2004-os_vers._1.0.pdf",
+      "reason": "Nur SERP-Kontext; ältere regionale Information nicht als überall verpflichtende Regel verwendet."
+    },
+    {
+      "url": "https://shop.medela.co.uk/wp-content/uploads/2019/11/quick-clean-microwave-bags-instructions-for-use-1.pdf",
+      "reason": "Ältere UK-Fassung nur Suchkontext, nicht mit EU-Anwendung vermischt."
+    }
+  ],
+  "malformedUrls": {
+    "usedAsPrimaryEvidence": false,
+    "repairPerformed": false
+  },
+  "sources": [
+    {
+      "ledgerId": 1,
+      "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "e642bee5a40aeeb820b5989de75e5c3aa9463695aed8552d36ea6493a55e89bb",
+      "textSnapshotSha256": "89dbeb68e1d2ec7a2cd99f6095a199a5ffd0f88bb7e18cb3a1afa94439476e21",
+      "scope": "deutsche allgemeine Gesundheitsinformation",
+      "literalQuotesVerified": 14
+    },
+    {
+      "ledgerId": 2,
+      "url": "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "8fd477e644c1093afc6f21bba39bc7cbe4c2ddf1a78f32469e6ff84e80a95be1",
+      "textSnapshotSha256": "86a1ffb4bd5a3981d4cffa53ca231cc3d055d4c8fc1986d01a57c498cd903747",
+      "scope": "deutsche allgemeine Gesundheitsinformation",
+      "literalQuotesVerified": 1
+    },
+    {
+      "ledgerId": 3,
+      "url": "https://www.mambaby.com/de/p/soft-brush-fuer-babyflaschen/100009951",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "8f9541d7dde4ba13ea9f5d8ce565907aa232c1d3105d613b43b71c2ffba3a7e9",
+      "textSnapshotSha256": "3c6be5a8ca8d15183297c16511b68b874831d61c1bee4a9162cd2255f35b3465",
+      "scope": "Primärquelle Hersteller",
+      "literalQuotesVerified": 1
+    },
+    {
+      "ledgerId": 4,
+      "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "c8058dd5fdc40344167fffc0f971f4173dfea9933c6b404dadd1a1d581324ec0",
+      "textSnapshotSha256": "fdee26be2f63b10bd8a09ca953e31936c08d4e08da6045349040742d02430179",
+      "scope": "Primärquelle Hersteller",
+      "literalQuotesVerified": 5
+    },
+    {
+      "ledgerId": 5,
+      "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "bcc05f9f22ec76cd85cf67e2c848504eb7eeb13583f7a68a310972f71299e7ab",
+      "textSnapshotSha256": "2c97e06a48024a31036167d639d502487c2db774f5be5b33f175692c53bf6442",
+      "scope": "Primärquelle Hersteller",
+      "literalQuotesVerified": 5
+    },
+    {
+      "ledgerId": 6,
+      "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "baa77b98bc131ee7dca86039ac07ae55805ded63437da254b29849eb39e1d05f",
+      "textSnapshotSha256": "d17b611c67325cdaa316b7a4ed8be6b3bb19b8b5a99650a861078b0b123e6a8d",
+      "scope": "Primärquelle Hersteller",
+      "literalQuotesVerified": 5
+    },
+    {
+      "ledgerId": 7,
+      "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "e07048754b704d00ab1562c0377dc5619f2a7b532368b53b59b471b1c007ec8f",
+      "textSnapshotSha256": "872063776ac1b540df35087426166edd82407583ec41700d53a69ef73ba08d4e",
+      "scope": "Primärquelle Hersteller",
+      "literalQuotesVerified": 17
+    },
+    {
+      "ledgerId": 8,
+      "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": "12c72b734cbdd3323f5bed9ea0a7c2e0611b9c656bf6c2f317ea9e4a642dbc97",
+      "textSnapshotSha256": "b39bdce7a125a6870272a401d502fb00846ad4c752c8f8711595a4f581a734ca",
+      "scope": "Schweiz, Kontext; keine deutschen Rechtsvorgaben",
+      "literalQuotesVerified": 4
+    },
+    {
+      "ledgerId": 9,
+      "url": "https://www.medela.com/040-services/manual-instructions/retail-breast-pumps--double-electric-breast-pump-manuals-instructions/freestyle-hands-free-breast-pump.pdf",
+      "httpStatus": 200,
+      "retrieval": "native HTTPS GET, text-bearing PDF via PyMuPDF or HTMLParser; web_extract cross-read",
+      "checkedDate": "2026-10-14",
+      "rawResponseSha256": null,
+      "textSnapshotSha256": "f2c72c304b293bb04493097786a6454e45709a652e24296fc8dcede749d1a1e3",
+      "scope": "Herstelleranleitung, Modellbeispiel",
+      "literalQuotesVerified": 1
+    }
+  ],
+  "articles": [
+    {
+      "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+      "primaryProductId": "mam-soft-brush",
+      "queryEvidence": {
+        "queries": [
+          "Milchpumpe reinigen ohne Spülmaschine Flaschenbürste",
+          "\"Milchpumpe\" \"ohne Spülmaschine\""
+        ],
+        "observedResults": [
+          {
+            "url": "https://www.medela.com/de-de/stillen-und-abpumpen/artikel/tipps-zum-abpumpen/milchpumpe-reinigen",
+            "title": "So reinigst du die Teile deiner Milchpumpe"
+          },
+          {
+            "url": "https://stacks.cdc.gov/view/cdc/46875/cdc_46875_DS1.pdf",
+            "title": "How to Keep Your Breast Pump Kit Clean"
+          }
+        ],
+        "intent": "Konkreter Handspül-Ablauf ohne Maschine, mit Grenzen für Bürsten und empfindliche Bauteile. Kein Ratgeber zur allgemeinen Sterilisationshäufigkeit.",
+        "boundary": "Bestandsartikel reserve-pumpset-reinigen-trocknen-organisieren behandelt Reserve, Modellabgleich und Trockenplatz. Hier steht die einzelne Handwaschrunde im Mittelpunkt; das Trocken-Thema bleibt ein notwendiger Abschlussschritt."
+      },
+      "relatedSlugsChecked": [
+        "reserve-pumpset-reinigen-trocknen-organisieren",
+        "muttermilch-kuehlschrankbox-getrennt-aufbewahren"
+      ],
+      "facts": [
+        {
+          "claim": "Hände vor dem Umgang mit Wasser und Seife waschen.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Bevor es losgeht, wäschst du deine Hände und Fingernägel gründlich mit Wasser und Seife.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "spuelplatz"
+          ]
+        },
+        {
+          "claim": "Handreinigung nach jedem Gebrauch mit Spülmittel und heißem Wasser; anschließend Klarspülen und Trocknen.",
+          "sourceIndex": 1,
+          "ledgerId": 2,
+          "url": "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+          "quote": "Nach jedem Gebrauch Pumpset und Behälter mit Spülmittel und heißem Wasser reinigen. Danach unter fließendem Wasser abspülen und alle Spülmittelreste abwaschen. Mit einem Papierhandtuch oder an der Luft trocknen lassen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "von-hand-waschen",
+            "trocken-abschliessen"
+          ]
+        },
+        {
+          "claim": "Die Angabe mindestens 65 °C betrifft den beschriebenen Spülmaschinenweg, nicht ein empfohlenes Handbad.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Nach jedem Gebrauch Pumpset und Behälter wieder mit Spülmittel und heißem Wasser oder in der Spülmaschine bei mind. 65 °C reinigen*. Danach unter fließendem Wasser abspülen, um alle Spülmittelreste abzuwaschen, und mit einem Papierhandtuch oder an der Luft trocknen.",
+          "status": "verified-editorial-reading",
+          "sectionIds": [
+            "von-hand-waschen"
+          ],
+          "interpretationLimit": "Keine neue Temperatur für die Handreinigung festgelegt."
+        },
+        {
+          "claim": "Elektrische Motoreinheit nicht untertauchen; Motorpflege ist von der Teilewäsche getrennt.",
+          "sourceIndex": 4,
+          "ledgerId": 9,
+          "url": "https://www.medela.com/040-services/manual-instructions/retail-breast-pumps--double-electric-breast-pump-manuals-instructions/freestyle-hands-free-breast-pump.pdf",
+          "quote": "Unplug the breast pump before cleaning the motor unit. • Do not immerse the motor unit in water; do not run water over the motor unit.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "teile-sortieren"
+          ],
+          "interpretationLimit": "Modellbeispiel Freestyle Hands-free, keine Übertragung eines Teilewaschprogramms auf alle Pumpen."
+        },
+        {
+          "claim": "Soft Brush hat flexible weiche Borsten und eine Saugerbürste am Griff.",
+          "sourceIndex": 2,
+          "ledgerId": 3,
+          "url": "https://www.mambaby.com/de/p/soft-brush-fuer-babyflaschen/100009951",
+          "quote": "The innovative extra soft bristles flexibly adapt to different bottle forms. The structured teat brush cleans the teat on the inside:",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "soft-brush-einsatz"
+          ]
+        },
+        {
+          "claim": "Herstellerzweck Flaschen und Sauger; empfindliche Membranen und Ventilschlitze nicht mit Bürste bearbeiten.",
+          "sourceIndex": 3,
+          "ledgerId": 4,
+          "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+          "quote": "Geeignet zum Reinigen aller Flaschen und Sauger.",
+          "status": "verified-conservative-scope-boundary",
+          "sectionIds": [
+            "von-hand-waschen",
+            "soft-brush-einsatz"
+          ],
+          "interpretationLimit": "Die Anleitung enthält keine ausdrückliche Pumpenmembran- oder Ventilschlitzfreigabe. Das Bürstenverbot im Ratgeber ist eine konservative redaktionelle Sicherheitsgrenze, kein erfundenes wörtliches MAM-Verbot."
+        },
+        {
+          "claim": "Bürste vor Erstgebrauch und regelmäßig reinigen, vor Gebrauch prüfen, beschädigte Bürste entsorgen.",
+          "sourceIndex": 3,
+          "ledgerId": 4,
+          "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+          "quote": "Reinigen Sie das Produkt vor dem ersten Gebrauch und anschließend in regelmäßigen Abständen. • Überprüfen Sie die Flaschenbürste vor jedem Gebrauch. • Entsorgen Sie die Bürste bei ersten Anzeichen von Schäden oder Schwachstellen. Fehlerhafte Bürsten können die Flasche und den Sauger beschädigen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "buerste-pflegen"
+          ]
+        },
+        {
+          "claim": "Nach Gebrauch gründlich abspülen und belüftet trocknen.",
+          "sourceIndex": 3,
+          "ledgerId": 4,
+          "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+          "quote": "Spülen Sie die Flaschenbürste aus Hygienegründen nach dem Gebrauch gründlich ab und lassen Sie sie an einem gut belüfteten Ort trocknen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "buerste-pflegen"
+          ]
+        },
+        {
+          "claim": "Bürste nicht abkochen, mit Dampf oder in Mikrowelle sterilisieren; Borsten können sich verformen.",
+          "sourceIndex": 3,
+          "ledgerId": 4,
+          "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+          "quote": "Nicht abkochen, nicht mit Dampf oder in der Mikrowelle sterilisieren. Dies könnte zu einer Verformung der Borsten führen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "buerste-pflegen"
+          ]
+        },
+        {
+          "claim": "Keine aggressiven Reinigungsmittel für die Bürste.",
+          "sourceIndex": 3,
+          "ledgerId": 4,
+          "url": "https://www.mambaby.com/media/d9/34/e2/1744121486/1182400_instructions_soft_brush_DE_01_2025.pdf?ts=1744121486",
+          "quote": "Keine aggressiven Reinigungsmittel verwenden.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "buerste-pflegen"
+          ]
+        },
+        {
+          "claim": "Allgemeine Handspülhilfe ersetzt keine konkrete Herstelleranleitung oder individuelle Beratung.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Entscheidest du dich für eine Pumpe, können Hebammen und Stillberatende bei der Auswahl der Pumpe, des passenden Trichteraufsatzes und bei der richtigen Anwendung unterstützen, damit die Milch wirkungsvoll gewonnen und deine Brustwarze nicht verletzt wird.",
+          "status": "editorial-safety-boundary",
+          "sectionIds": [
+            "teile-sortieren",
+            "trocken-abschliessen"
+          ],
+          "interpretationLimit": "Keine allgemeine Desinfektionshäufigkeit behauptet. Bestehende Pflichten werden nicht aufgehoben; modellspezifische Anweisungen bleiben maßgeblich."
+        }
+      ],
+      "editorialRecommendations": {
+        "status": "clearly-editorial-not-manufacturer-claims",
+        "examples": [
+          "sauberen Spülplatz einrichten",
+          "vorhandene geeignete Bürste prüfen"
+        ]
+      },
+      "purchaseRelevantChecks": {
+        "productIdentity": "catalogue-id-and-exact-requested-product-name-checked",
+        "variantFacts": "all-stated-numeric-product-facts-quoted-above",
+        "priceAvailabilityASIN": "not-claimed-not-verified",
+        "compatibility": "no-universal-fit-claim; model/manual check remains required",
+        "productCount": 1,
+        "noPurchaseAlternative": "Eine vorhandene, intakte und nach ihrer Anleitung gereinigte Flaschenbürste kann genügen. Verwende sie nur an Flaschen und ausdrücklich geeigneten Flächen."
+      }
+    },
+    {
+      "slug": "muttermilch-kita-mitgeben",
+      "primaryProductId": "mam-aufbewahrungsbecher",
+      "queryEvidence": {
+        "queries": [
+          "Muttermilch Kita mitgeben Behälter beschriften",
+          "\"Muttermilch\" \"Kita\" \"Absprachen\""
+        ],
+        "observedResults": [
+          {
+            "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+            "title": "Merkblatt zur Handhabung von Muttermilch in der externen Kinderbetreuung"
+          },
+          {
+            "url": "https://www.landkreis-osnabrueck.de/sites/default/files/2019-12/28_umgang_mit_muttermilch_in_kitas_mfb-05-2004-os_vers._1.0.pdf",
+            "title": "LANDKREIS OSNABRÜCK, Umgang mit Muttermilch in Kitas"
+          }
+        ],
+        "intent": "Absprachen mit Betreuung, Behälterannahme, Zuordnung und persönlicher Übergabeablauf.",
+        "boundary": "muttermilch-arbeitsplatz-transport-kuehlkette plant Kühlung vom Arbeitsort nach Hause. muttermilch-beschriften-portionen-gefrierfach organisiert privaten Gefriervorrat. Kita-Artikel behandelt die Schnittstelle Eltern–Einrichtung, nicht nochmals Kühltaschen- oder Gefrierorganisation."
+      },
+      "relatedSlugsChecked": [
+        "muttermilch-arbeitsplatz-transport-kuehlkette",
+        "muttermilch-beschriften-portionen-gefrierfach",
+        "abgepumpte-muttermilch-flasche-sauger-auswaehlen"
+      ],
+      "facts": [
+        {
+          "claim": "Das Kita-Merkblatt ist ein Schweizer Orientierungstext von 2025, keine deutsche Bundesvorgabe.",
+          "sourceIndex": 1,
+          "ledgerId": 8,
+          "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+          "quote": "2025 © Stillförderung Schweiz",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "kita-ansprechen"
+          ],
+          "interpretationLimit": "Die Checkliste ist eine redaktionelle Gesprächshilfe. Aus dem Schweizer Text wird keine deutsche Rechts- oder Annahmepflicht abgeleitet."
+        },
+        {
+          "claim": "Name des Kindes und Abpumpdatum im Schweizer Kita-Merkblatt.",
+          "sourceIndex": 1,
+          "ledgerId": 8,
+          "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+          "quote": "Die Flaschen oder Beutel sind mit dem Namen des Kindes sowie dem Abpumpdatum beschriftet.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "eindeutig-beschriften"
+          ]
+        },
+        {
+          "claim": "Gesund ins Leben nennt Datum und zusätzlich einen Namen für die Kita; abweichende Namensformulierung bleibt sichtbar.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Tipp: Am besten beschriftest du die Behälter mit einem Datum, so behältst du den Überblick. Wenn du die Muttermilch mit in die Kita nehmen möchtest, schreibst zu zusätzlich deinen Namen auf das Etikett.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "eindeutig-beschriften"
+          ],
+          "interpretationLimit": "Quelle sagt deinen Namen, Schweizer Quelle Namen des Kindes. Ratgeber vereinbart eindeutige Namensangabe mit der Kita und behauptet keine wortgleichen Vorgaben."
+        },
+        {
+          "claim": "Mahlzeitgerechte Schätzportionen und kleinere Reserven statt fester Alters-Trinkmengen.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Am besten füllst du die Milch in den geschätzten mahlzeitgerechten Portionen ab. Am besten frierst du zusätzlich kleinere Portionen als Vorrat ein, falls der Hunger doch etwas größer ist. Wie viel Muttermilch ein Säugling während einer Stillmahlzeit trinkt, ist je nach Alter und Trinkfreudigkeit unterschiedlich. Hier hilft ausprobieren.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "portionen-absprechen"
+          ]
+        },
+        {
+          "claim": "Hunger- und Sättigungssignale beim Füttern beachten.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Die Person, die das Baby füttert, kann wie beim Stillen auf seine Signale rund um Hunger, Sättigung und Nähe eingehen und es beim Essen unterstützen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "portionen-absprechen"
+          ]
+        },
+        {
+          "claim": "Füttern und Aufbewahren sind getrennte Fragen; es gibt unterschiedliche Füttermethoden.",
+          "sourceIndex": 1,
+          "ledgerId": 8,
+          "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+          "quote": "Muttermilch kann je nach Vorliebe des Kindes mit der Flasche, mit dem Löffel oder mit einem geeig- neten Becher verabreicht werden.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "portionen-absprechen"
+          ],
+          "interpretationLimit": "PDF-Zeilentrennung geeig-/neten im wörtlichen Beleg erhalten; kein eigener Produkttest."
+        },
+        {
+          "claim": "Durchgehende Kühlung; Kühlbox mit Akkus als Transportbeispiel.",
+          "sourceIndex": 0,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Wichtig ist eine durchgehende Kühlung! Für den Transport nutze beispielsweise eine Kühlbox mit Akkus.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "morgen-uebergabe"
+          ]
+        },
+        {
+          "claim": "Absprache über nicht getrunkene Milch wird im Schweizer Text empfohlen.",
+          "sourceIndex": 1,
+          "ledgerId": 8,
+          "url": "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf",
+          "quote": "Sinnvollerweise besteht eine Absprache mit den Eltern zur weiteren Verwendung der Mutter- milch, die das Kind nicht getrunken hat.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "rueckmeldung-abholen"
+          ],
+          "interpretationLimit": "Keine Schweizer Lagerfrist und keine Rücknahme-/Haftungspflicht als deutsche Regel übernommen."
+        },
+        {
+          "claim": "MAM-Becher sind für Kühlschrank, Gefriertruhe und unterwegs beschrieben.",
+          "sourceIndex": 2,
+          "ledgerId": 5,
+          "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Ideal zur Lagerung in Kühlschrank und Gefriertruhe. Und für unterwegs.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "becher-option"
+          ]
+        },
+        {
+          "claim": "Abwaschbares Beschriftungsfeld.",
+          "sourceIndex": 2,
+          "ledgerId": 5,
+          "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Dank des abwaschbaren Beschriftungsfeldes kann der Inhalt immer mit aktuellem Datum versehen werden.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "becher-option"
+          ]
+        },
+        {
+          "claim": "Fünf Becher pro Packung auf der gelesenen Produktseite.",
+          "sourceIndex": 2,
+          "ledgerId": 5,
+          "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "5 Stück pro Packung",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "becher-option"
+          ]
+        },
+        {
+          "claim": "Wiederholtes Reinigen und Sterilisieren wird vom Hersteller angegeben.",
+          "sourceIndex": 2,
+          "ledgerId": 5,
+          "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "Können beliebig oft gereinigt und sterilisiert werden.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "becher-option"
+          ],
+          "interpretationLimit": "Keine konkrete Methode ohne zugehörige Anleitung und kein unbegrenztes Verschleißversprechen abgeleitet."
+        },
+        {
+          "claim": "Auf der gelesenen Beschreibung steht kein eindeutig zugeordnetes Bechervolumen; daher Größenprüfung statt erfundener Zahl.",
+          "sourceIndex": 2,
+          "ledgerId": 5,
+          "url": "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928",
+          "quote": "5 Stück pro Packung",
+          "status": "verified-page-scope-no-volume-claim",
+          "sectionIds": [
+            "becher-option"
+          ],
+          "interpretationLimit": "Volltext auf Volumenangaben geprüft. Andere Zahlen aus Navigation, Fremdprodukten oder Packungsfotos nicht als Inhalt pro Becher verwendet."
+        }
+      ],
+      "editorialRecommendations": {
+        "status": "clearly-editorial-not-manufacturer-claims",
+        "examples": [
+          "Annahme, Beschriftung, Rückgabe mit Kita vereinbaren",
+          "keine universelle Annahmepflicht behaupten"
+        ]
+      },
+      "purchaseRelevantChecks": {
+        "productIdentity": "catalogue-id-and-exact-requested-product-name-checked",
+        "variantFacts": "all-stated-numeric-product-facts-quoted-above",
+        "priceAvailabilityASIN": "not-claimed-not-verified",
+        "compatibility": "no-universal-fit-claim; model/manual check remains required",
+        "productCount": 1,
+        "noPurchaseAlternative": "Bereits vorhandene, für Muttermilch geeignete und von der Kita akzeptierte Behälter weiterverwenden; ein bestimmtes Bechersystem ist nicht nötig."
+      }
+    },
+    {
+      "slug": "medela-muttermilchflaschen-150-250-ml",
+      "primaryProductId": "medela-muttermilchflaschen",
+      "queryEvidence": {
+        "queries": [
+          "Medela Muttermilchflaschen 150 250 ml Dreierpack Zweierpack"
+        ],
+        "observedResults": [
+          {
+            "url": "https://shop.medela.co.uk/products/breast-milk-storage-and-collecting/bottles",
+            "title": "Breast Milk Bottles | Storing Breastmilk | Medela"
+          },
+          {
+            "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?bvstate=pg%3A2%2Fct%3Ar&productId=1003",
+            "title": "Muttermilchflaschen | Medela"
+          }
+        ],
+        "intent": "Kaufnahe Größen-/Packungsentscheidung mit Deckeln und Anschlussprüfung, kein zusätzlicher generischer Markenartikel.",
+        "boundary": "muttermilch-kuehlschrankbox-getrennt-aufbewahren behandelt Stellplätze und getrennte Ablage, der Arbeitsplatzartikel den gekühlten Rückweg. Der neue Artikel entscheidet 150/250 ml, Stückzahl und tatsächlichen Verwendungszweck; Saugerauswahl bleibt im eigenen Bestandsartikel."
+      },
+      "relatedSlugsChecked": [
+        "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+        "muttermilch-arbeitsplatz-transport-kuehlkette",
+        "abgepumpte-muttermilch-flasche-sauger-auswaehlen"
+      ],
+      "facts": [
+        {
+          "claim": "150 ml im Dreierpack und 250 ml im Zweierpack.",
+          "sourceIndex": 0,
+          "ledgerId": 6,
+          "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+          "quote": "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "groesse-und-stueckzahl"
+          ]
+        },
+        {
+          "claim": "Schraubdeckel werden als mitgeliefert beschrieben.",
+          "sourceIndex": 0,
+          "ledgerId": 6,
+          "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+          "quote": "Und die mitgelieferten Schraubdeckel sorgen dafür, dass bei der Aufbewahrung im Kühl- oder Gefrierschrank wie auch unterwegs alles dicht ist und nichts ausläuft.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "deckel-kontrollieren"
+          ],
+          "interpretationLimit": "Als Herstellerangabe, keine eigene Dichtheitsprüfung und keine Garantie für beliebige Händlerbundles."
+        },
+        {
+          "claim": "Die Flaschen sind zum Aufbewahren im Kühl- und Gefrierschrank beschrieben.",
+          "sourceIndex": 0,
+          "ledgerId": 6,
+          "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+          "quote": "Die Milchflaschen sind aus sicherem Kunststoff gefertigt, um die vorteilhaften Eigenschaften der Muttermilch zu bewahren und ideal zum Aufbewahren der Muttermilch im Kühl- oder Gefrierschrank.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "pumpenanschluss-pruefen",
+            "platz-und-pflege"
+          ]
+        },
+        {
+          "claim": "BPA-frei und spülmaschinengeeignet laut Hersteller.",
+          "sourceIndex": 0,
+          "ledgerId": 6,
+          "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+          "quote": "Die Muttermilchflaschen von Medela sind BPA-frei, spülmaschinen- und auch mikrowellenfest.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "platz-und-pflege"
+          ],
+          "interpretationLimit": "Keine zusätzliche BPS-frei-Behauptung aus BPA-frei abgeleitet; mikrowellenfest ist keine Milcherwärmungsempfehlung."
+        },
+        {
+          "claim": "Allgemeine Pumpenwerbung bestätigt keinen Direktanschluss an InBra oder Hands-free-Cups.",
+          "sourceIndex": 0,
+          "ledgerId": 6,
+          "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+          "quote": "Sie passen zu jeder Milchpumpe Medela.",
+          "status": "verified-marketing-claim-not-accepted-as-universal-fit",
+          "sectionIds": [
+            "pumpenanschluss-pruefen"
+          ],
+          "interpretationLimit": "In dieser Quelle fehlen eine generationsbezogene Kompatibilitätsliste und bestätigte Direktanschlüsse an InBra/Cups. Ratgeber verspricht weder Universalpassform noch eine konkret ungeprüfte Adapterkombination."
+        },
+        {
+          "claim": "Mahlzeitmengen variieren; keine altersfeste Flaschengröße ableitbar.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Wie viel Muttermilch ein Säugling während einer Stillmahlzeit trinkt, ist je nach Alter und Trinkfreudigkeit unterschiedlich. Hier hilft ausprobieren.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "bedarf-statt-alter"
+          ]
+        },
+        {
+          "claim": "Beim Einfrieren braucht Milch Ausdehnungsraum.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Da Milch sich beim Einfrieren ausdehnt, lass einen kleinen Luftraum von etwa zwei bis drei Zentimetern.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "platz-und-pflege"
+          ],
+          "interpretationLimit": "Ratgeber übernimmt keine pauschale ml-Befüllgrenze für beide Flaschengrößen."
+        },
+        {
+          "claim": "Datum auf Behälter schreiben.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Am besten beschriftest du die Behälter mit einem Datum, so behältst du den Überblick.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "platz-und-pflege"
+          ]
+        },
+        {
+          "claim": "Transportkühlung ist vom Verschluss getrennt zu planen.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Wichtig ist eine durchgehende Kühlung! Für den Transport nutze beispielsweise eine Kühlbox mit Akkus.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "deckel-kontrollieren"
+          ]
+        },
+        {
+          "claim": "Milch nicht in der Mikrowelle auftauen oder erwärmen.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Achtung: Eine Mikrowelle ist nicht geeignet, weder zum Auftauen noch zum Erwärmen,",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "platz-und-pflege"
+          ],
+          "interpretationLimit": "Die Materialfreigabe der Flasche hebt die Empfehlung zum Umgang mit ihrem Milchinhalt nicht auf."
+        },
+        {
+          "claim": "Wiederverwendete Behälter nach Gebrauch reinigen.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Nach jedem Gebrauch Pumpset und Behälter wieder mit Spülmittel und heißem Wasser oder in der Spülmaschine bei mind. 65 °C reinigen*. Danach unter fließendem Wasser abspülen, um alle Spülmittelreste abzuwaschen, und mit einem Papierhandtuch oder an der Luft trocknen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "platz-und-pflege"
+          ]
+        }
+      ],
+      "editorialRecommendations": {
+        "status": "clearly-editorial-not-manufacturer-claims",
+        "examples": [
+          "Variantenwahl und Lieferumfang beim Händler prüfen",
+          "vorhandene Flaschen und Deckel zählen"
+        ]
+      },
+      "purchaseRelevantChecks": {
+        "productIdentity": "catalogue-id-and-exact-requested-product-name-checked",
+        "variantFacts": "all-stated-numeric-product-facts-quoted-above",
+        "priceAvailabilityASIN": "not-claimed-not-verified",
+        "compatibility": "no-universal-fit-claim; model/manual check remains required",
+        "productCount": 1,
+        "noPurchaseAlternative": "Vorhandene geeignete Flaschen weiterverwenden, wenn Zustand, Verschluss, Pflege und gegebenenfalls Pumpenanschluss zum geplanten Einsatz passen."
+      }
+    },
+    {
+      "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+      "primaryProductId": "medela-quick-clean-microwave-bags",
+      "queryEvidence": {
+        "queries": [
+          "Medela Quick Clean Mikrowellenbeutel Anleitung Wasser Watt"
+        ],
+        "observedResults": [
+          {
+            "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+            "title": "QCMB-IFU-EU-09CD-V1.0_110623 - Medela"
+          },
+          {
+            "url": "https://shop.medela.co.uk/wp-content/uploads/2019/11/quick-clean-microwave-bags-instructions-for-use-1.pdf",
+            "title": "Quick Clean microwave bags instructions for use"
+          }
+        ],
+        "intent": "Anwendungsvoraussetzungen der konkreten EU-Anleitung einschließlich Material, Vorreinigung, Wasser, Wattgrenzen und Hitze.",
+        "boundary": "Keine Wiederholung der allgemeinen Reserve-Organisation und kein allgemeiner Sterilisatorvergleich. muttermilch-erwaermen-ohne-flaschenwaermer handelt vom Milchinhalt; hier geht es um leere, gereinigte freigegebene Zubehörteile."
+      },
+      "relatedSlugsChecked": [
+        "reserve-pumpset-reinigen-trocknen-organisieren",
+        "muttermilch-erwaermen-ohne-flaschenwaermer"
+      ],
+      "facts": [
+        {
+          "claim": "Quick Clean nur für mikrowellengeeignete Kunststoffe.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Der Quick Clean Mikrowellenbeutel ist ausschließlich für den Gebrauch mit mikrowellengeeigneten Kunststoffen bestimmt.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "teilefreigabe"
+          ]
+        },
+        {
+          "claim": "Keine Schläuche im Beutel.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Keine Schläuche im Mikrowellenbeutel desinfizieren, da diese sich dadurch verformen könnten.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "teilefreigabe"
+          ]
+        },
+        {
+          "claim": "Der Anwendungsumfang sind persönliche Zubehörteile, keine elektrischen Pumpeneinheiten.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Milchpumpen- und Stillzubehör für den persönlichen Gebrauch schnell und sicher desinfizieren. Der Beutel kann bis zu 20 Mal wiederverwendet werden.",
+          "status": "verified-conservative-scope-boundary",
+          "sectionIds": [
+            "teilefreigabe"
+          ],
+          "interpretationLimit": "Motoren und elektrische Pumpeneinheiten ausdrücklich ausgeschlossen im Ratgeber. Die EU-Beutelanleitung nennt keine Freigabe für solche Einheiten; keine Universalfreigabe aus Kunststoffgehäuse abgeleitet."
+        },
+        {
+          "claim": "Zerlegen, kaltes Vorspülen ca.20 °C, warmes Seifenwasser ca.30 °C und kaltes Nachspülen.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Zerlegen Sie die zu desinfizierenden Teile in ihre Einzelteile. • \u0007Alle Teile gründlich mit kaltem, klarem Wasser (ca. 20 °C) abspülen und anschließend mit warmem Seifenwasser (ca. 30 °C) reinigen. Erneut mit kaltem, klarem Wasser abspülen (siehe Abbildung 1).",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "reinigen-vor-dampf"
+          ],
+          "interpretationLimit": "Nur als Ablauf dieser EU-Anleitung, nicht als allgemeine Handspültemperatur für jedes Pumpset."
+        },
+        {
+          "claim": "Wasser in Trinkwasserqualität für das Verfahren.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Verwenden Sie Wasser in Trinkwasserqualität für alle nachfolgend beschriebenen Reinigungsverfahren.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "reinigen-vor-dampf"
+          ]
+        },
+        {
+          "claim": "60 ml Wasser; weniger kann Teile verformen.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "60 ml Wasser in den Beutel einfüllen (siehe Abbildung 2). \u0007Füllen Sie nicht weniger als 60 ml Wasser ein. Das Verwenden von weniger als 60 ml Wasser kann die Teile verformen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ]
+        },
+        {
+          "claim": "Nicht überfüllen; Beladungsangaben sind Beispiele.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Den Beutel nicht überfüllen. \u0007Keine Schläuche im Mikrowellenbeutel desinfizieren, da diese sich dadurch verformen könnten. Ein Beutel fasst (Beispiele): • \u0007Ein Pumpset bestehend aus Brusthaube/Verbindungsstück/ Ventil-Membrane sowie eine Flasche mit Deckel oder Sauger; • \u0007Zwei Pumpsets bestehend aus Brusthaube/Verbindungsstück/ Ventil-Membrane; • Zwei 150-ml-Muttermilchflaschen und Deckel/Sauger; • Zwei 250-ml-Muttermilchflaschen und Deckel/Sauger.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ],
+          "interpretationLimit": "Keine Cup-Kapazität aus Flaschenbeispielen errechnet oder behauptet."
+        },
+        {
+          "claim": "Fest verschließen und mittig auf den Drehteller.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Beutel fest verschließen (Abbildung 4). • \u0007Fest verschlossenen Beutel in die Mikrowelle stellen. Den Beutel in die Mitte des Drehtellers stellen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ]
+        },
+        {
+          "claim": "Aufrecht und ohne Wandkontakt; ohne Drehteller nach der halben Zeit umdrehen.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Achten Sie darauf, dass der Beutel aufrecht steht, und die Wände der Mikrowelle nicht berührt. Hinweis: \u0007Wenn Ihre Mikrowelle keinen Drehteller hat, Beutel nach der Hälfte der Reinigungszeit umdrehen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ]
+        },
+        {
+          "claim": "Freies Drehen als zusätzlicher Hinweis im englischen Abschnitt derselben EU-Anleitung.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Make sure the bag stands up securely and can turn freely in the microwave.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ],
+          "interpretationLimit": "Deutscher Abschnitt nennt aufrecht und keinen Wandkontakt; englische Fassung präzisiert freies Drehen."
+        },
+        {
+          "claim": "Keine Verwendung im Back-/Grillofen oder auf Metall-Grillrost; Mikrowellenanleitung beachten.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Den Beutel nicht in einen herkömmlichen Back- oder Grillofen legen. • \u0007Den Beutel nicht auf einen Metall-Grillrost legen, der bei einigen Mikrowellen enthalten ist. • \u0007Befolgen Sie die Gebrauchsanweisung Ihrer Mikrowelle.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wasser-und-beladung"
+          ]
+        },
+        {
+          "claim": "Wattbereiche der EU-Tabelle überlappen bei 1100 W und lassen zwischen 750 und 800 W eine Lücke.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Zeitangaben für die Erhitzung in der Mikrowelle: • \u00071100W+ = 1,5 Minuten • \u0007800–1100W = 3 Minuten • \u0007500–750W = 5 Minuten",
+          "status": "verified-source-ambiguity-unresolved",
+          "sectionIds": [
+            "wattgrenzen-klaeren"
+          ],
+          "interpretationLimit": "Wörtliche Tabelle nur im internen Beleg, keine selbst reparierte öffentliche Zeittabelle. Bei Grenz-/Lückenfall vor Anwendung Herstellerklärung oder anderes freigegebenes Verfahren. Keine pauschale 90-Sekunden-Empfehlung."
+        },
+        {
+          "claim": "Zu langes Erhitzen kann Teile verformen.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Durch zu langes Erhitzen könnten sich die Teile verformen.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "wattgrenzen-klaeren"
+          ]
+        },
+        {
+          "claim": "Entnahme mit Hitzeschutz; erst Ausgießen, dann Öffnen; Verbrennungsgefahr.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Den heißen Beutel vorsichtig aus der Mikrowelle nehmen (Abbildung 5). Verwenden Sie Ofenhandschuhe oder Topflappen, da sich heißes Wasser und Dampf im Mikrowellenherd ansammeln können. • \u0007Zuerst das heiße Wasser durch den Ausguss aus dem Beutel gießen (Abbildung 6). Dann den Beutel vorsichtig öffnen. \u0007Vorsicht beim Herausnehmen des Beutels aus der Mikrowelle oder beim Öffnen des Beutels. Heißes Wasser oder Dampf können entweichen (Verbrennungsgefahr).",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "heiss-entnehmen"
+          ]
+        },
+        {
+          "claim": "EU-Fassung nennt keine feste Abkühlwartezeit.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Den heißen Beutel vorsichtig aus der Mikrowelle nehmen (Abbildung 5). Verwenden Sie Ofenhandschuhe oder Topflappen, da sich heißes Wasser und Dampf im Mikrowellenherd ansammeln können. • \u0007Zuerst das heiße Wasser durch den Ausguss aus dem Beutel gießen (Abbildung 6). Dann den Beutel vorsichtig öffnen. \u0007Vorsicht beim Herausnehmen des Beutels aus der Mikrowelle oder beim Öffnen des Beutels. Heißes Wasser oder Dampf können entweichen (Verbrennungsgefahr).",
+          "status": "verified-absence-in-read-instructions",
+          "sectionIds": [
+            "heiss-entnehmen"
+          ],
+          "interpretationLimit": "Vollständigen deutschen Anwendungsabschnitt gelesen; keine Minutenwartezeit enthalten. Es wird keine solche Zahl aus älteren/anderen Länderanleitungen eingefügt."
+        },
+        {
+          "claim": "Sauberes Tuch zum Trocknen und geschütztes Aufbewahren nicht sofort genutzter Teile.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Vorsichtig alle Teile aus dem Beutel nehmen. Jedes Teil mit einem sauberen Tuch abtrocknen (Abbildung 7). Die Teile, die Sie nicht unmittelbar nach der Desinfektion verwenden, in einem sauberen, verschließbaren Beutel verpacken oder in einem Behälter mit Deckel aufbewahren. Alternativ die Teile in ein sauberes Papiertuch oder Stofftuch einwickeln.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "heiss-entnehmen"
+          ]
+        },
+        {
+          "claim": "Maximal20 Anwendungen; Kästchen nach jedem Gebrauch ankreuzen.",
+          "sourceIndex": 0,
+          "ledgerId": 7,
+          "url": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+          "quote": "Der Beutel kann maximal 20 Mal verwendet werden. Um festzuhalten, wie viele Male Sie den Beutel bereits verwendet haben, sind nummerierte Kästchen auf den Beutel aufgedruckt (Abbildung 8). Kreuzen Sie nach jedem Gebrauch ein Kästchen an.",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "anwendungen-zaehlen"
+          ]
+        },
+        {
+          "claim": "Dampfbehandlung von Zubehör ist nicht Mikrowellenerwärmung der Milch.",
+          "sourceIndex": 1,
+          "ledgerId": 1,
+          "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+          "quote": "Achtung: Eine Mikrowelle ist nicht geeignet, weder zum Auftauen noch zum Erwärmen,",
+          "status": "verified-primary-source",
+          "sectionIds": [
+            "anwendungen-zaehlen"
+          ]
+        }
+      ],
+      "editorialRecommendations": {
+        "status": "clearly-editorial-not-manufacturer-claims",
+        "examples": [
+          "bei unklarer Wattgrenze nicht raten",
+          "vorhandenes freigegebenes Verfahren statt Neukauf nutzen"
+        ]
+      },
+      "purchaseRelevantChecks": {
+        "productIdentity": "catalogue-id-and-exact-requested-product-name-checked",
+        "variantFacts": "all-stated-numeric-product-facts-quoted-above",
+        "priceAvailabilityASIN": "not-claimed-not-verified",
+        "compatibility": "no-universal-fit-claim; model/manual check remains required",
+        "productCount": 1,
+        "noPurchaseAlternative": "Wenn deine Pumpenanleitung bereits ein anderes Desinfektionsverfahren erlaubt und du es zu Hause umsetzen kannst, ist ein Mikrowellenbeutel nicht erforderlich."
+      }
+    }
+  ],
+  "verification": {
+    "verbatimQuoteChecks": 53,
+    "quoteCheckMethod": "Jedes Zitat wird als zusammenhängender Wortlaut im tatsächlichen nativen Volltext gefunden; nur Unicode-Leerraum vereinheitlicht.",
+    "allQuotesMatchRetrievedText": true,
+    "groundedCitationLedgerQuoteChecks": [
+      {
+        "ledgerId": 1,
+        "exitCode": 0,
+        "stdout": "[1] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 2,
+        "exitCode": 0,
+        "stdout": "[2] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 3,
+        "exitCode": 0,
+        "stdout": "[3] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 4,
+        "exitCode": 0,
+        "stdout": "[4] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 5,
+        "exitCode": 0,
+        "stdout": "[5] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 6,
+        "exitCode": 0,
+        "stdout": "[6] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 7,
+        "exitCode": 0,
+        "stdout": "[7] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 8,
+        "exitCode": 0,
+        "stdout": "[8] evidence attached (1 quote(s))"
+      },
+      {
+        "ledgerId": 9,
+        "exitCode": 0,
+        "stdout": "[9] evidence attached (1 quote(s))"
+      }
+    ],
+    "schemaValidation": {
+      "result": "PASS",
+      "exitCode": 0,
+      "jsonFilesParsed": 2,
+      "guides": 4,
+      "uniqueSlugs": 4,
+      "productsPerGuide": [1, 1, 1, 1],
+      "sections": 24,
+      "faqs": 15,
+      "verbatimQuotes": 53,
+      "sourcesWithNativeRead": 9,
+      "sourceIndexesInBounds": true,
+      "factSourcesMatchArticleSources": true,
+      "relatedSlugsMatchedExistingGuides": true,
+      "mainTextWordsPerGuide": [686, 740, 689, 667],
+      "wordsIncludingFAQPerGuide": [782, 850, 826, 832],
+      "baselineModifiedFiles": [],
+      "newRepositoryFiles": ["docs/longtail-guide-evidence.json", "docs/longtail-guides-draft.json"],
+      "errors": []
+    }
+  }
+}

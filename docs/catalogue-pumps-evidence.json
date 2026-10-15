@@ -1,0 +1,819 @@
+{
+  "checkedAt": "2026-10-14",
+  "scope": "Zusätzliche eigenständige Milchpumpen für Deutschland; keine Farb-, Packungs- oder bloßen Zubehörvarianten als weitere Modelle.",
+  "methodology": [
+    "Offizielle Produktseiten tatsächlich mit web_extract gelesen; bei ausgelassenen dynamischen Feldern zusätzlich Browser-DOM im isolierten Kontext catalogue-pumps gelesen.",
+    "Suchergebnisse dienten nur zur URL-Suche, nicht als alleiniger Beleg.",
+    "Zitate stammen aus Herstellertext bzw. technischen Tabellen; keine Kundenrezensionen als Beleg verwendet.",
+    "Praktische Schlussfolgerungen in limitationEvidence ausdrücklich als derived markiert.",
+    "Keine eigenen Praxistests, keine Zusagen zu Milchmenge, individueller Eignung oder Provisionsleistung.",
+    "Keine Preise, Bestands- oder Lieferzusagen übernommen; keine Amazon-Seiten gescrapt und keine ASINs erfunden.",
+    "Keine kommerzielle Bildfreigabe dokumentiert; daher alle Bildrechte not-cleared, keine Bilder heruntergeladen."
+  ],
+  "excludedExistingProducts": [
+    {
+      "id": "momcozy-m9",
+      "model": "Momcozy M9"
+    },
+    {
+      "id": "momcozy-s12-pro",
+      "model": "Momcozy S12 Pro, alte Generation"
+    },
+    {
+      "id": "medela-freestyle",
+      "model": "Medela Freestyle Hands-free"
+    },
+    {
+      "id": "philips-avent-scf547",
+      "model": "Philips Avent SCF547/11"
+    },
+    {
+      "id": "elvie-pump-single",
+      "model": "Elvie Pump Single"
+    },
+    {
+      "id": "haakaa-gen3",
+      "model": "Haakaa Gen3"
+    }
+  ],
+  "sourceLimitations": [
+    "Suchbackend SearXNG nicht erreichbar; die Suche nutzte den ausgewiesenen Ersatzbackend. Produktnachweise wurden unabhängig davon direkt gelesen.",
+    "Einzelne Extraktionen kürzten bzw. übersprangen Akkordeontexte; Zitate wurden mit vorherigen echten Extrakten und Browser-DOM ergänzt.",
+    "Medela Solo und Swing Maxi: erster Produktabruf lesbar, wiederholter Abruf leer; tatsächliche Browser-Inspektion bestätigte Merkmale und Lieferumfang.",
+    "Beurer BY 40: widersprüchliche Stromversorgungsbezeichnungen; kein integrierter Akku behauptet.",
+    "Momcozy M6: voneinander abweichende Vakuumwerte nicht übernommen.",
+    "Momcozy S9 Pro: gemischt deutscher/englischer Text und widersprüchliche Geräusch-/Laufzeitangaben; diese Werte nicht übernommen.",
+    "Lansinoh Doppelmilchpumpe: teils kopierte Handpumpen-FAQ nicht als technische Quelle übernommen."
+  ],
+  "validation": {
+    "count": 12,
+    "uniqueIds": 12,
+    "uniquePrimaryUrls": 12,
+    "manufacturerCount": 5,
+    "factCount": 48,
+    "limitationCount": 24,
+    "excludedIdOverlap": [],
+    "schemaValidated": true,
+    "twoSentenceSummariesValidated": true,
+    "allQuotesMatchedReadManufacturerExcerpts": true,
+    "packagingVariantsCountedAsModels": false,
+    "priceAndStockClaimsIncluded": false,
+    "imageDownloads": 0,
+    "publishingPerformed": false,
+    "commitPerformed": false
+  },
+  "products": [
+    {
+      "id": "medela-harmony",
+      "brand": "Medela",
+      "name": "Harmony™ Handmilchpumpe von Medela",
+      "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/milchpumpen/handmilchpumpe/harmony-handmilchpumpe-von-medela?productId=1021",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Einseitige Handmilchpumpe.",
+          "quote": "Harmony™ ist eine einseitige Handmilchpumpe",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Betrieb ohne Elektrizität oder Batterien.",
+          "quote": "Sie benötigen keine Elektrizität oder Batterien",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "PersonalFit Flex Brusthaube mit ovaler Form und weichem Rand.",
+          "quote": "Dank ihres Öffnungswinkels von 105° Grad, dem weichen Rand und ihrer ovalen Form",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Zwei Pump-Phasen über die kurze und lange Griffseite.",
+          "quote": "Bewege dafür zunächst die kurze Seite des Griff schnell um den Milchfluss anzuregen. Wenn du siehst, dass deine Milch fließt, benutze die lange Griffseite zum Abpumpen.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Der Pumpvorgang erfordert wiederholte Handbewegungen.",
+          "basisType": "derived",
+          "quote": "benutze die lange Griffseite zum Abpumpen.",
+          "reasoning": "Praktische Folge der manuellen Griffbedienung, kein eigener Ergonomietest.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Mit dieser Pumpe wird nur eine Brust gleichzeitig abgepumpt.",
+          "basisType": "explicit",
+          "quote": "Harmony™ ist eine einseitige Handmilchpumpe",
+          "reasoning": "Einseitige Bauart laut Produktseite.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Ein Modell; Essentials- und andere Zubehörpakete werden nicht zusätzlich gezählt.",
+        "Keine Aussagen zur individuell erzielbaren Milchmenge oder eigener Test."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Harmony™ ist eine einseitige Handmilchpumpe",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "medela-solo",
+      "brand": "Medela",
+      "name": "Solo™ – Elektrische Milchpumpe für einseitiges Abpumpen",
+      "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/milchpumpen/elektische-hands-free-milchpumpe/solo-elektrische-milchpumpe-fur-einseitiges-abpumpen",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Elektrische Einzelmilchpumpe mit integriertem Akku.",
+          "quote": "elektrische Milchpumpe für einseitiges Abpumpen mit 2-Phase Expression ® -Technologie, PersonalFit Flex™ Brusthaube und integriertem Akku.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Vier Bedientasten und neun Voreinstellungen.",
+          "quote": "Intuitive Oberfläche mit 4 Tasten sowie 9 Voreinstellungen.",
+          "inspectionMethod": "browser DOM textContent"
+        },
+        {
+          "factIndex": 2,
+          "claim": "USB-C-Anschluss zum Aufladen.",
+          "quote": "USB-C-Anschluss im Vergleich zum Mikro-USB-Anschluss.",
+          "inspectionMethod": "browser DOM textContent"
+        },
+        {
+          "factIndex": 3,
+          "claim": "PersonalFit Flex Brusthaube mit 24 mm im Lieferumfang.",
+          "quote": "1 x PersonalFit Flex™ Brusthaube, Größe 24 mm",
+          "inspectionMethod": "browser DOM innerText"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Nicht zu einer Doppelmilchpumpe umbaubar.",
+          "basisType": "explicit",
+          "quote": "ihr Motor nicht dafür ausgelegt ist, ein ausreichendes Vakuum zu erzeugen, um gleichzeitig Milch aus beiden Brüsten zu entnehmen.",
+          "reasoning": "Hersteller erklärt die begrenzte Auslegung des Motors.",
+          "inspectionMethod": "browser DOM textContent"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Eine andere Brusthaubengröße ist nicht durch die einzige aufgeführte 24-mm-Haube abgedeckt.",
+          "basisType": "derived",
+          "quote": "1 x PersonalFit Flex™ Brusthaube, Größe 24 mm",
+          "reasoning": "Lieferumfang der geprüften klassischen Solo, keine Übertragung von Solo Hands-free.",
+          "inspectionMethod": "browser DOM innerText"
+        }
+      ],
+      "notes": [
+        "Solo Hands-free wird nicht als weiteres Modell gezählt.",
+        "Erstextraktion lesbar; erneuter Abruf leer, deshalb zusätzlich echter Browser-DOM geprüft."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Intuitive Oberfläche mit 4 Tasten sowie 9 Voreinstellungen.",
+      "inspectionMethods": [
+        "browser DOM innerText",
+        "browser DOM textContent",
+        "web_extract"
+      ]
+    },
+    {
+      "id": "medela-swing-maxi",
+      "brand": "Medela",
+      "name": "Swing Maxi™ – elektrische Doppelpumpe",
+      "sourceUrl": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/milchpumpen/elektische-hands-free-milchpumpe/swing-maxi-elektrische-doppelpumpe",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Elektrische Doppelmilchpumpe.",
+          "quote": "Die Swing Maxi ist eine kompakte und einfach zu bedienende elektrische Doppelmilchpumpe",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "USB-C-Anschluss zum Aufladen.",
+          "quote": "Schnellere Aufladung dank USB-C-Anschluss",
+          "inspectionMethod": "browser DOM textContent"
+        },
+        {
+          "factIndex": 2,
+          "claim": "Vier Tasten und neun Voreinstellungen.",
+          "quote": "Intuitive Oberfläche mit 4 Tasten sowie 9 Voreinstellungen.",
+          "inspectionMethod": "browser DOM textContent"
+        },
+        {
+          "factIndex": 3,
+          "claim": "PersonalFit Flex Brusthauben mit 21 mm und 24 mm im Lieferumfang.",
+          "quote": "2 x PersonalFit Flex™ Brusthaube Größe 21 mm\n2 x PersonalFit Flex™ Brusthaube Größe 24 mm",
+          "inspectionMethod": "browser DOM innerText"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Das geprüfte Set enthält klassische Flaschen statt im BH tragbarer Auffangschalen.",
+          "basisType": "derived",
+          "quote": "2 x 150-ml-Flasche mit Deckel\n2 x Flaschenhalter\n2 x PersonalFit Flex™ Verbindungsstück",
+          "reasoning": "Abgrenzung des konkret gelesenen Lieferumfangs, keine Aussage gegen separat nachrüstbares Zubehör.",
+          "inspectionMethod": "browser DOM innerText"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Andere Brusthaubengrößen sind im aufgeführten Lieferumfang nicht enthalten.",
+          "basisType": "derived",
+          "quote": "2 x PersonalFit Flex™ Brusthaube Größe 21 mm\n2 x PersonalFit Flex™ Brusthaube Größe 24 mm",
+          "reasoning": "Nur diese beiden Größen stehen im Lieferumfang.",
+          "inspectionMethod": "browser DOM innerText"
+        }
+      ],
+      "notes": [
+        "Swing Maxi Hands-free und Swing Maxi Flex werden nicht zusätzlich gezählt.",
+        "Erstextraktion lesbar; erneuter Abruf leer, Browser bestätigte verdeckte Merkmale und Lieferumfang."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Intuitive Oberfläche mit 4 Tasten sowie 9 Voreinstellungen.",
+      "inspectionMethods": [
+        "browser DOM innerText",
+        "browser DOM textContent",
+        "web_extract"
+      ]
+    },
+    {
+      "id": "lansinoh-elektrische-doppelmilchpumpe",
+      "brand": "Lansinoh",
+      "name": "Elektrische Doppelmilchpumpe",
+      "sourceUrl": "https://lansinoh.de/products/elektrische-doppelmilchpumpe",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Für einseitiges und gleichzeitiges beidseitiges Abpumpen ausgelegt.",
+          "quote": "sowohl als einfache als auch als doppelte elektrische Milchpumpe",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Wiederaufladbarer Akku mit bis zu drei Stunden Laufzeit laut Hersteller.",
+          "quote": "Wiederaufladbarer Akku: bequemes Abpumpen ohne Kabel für bis zu 3 Stunden",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "Zwei Rhythmen, drei Abpumpmodi und acht Saugstärkestufen.",
+          "quote": "Die Lansinoh® Elektrische Doppelmilchpumpe bietet 2 Abpump-Rhythmen (Stimulations- und Abpumprhythmus) und 3 verschiedene Abpump-Modi. Jeder dieser Modi lässt sich in 8 verschiedenen Saugstärkestufen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Zwei ComfortFit Saugaufsätze mit 25 mm im Lieferumfang.",
+          "quote": "ComfortFit® Saugaufsatz 25 mm (2x)",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Schläuche und externe Pumpenbasis bleiben Teil des Systems.",
+          "basisType": "derived",
+          "quote": "Silikonschlauch (2x 300 mm, 1x 600 mm)",
+          "reasoning": "Konstruktive Einschränkung aus dem Lieferumfang.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Schläuche und Verbindungsstücke dürfen nicht wie die milchberührenden Teile gewaschen oder ausgekocht werden.",
+          "basisType": "explicit",
+          "quote": "Kochen Sie die Schläuche, Y- oder Pumpenverbindungsstücke **nicht** und waschen Sie diese **nicht**!",
+          "reasoning": "Unterschiedliche Reinigungsregeln laut Hersteller.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Nicht als manuell/elektrische 2in1-Pumpe beschrieben.",
+        "Die FAQ enthält einzelne offensichtlich kopierte Hinweise zur Handmilchpumpe; solche Passagen nicht für technische Merkmale übernommen.",
+        "Akkulaufzeit ist Herstellerangabe, kein eigener Messwert."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "ComfortFit® Saugaufsatz 25 mm (2x)",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "lansinoh-handmilchpumpe",
+      "brand": "Lansinoh",
+      "name": "Lansinoh® Handmilchpumpe",
+      "sourceUrl": "https://lansinoh.de/products/neu-handmilchpumpe",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Easy-Express-Griff zur manuellen Bedienung.",
+          "quote": "Easy-Express Griff für müheloses Pumpen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Zwei einstellbare Pump-Rhythmen.",
+          "quote": "Einstellbare 2-Rhythmen-Technologie",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "ComfortFit Saugaufsatz mit 25 mm im Lieferumfang.",
+          "quote": "ComfortFit® Saugaufsatz Größe Standard (25 mm)",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Direktes Abpumpen in passende Lansinoh-Muttermilchbeutel möglich.",
+          "quote": "Mit der Pump-into-Bag-Funktion wird die Muttermilch direkt in den Beutel gepumpt",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Der Pumpvorgang muss mit der Hand ausgeführt werden.",
+          "basisType": "derived",
+          "quote": "Easy-Express Griff für müheloses Pumpen",
+          "reasoning": "Praktische Folge der Handpumpe, keine Aussage zu medizinischer Eignung.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Die geprüfte überarbeitete Ausführung kommt ohne Standfuß.",
+          "basisType": "explicit",
+          "quote": "Verbesserte Form & weniger Einzelteile (ohne Standfuss)",
+          "reasoning": "Hersteller nennt dies bei der neuen Form.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Alte und neue Handpumpenpakete werden nicht als zwei Modelle gezählt."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Einstellbare 2-Rhythmen-Technologie",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "ardo-calypso",
+      "brand": "Ardo",
+      "name": "Ardo Calypso elektrische Doppel-Milchpumpe",
+      "sourceUrl": "https://ardo.de/products/doppelmilchpumpe-ardo-calypso",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Einseitiges und beidseitiges Abpumpen möglich.",
+          "quote": "Mit Calypso Double Plus kannst Du sowohl beidseitig als auch einseitig abpumpen.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Saugstärke und Frequenz frei einstellbar.",
+          "quote": "Frei einstellbare Saugstärke (Vakuum) und Frequenz (Zyklus)",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "Betrieb mit Batterien und Netzadapter.",
+          "quote": "Betrieb mit Batterien und Netzadapter",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Zwei 26-mm-Brustglocken und zwei 22-mm-Silikoneinsätze im Doppelset.",
+          "quote": "2x Pumpset mit Brustglocken Ø 26 mm und Milchflaschen 150 ml\nFlasche kompatibel mit allen Trinksaugern für Standardflaschen (Schmalhals)\n* 2x Brustglockeneinsatz aus Silikon Ø 22 mm",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Keine voreingestellten Pump-Programme; die Einstellungen werden selbst gewählt.",
+          "basisType": "explicit",
+          "quote": "die Calypso Milchpumpen keine voreingestellten Programme",
+          "reasoning": "Hersteller grenzt die individuelle Einstellung ausdrücklich von festen Programmen ab.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Schläuche dürfen nicht gewaschen oder ausgekocht werden.",
+          "basisType": "explicit",
+          "quote": "Die Schläuche nicht waschen und auskochen!",
+          "reasoning": "Pflegeeinschränkung der Herstellerseite.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Calypso Single, Double Plus und To Go werden nicht als zusätzliche Modelle gezählt."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Frei einstellbare Saugstärke (Vakuum) und Frequenz (Zyklus)",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "ardo-alyssa-double",
+      "brand": "Ardo",
+      "name": "Ardo Alyssa Double elektrische Doppel-Milchpumpe",
+      "sourceUrl": "https://ardo.de/products/doppelmilchpumpe-ardo-alyssa",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Zwei Pump-Phasen mit jeweils acht Vakuum- und acht Zyklus-Levels.",
+          "quote": "Das Abpumpprogramm mit zwei Phasen (Stimulations- und Abpumpphase) lässt sich in beiden Phasen mit 8 Vakuum-Levels und 8 Zyklus-Levels",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Memory Plus speichert Einstellungen und Abpumpverlauf.",
+          "quote": "Speichert Deine Einstellungen und den kompletten Abpumpverlauf.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "Automatisches Intervallpump-Programm.",
+          "quote": "Power Pumping Feature - automatisches Intervallpumpen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Integrierter Akku für bis zu acht Sitzungen laut Hersteller.",
+          "quote": "Integrierter Akku hält bis zu 8 Abpump-Sessions",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Das geprüfte Double-Set nutzt klassische Flaschen-Pumpsets, keine Hands-free-Schalen.",
+          "basisType": "derived",
+          "quote": "2x Pumpset mit Brustglocke Ø 26 mm",
+          "reasoning": "Abgrenzung des gelesenen Double-Lieferumfangs, nicht gegen separat nachrüstbares Zubehör.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Eine Powerbank zum Laden ist nicht enthalten.",
+          "basisType": "explicit",
+          "quote": "Powerbank nicht enthalten",
+          "reasoning": "Hersteller nennt dies bei der Stromversorgung.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Alyssa Hands-Free wird nicht zusätzlich gezählt.",
+        "Power Pumping nur als Programmfunktion genannt; keine garantierte Steigerung der Milchmenge.",
+        "Akkulaufzeit ist Herstellerangabe."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "8 Vakuum-Levels und 8 Zyklus-Levels",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "ardo-amaryll-start",
+      "brand": "Ardo",
+      "name": "Ardo Amaryll Start Handmilchpumpe",
+      "sourceUrl": "https://ardo.de/products/handmilchpumpe-ardo-amaryll",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Handmilchpumpe mit manuell einstellbarem Rhythmus.",
+          "quote": "Vollständig manuell einstellbar – Vakuum und Zyklus nach deinem Rhythmus.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Hebel für Links- und Rechtshänderinnen verstellbar.",
+          "quote": "Hebel verstellbar für Links- & Rechtshänderinnen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "26-mm-Brustglocke und 150-ml-Flasche.",
+          "quote": "Brustglocke Ø 26 mm, Milchflasche 150 ml",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Standfuß im Lieferumfang.",
+          "quote": "Standfuß",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Der Pumpvorgang erfordert wiederholte Handbewegungen.",
+          "basisType": "derived",
+          "quote": "Vollständig manuell einstellbar – Vakuum und Zyklus nach deinem Rhythmus.",
+          "reasoning": "Praktische Folge der manuellen Betätigung.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Andere Brustglockengrößen sind zusätzlich zu erwerben.",
+          "basisType": "explicit",
+          "quote": "Weitere Brustglockengrößen zusätzlich erhältlich",
+          "reasoning": "Standardgröße des geprüften Sets: 26 mm.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Amaryll Start und Umwandlungssets werden nicht als mehrere Modelle gezählt."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Hebel verstellbar für Links- & Rechtshänderinnen",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "ardo-melia",
+      "brand": "Ardo",
+      "name": "Ardo Melia elektrische Hands-Free Milchpumpe",
+      "sourceUrl": "https://ardo.de/products/ardo-melia-elektrische-milchpumpe-handsfree",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Im BH tragbares All-in-One-Design ohne Schläuche.",
+          "quote": "schlauchfreien All-in-One-Design",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Vier Modi und 15 Vakuumstufen.",
+          "quote": "Flexibel dank 4 Modi und 15 Vakuumstufen.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "180 ml Fassungsvermögen je Auffangschale.",
+          "quote": "Fassungsvermögen 180 ml je Auffangschale",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Vier zu reinigende Teile je Einheit; Pumpenmotor ausgenommen.",
+          "quote": "sie besteht je aus nur vier Teilen - neben dem Pumpenmotor",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Bücken kann zum Auslaufen durch die obere Ausgießöffnung führen.",
+          "basisType": "explicit",
+          "quote": "Beim Abpumpen nicht bücken, sonst läuft die Milch durch die Ausgießöffnung oben heraus",
+          "reasoning": "Herstellerhinweis zur Anwendung, keine uneingeschränkte Bewegungsfreiheit behauptet.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "USB-C-Ladekabel, aber kein Netzstecker im Lieferumfang.",
+          "basisType": "explicit",
+          "quote": "2x USB-C-Ladekabel (ohne Netzstecker)",
+          "reasoning": "Stückzahlen unterscheiden sich bei Einzel-/Doppelpack.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Melia Single und Double zusammen nur einmal gezählt.",
+        "Vier Reinigungsbauteile plus Motor ergeben fünf Gesamtteile."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Flexibel dank 4 Modi und 15 Vakuumstufen.",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "beurer-by-40",
+      "brand": "Beurer",
+      "name": "BY 40",
+      "sourceUrl": "https://www.beurer.com/de/p/95306/",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Elektrische Pumpe zum einseitigen Abpumpen.",
+          "quote": "Abpumpart | einseitig",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Zehn Stimulationsstufen und zehn Abpumpstufen.",
+          "quote": "10 Stimulationsstufen sowie 10 Abpumpstufen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "Beleuchtetes Display und Memory-Funktion.",
+          "quote": "Dank der Memory-Funktion findest du deinen individuellen Modus im Handumdrehen.\n* Vakuum-Technologie für effektives Abpumpen\n* Sehr komfortabel durch 10 Stimulationsstufen sowie 10 Abpumpstufen\n* Übersichtliches und beleuchtetes Display",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Adapter für Avent- und NUK-Fläschchen aufgeführt.",
+          "quote": "Adapter für Avent und NUK Fläschchen",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Zubehör laut technischer Tabelle nicht spülmaschinengeeignet.",
+          "basisType": "explicit",
+          "quote": "Spülmaschinengeeignetes Zubehör\tNein",
+          "reasoning": "Im Browser-DOM gelesen; im verkürzten Extrakt ausgelassen.",
+          "inspectionMethod": "browser DOM innerText"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Kein Connect-Produkt laut Hersteller.",
+          "basisType": "explicit",
+          "quote": "Connect-Produkt | Nein",
+          "reasoning": "Keine erfundene App-Kompatibilität.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "Artikelnummer 95306. BY 60 nicht gezählt, um eine mögliche Zubehörpaket-Doppelzählung zu vermeiden.",
+        "Stromversorgung wird als akkubetrieben sowie mit AA-Batterien beschrieben; kein integrierter Akku behauptet."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "10 Stimulationsstufen sowie 10 Abpumpstufen",
+      "inspectionMethods": [
+        "browser DOM innerText",
+        "web_extract"
+      ]
+    },
+    {
+      "id": "momcozy-m6",
+      "brand": "Momcozy",
+      "name": "Momcozy Mobile Style™ Freihändige Milchpumpe | M6",
+      "sourceUrl": "https://de.momcozy.com/products/momcozy-mobile-style-hands-free-breast-pump",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "Drei Modi und neun einstellbare Saugstufen.",
+          "quote": "Modi: 3 (Stimulation / Abpumpen / Mischmodus)\nSaugstufen: 9 einstellbare Stufen",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 1,
+          "claim": "180-ml-Sammler; empfohlene Füllmenge höchstens 150 ml laut Hersteller.",
+          "quote": "Flaschenkapazität: 180 ml (empfohlen: ≤150 ml)",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "287 g Gewicht pro Pumpeneinheit laut Hersteller.",
+          "quote": "Gewicht der Pumpe: 287 g",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "Automatische Abschaltung nach 30 Minuten.",
+          "quote": "Automatische Abschaltung: nach 30 Minuten",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Keine Mikrowellen-Sterilisation für das Zubehör.",
+          "basisType": "explicit",
+          "quote": "Keine Mikrowellen-Sterilisation verwenden.",
+          "reasoning": "Konkreter Pflegehinweis der Produktseite.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Laut Hersteller nicht bei Herzschrittmacher, implantiertem Defibrillator oder anderen metallischen bzw. elektronischen Implantaten verwenden.",
+          "basisType": "explicit",
+          "quote": "Verwenden Sie dieses Gerät NICHT, wenn Sie einen Herzschrittmacher, einen implantierten Defibrillator oder ein anderes metallisches oder elektronisches Implantat haben",
+          "reasoning": "Herstellerwarnung, keine eigene medizinische Bewertung.",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "notes": [
+        "M6 nur einmal gezählt, unabhängig von Farbe und Stückzahl.",
+        "Spezifikation nennt -285 bis -300 mmHg, anderer Absatz 295 mmHg; diese Leistungswerte bewusst nicht übernommen.",
+        "Allgemeine FAQ nennt teils S12 Pro; nicht als M6-Beleg verwendet."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "Saugstufen: 9 einstellbare Stufen",
+      "inspectionMethods": [
+        "web_extract"
+      ]
+    },
+    {
+      "id": "momcozy-s9-pro",
+      "brand": "Momcozy",
+      "name": "S9 Pro Tragbare Milchpumpe Upgraded - Lange Akkulaufzeit",
+      "sourceUrl": "https://de.momcozy.com/products/momcozy-s9-pro-wearable-breast-pump",
+      "sourceType": "manufacturer-product-page",
+      "checkedAt": "2026-10-14",
+      "market": "Deutschland: deutsche Hersteller- bzw. Hersteller-Shopseite",
+      "factEvidence": [
+        {
+          "factIndex": 0,
+          "claim": "All-in-One-Pumpe ohne externe Schläuche oder Kabel während des Betriebs.",
+          "quote": "Everything you need in one compact pump, with no tubes or cords.",
+          "inspectionMethod": "browser DOM innerText"
+        },
+        {
+          "factIndex": 1,
+          "claim": "Zwei Modi und neun einstellbare Stufen.",
+          "quote": "2 modes with 9 adjustable levels for a personalized pumping experience.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 2,
+          "claim": "24-mm-Brusthaube; Einsatzgrößen 17, 19 und 21 mm in den Spezifikationen genannt.",
+          "quote": "Default Flange Size: 24mm\nFlange Insert Sizes: 17 / 19 / 21mm",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "factIndex": 3,
+          "claim": "USB-C-Ladeanschluss mit 5 V und 1 A laut Hersteller.",
+          "quote": "Charging Port: Type-C (5V/1A)",
+          "inspectionMethod": "web_extract"
+        }
+      ],
+      "limitationEvidence": [
+        {
+          "limitationIndex": 0,
+          "claim": "Hersteller empfiehlt eine geringere Füllmenge als das maximale Sammlervolumen.",
+          "basisType": "explicit",
+          "quote": "Capacity: 6 oz (pump within 4 oz)",
+          "reasoning": "Quelleneinheiten unverändert, keine ungeprüfte Umrechnung.",
+          "inspectionMethod": "web_extract"
+        },
+        {
+          "limitationIndex": 1,
+          "claim": "Silikonteile sind Verschleißteile; der Hersteller nennt einen Austausch ungefähr alle drei Monate je nach Zustand.",
+          "basisType": "explicit",
+          "quote": "The silicone accessories can be replaced every 3 months or so according to the installation and suction status of the breast pump.",
+          "reasoning": "Ersatzteilbedarf aus der Hersteller-FAQ.",
+          "inspectionMethod": "browser DOM innerText"
+        }
+      ],
+      "notes": [
+        "S9 Pro klar von der ausgeschlossenen alten S12 Pro getrennt; Farben und Einzel-/Doppelpacks nicht zusätzlich gezählt.",
+        "Teils englischer Produkttext auf deutschem Shop.",
+        "Geräusch- und Laufzeitangaben weichen zwischen Beschreibung, Spezifikationen und Bild-Alttext ab; deshalb keine Geräusch- oder Akkulaufzeitbehauptung im Katalog.",
+        "Keine Käuferrezensionen als technische Quelle verwendet."
+      ],
+      "imagePermission": "not-cleared",
+      "evidenceQuote": "2 modes with 9 adjustable levels for a personalized pumping experience.",
+      "inspectionMethods": [
+        "browser DOM innerText",
+        "web_extract"
+      ]
+    }
+  ]
+}

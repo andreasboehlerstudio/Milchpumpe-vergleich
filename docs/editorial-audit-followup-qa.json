@@ -1,0 +1,26 @@
+{
+  "scope":"Precise audit follow-up to the warm Superdesign homepage; no production source changes",
+  "draftId":"cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion":8,
+  "priorVisualQa":"docs/editorial-depth-oct15-qa.json",
+  "changes":["Descriptive H1: Tragbare Milchpumpen. Für deinen Alltag.","Four washable parts described as an absolute criterion, not a market-wide reduction","Three historical set variants visible immediately above purchase buttons","Offer-to-variant observation date stated as 14 October 2026"],
+  "newContractRedThenGreen":true,
+  "currentFocusedCanvasTests":4,
+  "sameDraftReadbackMatches":true,
+  "readbackNormalization":"CRLF to LF only",
+  "browserChecks":[
+    {"viewport":320,"clientWidth":320,"scrollWidth":320,"overflow":[],"clipped":[],"visibleSetLabels":3,"setLabelsInsideOptionalDetails":false},
+    {"viewport":390,"clientWidth":390,"scrollWidth":390,"overflow":[],"clipped":[],"visibleSetLabels":3},
+    {"viewport":768,"clientWidth":768,"scrollWidth":768,"overflow":[],"clipped":[],"visibleSetLabels":3},
+    {"viewport":1440,"clientWidth":1440,"scrollWidth":1440,"overflow":[],"clipped":[],"visibleSetLabels":3}
+  ],
+  "visualProof":{"hero320":"img_7dd106cc4ada.png","hero1440":"img_b835f783f9f1.png"},
+  "bookletVerification":{"distinctNumberedTopics":15,"distinctLocalLinkedDestinations":15,"allDestinationsHttp200":true,"finishedPdfs":0},
+  "liveMarketReadback":{"url":"https://milchpumpe-vergleich.de/tragbare-milchpumpen/","status":404},
+  "publicSourcesParentRechecked":["https://de.momcozy.com/pages/momcozy-affiliate-program","https://www.philips.com/a-w/about/innovation/ips/philips-general-trademark-use-guidelines.html","https://developers.google.com/search/docs/appearance/ai-features"],
+  "auditSnapshotLimit":"The child audit inspected saved canvas version 5, not the parent's version 7. Already-resolved recommendations were reconciled rather than blindly repeated.",
+  "stillOpen":["Exact-model product photo authorization and actual assets","Current/exhaustive Amazon availability and measured performance ranking not verified","Five model source/mapping gaps retained as research limitations; not resolved by this copy pass","Booklet production after choosing a topic","Implementation/deployment approval and simultaneous release of landing destinations"],
+  "published":false,
+  "committed":false,
+  "generationCreditsSpent":0
+}

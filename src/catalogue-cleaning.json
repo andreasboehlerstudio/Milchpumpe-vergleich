@@ -1,0 +1,463 @@
+[
+  {
+    "id": "philips-avent-scf145-06",
+    "brand": "Philips Avent",
+    "name": "Flaschen- und Saugerbürste",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "SCF145/06",
+    "summary": "Der gebogene Bürstenkopf hilft beim Reinigen von Flaschen mit breitem Hals und zugänglichen Fütterutensilien. Die geformte Griffspitze ist für die Innenseite von Saugern gedacht, nicht als Werkzeug für empfindliche Pumpenventile.",
+    "useCase": "Manuelle Vorreinigung von Flaschen und gut zugänglichen Zubehörflächen vor dem Trocknen oder einer erlaubten Dampfbehandlung.",
+    "facts": [
+      "Gebogener Bürstenkopf für Flaschen mit breitem Flaschenhals.",
+      "Konturangepasste Spitze zum Reinigen des Saugerinneren.",
+      "Lieferumfang: eine Flaschen- und Saugerbürste."
+    ],
+    "limitations": [
+      "Keine dokumentierte Freigabe für das Bürsten empfindlicher Membranen oder Ventilöffnungen.",
+      "Die gelesene Produktseite belegt keine Sterilisationsmethode für die Bürste selbst."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/SCF145_06/avent-zubehoer-flaschen-und-saugerbuerste",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Dank dem gekrümmten Bürstenkopf und dem handlichem Griff lassen sich Flaschen mit breitem Flaschenhals gründlich reinigen.",
+    "amazonQuery": "Philips Avent Flaschen- und Saugerbürste SCF145/06",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Bürste nur an Flächen verwenden, deren Herstelleranleitung eine Bürstenreinigung erlaubt.",
+      "Die geformte Spitze nicht in Ventilschlitze drücken."
+    ]
+  },
+  {
+    "id": "philips-avent-scf291-01",
+    "brand": "Philips Avent",
+    "name": "Babyflaschen-Sterilisator",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "SCF291/01",
+    "summary": "Der elektrische Dampfsterilisator verarbeitet bis zu sechs Flaschen samt geeignetem Zubehör in einem Durchgang. Die automatische Abschaltung beendet den Sterilisationszyklus, eine aktive Trocknung ist in dieser Quelle nicht ausgewiesen.",
+    "useCase": "Dampfbehandlung vorgereinigter, dafür ausdrücklich geeigneter Flaschen und Pumpenteile am festen Küchenplatz.",
+    "facts": [
+      "Kapazität laut Hersteller: bis zu sechs Flaschen und Zubehör.",
+      "Sterilisationszyklus von zehn Minuten mit automatischer Abschaltung.",
+      "Abmessungen: 304 × 183 × 359 mm.",
+      "Eine Zange ist enthalten."
+    ],
+    "limitations": [
+      "Die Anleitung der jeweiligen Pumpe entscheidet, welche Einzelteile dampfgeeignet sind; Motor und Schläuche nicht pauschal einlegen.",
+      "Keine aktive Trocknungsfunktion in der gelesenen Quelle belegt; Trocknung separat einplanen."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/SCF291_01/babyflaschen-sterilisator",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Sterilisieren Sie bis zu sechs Flaschen und Zubehör in nur 10 Minuten.",
+    "amazonQuery": "Philips Avent Babyflaschen-Sterilisator SCF291/01",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Zubehör vor dem Einlegen zerlegen und reinigen, soweit die jeweilige Anleitung dies vorsieht.",
+      "Die angegebenen Geräteabmessungen vor dem Kauf mit dem Stellplatz abgleichen."
+    ]
+  },
+  {
+    "id": "philips-avent-scf293-01",
+    "brand": "Philips Avent",
+    "name": "Sterilisator",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "SCF293/01",
+    "summary": "Der Premium-Sterilisator kombiniert Dampfbehandlung mit anschließendem Lufttrocknen. Wer häufig freigegebene Pumpenteile aufbereitet, kann damit den separaten Trocknungsschritt bündeln.",
+    "useCase": "Kombinierte Sterilisation und Trocknung von Zubehör, dessen Anleitung beide Verfahren erlaubt.",
+    "facts": [
+      "Vollständiger Sterilisations- und Trocknungszyklus: 40 Minuten.",
+      "Nach der Dampfsterilisation trocknet ein konzentrierter Luftstrahl Flaschen und Zubehör.",
+      "Eine Abtropfschale schützt die Heizplatte vor Milchtröpfchen."
+    ],
+    "limitations": [
+      "Keine pauschale Dampf- oder Trocknungsfreigabe für alle Milchpumpen und Ersatzteile.",
+      "Die 40 Minuten beziehen sich auf den vollständigen Zyklus, nicht allein auf die Sterilisation."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/SCF293_01/sterilisator",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Ein vollständiger Sterilisations- und Trocknungszyklus dauert nur 40 Minuten",
+    "amazonQuery": "Philips Avent Sterilisator SCF293/01",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Für jedes Pumpenteil die zulässige Aufbereitung in der Pumpenanleitung prüfen.",
+      "Trotz Trockenfunktion vor dem Zusammenbau auf verbliebene Feuchtigkeit kontrollieren."
+    ]
+  },
+  {
+    "id": "philips-avent-scf149-00",
+    "brand": "Philips Avent",
+    "name": "Trockengestell",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "SCF149/00",
+    "summary": "Das Gestell bietet einen geordneten Platz zum Abtropfen gereinigter Flaschen und Zubehörteile. Die abnehmbare Schale lässt sich zum Entleeren des aufgefangenen Wassers herausnehmen.",
+    "useCase": "Lufttrocknung nach der Reinigung, ohne elektrische Trockenfunktion.",
+    "facts": [
+      "Abnehmbare Abtropfschale.",
+      "Hersteller nennt Platz für maximal acht Flaschen sowie Sauger, Milchpumpe und Schnuller.",
+      "Die Herstellerangabe zu Flaschengrößen reicht bis 330 ml."
+    ],
+    "limitations": [
+      "Ein Trockengestell reinigt und sterilisiert die darauf liegenden Teile nicht.",
+      "Die Kapazitätsangabe für Flaschen belegt keine Passform jedes Hands-free-Bechers oder Kleinteils."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/SCF149_00/avent-trockengestell",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Abnehmbare Abtropfschale",
+    "amazonQuery": "Philips Avent Trockengestell SCF149/00",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Die Abtropfschale entleeren und das Gestell sauber halten.",
+      "Teile so verteilen, dass Wasser ablaufen kann und Restfeuchtigkeit vor dem Zusammenbau kontrolliert werden kann."
+    ]
+  },
+  {
+    "id": "mam-soft-brush",
+    "brand": "MAM",
+    "name": "Soft Brush - für Babyflaschen",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Die weichen, flexiblen Borsten passen sich unterschiedlichen Flaschenformen an. Eine strukturierte Saugerbürste im Griff ergänzt die Reinigung, während die große Aufhängeöffnung das belüftete Trocknen erleichtert.",
+    "useCase": "Sanfte manuelle Reinigung von Flaschen und dafür geeigneten Zubehörflächen.",
+    "facts": [
+      "Extra weiche, flexible Borsten passen sich verschiedenen Flaschenformen an.",
+      "Strukturierte Saugerbürste für die Innenseite von Saugern.",
+      "Große Aufhängeöffnung für Aufbewahrung und Trocknung.",
+      "Bürste laut Hersteller nicht sterilisieren, auskochen oder in der Mikrowelle verwenden."
+    ],
+    "limitations": [
+      "Die Bürste selbst darf laut MAM nicht sterilisiert oder ausgekocht werden.",
+      "Keine dokumentierte Freigabe zum Bürsten dünner Pumpenmembranen oder Ventile."
+    ],
+    "sourceUrl": "https://www.mambaby.com/de/p/soft-brush-fuer-babyflaschen/100009951",
+    "sourceLabel": "MAM – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "The innovative extra soft bristles flexibly adapt to different bottle forms.",
+    "amazonQuery": "MAM Soft Brush - für Babyflaschen",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.mambaby.com/de/healthcare-professionals/impressum/",
+      "note": "MAM verlangt für die kommerzielle Wiedergabe geschützter Website-Inhalte eine ausdrückliche schriftliche Zustimmung; diese liegt nicht vor."
+    },
+    "tips": [
+      "Nach dem Gebrauch gründlich abspülen und gut belüftet trocknen lassen.",
+      "Bei erlaubter Spülmaschinenreinigung die Borsten nach oben im Besteckkorb platzieren."
+    ]
+  },
+  {
+    "id": "mam-mikrowellen-dampfsterilisator",
+    "brand": "MAM",
+    "name": "Mikrowellen-Dampfsterilisator",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Zwei Körbe ermöglichen die getrennte Anordnung größerer Flaschen und kleiner Zubehörteile. Der Deckel kann anschließend als Abtropfbehälter dienen, sofern die Teile für das gewählte Verfahren freigegeben sind.",
+    "useCase": "Dampfbehandlung in einer ausreichend großen Mikrowelle oder Kaltwassersterilisation nach Herstelleranleitung.",
+    "facts": [
+      "Zwei Körbe bieten Platz für bis zu sechs Flaschen und Zubehör.",
+      "Durchmesser 28 cm, Höhe 16,5 cm.",
+      "Deckel kann als Abtropfbehälter für sterilisierte Teile verwendet werden.",
+      "Auch für Kaltwassersterilisation vorgesehen."
+    ],
+    "limitations": [
+      "Die beworbenen fünf Minuten gelten nicht für jede Mikrowellenleistung; MAM nennt in der FAQ bei 650–1000 W elf Minuten plus drei Minuten Abkühlung.",
+      "Die Quelle nennt MAM-Flaschen und Babyprodukte, aber keine universelle Freigabe für Pumpenteile anderer Hersteller.",
+      "Durchmesser und Höhe müssen mit dem Innenraum der eigenen Mikrowelle abgeglichen werden."
+    ],
+    "sourceUrl": "https://www.mambaby.com/de/p/mikrowellen-dampfsterilisator/100004333",
+    "sourceLabel": "MAM – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Die zwei Körbe bieten ausreichend Platz für bis zu 6 Flaschen und Zubehör.",
+    "amazonQuery": "MAM Mikrowellen-Dampfsterilisator",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.mambaby.com/de/healthcare-professionals/impressum/",
+      "note": "MAM verlangt für die kommerzielle Wiedergabe geschützter Website-Inhalte eine ausdrückliche schriftliche Zustimmung; diese liegt nicht vor."
+    },
+    "tips": [
+      "Aufbereitungsverfahren für jedes Pumpenteil zuerst in dessen Anleitung prüfen.",
+      "Die wattabhängige Zeittabelle und Abkühlzeit der MAM-Anleitung statt einer pauschalen Fünf-Minuten-Angabe verwenden."
+    ]
+  },
+  {
+    "id": "medela-quick-clean-microwave-bags",
+    "brand": "Medela",
+    "name": "Quick Clean™ Microwave bags",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Die wiederverwendbaren Mikrowellenbeutel dienen zur Dampfbehandlung freigegebener Pumpenteile nach der Reinigung. Aufgedruckte Kästchen helfen, die maximal erlaubten Anwendungen je Beutel nachzuhalten.",
+    "useCase": "Mikrowellen-Dampfbehandlung geeigneter Kunststoff-Pumpenteile nach Beutel- und Pumpenanleitung.",
+    "facts": [
+      "Jeder Beutel darf maximal 20 Mal verwendet werden.",
+      "Die Anleitung verlangt 60 ml Wasser je Anwendung.",
+      "Nur für mikrowellengeeignete Kunststoffe bestimmt.",
+      "Keine Schläuche im Mikrowellenbeutel desinfizieren."
+    ],
+    "limitations": [
+      "Nicht für Schläuche, elektrische Pumpeneinheiten oder beliebige Materialien freigegeben.",
+      "Die Produktseite nennt sowohl 90 Sekunden als auch mindestens drei Minuten; maßgeblich sind die wattabhängigen Zeiten der beiliegenden Anleitung.",
+      "Dampfbehandlung ersetzt nicht das vorherige Reinigen der zerlegten Teile."
+    ],
+    "sourceUrl": "https://www.medela.com/en/breastfeeding-pumping/products/cleaning/quick-clean-microwave-bags?productId=1008",
+    "sourceLabel": "Medela – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Re-usable: each bag can be used 20 times.",
+    "amazonQuery": "Medela Quick Clean™ Microwave bags",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf",
+      "note": "Die Anleitung trägt einen Copyright-Hinweis; in der gelesenen Produktseite und Anleitung wurde keine Bildlizenz für eine Affiliate-Website dokumentiert. Öffentliche Sichtbarkeit ist keine Nutzungserlaubnis."
+    },
+    "tips": [
+      "Nach jeder Anwendung ein Kästchen markieren und spätestens nach 20 Anwendungen ersetzen.",
+      "Die Wassermenge und Leistungsstufe nach Anleitung wählen und heißen Dampf beim Öffnen beachten."
+    ]
+  },
+  {
+    "id": "philips-avent-cp2203-01",
+    "brand": "Philips Avent",
+    "name": "Hands-free Ventil",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "CP2203/01",
+    "summary": "Das Ersatzventil hält das Vakuum aufrecht und leitet Milch in den Auffangbecher. Bei nachlassender Saugstärke empfiehlt Philips, das vorhandene Ventil auf Schäden und vollständiges Schließen zu prüfen.",
+    "useCase": "Gezielter Ersatz des Ventils einer in der Philips-Kompatibilitätsliste genannten Hands-free-Pumpe oder Auffangschale.",
+    "facts": [
+      "Original-Teilenummer CP2203/01.",
+      "Ventil hält das Vakuum aufrecht und unterstützt den Milchfluss.",
+      "Philips nennt unter anderem die Produkttypen SCF439, SCF481, SCF531 und SCF532 als kompatibel.",
+      "Bei niedriger Saugstärke empfiehlt Philips die Kontrolle auf Schäden und vollständigen Verschluss."
+    ],
+    "limitations": [
+      "Die Liste nennt Produkttypen; die vollständige Modellnummer samt Ländersuffix vor dem Kauf zusätzlich abgleichen.",
+      "Nicht als Universalventil für andere Philips-Serien oder Fremdmarken belegt."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/CP2203_01/hands-free-becher",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Dieses Ventil hält das Vakuum aufrecht und unterstützt den Milchfluss von der Pumpe zur Flasche.",
+    "amazonQuery": "Philips Avent Hands-free Ventil CP2203/01",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Vor dem Bestellen CP2203/01 und den Produkttyp der vorhandenen Pumpe notieren.",
+      "Ventil beim Prüfen und Reinigen nicht mit einer Bürstenspitze aufdehnen."
+    ]
+  },
+  {
+    "id": "philips-avent-cp2218-01",
+    "brand": "Philips Avent",
+    "name": "Hands-free Silikon-Membran",
+    "category": "Reinigung & Zubehör",
+    "modelCode": "CP2218/01",
+    "summary": "Die Silikon-Membran erzeugt das für das Abpumpen erforderliche Vakuum. Die gerenderte Philips-Seite führt konkrete Hands-free-Modelle und Auffangschalen auf, sodass sich der Ersatz nach Teilenummer statt nur nach der Marke auswählen lässt.",
+    "useCase": "Gezielter Membranersatz für ausdrücklich gelistete Philips Avent Hands-free-Modelle.",
+    "facts": [
+      "Original-Teilenummer CP2218/01.",
+      "Für elektronische Philips Avent Hands-free Milchpumpen vorgesehen.",
+      "Kompatibilitätsliste nennt SCF531/11 und SCF532/11.",
+      "Kompatibilitätsliste nennt die Doppel-Auffangschalen SCF439/01 und SCF481/11."
+    ],
+    "limitations": [
+      "Die Freigabe bezieht sich auf die ausdrücklich gelisteten Modelle, nicht auf sämtliche Avent-Milchpumpen.",
+      "Die Produktseite belegt keinen pauschalen Wechselrhythmus und keine unabhängige Verbesserung der Pumpleistung."
+    ],
+    "sourceUrl": "https://www.philips.de/c-p/CP2218_01/hands-free-membran",
+    "sourceLabel": "Philips Avent – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Diese Membran erzeugt das zum Abpumpen von Muttermilch erforderliche Vakuum.",
+    "amazonQuery": "Philips Avent Hands-free Silikon-Membran CP2218/01",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "note": "Die Nutzungsbedingungen behalten nicht ausdrücklich gewährte Rechte vor; keine dokumentierte Freigabe für Produktfotos auf dieser Affiliate-Website."
+    },
+    "tips": [
+      "Vollständige Modellnummer und CP2218/01 vor der Bestellung miteinander abgleichen.",
+      "Die Membran nach der modellspezifischen Anleitung reinigen, vollständig trocknen und einsetzen."
+    ]
+  },
+  {
+    "id": "nuk-vario-express",
+    "brand": "NUK",
+    "name": "Vario Express Dampf-Sterilisator",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Versetzbare Stäbe und ein herausnehmbarer Korb erleichtern das Befüllen mit großen und kleinen Zubehörteilen. Der elektrische Dampfsterilisator schaltet nach dem Vorgang automatisch ab und benötigt keine Mikrowelle.",
+    "useCase": "Dampfbehandlung vorgereinigter, kochfester Flaschen und ausdrücklich dafür freigegebener Pumpenteile.",
+    "facts": [
+      "Bis zu sechs handelsübliche, kochfeste Babyflaschen und Zubehör.",
+      "Sechs Minuten Desinfektionszeit ohne Aufheizphase.",
+      "Herausnehmbarer Korb und sechs versetzbare Stäbe.",
+      "Hersteller nennt 110 ml Wasser für die Anwendung."
+    ],
+    "limitations": [
+      "Die sechs Minuten enthalten die Aufheizphase ausdrücklich nicht.",
+      "Nur geeignete kochfeste beziehungsweise dampffreigegebene Teile verwenden; keine pauschale Pumpenkompatibilität.",
+      "NUK empfiehlt regelmäßiges Entkalken."
+    ],
+    "sourceUrl": "https://www.nuk.de/nuk-vario-express-steam-steriliser.html",
+    "sourceLabel": "NUK – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Desinfiziert bis zu 6 handelsübliche, kochfeste Babyflaschen und Zubehör zuverlässig innerhalb von 6 Minuten (ohne Aufheizphase) auf Wasserdampfbasis",
+    "amazonQuery": "NUK Vario Express Dampf-Sterilisator",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.nuk.de/de_de/impressum",
+      "note": "Das NUK-Impressum nennt schriftliche Genehmigungen auf Anfrage; keine Genehmigung für die Verwendung der Produktfotos dokumentiert."
+    },
+    "tips": [
+      "Korb und Stäbe passend zur Größe der vorgereinigten Teile anordnen.",
+      "Nach Anleitung entkalken und heiße Teile mit der mitgelieferten Zange entnehmen."
+    ]
+  },
+  {
+    "id": "nuk-flaschenbuerste-twist",
+    "brand": "NUK",
+    "name": "Flaschenbürste Twist",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Der bewegliche Bürstenkopf erleichtert die Reinigung im Inneren von Flaschen. Im Griff sitzt eine zusätzliche kleine Saugerbürste für Stellen, die mit dem großen Kopf schwer zugänglich sind.",
+    "useCase": "Manuelle Vorreinigung von Flaschen und passenden Zubehörflächen im Pumpenalltag.",
+    "facts": [
+      "Beweglicher Bürstenkopf für die Reinigung des Flascheninneren.",
+      "Nylonborsten zur materialschonenden Reinigung.",
+      "Zusätzliche kleine Saugerbürste im Griff."
+    ],
+    "limitations": [
+      "Die Quelle belegt Flaschen- und Saugerreinigung, nicht das Bürsten sämtlicher Pumpenkomponenten.",
+      "Keine Sterilisationsfreigabe für die Bürste selbst in der gelesenen Produktbeschreibung dokumentiert."
+    ],
+    "sourceUrl": "https://www.nuk.de/nuk-flaschenburste-twist.html",
+    "sourceLabel": "NUK – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Der bewegliche Bürstenkopf ermöglicht eine besonders gründliche Reinigung der Flasche.",
+    "amazonQuery": "NUK Flaschenbürste Twist",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.nuk.de/de_de/impressum",
+      "note": "Das NUK-Impressum nennt schriftliche Genehmigungen auf Anfrage; keine Genehmigung für die Verwendung der Produktfotos dokumentiert."
+    },
+    "tips": [
+      "Empfindliche Membranen und Ventile nach ihrer eigenen Anleitung statt mit Kraft bürsten.",
+      "Die kleine Bürste nur an Stellen verwenden, die mechanische Reinigung ausdrücklich erlauben."
+    ]
+  },
+  {
+    "id": "nuk-multi-dry",
+    "brand": "NUK",
+    "name": "Multi Dry Trockenständer",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Der Trockenständer nimmt bis zu sechs Flaschen und zusätzliches Zubehör auf. Sein kreisförmiger Fuß fängt Tropfwasser auf, und zum Reinigen lässt sich das Gestell zerlegen.",
+    "useCase": "Lufttrocknung gereinigter Flaschen und passend ablegbarer Zubehörteile ohne Strom.",
+    "facts": [
+      "Fasst bis zu sechs Flaschen und weiteres Zubehör.",
+      "Flaschen werden über die Blütenblätter gestülpt, damit Luft im Inneren zirkulieren kann.",
+      "Kreisförmiger Fuß fängt abtropfendes Wasser auf.",
+      "In Einzelteile zerlegbar und in der Spülmaschine reinigbar."
+    ],
+    "limitations": [
+      "Das Gestell trocknet durch Luftzirkulation, es reinigt oder sterilisiert keine Pumpenteile.",
+      "Die Quelle belegt keine Passform für alle Hands-free-Becher und keine Halterung für jedes sehr kleine Ventil."
+    ],
+    "sourceUrl": "https://www.nuk.de/nuk-multi-dry-trockenstander.html",
+    "sourceLabel": "NUK – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "fasst bis zu sechs Flaschen und eine Menge Zubehör.",
+    "amazonQuery": "NUK Multi Dry Trockenständer",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.nuk.de/de_de/impressum",
+      "note": "Das NUK-Impressum nennt schriftliche Genehmigungen auf Anfrage; keine Genehmigung für die Verwendung der Produktfotos dokumentiert."
+    },
+    "tips": [
+      "Fuß regelmäßig entleeren und die zerlegbaren Gestellteile sauber halten.",
+      "Kleinteile nur dort ablegen, wo sie sicher liegen und vollständig trocknen können."
+    ]
+  },
+  {
+    "id": "chicco-modularer-sterilisator-trocknung",
+    "brand": "Chicco",
+    "name": "Modularer Sterilisator mit Trocknungsfunktion",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Der elektrische Sterilisator verbindet Dampfbehandlung mit einer Trocknungsfunktion. Je nach Menge lässt sich zwischen voller Größe und Kompaktmodus wählen.",
+    "useCase": "Kombinierte Aufbereitung freigegebener Flaschen und Zubehörteile am festen Stellplatz.",
+    "facts": [
+      "Dampfsterilisation mit Trocknungsfunktion.",
+      "Volle Größe und Kompaktmodus als zwei Betriebsgrößen.",
+      "Kapazität: bis zu sechs Fläschchen und kleine Gegenstände.",
+      "Luftfilter laut Hersteller vorhanden."
+    ],
+    "limitations": [
+      "Die Gerätebeschreibung ist keine universelle Dampf- oder Trocknungsfreigabe für Pumpenteile.",
+      "Die gelesene Produktseite nennt keine eindeutig zuordenbare vollständige Zyklusdauer; deshalb keine Minutenangabe im Katalog."
+    ],
+    "sourceUrl": "https://www.chicco.de/produkte/stillen-und-saugen/stillen/sterilisatoren/modularer-sterilisator-mit-trocknungsfunktion-8058664129577-00007392100000.html",
+    "sourceLabel": "Chicco – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "STERILISIEREN UND TROCKNEN: Schnell, natürlich und effektiv mit Dampfsterilisation.",
+    "amazonQuery": "Chicco Modularer Sterilisator mit Trocknungsfunktion",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.chicco.de/impressum.html",
+      "note": "Das Chicco-Impressum verlangt vorherige ausdrückliche Zustimmung für Bilder und Fotografien; eine solche Freigabe liegt nicht vor."
+    },
+    "tips": [
+      "Kompaktmodus für eine kleinere zulässige Beladung und volle Größe für größere Mengen nach Anleitung wählen.",
+      "Vor dem Einlegen empfindlicher Pumpenteile die jeweilige Wärme- und Trocknungsfreigabe prüfen."
+    ]
+  },
+  {
+    "id": "chicco-sterilisator-mikrowelle",
+    "brand": "Chicco",
+    "name": "Sterilisator für die Mikrowelle",
+    "category": "Reinigung & Zubehör",
+    "modelCode": null,
+    "summary": "Der Mikrowellensterilisator ist für Flaschen und kleine Gegenstände ausgelegt. Die beworbenen drei Minuten gelten bei 1200 Watt und sind deshalb nicht ohne Leistungsabgleich auf jede Mikrowelle übertragbar.",
+    "useCase": "Mikrowellen-Dampfbehandlung geeigneter, vorgereinigter Zubehörteile ohne separates elektrisches Heizgerät.",
+    "facts": [
+      "Für Flaschen und kleine Gegenstände beschrieben.",
+      "Beworbene Sterilisationszeit: drei Minuten bei 1200 W.",
+      "Leicht und kompakt; laut Hersteller passend für die meisten Mikrowellen."
+    ],
+    "limitations": [
+      "Die Drei-Minuten-Angabe gilt ausdrücklich bei 1200 W; andere Leistungsstufen nach Anleitung behandeln.",
+      "Die Aussage „meiste Mikrowellen“ ersetzt nicht den Abgleich des Innenraums.",
+      "Nur Pumpenteile einlegen, deren Hersteller Mikrowellen-Dampfbehandlung erlaubt."
+    ],
+    "sourceUrl": "https://www.chicco.de/produkte/stillen-und-saugen/stillen/sterilisatoren/sterilisator-fur-die-mikrowelle-8058664129584-00065846600000.html",
+    "sourceLabel": "Chicco – Hersteller-Produktseite",
+    "checkedAt": "2026-10-14",
+    "evidenceQuote": "Sterilisiert Flaschen und kleine Gegenstände auf einfache, schnelle und effektive Weise.",
+    "amazonQuery": "Chicco Sterilisator für die Mikrowelle",
+    "imageRights": {
+      "status": "not-cleared",
+      "sourceUrl": "https://www.chicco.de/impressum.html",
+      "note": "Das Chicco-Impressum verlangt vorherige ausdrückliche Zustimmung für Bilder und Fotografien; eine solche Freigabe liegt nicht vor."
+    },
+    "tips": [
+      "Vor dem Kauf nutzbaren Mikrowelleninnenraum und vorgesehene Beladung prüfen.",
+      "Vorgeschriebene Wassermenge, Leistungsstufe und Abkühlzeit aus der Anleitung übernehmen."
+    ]
+  }
+]

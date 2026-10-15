@@ -1,0 +1,28 @@
+{
+  "family": "Manrope",
+  "weights": [
+    300,
+    800
+  ],
+  "license": "SIL Open Font License 1.1",
+  "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+  "cssSourceUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap",
+  "downloadedAt": "2026-10-14T18:29:06.259244+00:00",
+  "visitorGoogleRequests": false,
+  "assets": [
+    {
+      "subset": "latin-ext",
+      "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2",
+      "path": "public/fonts/manrope-latin-ext.woff2",
+      "bytes": 15120,
+      "sha256": "3911b66d9f2e005a4b989223405d0e5032619c668597ba467cc76a23c8fffcfb"
+    },
+    {
+      "subset": "latin",
+      "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "path": "public/fonts/manrope-latin.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    }
+  ]
+}

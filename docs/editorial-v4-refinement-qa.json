@@ -1,0 +1,26 @@
+{
+  "draftId": "cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion": 5,
+  "previewUrl": "https://p.superdesign.dev/draft/cf2cdb51-022c-4be3-9118-28391b49d716",
+  "published": false,
+  "homepageImplementationApproved": false,
+  "externalReadback": {"exactHtmlMatched": true, "logos": 2, "modelRows": 35},
+  "changes": ["Three illustrated and specific everyday entry cards", "Clearer wearable-pump hero copy", "Selectable case-based shortlist with original evidence and affiliate destinations", "Combined 35-model brand/name and architecture filters, empty state and reset", "Prominent full-directory entry", "14px model architecture and entry descriptions"],
+  "tdd": {
+    "sourceTestsPassed": 3,
+    "expectedRedObserved": ["0 illustrated entries instead of 3", "Architecture selector missing", "Selectable case controls missing"],
+    "browserRedObserved": "Expanded directory at 320px: clientWidth=320, scrollWidth=330, plusRight=330.2984428405762",
+    "browserFix": "Prevent full-height stretching of rotated plus indicator; fixed 22px square and centered alignment, flexible label with min-width:0",
+    "browserGreenObserved": "320px: viewport/clientWidth/scrollWidth all 320; no overflow"
+  },
+  "viewportChecks": [
+    {"viewport":320,"clientWidth":320,"scrollWidth":320,"overflow":[],"clippedText":[],"h1Count":1,"h1Size":"48.8px","rows":35,"creditUnobscured":true,"missingImages":[],"modelMetadataFont":"14px"},
+    {"viewport":390,"clientWidth":390,"scrollWidth":390,"overflow":[],"clippedText":[],"h1Count":1,"h1Size":"48.8px","rows":35,"creditUnobscured":true,"missingImages":[],"modelMetadataFont":"14px"},
+    {"viewport":768,"clientWidth":768,"scrollWidth":768,"overflow":[],"clippedText":[],"h1Count":1,"h1Size":"49.6px","rows":35,"creditUnobscured":true,"missingImages":[],"modelMetadataFont":"14px"},
+    {"viewport":1440,"clientWidth":1440,"scrollWidth":1440,"overflow":[],"clippedText":[],"h1Count":1,"h1Size":"87.84px","rows":35,"creditUnobscured":true,"missingImages":[],"modelMetadataFont":"14px"}
+  ],
+  "interactionChecks": {"caseCounts": {"all":3,"parts":1,"charging":1,"external":1}, "architectureCounts": {"fully-in-bra-electric-wearable":25,"in-bra-cups-with-tubing-and-external-portable-motor":9,"unverified":1}, "medelaAndExternal":4,"emptyCount":0,"emptyMessageShown":true,"resetCount":35,"directoryOpenLinkWorked":true},
+  "visualEvidence": {"nativeDesktopCapture":"C:/Users/andy_/AppData/Local/hermes/cache/images/computer_use_d7e009afe00c4d66abccb5c44f7c2e2e.png", "scope":"Desktop hero/photo credit and illustrated entry cards inspected at version 4; final version 5 adds the documented layout fix and 14px metadata"},
+  "verificationLimitations": ["Canvas links to un-deployed local article routes are not confirmed live destinations", "No current all-market availability or measured quality ranking claimed", "Full integrated-site test results are handled separately after the delegated route task finishes"],
+  "toolRecovery": ["CLI import stdout was TOON despite its .json filename; readback proved version 4 before any further import", "Browser Use daemon timed out; existing Chrome CDP continued the real QA", "Chrome MCP filePath was outside its configured workspace roots; subsequent reads used permitted inline results, persisted here"]
+}

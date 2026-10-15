@@ -1,0 +1,196 @@
+{
+  "component": "MethodologyV4",
+  "status": "standalone-implemented-not-route-wired",
+  "files": [
+    "src/methodology-v4.tsx",
+    "src/methodology-v4.css",
+    "scripts/methodology-v4.test.tsx",
+    "docs/methodology-v4-implementation.json"
+  ],
+  "integration": {
+    "componentImport": "import { MethodologyV4 } from './methodology-v4';",
+    "stylesheetImport": "import './methodology-v4.css';",
+    "stylesheetPlacement": "Import the stylesheet after index.css, editorial.css and visual-editorial.css in the application entry point. The component deliberately does not import CSS so Node SSR tests remain usable.",
+    "render": "Return <MethodologyV4 /> from MethodologyPage; the component already owns main#inhalt and one H1. Do not wrap in another main.",
+    "routing": "No route, shared file, metadata, footer or publication changes made by this implementation."
+  },
+  "content": {
+    "basis": "docs/methodology-v3-draft.md and the existing shared product/source and editorial asset registries",
+    "renderedNonSvgWordCount": 1231,
+    "wordCountMethod": "Render to static markup, remove complete inline SVGs, strip HTML tags, normalize whitespace, split on whitespace.",
+    "sections": 10,
+    "editorialScenes": 4,
+    "explanatoryDiagrams": 4,
+    "topics": [
+      "source hierarchy and limits",
+      "specific model selection",
+      "integrated wearable versus external motor",
+      "set, app, energy, cleaning and parts criteria",
+      "buying-case priorities without scores",
+      "three sourced research examples",
+      "attributed Mumsnet reports",
+      "source-check and correction process",
+      "individual support and no-purchase alternatives",
+      "conditional affiliate disclosure and commercial independence",
+      "preserved manufacturer sources"
+    ],
+    "evidenceLimits": [
+      "No documented standardized own comparative test results are supplied; no claim that no user test has ever occurred.",
+      "Quick FAQ supports generation distinction, not all legacy S12 Pro specifications.",
+      "US manufacturer pages are not treated as proof of German set contents.",
+      "External observations remain attributed to publication, named tester and reported duration.",
+      "No invented editorial or product-check date, measured rating, first-person pump experience, product photograph, medical outcome or Review schema."
+    ]
+  },
+  "assets": [
+    "/editorial-v2/alltag.svg",
+    "/editorial-v2/handfrei.svg",
+    "/editorial-v2/reinigung.svg",
+    "/editorial-v2/passform.svg",
+    "/fonts/manrope-latin.woff2",
+    "/fonts/manrope-latin-ext.woff2"
+  ],
+  "tdd": {
+    "cycles": [
+      {
+        "feature": "named standalone component and landmark",
+        "red": "Standalone MethodologyV4 component is missing",
+        "green": "1 passing test"
+      },
+      {
+        "feature": "complete sourced evidence-led article",
+        "red": "Expected 900–1500 useful words, received 4",
+        "green": "2 passing tests"
+      },
+      {
+        "feature": "accessible diagrams and verified editorial originals",
+        "red": "No explanatory diagrams rendered; expected four named diagrams",
+        "green": "3 passing tests"
+      },
+      {
+        "feature": "scoped responsive local typography",
+        "red": "Standalone methodology styling is missing",
+        "green": "4 passing tests"
+      },
+      {
+        "feature": "commission-independent recommendation basis",
+        "red": "Explain the basis of recommendations independently of commission",
+        "green": "5 passing tests"
+      }
+    ],
+    "focusedTests": {
+      "command": "npx tsx --test scripts/methodology-v4.test.tsx",
+      "passed": 5,
+      "failed": 0
+    },
+    "focusedTypecheck": {
+      "command": "npx tsc --noEmit --target ES2022 --jsx react-jsx --module ESNext --moduleResolution bundler --skipLibCheck --resolveJsonModule --esModuleInterop --lib ES2022,DOM,DOM.Iterable src/methodology-v4.tsx scripts/methodology-v4.test.tsx",
+      "exitCode": 0
+    },
+    "wholeProjectTypecheck": {
+      "command": "npm run lint",
+      "initialResult": "Passed after first four tests and after fifth feature implementation.",
+      "finalRerun": "Blocked by out-of-scope concurrent file scripts/pinterest-single-product.test.tsx: TS2451 duplicate block-scoped variable queue at lines 13 and 48. No changes made to that file."
+    },
+    "broaderRegressionRun": {
+      "command": "npx tsx --test scripts/*.test.ts scripts/*.test.tsx",
+      "passed": 133,
+      "failed": 2,
+      "failuresOutsideOwnedFiles": [
+        "scripts/longtail-content.test.ts: additional noPurchaseAlternative field in existing article data versus draft deep equality",
+        "scripts/problem-pinterest-focus.test.ts: milchpumpe-zubehoer-checkliste planned product philips-avent-scf547 differs from expected philips-avent-scf149-00"
+      ]
+    }
+  },
+  "browserVerification": {
+    "method": "Temporary isolated Chrome DevTools preview: dynamically mounted component with shared styles and its own stylesheet; no route files edited. Vite server used only for local QA.",
+    "viewports": [
+      {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "textContainerOverflows": 0,
+        "allImagesLoaded": true,
+        "localFontReady": true
+      },
+      {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "textContainerOverflows": 0,
+        "allImagesLoaded": true,
+        "localFontReady": true
+      },
+      {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "textContainerOverflows": 0,
+        "allImagesLoaded": true,
+        "localFontReady": true
+      },
+      {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "textContainerOverflows": 0,
+        "allImagesLoaded": true,
+        "localFontReady": true
+      }
+    ],
+    "desktopScrollbarCheck": {
+      "clientWidth": 1425,
+      "scrollWidth": 1425
+    },
+    "missingAnchorTargets": 0,
+    "visualInspection": "Inspected desktop hero, narrow hero and motor-construction section screenshots. No visible text clipping; diagrams distinguish motor placements and illustrations remain whole.",
+    "limits": "Browser checks are not a medical, legal, assistive-technology or complete site-release audit. 200% browser zoom not independently verified."
+  },
+  "parentVerification": {
+    "checkedAt": "2026-10-14T22:35:48.788642+00:00",
+    "fullSuite": {
+      "tests": 135,
+      "passed": 135,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "canvasContractTest": "passed",
+    "diffCheck": "passed",
+    "concurrentSubagentFailures": "Historical snapshots during editing; parent final suite/typecheck now pass.",
+    "routesWired": true,
+    "routeIntegration": {
+      "status": "locally-routed-and-verified",
+      "checkedAt": "2026-10-14T22:59:54.769967+00:00",
+      "report": "docs/market-methodology-route-integration.json",
+      "routes": [
+        "/testmethodik/",
+        "/tragbare-milchpumpen/"
+      ],
+      "focusedTests": {
+        "tests": 9,
+        "passed": 9,
+        "failed": 0
+      },
+      "fullSuite": {
+        "tests": 144,
+        "passed": 144,
+        "failed": 0
+      },
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "diffCheck": "passed",
+      "browser": "Actual production routes, isolatedContext market-methodology-integration; 320/390/768/1440px with no document overflow, no clipped audited text; React filtering 1/4/0/35.",
+      "published": false
+    },
+    "published": false,
+    "previewUrl": "http://127.0.0.1:3017/.superdesign/tmp/review-methodology-v4.html",
+    "browser": {
+      "desktopClientWidth": 1425,
+      "desktopScrollWidth": 1425,
+      "mobileClientWidth": 320,
+      "mobileScrollWidth": 320,
+      "loadedImages": 4,
+      "diagrams": 4,
+      "sections": 10,
+      "clippedText": [],
+      "missingAnchorTargets": []
+    }
+  }
+}

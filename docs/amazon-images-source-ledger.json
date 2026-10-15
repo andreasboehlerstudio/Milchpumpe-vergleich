@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://partnernet.amazon.de/creatorsapi/docs/en-us/introduction",
+      "title": "",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Have at least 10 qualifying sales within the past 30 days to access the PA API through the Creators API",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://partnernet.amazon.de/creatorsapi/docs/en-us/api-reference/resources/images",
+      "title": "",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "In addition to returning the image URLs, these resources also return the height and width dimensions of each image. Use these values to display the images correctly.",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://partnernet.amazon.de/help/operating/license",
+      "title": "",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Sie werden keine Inhalte von Produktwerbung, die aus einem Bild bestehen, speichern oder zwischenspeichern",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://partnernet.amazon.de/creatorsapi/docs/en-us/onboarding/register-for-creators-api",
+      "title": "",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": 5,
+      "url": "https://getaawp.com/docs/article/amazon-creators-api",
+      "title": "",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "AAWP uses the Amazon Creators API to fetch and display Amazon product data such as product titles, images, prices, and availability directly inside WordPress.",
+          "added": "2026-10-14"
+        }
+      ]
+    }
+  ]
+}

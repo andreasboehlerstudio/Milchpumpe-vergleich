@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-14T16:03:54.393Z",
+  "totalProducts": 61,
+  "additionalProducts": 55,
+  "distinctIds": 61,
+  "distinctSourceUrls": 61,
+  "categories": {
+    "Milchpumpen": 18,
+    "Aufbewahrung & Transport": 13,
+    "Reinigung & Zubehör": 15,
+    "Stillalltag & Füttern": 15
+  },
+  "exactAmazonTargets": 4,
+  "modelSearchDestinations": 57,
+  "permittedProductPhotos": 0,
+  "evidenceLimits": "New batch source records were researched by workers; parent validated registry schema, identities, route HTML and mobile category filtering. Model searches are not verified individual offers; tracking tags do not prove commission eligibility. No new product-photo licence or original file acquired."
+}

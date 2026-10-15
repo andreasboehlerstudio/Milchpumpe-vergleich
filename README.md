@@ -15,7 +15,7 @@ npm run dev
 
 ```bash
 npm run lint
-npm run build
+npm test
 npm run preview
 ```
 
@@ -43,6 +43,32 @@ Regeln:
 ## Changelog
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
+
+### 15. Oktober 2026 – Stillalltag-Editorial auf allen Seiten
+
+- Freigegebenes warmes Editorialdesign auf Ratgeber, Produktseiten, Vergleich, Marktüberblick, Methodik und Informationsseiten übertragen; gemeinsame Navigation und Footer.
+- Methodik mit konkreten Rechercheakten, dokumentarischem CC0-Foto, beschrifteten Bauartdiagrammen und unterschiedlichen Layouts überarbeitet.
+- Ratgeber-Einstieg mit lizenzierter Fotografie; große Modellmonogramme durch klar benannte Bauart-Schemata ersetzt. Diese sind keine Produktfotos; exakte Produktfotorechte bleiben offen.
+- Verlinkte Setvariante und Quellenstand auf Produktseiten vor der Kaufaktion sichtbar gemacht.
+- Homepage- und Marktverzeichnis-Suchintentionen getrennt; stabile WebPage-, Article-, Product- und Listen-Entitäten verknüpft. Keine erfundenen Bewertungen oder Angebote ergänzt.
+- Quellenzugang, interne Navigation, `llms.txt`, mobile Typografie und zugängliche Brand-Links nachgeschärft.
+- Newsletter-/PDF-Ablauf als Einrichtungsentwurf vorbereitet; kein aktives Formular und kein Versand freigeschaltet.
+
+### 14. Oktober 2026 – Modellbezogene SEO-, GEO- und Pinterest-Kaufhilfen
+
+- 20 zusätzliche recherchierte Modell-/Kaufartikel mit eigenen Suchintentionen, Quellen, Kurzantworten und individuellen Kaufchecks; insgesamt 23 Ratgeber.
+- Sechs crawlbare Modellcluster, kontextuelle interne Links und interaktiver Pumpenfinder; keine neuen dünnen Marken-Landingpages.
+- Produktwegweiser mit 58 unterschiedlichen Produkten: 18 Pumpen, 13 Aufbewahrungs-/Transportprodukte, 14 Reinigungs-/Zubehörartikel und 13 Produkte für Stillalltag/Füttern; neue Einträge mit konkreten Quellen, Merkmalen und Grenzen statt automatischer dünner Einzel-Landingpages.
+- Separat cachebare JavaScript-Bereiche für Bibliotheken, Artikel und Katalogdaten; keine bloße Erhöhung der Chunk-Warngrenze.
+- Externe Erfahrungsberichte zu M9 und Freestyle benannt und von aktuellen Herstelleranleitungen getrennt; keine angeeigneten Testnoten oder Fotos.
+- Präzisere Such-Titel, vollständiges vorgerendertes HTML und sichtbaren Inhalten entsprechende Article-/Product-Entitäten.
+- Aktuelle Amazon-Tracking-ID `andreasboeh09-21`; vier verifizierte Modellziele und klar gekennzeichnete Modellsuchen für unsichere Varianten.
+- 20 originale Pinterest-Karten, passende Social-Media-Grafiken und ein UTM-Redaktionsplan; keine fremden Produktfotos oder fingierten Praxistests.
+- Frischere Petrol-/Korallpalette, originales SVG-Symbol und reduzierte-Bewegung-kompatible Animationen.
+- Einwilligungsabhängige Affiliate-Ereignisse mit Artikel-, Produkt- und Linkposition; keine Verkaufs-/Provisionsbehauptungen aus Websiteklicks.
+- Automatisierte Prüfungen für TypeScript, Produktions-HTML, Quellenzuordnung, Metadaten, Links, Generationen und Affiliate-ID.
+- Recherche- und Messkonzept in `docs/seo-strategy.md`; Veröffentlichung von Pinterest-Pins und Imagegen-Originalübernahme sind nicht Bestandteil dieses Commits.
+
 
 ### 20. Juli 2026 – Google-Analytics-Datenübertragung
 

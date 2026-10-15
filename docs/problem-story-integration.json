@@ -1,0 +1,23 @@
+{
+  "phase": "Reviewed problem-story prose integrated in local production build",
+  "slugs": ["muttermilch-beschriften-portionen-gefrierfach", "muttermilch-arbeitsplatz-transport-kuehlkette", "reserve-pumpset-reinigen-trocknen-organisieren"],
+  "articlesIntegrated": 3,
+  "sectionsIntegrated": 15,
+  "fieldsUpdated": ["lead", "description", "sections", "pinTitle", "pinDescription"],
+  "sourceUrlsAndIndexMappingsPreserved": true,
+  "otherMilkArticlesPreserved": 5,
+  "singleAffiliateProductPerFocusedArticle": true,
+  "pinterestProductFocusMatchesArticle": true,
+  "productFocus": {
+    "muttermilch-beschriften-portionen-gefrierfach": "medela-easy-pour-storage-bags",
+    "muttermilch-arbeitsplatz-transport-kuehlkette": "medela-cooler-bag",
+    "reserve-pumpset-reinigen-trocknen-organisieren": "philips-avent-scf149-00"
+  },
+  "affiliateTag": "andreasboeh09-21",
+  "tests": {"total": 49, "passed": 49, "failed": 0, "buildPassed": true, "typecheckPassed": true, "gitDiffCheckPassed": true},
+  "productionBrowserQA": {"viewportWidths": [320, 390, 768, 1440], "uniqueArticleWidthChecks": 12, "failures": 0, "horizontalOverflow": 0, "visibleTextClippingDetected": 0, "singleAmazonLinkAndTagVerified": true, "fontLoaded": true, "footerPresent": true},
+  "evidenceReconciliation": "milk-guides-evidence.json remains historical raw research. Current MAM source 3 follows milk-guide-reconciliation.md and current catalogue evidence; no old Philips SCF618/10 facts copied into MAM claims.",
+  "imagegenOriginalIntegrated": false,
+  "published": false,
+  "limits": "Local Chromium checks are not cross-browser guarantees, real-world product tests, conversion measurements or medical review. Pinterest CSV is an unpublished planning export, not proof of generated Imagegen pins."
+}

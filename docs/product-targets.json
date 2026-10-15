@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-14",
+  "method": "Public Amazon.de search and detail HTML read in a logged-out browser context; productTitle, selected ASIN and final tagged URL checked. No purchases or attribution verification.",
+  "affiliateTag": "andreasboeh09-21",
+  "products": [
+    {"id":"momcozy-m9","asin":"B0GX538F1R","variant":"Doppelset, Hellgrau","title":"Momcozy M9 Mobile Flow Milchpumpe Elektrische handsfree 2 Pack Hellgrau","url":"https://www.amazon.de/dp/B0GX538F1R?tag=andreasboeh09-21","selectedAsin":"B0GX538F1R","status":200},
+    {"id":"medela-freestyle","asin":"B0BKGFBKHJ","variant":"Freestyle Hands-free Doppelmilchpumpe, nicht Freestyle Mini","title":"Medela Freestyle Hands-free Elektrische Doppel-Milchpumpe mit direkt im BH tragbaren Auffangschalen – Verbindbar mit der Medela Family App – Tragbares und diskretes Design","url":"https://www.amazon.de/dp/B0BKGFBKHJ?tag=andreasboeh09-21","selectedAsin":"B0BKGFBKHJ","status":200},
+    {"id":"philips-avent-scf547","asin":"B0DWTCG66J","variant":"SCF547/11 Doppelmilchpumpe","title":"Philips AVENT Hands-free elektronische Doppelmilchpumpe, Motor in Krankenhausqualität, spiegelt den Trinkrhythmus des Babys wider, bis zu 85 Pumpbewegungen pro Minute, 2 Auffangschalen, SCF547/11","url":"https://www.amazon.de/dp/B0DWTCG66J?tag=andreasboeh09-21","selectedAsin":"B0DWTCG66J","status":200},
+    {"id":"haakaa-gen3","asin":"B087DJSB8T","variant":"Generation 3, 160 ml, Nude, mit Kappe","title":"Haakaa Generation 3 Silikon-Milchpumpe und Kappe, 160 ml Fassungsvermögen, Nude","url":"https://www.amazon.de/dp/B087DJSB8T?tag=andreasboeh09-21","selectedAsin":"B087DJSB8T","status":200},
+    {"id":"momcozy-s12-pro","asin":null,"reason":"Search predominantly returned S12 Pro Quick; original S12 Pro not silently replaced by another generation."},
+    {"id":"elvie-pump-single","asin":null,"reason":"Search returned Double, Stride, Wave and accessories; exact Pump Single not verified."}
+  ],
+  "limits": "No hard-coded prices or availability claims on site. Observations can change. An active affiliate account and actual commission require PartnerNet confirmation."
+}

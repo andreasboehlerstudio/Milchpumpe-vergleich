@@ -1,0 +1,27 @@
+{
+  "scope": "Superdesign v4 content imagery; not a claim of legal certification or product-photo rights",
+  "selected": {
+    "sourcePage": "https://unsplash.com/photos/baby-clothes-hanging-on-a-rack-5juo633uIEc",
+    "author": "jackson kondili",
+    "authorHandle": "jax969",
+    "licenseUrl": "https://unsplash.com/license",
+    "sourcePageEvidence": "Download this free HD photo of blue, pink, red, and purple by jackson kondili (@jax969)",
+    "licenseEvidence": "Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use images from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash.",
+    "downloadedResource": "https://images.unsplash.com/photo-1766918780914-5df4a5a98c44?fm=jpg&q=85&w=1600&fit=max",
+    "acquiredDimensions": [1600, 1067],
+    "sha256": "665afe83b450618d7d11e86f66e3731a949ccc3e31c2280a3bdced50ab5396ea",
+    "remoteResource": "https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/ec166314-d8f4-47fa-977e-5848c252f006/content-assets/editorial-v4-nursery-clothes/nursery-review.jpg",
+    "purpose": "Nursery still life as editorial atmosphere, not a product or user-test photo",
+    "attributionVisible": "Themenfoto: jackson kondili / Unsplash",
+    "visualInspection": "Baby bodysuits on wooden hangers; no people or faces. Decorative floral backdrop and ordinary garment patterns; no obvious prominent brand logo observed.",
+    "noBlanketReleaseClaim": true,
+    "productionIntegrated": false,
+    "pinterestImagegenDeliverable": false
+  },
+  "rejected": [{
+    "sourcePage": "https://unsplash.com/photos/woman-holding-baby-beside-man-smiling-WvVyudMd1Es",
+    "reason": "Recognizable family portrait; no verified model-release scope for this commercial use. Not downloaded, uploaded or embedded."
+  }],
+  "rightsCaveatSource": "https://help.unsplash.com/en/articles/2612329-releases-and-trademarks",
+  "remaining": "Real product photographs require authorized Creators API access or separately confirmed rights; no Amazon photo was copied. OpenAI original downloads remain manual under reviewed provider terms."
+}

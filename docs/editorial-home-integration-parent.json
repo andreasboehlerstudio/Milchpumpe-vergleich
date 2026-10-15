@@ -1,0 +1,94 @@
+{
+  "scope": "Approved Superdesign v11 integration into the actual React/Vite homepage",
+  "userApproval": "ja kannst du das superdesign direkt übernehmen für die seite",
+  "sourceDraftId": "cf2cdb51-022c-4be3-9118-28391b49d716",
+  "sourceVersion": 11,
+  "sourceHtmlSha256Lf": "723a0e15f7aba0eda86d21802e8dc80aef56a2eb20c50938697e01e9904286ad",
+  "phase": "Completed local integration, production build, full regression suite and rendered browser QA",
+  "parentVerified": {
+    "focusedTestsPassed": 9,
+    "testMethod": "Actual React rendering in Happy DOM StrictMode, 35 rotating model pairs, real native controls; external analytics sink isolated to prevent traffic",
+    "sourceGeneratedFromApprovedCanvas": true,
+    "iframe": false,
+    "remoteCanvasScriptsCopied": false,
+    "remoteCssRequired": false,
+    "localImagesAndExistingLicencesPreserved": true,
+    "defaultComparisonEvidencePrerendered": true,
+    "affiliateConsentGateRetained": true
+  },
+  "localImages": [
+    "/editorial-photos/nursery.jpg",
+    "/editorial-photos/pump-parts.jpg",
+    "/brand-symbol.svg",
+    "/editorial-v2/portionieren.svg",
+    "/editorial-v2/alltag.svg",
+    "/editorial-v2/reinigung.svg"
+  ],
+  "pending": [],
+  "published": false,
+  "committedOrPushed": false,
+  "complete": true,
+  "fullTests": {
+    "passed": 169,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": "passed",
+  "productionAudit": {
+    "routes": 50,
+    "sitemapUrls": 50,
+    "commercialLinkOccurrences": 163,
+    "checkedLocalTargets": 2145,
+    "historicalSnapshotsPreserved": true,
+    "errors": []
+  },
+  "scopeBoundary": "Approved homepage and its header/footer integrated. Other routes retain standard visual shell; market source overlay and home SEO updated. No commit, push or deployment.",
+  "browserChecks": [
+    {
+      "viewport": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "outside": []
+    },
+    {
+      "viewport": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "outside": []
+    },
+    {
+      "viewport": 768,
+      "clientWidth": 753,
+      "scrollWidth": 753,
+      "outside": []
+    },
+    {
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "outside": []
+    },
+    {
+      "viewport": 320,
+      "mode": "classic desktop scrollbar",
+      "clientWidth": 305,
+      "scrollWidth": 305
+    }
+  ],
+  "realBrowserInteractions": {
+    "all35ModelSelectionsPassed": true,
+    "allThreeAlternativePairsPassed": true,
+    "desktopSharedRowsAligned": true,
+    "mobileMenuOpenEscapeFocusPassed": true,
+    "consentOutsideEditorialPassed": true,
+    "consentReopenFocusTrapAndReturnPassed": true,
+    "backgroundInertAndReleasePassed": true,
+    "analyticsScriptsAfterDecline": 0,
+    "all11RenderedImagesLoaded": true
+  },
+  "screenshots": {
+    "desktop": "C:/Users/andy_/AppData/Local/hermes/cache/images/img_1e238d4907bf.png",
+    "phone320": "C:/Users/andy_/AppData/Local/hermes/cache/images/img_ac42e4701c61.png"
+  },
+  "preExistingDefectFixed": "Duplicate kaufcheck fragment in hands-free buying guide; existing article fragment retained and injected decision section disambiguated after a failing regression test."
+}

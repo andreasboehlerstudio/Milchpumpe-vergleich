@@ -1,0 +1,55 @@
+{
+  "researchDate": "2026-10-14",
+  "method": "Qualitative Sichtung öffentlicher Suchtreffer, bestehender Artikel und offizieller Produkt-/Hygienequellen. Keine Suchvolumen, Konkurrenzscores oder Rankingzusagen erhoben.",
+  "searchLimits": "SearXNG war nicht erreichbar; die Suchanfragen wurden durch den angegebenen Fallback beantwortet. Einige Treffer waren international oder unpassend. Malformed CDC-URL und Spam-Treffer werden nicht als Artikelbelege verwendet.",
+  "newArticleIntents": [
+    {
+      "slug": "milchpumpe-reinigen-ohne-spuelmaschine",
+      "primaryKeyword": "milchpumpe reinigen ohne spülmaschine",
+      "secondaryKeywords": ["milchpumpenteile von hand reinigen", "flaschenbürste milchpumpe", "milchpumpe reinigen mit spülmittel"],
+      "question": "Wie organisiere ich die manuelle Reinigung, wenn keine Spülmaschine verfügbar ist?",
+      "primaryProductId": "mam-soft-brush",
+      "productRole": "Optionales Hilfsmittel für Flaschen und ausdrücklich dafür geeignete Flächen, keine Freigabe für dünne Membranen oder Ventile.",
+      "separationFromExisting": "Der Grundlagenartikel erklärt den allgemeinen Hygieneablauf; der neue Beitrag behandelt konkret Handwäsche, geeignete Hilfsmittel und deren eigene Pflege. Der vorhandene Freestyle-Artikel bleibt für die exakten Medela-Cup-Teile zuständig.",
+      "existingRelatedSlugs": ["milchpumpe-reinigen", "reserve-pumpset-reinigen-trocknen-organisieren"],
+      "discoverySources": ["https://www.medela.com/de-de/stillen-und-abpumpen/artikel/tipps-zum-abpumpen/milchpumpe-reinigen", "https://www.philips.de/c-f/XC000019201/wie-reinige-und-desinfiziere-ich-meine-philips-avent-milchpumpe", "https://www.mambaby.com/de/p/soft-brush-fuer-babyflaschen/100009951"]
+    },
+    {
+      "slug": "muttermilch-kita-mitgeben",
+      "primaryKeyword": "muttermilch kita mitgeben",
+      "secondaryKeywords": ["muttermilch kita beschriften", "muttermilch behälter tagespflege", "abgepumpte milch betreuung übergeben"],
+      "question": "Welche Absprachen und Kennzeichnungen braucht die Übergabe an Kita oder Tagespflege?",
+      "primaryProductId": "mam-aufbewahrungsbecher",
+      "productRole": "Wiederverwendbare beschriftbare Aufbewahrung, sofern die Einrichtung diese Behälter akzeptiert; keine allgemeine Kita-Zulassung.",
+      "separationFromExisting": "Die Arbeitsplatzseite beschreibt den gekühlten Heimweg; hier stehen Annahmebedingungen, Zuordnung zum Kind und konkrete Übergabe an eine Einrichtung im Mittelpunkt. Gefrierfach-Sortierung bleibt beim vorhandenen Sortierartikel.",
+      "existingRelatedSlugs": ["muttermilch-arbeitsplatz-transport-kuehlkette", "muttermilch-beschriften-portionen-gefrierfach"],
+      "discoverySources": ["https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen", "https://www.allaiter.ch/logicio/client/stillen/archive/document/Shop/2025_Merkblatt_Kita_DEUTSCH.pdf", "https://www.mambaby.com/de/p/aufbewahrungsbecher-fuer-muttermilch/100003928"],
+      "sourceScope": "Schweizer und regionale Merkblätter sind Kontext, keine deutschlandweit verbindlichen Vorschriften. Einrichtungsvorgaben und individuelle fachliche Hinweise haben Vorrang."
+    },
+    {
+      "slug": "medela-muttermilchflaschen-150-250-ml",
+      "primaryKeyword": "medela muttermilchflaschen 150 oder 250 ml",
+      "secondaryKeywords": ["medela flaschen 150 ml dreierpack", "medela 250 ml flaschen zweierpack", "muttermilchflaschen größe auswählen"],
+      "question": "Welche Flaschengröße und Packungsmenge passen zur vorhandenen Ausstattung?",
+      "primaryProductId": "medela-muttermilchflaschen",
+      "productRole": "Ein Produktfamilien-Beispiel mit zwei dokumentierten Größen; Größen/Packungsmengen sind keine zusätzlichen Pumpenmodelle.",
+      "separationFromExisting": "Der vorhandene Flaschen-/Saugerartikel behandelt das Füttern und Milchfluss-Systeme. Dieser Beitrag vergleicht Aufbewahrungsvolumen, Packungsmenge, Deckel und Platzbedarf, ohne Trinkmengen nach Babyalter vorzuschreiben.",
+      "existingRelatedSlugs": ["abgepumpte-muttermilch-flasche-sauger-auswaehlen", "muttermilch-kuehlschrankbox-getrennt-aufbewahren"],
+      "discoverySources": ["https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003"],
+      "compatibilityLimit": "Breite Herstellerwerbung ist keine modellgenaue Direktanschluss-Freigabe für sämtliche Hands-free-/InBra-Pumpen."
+    },
+    {
+      "slug": "milchpumpe-mikrowellenbeutel-desinfizieren",
+      "primaryKeyword": "milchpumpe mikrowellenbeutel desinfizieren",
+      "secondaryKeywords": ["medela quick clean mikrowellenbeutel anleitung", "milchpumpe mikrowellenbeutel wasser", "medela mikrowellenbeutel wie oft verwenden"],
+      "question": "Wann sind Mikrowellenbeutel geeignet und was muss vor der Dampfbehandlung geprüft werden?",
+      "primaryProductId": "medela-quick-clean-microwave-bags",
+      "productRole": "Dampfbehandlung ausdrücklich freigegebener, bereits gereinigter Kunststoffteile; kein Ersatz für Reinigung und keine Freigabe für Motor/Schläuche.",
+      "separationFromExisting": "Der Grundlagenartikel erklärt Reinigen/Desinfizieren allgemein; hier geht es um die konkrete EU-Beutelanleitung, Freigaben, Wassermenge, Mikrowellenleistung und begrenzte Wiederverwendung.",
+      "existingRelatedSlugs": ["milchpumpe-reinigen", "medela-freestyle-hands-free-drei-teile-reinigung"],
+      "discoverySources": ["https://www.medela.com/en/breastfeeding-pumping/products/cleaning/quick-clean-microwave-bags?productId=1008", "https://www.medela.com/010-products/050-cleaning/010-quick-clean-microwave-bags/pdf-downloads/qcmb-ifu-eu-09cd-v1.0_110623_low.pdf"],
+      "safetyLimit": "Keine pauschale 90-Sekunden-Empfehlung und keine selbst erfundene Tabelle bei unklaren Wattgrenzen. Aktuelle Beutel- und Pumpenanleitung gemeinsam beachten."
+    }
+  ],
+  "publicationStatus": "IN PREPARATION — article drafting delegated; no new routes published yet"
+}

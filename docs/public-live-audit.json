@@ -1,0 +1,501 @@
+{
+  "summary": {
+    "checkedAt": "2026-10-14T17:34:21.784278+00:00",
+    "localArticles": 31,
+    "publicSitemapStatus": 200,
+    "publicSitemapUrls": 16,
+    "publicSitemapIndividualGuides": 3,
+    "matchingArticleHtmlConfirmed": 3,
+    "unconfirmedArticles": 28,
+    "statuses": {
+      "200": 3,
+      "404": 28
+    },
+    "limits": "Public reachability/sitemap audit only, not Google index status or ranking performance. A valid canonical and H1 do not replace a full editorial review."
+  },
+  "articles": [
+    {
+      "slug": "richtige-flanschgroesse",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/richtige-flanschgroesse/",
+      "status": 200,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/richtige-flanschgroesse/",
+      "title": "Flanschgröße richtig einordnen | Milchpumpen-Ratgeber",
+      "h1": [
+        "Flanschgröße richtig einordnen"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/ratgeber/richtige-flanschgroesse/",
+      "robots": "index,follow,max-image-preview:large",
+      "inPublicSitemap": true,
+      "matchingArticleHtmlConfirmed": true,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-reinigen",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-reinigen/",
+      "status": 200,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-reinigen/",
+      "title": "Milchpumpe hygienisch reinigen | Milchpumpen-Ratgeber",
+      "h1": [
+        "Milchpumpe hygienisch reinigen"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-reinigen/",
+      "robots": "index,follow,max-image-preview:large",
+      "inPublicSitemap": true,
+      "matchingArticleHtmlConfirmed": true,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "tragbar-oder-elektrisch",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/tragbar-oder-elektrisch/",
+      "status": 200,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/tragbar-oder-elektrisch/",
+      "title": "Tragbar, elektrisch oder manuell? | Milchpumpen-Ratgeber",
+      "h1": [
+        "Tragbar, elektrisch oder manuell?"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/ratgeber/tragbar-oder-elektrisch/",
+      "robots": "index,follow,max-image-preview:large",
+      "inPublicSitemap": true,
+      "matchingArticleHtmlConfirmed": true,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "muttermilchbeutel-oder-mehrwegbecher",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/muttermilchbeutel-oder-mehrwegbecher/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/muttermilchbeutel-oder-mehrwegbecher/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "muttermilch-beschriften-portionen-gefrierfach",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-beschriften-portionen-gefrierfach/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-beschriften-portionen-gefrierfach/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-arbeitsplatz-transport-kuehlkette/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-arbeitsplatz-transport-kuehlkette/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-kuehlschrankbox-getrennt-aufbewahren/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-kuehlschrankbox-getrennt-aufbewahren/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-erwaermen-ohne-flaschenwaermer/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/muttermilch-erwaermen-ohne-flaschenwaermer/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/reserve-pumpset-reinigen-trocknen-organisieren/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/reserve-pumpset-reinigen-trocknen-organisieren/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/abgepumpte-muttermilch-flasche-sauger-auswaehlen/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/abgepumpte-muttermilch-flasche-sauger-auswaehlen/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/stilleinlagen-einweg-mehrweg-unterwegs-organisieren/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/stilleinlagen-einweg-mehrweg-unterwegs-organisieren/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "momcozy-m9-oder-s12-pro",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-oder-s12-pro/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-oder-s12-pro/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "medela-freestyle-oder-philips-avent",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-oder-philips-avent/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-oder-philips-avent/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "hands-free-milchpumpe-kaufen",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/hands-free-milchpumpe-kaufen/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/hands-free-milchpumpe-kaufen/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-fuer-unterwegs",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-fuer-unterwegs/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-fuer-unterwegs/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-einzel-oder-doppelpumpe",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-einzel-oder-doppelpumpe/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-einzel-oder-doppelpumpe/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-zubehoer-checkliste",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-zubehoer-checkliste/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-zubehoer-checkliste/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "momcozy-m9-ohne-app",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-ohne-app/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-ohne-app/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "momcozy-m9-einzel-oder-doppelset",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-einzel-oder-doppelset/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/momcozy-m9-einzel-oder-doppelset/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "momcozy-s12-pro-quick-unterschiede",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/momcozy-s12-pro-quick-unterschiede/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/momcozy-s12-pro-quick-unterschiede/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-drei-teile-reinigung",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-hands-free-drei-teile-reinigung/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-hands-free-drei-teile-reinigung/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "medela-freestyle-hands-free-schlaeuche-motor",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-hands-free-schlaeuche-motor/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/medela-freestyle-hands-free-schlaeuche-motor/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "philips-avent-scf547-11-oder-scd553-11",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/philips-avent-scf547-11-oder-scd553-11/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/philips-avent-scf547-11-oder-scd553-11/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "philips-avent-scf547-einsaetze-15-17-mm",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/philips-avent-scf547-einsaetze-15-17-mm/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/philips-avent-scf547-einsaetze-15-17-mm/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "elvie-pump-single-oder-double",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/elvie-pump-single-oder-double/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/elvie-pump-single-oder-double/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "elvie-pump-oder-elvie-stride",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/elvie-pump-oder-elvie-stride/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/elvie-pump-oder-elvie-stride/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "haakaa-generation-3-oder-generation-2",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/haakaa-generation-3-oder-generation-2/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/haakaa-generation-3-oder-generation-2/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "haakaa-generation-3-groessen",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/haakaa-generation-3-groessen/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/haakaa-generation-3-groessen/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-app-datenschutz",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-app-datenschutz/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-app-datenschutz/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-ersatzteile-ventile-membranen",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-ersatzteile-ventile-membranen/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-ersatzteile-ventile-membranen/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    },
+    {
+      "slug": "milchpumpe-lautstaerke-herstellerangaben",
+      "url": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-lautstaerke-herstellerangaben/",
+      "status": 404,
+      "finalUrl": "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-lautstaerke-herstellerangaben/",
+      "title": "Seite nicht gefunden | Milchpumpe-Vergleich.de",
+      "h1": [
+        "Diese Seite wurde nicht gefunden"
+      ],
+      "canonical": "https://milchpumpe-vergleich.de/404/",
+      "robots": "noindex,follow",
+      "inPublicSitemap": false,
+      "matchingArticleHtmlConfirmed": false,
+      "gscIndexStatus": "not checked in this public audit"
+    }
+  ],
+  "sitemapUrls": [
+    "https://milchpumpe-vergleich.de/",
+    "https://milchpumpe-vergleich.de/vergleich/",
+    "https://milchpumpe-vergleich.de/ratgeber/",
+    "https://milchpumpe-vergleich.de/testmethodik/",
+    "https://milchpumpe-vergleich.de/ueber-uns/",
+    "https://milchpumpe-vergleich.de/impressum/",
+    "https://milchpumpe-vergleich.de/datenschutz/",
+    "https://milchpumpe-vergleich.de/produkte/momcozy-m9/",
+    "https://milchpumpe-vergleich.de/produkte/medela-freestyle/",
+    "https://milchpumpe-vergleich.de/produkte/philips-avent-scf547/",
+    "https://milchpumpe-vergleich.de/produkte/momcozy-s12-pro/",
+    "https://milchpumpe-vergleich.de/produkte/elvie-pump-single/",
+    "https://milchpumpe-vergleich.de/produkte/haakaa-gen3/",
+    "https://milchpumpe-vergleich.de/ratgeber/richtige-flanschgroesse/",
+    "https://milchpumpe-vergleich.de/ratgeber/milchpumpe-reinigen/",
+    "https://milchpumpe-vergleich.de/ratgeber/tragbar-oder-elektrisch/"
+  ]
+}

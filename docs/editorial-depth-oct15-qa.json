@@ -1,0 +1,30 @@
+{
+  "scope": "Approval-gated Superdesign homepage refinement; no production application changes or deployment",
+  "draftId": "cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion": 7,
+  "previewUrl": "https://p.superdesign.dev/draft/cf2cdb51-022c-4be3-9118-28391b49d716",
+  "canvasUrl": "https://superdesign.dev/teams/6382ef85-f8e7-4885-8281-cc12b924f3f8/projects/ec166314-d8f4-47fa-977e-5848c252f006",
+  "referenceReview": ["pinterest-3518505954803062", "pinterest-58546863901283406", "pinterest-12947917676120260", "pinterest-709105903877532336"],
+  "changes": ["Unequal documentary-photo and illustrated story areas", "Layered paper-caption surfaces", "Dark petrol curved storage interlude", "Concrete M5 Smart source/variant example with four-step method diagram", "Visible best-wearable direct answer, named use cases and linked market route", "Three native FAQs with manufacturer/set distinctions and BZfE source"],
+  "readback": {"sameDraft": true, "matchesAuthoredHtml": true, "normalization": "Only platform CRLF to LF; no content normalization", "warningsReturned": []},
+  "tests": {"newCanvasContracts": 3, "priorContractsOnRemoteHtml": 4, "websiteSuite": 145, "websitePassed": 145, "websiteFailed": 0, "typecheck": "passed", "productionBuild": "passed", "diffCheck": "passed"},
+  "browserChecks": [
+    {"viewport":320,"clientWidth":320,"scrollWidth":320,"overflow":[],"clipped":[],"missingImages":[],"main":1,"h1":1,"models":35,"methodSteps":4},
+    {"viewport":390,"clientWidth":390,"scrollWidth":390,"overflow":[],"clipped":[],"missingImages":[],"main":1,"h1":1,"models":35,"methodSteps":4},
+    {"viewport":768,"clientWidth":768,"scrollWidth":768,"overflow":[],"clipped":[],"missingImages":[],"main":1,"h1":1,"models":35,"methodSteps":4},
+    {"viewport":1440,"clientWidth":1440,"scrollWidth":1440,"overflow":[],"clipped":[],"missingImages":[],"main":1,"h1":1,"models":35,"methodSteps":4}
+  ],
+  "browserState": "Model directory, case details and FAQs expanded during geometry checks. All images eagerly decoded with a bounded wait. Clipping reports require an actual clipping/scrolling ancestor, not simply the harmless scrollWidth of a rotated plus glyph in an overflow-visible summary.",
+  "regression": {"version6PhoneScrollWidth":321,"version6PhoneClientWidth":320,"cause":"Rotated full-width curved-interlude pseudo-elements","fix":"Keep curved surfaces axis-aligned; no global overflow hiding","version7PhoneScrollWidth":320},
+  "interactions": {"initialModels":35,"architectureCounts":[25,9,1],"smartSearch":1,"emptySearch":0,"emptyMessageVisible":true,"reset":35,"resetFocus":"v4-model-search","caseCounts":{"parts":1,"charging":1,"external":1,"all":3},"mobileMenuOpenAndClose":true,"nativeFaqToggle":true},
+  "credits": {"nurseryVisibleAndUnobscured":true,"pumpPartsVisibleAndUnobscured":true},
+  "internalDestinations": {"uniqueUrlsAndAnchors":21,"missingFromLocalBuild":0,"livePublicationNotClaimed":true},
+  "photo": {"source":"https://commons.wikimedia.org/wiki/File:Hands_Free_Breast_Pump.jpg","creator":"LeslieKnope345","licence":"CC0 1.0","originalDimensions":[3024,4032],"originalSha1MatchedOfficialApi":true,"publicDerivativeDimensions":[1350,1800],"publicExifStripped":true,"uploadedBytesSha256Verified":true,"role":"Documentary image of pump parts, not a recommended exact-model product photo","evidenceOutsideRepo":"../design-media/wikimedia-pump-parts/"},
+  "visualReviews": {"storyDesktop":"img_f706ce07120f.png","methodDesktop":"img_d96098f2645e.png","method320":"img_23b4a9bf8421.png","darkInterludeDesktop":"img_1a2338cdcb21.png"},
+  "componentRefresh": {"headerId":"df88afda-d7f4-4a19-899b-64ae2054c7ab","headerVersion":2,"footerId":"c2516958-c32e-4fb4-96ad-0e318f44b93b","footerVersion":3,"readbackLimit":"CLI component listing exposes id/name/description/version only, not template bodies"},
+  "generationCreditsSpent":0,
+  "implementationApproved":false,
+  "published":false,
+  "committed":false,
+  "remaining": ["Exact-model recommendation photos need individual authorized image resources or separately documented licences", "35 researched identities are not verified exhaustive current Amazon availability or a measured quality ranking", "Free booklet is at topic-selection stage, not a produced PDF", "Production homepage unchanged; canvas changes need implementation approval"]
+}

@@ -1,0 +1,20 @@
+{
+  "draftId":"cf2cdb51-022c-4be3-9118-28391b49d716",
+  "currentVersion":10,
+  "scope":"Align corresponding desktop comparison facts without changing editorial evidence or mobile stacking",
+  "before":{"defaultPairFactRowOffsetPixels":27.354248046875,"browserAlignmentPassed":false,"newContractPassed":false},
+  "after":{"readbackMatchesHtml":true,"normalization":"CRLF to LF only","canvasContractsPassed":12,"typecheck":"passed","diffCheck":"passed"},
+  "browserChecks":[
+    {"viewport":1440,"scrollWidth":1440,"modelsChecked":35,"pairingOffset":7,"misalignedPairs":[],"maximumPurchaseButtonOffsetPixels":0},
+    {"viewport":768,"scrollWidth":768,"modelsChecked":35,"pairingOffset":7,"misalignedPairs":[]},
+    {"viewport":320,"scrollWidth":320,"overflow":[],"cardDisplay":"block","options":35}
+  ],
+  "implementation":"CSS shared subgrid tracks, including nested semantic definition lists. No display:contents on dl, no measured fixed row heights and no JavaScript height syncing. Feature-gated desktop-only enhancement.",
+  "visualReviewScreenshot":"C:/Users/andy_/AppData/Local/hermes/cache/images/img_a38b45f38aab.png",
+  "unchanged":["Licensed photographs","Illustrated methodology","35 model identities","Historical offer dates","Affiliate disclosures","Source/mapping gaps"],
+  "newProductImageRightsAcquired":false,
+  "newCurrentAvailabilityVerification":false,
+  "newRankingEvidenceIntegrated":false,
+  "published":false,
+  "productionHomepageChanged":false
+}

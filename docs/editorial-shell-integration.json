@@ -1,0 +1,72 @@
+{
+  "status": "implemented",
+  "source": {
+    "design": "Approved Superdesign Canvas v11 homepage",
+    "file": ".superdesign/tmp/ranking-readback.html",
+    "scope": "Shared header, footer and relevant CSS selectors only; no design generation or external actions"
+  },
+  "api": {
+    "component": "Layout",
+    "prop": "variant?: 'standard' | 'editorial'",
+    "default": "standard",
+    "usage": "<Layout variant=\"editorial\"><main id=\"inhalt\">...</main></Layout>",
+    "standardCompatibility": "Existing Header, Footer and CookieConsent implementation preserved; implicit and explicit standard SSR match the captured pre-integration SHA-256"
+  },
+  "structure": {
+    "wrapper": "div.editorial-home.v4",
+    "insideWrapper": [
+      "a.skip[href='#inhalt']",
+      "header.top > div.wrap.top-inner",
+      "children",
+      "footer.foot > div.wrap"
+    ],
+    "outsideWrapper": "Existing CookieConsent rendered as a sibling immediately after the wrapper",
+    "footerClasses": ["foot-head", "foot-grid", "foot-brand", "about", "affiliate", "bottom"],
+    "logo": "/brand-symbol.svg",
+    "logoDimensions": { "header": 39, "footer": 36 },
+    "headerIds": ["header-brand", "menu-button", "main-nav", "header-comparison", "header-guides", "header-products", "header-finder"],
+    "additionalFooterId": "footer-six-models"
+  },
+  "navigation": {
+    "headerMilchpumpen": "/#marktcheck",
+    "headerKaufhilfe": "/ratgeber/#pumpenfinder",
+    "footerMarket": "/tragbare-milchpumpen/",
+    "footerSixModelComparison": "/vergleich/",
+    "footerSourcesAndMethodology": "/testmethodik/",
+    "footerPublisherAndContact": "/ueber-uns/",
+    "publisher": "Andreas Böhler",
+    "publisherEvidence": "Existing About and Impressum content in src/pages.tsx",
+    "menu": "React useState controls aria-expanded, accessible label, trigger glyph and nav.open; every header link closes the menu; Escape closes it and restores trigger focus; keydown listener is removed on close or unmount",
+    "cookies": "#cookie-settings dispatches the existing open-cookie-settings event; no duplicate consent UI or consent storage logic"
+  },
+  "integrationResponsibilities": {
+    "parent": [
+      "Select variant='editorial' for the homepage in App.tsx",
+      "Supply homepage children containing main#inhalt and #marktcheck",
+      "Scope the approved Canvas CSS under .editorial-home while retaining the .v4 selectors",
+      "Keep the existing standard consent styles outside the editorial root"
+    ],
+    "cssChangesInThisTask": false,
+    "appOrPageChangesInThisTask": false
+  },
+  "verification": {
+    "tdd": [
+      "First SSR run: 2 tests, 1 pass, 1 fail; missing editorial wrapper assertion failed before production changes",
+      "Independent RED/GREEN slices also exercised missing Canvas header, Canvas footer, menu state handler, Escape handling and close-on-navigation",
+      "SSR wrapper assertion accounts for React 19 emitting an image preload link before the wrapper"
+    ],
+    "focusedCommand": "npx tsx --test scripts/editorial-shell.test.tsx",
+    "typecheckCommand": "npm run lint",
+    "relatedRegressionCommand": "npx tsx --test scripts/editorial-shell.test.tsx scripts/consent-dialog.test.ts scripts/consent-lifecycle.test.ts",
+    "focusedResult": { "tests": 9, "pass": 9, "fail": 0, "exitCode": 0 },
+    "typecheckResult": { "command": "tsc --noEmit", "exitCode": 0 },
+    "relatedRegressionResult": { "tests": 14, "pass": 14, "fail": 0, "exitCode": 0 },
+    "diffCheckResult": { "command": "git diff --check -- src/components.tsx scripts/editorial-shell.test.tsx docs/editorial-shell-integration.json", "exitCode": 0 },
+    "testScope": "Actual React SSR and element structure; component handlers executed using deterministic hook slots and native EventTargets, not a DOM renderer or browser",
+    "standardSsrSha256": "e9106925632415e3e49498031691fba352df5a54c63f64330e838980b7554542",
+    "unchangedConsentBytesSha256": "9ece1e5ff2158cf9a2fafa44387d3bb75f6bdc0f8e1ff2fd0b2711eb6a95ef32",
+    "consentLfNormalizedSha256": "3976ab77f3562932811b6aacbd3dfad2b7607e9d44837b4e891720a44f5da2f6",
+    "browserOrVisualVerification": "Not performed; no browser actions authorized for this subtask"
+  },
+  "files": ["src/components.tsx", "scripts/editorial-shell.test.tsx", "docs/editorial-shell-integration.json"]
+}

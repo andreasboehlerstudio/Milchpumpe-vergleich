@@ -2,6 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
+import './editorial.css';
+import './visual-editorial.css';
+import './methodology-v4.css';
+import './wearable-market.css';
+import './home-editorial.css';
+import './site-editorial.css';
 
 const container = document.getElementById('root');
 

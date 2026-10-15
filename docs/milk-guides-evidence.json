@@ -1,0 +1,969 @@
+{
+  "editorialDate": "2026-10-14",
+  "scope": "Acht zusätzliche deutschsprachige Artikel zum Muttermilch-Alltag. Keine Veröffentlichung, kein Commit. Nur die beiden beauftragten JSON-Dateien.",
+  "verification": {
+    "articleCount": 8,
+    "sectionsPerArticle": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "minimumDistinctProductsPerArticle": 2,
+    "uniqueProductCount": 11,
+    "officialSourceCount": 14,
+    "evidenceQuoteCount": 54,
+    "sourceIndexConvention": "zero-based, local to each article.sources",
+    "schemaValidation": "passed",
+    "allEvidenceQuotesMatchRetrievedText": true
+  },
+  "editorialBoundaries": [
+    "Original formulierte Artikel; kurze Originalzitate ausschließlich hier als Recherchebelege.",
+    "Behördenquellen Gesund ins Leben und BZfE tatsächlich gelesen; sie sind keine zwei voneinander unabhängigen klinischen Studien. BZfE verweist auf Gesund ins Leben.",
+    "Checklisten und Organisationsideen sind redaktionelle Ableitungen, keine wörtlichen Behördenvorgaben.",
+    "Keine selbst erfundenen Tests, Bewertungen, Nutzerstimmen, Preise, Verfügbarkeitszusagen oder Wirksamkeitsgarantien.",
+    "Keine medizinischen Heilversprechen, Arzneimittel, Stilltees, Supplemente oder Rezepte zur Milchsteigerung.",
+    "Herstellerquellen belegen Ausstattung und vorgesehene Nutzung, nicht unabhängige Sicherheits- oder Wirksamkeitstests.",
+    "Keine Affiliate-URLs oder versteckte Kaufaufforderungen in diesen Dateien. Vorhandene geeignete Ausstattung und Nichtkauf werden ausdrücklich berücksichtigt.",
+    "Keine universelle Lagerfrist gewählt. Gesund ins Leben nennt unter bestimmten Bedingungen vier Kühlschranktage, Medela Easy Pour nennt drei bei anderen Bedingungen. Die konkreten Empfehlungen müssen im Kontext gelesen werden.",
+    "Grundlage betrifft das gesunde eigene Kind zu Hause; bei Frühgeburt und kranken Babys individuelle Abstimmung mit Fachpersonal.",
+    "Produktklassifikation und Pflege von Stilleinlagen stammen aus Herstellerquellen. Die beiden Behördenseiten geben dazu keine spezifische Wechselregel vor."
+  ],
+  "sourceLimitations": [
+    "PersonalFit Flex Kit und Calma sind anhand offizieller internationaler englischer Seiten verifiziert; deutsche Produktvarianten und Lieferumfang vor Kauf abgleichen.",
+    "Natural Response SCY903/01 ist anhand der offiziellen US-Seite verifiziert. Deutsche Seite lieferte nur Titel/Footer; US-Variantengrenze ist im Artikel genannt.",
+    "Die Medela Flaschenseite verwendet eine breite Pumpen-Kompatibilitätsformulierung; Artikel geben bewusst keine Universal-Kompatibilitätsgarantie.",
+    "Kühltaschen-Seite nennt mehrere Stunden ohne allgemeingültiges Temperatur-Zeit-Protokoll. Keine sichere Transportdauer daraus abgeleitet.",
+    "Warmhaltefunktion bis 60 Minuten beim SCF358/00 ist Produktfunktion, keine Empfehlung zur Lagerdauer warmer Muttermilch.",
+    "Eine Suchanfrage nach dem SCF618/10 führte zu einer offiziellen Anleitung für SCF603-Milchbeutel. Modellabweichung erkannt, diese Anleitung nicht als Beleg für die Becher verwendet.",
+    "Browser-Zugriff auf die deutsche Philips-Flaschenseite lief ins Timeout; keine daraus gewonnenen Inhalte behauptet.",
+    "Katalogzuordnung bleibt beim Elternagenten; keine fremden parallel bearbeiteten Dateien gelesen oder gepollt."
+  ],
+  "products": [
+    {
+      "productName": "Medela Easy Pour Muttermilchbeutel",
+      "sourceUrls": [
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/easy-pour-muttermilchbeutel?productId=1036"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 2,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Philips Avent Muttermilchbehälter SCF618/10",
+      "sourceUrls": [
+        "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 3,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Medela Muttermilchflaschen",
+      "sourceUrls": [
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 4,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Medela Kühltasche",
+      "sourceUrls": [
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/kuhltasche?productId=4479"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 5,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Philips Avent Premium Flaschenwärmer SCF358/00",
+      "sourceUrls": [
+        "https://www.philips.de/c-p/SCF358_00/avent-schneller-flaschenwaermer"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 6,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Medela classic PersonalFit Flex™ double pumping kit",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/extra-pump-parts/traditional-kit/medela-classic-personalfit-flex-double-pumping-kit"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 7,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Philips Avent Trockengestell SCF149/00",
+      "sourceUrls": [
+        "https://www.philips.de/c-p/SCF149_00/avent-trockengestell"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 8,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Medela Calma™ Feeding System",
+      "sourceUrls": [
+        "https://www.medela.com/en/breastfeeding-pumping/products/bottles-bags/calma-feeding-system?productId=5000"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 9,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Philips Avent Natural Response Babyflasche SCY903/01",
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-p/SCY903_01/natural-response-baby-bottle"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 10,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Lansinoh Blue Lock™ Stilleinlagen",
+      "sourceUrls": [
+        "https://lansinoh.de/products/blue-lock-stilleinlagen"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 11,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    },
+    {
+      "productName": "Lansinoh® Waschbare Stilleinlagen",
+      "sourceUrls": [
+        "https://lansinoh.de/products/waschbare-stilleinlagen-neu"
+      ],
+      "verifiedOnOfficialSource": true,
+      "sourceRecordIndex": 12,
+      "catalogResolution": "Elternagent ordnet Namen im parallel bearbeiteten Katalog zu; Katalogdateien wurden hier nicht gelesen."
+    }
+  ],
+  "sourceRecords": [
+    {
+      "url": "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+      "title": "Muttermilch abpumpen, aufbewahren und füttern",
+      "type": "public-authority",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Behälter und Einweg",
+          "quote": "Es gibt außerdem spezielle Muttermilchbeutel. Diese sparen Platz im Tiefkühlschrank, können aber nur einmal verwendet und müssen dann weggeworfen werden.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Beschriftung",
+          "quote": "Am besten beschriftest du die Behälter mit einem Datum, so behältst du den Überblick.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Portionsbedarf",
+          "quote": "Wie viel Muttermilch ein Säugling während einer Stillmahlzeit trinkt, ist je nach Alter und Trinkfreudigkeit unterschiedlich.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Kühlplatz",
+          "quote": "Die Kühlschranktür ist für die Aufbewahrung ungeeignet.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Transport",
+          "quote": "Wichtig ist eine durchgehende Kühlung! Für den Transport nutze beispielsweise eine Kühlbox mit Akkus.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Kein Wieder-Einfrieren",
+          "quote": "Sie darf nicht wieder eingefroren werden.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Temperaturwunsch",
+          "quote": "Es spricht nichts dagegen, kalte Milch zu füttern, die im Kühlschrank gelagert wurde.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Zugewandtes Füttern",
+          "quote": "Die Person, die das Baby füttert, kann wie beim Stillen auf seine Signale rund um Hunger, Sättigung und Nähe eingehen und es beim Essen unterstützen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Lagerfrist nur im Quellenkontext",
+          "quote": "Frische Muttermilch hält sich im Kühlschrank bei 4 bis 6 °C für 4 Tage.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Geltungsbereich",
+          "quote": "Gewinnung, Aufbewahrung und Umgang mit abgepumpter Muttermilch für das gesunde, eigene Kind zu Hause",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilchbeutel-oder-mehrwegbecher",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "einsatz",
+            "portionen",
+            "entscheidung"
+          ]
+        },
+        {
+          "slug": "muttermilch-beschriften-portionen-gefrierfach",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "etikett",
+            "portionierung",
+            "beutel-sortieren",
+            "fach-check"
+          ]
+        },
+        {
+          "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "vorarbeit",
+            "flaschen",
+            "packroutine",
+            "planb"
+          ]
+        },
+        {
+          "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "stellplatz",
+            "boxauswahl",
+            "uebergabe"
+          ]
+        },
+        {
+          "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "temperaturwunsch",
+            "wasserbad",
+            "ablauf"
+          ]
+        },
+        {
+          "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "reinigung"
+          ]
+        },
+        {
+          "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "bedarf",
+            "beobachten"
+          ]
+        },
+        {
+          "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+          "sourceIndex": 0,
+          "sectionIds": [
+            "taschenroutine"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+      "title": "Muttermilch abpumpen | Bundeszentrum für Ernährung (BZfE)",
+      "type": "public-authority",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Umfüllen vermeiden",
+          "quote": "Möglichst direkt in das Gefäß abpumpen, in dem die Milch aufbewahrt wird.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Reinigung nach Gebrauch",
+          "quote": "Nach jedem Gebrauch Pumpset und Behälter mit Spülmittel und heißem Wasser reinigen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Trocknen",
+          "quote": "Mit einem Papierhandtuch oder an der Luft trocknen lassen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Beratungsunterstützung",
+          "quote": "Unterstützung bieten Hebammen und Stillberaterinnen, sei es bei der Auswahl des passenden Trichteraufsatzes und der Anwendung der Milch-Pumpe oder der Aufbewahrung und Fütterung der Muttermilch.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilchbeutel-oder-mehrwegbecher",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "mehrweg",
+            "entscheidung"
+          ]
+        },
+        {
+          "slug": "muttermilch-beschriften-portionen-gefrierfach",
+          "sourceIndex": 1,
+          "sectionIds": []
+        },
+        {
+          "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "packroutine",
+            "planb"
+          ]
+        },
+        {
+          "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "trennung",
+            "uebergabe"
+          ]
+        },
+        {
+          "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+          "sourceIndex": 1,
+          "sectionIds": []
+        },
+        {
+          "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "bedarf",
+            "reinigung",
+            "trockenplatz",
+            "wechselroutine"
+          ]
+        },
+        {
+          "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "bedarf",
+            "systemcheck"
+          ]
+        },
+        {
+          "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+          "sourceIndex": 1,
+          "sectionIds": [
+            "taschenroutine",
+            "tagescheck"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/easy-pour-muttermilchbeutel?productId=1036",
+      "title": "Easy Pour Muttermilchbeutel - für einfaches Ausgießen",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Flach einfrieren und Kennzeichnen",
+          "quote": "Einfach zu organisieren – genaue Skala und eigenes Feld zum Eintragen von Datum, Uhrzeit und Milchmenge",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Keine Pumpenanbindung",
+          "quote": "Unsere Muttermilchaufbewahrungsbeutel lassen sich nicht an Milchpumpen anschließen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Einmaliger Gebrauch",
+          "quote": "Unsere Easy Pour Muttermilchbeutel sind nur für den einmaligen Gebrauch bestimmt und werden danach weggeworfen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Kein Beutel im Flaschenwärmer",
+          "quote": "Wir raten davon ab, einen Flaschenwärmer zu verwenden, da er die Muttermilch überhitzen und die wertvollen Nährstoffe schädigen könnte.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Fristenabweichung dokumentieren",
+          "quote": "Gemäß den empfohlenen Richtlinien kann Muttermilch bis zu 180 Tagen (6 Monate) im Gefrierschrank bei -18 °C/ 0 °F oder im Kühlschrank bis zu 3 Tage bei 4 °C/ 39 °F gelagert werden.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Füllgrenze",
+          "quote": "Wir empfehlen, die Beutel nicht mit mehr als 210 ml zu füllen.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilchbeutel-oder-mehrwegbecher",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "beutel",
+            "entscheidung"
+          ]
+        },
+        {
+          "slug": "muttermilch-beschriften-portionen-gefrierfach",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "beutel-sortieren"
+          ]
+        },
+        {
+          "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "beutel"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter",
+      "title": " Muttermilchbehälter SCF618/10 | Avent",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Mehrweg bestätigt",
+          "quote": "Mit unserem neuen Mehrwegbecher können Sie Muttermilch effizient abpumpen, aufbewahren und füttern.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Adapterfunktion",
+          "quote": "Zum Abpumpen und Füttern.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Variantenabgleich",
+          "quote": "SCF618/10",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilchbeutel-oder-mehrwegbecher",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "mehrweg"
+          ]
+        },
+        {
+          "slug": "muttermilch-beschriften-portionen-gefrierfach",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "becher-sortieren"
+          ]
+        },
+        {
+          "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "innenbehaelter",
+            "boxauswahl"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+      "title": "Muttermilchflaschen",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Kühlschrank/Gefrieranwendung",
+          "quote": "ideal zum Aufbewahren der Muttermilch im Kühl- oder Gefrierschrank.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Größen und Packungen",
+          "quote": "Die Milchflaschen von Medela sind bruchsicher und in zwei Größen erhältlich: als 150-ml-Flasche im Dreierpack und als 250-ml-Flasche im Zweierpack.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Deckel",
+          "quote": "die mitgelieferten Schraubdeckel sorgen dafür, dass bei der Aufbewahrung im Kühl- oder Gefrierschrank wie auch unterwegs alles dicht ist und nichts ausläuft.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "flaschen"
+          ]
+        },
+        {
+          "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "innenbehaelter",
+            "boxauswahl"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/kuhltasche?productId=4479",
+      "title": "Kühltasche für Muttermilch | Medela",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Set-Inhalt",
+          "quote": "Sie wird zusammen mit vier Medela Muttermilchflaschen und einem separaten Kühlakku geliefert.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Passgenauer Kühlakku",
+          "quote": "Der passgenaue Kühlakku wurde eigens für die Medela Milchflaschen entwickelt und maximiert die Aufbewahrungszeit der Muttermilch.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Keine allgemeine Stundenfreigabe",
+          "quote": "Die Kühltasche von Medela ist ideal für das Aufbewahren von Muttermilch über mehrere Stunden.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "transportset"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.philips.de/c-p/SCF358_00/avent-schneller-flaschenwaermer",
+      "title": "Avent Premium Flaschenwärmer Premium SCF358/00 | Philips",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Regelung und Warmhaltefunktion",
+          "quote": "Die Funktion erkennt die Anfangstemperatur der Milch und erwärmt sie schnell auf die richtige Temperatur, die anschließend bis zu 60 Minuten lang gehalten wird.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Auftaufunktion",
+          "quote": "Der Flaschenwärmer taut Milch und Babynahrung in ihren Behältern schnell auf.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "beutel",
+            "geraet"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.medela.com/en/breastfeeding-pumping/products/extra-pump-parts/traditional-kit/medela-classic-personalfit-flex-double-pumping-kit",
+      "title": "Medela classic PersonalFit Flex™ double pumping kit | Medela",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Ersatz und Reserve",
+          "quote": "Whether used an alternative to hands-free, replacing your pumping set, or used as a spare set, this kit is designed to seamlessly integrate into your pumping routine",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Kompatibilitätsgrenze",
+          "quote": "This kit is compatible with Medela Freestyle™ and Swing Maxi™ Breast Pumps only.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Brusthaubengrößen",
+          "quote": "2 x PersonalFit Flex™ Breast Shields 21mm",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Brusthaubengrößen",
+          "quote": "2 x PersonalFit Flex™ Breast Shields 24mm",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Schlauch im Lieferumfang",
+          "quote": "1 x Tubing",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "modellabgleich",
+            "wechselroutine"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.philips.de/c-p/SCF149_00/avent-trockengestell",
+      "title": "Avent Trockengestell SCF149/00 | Philips",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Abtropfschale",
+          "quote": "Mit seinem flexiblen Design, einer abnehmbaren Abtropfschale und Platz für Flaschen jeder Größe erfüllt es Ihre Anforderungen für das tägliche Trocknen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Zubehörkapazität",
+          "quote": "Passend für alle Produkte zum Füttern Ihres Babys an jedem Tag (maximal 8 Flaschen, Sauger, Milchpumpe und Schnuller).",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "trockenplatz",
+            "wechselroutine"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.medela.com/en/breastfeeding-pumping/products/bottles-bags/calma-feeding-system?productId=5000",
+      "title": "Calma™ Feeding System  | Medela",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Vakuumgesteuerter Fluss",
+          "quote": "Calma™ Feeding System ensures milk flows only when vacuum is created, allowing your baby to drink, pause, and breathe at its own pace.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Flussregulierung",
+          "quote": "The milk flow is automatically regulated by the strength of the vacuum applied, eliminating the need to adjust nipple flow rates as your baby grows.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "calma",
+            "systemcheck"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.usa.philips.com/c-p/SCY903_01/natural-response-baby-bottle",
+      "title": "Buy the Avent Avent Natural Response Baby Bottle SCY903/01 Baby Bottle",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Aktives Trinken",
+          "quote": "The nipple has a unique opening which only releases milk when the baby actively drinks.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Fachpersonal bei Schwierigkeiten",
+          "quote": "If feeding difficulties persist, consult a healthcare professional.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Variante dokumentieren",
+          "quote": "SCY903/01",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "response",
+            "beobachten",
+            "systemcheck"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://lansinoh.de/products/blue-lock-stilleinlagen",
+      "title": "Lansinoh Blue Lock™ Stilleinlagen",
+      "type": "manufacturer",
+      "retrievalMethod": "live urllib HTML text",
+      "quotes": [
+        {
+          "supports": "Kern",
+          "quote": "Supersaugfähiger Kern schließt Feuchtigkeit schnell ein",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Außenseite",
+          "quote": "Wasserundurchlässige Außenseite hält die Kleidung zuverlässig trocken",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Einzelverpackung",
+          "quote": "Unsere Lansinoh® Stilleinlagen sind aus hygienischen Gründen einzeln verpackt",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+          "sourceIndex": 2,
+          "sectionIds": [
+            "einsatz",
+            "einweg",
+            "tagescheck"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://lansinoh.de/products/waschbare-stilleinlagen-neu",
+      "title": "Lansinoh® Waschbare Stilleinlagen",
+      "type": "manufacturer",
+      "retrievalMethod": "live urllib HTML text",
+      "quotes": [
+        {
+          "supports": "Waschtemperatur",
+          "quote": "Wiederverwendbar und waschbar bei 40 °C",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Wechselkriterium",
+          "quote": "Generell sollten die Stilleinlagen ersetzt werden, wenn diese gesättigt/vollgesogen sind oder sich feucht anfühlen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Wäsche nach jedem Gebrauch",
+          "quote": "Stilleinlagen nach jedem Gebrauch waschen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Kein Weichspüler",
+          "quote": "keinen Weichspüler oder Bleichmittel verwenden",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Trockene Lagerung",
+          "quote": "Lansinoh® Waschbare Stilleinlagen bei Nichtgebrauch an einem trockenen Ort aufbewahren.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+          "sourceIndex": 3,
+          "sectionIds": [
+            "einsatz",
+            "einweg",
+            "mehrweg",
+            "taschenroutine",
+            "tagescheck"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://lansinoh.de/blogs/stillen/stilleinlagen-wie-sie-helfen-und-welche-es-gibt",
+      "title": "Stilleinlagen – wie sie helfen und welche es gibt",
+      "type": "manufacturer",
+      "retrievalMethod": "web_extract, live official page",
+      "quotes": [
+        {
+          "supports": "Einweg-Klassifikation",
+          "quote": "Einweg-Stilleinlagen sind für den einmaligen Gebrauch gedacht.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Lansinoh Einweg-Empfehlung im Ratgeber",
+          "quote": "Wir empfehlen dir die Lansinoh Stilleinlagen.",
+          "matchedRetrievedText": true
+        },
+        {
+          "supports": "Benutzte Mehrwegeinlagen getrennt mitnehmen",
+          "quote": "Du solltest besser immer ein zusätzliches Paar und einen auslaufsicheren Beutel dabeihaben, damit du die nassen Einlagen schnell wechseln kannst.",
+          "matchedRetrievedText": true
+        }
+      ],
+      "usedIn": [
+        {
+          "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+          "sourceIndex": 4,
+          "sectionIds": [
+            "einsatz",
+            "einweg"
+          ]
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "slug": "muttermilchbeutel-oder-mehrwegbecher",
+      "productNames": [
+        "Medela Easy Pour Muttermilchbeutel",
+        "Philips Avent Muttermilchbehälter SCF618/10"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/easy-pour-muttermilchbeutel?productId=1036",
+        "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter"
+      ],
+      "practicalArtifacts": [
+        "Erst die Aufgabe, dann den Behälter",
+        "Deine Drei-Fragen-Einkaufsliste"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "muttermilch-beschriften-portionen-gefrierfach",
+      "productNames": [
+        "Medela Easy Pour Muttermilchbeutel",
+        "Philips Avent Muttermilchbehälter SCF618/10"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/easy-pour-muttermilchbeutel?productId=1036",
+        "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter"
+      ],
+      "practicalArtifacts": [
+        "Ein Etikett, das auch die Betreuung versteht",
+        "Der kurze Check vor dem Auftauen"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "muttermilch-arbeitsplatz-transport-kuehlkette",
+      "productNames": [
+        "Medela Kühltasche",
+        "Medela Muttermilchflaschen"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/kuhltasche?productId=4479",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003"
+      ],
+      "practicalArtifacts": [
+        "Vor dem ersten Arbeitstag den Kühlplatz klären",
+        "Eine Packroutine für Hin- und Rückweg"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "muttermilch-kuehlschrankbox-getrennt-aufbewahren",
+      "productNames": [
+        "Medela Muttermilchflaschen",
+        "Philips Avent Muttermilchbehälter SCF618/10"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/muttermilchflaschen?productId=1003",
+        "https://www.philips.de/c-p/SCF618_10/avent-muttermilchbehaelter"
+      ],
+      "practicalArtifacts": [
+        "Milchablage und Spülsachen nicht vermischen",
+        "Ein Box-Check beim Einräumen"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "muttermilch-erwaermen-ohne-flaschenwaermer",
+      "productNames": [
+        "Philips Avent Premium Flaschenwärmer SCF358/00",
+        "Medela Easy Pour Muttermilchbeutel"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.philips.de/c-p/SCF358_00/avent-schneller-flaschenwaermer",
+        "https://www.medela.com/de-de/stillen-und-abpumpen/produkte/flaschen-und-muttermilchmanagement/easy-pour-muttermilchbeutel?productId=1036"
+      ],
+      "practicalArtifacts": [
+        "Ein Ablauf für die Person, die füttert"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "reserve-pumpset-reinigen-trocknen-organisieren",
+      "productNames": [
+        "Medela classic PersonalFit Flex™ double pumping kit",
+        "Philips Avent Trockengestell SCF149/00"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/en/breastfeeding-pumping/products/extra-pump-parts/traditional-kit/medela-classic-personalfit-flex-double-pumping-kit",
+        "https://www.philips.de/c-p/SCF149_00/avent-trockengestell"
+      ],
+      "practicalArtifacts": [
+        "Beispiel Reserve: PersonalFit Flex Kit ist kein Universalset",
+        "Die Reserve bekommt einen klaren Status"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "abgepumpte-muttermilch-flasche-sauger-auswaehlen",
+      "productNames": [
+        "Medela Calma™ Feeding System",
+        "Philips Avent Natural Response Babyflasche SCY903/01"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://www.medela.com/en/breastfeeding-pumping/products/bottles-bags/calma-feeding-system?productId=5000",
+        "https://www.usa.philips.com/c-p/SCY903_01/natural-response-baby-bottle"
+      ],
+      "practicalArtifacts": [
+        "Beim Füttern zählen Signale, nicht Marketingwörter",
+        "Die kleine Systemprüfung vor dem ersten Einsatz"
+      ],
+      "sectionCount": 5
+    },
+    {
+      "slug": "stilleinlagen-einweg-mehrweg-unterwegs-organisieren",
+      "productNames": [
+        "Lansinoh Blue Lock™ Stilleinlagen",
+        "Lansinoh® Waschbare Stilleinlagen"
+      ],
+      "sourceUrls": [
+        "https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen",
+        "https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen",
+        "https://lansinoh.de/products/blue-lock-stilleinlagen",
+        "https://lansinoh.de/products/waschbare-stilleinlagen-neu",
+        "https://lansinoh.de/blogs/stillen/stilleinlagen-wie-sie-helfen-und-welche-es-gibt"
+      ],
+      "practicalArtifacts": [
+        "Zwei getrennte Plätze in der Tasche",
+        "Der Abend-Check statt einer riesigen Einkaufsliste"
+      ],
+      "sectionCount": 5
+    }
+  ]
+}

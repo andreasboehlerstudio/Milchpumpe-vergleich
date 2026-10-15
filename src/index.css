@@ -234,7 +234,7 @@ tbody tr:hover { background: #fdf9f6; }
 .copyright { margin: 1.2rem 0 0; color: #bdaea7; font-size: .7rem; }
 
 .cookie-backdrop { position: fixed; z-index: 500; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding: 1.25rem; background: rgba(25, 18, 16, .42); }
-.cookie-dialog { display: grid; width: min(100%, 820px); grid-template-columns: auto 1fr; gap: 1.25rem; padding: 1.6rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); box-shadow: 0 30px 90px rgba(25, 18, 16, .3); }
+.cookie-dialog { display: grid; width: min(100%, 820px); max-height: calc(100dvh - 2.5rem); overflow-y: auto; grid-template-columns: auto 1fr; gap: 1.25rem; padding: 1.6rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); box-shadow: 0 30px 90px rgba(25, 18, 16, .3); }
 .cookie-dialog h2 { margin-bottom: .6rem; font-size: 1.65rem; }
 .cookie-dialog p:not(.eyebrow) { color: var(--muted); font-size: .9rem; }
 .cookie-icon { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 14px; background: var(--surface-soft); color: var(--primary); }

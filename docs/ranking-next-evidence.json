@@ -1,0 +1,1563 @@
+{
+  "schemaVersion": 1,
+  "language": "de-DE",
+  "recordedAt": "2026-10-15T00:46:47.199952+00:00",
+  "task": "bounded-case-first-ranking-evidence-audit",
+  "scope": {
+    "existingInventoryCount": 35,
+    "modelsIndependentlyResearched": 6,
+    "alternativeModels": 3,
+    "alternativeBrands": [
+      "Elvie",
+      "eufy",
+      "Philips Avent"
+    ],
+    "manufacturerPagesRead": 15,
+    "manufacturerPagesWithDecisiveQuotes": 12,
+    "completeMarketClaim": false,
+    "overallPerformanceRanking": false,
+    "ownProductTests": false,
+    "newAmazonOfferChecks": false,
+    "priceRanking": false,
+    "accountInteraction": false,
+    "applicationFilesChanged": false,
+    "privateCitationLedger": "sources + facts in this JSON; IDs task-local, not shared ledger"
+  },
+  "method": {
+    "sourcePriority": "Exact manufacturer model page/support; EU/DE where retrieved. UK/global/US region recorded in URLs and fact scopes. Manufacturer marketing is feature documentation, not independent comparative performance.",
+    "quoteValidation": "Every fresh quote checked against retrieved text after Markdown-link/emphasis and whitespace normalization. Local set observations copied from existing inventory; no fresh offer assertion.",
+    "ordering": "Editorial case display order only. Route choice by architecture, exact Single/Double kit, flange sizing and wanted features. No numeric quality score or overall winner.",
+    "unscored": [
+      "Yield",
+      "Pain/comfort",
+      "Reliability",
+      "Measured noise",
+      "Sensor accuracy",
+      "Cleaning duration",
+      "Comparable runtime",
+      "Current price/value",
+      "Local delivery",
+      "Individual fit"
+    ],
+    "componentCounting": "Preserve exact manufacturer wording and counting scope. No 3-vs-4-vs-5 cleaning or total-system winner.",
+    "safety": "Check exact manual and implant warnings, fit and cleaning before purchase; retain meaningful limitations beside relevant features rather than repeating no-test slogans."
+  },
+  "models": [
+    {
+      "id": "m5-smart",
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft",
+      "historicalPurchaseTarget": {
+        "asin": "B0G1MWP4FB",
+        "observationAt": "2026-10-14T20:30:42.727920+00:00",
+        "variantQuote": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: (mit App) Grau - 1 Pack Eine Auswahl Set name treffen (mit App) Grau - 1 Pack (mit App) Rot - 1 Pack Air1 - 2 Pack (mit App) Grau - 2 Pack (mit App) Rot - 2 Pack M5-Entenschnabelventile M5-Komplettes Set M5/M6/M9 - Flanscheinsatz 15 mm M5/M6/M9 - Flanscheinsatz 17 mm 30 Stück Reinigungsspray Stillmassagegerät Warm-Kalt-Gelkissen M5-Brusthauben M5/M6/M9 - Flanscheinsatz 15/17/19/21 mm M5/M6/M9 - Flanscheinsatz 21 mm M5-24 mm Flansch M5-27 mm Flansch M5/M6/M9 - Flanscheinsatz 19 mm 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 2 →",
+        "titleQuote": "Momcozy M5Smart Milchpumpe Elektrische, handsfree App-steuerbar 1 Pack Grau",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=Momcozy,canonicalModel=M5 Smart].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "m5-architecture",
+        "m5-clean",
+        "m5-app",
+        "m5-log",
+        "m5-generation",
+        "m5-size",
+        "m5-capacity",
+        "m5-implant"
+      ]
+    },
+    {
+      "id": "air-1",
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft",
+      "historicalPurchaseTarget": {
+        "asin": "B0G2MQH1DF",
+        "observationAt": "2026-10-14T20:11:06.560643+00:00",
+        "variantQuote": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Air 1 - Rot, 2 Pack Eine Auswahl Set name treffen Air 1 - Rot, 2 Pack M5 - Grau, 2 Pack M6 - Rot, 1 Pack 1 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+        "titleQuote": "Momcozy Air 1 Ultra-Slim Milchpumpe Elektrisch, 180 ml tragbare Milchpumpe Handsfree mit kabellosem Ladeetui & App-Steuerung Brustpumpen Automatikmodus & Vollmilch-Alarm",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=Momcozy,canonicalModel=Air 1].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "air-architecture",
+        "air-inbra",
+        "air-case",
+        "air-sessions",
+        "air-sensor",
+        "air-manual-stop",
+        "air-view",
+        "air-clean",
+        "air-motor-dry",
+        "air-spares",
+        "air-implant"
+      ]
+    },
+    {
+      "id": "freestyle-hands-free",
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups",
+      "historicalPurchaseTarget": {
+        "asin": "B0BKGFBKHJ",
+        "observationAt": "2026-10-14T20:12:43.908839+00:00",
+        "variantQuote": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Stil: Freestyle Hands-free Eine Auswahl Stil treffen Freestyle Hands-free Flaschenset (3 x 150 ml) 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+        "titleQuote": "Medela Freestyle Hands-free Elektrische Doppel-Milchpumpe mit direkt im BH tragbaren Auffangschalen – Verbindbar mit der Medela Family App – Tragbares und diskretes Design",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=Medela,canonicalModel=Freestyle Hands-free].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "freestyle-motor",
+        "freestyle-set",
+        "freestyle-clean",
+        "freestyle-full",
+        "freestyle-capacity",
+        "freestyle-tube-clean",
+        "freestyle-classic",
+        "freestyle-spill",
+        "freestyle-classic-compatibility"
+      ]
+    },
+    {
+      "id": "elvie-pump",
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2",
+      "historicalPurchaseTarget": {
+        "asin": "B0B8SNJ7VW",
+        "observationAt": "2026-10-14T20:11:46.007374+00:00",
+        "variantQuote": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Farbe: Double Größe: Double (Inklusive Schalen 21/24mm)",
+        "titleQuote": "Tragbare elektrische Doppel-Milchpumpe Elvie Pump (inklusive Schalen 21/24 mm) - Leise, freihändig - Einfach zu reinigen und zu transportieren - Steuerung über die App – Kabellos",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=Elvie,canonicalModel=Pump].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "elvie-architecture",
+        "elvie-full",
+        "elvie-capacity",
+        "elvie-clean",
+        "elvie-set",
+        "elvie-size",
+        "elvie-charge",
+        "elvie-estimate"
+      ]
+    },
+    {
+      "id": "eufy-s1",
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro",
+      "historicalPurchaseTarget": {
+        "asin": "B0D6YFQ6N8",
+        "observationAt": "2026-10-14T20:30:48.022889+00:00",
+        "variantQuote": {
+          "marketplace": "Amazon.de",
+          "pageLanguage": "en",
+          "germanDeliveryConfirmed": false,
+          "selectedVariant": "S1: tragbar mit Wärmefunktion; S2 Pro: Milchpumpe S2 Pro, Golden"
+        },
+        "titleQuote": "eufy Tragbare elektrische Milchpumpe S1, App-Gesteuerter Smart-Rhythmus",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=eufy,canonicalModel=S1 (T8D02)].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "eufy-model",
+        "eufy-architecture",
+        "eufy-heat",
+        "eufy-set",
+        "eufy-log",
+        "eufy-pro-case",
+        "eufy-case-compatible",
+        "eufy-case-limit"
+      ]
+    },
+    {
+      "id": "philips-scf547-11",
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "inExistingInventory": true,
+      "generationPreserved": true,
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01",
+      "historicalPurchaseTarget": {
+        "asin": "B0DWTCG66J",
+        "observationAt": "2026-10-14T20:30:44.765368+00:00",
+        "variantQuote": "Brief content visible, double tap to read full content. Full content visible, double tap to read brief content. Set name: Doppelmilchpumpe Eine Auswahl Set name treffen Doppelmilchpumpe Einlagen S Einlagen L Aufbewahrungsbecher Doppelmilchpumpe mit Zubehör Einweg-Stilleinlagen 0 Optionen ohne hervorgehobene Angebote anzeigen ← 1 →",
+        "titleQuote": "Philips AVENT Hands-free elektronische Doppelmilchpumpe, Motor in Krankenhausqualität, spiegelt den Trinkrhythmus des Babys wider, bis zu 85 Pumpbewegungen pro Minute, 2 Auffangschalen, SCF547/11",
+        "provenanceFile": "docs/wearable-comparison-editorial.json",
+        "provenancePath": "models[brand=Philips Avent,canonicalModel=Hands-free elektrische Doppelmilchpumpe SCF547/11].amazonObservation",
+        "currentPublicOfferRechecked": false,
+        "stockPriceDeliveryUsedToOrder": false
+      },
+      "factIds": [
+        "philips-code",
+        "philips-set",
+        "philips-fit",
+        "philips-power",
+        "philips-spare-sizes"
+      ]
+    }
+  ],
+  "comparisonMatrix": [
+    {
+      "modelId": "m5-smart",
+      "case": "Schlauchfrei, direkte Tasten und überschaubarer dokumentierter Teileaufbau",
+      "decisiveFactIds": [
+        "m5-architecture",
+        "m5-app",
+        "m5-clean",
+        "m5-log"
+      ],
+      "tradeoff": "Vier Teile ohne sauber vergleichbaren Gesamtset-Zählumfang; manuelle Milchprotokolle; verlinktes historisches Angebot ist Single, nicht Double. Kein belegter Reinigungssieger.",
+      "fitFactIds": [
+        "m5-size"
+      ],
+      "unknown": [
+        "Vollstandsensor/Autostopp nicht als Kaufkriterium verifiziert",
+        "Vergleichbare Reinigungszeit",
+        "Passform/Tragekomfort im individuellen BH"
+      ]
+    },
+    {
+      "modelId": "freestyle-hands-free",
+      "case": "Motor bewusst außerhalb des BH; Becheraufbau und klassische Alternative wichtig",
+      "decisiveFactIds": [
+        "freestyle-motor",
+        "freestyle-set",
+        "freestyle-clean",
+        "freestyle-classic",
+        "freestyle-full",
+        "freestyle-classic-compatibility"
+      ],
+      "tradeoff": "Schläuche und separater Motor; manuelle Füllstandkontrolle; klassische Teile separat. Cup-Zahl nicht mit kompletter integrierter Pumpe gleichsetzen.",
+      "limitFactIds": [
+        "freestyle-tube-clean",
+        "freestyle-spill"
+      ],
+      "unknown": [
+        "Vergleichbare Gesamtreinigungszeit",
+        "DE-Lieferumfang heute"
+      ]
+    },
+    {
+      "modelId": "air-1",
+      "case": "Zwischen Sitzungen im Case laden und Milchstand über App/Sicht kontrollieren",
+      "decisiveFactIds": [
+        "air-case",
+        "air-sensor",
+        "air-view",
+        "air-manual-stop",
+        "air-clean"
+      ],
+      "tradeoff": "Fünf nichtelektrische Teile laut Reinigungsabschnitt; Vollmeldung ist kein belegter Autostopp. Ersatzteilpfad auf Seite führt zur App. Case ist kein Milchkühler oder Hygieneersatz.",
+      "limitFactIds": [
+        "air-spares",
+        "air-motor-dry",
+        "air-implant"
+      ],
+      "unknown": [
+        "Sensorpräzision/technischer Mechanismus im aktuellen Auszug",
+        "Aktueller ASIN-Case-Lieferumfang",
+        "Vergleichbare Akku- und Reinigungsbedingungen",
+        "180-ml-Kapazität im neu gelesenen Text nicht bestätigt"
+      ]
+    },
+    {
+      "modelId": "elvie-pump",
+      "case": "Schlauchfrei mit sensorbedingter Vollstand-Pause statt Ladecase-Priorität",
+      "decisiveFactIds": [
+        "elvie-architecture",
+        "elvie-full",
+        "elvie-capacity",
+        "elvie-clean",
+        "elvie-estimate"
+      ],
+      "tradeoff": "Milchvolumen bleibt eine korrigierbare Schätzung; einzelne USB-Ladekabel und nicht beim Laden pumpen. UK-Setgrößen nicht blind auf DE übertragen.",
+      "fitFactIds": [
+        "elvie-size",
+        "elvie-set"
+      ],
+      "limitFactIds": [
+        "elvie-charge"
+      ],
+      "unknown": [
+        "Alltagssicherheit des Vollstand-Stopps",
+        "Aktuelle DE-Angebots- und Zubehörverfügbarkeit",
+        "App-Optionalität im gelesenen gekürzten Supporttext nicht vollständig belegt"
+      ]
+    },
+    {
+      "modelId": "eufy-s1",
+      "case": "Integrierte Wärme am Flansch ausdrücklich gewünscht",
+      "decisiveFactIds": [
+        "eufy-model",
+        "eufy-architecture",
+        "eufy-heat",
+        "eufy-log",
+        "eufy-set"
+      ],
+      "tradeoff": "Milchvolumen manuell eingegeben. S1-Grundkit ohne Case: für Ladecase S1-Pro-Bundle oder kompatibles Zubehör separat exakt prüfen, nicht aus der historischen ASIN versprechen. Wärmefunktion begründet keine bessere Milchmenge.",
+      "limitFactIds": [
+        "eufy-pro-case",
+        "eufy-case-compatible",
+        "eufy-case-limit"
+      ],
+      "unknown": [
+        "Vergleichbar dokumentierte Teilezahl",
+        "Individuelles Wärmeempfinden/Passform",
+        "Heutiges DE-Set des ASIN"
+      ]
+    },
+    {
+      "modelId": "philips-scf547-11",
+      "case": "Externer Motor, konkretes DE-Größenkit und benannte Größen-Ergänzungen",
+      "decisiveFactIds": [
+        "philips-code",
+        "philips-set",
+        "philips-fit",
+        "philips-spare-sizes",
+        "philips-power"
+      ],
+      "tradeoff": "Schläuche; Netzadapter nicht enthalten. 15/17 bzw. 26/28 mm separat, keine universelle Passform. Zahl der Einstellungen und Saugfrequenz sind keine Milchmengen-Rangfolge.",
+      "unknown": [
+        "Vergleichbare Reinigungs-Teilezahl im gelesenen Text",
+        "App-Fernsteuerung/automatischer Vollstand-Stopp nicht belegt",
+        "Aktuelle Ersatzteilbestände"
+      ]
+    }
+  ],
+  "proposedCaseFirstOrdering": [
+    {
+      "displayOrder": 1,
+      "case": "Ohne Schläuche und ohne App-Pflicht starten",
+      "primaryModelId": "m5-smart",
+      "whyFactIds": [
+        "m5-architecture",
+        "m5-app",
+        "m5-clean"
+      ],
+      "label": "Momcozy M5 Smart – direkte Bedienung, vier dokumentierte Reinigungsteile",
+      "conditionalAlternativeModelId": "elvie-pump",
+      "switchWhen": "Wenn automatische Vollstand-Pause und automatisches Milchtracking wichtiger sind als die direkte Grundbedienung.",
+      "alternativeFactIds": [
+        "elvie-full",
+        "elvie-estimate"
+      ],
+      "scopeLimit": "Single-Zielangebot deutlich benennen; kein Bestes-/Preiswertestes-/Reinigungssieger-Badge."
+    },
+    {
+      "displayOrder": 2,
+      "case": "Motor außerhalb des BH tragen",
+      "primaryModelId": "freestyle-hands-free",
+      "whyFactIds": [
+        "freestyle-motor",
+        "freestyle-clean",
+        "freestyle-classic",
+        "freestyle-classic-compatibility"
+      ],
+      "label": "Medela Freestyle Hands-free – separater Motor, dreiteilige Schalen",
+      "conditionalAlternativeModelId": "philips-scf547-11",
+      "switchWhen": "Wenn das belegte DE-Kit 19/21/24 mm und die benannten 15/17- oder 26/28-mm-Ergänzungen besser zur eigenen Größenplanung passen.",
+      "alternativeFactIds": [
+        "philips-fit",
+        "philips-spare-sizes",
+        "philips-power"
+      ],
+      "scopeLimit": "Freestyle nicht nach 3-vs-4-Teilen besser setzen; Philips nicht nach Saugfrequenz besser setzen."
+    },
+    {
+      "displayOrder": 3,
+      "case": "Zwischen Sitzungen im Case nachladen",
+      "primaryModelId": "air-1",
+      "whyFactIds": [
+        "air-case",
+        "air-sensor",
+        "air-view",
+        "air-manual-stop"
+      ],
+      "label": "Momcozy Air 1 – Ladecase, transparente Oberseite und Vollmeldung",
+      "conditionalAlternativeModelId": "eufy-s1",
+      "switchWhen": "Wenn integrierte Wärme höher priorisiert wird: S1-Grundkit prüfen; für denselben Case-Fall erst exaktes S1-Pro-Bundle/kompatibles Case belegen.",
+      "alternativeFactIds": [
+        "eufy-heat",
+        "eufy-pro-case",
+        "eufy-case-compatible",
+        "eufy-case-limit"
+      ],
+      "scopeLimit": "S1 ohne Case ist kein gleich ausgestatteter Case-Gegenspieler; keine behauptete 15-Sitzungen-Überlegenheit."
+    },
+    {
+      "displayOrder": 4,
+      "case": "Wärme am Flansch ist ein ausdrückliches Auswahlkriterium",
+      "primaryModelId": "eufy-s1",
+      "whyFactIds": [
+        "eufy-heat",
+        "eufy-set",
+        "eufy-log"
+      ],
+      "label": "eufy S1 T8D02 – integrierte Wärme, EU-Doppelkit ohne Case",
+      "conditionalAlternativeModelId": null,
+      "switchWhen": "Dieser eigene Fall kann bei nur drei sichtbaren Karten den Case-Fall ersetzen, wenn Nutzerdaten Wärme statt Ladecase als Priorität bestätigen.",
+      "alternativeFactIds": [],
+      "scopeLimit": "Kein Mehrmilch-, Verstopfungsbehandlungs- oder Komfortversprechen."
+    }
+  ],
+  "threeCardDecision": {
+    "proposedDisplayModelIds": [
+      "m5-smart",
+      "freestyle-hands-free",
+      "air-1"
+    ],
+    "twoMomcozyJustified": "Conditionally yes for these three explicit cases, not as two of the three best pumps. M5 Smart covers integrated/direct optional-app operation; Air 1 covers a supplied charging case with milk-level notifications. Those are different practical routes.",
+    "whyNotBrandQuota": "Elvie has a genuine sensor-pause alternative but no verified supplied case; eufy S1 has genuine heating but its base kit lacks the case. Philips competes with Freestyle on external architecture and exact fit kit. No sourced evidence establishes that one alternative generally outperforms an incumbent.",
+    "challenge": "Four washable parts + optional app is not unique or a measured convenience advantage. Air 1 is not uniquely case-capable because S1-Pro/compatible-case routes exist. Current cards must expose these alternatives and Single/Double differences, not imply a market top three.",
+    "requiredChange": "Reorder M5 Smart → Freestyle Hands-free → Air 1 so architecture choice is encountered before a second integrated feature bundle; add one conditional alternative under every case. Keep all six rows in the comparison.",
+    "prominenceConfidence": "Editorial hypothesis; no reader-demand analytics supplied. Physical feature support stronger than choice of card prominence.",
+    "whenChangeCard": "Use eufy S1 as a top-level warm-flange case if that is the chosen reader priority; use Elvie Pump as a top-level sensor-pause case if that is the chosen reader priority, without forcing brand balancing."
+  },
+  "auditFindings": [
+    {
+      "priority": "high",
+      "finding": "Single M5 target versus double Air/Freestyle not comparable as equal purchase units.",
+      "action": "Show model generation and Single/Double above target; no set-price comparison until same-count dated offers read."
+    },
+    {
+      "priority": "high",
+      "finding": "Air fresh text supports full notification, not automatic full-stop; M5/eufy logs use manual milk-volume inputs.",
+      "factIds": [
+        "air-manual-stop",
+        "m5-log",
+        "eufy-log"
+      ],
+      "action": "Use Vollmeldung and manuelles Milchprotokoll; reserve automatic pause for the Elvie-supported feature."
+    },
+    {
+      "priority": "high",
+      "finding": "Historical Air 180 ml and 15×30-minute claim not repeated as freshly checked; current retrieved text lacks these details.",
+      "action": "Keep 180 ml out of decisive matrix pending exact manual. Up-to-15-sessions is case support, not comparable pump runtime."
+    },
+    {
+      "priority": "medium",
+      "finding": "M5 current source now says Nur 4 zu reinigende Teile, not inherited Nur 4 abwaschbare Teile.",
+      "factIds": [
+        "m5-clean"
+      ],
+      "action": "Refresh quote wording and scope if implementing later; do not claim lower cleaning time."
+    },
+    {
+      "priority": "medium",
+      "finding": "Manufacturer superlatives not evidence of current entire-market winners. Elvie footer comparison uses Q2-2021–Q2-2022 sales cohorts; eufy heating/suction marketing and Philips 2x speed not outcome comparisons.",
+      "action": "Do not order by dB, maximum vacuum, hospital-grade, mode count or pump cycles/minute."
+    },
+    {
+      "priority": "medium",
+      "finding": "DE replacement-part stock/prices not checked. Air spare path app-specific; eufy/Elvie regional kits differ.",
+      "action": "Add dated exact replacement code/size/region and availability check before final purchase advice."
+    }
+  ],
+  "retrievalIssues": [
+    "Configured SearXNG localhost unavailable; search tool transparently served Exa keyless fallback. This is discovery, not market completeness.",
+    "One public-browser eufy collection attempt timed out at 90 seconds. Alternative: fetched public EU-English manufacturer product page and model-specific support, with no login.",
+    "Several support extracts stopped around 3,100 characters. Only visible text supports facts; missing app/parts details remain unknown.",
+    "Elvie legacy global support URL resolved to support.elvie.com/en-us/elvie-pump/troubleshooting. Actual result URL retained; stale firmware text not used as current version advice."
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+      "title": "M5 Smart Tragbare Milchpumpe – Mit App-Steuerung aufgerüstet",
+      "quotes": [
+        {
+          "factId": "m5-architecture",
+          "text": "Mit einem Gewicht von nur 230 g passt sie unauffällig in Ihren BH. Kabellos und tragbar für das Abpumpen bei der Arbeit, unterwegs oder bei täglichen Aktivitäten."
+        },
+        {
+          "factId": "m5-clean",
+          "text": "Nur 4 zu reinigende Teile"
+        },
+        {
+          "factId": "m5-app",
+          "text": "Ja. Die Momcozy App ist optional – die M5 Smart kann auch direkt über die Bedienelemente der Pumpe verwendet werden."
+        },
+        {
+          "factId": "m5-log",
+          "text": "Gesamte protokollierte Milchmenge (basierend auf manuellen Eingaben)"
+        },
+        {
+          "factId": "m5-generation",
+          "text": "Die M5 Smart ist eine verbesserte Version der M5 mit App-Steuerung und längerer Akkulaufzeit."
+        },
+        {
+          "factId": "m5-size",
+          "text": "Enthält 4 Brusthaubengrößen (17 / 19 / 21 / 24 mm)."
+        },
+        {
+          "factId": "m5-capacity",
+          "text": "Milchsammlervolumen: 160 ml / 5.4 oz"
+        },
+        {
+          "factId": "m5-implant",
+          "text": "Verwenden Sie dieses Gerät NICHT, wenn Sie einen Herzschrittmacher, einen implantierten Defibrillator oder ein anderes metallisches oder elektronisches Implantat tragen, da dies elektromagnetische Störungen oder schwere Verletzungen verursachen kann."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 2,
+      "url": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+      "title": "Momcozy Air 1 Ultraflache Milchpumpe | Offizieller Shop",
+      "quotes": [
+        {
+          "factId": "air-architecture",
+          "text": "Bedienung: Schalten Sie das Gerät ein. Verwenden Sie die Steuertasten oder die Smartphone-App (App-Steuerung), um Ihren bevorzugten Modus (Stimulation, Expression oder Gemischt) auszuwählen und die Saugstärke einzustellen."
+        },
+        {
+          "factId": "air-inbra",
+          "text": "Eine ultraflache Milchpumpe zeichnet sich durch ihr kompaktes, dünnes Profil aus, das so konzipiert ist, dass sie vollständig und diskret in einen handelsüblichen Still-BH passt."
+        },
+        {
+          "factId": "air-case",
+          "text": "Die Momcozy Air 1 Ultraflache Milchpumpe wird mit einem kabellosen Ladecase geliefert und ist damit die erste Momcozy-Milchpumpe mit dieser Funktion."
+        },
+        {
+          "factId": "air-sessions",
+          "text": "Ein voll aufgeladenes Case unterstützt bis zu 15 Abpumpsitzungen"
+        },
+        {
+          "factId": "air-sensor",
+          "text": "Die selbsttätige Synchronisierung mit der Momcozy-App ermöglicht den automatischen Moduswechsel, die Kontrolle der Milchmenge in Echtzeit, die Meldung des vollen Milchbehälters und vieles mehr."
+        },
+        {
+          "factId": "air-manual-stop",
+          "text": "Abschluss: Sobald der Auffangbehälter voll ist (die App benachrichtigt Sie), schalten Sie die Pumpe aus, nehmen Sie sie vorsichtig ab und gießen Sie die Milch in einen Aufbewahrungsbehälter."
+        },
+        {
+          "factId": "air-view",
+          "text": "Sie können auch die Milchsammlung in Echtzeit vom transparenten Oberteil aus überwachen, ohne die Pumpe abnehmen zu müssen"
+        },
+        {
+          "factId": "air-clean",
+          "text": "Spülen Sie die fünf nicht-elektrischen Teile (Milchauffangbehälter, hintere Abdeckung des Milchauffangbehälters, Flansch, Ventil, Membran) sofort nach Gebrauch mit fließendem Wasser ab."
+        },
+        {
+          "factId": "air-motor-dry",
+          "text": "Die Motoreinheit sollte nur mit einem trockenen Tuch abgewischt werden; tauchen Sie sie niemals in Wasser."
+        },
+        {
+          "factId": "air-spares",
+          "text": "Ersatzteile für die ultraflache Milchpumpe Air 1 sind jetzt über die Momcozy-App erhältlich."
+        },
+        {
+          "factId": "air-implant",
+          "text": "Verwenden Sie dieses Gerät NICHT, wenn Sie einen Herzschrittmacher, einen implantierten Defibrillator oder ein anderes metallisches oder elektronisches Implantat haben, da dies zu elektromagnetischen Störungen oder schweren Verletzungen führen kann."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 3,
+      "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+      "title": "Freestyle™ Hands-free double electric wearable breast pump",
+      "quotes": [
+        {
+          "factId": "freestyle-motor",
+          "text": "Separate pump stays in your pocket instead of weighing on your breast"
+        },
+        {
+          "factId": "freestyle-set",
+          "text": "1 x Freestyle™ Hands-free Breast Pump (motor unit)\n1 x Tubing\n2 x Cups"
+        },
+        {
+          "factId": "freestyle-clean",
+          "text": "Easy to clean and assemble collection cups with just three parts and in only three steps. Dishwasher safe"
+        },
+        {
+          "factId": "freestyle-full",
+          "text": "No, Freestyle™ Hands-free does not shut off automatically when the collection containers are full."
+        },
+        {
+          "factId": "freestyle-capacity",
+          "text": "The hands-free collection cups hold 150ml / 5oz of breast milk in each cup."
+        },
+        {
+          "factId": "freestyle-tube-clean",
+          "text": "Do not clean or rinse the inside of the tubing under any circumstances."
+        },
+        {
+          "factId": "freestyle-classic",
+          "text": "PersonalFit Flex™ parts sold separately, not included with Freestyle™ Hands-free"
+        },
+        {
+          "factId": "freestyle-spill",
+          "text": "However, the cups are not designed to be used while bending completely or during intense exercise as there is an opening (pouring spout) at the top of the cups through which milk could spill out."
+        },
+        {
+          "factId": "freestyle-classic-compatibility",
+          "text": "The pump motor you get with the Freestyle™ Hands-free works with our classic PersonalFit Flex™ parts too²."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 5,
+      "url": "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe",
+      "title": "Produkt Avent Avent Hands-free Elektrische Doppelmilchpumpe SCF547/11 Elektrische Doppelmilchpumpe kaufen",
+      "quotes": [
+        {
+          "factId": "philips-code",
+          "text": "Philips Avent Hands-freeElektrische Doppelmilchpumpe\n\nSCF547/11"
+        },
+        {
+          "factId": "philips-set",
+          "text": "Wiederaufladbare Motoreinheit (mit abnehmbaren Clip) 1 Stck.\n  - Auffangschale (zusammengesetzt) 2 Stück\n  - Silikonschläuche 2 Stück"
+        },
+        {
+          "factId": "philips-fit",
+          "text": "Brustkissen (21 mm, 24 mm) Je 2 Stück\n  - Natural Response Flasche (125 ml, Sauger mit Flussstufe 2) 1 Stck.\n  - Größenkarte für Brustwarzen 1 Stck.\n  - Einsatz 19 mm 2 Stück"
+        },
+        {
+          "factId": "philips-power",
+          "text": "Quelle Wiederaufladbarer Akku/USB-C (Adapter nicht im Lieferumfang enthalten)"
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 7,
+      "url": "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+      "title": "eufy Support | Troubleshooting & Customer Service",
+      "quotes": [
+        {
+          "factId": "eufy-model",
+          "text": "Wearable Breast Pump S1 User Guide (T8D02)"
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 8,
+      "url": "https://support.elvie.com/en-us/elvie-pump/using-elvie-pump",
+      "title": "Smarter technology for women | Elvie",
+      "quotes": [
+        {
+          "factId": "elvie-charge",
+          "text": "Please only use the Charging Cable provided with Elvie Pump. Do not use Elvie Pump while charging."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 10,
+      "url": "https://www.philips.de/c-p/SCF547_11/hands-free-elektrische-doppelmilchpumpe/support",
+      "title": "Support für Avent Hands-free Elektrische Doppelmilchpumpe Elektrische Doppelmilchpumpe SCF547/11 | Philips",
+      "quotes": [
+        {
+          "factId": "philips-spare-sizes",
+          "text": "Hands-free Große Brustkissen und Einsätze\n\nSCF552/11\n\n- 28-mm-Brustkissen\n- 26-mm-Einsätze\n- previous next\n\nHands-free Kleine Einsätze\n\nSCF554/11\n\n- 15-mm-Einsätze\n- 17-mm-Einsätze"
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 11,
+      "url": "https://uk.elvie.com/products/elvie-pump",
+      "title": "Elvie Pump | The Original Smart Wearable Breast Pump\n– Elvie UK",
+      "quotes": [
+        {
+          "factId": "elvie-architecture",
+          "text": "Slimline, tube-free design looks natural in-bra."
+        },
+        {
+          "factId": "elvie-full",
+          "text": "Infrared sensors measure the amount of milk in the bottle, automatically switching from Stimulation to Expression mode when they detect letdown and pausing when your bottle is full."
+        },
+        {
+          "factId": "elvie-capacity",
+          "text": "Each reusable bottle holds 5 oz/150 ml of milk."
+        },
+        {
+          "factId": "elvie-clean",
+          "text": "5 parts to clean, by hand or in the dishwasher."
+        },
+        {
+          "factId": "elvie-set",
+          "text": "Double £369.00 Single £199.00 Double Single\nChoose Size:\n21-24mm 24-28mm 21-24mm 24-28mm"
+        },
+        {
+          "factId": "elvie-size",
+          "text": "Both Elvie Pump Single and Double kits include 24mm Breast Shields in the box and either a 21mm or 28mm Breast Shield depending on your selection."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 12,
+      "url": "https://www.eufy.com/products/t87c11b1",
+      "title": "eufy Charging Case for Wearable Breast Pump S1 / S1 Pro - eufy US",
+      "quotes": [
+        {
+          "factId": "eufy-case-compatible",
+          "text": "Compatible with eufy Wearable Breast Pump S1 / S1 Pro"
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 13,
+      "url": "https://www.eufy.com/blogs/baby/eufy-s1-vs-s1-pro-breast-pump",
+      "title": "eufy S1 vs S1 Pro Breast Pump - Side by Side Comparison(2026) - eufy US",
+      "quotes": [
+        {
+          "factId": "eufy-pro-case",
+          "text": "| Main difference | No charging case | Wireless charging case included |"
+        },
+        {
+          "factId": "eufy-case-limit",
+          "text": "The charging case only recharges the pump hubs. It does not store used milk-contact parts."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 14,
+      "url": "https://www.eufy.com/eu-en/products/t8d02381",
+      "title": "eufy Wearable Breast Pump S1",
+      "quotes": [
+        {
+          "factId": "eufy-architecture",
+          "text": "Compact and lightweight for easy in-bra use"
+        },
+        {
+          "factId": "eufy-heat",
+          "text": "Featuring a built-in heating and precision temperature sensor, our Heatflow technology delivers uniform heat through the soft silicone for comforting warmth. 7 adjustable heat settings (95°F to 105°F)"
+        },
+        {
+          "factId": "eufy-set",
+          "text": "It contains 2 pumps with 24mm flanges, inserts of 17/19/21mm, 2 magnetic charging cables, a chic storage bag for portability, 2 dust covers, and a cleaning brush."
+        },
+        {
+          "factId": "eufy-log",
+          "text": "The app automatically records the time of each session and combines it with the milk volume data you input to create a personalized pumping log."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    },
+    {
+      "id": 15,
+      "url": "https://support.elvie.com/en-us/elvie-pump/troubleshooting",
+      "title": "Smarter technology for women | Elvie",
+      "quotes": [
+        {
+          "factId": "elvie-estimate",
+          "text": "When you finish pumping the app will show you an estimate of how much milk is in the Bottle. If you need to correct this estimate, you can amend the information when you are saving your session or from the history screen. The Bottle also has volume markings to help you check how much milk is in the Bottle."
+        }
+      ],
+      "type": "manufacturer-public-page",
+      "freshPublicRead": true,
+      "retrievedOn": "2026-10-15",
+      "ledgerRecordedAt": "2026-10-15T00:46:47.199952+00:00"
+    }
+  ],
+  "facts": [
+    {
+      "id": "m5-architecture",
+      "modelId": "m5-smart",
+      "field": "architecture",
+      "value": "Motor/Pumpe im BH; kabellos",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Mit einem Gewicht von nur 230 g passt sie unauffällig in Ihren BH. Kabellos und tragbar für das Abpumpen bei der Arbeit, unterwegs oder bei täglichen Aktivitäten.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-clean",
+      "modelId": "m5-smart",
+      "field": "cleaning",
+      "value": "Vier zu reinigende Teile; Zählumfang im Kurztext nicht präzisiert",
+      "scope": "manufacturer component count; not whole double system or measured cleaning time",
+      "sourceId": 1,
+      "quote": "Nur 4 zu reinigende Teile",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-app",
+      "modelId": "m5-smart",
+      "field": "operation",
+      "value": "App optional, direkte Bedienelemente",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Ja. Die Momcozy App ist optional – die M5 Smart kann auch direkt über die Bedienelemente der Pumpe verwendet werden.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-log",
+      "modelId": "m5-smart",
+      "field": "milkLogging",
+      "value": "Milchmenge manuell eingegeben, nicht automatisch gemessen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Gesamte protokollierte Milchmenge (basierend auf manuellen Eingaben)",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-generation",
+      "modelId": "m5-smart",
+      "field": "generation",
+      "value": "M5 Smart ist App-Upgrade, nicht M5",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Die M5 Smart ist eine verbesserte Version der M5 mit App-Steuerung und längerer Akkulaufzeit.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-size",
+      "modelId": "m5-smart",
+      "field": "manufacturerSizeList",
+      "value": "17/19/21/24 mm; kein universeller Passformnachweis",
+      "scope": "manufacturer page; contents of historical grey Single ASIN not reverified",
+      "sourceId": 1,
+      "quote": "Enthält 4 Brusthaubengrößen (17 / 19 / 21 / 24 mm).",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-capacity",
+      "modelId": "m5-smart",
+      "field": "capacity",
+      "value": "160 ml; Hersteller nennt Milchsammlervolumen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Milchsammlervolumen: 160 ml / 5.4 oz",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "m5-implant",
+      "modelId": "m5-smart",
+      "field": "safety",
+      "value": "Hersteller warnt bei Herzschrittmacher/Defibrillator/metallischen oder elektronischen Implantaten",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 1,
+      "quote": "Verwenden Sie dieses Gerät NICHT, wenn Sie einen Herzschrittmacher, einen implantierten Defibrillator oder ein anderes metallisches oder elektronisches Implantat tragen, da dies elektromagnetische Störungen oder schwere Verletzungen verursachen kann.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "M5 Smart"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: M5 Smart, Grau, 1 Pack (Single), B0G1MWP4FB; heutiger Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-architecture",
+      "modelId": "air-1",
+      "field": "architecture",
+      "value": "In-BH-Pumpe; direkt oder per App bedienen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Bedienung: Schalten Sie das Gerät ein. Verwenden Sie die Steuertasten oder die Smartphone-App (App-Steuerung), um Ihren bevorzugten Modus (Stimulation, Expression oder Gemischt) auszuwählen und die Saugstärke einzustellen.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-inbra",
+      "modelId": "air-1",
+      "field": "braUse",
+      "value": "Hersteller beschreibt vollständig im Still-BH",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Eine ultraflache Milchpumpe zeichnet sich durch ihr kompaktes, dünnes Profil aus, das so konzipiert ist, dass sie vollständig und diskret in einen handelsüblichen Still-BH passt.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-case",
+      "modelId": "air-1",
+      "field": "charging",
+      "value": "Air 1 wird mit kabellosem Ladecase geliefert",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Die Momcozy Air 1 Ultraflache Milchpumpe wird mit einem kabellosen Ladecase geliefert und ist damit die erste Momcozy-Milchpumpe mit dieser Funktion.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-sessions",
+      "modelId": "air-1",
+      "field": "manufacturerEndurance",
+      "value": "Bis zu 15 Sitzungen mit voll geladenem Case",
+      "scope": "case-supported sessions; not pump battery alone; duration/protocol not specified in current excerpt",
+      "sourceId": 2,
+      "quote": "Ein voll aufgeladenes Case unterstützt bis zu 15 Abpumpsitzungen",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-sensor",
+      "modelId": "air-1",
+      "field": "milkMonitoring",
+      "value": "App nennt Echtzeit-Milchvolumen und Vollmeldung",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Die selbsttätige Synchronisierung mit der Momcozy-App ermöglicht den automatischen Moduswechsel, die Kontrolle der Milchmenge in Echtzeit, die Meldung des vollen Milchbehälters und vieles mehr.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-manual-stop",
+      "modelId": "air-1",
+      "field": "fullnessResponse",
+      "value": "Vollmeldung nicht als automatischer Füllstand-Stopp darstellen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Abschluss: Sobald der Auffangbehälter voll ist (die App benachrichtigt Sie), schalten Sie die Pumpe aus, nehmen Sie sie vorsichtig ab und gießen Sie die Milch in einen Aufbewahrungsbehälter.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-view",
+      "modelId": "air-1",
+      "field": "alignment",
+      "value": "Transparente Oberseite zur Ausrichtung und Sichtkontrolle",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Sie können auch die Milchsammlung in Echtzeit vom transparenten Oberteil aus überwachen, ohne die Pumpe abnehmen zu müssen",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-clean",
+      "modelId": "air-1",
+      "field": "cleaning",
+      "value": "Fünf nichtelektrische Komponenten genannt",
+      "scope": "single collection assembly scope; not a whole double-system count",
+      "sourceId": 2,
+      "quote": "Spülen Sie die fünf nicht-elektrischen Teile (Milchauffangbehälter, hintere Abdeckung des Milchauffangbehälters, Flansch, Ventil, Membran) sofort nach Gebrauch mit fließendem Wasser ab.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-motor-dry",
+      "modelId": "air-1",
+      "field": "cleaningLimit",
+      "value": "Motor trocken abwischen; nicht ins Wasser",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Die Motoreinheit sollte nur mit einem trockenen Tuch abgewischt werden; tauchen Sie sie niemals in Wasser.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-spares",
+      "modelId": "air-1",
+      "field": "replacementPath",
+      "value": "Seite verweist für Air-1-Ersatzteile auf App; kein DE-Lagerbestand geprüft",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Ersatzteile für die ultraflache Milchpumpe Air 1 sind jetzt über die Momcozy-App erhältlich.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "air-implant",
+      "modelId": "air-1",
+      "field": "safety",
+      "value": "Hersteller warnt bei Implantaten",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 2,
+      "quote": "Verwenden Sie dieses Gerät NICHT, wenn Sie einen Herzschrittmacher, einen implantierten Defibrillator oder ein anderes metallisches oder elektronisches Implantat haben, da dies zu elektromagnetischen Störungen oder schweren Verletzungen führen kann.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Momcozy",
+        "canonicalModel": "Air 1"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Air 1, Rot, 2 Pack (Double), B0G2MQH1DF; heutiger Case-Lieferumfang nicht neu geprüft"
+    },
+    {
+      "id": "freestyle-motor",
+      "modelId": "freestyle-hands-free",
+      "field": "architecture",
+      "value": "Motor separat in Tasche, Schalen im BH",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "Separate pump stays in your pocket instead of weighing on your breast",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-set",
+      "modelId": "freestyle-hands-free",
+      "field": "manufacturerSet",
+      "value": "Komplettes Doppelsystem: Motor + Schlauch + 2 Schalen",
+      "scope": "Global manufacturer set; not definitive German offer contents",
+      "sourceId": 3,
+      "quote": "1 x Freestyle™ Hands-free Breast Pump (motor unit)\n1 x Tubing\n2 x Cups",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-clean",
+      "modelId": "freestyle-hands-free",
+      "field": "cleaning",
+      "value": "Drei Teile je Collection-Cup-Aufbau; spülmaschinengeeignet",
+      "scope": "cup assembly count; motor/tubing excluded; not total system cleaning time",
+      "sourceId": 3,
+      "quote": "Easy to clean and assemble collection cups with just three parts and in only three steps. Dishwasher safe",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-full",
+      "modelId": "freestyle-hands-free",
+      "field": "fullnessResponse",
+      "value": "Kein automatischer Stopp bei vollem Becher",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "No, Freestyle™ Hands-free does not shut off automatically when the collection containers are full.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-capacity",
+      "modelId": "freestyle-hands-free",
+      "field": "capacity",
+      "value": "150 ml pro Schale",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "The hands-free collection cups hold 150ml / 5oz of breast milk in each cup.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-tube-clean",
+      "modelId": "freestyle-hands-free",
+      "field": "cleaningLimit",
+      "value": "Schlauch innen nicht reinigen/spülen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "Do not clean or rinse the inside of the tubing under any circumstances.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-classic",
+      "modelId": "freestyle-hands-free",
+      "field": "alternativeCollection",
+      "value": "PersonalFit Flex Teile separat verkauft, nicht enthalten",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "PersonalFit Flex™ parts sold separately, not included with Freestyle™ Hands-free",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "freestyle-spill",
+      "modelId": "freestyle-hands-free",
+      "field": "movementLimit",
+      "value": "Nicht vollständig bücken/intensiver Sport; Ausgießöffnung",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "However, the cups are not designed to be used while bending completely or during intense exercise as there is an opening (pouring spout) at the top of the cups through which milk could spill out.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    },
+    {
+      "id": "elvie-architecture",
+      "modelId": "elvie-pump",
+      "field": "architecture",
+      "value": "Schlauchfrei im BH",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 11,
+      "quote": "Slimline, tube-free design looks natural in-bra.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-full",
+      "modelId": "elvie-pump",
+      "field": "fullnessResponse",
+      "value": "Infrarotsensoren, automatischer Moduswechsel und Pause bei voller Flasche",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 11,
+      "quote": "Infrared sensors measure the amount of milk in the bottle, automatically switching from Stimulation to Expression mode when they detect letdown and pausing when your bottle is full.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-capacity",
+      "modelId": "elvie-pump",
+      "field": "capacity",
+      "value": "150 ml pro wiederverwendbarer Flasche",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 11,
+      "quote": "Each reusable bottle holds 5 oz/150 ml of milk.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-clean",
+      "modelId": "elvie-pump",
+      "field": "cleaning",
+      "value": "Fünf Teile laut Hersteller; Hand/Spülmaschine",
+      "scope": "manufacturer count; single assembly vs whole double set not explicit in sentence",
+      "sourceId": 11,
+      "quote": "5 parts to clean, by hand or in the dishwasher.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-set",
+      "modelId": "elvie-pump",
+      "field": "manufacturerSetOptions",
+      "value": "Single und Double; Wahl 21/24 oder 24/28 mm",
+      "scope": "UK selector only; not German price, stock or selected Amazon set proof",
+      "sourceId": 11,
+      "quote": "Double £369.00 Single £199.00 Double Single\nChoose Size:\n21-24mm 24-28mm 21-24mm 24-28mm",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-size",
+      "modelId": "elvie-pump",
+      "field": "fitOptions",
+      "value": "24 mm plus 21 oder 28 mm je nach Setauswahl",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 11,
+      "quote": "Both Elvie Pump Single and Double kits include 24mm Breast Shields in the box and either a 21mm or 28mm Breast Shield depending on your selection.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-charge",
+      "modelId": "elvie-pump",
+      "field": "charging",
+      "value": "USB-Kabel; nicht während Laden verwenden",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 8,
+      "quote": "Please only use the Charging Cable provided with Elvie Pump. Do not use Elvie Pump while charging.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "elvie-estimate",
+      "modelId": "elvie-pump",
+      "field": "sensorLimit",
+      "value": "App-Milchvolumen Schätzung; bei Bedarf berichtigen/Flaschenmarkierungen prüfen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 15,
+      "quote": "When you finish pumping the app will show you an estimate of how much milk is in the Bottle. If you need to correct this estimate, you can amend the information when you are saving your session or from the history screen. The Bottle also has volume markings to help you check how much milk is in the Bottle.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Elvie",
+        "canonicalModel": "Pump"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Elvie Pump Double mit Schalen 21/24 mm, B0B8SNJ7VW; nicht Stride/Stride 2"
+    },
+    {
+      "id": "eufy-model",
+      "modelId": "eufy-s1",
+      "field": "generation",
+      "value": "S1 Modellcode T8D02",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 7,
+      "quote": "Wearable Breast Pump S1 User Guide (T8D02)",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-architecture",
+      "modelId": "eufy-s1",
+      "field": "architecture",
+      "value": "Kompakte In-BH-Pumpe",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 14,
+      "quote": "Compact and lightweight for easy in-bra use",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-heat",
+      "modelId": "eufy-s1",
+      "field": "warming",
+      "value": "Integrierte Wärme; sieben Einstellungen",
+      "scope": "function/setting claim only; not proof of increased yield or treatment of clogs",
+      "sourceId": 14,
+      "quote": "Featuring a built-in heating and precision temperature sensor, our Heatflow technology delivers uniform heat through the soft silicone for comforting warmth. 7 adjustable heat settings (95°F to 105°F)",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-set",
+      "modelId": "eufy-s1",
+      "field": "manufacturerSet",
+      "value": "EU S1: 2 Pumpen 24 mm + Einsätze 17/19/21 mm + magnetische Ladekabel + Tasche",
+      "scope": "EU-English manufacturer kit; Amazon B0D6YFQ6N8 pack count not freshly established",
+      "sourceId": 14,
+      "quote": "It contains 2 pumps with 24mm flanges, inserts of 17/19/21mm, 2 magnetic charging cables, a chic storage bag for portability, 2 dust covers, and a cleaning brush.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-log",
+      "modelId": "eufy-s1",
+      "field": "milkLogging",
+      "value": "Sitzungszeit automatisch; Milchvolumen manuell",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 14,
+      "quote": "The app automatically records the time of each session and combines it with the milk volume data you input to create a personalized pumping log.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-pro-case",
+      "modelId": "eufy-s1",
+      "field": "bundleDistinction",
+      "value": "S1 Grundkit ohne Case, S1 Pro mit Case",
+      "scope": "manufacturer US comparison, corroborated EU product comparison; not exact German offer set",
+      "sourceId": 13,
+      "quote": "| Main difference | No charging case | Wireless charging case included |",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-case-compatible",
+      "modelId": "eufy-s1",
+      "field": "accessoryCompatibility",
+      "value": "Separates Case T87C11B1 kompatibel S1/S1 Pro",
+      "scope": "US manufacturer accessory page; no DE availability/price claim",
+      "sourceId": 12,
+      "quote": "Compatible with eufy Wearable Breast Pump S1 / S1 Pro",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "eufy-case-limit",
+      "modelId": "eufy-s1",
+      "field": "chargingCaseLimit",
+      "value": "Case lädt Hubs, kein Aufbewahrungsbox-Ersatz für benutzte Milchteile",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 13,
+      "quote": "The charging case only recharges the pump hubs. It does not store used milk-contact parts.",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "eufy",
+        "canonicalModel": "S1 (T8D02)"
+      },
+      "setIdentity": "S1 T8D02; EU-Herstellerkit mit 2 Pumpen, ohne Case. Historischer ASIN B0D6YFQ6N8: konkrete Stückzahl/Case-Zuordnung neu zu prüfen; nicht S2 Pro"
+    },
+    {
+      "id": "philips-code",
+      "modelId": "philips-scf547-11",
+      "field": "exactModel",
+      "value": "SCF547/11 Doppelmilchpumpe",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 5,
+      "quote": "Philips Avent Hands-freeElektrische Doppelmilchpumpe\n\nSCF547/11",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01"
+    },
+    {
+      "id": "philips-set",
+      "modelId": "philips-scf547-11",
+      "field": "architectureAndSet",
+      "value": "1 wiederaufladbarer Clip-Motor, 2 Schalen, 2 Schläuche",
+      "scope": "DE SCF547/11 manufacturer set",
+      "sourceId": 5,
+      "quote": "Wiederaufladbare Motoreinheit (mit abnehmbaren Clip) 1 Stck.\n  - Auffangschale (zusammengesetzt) 2 Stück\n  - Silikonschläuche 2 Stück",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01"
+    },
+    {
+      "id": "philips-fit",
+      "modelId": "philips-scf547-11",
+      "field": "fitKit",
+      "value": "Brustkissen 21/24 mm je zwei; Einsätze 19 mm zwei",
+      "scope": "DE SCF547/11 manufacturer set",
+      "sourceId": 5,
+      "quote": "Brustkissen (21 mm, 24 mm) Je 2 Stück\n  - Natural Response Flasche (125 ml, Sauger mit Flussstufe 2) 1 Stck.\n  - Größenkarte für Brustwarzen 1 Stck.\n  - Einsatz 19 mm 2 Stück",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01"
+    },
+    {
+      "id": "philips-power",
+      "modelId": "philips-scf547-11",
+      "field": "charging",
+      "value": "Akku/USB-C; Netzadapter nicht mitgeliefert",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 5,
+      "quote": "Quelle Wiederaufladbarer Akku/USB-C (Adapter nicht im Lieferumfang enthalten)",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01"
+    },
+    {
+      "id": "philips-spare-sizes",
+      "modelId": "philips-scf547-11",
+      "field": "sizeAccessoryPaths",
+      "value": "Separat 15/17 mm SCF554/11; 28/26 mm SCF552/11",
+      "scope": "accessories listed on SCF547/11 support; not included set or current stock proof",
+      "sourceId": 10,
+      "quote": "Hands-free Große Brustkissen und Einsätze\n\nSCF552/11\n\n- 28-mm-Brustkissen\n- 26-mm-Einsätze\n- previous next\n\nHands-free Kleine Einsätze\n\nSCF554/11\n\n- 15-mm-Einsätze\n- 17-mm-Einsätze",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Philips Avent",
+        "canonicalModel": "Hands-free elektrische Doppelmilchpumpe SCF547/11"
+      },
+      "setIdentity": "SCF547/11 Hands-free elektrische Doppelmilchpumpe, DE-Herstellerkit mit 2 Schalen; historischer ASIN B0DWTCG66J; nicht Zubehörset SCF439/01"
+    },
+    {
+      "id": "freestyle-classic-compatibility",
+      "modelId": "freestyle-hands-free",
+      "field": "classicCompatibility",
+      "value": "Motoreinheit funktioniert auch mit klassischen PersonalFit Flex Teilen",
+      "scope": "model-level; set identity separately specified",
+      "sourceId": 3,
+      "quote": "The pump motor you get with the Freestyle™ Hands-free works with our classic PersonalFit Flex™ parts too².",
+      "quoteVerifiedAgainstRetrievedText": true,
+      "modelRef": {
+        "brand": "Medela",
+        "canonicalModel": "Freestyle Hands-free"
+      },
+      "setIdentity": "Historischer Amazon-Zielbeleg: Freestyle Hands-free komplettes Doppelsystem, B0BKGFBKHJ; weder Mini noch einzelne Collection Cups"
+    }
+  ]
+}

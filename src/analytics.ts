@@ -12,27 +12,46 @@ declare global {
 
 type StoredConsent = { value: 'accepted' | 'declined'; timestamp: number };
 
+function disableAnalytics() {
+  if (typeof window === 'undefined') return;
+  (window as unknown as Record<string, unknown>)[`ga-disable-${GA_ID}`] = true;
+  window.dataLayer?.splice(0);
+}
+
 export function getConsent(): StoredConsent | null {
   if (typeof window === 'undefined') return null;
   try {
     const parsed = JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null') as StoredConsent | null;
-    if (!parsed || Date.now() - parsed.timestamp > CONSENT_MAX_AGE) {
+    if (!parsed || !['accepted', 'declined'].includes(parsed.value) || typeof parsed.timestamp !== 'number' || !Number.isFinite(parsed.timestamp) || parsed.timestamp > Date.now() || Date.now() - parsed.timestamp > CONSENT_MAX_AGE) {
       localStorage.removeItem(CONSENT_KEY);
+      disableAnalytics();
       return null;
     }
     return parsed;
   } catch {
     localStorage.removeItem(CONSENT_KEY);
+    disableAnalytics();
     return null;
   }
 }
 
 export function setConsent(value: StoredConsent['value']) {
   localStorage.setItem(CONSENT_KEY, JSON.stringify({ value, timestamp: Date.now() }));
+  if (value === 'declined') {
+    disableAnalytics();
+    removeAnalyticsCookies();
+    if (window.gaLoaded) window.location.reload();
+  }
 }
 
 export function loadAnalytics() {
-  if (typeof window === 'undefined' || window.gaLoaded) return;
+  if (typeof window === 'undefined') return;
+  if (getConsent()?.value !== 'accepted') {
+    disableAnalytics();
+    return;
+  }
+  (window as unknown as Record<string, unknown>)[`ga-disable-${GA_ID}`] = false;
+  if (window.gaLoaded) return;
   window.gaLoaded = true;
   const script = document.createElement('script');
   script.async = true;
@@ -40,6 +59,7 @@ export function loadAnalytics() {
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag(..._args: unknown[]) {
+    if (getConsent()?.value !== 'accepted' || (window as unknown as Record<string, unknown>)[`ga-disable-${GA_ID}`] === true) return;
     window.dataLayer?.push(arguments);
   };
   window.gtag('js', new Date());
@@ -52,9 +72,16 @@ export function loadAnalytics() {
   });
 }
 
-export function trackAffiliateClick(productName: string) {
+export function trackAffiliateClick(productName: string, productId = '', placement = 'product_card') {
+  if (typeof window === 'undefined' || getConsent()?.value !== 'accepted') return;
+  const pagePath = window.location.pathname;
+  const articleSlug = pagePath.match(/^\/ratgeber\/([^/]+)\/$/)?.[1] || '';
   window.gtag?.('event', 'affiliate_click', {
     product_name: productName,
+    product_id: productId,
+    page_path: pagePath,
+    article_slug: articleSlug,
+    link_placement: placement,
     outbound_provider: 'amazon',
   });
 }
@@ -74,6 +101,7 @@ export function removeAnalyticsCookies() {
 }
 
 export function resetConsent() {
+  disableAnalytics();
   localStorage.removeItem(CONSENT_KEY);
   removeAnalyticsCookies();
 }

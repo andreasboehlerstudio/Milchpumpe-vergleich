@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-14T22:59:54.769967+00:00",
+  "status": "locally-routed-and-verified",
+  "routes": {
+    "/testmethodik/": "MethodologyPage returns MethodologyV4 directly; its own main#inhalt and H1 remain intact.",
+    "/tragbare-milchpumpen/": "New canonical German market route containing the unmodified WearableMarketOverview and a visible case-based buying-query answer.",
+    "/vergleich/": "Existing six-model detailed comparison retained; five electric models and the manual Haakaa addition are explicitly scoped.",
+    "/": "Home links to expanded wearable research and separately to the detailed six-model comparison."
+  },
+  "filesChanged": [
+    "src/App.tsx",
+    "src/pages.tsx",
+    "src/main.tsx",
+    "src/components.tsx",
+    "src/seo.ts",
+    "scripts/integrated-market-methodology.test.tsx",
+    "docs/market-methodology-route-integration.json",
+    "docs/methodology-v4-implementation.json (parentVerification integration fields only)",
+    "docs/wearable-market-ui-integration.json (parentVerification integration fields only)"
+  ],
+  "navigation": {
+    "entryPoints": [
+      "header",
+      "footer",
+      "home hero",
+      "comparison introduction"
+    ],
+    "legacyFinderRetained": true,
+    "styles": "Both scoped stylesheets imported in main.tsx after index.css, editorial.css and visual-editorial.css; components retain CSS-free Node SSR imports.",
+    "intermediateHeaderFix": "At a 768px window, expanded navigation initially produced scrollWidth 775 versus clientWidth 753. Scoped inline flexWrap: wrap and minWidth: 0 on the owned Header nav fixed it to 753/753 without editing shared CSS.",
+    "mobileMenu": "Actual React toggle verified at 320px: expanded=true, visible links include market route, document width remains 320/320.",
+    "keyboardSkipLink": "Focused skip link is visible; Enter reaches #inhalt; following Tab focuses the Startseite breadcrumb inside main."
+  },
+  "seo": {
+    "registryDrivenPrerenderAndSitemap": true,
+    "registryAndSitemapRoutes": 50,
+    "uniqueRoutes": 50,
+    "canonicalMarketUrl": "https://milchpumpe-vergleich.de/tragbare-milchpumpen/",
+    "canonicalMethodologyUrl": "https://milchpumpe-vergleich.de/testmethodik/",
+    "marketDescriptionScope": "35 researched identities, source-backed construction and case-based buying help; historical offer observation date 14.10.2026 retained.",
+    "methodologyHeading": "So entsteht unser Milchpumpen-Vergleich",
+    "homeMetadataAlignedToVisibleHeadingAndExpandedScope": true,
+    "breadcrumbs": "Visible semantic breadcrumb navigation and registry-generated BreadcrumbList on both routes.",
+    "schema": "Existing WebPage schema with truthful headings and descriptions; no Review, ratings, scores or live Offer schema added.",
+    "dates": "Existing research dates retained; no new source retrieval or field-check date invented. Market dateModified uses the retained 2026-10-14 snapshot date."
+  },
+  "evidence": {
+    "researchedIdentities": 35,
+    "uniqueIdentities": 35,
+    "historicalPublicOfferObserved": 31,
+    "notFoundInHistoricalSearch": 4,
+    "buyingCases": 3,
+    "completeMarketClaim": false,
+    "currentAvailabilityClaim": false,
+    "qualityRanking": false,
+    "runtimeDataEqualsEditorialSource": true,
+    "sourceLinksAndOriginalDatesRetained": true,
+    "standaloneComponentsOrDataEdited": false,
+    "catalogueEdited": false,
+    "twentyPinterestSingleProductRulePreserved": true,
+    "newAnswer": "M5 Smart for documented washable-part count and optional app; Air 1 for charging case and sensor displays; Freestyle Hands-free for external motor. All are conditional starting points linked to the existing evidence and trade-offs, not measured winners."
+  },
+  "tdd": {
+    "command": "npx tsx --test scripts/integrated-market-methodology.test.tsx",
+    "verticalCycles": [
+      {
+        "feature": "direct finished methodology route",
+        "red": "Finished MethodologyV4 is not routed",
+        "green": "1 passing test",
+        "testHarnessCorrection": "React hoists image preloads and changes useId tokens with layout ancestry. Compare main contents with generated IDs normalized; corrected assertion was rerun RED against the old route before GREEN."
+      },
+      {
+        "feature": "new market route and preserved comparison",
+        "red": "Market overview is not routed: 0 !== 35",
+        "green": "2 passing tests"
+      },
+      {
+        "feature": "scoped stylesheet import order",
+        "red": "Expected methodology-v4.css and wearable-market.css; received editorial.css and visual-editorial.css",
+        "green": "3 passing tests"
+      },
+      {
+        "feature": "crawlable market entry points and comparison scope",
+        "red": "Market link missing in header",
+        "green": "4 passing tests"
+      },
+      {
+        "feature": "visible buying-query answer with evidence pathways",
+        "red": "Missing visible answer to the buying query",
+        "green": "5 passing tests"
+      },
+      {
+        "feature": "market registry and accurate route metadata",
+        "red": "Market route is not registered for prerender/sitemap: true !== undefined",
+        "green": "6 passing tests"
+      },
+      {
+        "feature": "expanded home metadata",
+        "red": "Old heading Mit gutem Gefühl entscheiden differs from visible Für deinen Alltag",
+        "green": "7 passing tests"
+      },
+      {
+        "feature": "intermediate header overflow regression",
+        "red": "Expanded navigation must wrap before the mobile breakpoint",
+        "green": "8 passing tests; browser regression repaired from 753/775 to 753/753"
+      }
+    ],
+    "additionalArtifactAudit": "Ninth test verifies actual generated HTML, metadata, canonical, sitemap, JSON-LD, local anchor targets and all market affiliate destinations; it audits the already-built integration rather than claiming another RED cycle.",
+    "focusedResult": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0
+    }
+  },
+  "verification": {
+    "command": "npm run lint && npm test && npm run build && git diff --check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "fullSuite": {
+      "tests": 144,
+      "passed": 144,
+      "failed": 0
+    },
+    "productionBuild": "passed; Vite plus actual registry-driven SSR prerender",
+    "diffCheck": "passed",
+    "builtCommercialLinkAudit": {
+      "routes": 50,
+      "commercialLinkOccurrences": 161,
+      "badCommercialLinks": 0,
+      "requiredTag": "andreasboeh09-21",
+      "requiredRelToken": "sponsored",
+      "scope": "All built route anchor destinations on Amazon.de /dp/ or /s?. Neutral Amazon privacy and manufacturer references are not commercial purchase links."
+    }
+  },
+  "browser": {
+    "isolatedContext": "market-methodology-integration",
+    "localProductionPreview": "http://127.0.0.1:3028/",
+    "routesChecked": [
+      "/tragbare-milchpumpen/",
+      "/testmethodik/"
+    ],
+    "widthsBothRoutes": [
+      {
+        "emulatedViewport": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "clippedText": 0
+      },
+      {
+        "emulatedViewport": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "clippedText": 0
+      },
+      {
+        "desktopViewport": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "clippedText": 0
+      },
+      {
+        "desktopViewport": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "clippedText": 0
+      }
+    ],
+    "methodology": {
+      "main": 1,
+      "h1": 1,
+      "diagrams": 4,
+      "loadedLocalImages": 4,
+      "localFontReady": true,
+      "missingAnchors": 0
+    },
+    "market": {
+      "main": 1,
+      "h1": 1,
+      "models": 35,
+      "buyingCases": 3,
+      "missingAnchors": 0,
+      "safeAffiliateDestinations": true
+    },
+    "realReactFiltering": {
+      "searchM5Smart": 1,
+      "medelaAndExternalMotor": 4,
+      "noMatch": 0,
+      "reset": 35
+    },
+    "consoleWarningsOrErrors": 0,
+    "visualInspection": "Inspected integrated market at 768px and 320px, methodology at 1440px and 320px; no visible heading/header cropping or overlapping navigation.",
+    "limits": "No assistive-technology audit or independent 200% zoom check; browser measurements are not medical or marketplace freshness verification."
+  },
+  "localOnly": {
+    "commit": false,
+    "push": false,
+    "publish": false,
+    "accounts": false,
+    "newExternalResearch": false
+  },
+  "blockers": [],
+  "parentFinalVerification": {
+    "checkedAt": "2026-10-15T00:05:04.349424+00:00",
+    "report": "docs/market-methodology-parent-final-qa.json",
+    "fullSuite": {
+      "tests": 145,
+      "passed": 145,
+      "failed": 0
+    },
+    "browserChecks": 8,
+    "routes": [
+      "/tragbare-milchpumpen/",
+      "/testmethodik/"
+    ],
+    "commercialLinkOccurrences": 161,
+    "published": false
+  }
+}

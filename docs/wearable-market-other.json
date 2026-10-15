@@ -1,0 +1,723 @@
+{
+  "schemaVersion": "1.0",
+  "researchScope": "Begrenzte öffentliche Read-only-Recherche weiterer elektrischer Wearable-Marken. Keine vollständige Marktabdeckung. Keine gesellschaftsrechtliche Unabhängigkeit oder OEM-Exklusivität geprüft.",
+  "checkedAt": "2026-10-14T22:13:30+02:00",
+  "excludedBrands": [
+    "Momcozy",
+    "Medela",
+    "Philips Avent",
+    "Elvie",
+    "Lansinoh",
+    "Ardo",
+    "Perifit",
+    "Tommee Tippee"
+  ],
+  "methodLimits": [
+    "Suchtreffer nur Discovery; Produktseite und ASIN tatsächlich lesen.",
+    "Farben/Packungsgrößen nicht als zusätzliche Modelle gezählt.",
+    "Fehlende Verkäufer-/Bestellinformationen verhindern public-offer-observed.",
+    "Marketing-Wirksamkeitsclaims werden nicht als bestätigte medizinische Tatsachen übernommen.",
+    "availabilityStatus detail-found-offer-unverified bedeutet: echte Produktdetailseite gelesen, aber kein ausreichend belegtes deutsches bestellbares Angebot. Es bedeutet nicht ausverkauft.",
+    "Amazon-Standort wurde nicht verändert; öffentliche Extrakte zeigen unterschiedliche voreingestellte Ziele und Währungen.",
+    "checkedAt ist der Recherchezeitpunkt, keine behauptete Live-Bestands- oder Crawl-Garantie."
+  ],
+  "records": [
+    {
+      "canonicalModel": "Discreet (3101202300)",
+      "brand": "Bebeconfort",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119",
+      "manufacturerEvidenceQuote": "The cordless wearable design ensures discreet and quiet pumping, wherever you are.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0DT4S8TP4",
+      "observedAsin": "B0DT4S8TP4",
+      "amazonTitle": "Bebeconfort Discreet Hands-Free Electric Breast Pump, Quiet (51dB) | Portable breast pump, 3 pump modes, 15 suction levels, long-lasting battery, 210 ml container",
+      "observedOffer": null,
+      "availabilityEvidence": "Detailseite: \"Availability: In stock\" und \"Price: USD28.25\"; kein Verkäufer oder Deutschland-Zustellziel belegt.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119",
+        "https://www.amazon.de/dp/B0DT4S8TP4"
+      ],
+      "sourceCitationIds": {
+        "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119": 1,
+        "https://www.amazon.de/dp/B0DT4S8TP4": 2
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt Discreet kabelloses Wearable, 3 Modi.",
+          "sourceUrl": "https://www.bebeconfort.com/international/baby-feeding-care/discreet-wearable-electric-breast-pump?color_swatch_id=6119"
+        },
+        {
+          "fact": "Amazon nennt Modell 3101202300, Weiß/Grün, 1 Stück.",
+          "sourceUrl": "https://www.amazon.de/dp/B0DT4S8TP4"
+        }
+      ],
+      "caveats": [
+        "Amazon.de englisch/USD; keine deutsche Zustellbarkeit oder deutscher Endpreis bestätigt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Weiß/Grün, 1 Stück"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "Go (PDL60)",
+      "brand": "Willow",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://onewillow.com/products/willow-go-wearable-pump",
+      "manufacturerEvidenceQuote": "Internal circular motor encourages output",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0B2SK47X6",
+      "observedAsin": "B0B2SK47X6",
+      "amazonTitle": "Willow Go Portable Double Breast Pump - Portable Electric in | Wireless in bra design, 15 stage hospital grade suction, includes 24mm and 21mm flanges",
+      "observedOffer": null,
+      "availabilityEvidence": "Detailseite: \"Availability: Usually dispatched within 4 to 5 days\" und \"Price: USD466.57\"; kein Verkäufer oder Deutschland-Zustellziel belegt.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://onewillow.com/products/willow-go-wearable-pump",
+        "https://www.amazon.de/dp/B0B2SK47X6"
+      ],
+      "sourceCitationIds": {
+        "https://onewillow.com/products/willow-go-wearable-pump": 3,
+        "https://www.amazon.de/dp/B0B2SK47X6": 4
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell PDL60 und ausdrücklich \"No external motor, tubes, or dangling bottles\".",
+          "sourceUrl": "https://www.amazon.de/dp/B0B2SK47X6"
+        }
+      ],
+      "caveats": [
+        "Aktuelle Herstellerseite kann neuere Go-Ausführung/ComfortFlow zeigen; keine vollständige Generationengleichheit mit PDL60 bewiesen.",
+        "Amazon-Titel doppelt, Größenfeld \"1 pc. (pack of 1)\": Lieferumfang nicht ausreichend konsistent.",
+        "Amazon-Text warnt vor Garantieausschluss bei Resellern; deutsche Herstellergarantie nicht bestätigt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-generation-unresolved",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Transparent White, Green; Titel doppelt, Größe 1 pc. (pack of 1) widersprüchlich"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat"
+    },
+    {
+      "canonicalModel": "S1 (T8D02)",
+      "brand": "eufy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+      "manufacturerEvidenceQuote": "Wearable Breast Pump S1 User Guide (T8D02)",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0D6YFQ6N8",
+      "observedAsin": "B0D6YFQ6N8",
+      "amazonTitle": "eufy Portable Electric Breast Pump S1, App Controlled Smart Rhythm | Hands-free electric breast pump with heat function, mobile charging bag, hospital quality suction power",
+      "observedOffer": null,
+      "availabilityEvidence": "\"This item cannot be dispatched to your selected delivery location. Please choose a different delivery location.\"",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+        "https://www.amazon.de/dp/B0D6YFQ6N8",
+        "https://www.eufy.com/ca/products/t8d02381"
+      ],
+      "sourceCitationIds": {
+        "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02": 5,
+        "https://www.amazon.de/dp/B0D6YFQ6N8": 6,
+        "https://www.eufy.com/ca/products/t8d02381": 7
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller-Support führt S1 als T8D02; Amazon ebenfalls T8D02 und Größe tragbar mit Wärmefunktion.",
+          "sourceUrls": [
+            "https://service.eufy.com/article-description/Wearable-Breast-Pump-S1-User-Guide-T8D02",
+            "https://www.amazon.de/dp/B0D6YFQ6N8"
+          ]
+        },
+        {
+          "fact": "Amazon beschreibt ausdrücklich diskretes Tragen im BH und App-Steuerung.",
+          "sourceUrl": "https://www.amazon.de/dp/B0D6YFQ6N8"
+        },
+        {
+          "fact": "Hersteller-S1-Produktseite nennt ausdrücklich \"easy in-bra use\".",
+          "sourceUrl": "https://www.eufy.com/ca/products/t8d02381"
+        }
+      ],
+      "caveats": [
+        "Lieferortsperre gilt nur dem anonym voreingestellten Ziel; keine Aussage nicht lieferbar in Deutschland.",
+        "Produkt-Sammeltabelle/Rezensionen nicht als eigene Tests verwendet.",
+        "Keine zusätzliche S1-Pro-Zeile allein wegen eines Ladecase angelegt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "S1: tragbar mit Wärmefunktion; S2 Pro: Milchpumpe S2 Pro, Golden"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "S2 Pro (Amazon T60A1; Hersteller T600P + T60A0)",
+      "brand": "eufy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro",
+      "manufacturerEvidenceQuote": "EASY ALIGNMENT WITH 360° SEE-THROUGH DESIGN AND NIPPLE LIGHT:",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GWH8M9DD",
+      "observedAsin": "B0GWH8M9DD",
+      "amazonTitle": "eufy Portable Electric Breast Pump S2 Pro Wireless Charging Case | Gentle heat massage with HeatFlow™ 2.0 & VibraPump™, hands-free pumping, nipple light, level alarm",
+      "observedOffer": null,
+      "availabilityEvidence": "\"This item cannot be dispatched to your selected delivery location. Please choose a different delivery location.\"",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro",
+        "https://www.amazon.de/dp/B0GWH8M9DD",
+        "https://service.eufy.com/article-description/How-do-I-charge-the-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-What-are-the-charging-methods"
+      ],
+      "sourceCitationIds": {
+        "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro": 8,
+        "https://www.amazon.de/dp/B0GWH8M9DD": 9,
+        "https://service.eufy.com/article-description/How-do-I-charge-the-Wearable-Breast-Pump-S2-T600P-S2-Pro-T600P-T60A0-What-are-the-charging-methods": 10
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller Produktseite S2 Pro bestätigt Wärmefunktion, Vibrationsmassage, Brustwarzen-Licht, App und Ladecase als Ausstattung (keine Wirksamkeitsbewertung).",
+          "sourceUrl": "https://www.eufy.com/products/t600p181-eufy-wearable-breast-pump-s2-pro"
+        },
+        {
+          "fact": "Amazon deutsche Größenbezeichnung Milchpumpe S2 Pro, Modell T60A1.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GWH8M9DD"
+        }
+      ],
+      "caveats": [
+        "Hersteller-US-Seite und Amazon-DE-Modellnummer unterscheiden sich; regionale Bundle-Zuordnung T60A1 nicht separat im Handbuch bestätigt.",
+        "Hersteller-Support nennt S2-Pro-Set T600P+T60A0; nicht stillschweigend in T60A1 umbenannt.",
+        "Zielortsperre ist kein Beleg für fehlendes deutsches Angebot.",
+        "S2 ohne Case nicht als weiteres Pumpenmodell gezählt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-regional-code-unresolved",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "S1: tragbar mit Wärmefunktion; S2 Pro: Milchpumpe S2 Pro, Golden"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat"
+    },
+    {
+      "canonicalModel": "8131",
+      "brand": "NCVI",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+      "manufacturerEvidenceQuote": "Seamless under-clothing fit for private pumping during baby sleep time or shared spaces.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0H4ZCN5J3",
+      "observedAsin": "B0H4ZCN5J3",
+      "amazonTitle": "NCVI 2 x Electric Hands-Free Breast Pump for Nursing Mothers Pink | Portable electric breast pump, 4 modes, 9 levels, super quiet, 180 min running time",
+      "observedOffer": null,
+      "availabilityEvidence": "\"This item cannot be dispatched to your selected delivery location. Please choose a different delivery location.\"",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+        "https://www.amazon.de/dp/B0H4ZCN5J3"
+      ],
+      "sourceCitationIds": {
+        "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html": 11,
+        "https://www.amazon.de/dp/B0H4ZCN5J3": 12
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt 8131 Pink 2 Pack, Submodell AM8131-2; Amazon Modell 8131, Pink (Pink 2).",
+          "sourceUrls": [
+            "https://ncvi.com/ncvi-hands-free-breast-pump-8131-pink.html",
+            "https://www.amazon.de/dp/B0H4ZCN5J3"
+          ]
+        }
+      ],
+      "caveats": [
+        "Hersteller nennt 1500 mAh/150 ml, Amazon-Text 1400 mAh/180 Minuten; technische regionale Gleichheit nicht gesichert.",
+        "Geteilte Amazon-Rezensionen nennen auch Wärme-/Neckbandmodelle und eignen sich nicht für 8131-spezifische Aussagen.",
+        "Farben nicht separat gezählt.",
+        "Lieferortsperre nicht als Deutschland-Ausverkauf interpretiert."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "8131: Pink (Pink 2); AM8161A: Brown"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "S32",
+      "brand": "Nuliie",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://nuliie.com/products/s32-breast-pump-white",
+      "manufacturerEvidenceQuote": "No wires, no hassle! This lightweight and discreet electric breast pump lets you express milk confidently whether you're at home, in the office, or traveling.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GVHXGYFC",
+      "observedAsin": "B0GVHXGYFC",
+      "amazonTitle": "Nuliie S32 Elektrische Milchpumpe Tragbar, 2 Packs, Weiß | Freihändig, 4 Modi, 9 Stufen, mit 13/15/17/19/21/24 mm Komfortabler Flansch, Privat, mit Ersatzzubehör im Lieferumfang",
+      "observedOffer": null,
+      "availabilityEvidence": "Detailseite zeigt Verkäufer FLYING RABBITS, Kaufoptionen/Andere Verkäufer; im Extrakt kein Pumpenpreis, Lieferdatum oder verlässlicher Bestell-Button. Die sichtbaren 1,58 € sind ERGO-Geräteschutz, nicht der Pumpenpreis.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://nuliie.com/products/s32-breast-pump-white",
+        "https://www.amazon.de/dp/B0GVHXGYFC"
+      ],
+      "sourceCitationIds": {
+        "https://nuliie.com/products/s32-breast-pump-white": 13,
+        "https://www.amazon.de/dp/B0GVHXGYFC": 14
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller nennt S32 Wearable, 4 Modi/9 Stufen und weiße Ausführung mit Wahl 1/2 Pcs.",
+          "sourceUrl": "https://nuliie.com/products/s32-breast-pump-white"
+        },
+        {
+          "fact": "Deutscher Amazon-Detailtitel S32 Weiß, 2 Packs; Verkäufer FLYING RABBITS wird auf der Detailseite benannt.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GVHXGYFC"
+        }
+      ],
+      "caveats": [
+        "Die ASIN ist in Händler-/Rezensionslinks der echten Produktseite sichtbar; explizites ASIN-Tabellenfeld fehlte im Extrakt.",
+        "Keine deutsche Lieferbarkeit oder Verkäuferautorisierung bestätigt.",
+        "Keine White-Label-Exklusivität bewiesen; Zubehörkompatibilität anderer Marken ist kein Nachweis gleicher Pumpen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "de",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Weiß, 2 Packs"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "Fidi Free Slim (LOC-FIDI FREE SLIM)",
+      "brand": "Lionelo",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim",
+      "manufacturerEvidenceQuote": "The hands-free design, quiet operation up to 40 dB and 214 g weight make it discreet and easy to wear.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0GGJ3FCGR",
+      "observedAsin": "B0GGJ3FCGR",
+      "amazonTitle": "Lionelo Fidi Free Slim Portable Electric Breast Pump Wireless | Quiet up to 40 dB, 3 phases with 8 levels, vacuum up to 60 kPa, 150 ml Tritan container, 4 silicone attachments 17-24 mm",
+      "observedOffer": null,
+      "availabilityEvidence": "\"Only 12 left in stock (more on the way).\"; USD61.21, aber kein Verkäufer/Deutschland-Zustellziel belegt.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim",
+        "https://www.amazon.de/dp/B0GGJ3FCGR"
+      ],
+      "sourceCitationIds": {
+        "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim": 15,
+        "https://www.amazon.de/dp/B0GGJ3FCGR": 16
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Offizielle Produktseite nennt Fidi Free Slim, Einzelausführung und 3 Phasen/je 8 Stufen.",
+          "sourceUrl": "https://en.lionelo.com/wearable-breast-pump-fidi-free-slim"
+        },
+        {
+          "fact": "Amazon nennt LOC-FIDI FREE SLIM, ASIN B0GGJ3FCGR und eine Pumpe.",
+          "sourceUrl": "https://www.amazon.de/dp/B0GGJ3FCGR"
+        }
+      ],
+      "caveats": [
+        "Herstellerseite wurde zu Lionelo en-gb umgeleitet; konkrete Produktinhalte vorhanden, keine Homepage als Beleg verwendet.",
+        "Hersteller eigener Shop NOT AVAILABLE; daraus nicht Amazon-Ausverkauf ableiten.",
+        "Gewichtsangaben 214/218 g auf Amazon widersprechen sich; keine Gewichtsrangliste abgeleitet."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Fidi Free Slim, einzelne Pumpe"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "Sole (beobachtete Variante Sole Twin)",
+      "brand": "Neno",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://neno.pl/download/katalog_neno_en_2025.pdf",
+      "manufacturerEvidenceQuote": "Neno Sole Twin gives you complete freedom! You express milk hands-free, saving you valuable time.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G59DYCBX",
+      "observedAsin": "B0G59DYCBX",
+      "amazonTitle": "Electric Double Breast Pump Hands Free, 3-Phase System - Neno Sole Twin | 8 suction levels per mode, 210 ml milk container, 24 mm breast shield + 20 mm reducer, USB-C, up to 150 minutes.",
+      "observedOffer": null,
+      "availabilityEvidence": "\"Only 10 left in stock (more on the way).\"; USD103.51, aber kein Verkäufer/Deutschland-Zustellziel belegt.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://neno.pl/download/katalog_neno_en_2025.pdf",
+        "https://www.amazon.de/dp/B0G59DYCBX"
+      ],
+      "sourceCitationIds": {
+        "https://neno.pl/download/katalog_neno_en_2025.pdf": 17,
+        "https://www.amazon.de/dp/B0G59DYCBX": 18
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Herstellerkatalog 2025 S.20 nennt Sole und Sole Twin sowie 2 Pumpstationen/2×210 ml für Twin.",
+          "sourceUrl": "https://neno.pl/download/katalog_neno_en_2025.pdf"
+        },
+        {
+          "fact": "Amazon beschreibt zwei direkt im BH getragene separate Pumpeneinheiten ohne externe Schläuche, Modellnummer 5902479679495, Variante Sole Twin.",
+          "sourceUrl": "https://www.amazon.de/dp/B0G59DYCBX"
+        }
+      ],
+      "caveats": [
+        "Sole und Sole Twin als eine Modellfamilie geführt, nicht durch Doppelpack künstlich vervielfacht.",
+        "Hersteller-Katalog 2025, keine aktuelle Deutschland-Bestellbestätigung."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "manufacturer-and-amazon-model-match",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Sole Twin, 2 Einheiten"
+      },
+      "evidenceTier": "named-model-primary-and-amazon"
+    },
+    {
+      "canonicalModel": "K5",
+      "brand": "KISSBOBO",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0F3HY4N15",
+      "observedAsin": "B0F3HY4N15",
+      "amazonTitle": "KISSBOBO Electric Double Breast Pump, 4 Modes and 19 Levels, 320 mmHg Strong Suction Power, Electric Breast Pump, Hands-Free, Painless Breast Pump, Electrically Portable (White, Pack of 2)",
+      "observedOffer": null,
+      "availabilityEvidence": "Detailseite: \"This item cannot be dispatched to your selected delivery location.\"; mehrere Farboptionen ab Euro-Beträgen, aber keine zu dieser Auswahl verifizierte Bestellung.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0F3HY4N15"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/dp/B0F3HY4N15": 19
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell K5, Hersteller Huizhou LVB Maternal And Infant Supplies Co,Ltd., Weiß/4-White, Titel Pack of 2.",
+          "sourceUrl": "https://www.amazon.de/dp/B0F3HY4N15"
+        },
+        {
+          "fact": "Produktbeschreibung sagt ausdrücklich Tragen im BH.",
+          "sourceUrl": "https://www.amazon.de/dp/B0F3HY4N15"
+        }
+      ],
+      "caveats": [
+        "Modell K5 nur auf Amazon belastbar identifiziert; kein geprüftes Hersteller-Handbuch oder Primär-Produkttext gefunden.",
+        "Warranty-Domain lieferte allgemeinen Registrierungsdialog, keinen belastbaren K5-Produkttext; keine Registrierung ausgeführt.",
+        "White-Label-/OEM-Unabhängigkeit nicht belegt; vor Vergleichseintrag Primärdokumentation nachreichen.",
+        "Suchtreffer nennt 280 mmHg, Detailtitel 320 mmHg; keine Saugleistung als Fakt übernommen."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "amazon-model-only-primary-unverified",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "4-White, Titel Pack of 2"
+      },
+      "evidenceTier": "amazon-model-only-primary-missing"
+    },
+    {
+      "canonicalModel": "AM8161A (beheiztes Wearable)",
+      "brand": "NCVI",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G7FJ6XKC",
+      "observedAsin": "B0G7FJ6XKC",
+      "amazonTitle": "NCVI Electric Breast Pump Portable Hands-Free with Heat Function, Hospital Standard -300 mmHg Suction, Ultra Quiet, 4 Modes & 9 Levels, Long Battery Life, Suitable for 19/21/24/28 mm",
+      "observedOffer": null,
+      "availabilityEvidence": "\"This item cannot be dispatched to your selected delivery location. Please choose a different delivery location.\"",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/dp/B0G7FJ6XKC"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/dp/B0G7FJ6XKC": 20
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Amazon nennt Modell AM8161A, Braun, Wärmefunktion und Tragen im BH.",
+          "sourceUrl": "https://www.amazon.de/dp/B0G7FJ6XKC"
+        }
+      ],
+      "caveats": [
+        "Kein modellgenaues Primärdokument geprüft; nicht mit NCVI 8131 gleichsetzen.",
+        "Modellübergreifend gepoolte Rezensionen nennen Neckband-Ausführung; nicht als modellbezogene Testerfahrung verwertbar.",
+        "Kein Beleg für OEM-/White-Label-Exklusivität.",
+        "Generische Hersteller-Kategorie mit beheiztem Wearable nicht als Modellabgleich gezählt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "amazon-model-only-primary-unverified",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "8131: Pink (Pink 2); AM8161A: Brown"
+      },
+      "evidenceTier": "amazon-model-only-primary-missing"
+    },
+    {
+      "canonicalModel": "MAMAFLOW",
+      "brand": "Kinderkraft",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://kinderkraft.co.uk/products/mamaflow",
+      "manufacturerEvidenceQuote": "The 160 ml collector lets you express for longer without stopping to pour milk out – especially when every minute counts.",
+      "amazonDetailUrl": "https://www.amazon.de/dp/B0G3PZR61C",
+      "observedAsin": "B0G3PZR61C",
+      "amazonTitle": "Kinderkraft MAMAFLOW Electric Breast Pump, Wireless, 4 Modes, USB-C, Gold",
+      "observedOffer": null,
+      "availabilityEvidence": "Detailseite: \"Availability: In stock\" und \"Price: USD51.80\"; kein Verkäufer/Deutschland-Zustellziel bestätigt.",
+      "availabilityStatus": "detail-found-offer-unverified",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://kinderkraft.co.uk/products/mamaflow",
+        "https://www.amazon.de/dp/B0G3PZR61C"
+      ],
+      "sourceCitationIds": {
+        "https://kinderkraft.co.uk/products/mamaflow": 21,
+        "https://www.amazon.de/dp/B0G3PZR61C": 22
+      },
+      "confirmedFacts": [
+        {
+          "fact": "Hersteller und Amazon nennen MAMAFLOW; Amazon Modell KEMAFL00GLD0000, Gold, 4Kraft.",
+          "sourceUrls": [
+            "https://kinderkraft.co.uk/products/mamaflow",
+            "https://www.amazon.de/dp/B0G3PZR61C"
+          ]
+        }
+      ],
+      "caveats": [
+        "In-Bra-Architektur aus kabelloser Shell-Bauart und Detailseiten-Kontext abgeleitet; offizieller Text sagt nicht ausdrücklich in-bra. Handbuch/Abbildung vor redaktioneller Aufnahme prüfen.",
+        "MAMAFLOW DOUBLE nicht zusätzlich als eigenständige Pumpentechnik gezählt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "named-model-match-architecture-needs-check",
+      "architectureEvidenceStatus": "provisional-needs-manual-or-image-check",
+      "amazonDetailRead": true,
+      "amazonMarketVariant": {
+        "marketplace": "Amazon.de",
+        "pageLanguage": "en",
+        "germanDeliveryConfirmed": false,
+        "selectedVariant": "Gold, Einzelpumpe"
+      },
+      "evidenceTier": "primary-present-mapping-or-architecture-caveat"
+    }
+  ],
+  "deferredDiscovery": [
+    {
+      "canonicalModel": "W38",
+      "brand": "Bellababy",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "https://bellababy-med.com/products/wearable-breast-pump",
+      "manufacturerEvidenceQuote": "Bellababy wearable pump is designed with 4 modes and 9 levels of suction strength.",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Herstellerseite W38 gelesen, aber keine passende deutsche Produktdetailseite gefunden; ausländische ASINs nicht nach .de transplantiert.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://bellababy-med.com/products/wearable-breast-pump",
+        "https://www.amazon.de/s?k=tragbare+milchpumpe+bellababy"
+      ],
+      "sourceCitationIds": {
+        "https://bellababy-med.com/products/wearable-breast-pump": 23,
+        "https://www.amazon.de/s?k=tragbare+milchpumpe+bellababy": 24
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Herstellerseite W38 gelesen, aber keine passende deutsche Produktdetailseite gefunden; ausländische ASINs nicht nach .de transplantiert."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": "THE INs (YH-7005)",
+      "brand": "YOUHA",
+      "pumpArchitecture": "vollintegriert-in-bra",
+      "manufacturerUrl": "http://help.youha.com/contents/22714/43955.html",
+      "manufacturerEvidenceQuote": "YOUHA wearable breast pumps allow mamas to pump on-the-go and hands-free, offering a more enjoyable and discreet way to express breast milk.",
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Hersteller-Support gelesen; kein passendes Amazon.de-Detailprodukt im begrenzten Suchlauf.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "http://help.youha.com/contents/22714/43955.html",
+        "https://www.amazon.de/s?k=YOUHA+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "http://help.youha.com/contents/22714/43955.html": 25,
+        "https://www.amazon.de/s?k=YOUHA+milchpumpe": 26
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Hersteller-Support gelesen; kein passendes Amazon.de-Detailprodukt im begrenzten Suchlauf."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": null,
+      "brand": "TSRETE",
+      "pumpArchitecture": null,
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Kein belastbarer modellgenauer Amazon.de-Detailtreffer. Suchseite zeigte fremde Marken; keine künstliche TSRETE-Modellnummer erzeugt.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/s?k=TSRETE+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/s?k=TSRETE+milchpumpe": 27
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Kein belastbarer modellgenauer Amazon.de-Detailtreffer. Suchseite zeigte fremde Marken; keine künstliche TSRETE-Modellnummer erzeugt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    },
+    {
+      "canonicalModel": null,
+      "brand": "GROWNSY",
+      "pumpArchitecture": null,
+      "manufacturerUrl": null,
+      "manufacturerEvidenceQuote": null,
+      "amazonDetailUrl": null,
+      "observedAsin": null,
+      "amazonTitle": null,
+      "observedOffer": null,
+      "availabilityEvidence": "Kein belastbarer modellgenauer Wearable-Detailtreffer. Fremde Produktkategorien und fremde Marken nicht gezählt.",
+      "availabilityStatus": "not-found",
+      "checkedAt": "2026-10-14T22:13:30+02:00",
+      "sourceUrls": [
+        "https://www.amazon.de/s?k=GROWNSY+milchpumpe"
+      ],
+      "sourceCitationIds": {
+        "https://www.amazon.de/s?k=GROWNSY+milchpumpe": 28
+      },
+      "confirmedFacts": [],
+      "caveats": [
+        "Kein belastbarer modellgenauer Wearable-Detailtreffer. Fremde Produktkategorien und fremde Marken nicht gezählt."
+      ],
+      "rankingEvidence": {
+        "qualityRanking": null,
+        "reason": "Kein unabhängiger Vergleichstest erhoben; keine Testnote oder Nachfragekennzahl abgeleitet."
+      },
+      "modelIdentityStatus": "discovery-only-not-amazon-confirmed",
+      "amazonDetailRead": false
+    }
+  ],
+  "issues": [
+    "SearXNG nicht erreichbar; Such-Fallback wiederholt irrelevant.",
+    "Browser-Suche Session milk-market-other nach 300 Sekunden Timeout; keine Reparatur.",
+    "Amazon-Extrakte teilweise USD/Lieferziel United States; keine deutsche Lieferbarkeit daraus abgeleitet."
+  ],
+  "summary": {
+    "amazonDetailModelRecords": 11,
+    "uniqueBrandsWithAmazonDetail": 9,
+    "deferredDiscoveryEntries": 4,
+    "availabilityCounts": {
+      "public-offer-observed": 0,
+      "detail-found-offer-unverified": 11,
+      "not-found": 0,
+      "blocked": 0
+    },
+    "evidenceTierCounts": {
+      "named-model-primary-and-amazon": 6,
+      "primary-present-mapping-or-architecture-caveat": 3,
+      "amazon-model-only-primary-missing": 2
+    },
+    "manufacturerEvidencePresent": 9,
+    "germanDeliveryConfirmed": 0
+  }
+}

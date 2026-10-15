@@ -16,7 +16,10 @@ function pageHtml(routePath: string) {
   const seo = getRouteSeo(routePath);
   const canonical = `${SITE_URL}${seo.path === '/' ? '/' : seo.path}`;
   const markup = renderToString(<App initialPath={routePath} />);
-  const jsonLd = JSON.stringify(getStructuredData(routePath)).replaceAll('<', '\\u003c');
+  const jsonLd = JSON.stringify(getStructuredData(routePath)).replaceAll('<', '\u003c');
+  const isArticle = seo.path.startsWith('/ratgeber/') && seo.path !== '/ratgeber/' && !seo.noindex;
+  const image = `${SITE_URL}${seo.image || '/og-cover.png'}`;
+  const articleMeta = isArticle ? `<meta name="author" content="Andreas Böhler" /><meta property="article:author" content="${SITE_URL}/ueber-uns/" /><meta property="article:published_time" content="${seo.datePublished || REVIEW_DATE_ISO}" /><meta property="article:modified_time" content="${seo.dateModified || REVIEW_DATE_ISO}" />` : '';
 
   return template
     .replace(/<title>.*?<\/title>/, `<title>${escapeHtml(seo.title)}</title>`)
@@ -28,7 +31,12 @@ function pageHtml(routePath: string) {
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
     .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, `<meta name="twitter:title" content="${escapeHtml(seo.title)}" />`)
     .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${escapeHtml(seo.description)}" />`)
-    .replace('<!--seo-jsonld-->', `<script type="application/ld+json">${jsonLd}</script>`)
+    .replace(/<meta property="og:type" content="[^"]*"\s*\/>/, `<meta property="og:type" content="${isArticle ? 'article' : 'website'}" />`)
+    .replace(/<meta property="og:image" content="[^"]*"\s*\/>/, `<meta property="og:image" content="${image}" />`)
+    .replace(/<meta property="og:image:alt" content="[^"]*"\s*\/>/, `<meta property="og:image:alt" content="${escapeHtml(seo.heading)}" />`)
+    .replace(/<meta property="og:image:type" content="[^"]*"\s*\/>/, '<meta property="og:image:type" content="image/png" />')
+    .replace(/<meta name="twitter:image" content="[^"]*"\s*\/>/, `<meta name="twitter:image" content="${image}" />`)
+    .replace('<!--seo-jsonld-->', `${articleMeta}<script type="application/ld+json">${jsonLd}</script>`)
     .replace('<div id="root"></div>', `<div id="root">${markup}</div>`);
 }
 
@@ -44,7 +52,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${ROUTES.filter((route) => !route.noindex).map((route) => `  <url>
     <loc>${SITE_URL}${route.path === '/' ? '/' : route.path}</loc>
-    <lastmod>${REVIEW_DATE_ISO}</lastmod>
+    <lastmod>${route.dateModified || REVIEW_DATE_ISO}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority.toFixed(1)}</priority>
   </url>`).join('\n')}

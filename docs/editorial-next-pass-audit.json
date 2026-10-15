@@ -1,0 +1,368 @@
+{
+  "auditDate": "2026-10-15",
+  "language": "de",
+  "scope": "Redaktioneller SEO-/GEO-, Kaufhilfe- und Produktfoto-Audit. Nur Dokumentation; keine App-, Canvas-, Konto-, Veröffentlichungs- oder Kaufaktion.",
+  "summary": [
+    "Die neue Marktseite beantwortet die Kaufabsicht deutlich konkreter als die bisherige Startseite. Im warmen Superdesign-Entwurf fehlen vor allem ein sachlicher H1 und eine sofort sichtbare Kurzantwort vor den drei Kauf-Einstiegen.",
+    "M5 Smart, Air 1 und Freestyle Hands-free sind vertretbare merkmalsbezogene Ausgangspunkte, keine nachgewiesenen Marktgewinner. Zwei Momcozy-Modelle unter drei Einstiegen benötigen eine nachvollziehbare Kriterienauswahl, keinen erfundenen Qualitätsscore.",
+    "Echte Produktfotos scheitern aktuell an nicht nachgewiesenem autorisiertem Bezug beziehungsweise konkreten Nutzungsrechten, nicht an React. Herstellerfreigaben sind eine gleichwertige Alternative zur Amazon-API.",
+    "Die öffentliche Startseite ist noch älter; /tragbare-milchpumpen/ liefert öffentlich HTTP 404, lokal HTTP 200. Ein Canvas-Link ist daher noch kein funktionierender öffentlicher Kaufhilfe-Pfad. Keine Deployment-Freigabe aus diesem Audit ableiten."
+  ],
+  "verifiedState": {
+    "basis": [
+      "src/pages.tsx",
+      "src/editorial.tsx",
+      "src/wearable-market.tsx",
+      "src/wearable-market-data.json",
+      "src/product-catalogue.ts",
+      "src/seo.ts",
+      ".superdesign/tmp/warm-editorial-oct15-refinement-readback.html",
+      "docs/editorial-v4-refinement-qa.json",
+      "docs/amazon-product-images-integration.md",
+      "docs/amazon-images-source-ledger.json",
+      "docs/editorial-v4-photo-rights.json",
+      "docs/media-rights-research.md"
+    ],
+    "canvas": {
+      "draftId": "cf2cdb51-022c-4be3-9118-28391b49d716",
+      "versionAccordingToExistingReadbackRecord": 5,
+      "localSnapshotRead": true,
+      "remoteAuthenticatedReadThisAudit": false,
+      "implementedHomepage": false,
+      "h1": "Dein Alltag. Dein Tempo. Deine Pumpe.",
+      "productPhotosInSnapshot": 0,
+      "nurseryPhotoIsProductPhoto": false
+    },
+    "market": {
+      "distinctModelIdentities": 35,
+      "brands": 17,
+      "integratedMotorClassification": 25,
+      "externalMotorClassification": 9,
+      "architectureUnresolved": 1,
+      "historicalAmazonOfferObserved": 31,
+      "noOfferVerifiedInHistoricalSearch": 4,
+      "observationDate": "2026-10-14",
+      "currentAmazonAvailabilityRechecked": false,
+      "completeMarketCoverage": false,
+      "qualityRanking": false
+    },
+    "catalogue": {
+      "coreModels": 6,
+      "additionalEntries": 55,
+      "totalEntries": 61,
+      "meaning": "Pumpen UND Zubehör; weder 61 tragbare Pumpen noch 61 eigene Tests.",
+      "additionalEntriesImageRightsNotCleared": 55
+    },
+    "guides": {
+      "localLibraryArticleCards": 35,
+      "meaning": "35 Ratgeber sind eine andere Zählung als 35 Modellidentitäten."
+    },
+    "httpReadback": [
+      {
+        "url": "http://localhost:3028/tragbare-milchpumpen/",
+        "status": 200,
+        "title": "Tragbare Milchpumpen: 35 recherchierte Modelle und Kaufhilfe"
+      },
+      {
+        "url": "https://milchpumpe-vergleich.de/tragbare-milchpumpen/",
+        "status": 404
+      },
+      {
+        "url": "https://milchpumpe-vergleich.de/",
+        "status": 200,
+        "title": "Milchpumpen im Vergleich: 6 Modelle transparent eingeordnet"
+      },
+      {
+        "url": "https://milchpumpe-vergleich.de/testmethodik/",
+        "status": 200,
+        "limitation": "Erreichbarkeit ist kein Nachweis, dass die lokale MethodologyV4 bereits live ist."
+      }
+    ],
+    "tests": "Bestehender Eltern-QA-Bericht meldet 145 bestandene Tests, Typecheck und Build. In diesem reinen Dokumentaudit nicht erneut ausgeführt; keine neue Funktions- oder Visual-QA behauptet."
+  },
+  "homepageNextPass": [
+    {
+      "priority": "P1",
+      "change": "Hero konkretisieren, warme Gestaltung behalten",
+      "evidence": "Canvas-H1 ist ausschließlich ein Stimmungssatz; die lokale Produktions-Startseite nennt Milchpumpen ausdrücklich. Google empfiehlt beschreibende Hauptüberschriften.[9]",
+      "proposedH1": "Tragbare Milchpumpen. Welche passt in deinen Alltag?",
+      "supportingCopy": "Vergleiche Bauarten, Bedienung und Pflege. Starte mit drei konkreten Kauf-Einstiegen oder suche in 35 recherchierten Modellen.",
+      "cta": {
+        "primary": "Passende Bauart finden",
+        "target": "#marktcheck",
+        "secondary": "Milch aufbewahren & Alltag planen",
+        "secondaryTarget": "#alltagsfragen"
+      },
+      "acceptance": "Produktgattung im echten H1, ein H1, kein Text nur im Foto; Zahlen beziehen sich auf Recherche, nicht auf Tests. Kinderzimmerfoto bleibt Themenfoto mit Credit."
+    },
+    {
+      "priority": "P1",
+      "change": "Kurzantwort direkt vor die Kauf-Einstiege setzen",
+      "evidence": "Der Canvas erklärt die Auswahl erst verteilt über Karten. Die lokale /tragbare-milchpumpen/-Seite besitzt bereits eine modellbezogene Direktantwort (src/pages.tsx:238–241).",
+      "proposedCopy": "Du möchtest ohne Schläuche pumpen und die App nur bei Bedarf nutzen? Schau dir die M5 Smart an. Für ein Ladecase und sensorbasierte Anzeigen ist die Air 1 ein Einstieg. Soll der Motor außerhalb des BHs bleiben, vergleiche die Freestyle Hands-free. Entscheidend sind anschließend Passform, Setumfang und deine tägliche Reinigung.",
+      "sourceIds": [
+        6,
+        7,
+        8
+      ],
+      "acceptance": "Antwort im HTML ohne Klick lesbar. Direkt folgende Karten tragen Herstellerbeleg und Abwägung; keine Aussage über gemessenen Komfort oder Milchausbeute."
+    },
+    {
+      "priority": "P1",
+      "change": "Vergleichende Labels durch prüfbare Kriterien ersetzen",
+      "evidence": "Canvas-Filter heißt 'Weniger Teile'; vier M5-Smart-Teile belegen keinen marktweiten Reinigungsvorteil. Medela nennt drei Teile pro Auffangschale, nicht identischen Zählumfang für das Gesamtsystem.[6][8]",
+      "proposedLabels": [
+        "Vier Teile reinigen",
+        "Ladecase gewünscht",
+        "Motor außerhalb des BHs"
+      ],
+      "acceptance": "Keine 'am schnellsten gereinigt'-, 'leiseste'-, 'beste Saugleistung'- oder Preis-Leistungs-Sieger-Aussage ohne passende Vergleichsdaten. Die drei Einstiege bleiben Alternativen, kein Podest."
+    },
+    {
+      "priority": "P1",
+      "change": "Setumfang vor dem Händlerbutton lesbar machen",
+      "evidence": "Die historischen ASIN-Zuordnungen sind relevant, im Canvas jedoch als lange technische Warntexte dargestellt.",
+      "proposedPurchaseLabels": [
+        "M5 Smart: beobachtetes Einzelset, Grau",
+        "Air 1: beobachtetes Doppelset, Rot; Ladecase im Angebot prüfen",
+        "Freestyle Hands-free: vollständiges Doppelsystem, nicht nur Cups"
+      ],
+      "acceptance": "Kurze Klartextzeile über dem Button; ASIN und ausführlicher Variantencheck optional in Details. Beobachtung vom 14.10.2026 benennen. Keine heutige Lieferbarkeit behaupten. Links mit andreasboeh09-21 und sponsored beibehalten."
+    },
+    {
+      "priority": "P1",
+      "change": "Modellverzeichnis mit Quellenstatus und echter Vertiefung verbinden",
+      "evidence": "Canvas zeigt 35 Namen/Bauarten, aber im gelesenen Snapshot keine modellspezifischen Herstellerbelege oder Mapping-Hinweise in jeder Verzeichniszeile. Die lokale Marktseite besitzt diese Hinweise. KISSBOBO K5 und NCVI AM8161A haben keinen Primärbeleg; eufy S2 Pro und Willow Go offene Modellzuordnungen; Kinderkraft MAMAFLOW eine offene Bauform.",
+      "implementation": "Im Canvas zusätzlich einen echten Link 'Alle Modelle mit Quellen ansehen' nach /tragbare-milchpumpen/ vorsehen. Offene Zuordnungen in den betroffenen Zeilen knapp markieren; keine 35 dünnen Produktdetailseiten allein für Keywords anlegen.",
+      "acceptance": "Alphabetische Liste nicht als Bestenliste darstellen. 25/9/1 sind dokumentierte Klassifikationen mit Evidenzgrenzen, nicht 34 unabhängig bestätigte Bauformen. Vier unbelegte Angebote bedeuten nicht ausverkauft."
+    },
+    {
+      "priority": "P1",
+      "change": "Alltagskarten um eine konkrete erste Handlung ergänzen",
+      "evidence": "Die illustrierten Probleme sind anschaulich, ihr Nutzen bleibt auf der Startseite häufig bei 'Ablauf ansehen'.",
+      "proposedMicroAnswers": [
+        "Gefrierfach: Beschriftung prüfen und einen festen Bereich für die nächste vorgesehene Portion einrichten.",
+        "Feuchte Teile: Einen sauberen Trockenplatz einplanen; ein zweites Set ersetzt die Reinigung nicht.",
+        "Arbeitsweg: Kühlmöglichkeiten am Start, unterwegs und am Ziel vorab klären."
+      ],
+      "acceptance": "Je Karte Problem, erster Schritt und beschreibender Textlink. Konkrete Lagerzeiten, Temperaturen und Sonderfälle erst mit aktueller Fachquelle im Ratgeber/PDF angeben; keine neue pauschale Hygieneregel aus einer Illustration ableiten."
+    },
+    {
+      "priority": "P2",
+      "change": "Methodik positiv verdichten statt Disclaimer wiederholen",
+      "evidence": "Canvas-Methodik verwendet noch 'nicht mit erfundenen Testsiegern'; lokale Produktseiten wiederholen eine lange 'nicht getestet'-Sektion. Das erklärt Grenzen, verdrängt aber konkrete Hilfe.",
+      "proposedCopy": "Wir gleichen Modellgeneration, Herstellerunterlagen und Setumfang ab. Unsere Einordnung verbindet diese Merkmale mit deinem Einsatzfall.",
+      "acceptance": "Ein klarer Methodenlink und passender Quellenstand reichen auf der Startseite. Medizinische Warnungen und Affiliate-Hinweise erhalten; Transparenz nicht löschen, sondern zentral nachvollziehbar erklären. Keine erfundenen Nutzerinnen oder persönlichen Testerfahrungen."
+    },
+    {
+      "priority": "P1 vor späterer Freigabe",
+      "change": "Canvas, lokale Website und Live-Ziele strikt getrennt abnehmen",
+      "evidence": "Neue Marktseite lokal erreichbar, öffentlich aktuell 404. Headline/Metadaten der lokalen Website und Canvas sind unterschiedliche Fassungen.",
+      "acceptance": "Nach ausdrücklicher Freigabe zusammenhängende Routen prüfen: Status, H1, Title/Description, Canonical, sichtbare Antworten, Quellen und Schema. 320/390/768/1440px inklusive Tastatur testen. Keine isolierte neue Homepage mit nicht veröffentlichten Zielseiten ausliefern. Dieser Audit selbst autorisiert kein Deployment."
+    }
+  ],
+  "recommendationBoundaries": {
+    "M5Smart": {
+      "defensible": "Schlauchfreies System, vier abwaschbare Teile und optionale App als Auswahlgrund.[6]",
+      "notEstablished": "Schnellste Reinigung, bessere Milchausbeute, bequemster Sitz oder bestes Preis-Leistungs-Verhältnis.",
+      "historicalVariant": "B0G1MWP4FB = Grau, 1 Pack gemäß Recherche vom 14.10.2026; heute nicht neu verifiziert."
+    },
+    "Air1": {
+      "defensible": "Ladecase, sensorbasierte Anzeigen und 180-ml-Behälter als Herstellermerkmale.[7]",
+      "notEstablished": "Sensorpräzision, Auslaufsicherheit oder 15 Sitzungen als eigene Laufzeitmessung. Keine automatische Voll-Abschaltung aus einem Alarm ableiten.",
+      "historicalVariant": "B0G2MQH1DF = beobachtetes Rot-Doppelset; Modell/Case wegen Variantenfamilie erneut am Angebot prüfen."
+    },
+    "FreestyleHandsFree": {
+      "defensible": "Separater Motor und dreiteilige Auffangschalen; Hersteller bestätigt fehlenden Füllstand-Autostopp.[8]",
+      "notEstablished": "Weniger Gesamtgewicht als jede andere Pumpe, kürzere Reinigung des gesamten Systems oder regionale Lieferumfänge aus internationaler Seite.",
+      "historicalVariant": "B0BKGFBKHJ = historisch zugeordnetes Doppelsystem; nicht Freestyle Mini oder reine Collection Cups."
+    },
+    "selectionImprovement": "Kriterien der drei Einstiege offen benennen. Zwei Modelle derselben Marke sind nicht automatisch sachwidrig, aber keine ausgewogene Vollmarkt-Auswahl. Weitere Marken erst anhand gleicher Zählweise für Teile, Bedienung, Generation und Set aufnehmen; keine künstliche Markengleichverteilung und keinen unbelegten Ersatzsieger.",
+    "noPurchasePath": "Vorhandene Pumpe, passende Einsätze/Ersatzteile und bei Beschwerden fachliche Passformberatung als echte Alternative zum Neukauf zeigen."
+  },
+  "productPhotoBlockers": {
+    "shortAnswer": "Die Karten zeigen noch keine echten Modellfotos, weil für die exakten Produkte weder ein autorisierter Amazon-Bildabruf noch dokumentierte Hersteller-/Fotografenrechte nachgewiesen sind. React kann solche Bilder darstellen; fehlende Berechtigung ist keine technische Inkompatibilität.",
+    "amazon": {
+      "status": "Nicht nachgewiesen, nicht als abgelehnter Zugang darstellen. Keine Kontoprüfung vorgenommen.",
+      "publicEvidence": "Die aktuelle Einführung nennt zehn qualifizierte Verkäufe in den letzten 30 Tagen als Voraussetzung für PA-API-Zugriff durch Creators API; der Tracking-Tag beweist diese Voraussetzung nicht.[1] Die öffentliche deutsche Lizenz verbietet Speichern/Cachen der Bilddateien und erlaubt Bildlinks bis zu 24 Stunden; Programminhalte müssen zu den zugehörigen Amazon-Seiten führen.[2]",
+      "technicalPath": "Nach Betreiberfreigabe autorisierter serverseitiger Abruf mit geschützten Secrets und Modell-/ASIN-Abgleich; Remote-Bild-URL, echte Abmessungen, Aktualisierung/Ablauf und Fallback in React. Die statische Website allein schützt keine API-Secrets.",
+      "notAllowedShortcut": "Kein Listing-Screenshot, CDN-Scraping, Download nach public/, dauerhaftes Bildproxy-Caching oder behaupteter fertiger API-Adapter ohne echten autorisierten Abruf.",
+      "separateScope": "Keine pauschale PDF-/Pinterest-Nutzung aus der Amazon-Lizenz ableiten. Zusätzliche Bildrequests ändern auch den Datenschutz-Prüfumfang."
+    },
+    "manufacturerRoutes": [
+      {
+        "brand": "Momcozy",
+        "status": "Konkreter bedingter Freigabeweg öffentlich belegt",
+        "finding": "Die Affiliate-FAQ erlaubt die über das genehmigte Affiliate-Konto bereitgestellten Creatives auf Website und Social-Kanälen; Netzwerkregeln gelten.[4]",
+        "nextStep": "Nach gesondertem Auftrag genaue M5-Smart-/Air-1-Dateien und ausdrücklichen Scope für neutrale Amazon-verlinkte Vergleiche, Pinterest und PDFs bestätigen lassen. Keine Erlaubnis zum Kopieren sämtlicher öffentlicher Shopbilder ableiten."
+      },
+      {
+        "brand": "Philips",
+        "status": "Schriftliche Autorisierung erforderlich laut öffentlichen Brand Guidelines",
+        "finding": "Fotos gehören ausdrücklich zu Brand Assets; ausdrückliche schriftliche Freigabe ist gefordert.[3]",
+        "nextStep": "SCF547/11-Packshot und konkrete Nutzungsbedingungen anfordern; offener Medienbibliothek-Zugang allein genügt nicht."
+      },
+      {
+        "brand": "Medela",
+        "status": "Öffentlicher Medienkanal vorhanden; keine exakte Freestyle-Packshot-Lizenz nachgewiesen",
+        "finding": "Der öffentlich erreichbare Symposium Media Corner bietet Event-/Sprecherbilder und Presseunterlagen.[11] Das ist kein Beleg für Freestyle-Produktrechte.",
+        "nextStep": "Medienbüro media.inquiries@medela.com um exakte Freestyle-Hands-free-Packshots und Lizenz für kommerziell finanzierte redaktionelle Website bitten; Pinterest/PDF getrennt angeben. Keinen Symposium-Download als allgemeine Freigabe ausgeben."
+      },
+      {
+        "brand": "Elvie",
+        "status": "Öffentlicher Pressekontakt bestätigt, keine Nutzungsfreigabe",
+        "finding": "Supportseite nennt elviepress@onewillow.com für Presse-/Influenceranfragen.[5] Die UK-Presseseite zeigt diese Adresse, verlinkt jedoch weiterhin mailto:press@elvie.com; die Supportseite bietet den konsistenten Kontakt.",
+        "nextStep": "Original Elvie Pump Single/Double ausdrücklich von Stride/Stride 2 unterscheiden und assetbezogene Freigabe erfragen."
+      },
+      {
+        "brand": "Haakaa",
+        "status": "Bestehende Rechte-Recherche: kein freigegebenes exaktes Gen-3-Foto",
+        "finding": "In diesem Audit keine neue Haakaa-Lizenzprüfung; kein stärkerer aktueller Negativbeweis behauptet.",
+        "nextStep": "Gen-3-Datei mit passender Flaschen-/Flanschgeneration, Rechtekette und Nutzungsscope prüfen; nicht durch ein Gen-2-Bild ersetzen."
+      }
+    ],
+    "rightsRequestChecklist": [
+      "Exaktes Modell/Generation/Set und Asset-ID",
+      "Domain und kommerziell finanzierter redaktioneller Vergleich mit Amazon-Ziel",
+      "Website, organisches Pinterest und PDF jeweils ausdrücklich",
+      "Bearbeitung: Freisteller, Zuschnitt, Textoverlay",
+      "Urheber-/Fotografencredit und etwaige Personenfreigaben",
+      "Dauer, Gebiet, Widerruf und dokumentierter Freigabenachweis"
+    ],
+    "interim": "Vorhandenes lizenziertes Kinderzimmerfoto nur als Themenfoto, eigene Illustrationen nur als Illustrationen verwenden. Keine generierte fotorealistische Modellattrappe. Eigene echte Produktaufnahmen mit dokumentierter Rechtekette sind eine Alternative; ein Foto allein begründet keinen eigenen Produkttest.",
+    "legalLimit": "Recherche und redaktionelle Handlungsempfehlung, keine juristische Einzelfallfreigabe. Keine pauschale frei nutzbare Pressebibliothek für alle benötigten Modelle festgestellt; keine Behauptung, dass es keine geben könne."
+  },
+  "seoGeo": {
+    "alreadyUseful": [
+      "Lokale Marktseite mit konkreter Direktantwort, kaufbezogenen Abwägungen und Primärlinks",
+      "Sechs detaillierte Kernmodelle klar von 35 recherchierten Marktidentitäten und 61 Katalogeinträgen getrennt",
+      "Individuelle Metadaten, Canonicals und quellenorientierte strukturierte Daten im Quellcode; keine erfundenen Sterne/Preise ergänzen",
+      "35 Ratgeber mit praktischen Aufgaben statt nur Markennamen"
+    ],
+    "nextValue": [
+      "Frage → knappe Antwort → Kriterium → Modell/Abwägung → Quelle → nächster Schritt",
+      "Modellgeneration, deutsches Set und Aktualitätsart unmittelbar am relevanten Claim",
+      "Bei neuen PDFs ausfüllbare Checklisten/Entscheidungsblätter statt noch einer allgemeinen Pumpenbroschüre",
+      "Medizinische Aussagen nur mit aktueller Fachquelle und Geltungsbereich; Betreiber nicht als medizinischen Experten ausgeben"
+    ],
+    "notAPriority": "Kein weiteres GEO-Schema, kein llms.txt-Ausbau als Ersatz für hilfreichen Text, keine Keyword-Footer und keine 35 flachen neuen Modellseiten.",
+    "grounding": "Google verlangt für AI Overviews/AI Mode keine besonderen zusätzlichen Optimierungen oder speziellen schema.org-Daten; Indexierung und geeignete Snippets sind Voraussetzung, keine Zusage auf Ausspielung.[10]",
+    "successMeasurement": "Keine Rankings, Suchvolumina, KI-Zitate oder Conversion-Steigerungen gemessen. Später echte freigegebene Search-Console-/Nutzungsdaten je URL und Kaufhilfe-Platzierung auswerten, nicht Lighthouse als Nachfragebeleg verwenden."
+  },
+  "booklets": {
+    "file": "docs/free-booklet-topics-refined.md",
+    "topicsRequested": 15,
+    "status": "Themenkonzepte, keine fertigen PDFs",
+    "recommendedFirst": "Abgepumpt – und jetzt?",
+    "secondBuyerIntentOption": "Bevor du die nächste Milchpumpe kaufst"
+  },
+  "limitations": [
+    "Kein Zugriff auf eingeloggte Konten, keine Assetkäufe oder Rechteanfragen versandt",
+    "Canvas lokal anhand gespeicherten Readbacks geprüft, nicht erneut über ein angemeldetes Superdesign-Konto",
+    "Kein Bilddownload, keine neue Bildlizenz oder API-Freischaltung erteilt",
+    "Keine Aktualisierung der Amazon-Angebote; alle entsprechenden Variantenbefunde historisch vom 14.10.2026",
+    "Suchbackend SearXNG nicht erreichbar, Exa-Fallback mit einzelnen 429-Antworten; wesentliche Google-/Herstellerangaben über öffentliche HTTP-Abrufe gegengeprüft",
+    "Citations-Ledger innerhalb dieser einzigen freigegebenen Audit-Datei, keine zusätzliche Ledger-/Skill-Datei angelegt"
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://partnernet.amazon.de/creatorsapi/docs/en-us/introduction",
+      "accessed": "2026-10-15",
+      "quote": "Have at least 10 qualifying sales within the past 30 days to access the PA API through the Creators API"
+    },
+    {
+      "id": 2,
+      "url": "https://partnernet.amazon.de/help/operating/license",
+      "accessed": "2026-10-15",
+      "quote": "Sie werden keine Inhalte von Produktwerbung, die aus einem Bild bestehen, speichern oder zwischenspeichern, aber Sie können einen Link zu Inhalten von Produktwerbung, die aus einem Bild bestehen, bis zu 24 Stunden speichern."
+    },
+    {
+      "id": 3,
+      "url": "https://www.philips.com/a-w/about/innovation/ips/philips-general-trademark-use-guidelines.html",
+      "accessed": "2026-10-15",
+      "quote": "The Philips Trademarks and Philips Brand Assets may only be used with explicit written authorization from Philips."
+    },
+    {
+      "id": 4,
+      "url": "https://de.momcozy.com/pages/momcozy-affiliate-program",
+      "accessed": "2026-10-15",
+      "quote": "You are welcome to use any of the creative assets available through your affiliate account across all your platforms, including your website, social media accounts, groups, communities, blogs, and vlogs."
+    },
+    {
+      "id": 5,
+      "url": "https://support.elvie.com/en-us/general-support/contact-elvie",
+      "accessed": "2026-10-15",
+      "quote": "For press and influencer enquiries only"
+    },
+    {
+      "id": 6,
+      "url": "https://de.momcozy.com/products/m5-smart-wearable-breast-pump-upgraded-with-app-control",
+      "accessed": "2026-10-15",
+      "quote": "Nur 4 abwaschbare Teile",
+      "additionalQuote": "Ja. Die Momcozy App ist optional – die M5 Smart kann auch direkt über die Bedienelemente der Pumpe verwendet werden."
+    },
+    {
+      "id": 7,
+      "url": "https://de.momcozy.com/products/momcozy-air-1-ultra-slim-breast-pump",
+      "accessed": "2026-10-15",
+      "quote": "Das kabellose Ladecase ermöglicht bis zu 15 Abpump-Sitzungen von jeweils etwa 30 Minuten."
+    },
+    {
+      "id": 8,
+      "url": "https://www.medela.com/en/breastfeeding-pumping/products/pumps/hands-free-electric/freestyle-hands-free-double-electric-wearable-breast-pump?productId=4072",
+      "accessed": "2026-10-15",
+      "quote": "No, Freestyle™ Hands-free does not shut off automatically when the collection containers are full."
+    },
+    {
+      "id": 9,
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "accessed": "2026-10-15",
+      "quote": "Does the main heading or page title provide a descriptive, helpful summary of the content?"
+    },
+    {
+      "id": 10,
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "accessed": "2026-10-15",
+      "quote": "There's also no special schema.org structured data that you need to add."
+    },
+    {
+      "id": 11,
+      "url": "https://www.medela.com/en/about-medela/medela-news/symposium-media-corner",
+      "accessed": "2026-10-15",
+      "quote": "Click here to download a selection of media assets, including media release and symposium images."
+    },
+    {
+      "id": 12,
+      "url": "https://milchpumpe-vergleich.de/",
+      "accessed": "2026-10-15",
+      "quote": "Milchpumpen im Vergleich: 6 Modelle transparent eingeordnet",
+      "kind": "öffentlicher HTML-Title, kein Beleg für Marktqualität"
+    }
+  ],
+  "parentReconciliation": {
+    "checkedAt": "2026-10-15T00:28:07.019065+00:00",
+    "currentCanvasVersion": 8,
+    "childSnapshotVersion": 5,
+    "report": "docs/editorial-audit-followup-qa.json",
+    "alreadyAddressedByParentV7": [
+      "Visible direct answer before case recommendations",
+      "Source-to-decision methodology example and four steps",
+      "Actual documentary pump-parts photo with verified CC0 basis; not exact-model product-photo clearance",
+      "Real market route link in answer and footer"
+    ],
+    "addressedByV8": [
+      "Descriptive product-category H1",
+      "Absolute four-parts criterion instead of comparative fewer-parts label",
+      "Set labels visible before purchase buttons and historical observation date"
+    ],
+    "stillOpen": [
+      "Source/mapping gaps in five market identities",
+      "Exact-model product photos and authorized resources",
+      "Current exhaustive market coverage and measured ranking",
+      "Production release approval; market route still public 404",
+      "No actual PDF produced"
+    ],
+    "photoEvidence": "docs/editorial-pump-parts-photo-rights.json"
+  }
+}
