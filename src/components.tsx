@@ -214,7 +214,7 @@ function EditorialHeader() {
           <a id="header-comparison" href="/#marktcheck" onClick={closeMenu}>Milchpumpen</a>
           <a id="header-guides" href="/ratgeber/" onClick={closeMenu}>Ratgeber</a>
           <a id="header-products" href="/produkte/" onClick={closeMenu}>Zubehör</a>
-          <a id="header-finder" className="nav-pill" href="/ratgeber/#pumpenfinder" onClick={closeMenu}>Deine Kaufhilfe <span aria-hidden="true">↗</span></a>
+          <a id="header-finder" className="nav-pill" href="/#v9-comparison" onClick={closeMenu}>Direkt vergleichen <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>

@@ -60,6 +60,8 @@ export function bindEditorialHome(root: HTMLElement): () => void {
     if (!left || !right) return;
     renderSide('a', left);
     renderSide('b', right);
+    const selectedModels = root.querySelector<HTMLElement>('#v14-selected-models');
+    if (selectedModels) selectedModels.textContent = `${left.name} ↔ ${right.name}`;
     required(root, '#v9-compare-status').textContent = a.value === b.value
       ? `Du hast zweimal dasselbe Modell ausgewählt: ${left.name}. Wähle ein anderes Modell für die Gegenüberstellung.`
       : `${left.name} und ${right.name} im Vergleich.`;
@@ -82,6 +84,12 @@ export function bindEditorialHome(root: HTMLElement): () => void {
     const motionReduced = root.ownerDocument.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     required<HTMLElement>(root, '#v9-comparison').scrollIntoView?.({ behavior: motionReduced ? 'instant' : 'smooth', block: 'start' });
   };
+  listen(root.ownerDocument, 'click', event => {
+    const target = event.target as Element | null;
+    if (!target?.closest?.('a#header-finder[href="/#v9-comparison"]')) return;
+    event.preventDefault();
+    openComparison();
+  });
   root.querySelectorAll<HTMLElement>('[data-compare-pair-a]').forEach(button => listen(button, 'click', () => {
     a.value = button.dataset.comparePairA || a.value;
     b.value = button.dataset.comparePairB || b.value;
@@ -94,13 +102,16 @@ export function bindEditorialHome(root: HTMLElement): () => void {
     renderComparison();
     openComparison();
   }));
-  listen(required(root, '#v4-directory-open'), 'click', event => {
-    event.preventDefault();
+  const openDirectory = () => {
     const directory = required<HTMLDetailsElement>(root, '#modellsuche');
     directory.open = true;
     query.focus({ preventScroll: true });
     directory.scrollIntoView?.({ behavior: 'instant', block: 'start' });
-  });
+  };
+  root.querySelectorAll<HTMLAnchorElement>('a[href="#modellsuche"]').forEach(link => listen(link, 'click', event => {
+    event.preventDefault();
+    openDirectory();
+  }));
   const caseButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-case]'));
   const caseCards = Array.from(root.querySelectorAll<HTMLElement>('[data-pick-case]'));
   caseButtons.forEach(button => listen(button, 'click', () => {
@@ -120,5 +131,12 @@ export function bindEditorialHome(root: HTMLElement): () => void {
   });
   filterDirectory();
   renderComparison();
+  const view = root.ownerDocument.defaultView;
+  const revealHashTarget = () => {
+    if (view?.location.hash === '#v9-comparison') openComparison();
+    if (view?.location.hash === '#modellsuche') openDirectory();
+  };
+  if (view) listen(view, 'hashchange', revealHashTarget);
+  revealHashTarget();
   return () => controller.abort();
 }

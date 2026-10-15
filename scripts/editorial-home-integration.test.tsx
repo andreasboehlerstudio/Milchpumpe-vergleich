@@ -39,7 +39,9 @@ test('the real homepage renders the approved Superdesign model-selection surface
   assert.ok(html.includes('id="v4-title"'), 'The approved Superdesign hero must replace the legacy homepage');
   assert.ok(html.includes('id="v9-compare-a"'), 'The 40-model comparison must be present in actual server-rendered HTML');
   assert.ok(html.includes('id="v9-compare-b"'));
-  assert.ok(html.includes('class="v11-alternative"'));
+  const window = new Window();
+  window.document.body.innerHTML = html;
+  assert.equal(window.document.querySelectorAll('.v11-alternative').length, 3);
   assert.equal((html.match(/<main\b/g) || []).length, 1);
   assert.equal((html.match(/<h1\b/g) || []).length, 1);
   assert.ok(!html.includes('<iframe'), 'Do not embed a remote Canvas as the website');
