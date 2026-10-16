@@ -8,9 +8,11 @@ import Article from './route-article';
 import Market from './route-market';
 import Methodology from './route-methodology';
 import Legal from './route-legal';
+import Newsletter from './route-newsletter';
+import FreeGuides from './route-free-guides';
 
 // Node/prerender entry only. Never imported by the browser bootstrap.
-const pages = { home: Home, magazine: Magazine, catalogue: Catalogue, product: Product, article: Article, market: Market, methodology: Methodology, legal: Legal };
+const pages = { 'free-guides': FreeGuides, home: Home, magazine: Magazine, catalogue: Catalogue, product: Product, article: Article, market: Market, methodology: Methodology, legal: Legal, newsletter: Newsletter };
 export default function App({ initialPath = '/' }: { initialPath?: string }) {
   return <RouteView initialPath={initialPath} Page={pages[routeFamily(initialPath)]} />;
 }

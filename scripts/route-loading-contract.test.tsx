@@ -38,7 +38,8 @@ test('normalization retains its compatibility export and never mutates URL state
 });
 
 test('every demand-loaded page renders exactly the same complete synchronous App tree', async () => {
-  assert.equal(ROUTES.length, 50);
+  assert.equal(ROUTES.length, 56);
+  assert.equal(ROUTES.filter(route => !route.path.startsWith('/gratis-guides/')).length, 50);
   for (const initialPath of [...ROUTES.map(route => route.path), '/404/', '/produkte/unknown/', '/ratgeber/unknown/']) {
     const Page = await loadRoute(initialPath);
     const browserTree = renderToString(<RouteView initialPath={initialPath} Page={Page} />);
