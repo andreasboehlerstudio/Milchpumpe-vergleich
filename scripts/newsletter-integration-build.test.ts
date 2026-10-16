@@ -35,9 +35,14 @@ test('production newsletter rendering and styles are deferred and absent from ev
   assert.ok(!newsletterSources.some(source => /src\/(pages|guides|milk-articles|product-catalogue)\./.test(source)));
 });
 
-test('unpublished kaufcheck is absent from the real sitemap and static output and public newsletter assets contain only the intended WebP', () => {
+test('direct kaufcheck landing is served without signup while indexing and collection remain gated', () => {
   assert.doesNotMatch(readFileSync('dist/sitemap.xml', 'utf8'), /kaufcheck/);
-  assert.equal(existsSync('dist/kaufcheck/index.html'), false);
+  assert.equal(existsSync('dist/kaufcheck/index.html'), true, 'direct PDF landing must not return 404 while newsletter is disabled');
+  const html=readFileSync('dist/kaufcheck/index.html','utf8');
+  assert.match(html, /<meta name="robots" content="noindex,follow"/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/milchpumpe-vergleich\.de\/kaufcheck\/"/);
+  assert.match(html, /href="\/downloads\/dein-milchpumpen-kaufcheck\.pdf"/);
+  assert.doesNotMatch(html, /<form\b|<input\b/);
   assert.deepEqual(readdirSync('public/newsletter-assets').sort(), ['kaufcheck-preview.webp']);
   assert.deepEqual(readdirSync('dist/newsletter-assets').sort(), ['kaufcheck-preview.webp']);
 });

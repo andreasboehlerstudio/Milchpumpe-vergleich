@@ -40,7 +40,10 @@ function pageHtml(routePath: string) {
     .replace('<div id="root"></div>', `<div id="root">${markup}</div>`);
 }
 
-for (const route of ROUTES) {
+// A direct public PDF landing must exist even while signup and sitemap inclusion are gated.
+const renderedRoutes = ROUTES.some(route => route.path === '/kaufcheck/')
+  ? ROUTES : [...ROUTES, getRouteSeo('/kaufcheck/')];
+for (const route of renderedRoutes) {
   const output = route.path === '/' ? path.join(distDir, 'index.html') : path.join(distDir, route.path, 'index.html');
   await mkdir(path.dirname(output), { recursive: true });
   await writeFile(output, pageHtml(route.path), 'utf8');
