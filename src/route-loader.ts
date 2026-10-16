@@ -3,6 +3,8 @@ import { routeFamily, type RouteFamily, type RouteProps } from './route-family';
 
 const loaders = {
   home: () => import('./route-home'),
+  'free-guides': () => import('./route-free-guides'),
+  newsletter: () => import('./route-newsletter'),
   magazine: () => import('./route-magazine'),
   catalogue: () => import('./route-catalogue'),
   product: () => import('./route-product'),

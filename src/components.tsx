@@ -213,6 +213,7 @@ function EditorialHeader() {
         <nav id="main-nav" className={menuOpen ? 'nav open' : 'nav'} aria-label="Hauptnavigation">
           <a id="header-comparison" href="/#marktcheck" onClick={closeMenu}>Milchpumpen</a>
           <a id="header-guides" href="/ratgeber/" onClick={closeMenu}>Ratgeber</a>
+          <a id="header-free-guides" href="/gratis-guides/" onClick={closeMenu}>Gratis-Guides</a>
           <a id="header-products" href="/produkte/" onClick={closeMenu}>Zubehör</a>
           <a id="header-finder" className="nav-pill" href="/#v9-comparison" onClick={closeMenu}>Direkt vergleichen <span aria-hidden="true">↗</span></a>
         </nav>
@@ -253,6 +254,7 @@ function EditorialFooter() {
               <li><a id="footer-comparison" href="/tragbare-milchpumpen/">Tragbare Pumpen auswählen</a></li>
               <li><a id="footer-six-models" href="/vergleich/">Sechs Modelle im Detail</a></li>
               <li><a id="footer-finder" href="/ratgeber/#pumpenfinder">Interaktive Kaufhilfe</a></li>
+              <li><a id="footer-free-guides" href="/gratis-guides/">Gratis-Guides herunterladen</a></li>
               <li><a id="footer-products" href="/produkte/">Produktwegweiser</a></li>
               <li><a id="footer-methodology" href="/testmethodik/">Quellen &amp; Methodik</a></li>
             </ul>
@@ -277,7 +279,14 @@ function EditorialFooter() {
 // Shared by the fail-safe bootstrap without importing any page family.
 export { CookieConsent as RouteLoadingConsent };
 
-export function Layout({ children, variant = 'standard' }: { children: ReactNode; variant?: 'standard' | 'editorial' | 'editorial-inner' }) {
+export function Layout({ children, variant = 'standard' }: { children: ReactNode; variant?: 'standard' | 'editorial' | 'editorial-inner' | 'standalone' }) {
+  if (variant === 'standalone') return (
+    <>
+      <div id="inhalt">{children}</div>
+      <footer className="newsletter-route-controls"><button id="cookie-settings" type="button" onClick={() => window.dispatchEvent(new Event('open-cookie-settings'))}>Cookie-Einstellungen</button></footer>
+      <CookieConsent />
+    </>
+  );
   if (variant === 'editorial' || variant === 'editorial-inner') {
     return (
       <>

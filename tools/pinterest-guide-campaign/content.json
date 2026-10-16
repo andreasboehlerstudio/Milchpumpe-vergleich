@@ -1,0 +1,122 @@
+[
+  {
+    "id": "pin01a",
+    "guideSlug": "unterwegs-packplan",
+    "title": "Milchpumpe unterwegs: Erst den Weg klären, dann die Tasche packen",
+    "headline": ["Erst den Weg.", "Dann die Tasche.", "Was fehlt noch?"],
+    "lead": ["Dein Packplan fürs", "Abpumpen unterwegs."],
+    "eyebrow": "UNTERWEGS · PACKPLAN",
+    "description": "Was braucht dein Pumpen-Ausflug außer einem vollen Akku? Der kostenlose Unterwegs-Packplan hilft dir, Zielort, Weg und persönliche Packliste vorzubereiten. Halte fest, was schon vorhanden ist und was du vor der Abfahrt noch klären möchtest. Das vollständige PDF gibt es direkt und ohne E-Mail. Ein Newsletter ist optional. #AbpumpenUnterwegs #Packliste",
+    "altText": "Cremefarbene Grafik mit großer petrolfarbener Reisetasche, drei Wegpunkten und kleiner Kühltasche. Überschrift: Erst den Weg. Dann die Tasche. Was fehlt noch? Gratis PDF, direkt ohne E-Mail.",
+    "composition": "tote-route",
+    "fontSize": 86
+  },
+  {
+    "id": "pin01b",
+    "guideSlug": "unterwegs-packplan",
+    "title": "Abpumpen unterwegs: Akku geplant – Kühlweg auch?",
+    "headline": ["Akku geplant.", "Kühlweg auch?"],
+    "lead": ["Plane die Strecke für", "deinen nächsten Ausflug."],
+    "eyebrow": "UNTERWEGS · KÜHLWEG",
+    "description": "Der Akku ist nur ein Teil der Vorbereitung. Wo wird gekühlt, wie verläuft der Transport und wer ist am Ziel erreichbar? Im Unterwegs-Packplan sammelst du deine Antworten und offenen Fragen. Keine pauschalen Lagerzeit-Versprechen, sondern ein Plan für deinen konkreten Weg. Vollständiges PDF kostenlos direkt laden, ohne E-Mail; Newsletter optional. #AbpumpenUnterwegs #MuttermilchTransport",
+    "altText": "Auf mintfarbenem Hintergrund führt eine geschwungene Route vom Haus über eine gezeichnete Kühltasche zu einer Zielfahne. Große Frage: Akku geplant. Kühlweg auch? Gratis PDF, direkt ohne E-Mail.",
+    "composition": "cooler-map",
+    "fontSize": 98
+  },
+  {
+    "id": "pin02a",
+    "guideSlug": "arbeitsplatz-uebergabeplan",
+    "title": "Abpumpen bei der Arbeit: Der Raum steht – wer hat den Schlüssel?",
+    "headline": ["Der Raum steht.", "Und wer hat", "den Schlüssel?"],
+    "lead": ["Halte Absprachen für", "deinen Arbeitstag fest."],
+    "eyebrow": "ARBEITSPLATZ · ABSPRACHEN",
+    "description": "Ein Raum ist besprochen. Wie sieht es mit Zugang, Kühlplatz und erreichbaren Kontakten aus? Der kostenlose Arbeitsplatz- und Übergabeplan bietet dir ein Gesprächsblatt für diese Absprachen und Platz für offene Fragen. Er bestätigt keine individuellen Rechtsansprüche. Das vollständige PDF ist direkt ohne E-Mail verfügbar. Newsletter nur optional. #AbpumpenBeiDerArbeit #Wiedereinstieg",
+    "altText": "Eine große offene Bürotür mit kleinem Schreibtisch dahinter und ein korallfarbener Schlüssel illustrieren die Frage: Der Raum steht. Und wer hat den Schlüssel? Gratis PDF, direkt ohne E-Mail.",
+    "composition": "office-door",
+    "fontSize": 84
+  },
+  {
+    "id": "pin02b",
+    "guideSlug": "arbeitsplatz-uebergabeplan",
+    "title": "Feierabend mit Muttermilch: Wer übernimmt nach der Kühltasche?",
+    "headline": ["Wer übernimmt", "nach der", "Kühltasche?"],
+    "lead": ["Dein Plan für Absprachen", "und Übergaben nach der Arbeit."],
+    "eyebrow": "ARBEITSPLATZ · ÜBERGABE",
+    "description": "Der Heimweg endet nicht bei der Kühltasche. Mit dem Arbeitsplatz- und Übergabeplan kannst du Zuständigkeiten, Zielkontakte und offene Übergabefragen festhalten. Ein Organisationsblatt für deinen eigenen Ablauf – keine Freigabe von Lagerzeiten oder Betreuungsregeln. Vollständiges PDF direkt kostenlos laden, ohne E-Mail. Der Newsletter bleibt optional. #AbpumpenBeiDerArbeit #MuttermilchTransport",
+    "altText": "Zwei stilisierte Hände mit petrol- und mintfarbenen Ärmeln übergeben eine korallfarbene Kühltasche. Darüber stehen die Fragen Wer? und Wo? sowie die Überschrift Wer übernimmt nach der Kühltasche? Gratis PDF ohne E-Mail.",
+    "composition": "hands-handover",
+    "fontSize": 90
+  },
+  {
+    "id": "pin03a",
+    "guideSlug": "reinigung-teileroutine",
+    "title": "Pumpset organisieren: Benutzt, in Trocknung oder bereit?",
+    "headline": ["Benutzt.", "In Trocknung.", "Schon bereit?"],
+    "lead": ["Ordne deine Teile – nach", "der passenden Anleitung."],
+    "eyebrow": "REINIGUNG · TEILEROUTINE",
+    "description": "Welche Teile sind benutzt, welche trocknen noch und welche sind wieder bereit? Die Reinigungs- und Teileroutine hilft dir, Pflegehinweise für dein vorhandenes System und den jeweiligen Status festzuhalten. Maßgeblich bleibt die passende Anleitung; der Guide gibt keine universelle Waschfreigabe. Das vollständige PDF ist gratis direkt ohne E-Mail erhältlich. Newsletter optional. #Pumpset #MilchpumpeReinigen",
+    "altText": "Drei große versetzt angeordnete Organisationsbereiche mit den Worten Benutzt, Trocknet und Bereit, illustriert durch eine Schale, Trocknungslinien und eine Aufbewahrungsbox. Überschrift: Benutzt. In Trocknung. Schon bereit? Gratis PDF ohne E-Mail.",
+    "composition": "status-stages",
+    "fontSize": 92
+  },
+  {
+    "id": "pin03b",
+    "guideSlug": "reinigung-teileroutine",
+    "title": "Milchpumpe reinigen: Nicht alles kommt ins Spülwasser",
+    "headline": ["Nicht alles", "kommt ins", "Spülwasser."],
+    "lead": ["Welches Teil braucht", "welchen Pflegeweg?"],
+    "eyebrow": "REINIGUNG · PFLEGEWEG",
+    "description": "Gehört ein Teil ins Wasser – oder gelten andere Pflegehinweise? Im kostenlosen Guide überträgst du die Vorgaben deiner genauen Modellanleitung in deine eigene Teileroutine. Motor, Schlauch und Ladekomponenten sind nicht automatisch Spülteile. Keine pauschale Reinigungsregel für alle Systeme. Vollständiges PDF direkt ohne E-Mail laden; Newsletter optional. #MilchpumpeReinigen #Teileroutine",
+    "altText": "Eine große aufgeschlagene Anleitung verzweigt zu einer gezeichneten Waschschale und einem trockenen Ablageplatz. Keine Pumpenmodelle oder technischen Teile. Überschrift: Nicht alles kommt ins Spülwasser. Gratis PDF, direkt ohne E-Mail.",
+    "composition": "manual-fork",
+    "fontSize": 96
+  },
+  {
+    "id": "pin04a",
+    "guideSlug": "passform-beratungsvorbereitung",
+    "title": "Passform-Beratung vorbereiten: Nicht nur die Millimeter mitbringen",
+    "headline": ["Nicht nur die", "Millimeter", "mitbringen."],
+    "lead": ["Modell, Beobachtungen und", "Fragen für deinen Termin."],
+    "eyebrow": "PASSFORM · BERATUNG",
+    "description": "Was möchtest du in der Passform-Beratung besprechen? Sammle mit dem kostenlosen Vorbereitungsblatt Modellangaben, vorhandene Aufsätze, freiwillige Beobachtungen und deine Fragen für Hebamme oder qualifizierte Stillberatung. Keine Größentabelle und kein Diagnoseblatt. Das vollständige PDF gibt es direkt, gratis und ohne E-Mail. Ein Newsletter ist optional. #Stillberatung #Passformberatung",
+    "altText": "Eine große offene Tasche mit drei abstrakten beschrifteten Anhängern für Modell, Notizen und Fragen. Creme, Petrol, Mint und Koralle. Überschrift: Nicht nur die Millimeter mitbringen. Gratis PDF ohne E-Mail.",
+    "composition": "consult-tote",
+    "fontSize": 96
+  },
+  {
+    "id": "pin04b",
+    "guideSlug": "passform-beratungsvorbereitung",
+    "title": "Passform-Beratung: Welche drei Fragen möchtest du stellen?",
+    "headline": ["Was möchtest", "du endlich", "fragen?"],
+    "lead": ["Sammle deine Fragen für", "die Passform-Beratung."],
+    "eyebrow": "PASSFORM · DEINE FRAGEN",
+    "description": "Eine offene Frage darf mit zum Termin. Im Vorbereitungsblatt für die Passform-Beratung kannst du deine wichtigsten Fragen sortieren und später festhalten, was besprochen wurde und was offen bleibt. Es ersetzt keine individuelle Beratung und bestimmt keine Flanschgröße. Vollständiges PDF kostenlos direkt laden, ohne E-Mail. Newsletter optional. #Passformberatung #Stillberatung",
+    "altText": "Drei große überlappende Sprechblasen in Petrol, Koralle und Mint enthalten jeweils ein Fragezeichen. Überschrift: Was möchtest du endlich fragen? Vorbereitungsblatt für die Passform-Beratung, gratis PDF direkt ohne E-Mail.",
+    "composition": "question-bubbles",
+    "fontSize": 100
+  },
+  {
+    "id": "pin05a",
+    "guideSlug": "set-teilepass",
+    "title": "Milchpumpen-Ersatzteile: Gleiche Marke, wirklich passendes Teil?",
+    "headline": ["Gleiche Marke.", "Wirklich", "passendes Teil?"],
+    "lead": ["Ordne Modell und Variante", "vor dem Nachbestellen zu."],
+    "eyebrow": "SET & TEILE · ZUORDNEN",
+    "description": "Der Markenname allein beantwortet die Teilefrage nicht. Mit dem Set- und Teilepass hältst du Modell, Generation, vorhandene Teile und offene Kompatibilitätsfragen fest. Die Herstellerfreigabe bleibt entscheidend; der Pass ist keine Kompatibilitätsdatenbank. Vollständiges PDF direkt kostenlos und ohne E-Mail laden. Newsletter optional. #MilchpumpenZubehör #Ersatzteile",
+    "altText": "Zwei große abstrakte Teileanhänger mit Kreis- und Quadratzeichen stehen nebeneinander; eine Lupe betont die Zuordnung, ohne eine technische Kompatibilität zu zeigen. Überschrift: Gleiche Marke. Wirklich passendes Teil? Gratis PDF ohne E-Mail.",
+    "composition": "tags-magnifier",
+    "fontSize": 86
+  },
+  {
+    "id": "pin05b",
+    "guideSlug": "set-teilepass",
+    "title": "Ein Teil fehlt? Erst zuordnen, dann gezielt beim Hersteller fragen",
+    "headline": ["Erst zuordnen.", "Dann ergänzen.", "Aber welches?"],
+    "lead": ["Dein Teilepass mit Vorlage", "für die Herstellerfrage."],
+    "eyebrow": "SET & TEILE · NACHFRAGEN",
+    "description": "Bevor du vorsorglich Zubehör kaufst: Was ist bereits da und welcher Bedarf ist wirklich offen? Der kostenlose Set- und Teilepass hilft dir beim Bestandsabgleich und beim Formulieren einer konkreten Herstellerfrage. Auch „Bestand reicht“ ist ein sinnvolles Ergebnis. Keine pauschale Teilefreigabe. Vollständiges PDF direkt ohne E-Mail; Newsletter optional. #MilchpumpenZubehör #Teilepass",
+    "altText": "Ein großer gezeichneter Briefumschlag mit Fragezeichen wird von zwei Anhängern für Modell und Teil begleitet. Überschrift: Erst zuordnen. Dann ergänzen. Aber welches? Teilepass mit Vorlage für die Herstellerfrage. Gratis PDF, direkt ohne E-Mail.",
+    "composition": "support-envelope",
+    "fontSize": 84
+  }
+]

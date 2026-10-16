@@ -6,6 +6,9 @@ import { PRODUCT_CATALOGUE } from './product-catalogue';
 import { MILK_GUIDES } from './milk-articles';
 import { catalogueProductUrl } from './catalogue';
 import { WEARABLE_MARKET as marketData } from './wearable-market';
+import { NEWSLETTER_CONNECTION, isNewsletterReady, type NewsletterConnection } from './newsletter-config';
+import { getNewsletterRouteSeo } from './newsletter';
+import { FREE_GUIDE_SEO, FREE_GUIDES, FREE_GUIDES_HUB, freeGuidePath } from './free-guides-data';
 
 export type RouteSeo = {
   path: string;
@@ -122,12 +125,18 @@ const GUIDE_ROUTES: RouteSeo[] = GUIDE_ARTICLES.map((article) => ({
   priority: 0.7,
 }));
 
-export const ROUTES = [...STATIC_ROUTES, ...PRODUCT_ROUTES, ...GUIDE_ROUTES];
+/** Direct PDF guides are public independently; only newsletter acquisition is readiness-gated. */
+export function getSitePages(connection: NewsletterConnection = NEWSLETTER_CONNECTION): RouteSeo[] {
+  return [...STATIC_ROUTES, ...PRODUCT_ROUTES, ...GUIDE_ROUTES, ...FREE_GUIDE_SEO, ...(isNewsletterReady(connection) ? [getNewsletterRouteSeo(connection)] : [])];
+}
+
+export const ROUTES = getSitePages();
 
 export { normalizePath } from './route-path';
 
-export function getRouteSeo(path: string): RouteSeo {
+export function getRouteSeo(path: string, connection: NewsletterConnection = NEWSLETTER_CONNECTION): RouteSeo {
   const normalized = normalizePath(path);
+  if (normalized === '/kaufcheck/') return getNewsletterRouteSeo(connection);
   return ROUTES.find((route) => route.path === normalized) || {
     path: normalized,
     title: 'Seite nicht gefunden | Milchpumpe-Vergleich.de',
@@ -192,7 +201,7 @@ export function getStructuredData(path: string) {
     : normalized === '/ratgeber/' ? `${SITE_URL}${normalized}#artikel`
     : ['/vergleich/', '/produkte/'].includes(normalized) ? `${SITE_URL}${normalized}#liste` : undefined;
   graph.push({
-    '@type': ['/tragbare-milchpumpen/', '/ratgeber/'].includes(normalized) ? 'CollectionPage' : 'WebPage',
+    '@type': ['/tragbare-milchpumpen/', '/ratgeber/', FREE_GUIDES_HUB].includes(normalized) ? 'CollectionPage' : 'WebPage',
     '@id': `${SITE_URL}${normalized}#webpage`,
     name: route.heading,
     description: route.description,
@@ -203,6 +212,11 @@ export function getStructuredData(path: string) {
     dateModified: route.dateModified || REVIEW_DATE_ISO,
     ...(entityId ? { mainEntity: { '@id': entityId } } : {}),
   });
+  if (normalized === FREE_GUIDES_HUB) {
+    graph.push({ '@type': 'ItemList', '@id': `${SITE_URL}${normalized}#guides`, name: 'Kostenlose PDF-Arbeitsblätter', numberOfItems: FREE_GUIDES.length,
+      itemListElement: FREE_GUIDES.map((guide, index) => ({ '@type': 'ListItem', position: index + 1, name: guide.title, url: `${SITE_URL}${freeGuidePath(guide)}` })),
+    });
+  }
   if (product) {
     graph.push({
       '@type': 'Product',

@@ -17,7 +17,7 @@ test('newsletter signup stays unavailable until every delivery prerequisite has 
   }
 });
 
-test('newsletter presentation never collects addresses before connection and uses an explicit provider link afterwards', async () => {
+test('newsletter presentation never collects addresses before connection and links to the owned landing afterwards', async () => {
   const moduleUrl = new URL('../src/newsletter.tsx', import.meta.url);
   assert.ok(existsSync(moduleUrl), 'The newsletter needs a privacy-preserving, connection-gated presentation');
   const { renderToStaticMarkup } = await import('react-dom/server');
@@ -31,6 +31,7 @@ test('newsletter presentation never collects addresses before connection and use
   assert.match(html, /E-Mail-Adresse bestätigst/);
   assert.match(html, /bis zu zwei E-Mails im Monat/);
   assert.match(html, /href="\/datenschutz\/#newsletter"/);
-  assert.match(html, /href="https:\/\/unit-test.sibforms.com\/serve\/controlled-test-only"/);
+  assert.match(html, /href="\/kaufcheck\/"/);
+  assert.doesNotMatch(html, /sibforms\.com/);
   assert.doesNotMatch(html, /<iframe|<script|<input|<form|role="dialog"|data-hermes-send/);
 });

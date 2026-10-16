@@ -11,6 +11,20 @@ for (const route of ROUTES) {
     const window = new Window();
     window.document.body.innerHTML = renderToStaticMarkup(<App initialPath={route.path} />);
     const doc = window.document;
+    // The six V15 direct-download pages own their header/main/footer composition.
+    // Keep the original shell assertions unchanged for all pre-existing routes.
+    if (route.path.startsWith('/gratis-guides/')) {
+      assert.ok(doc.querySelector('.free-guides > header.fg-header'));
+      assert.ok(doc.querySelector('.free-guides > main.fg-main'));
+      assert.ok(doc.querySelector('.free-guides > footer.fg-footer'));
+      assert.equal(doc.querySelectorAll('main').length, 1);
+      assert.equal(doc.querySelectorAll('h1').length, 1);
+      assert.equal(doc.querySelectorAll('iframe,form,input').length, 0);
+      assert.ok(doc.querySelector('footer a[href="/testmethodik/"]'));
+      assert.ok(doc.querySelector('#cookie-settings'));
+      assert.equal(doc.querySelector('.editorial-home'), null);
+      return;
+    }
     assert.ok(doc.querySelector('.editorial-home.v4 > header.top'), 'approved header');
     assert.ok(doc.querySelector('.editorial-home.v4 > footer.foot'), 'approved footer');
     assert.equal(doc.querySelectorAll('main').length, 1);
