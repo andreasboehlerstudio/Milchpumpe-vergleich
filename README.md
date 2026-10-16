@@ -44,6 +44,15 @@ Regeln:
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
 
+### 16. Oktober 2026 – Fünf Gratis-Guides und direkter PDF-Zugang
+
+- Fünf eigenständige vierseitige A4-Arbeitsblätter mit insgesamt 222 ausfüllbaren Feldern, Primärquellen und realen PDF-Vorschauen ergänzt: Unterwegs, Arbeitsplatz und Übergabe, Reinigung und Teileroutine, Passform-Beratung sowie Set- und Teilepass.
+- Fünf warme V15-Landingpages und `/gratis-guides/` mit unabhängigem Gratis-Download, Navigation, Metadaten, Sitemap und bedarfsgeladenem Seitenmodul ergänzt; alle 50 ursprünglichen Inhaltsrouten und 35 Ratgeber bleiben erhalten.
+- Ursprünglichen achtseitigen Kaufcheck unverändert direkt ohne E-Mail zugänglich gemacht. Newsletter bleibt freiwillig und bis zum tatsächlichen DOI-, PDF-, Abmelde- und weiteren Freigabenachweis deaktiviert.
+- Eigene Formular-Rückmeldung verhindert die Navigation auf rohe Provider-JSON-Antworten; Einwilligung, Hydrierungssperre und exakte Formularidentität bleiben kontrolliert. Datenschutzabschnitt für Newsletter und PDFs ergänzt, Website-Analytics unverändert erhalten.
+- Zehn originale Pinterest-Grafiken samt Text-/Linkpaket fertiggestellt; Website-Dateien sind noch keine veröffentlichten Pinterest-Pins.
+- Produktionsbuild, TypeScript und 369 Tests auch aus dem exakten gestagten Dateibaum ohne private oder unversionierte Hilfsdateien bestanden. Veröffentlichungsnachweise werden getrennt vom lokalen Prüfergebnis geführt.
+
 ### 15. Oktober 2026 – Gezielt laden und Vergleiche wieder öffnen
 
 - Browser lädt nur die benötigte Seitenfamilie statt sämtliche Ratgeber-, Katalog- und Marktdaten auf jeder Seite. Vollständiges vorgerendertes HTML und derselbe Seitenbaum bleiben erhalten; Cookie-Auswahl funktioniert auch bei verzögertem oder fehlgeschlagenem Seitenmodul.
