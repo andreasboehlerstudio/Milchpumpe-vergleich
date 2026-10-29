@@ -1,6 +1,22 @@
 # SEO-Ausbau: messbare Modellfragen statt generischer Test-SEO
 
-## Tatsächliche Ausgangslage
+## Arbeitsstand nach dem Audit vom 29. Oktober 2026
+
+Die folgende Ausgangslage ist ein historischer Stand vom 14. Oktober, kein aktueller Leistungsbericht. Neue Kontoexporte und Besucherzahlen bleiben im privaten Nachweisordner.
+
+Für die nächste Ausbaustufe gelten diese Prioritäten:
+
+1. Bestehende wichtige URLs mit der URL-Prüfung untersuchen: Indexstatus, Google-Canonical, Abruf und Sitemap-Zuordnung getrennt festhalten. „Gefunden – zurzeit nicht indexiert“ beweist noch keine technische Sperre oder Qualitätsursache. Indexierung nicht versprechen und Anträge nicht täglich wiederholen.
+2. Die bestehenden Grundlagen zu Flanschgröße und Reinigung modellgebunden vertiefen: konkrete Primärquellen, umsetzbare Vorbereitung, passende kostenlose Arbeitsblätter und hilfreiche interne Weiterleitungen statt neuer Keyword-Varianten.
+3. Unbeabsichtigte Product-Snippet-Kandidaten einschließlich verschachtelter Article-Themen entfernen, wenn keine geeigneten sichtbaren Offers/Reviews gepflegt werden. Passende WebPage-/Article-/Thing-Entitäten, Quellen und Listen erhalten. Keine Preise, Sterne oder Testberichte erfinden.
+4. Analytics auf die exakte Produktionsherkunft und aktuelle Einwilligung begrenzen. Vorschau/localhost dürfen keine Produktionsmessung senden; echte Leser aus einem Referral nicht pauschal ausschließen. Für eigene Besuche eine lokale Opt-out-Einstellung nutzen. Ereignisse und Kontokonfiguration sind in `docs/analytics-measurement.md` beschrieben.
+5. Tatsächlichen redaktionellen Hintergrund und Korrekturen offenlegen. Eigene Produktaufnahmen und fachliche Mitprüfung sind erst dann Belege, wenn sie tatsächlich vorliegen; Produktionspläne oder Illustrationen ersetzen sie nicht.
+
+GEO baut auf auffindbaren, textlich zugänglichen Antworten und präzisen Belegen auf. `llms.txt` und Spezialmarkup sind keine Voraussetzung für Google-KI-Suche und keine Garantie für Zitate. KI-Referrals und dokumentierte Antwortstichproben sind verschiedene Messgrößen. Google-Suchzugriff und OpenAI-Suchcrawler sind zudem getrennt von der Einwilligung in Modelltraining zu betrachten.
+
+Veröffentlichungsgate: vollständige portable Tests, TypeScript, Produktionsbuild, alle Sitemap-Routen/Assets/Canonicals, Browserprüfung auf kleinen und großen Viewports sowie anschließender Live-Readback. Lokale Ergebnisse, Deployment und Googles spätere Verarbeitung werden separat dokumentiert.
+
+## Tatsächliche Ausgangslage (historisch: 14. Oktober 2026)
 
 Quelle: Search-Console-Export aus der freigegebenen Domain-Property, 14. Oktober 2026. Exportzeitraum 15. Juli bis 11. Oktober 2026 (UI: letzte drei Monate). Originalexport und private Analyse bleiben außerhalb des öffentlichen Repositorys.
 
@@ -18,7 +34,7 @@ Quelle: Search-Console-Export aus der freigegebenen Domain-Property, 14. Oktober
 3. **Informationsgewinn:** Jede neue Seite hat einen individuellen Kaufcheck mit unterschiedlichen Ausgangslagen. Generations-, Mengen- und Teileverwechslungen werden praktisch erklärt.
 4. **Klarer nächster Schritt:** Kaufcheck → passende Produktdaten oder offengelegter Amazon-Link. Händlerziele werden als genaues Modell oder Modellsuche beschriftet; abweichende Bundle-/Zubehörziele stehen explizit daneben.
 5. **Interne Verlinkung:** Nur Artikel mit gemeinsamen Produktentitäten werden als verwandt ausgewählt. Modellwissen und Zubehör sind in eigenen Themenfiltern auffindbar.
-6. **GEO ohne Geheimtrick:** Sichtbare Kurzantwort, Quellen je Abschnitt, Entscheidungstabelle, benannter Autor und dazu passende Article-/Product-Entitäten. Keine fingierten Testbewertungen oder medizinischen Garantien.
+6. **GEO ohne Geheimtrick:** Sichtbare Kurzantwort, Quellen je Abschnitt, Entscheidungstabelle, benannter Autor und dazu passende Article-/WebPage-/Thing-Entitäten. Keine fingierten Testbewertungen oder medizinischen Garantien.
 7. **Pinterest als separate Nachfragequelle:** 20 eigene 2:3-Themenkarten und 20 Entwürfe mit artikelgenauen UTM-Zieladressen. `docs/pinterest-plan.csv` ist ein redaktioneller Plan, kein zugesichert kompatibler Pinterest-Bulkimport. Pins sind noch nicht veröffentlicht.
 8. **Messbarkeit:** Nach Analytics-Einwilligung unterscheiden Affiliate-Ereignisse Produkt, Artikel und Linkposition. Websiteklicks sind keine bestätigten Amazon-Verkäufe oder Provisionen.
 

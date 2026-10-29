@@ -23,7 +23,7 @@ Der Build erzeugt für alle redaktionellen Seiten eigene HTML-Dateien, Metadaten
 
 ## Analytics
 
-Google Analytics wird ausschließlich nach Einwilligung über die feste Mess-ID `G-4MTYQGF7VK` geladen. Es wird kein Google Tag Manager eingesetzt.
+Google Analytics wird ausschließlich nach Einwilligung und nur auf `https://milchpumpe-vergleich.de` über die feste Mess-ID `G-4MTYQGF7VK` geladen. Vorschau, localhost und andere Ursprünge sind ausgeschlossen. Es wird kein Google Tag Manager eingesetzt. Lokaler Betreiber-Opt-out, datensparsame Ereignisse und die Grenzen der Messung sind in [docs/analytics-measurement.md](docs/analytics-measurement.md) beschrieben.
 
 ## Deployment
 
@@ -43,6 +43,16 @@ Regeln:
 ## Changelog
 
 Alle wesentlichen Änderungen an der veröffentlichten Website werden hier in umgekehrt chronologischer Reihenfolge dokumentiert.
+
+### 29. Oktober 2026 – Quellengebundene SEO-/GEO-Vertiefung und saubere Messung
+
+- Flanschgrößen- und Reinigungsgrundlagen mit modellbezogenen Herstelleranleitungen, Entscheidungstabellen, FAQs, praktischen Checklisten und direktem Zugang zu vorhandenen kostenlosen PDFs erweitert. Quellen und tatsächliche Recherchedaten mit den Metadaten abgestimmt; keine neuen dünnen Artikelrouten ergänzt.
+- Den bestehenden Vergleich M9 versus ursprüngliche S12 Pro um die verifizierte Original-US-Anleitung und die deutsche Kurzanleitung ergänzt; Original, Quick, Regionalfassung und tatsächliches Händler-Set bleiben getrennt.
+- Nicht für Produkt-Snippets qualifizierte Product-Knoten einschließlich verschachtelter Artikelthemen durch ehrliche Themenentitäten ersetzt. Article-, WebPage-, Breadcrumb- und Bestandslisten bleiben vollständig; keine Preise, Sterne oder Reviews erfunden.
+- Analytics auf die exakte HTTPS-Produktionsdomain und aktuelle Einwilligung begrenzt. Betreiber-Opt-out ergänzt, Suchtexte und freie URL-Parameter aus den eigenen Ereignissen ausgeschlossen und bestehende Pinterest-Kampagne über festgelegte Kennungen erhalten.
+- PDF-Linkklicks, reale Vergleichs-/Finder-Aktionen und bisher nicht erfasste Marktübersicht-Affiliate-Links messbar gemacht. Vorschau-Traffic wird nicht als Produktionsnutzung erfasst; Ereignisse bleiben von Verkäufen und abgeschlossenen Downloads getrennt.
+- Tatsächlichen Redaktionshintergrund, Prüfablauf, Korrekturprotokoll und Datenschutzbeschreibung ergänzt. Historische Fizimed-Angebotsnotiz absolut datiert und M9-Pflegeplanung von ungemessener Reinigungszeit getrennt; ursprüngliche Angebotsbelege unverändert erhalten.
+- Bestehende 56 Sitemap-Routen, 35 Ratgeber und alle direkten PDFs erhalten. Automatisierte Regressionstests, responsive Browserprüfung und kontrollierte Analytics-Tests ohne Übertragung von Testtraffic in das echte Konto ergänzt. Deployment und Googles spätere Neuverarbeitung werden separat verifiziert.
 
 ### 16. Oktober 2026 – Fünf Gratis-Guides und direkter PDF-Zugang
 

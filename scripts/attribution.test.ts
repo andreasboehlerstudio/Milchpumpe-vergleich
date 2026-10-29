@@ -5,8 +5,8 @@ import { trackAffiliateClick } from '../src/analytics';
 test('affiliate measurement is consent-gated and distinguishes article and placement without sending query strings', () => {
   const events: unknown[][] = [];
   let consent = 'accepted';
-  (globalThis as any).window = { gtag: (...args: unknown[]) => events.push(args), location: { pathname: '/ratgeber/momcozy-m9-ohne-app/', search: '?email=private@example.invalid' } };
-  (globalThis as any).localStorage = { getItem: () => JSON.stringify({ value: consent, timestamp: Date.now() }), removeItem: () => {} };
+  (globalThis as any).window = { gtag: (...args: unknown[]) => events.push(args), location: { origin: 'https://milchpumpe-vergleich.de', pathname: '/ratgeber/momcozy-m9-ohne-app/', search: '?email=private@example.invalid' } };
+  (globalThis as any).localStorage = { getItem: (key: string) => key === 'mv-analytics-consent-v1' ? JSON.stringify({ value: consent, timestamp: Date.now() }) : null, removeItem: () => {} };
   try {
     (trackAffiliateClick as any)('Momcozy M9', 'momcozy-m9', 'intent_check');
     assert.equal(events.length, 1);

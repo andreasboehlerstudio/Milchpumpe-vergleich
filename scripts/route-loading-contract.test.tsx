@@ -15,8 +15,8 @@ import { guidesForProduct } from '../src/contextual-links';
 test('light guide projections preserve exact authoritative metadata, order and product links', () => {
   const basics = GUIDE_ARTICLES.slice(0, 3);
   assert.deepEqual(basics, [
-    { slug: 'richtige-flanschgroesse', title: 'Flanschgröße richtig einordnen', updated: '2026-10-15', description: 'Warum die Passform wichtig ist, wie Hersteller messen lassen und wann fachliche Unterstützung sinnvoll ist.' },
-    { slug: 'milchpumpe-reinigen', title: 'Milchpumpe hygienisch reinigen', updated: '2026-10-15', description: 'Ein praktischer Ablauf auf Basis der Empfehlungen des Bundeszentrums für Ernährung.' },
+    { slug: 'richtige-flanschgroesse', title: 'Flanschgröße richtig einordnen', updated: '2026-10-29', description: 'Warum die Passform wichtig ist, wie Hersteller messen lassen und wann fachliche Unterstützung sinnvoll ist.' },
+    { slug: 'milchpumpe-reinigen', title: 'Milchpumpe hygienisch reinigen', updated: '2026-10-29', description: 'Milchberührende Teile, Motor und Schläuche richtig zuordnen: Herstelleranleitungen für Medela, Philips SCF547 und Momcozy M9 vergleichen.' },
     { slug: 'tragbar-oder-elektrisch', title: 'Tragbar, elektrisch oder manuell?', updated: '2026-10-15', description: 'Die Pumpenarten nach Einsatzhäufigkeit, Bewegungsfreiheit und Reinigungsaufwand unterscheiden.' },
   ]);
   const summaries = [...rawMilk, ...EDITORIAL_GUIDES].map(({ slug, title, description, published, updated, category }) => ({ slug, title, description, published, updated, category, image: `/editorial/${slug}-og.png` }));

@@ -159,8 +159,7 @@ test('homepage affiliate events use the existing consent gate without real analy
     assert.equal(events.length, 0);
     app.window.localStorage.setItem('mv-analytics-consent-v1', JSON.stringify({ value: 'accepted', timestamp: Date.now() }));
     link.dispatchEvent(new app.window.MouseEvent('click', { bubbles: true, cancelable: true }));
-    assert.equal(events.length, 1);
-    assert.equal(events[0][1], 'affiliate_click');
+    assert.equal(events.length, 0, 'Accepted consent on localhost must never produce production events');
     assert.equal(app.document.querySelectorAll('script[src*="googletagmanager"]').length, 0);
   } finally { await app.cleanup(); }
 });

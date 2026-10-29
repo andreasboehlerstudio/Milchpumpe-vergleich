@@ -25,7 +25,7 @@ test('provider disclosure uses current German TOU entity and qualified third-cou
 test('legal hierarchy is current while collection remains explicitly fail-closed', () => {
   const doc = privacyDocument();
   assert.deepEqual([...doc.querySelectorAll('article > section > h2')].map(h => Number(h.textContent?.match(/^\d+/)?.[0])), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  assert.match(doc.querySelector('.legal-review-note')?.textContent ?? '', /16\. Oktober 2026/);
+  assert.match(doc.querySelector('.legal-review-note')?.textContent ?? '', /29\. Oktober 2026/);
   assert.match(doc.querySelector('article > section')?.textContent ?? '', /Andreas Böhler, Am Mühlbach 14, 79114 Freiburg/);
   assert.equal(isNewsletterReady(NEWSLETTER_CONNECTION), false);
   assert.equal(NEWSLETTER_CONNECTION.formUrl, null);

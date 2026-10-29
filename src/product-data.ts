@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
       'Hersteller nennt vier bis fünf Anwendungen pro Akkuladung',
     ],
     strengths: ['Viele Einstellmöglichkeiten', 'Bedienung ohne Griff in den BH', 'Vollständig tragbares System'],
-    limitations: ['App verlangt ein kompatibles Smartphone und Konto', 'Mehr Teile bedeuten mehr Reinigungsaufwand', 'Passform vor der Nutzung prüfen'],
+    limitations: ['App-Zusatzfunktionen verlangen ein kompatibles Smartphone und Konto', 'Zerlege- und Pflegeschritte nach der M9-Anleitung einplanen; keine vergleichend gemessene Reinigungszeit', 'Passform vor der Nutzung prüfen'],
     sourceUrl: 'https://momcozy.com/products/momcozy-mobile-flow-hands-free-breast-pump',
     sourceLabel: 'Momcozy Produktseite M9',
     color: '#d78672',

@@ -14,7 +14,7 @@ test('each route has a stable page identity linked to the website, publisher and
     assert.equal((page.isPartOf as Record<string,unknown>)['@id'], `${SITE_URL}/#website`);
     assert.equal((page.publisher as Record<string,unknown>)['@id'], `${SITE_URL}/#publisher`);
     if (route.path.startsWith('/produkte/') && route.path !== '/produkte/') {
-      assert.equal((page.mainEntity as Record<string,unknown>)['@id'], `${SITE_URL}${route.path}#product`);
+      assert.equal((page.mainEntity as Record<string,unknown>)['@id'], `${SITE_URL}${route.path}#subject`);
     }
     if (route.path.startsWith('/ratgeber/') && route.path !== '/ratgeber/') {
       assert.equal((page.mainEntity as Record<string,unknown>)['@id'], `${SITE_URL}${route.path}#article`);

@@ -14,7 +14,7 @@ function browser() {
     get cookie() { return cookies; },
     set cookie(value: string) { deletedCookies.push(value); cookies = ''; },
   };
-  (globalThis as any).window = { location: { pathname: '/ratgeber/test/', hostname: 'localhost', reload: () => reloads++ } };
+  (globalThis as any).window = { location: { origin: 'https://milchpumpe-vergleich.de', pathname: '/ratgeber/test/', hostname: 'milchpumpe-vergleich.de', reload: () => reloads++ } };
   (globalThis as any).location = (globalThis as any).window.location;
   (globalThis as any).document = document;
   (globalThis as any).localStorage = {
@@ -38,7 +38,7 @@ test('withdrawal disables loaded Analytics and blocks previously queued and subs
     assert.equal((window as any)['ga-disable-G-4MTYQGF7VK'], true, 'Loaded Analytics must be explicitly disabled');
     assert.equal(window.dataLayer?.length, 0, 'Queued events must not survive withdrawal');
     window.gtag?.('event', 'page_view');
-    trackAffiliateClick('Example', 'example', 'test');
+    trackAffiliateClick('Momcozy Mobile Flow M9', 'momcozy-m9', 'product_card');
     assert.equal(window.dataLayer?.length, 0, 'No events can be queued after withdrawal');
     assert.ok(b.deletedCookies.some(cookie => cookie.startsWith('_ga=')));
   } finally { b.cleanup(); }
@@ -72,7 +72,7 @@ test('Analytics loading is gated at the loader and reacceptance does not inject 
     loadAnalytics();
     assert.equal((window as any)['ga-disable-G-4MTYQGF7VK'], false);
     assert.equal(b.scripts.length, 1);
-    trackAffiliateClick('Example', 'example', 'test');
+    trackAffiliateClick('Momcozy Mobile Flow M9', 'momcozy-m9', 'product_card');
     assert.equal(window.dataLayer?.length, 1);
   } finally { b.cleanup(); }
 });

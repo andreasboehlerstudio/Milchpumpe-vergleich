@@ -1,3 +1,8 @@
+// Wording corrections do not rewrite or redate historical offer/source snapshots.
+export const CURRENT_BUYER_NOTES: Record<string, string> = {
+  'Fizimed|Emy Pump': 'Kabellose In-Bra-Pumpe ohne nötige App. Am 15.10.2026 um 09:25 CEST beobachtete Amazon-Auswahl: Standard, 1 Stück – kein Doppelset. Hersteller-Singlekit: 28-mm-Basis plus Einsätze 15/17/19/21/24 mm. 30-Minuten-Abschaltung ist ein Timer, kein belegter Vollstand-Autostopp; Passform und Ersatzteile prüfen.',
+};
+
 // Current source findings sit beside, never inside, the historical offer snapshot.
 export const MARKET_SOURCE_UPDATED_ON = '2026-10-15';
 export type MarketEvidenceOverlay = {

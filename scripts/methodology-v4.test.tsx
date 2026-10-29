@@ -170,5 +170,7 @@ test('reader can follow a complete evidence-led buying method without unsupporte
   assert.ok(html.includes('mailto:admin@andreasboehler.com'));
   assert.ok(!/<script\b|aggregateRating|ratingValue|itemtype="[^"]*Review/i.test(html), 'Do not emit fabricated review schema');
   assert.ok(!/wir haben nie|niemals getestet|KI-gestützt|KI-generiert|Testsieger|garantiert|Laborergebnis\s*:/i.test(text));
-  assert.ok(!/\d{1,2}\.\s*(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\s*20\d{2}/.test(text), 'Do not invent a new editorial or field-check date');
+  assert.ok(html.includes('<time dateTime="2026-10-29">29. Oktober 2026</time>'), 'Keep the actual wording-correction date visible');
+  assert.match(text, /kein neuer Verfügbarkeitsabgleich/);
+  assert.ok(!/Pumpentest am 29\. Oktober|Angebotsabgleich vom 29\. Oktober/.test(text), 'Editorial corrections must not redate historic research');
 });
