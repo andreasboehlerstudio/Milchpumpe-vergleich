@@ -9,6 +9,7 @@ import { WEARABLE_MARKET as marketData } from './wearable-market';
 import { NEWSLETTER_CONNECTION, isNewsletterReady, type NewsletterConnection } from './newsletter-config';
 import { getNewsletterRouteSeo } from './newsletter';
 import { FREE_GUIDE_SEO, FREE_GUIDES, FREE_GUIDES_HUB, freeGuidePath } from './free-guides-data';
+import { FOUNDATION_GUIDES } from './foundation-guide-data';
 
 export type RouteSeo = {
   path: string;
@@ -38,7 +39,7 @@ const STATIC_ROUTES: RouteSeo[] = [
     title: '6 Milchpumpen im Vergleich: Bauarten und Funktionen',
     description: 'Vergleiche sechs Milchpumpen: fünf elektrische Modelle und Haakaa separat. Zwei Modelle direkt gegenüberstellen – mit Setumfang, Reinigung und Quellen.',
     heading: 'Was unterscheidet deine Auswahl?',
-    dateModified: '2026-10-15',
+    dateModified: '2026-10-29',
     changefreq: 'weekly',
     priority: 0.9,
   },
@@ -47,7 +48,7 @@ const STATIC_ROUTES: RouteSeo[] = [
     title: 'Tragbare Milchpumpen: 40 recherchierte Modelle und Kaufhilfe',
     description: '40 recherchierte Wearable-Modelle und Hands-free-Systeme: Bauformen, Herstellerquellen und fallbezogene Kaufhilfe. Angebotsbeobachtungen vom 15.10.2026.',
     heading: 'Tragbare Milchpumpen: Modelle und Kaufhilfe',
-    dateModified: '2026-10-15',
+    dateModified: '2026-10-29',
     changefreq: 'monthly',
     priority: 0.9,
   },
@@ -74,7 +75,7 @@ const STATIC_ROUTES: RouteSeo[] = [
     title: 'Unsere Vergleichsmethodik: Quellen, Kriterien und Grenzen',
     description: 'So recherchiert Milchpumpe-Vergleich.de Produktdaten, trennt Herstellerangaben von redaktioneller Einordnung und finanziert die Seite.',
     heading: 'So entsteht unser Milchpumpen-Vergleich',
-    dateModified: '2026-10-15',
+    dateModified: '2026-10-29',
     changefreq: 'monthly',
     priority: 0.7,
   },
@@ -83,6 +84,7 @@ const STATIC_ROUTES: RouteSeo[] = [
     title: 'Über Milchpumpe-Vergleich.de und die Redaktion',
     description: 'Erfahre, wer hinter Milchpumpe-Vergleich.de steht, welches Ziel die Seite verfolgt und wo die Grenzen der Inhalte liegen.',
     heading: 'Über dieses Vergleichsportal',
+    dateModified: '2026-10-29',
     changefreq: 'yearly',
     priority: 0.5,
   },
@@ -99,6 +101,7 @@ const STATIC_ROUTES: RouteSeo[] = [
     title: 'Datenschutzerklärung | Milchpumpe-Vergleich.de',
     description: 'Informationen zur Datenverarbeitung, Google Analytics, Affiliate-Links und deinen Datenschutzrechten.',
     heading: 'Datenschutzerklärung',
+    dateModified: '2026-10-29',
     changefreq: 'yearly',
     priority: 0.2,
   },
@@ -195,10 +198,11 @@ export function getStructuredData(path: string) {
 
   const product = PRODUCTS.find((item) => productUrl(item) === normalized);
   const isArticle = normalized.startsWith('/ratgeber/') && normalized !== '/ratgeber/';
-  const entityId = product ? `${SITE_URL}${normalized}#product`
+  const entityId = product ? `${SITE_URL}${normalized}#subject`
     : isArticle ? `${SITE_URL}${normalized}#article`
     : normalized === '/tragbare-milchpumpen/' ? `${SITE_URL}${normalized}#modellverzeichnis`
     : normalized === '/ratgeber/' ? `${SITE_URL}${normalized}#artikel`
+    : normalized === FREE_GUIDES_HUB ? `${SITE_URL}${normalized}#guides`
     : ['/vergleich/', '/produkte/'].includes(normalized) ? `${SITE_URL}${normalized}#liste` : undefined;
   graph.push({
     '@type': ['/tragbare-milchpumpen/', '/ratgeber/', FREE_GUIDES_HUB].includes(normalized) ? 'CollectionPage' : 'WebPage',
@@ -218,15 +222,13 @@ export function getStructuredData(path: string) {
     });
   }
   if (product) {
+    // These are editorial model subjects, not maintained offers or reviews.
     graph.push({
-      '@type': 'Product',
-      '@id': `${SITE_URL}${normalized}#product`,
+      '@type': 'Thing',
+      '@id': `${SITE_URL}${normalized}#subject`,
       name: `${product.brand} ${product.name}`,
-      brand: { '@type': 'Brand', name: product.brand },
       description: product.summary,
       url: `${SITE_URL}${normalized}`,
-      category: product.category,
-      additionalProperty: product.facts.map((fact) => ({ '@type': 'PropertyValue', name: 'Merkmal', value: fact })),
     });
   } else if (normalized === '/tragbare-milchpumpen/') {
     graph.push({
@@ -256,6 +258,7 @@ export function getStructuredData(path: string) {
   } else if (normalized === '/produkte/') {
     graph.push({
       '@type': 'ItemList', '@id': `${SITE_URL}${normalized}#liste`, name: 'Produktwegweiser für Abpumpen und Muttermilch-Alltag',
+      numberOfItems: PRODUCT_CATALOGUE.length,
       itemListElement: PRODUCT_CATALOGUE.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: `${item.brand} ${item.name}`, url: `${SITE_URL}${catalogueProductUrl(item)}` })),
     });
   } else if (normalized === '/vergleich/') {
@@ -263,6 +266,7 @@ export function getStructuredData(path: string) {
       '@type': 'ItemList',
       '@id': `${SITE_URL}${normalized}#liste`,
       name: 'Verglichene Milchpumpen',
+      numberOfItems: PRODUCTS.length,
       itemListElement: PRODUCTS.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 1,
@@ -273,7 +277,8 @@ export function getStructuredData(path: string) {
   } else if (normalized.startsWith('/ratgeber/') && normalized !== '/ratgeber/') {
     const guide = EDITORIAL_GUIDES.find(g => `/ratgeber/${g.slug}/` === normalized);
     const milk = MILK_GUIDES.find(g=>`/ratgeber/${g.slug}/`===normalized);
-    const citedSources = guide?.sources || milk?.sources;
+    const foundation = FOUNDATION_GUIDES[normalized.split('/')[2]];
+    const citedSources = foundation?.sources || guide?.sources || milk?.sources;
     const milkProducts = milk?.productIds.map(id=>PRODUCT_CATALOGUE.find(p=>p.id===id)!);
     graph.push({
       '@type': 'Article',
@@ -281,7 +286,7 @@ export function getStructuredData(path: string) {
       headline: route.heading,
       isAccessibleForFree: true,
       citation: citedSources?.map(source => source.url) || ['https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen'],
-      about: milkProducts?.map(p=>({ '@type':'Product',name:`${p.brand} ${p.name}`,url:`${SITE_URL}${catalogueProductUrl(p)}` })) || guide?.productIds.map(id => { const p = PRODUCTS.find(product => product.id === id)!; return { '@type': 'Product', '@id': `${SITE_URL}${productUrl(p)}#product`, name: `${p.brand} ${p.name}` }; }),
+      about: milkProducts?.map(p=>({ '@type':'Thing',name:`${p.brand} ${p.name}`,url:`${SITE_URL}${catalogueProductUrl(p)}` })) || guide?.productIds.map(id => { const p = PRODUCTS.find(product => product.id === id)!; return { '@type': 'Thing', '@id': `${SITE_URL}${productUrl(p)}#subject`, name: `${p.brand} ${p.name}`, url: `${SITE_URL}${productUrl(p)}` }; }),
       description: route.description,
       ...(route.datePublished ? { datePublished: route.datePublished } : {}),
       dateModified: route.dateModified || REVIEW_DATE_ISO,

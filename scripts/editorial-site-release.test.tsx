@@ -61,7 +61,7 @@ test('homepage and market page answer different search intents', () => {
   assert.match(home.title, /Milchpumpen-Vergleich/);
   assert.doesNotMatch(home.title, /Modellidentitäten/);
   assert.notEqual(home.title, market.title);
-  assert.equal(getRouteSeo('/testmethodik/').dateModified, '2026-10-15');
+  assert.equal(getRouteSeo('/testmethodik/').dateModified, '2026-10-29');
 });
 
 test('market structured data lists researched models without inventing ratings', () => {

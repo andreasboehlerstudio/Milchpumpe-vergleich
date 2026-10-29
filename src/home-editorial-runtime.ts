@@ -1,5 +1,5 @@
 import comparisonData from './home-editorial-data.json';
-import { trackAffiliateClick } from './analytics';
+import { trackAffiliateClick, trackComparisonUse, trackFinderResults } from './analytics';
 
 type ComparisonModel = typeof comparisonData.models[number];
 
@@ -28,13 +28,14 @@ export function bindEditorialHome(root: HTMLElement): () => void {
     }
     count.textContent = `${visible} von ${rows.length} Modellen in der Recherche`;
     empty.hidden = visible !== 0;
+    return visible;
   };
-  listen(query, 'input', filterDirectory);
-  listen(architecture, 'change', filterDirectory);
+  listen(query, 'input', () => trackFinderResults('home_directory', 'query', filterDirectory()));
+  listen(architecture, 'change', () => trackFinderResults('home_directory', 'architecture', filterDirectory()));
   listen(required(root, '#v4-filter-reset'), 'click', () => {
     query.value = '';
     architecture.value = '';
-    filterDirectory();
+    trackFinderResults('home_directory', 'reset', filterDirectory());
     query.focus();
   });
   const a = required<HTMLSelectElement>(root, '#v9-compare-a');
@@ -67,15 +68,17 @@ export function bindEditorialHome(root: HTMLElement): () => void {
       : `${left.name} und ${right.name} im Vergleich.`;
   };
   const defaults = [a.value, b.value] as const;
-  listen(a, 'change', renderComparison);
-  listen(b, 'change', renderComparison);
+  listen(a, 'change', () => { renderComparison(); trackComparisonUse('home', 'select_a', a.value, b.value); });
+  listen(b, 'change', () => { renderComparison(); trackComparisonUse('home', 'select_b', a.value, b.value); });
   listen(required(root, '#v9-compare-swap'), 'click', () => {
     [a.value, b.value] = [b.value, a.value];
     renderComparison();
+    trackComparisonUse('home', 'swap', a.value, b.value);
   });
   listen(required(root, '#v9-compare-reset'), 'click', () => {
     [a.value, b.value] = defaults;
     renderComparison();
+    trackComparisonUse('home', 'reset', a.value, b.value);
     a.focus();
   });
   const openComparison = () => {
@@ -89,18 +92,21 @@ export function bindEditorialHome(root: HTMLElement): () => void {
     if (!target?.closest?.('a#header-finder[href="/#v9-comparison"]')) return;
     event.preventDefault();
     openComparison();
+    trackComparisonUse('home', 'open', a.value, b.value);
   });
   root.querySelectorAll<HTMLElement>('[data-compare-pair-a]').forEach(button => listen(button, 'click', () => {
     a.value = button.dataset.comparePairA || a.value;
     b.value = button.dataset.comparePairB || b.value;
     renderComparison();
     openComparison();
+    trackComparisonUse('home', 'preset', a.value, b.value);
   }));
   root.querySelectorAll<HTMLElement>('[data-compare-key]').forEach(link => listen(link, 'click', event => {
     event.preventDefault();
     a.value = link.dataset.compareKey || a.value;
     renderComparison();
     openComparison();
+    trackComparisonUse('home', 'directory_pick', a.value, b.value);
   }));
   const openDirectory = () => {
     const directory = required<HTMLDetailsElement>(root, '#modellsuche');

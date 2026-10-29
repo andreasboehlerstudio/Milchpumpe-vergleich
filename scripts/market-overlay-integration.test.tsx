@@ -87,7 +87,7 @@ test('home SEO describes 40 researched identities and practical case help while 
   assert.match(getRouteSeo('/vergleich/').description, /sechs Milchpumpen/);
   assert.equal(home.dateModified, '2026-10-15');
   const market = getRouteSeo('/tragbare-milchpumpen/');
-  assert.equal(market.dateModified, '2026-10-15');
+  assert.equal(market.dateModified, '2026-10-29');
   assert.match(market.description, /15.10.2026/);
   assert.equal(getRouteSeo('/vergleich/').heading, 'Was unterscheidet deine Auswahl?');
   const list = getStructuredData('/vergleich/')['@graph'].find(item => item['@type'] === 'ItemList');

@@ -5,6 +5,7 @@ import { loadRoute } from './route-loader';
 import { routeFamily } from './route-family';
 import { SITE_URL } from './product-data';
 import { RouteLoadingConsent } from './components';
+import { bindAnalyticsInteractions } from './analytics';
 import './index.css';
 import './editorial.css';
 import './visual-editorial.css';
@@ -16,6 +17,10 @@ import './magazine-upgrade.css';
 import './newsletter.css';
 
 const container = document.getElementById('root');
+
+// Document-lifetime delegation needs no route family imports and never mutates SSR.
+const cleanupAnalyticsInteractions = bindAnalyticsInteractions(document);
+window.addEventListener('pagehide', event => { if (!event.persisted) cleanupAnalyticsInteractions(); });
 
 if (!container) {
   throw new Error('Root element not found');

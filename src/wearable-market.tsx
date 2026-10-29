@@ -2,13 +2,17 @@ import { useId, useState } from 'react';
 import marketData from './wearable-market-data.json';
 import additions from './wearable-market-additions.json';
 import offerUpdates from './wearable-market-offer-updates.json';
-import { CURRENT_BUYING_CASES, MARKET_SOURCE_UPDATED_ON, wearableMarketEvidence } from './wearable-market-evidence-overlay';
+import { CURRENT_BUYER_NOTES, CURRENT_BUYING_CASES, MARKET_SOURCE_UPDATED_ON, wearableMarketEvidence } from './wearable-market-evidence-overlay';
 
 export type WearableMarketModel = typeof marketData.models[number];
 const updates = offerUpdates as Record<string, { checkedAt: string; title: string; availabilityEvidence: string; offerConditionConfirmed: boolean }>;
 const currentModels: WearableMarketModel[] = [...marketData.models, ...additions.models].map(model => {
-  const update = updates[`${model.brand}|${model.canonicalModel}`];
-  return update ? ({ ...model, amazonObservation: { ...model.amazonObservation, ...update } } as WearableMarketModel) : model;
+  const key = `${model.brand}|${model.canonicalModel}`;
+  const update = updates[key];
+  return { ...model,
+    buyerNote: CURRENT_BUYER_NOTES[key] || model.buyerNote,
+    amazonObservation: update ? { ...model.amazonObservation, ...update } : model.amazonObservation,
+  } as WearableMarketModel;
 }).sort((a, b) => `${a.brand} ${a.canonicalModel}`.localeCompare(`${b.brand} ${b.canonicalModel}`, 'de'));
 export const WEARABLE_MARKET = {
   ...marketData,

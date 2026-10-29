@@ -103,7 +103,7 @@ test('newsletter hydration retains original approved nodes and hands consent bac
     assert.equal(window.document.querySelectorAll('.cookie-dialog').length, 1);
     await act(async () => (window.document.querySelector('.cookie-dialog .button--primary') as import('happy-dom').HTMLButtonElement).click());
     assert.equal(JSON.parse(window.localStorage.getItem('mv-analytics-consent-v1')!).value, 'accepted');
-    assert.equal(window.document.querySelectorAll('script[src*="googletagmanager"]').length, 1);
+    assert.equal(window.document.querySelectorAll('script[src*="googletagmanager"]').length, 0, 'Localhost remains excluded after consent acceptance');
     assert.equal(window.location.search, '?source=preserve');
     assert.equal(window.location.hash, '#newsletter');
     assert.equal(errors.length, 0, 'no hydration mismatch or runtime errors');

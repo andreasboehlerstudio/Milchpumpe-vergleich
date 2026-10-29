@@ -28,7 +28,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
     lead: 'Die Entscheidung hängt weniger von möglichst vielen Leistungswerten ab als davon, wie du die Pumpe bedienen, tragen und reinigen möchtest. Die Modellinfos stammen aus Herstellerunterlagen. Besonders wichtig: Die ursprüngliche S12 Pro und die S12 Pro Quick sind verschiedene Generationen.',
     category: 'Modellvergleich',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-29',
     productIds: ['momcozy-m9', 'momcozy-s12-pro'],
     sections: [
       {
@@ -41,13 +41,22 @@ export const BUYING_GUIDES: BuyingGuide[] = [
         sourceIndexes: [1, 2],
       },
       {
+        id: 'original-anleitung',
+        title: 'Original-Anleitung: Was genau ist belegt?',
+        paragraphs: [
+          'Die wiedergefundene Hersteller-PDF nennt in Kapitel 9 ausdrücklich die Modellnummer „S12 Pro“. Es ist die US-Fassung in englischer Sprache, nicht die Anleitung der S12 Pro Quick. Den Download haben wir über Momcozys Anleitungshub in dessen Archivstand vom 2. August 2025 gefunden; die PDF ist am 29. Oktober 2026 direkt auf dem Hersteller-CDN abrufbar. Der heutige Hub verlinkt an dieser Stelle die Quick.',
+          'Die ebenfalls verlinkte deutsche Kurzanleitung zeigt Montage und waschbare Teile, ersetzt nicht die vollständige Gebrauchsanweisung. Die US-Unterlagen belegen weder den aktuellen deutschen Händler-Lieferumfang noch die regionale Ausführung deines Angebots. Lass dir deshalb die zum Typenschild und Verkaufsland passende vollständige Anleitung sowie die Stückliste des gewählten Single- oder Double-Sets bestätigen.',
+        ],
+        sourceIndexes: [4, 5, 6],
+      },
+      {
         id: 'bedienung',
         title: 'M9: App als zusätzliche Bedienoberfläche',
         paragraphs: [
           'Die M9 lässt sich laut Hersteller per App und über Tasten bedienen. Ihre regulären Modi sind am Gerät erreichbar; individuelle Muster und bestimmte zusätzliche Programme nutzen die App. Momcozy nennt 15 einstellbare Intensitätsstufen. Das ist eine Beschreibung der Bedienmöglichkeiten, kein Nachweis für mehr Milch oder eine bessere Passform. Entscheidend ist, ob du solche Einstellungen im Alltag tatsächlich verwenden möchtest.',
-          'Für die S12-Familie beschreibt Momcozy eine direkte Tastenbedienung ohne App. Prüfe beim ursprünglichen S12-Pro-Angebot dennoch die beiliegende Anleitung statt die Quick-Anleitung zu übernehmen. Wenn du Einstellungen lieber unmittelbar am Gerät änderst, ist das ein nachvollziehbares Auswahlkriterium. Wenn du nicht an die Pumpe greifen möchtest, kann die zusätzliche App-Bedienung der M9 praktischer sein.',
+          'Die ursprüngliche S12 Pro bedienst du laut US-Anleitung direkt über Tasten: Sie bietet drei Modi (Stimulation, Expression und Mischmodus) mit jeweils neun Saugstufen. Die Pumpe darf nicht während des Ladens verwendet werden; plane daher eine Ladepause ein. Prüfe beim ursprünglichen S12-Pro-Angebot dennoch die beiliegende Anleitung statt die Quick-Anleitung zu übernehmen. Wenn du Einstellungen lieber unmittelbar am Gerät änderst, ist das ein nachvollziehbares Auswahlkriterium. Wenn du nicht an die Pumpe greifen möchtest, kann die zusätzliche App-Bedienung der M9 praktischer sein.',
         ],
-        sourceIndexes: [0, 1],
+        sourceIndexes: [0, 7],
       },
       {
         id: 'alltag-ohne-smartphone',
@@ -64,17 +73,19 @@ export const BUYING_GUIDES: BuyingGuide[] = [
         paragraphs: [
           'Für die M9 nennt Momcozy einen 24-mm-Flansch und Einsatzoptionen mit 17, 19 und 21 mm. Daraus folgt weder, dass alle Einsätze in jedem Set enthalten sind, noch dass eine dieser Größen automatisch zu dir passt. Gleiche den konkreten Lieferumfang ab und nutze die Messhinweise zur jeweiligen Pumpe. Die Größe des BHs ist dafür kein verlässlicher Ersatz.',
           'Das BZfE verweist bei der Auswahl des passenden Trichteraufsatzes auf Hebammen und Stillberaterinnen. Plane diese Hilfe ein, wenn du unsicher bist, statt mehrere Zubehörgrößen auf Verdacht zu kaufen. Bei der S12 Pro muss die Größen- und Teileauswahl zur ursprünglichen Generation passen. Der Hersteller weist darauf hin, dass andere Zubehörteile als die im Artikel besprochenen Einsätze modellspezifisch sind.',
+          'Für die ursprüngliche S12 Pro dokumentiert die US-Anleitung einen mitgelieferten 24-mm-Silikonflansch. Weitere Größen beschreibt sie als separat erhältliches Zubehör. Ob zusätzliche Einsätze deinem konkreten Set beiliegen, musst du am Angebot prüfen; die Anleitung ist kein Beleg für ein heutiges Bundle. Die dokumentierten 24 mm sind auch keine persönliche Größenempfehlung.',
         ],
-        sourceIndexes: [0, 1, 3],
+        sourceIndexes: [0, 1, 3, 8],
       },
       {
         id: 'reinigung-und-ersatzteile',
         title: 'Reinigung und Ersatzteilweg in den Kauf einrechnen',
         paragraphs: [
           'Ein Wearable spart nicht automatisch die Arbeit nach dem Pumpen. Das BZfE empfiehlt, Pumpset und Behälter nach jedem Gebrauch mit Spülmittel und heißem Wasser zu reinigen, abzuspülen und zu trocknen. Welche Bauteile wie behandelt werden dürfen, bestimmt zusätzlich die jeweilige Anleitung. Plane einen sauberen Ablageplatz und genug Zeit zum Zerlegen, Trocknen und erneuten Zusammensetzen ein.',
+          'Die Original-S12-Pro-Anleitung nennt pro Auffangsystem fünf milchberührende Teile: Flansch, Linker, Membran, Ventil und Milchauffangbehälter; zusätzliche Einsätze kommen gegebenenfalls dazu. Sie verlangt Handreinigung, die Reinigung in der Spülmaschine ist darin nicht validiert. Motor, Kabel und Netzteil dürfen nicht ins Wasser oder in die Spülmaschine. Die deutsche Kurzanleitung bestätigt die Trennung von waschbaren Teilen und Pumpenmotor. Ein geringerer Reinigungsaufwand gegenüber der M9 ist damit nicht belegt.',
           'Frage vor dem Kauf nach passenden Ventilen, Membranen und Auffangteilen für die exakte Generation. Gerade bei einem älteren S12-Pro-Angebot ist ein nachvollziehbarer Ersatzteilweg wichtiger als ein vermeintlich attraktives Bundle. Wir behaupten hier keine aktuelle Verfügbarkeit. Lege einen Artikel nur dann als passenden Ersatz ab, wenn der Anbieter das genaue Modell nennt; Fotos und Markenname allein reichen nicht.',
         ],
-        sourceIndexes: [1, 3],
+        sourceIndexes: [3, 5, 9],
       },
       {
         id: 'entscheidung',
@@ -87,8 +98,10 @@ export const BUYING_GUIDES: BuyingGuide[] = [
           'M9 prüfen, wenn App-Funktionen ein konkretes Alltagsproblem lösen.',
           'S12 Pro nur anhand eindeutig zugeordneter Informationen zum ursprünglichen Modell bewerten.',
           'Lieferumfang, passende Größe, Anleitung und Ersatzteilzuordnung vor dem Bestellen abgleichen.',
+          'Auffangmenge der ursprünglichen S12 Pro richtig lesen: 180 ml Behältervolumen laut US-Anleitung, aber Empfehlung zum Beenden bei Annäherung an 120 ml, um Überlaufen zu vermeiden (Druckseiten 6 und 24). Das ist kein Versprechen einer abpumpbaren Milchmenge.',
+          'Set separat bestätigen lassen: „Single pumping“ in der technischen Spezifikation ist kein Nachweis für den gelieferten Kartoninhalt. Prüfe beim Single- oder Double-Angebot die Zahl der Motoren und Auffangsysteme, Flanschgrößen und Ladeausstattung; die US-Anleitung nennt kein universelles deutsches Händler-Bundle.',
         ],
-        sourceIndexes: [0, 1, 2],
+        sourceIndexes: [0, 1, 2, 4],
       },
     ],
     sources: [
@@ -96,6 +109,12 @@ export const BUYING_GUIDES: BuyingGuide[] = [
       { label: 'Momcozy: S12 Pro Quick FAQ mit Abgrenzung zum Vorgänger', url: 'https://momcozy.com/blogs/momcare/s12-pro-quick-setup-pumping-cleaning' },
       { label: 'Momcozy Support: Änderungen der S12 Pro Quick', url: 'https://support.momcozy.com/article/50367888991257' },
       { label: 'BZfE: Muttermilch abpumpen, Passform und Hygiene', url: 'https://www.bzfe.de/presse/pressemeldungen-archiv/muttermilch-abpumpen' },
+      { label: 'Momcozy: ursprüngliche S12 Pro, vollständige US-Anleitung (Englisch, PDF)', url: 'https://cdn.shopify.com/s/files/1/0559/2321/2486/files/momcozy_S12_Pro_User_Manual-US.pdf?v=1743470937' },
+      { label: 'Momcozy: ursprüngliche S12 Pro, deutsche Kurzanleitung (eine Seite, PDF)', url: 'https://cdn.shopify.com/s/files/1/0559/2321/2486/files/Momcozy-S12pro_User_Guide-DE.pdf?v=1741161422' },
+      { label: 'Momcozy-Anleitungshub: archivierter Stand 2025-08-02 mit Original-S12-Pro-Links', url: 'https://web.archive.org/web/20250802222430/https://momcozy.com/pages/momcozy-breast-pump-user-guide-your-comfort-our-priority' },
+      { label: 'Momcozy S12 Pro US-Anleitung: Bedienung, PDF-Seite 25 (Druckseite 23)', url: 'https://cdn.shopify.com/s/files/1/0559/2321/2486/files/momcozy_S12_Pro_User_Manual-US.pdf?v=1743470937#page=25' },
+      { label: 'Momcozy S12 Pro US-Anleitung: Flanschgröße, PDF-Seite 19 (Druckseite 17)', url: 'https://cdn.shopify.com/s/files/1/0559/2321/2486/files/momcozy_S12_Pro_User_Manual-US.pdf?v=1743470937#page=19' },
+      { label: 'Momcozy S12 Pro US-Anleitung: Teile und Handreinigung, PDF-Seiten 13–14 (Druckseiten 11–12)', url: 'https://cdn.shopify.com/s/files/1/0559/2321/2486/files/momcozy_S12_Pro_User_Manual-US.pdf?v=1743470937#page=13' },
     ],
     faqs: [
       { question: 'Brauche ich für die M9 bei jeder Anwendung die App?', answer: 'Nein. Momcozy beschreibt die regulären Modi als per App oder direkt an der Pumpe wählbar. Individuelle Muster und bestimmte Zusatzprogramme sind appbezogen. Prüfe vor dem Kauf, welche dieser Funktionen du wirklich nutzen willst.' },
